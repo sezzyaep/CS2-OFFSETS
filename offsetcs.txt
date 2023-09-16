@@ -1,0 +1,10 @@
+s_dwEntityList_Offset: 0x162c020
+viewmatrix_Offset: 0x171d1e0
+localplayer_Offset: 0x167dd60
+s_dwPawnHealth_Offset: 0x808
+s_dwPlayerPawn_Offset: 0x5dc
+s_dwSanitizedName_Offset: 0x720
+s_Position_Offset: 0x1204
+s_teamnum_Offset: 0x3bf
+s_bIsLocalPlayerController_Offset: 0x6A0
+s_bPawnHasDefuser: 0x810
