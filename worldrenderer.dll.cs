@@ -1,8 +1,7 @@
 public static class AggregateLODSetup_t {
     public const ulong m_vLODOrigin = 0x0;
     public const ulong m_fMaxObjectScale = 0xc;
-    public const ulong m_nLODMask = 0x10;
-    public const ulong m_fSwitchDistances = 0x18;
+    public const ulong m_fSwitchDistances = 0x10;
 }
 
 public static class AggregateMeshInfo_t {

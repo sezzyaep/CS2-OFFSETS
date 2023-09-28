@@ -642,6 +642,7 @@ public static class RnMesh_t {
     public const ulong m_Materials = 0x78;
     public const ulong m_vOrthographicAreas = 0x90;
     public const ulong m_nFlags = 0x9c;
+    public const ulong m_nDebugFlags = 0xa0;
 }
 
 public static class RnNode_t {

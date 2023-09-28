@@ -646,6 +646,7 @@ namespace RnMesh_t {
     constexpr std::ptrdiff_t m_Materials = 0x78;
     constexpr std::ptrdiff_t m_vOrthographicAreas = 0x90;
     constexpr std::ptrdiff_t m_nFlags = 0x9c;
+    constexpr std::ptrdiff_t m_nDebugFlags = 0xa0;
 }
 
 namespace RnNode_t {

@@ -124,12 +124,6 @@ public static class CAttributeManager_cached_attribute_float_t {
     public const ulong flOut = 0x10;
 }
 
-public static class CBRC4Target {
-    public const ulong m_hPlayerThatActivatedMe = 0x8b0;
-    public const ulong m_bBrokenOpen = 0x8b4;
-    public const ulong m_flRadius = 0x8b8;
-}
-
 public static class CBarnLight {
     public const ulong m_bEnabled = 0x700;
     public const ulong m_nColorMode = 0x704;
@@ -245,32 +239,32 @@ public static class CBaseButton {
 }
 
 public static class CBaseCSGrenade {
-    public const ulong m_bRedraw = 0xdf0;
-    public const ulong m_bIsHeldByPlayer = 0xdf1;
-    public const ulong m_bPinPulled = 0xdf2;
-    public const ulong m_bJumpThrow = 0xdf3;
-    public const ulong m_eThrowStatus = 0xdf4;
-    public const ulong m_fThrowTime = 0xdf8;
-    public const ulong m_flThrowStrength = 0xdfc;
-    public const ulong m_flThrowStrengthApproach = 0xe00;
-    public const ulong m_fDropTime = 0xe04;
+    public const ulong m_bRedraw = 0xdf8;
+    public const ulong m_bIsHeldByPlayer = 0xdf9;
+    public const ulong m_bPinPulled = 0xdfa;
+    public const ulong m_bJumpThrow = 0xdfb;
+    public const ulong m_eThrowStatus = 0xdfc;
+    public const ulong m_fThrowTime = 0xe00;
+    public const ulong m_flThrowStrength = 0xe04;
+    public const ulong m_flThrowStrengthApproach = 0xe08;
+    public const ulong m_fDropTime = 0xe0c;
 }
 
 public static class CBaseCSGrenadeProjectile {
-    public const ulong m_vInitialVelocity = 0x9c0;
-    public const ulong m_nBounces = 0x9cc;
-    public const ulong m_nExplodeEffectIndex = 0x9d0;
-    public const ulong m_nExplodeEffectTickBegin = 0x9d8;
-    public const ulong m_vecExplodeEffectOrigin = 0x9dc;
-    public const ulong m_unOGSExtraFlags = 0x9e8;
-    public const ulong m_bDetonationRecorded = 0x9e9;
-    public const ulong m_flDetonateTime = 0x9ec;
-    public const ulong m_nItemIndex = 0x9f0;
-    public const ulong m_vecOriginalSpawnLocation = 0x9f4;
-    public const ulong m_flLastBounceSoundTime = 0xa00;
-    public const ulong m_vecGrenadeSpin = 0xa04;
-    public const ulong m_vecLastHitSurfaceNormal = 0xa10;
-    public const ulong m_nTicksAtZeroVelocity = 0xa1c;
+    public const ulong m_vInitialVelocity = 0x9c8;
+    public const ulong m_nBounces = 0x9d4;
+    public const ulong m_nExplodeEffectIndex = 0x9d8;
+    public const ulong m_nExplodeEffectTickBegin = 0x9e0;
+    public const ulong m_vecExplodeEffectOrigin = 0x9e4;
+    public const ulong m_unOGSExtraFlags = 0x9f0;
+    public const ulong m_bDetonationRecorded = 0x9f1;
+    public const ulong m_flDetonateTime = 0x9f4;
+    public const ulong m_nItemIndex = 0x9f8;
+    public const ulong m_vecOriginalSpawnLocation = 0x9fc;
+    public const ulong m_flLastBounceSoundTime = 0xa08;
+    public const ulong m_vecGrenadeSpin = 0xa0c;
+    public const ulong m_vecLastHitSurfaceNormal = 0xa18;
+    public const ulong m_nTicksAtZeroVelocity = 0xa24;
 }
 
 public static class CBaseClientUIEntity {
@@ -291,19 +285,19 @@ public static class CBaseClientUIEntity {
 }
 
 public static class CBaseCombatCharacter {
-    public const ulong m_bForceServerRagdoll = 0x918;
-    public const ulong m_hMyWearables = 0x920;
-    public const ulong m_flFieldOfView = 0x938;
-    public const ulong m_impactEnergyScale = 0x93c;
-    public const ulong m_LastHitGroup = 0x940;
-    public const ulong m_bApplyStressDamage = 0x944;
-    public const ulong m_bloodColor = 0x948;
-    public const ulong m_navMeshID = 0x9a8;
-    public const ulong m_iDamageCount = 0x9ac;
-    public const ulong m_pVecRelationships = 0x9b0;
-    public const ulong m_strRelationships = 0x9b8;
-    public const ulong m_eHull = 0x9c0;
-    public const ulong m_nNavHullIdx = 0x9c4;
+    public const ulong m_bForceServerRagdoll = 0x920;
+    public const ulong m_hMyWearables = 0x928;
+    public const ulong m_flFieldOfView = 0x940;
+    public const ulong m_impactEnergyScale = 0x944;
+    public const ulong m_LastHitGroup = 0x948;
+    public const ulong m_bApplyStressDamage = 0x94c;
+    public const ulong m_bloodColor = 0x950;
+    public const ulong m_navMeshID = 0x9b0;
+    public const ulong m_iDamageCount = 0x9b4;
+    public const ulong m_pVecRelationships = 0x9b8;
+    public const ulong m_strRelationships = 0x9c0;
+    public const ulong m_eHull = 0x9c8;
+    public const ulong m_nNavHullIdx = 0x9cc;
 }
 
 public static class CBaseDMStart {
@@ -430,30 +424,30 @@ public static class CBaseFire {
 }
 
 public static class CBaseFlex {
-    public const ulong m_flexWeight = 0x888;
-    public const ulong m_vLookTargetPosition = 0x8a0;
-    public const ulong m_blinktoggle = 0x8ac;
-    public const ulong m_flAllowResponsesEndTime = 0x900;
-    public const ulong m_flLastFlexAnimationTime = 0x904;
-    public const ulong m_nNextSceneEventId = 0x908;
-    public const ulong m_bUpdateLayerPriorities = 0x90c;
+    public const ulong m_flexWeight = 0x890;
+    public const ulong m_vLookTargetPosition = 0x8a8;
+    public const ulong m_blinktoggle = 0x8b4;
+    public const ulong m_flAllowResponsesEndTime = 0x908;
+    public const ulong m_flLastFlexAnimationTime = 0x90c;
+    public const ulong m_nNextSceneEventId = 0x910;
+    public const ulong m_bUpdateLayerPriorities = 0x914;
 }
 
 public static class CBaseGrenade {
-    public const ulong m_OnPlayerPickup = 0x920;
-    public const ulong m_OnExplode = 0x948;
-    public const ulong m_bHasWarnedAI = 0x970;
-    public const ulong m_bIsSmokeGrenade = 0x971;
-    public const ulong m_bIsLive = 0x972;
-    public const ulong m_DmgRadius = 0x974;
-    public const ulong m_flDetonateTime = 0x978;
-    public const ulong m_flWarnAITime = 0x97c;
-    public const ulong m_flDamage = 0x980;
-    public const ulong m_iszBounceSound = 0x988;
-    public const ulong m_ExplosionSound = 0x990;
-    public const ulong m_hThrower = 0x99c;
-    public const ulong m_flNextAttack = 0x9b8;
-    public const ulong m_hOriginalThrower = 0x9bc;
+    public const ulong m_OnPlayerPickup = 0x928;
+    public const ulong m_OnExplode = 0x950;
+    public const ulong m_bHasWarnedAI = 0x978;
+    public const ulong m_bIsSmokeGrenade = 0x979;
+    public const ulong m_bIsLive = 0x97a;
+    public const ulong m_DmgRadius = 0x97c;
+    public const ulong m_flDetonateTime = 0x980;
+    public const ulong m_flWarnAITime = 0x984;
+    public const ulong m_flDamage = 0x988;
+    public const ulong m_iszBounceSound = 0x990;
+    public const ulong m_ExplosionSound = 0x998;
+    public const ulong m_hThrower = 0x9a4;
+    public const ulong m_flNextAttack = 0x9bc;
+    public const ulong m_hOriginalThrower = 0x9c0;
 }
 
 public static class CBaseIssue {
@@ -545,30 +539,30 @@ public static class CBasePlayerController {
 }
 
 public static class CBasePlayerPawn {
-    public const ulong m_pWeaponServices = 0x9c8;
-    public const ulong m_pItemServices = 0x9d0;
-    public const ulong m_pAutoaimServices = 0x9d8;
-    public const ulong m_pObserverServices = 0x9e0;
-    public const ulong m_pWaterServices = 0x9e8;
-    public const ulong m_pUseServices = 0x9f0;
-    public const ulong m_pFlashlightServices = 0x9f8;
-    public const ulong m_pCameraServices = 0xa00;
-    public const ulong m_pMovementServices = 0xa08;
-    public const ulong m_ServerViewAngleChanges = 0xa18;
-    public const ulong m_nHighestGeneratedServerViewAngleChangeIndex = 0xa68;
-    public const ulong v_angle = 0xa6c;
-    public const ulong v_anglePrevious = 0xa78;
-    public const ulong m_iHideHUD = 0xa84;
-    public const ulong m_skybox3d = 0xa88;
-    public const ulong m_fTimeLastHurt = 0xb18;
-    public const ulong m_flDeathTime = 0xb1c;
-    public const ulong m_fNextSuicideTime = 0xb20;
-    public const ulong m_fInitHUD = 0xb24;
-    public const ulong m_pExpresser = 0xb28;
-    public const ulong m_hController = 0xb30;
-    public const ulong m_fHltvReplayDelay = 0xb38;
-    public const ulong m_fHltvReplayEnd = 0xb3c;
-    public const ulong m_iHltvReplayEntity = 0xb40;
+    public const ulong m_pWeaponServices = 0x9d0;
+    public const ulong m_pItemServices = 0x9d8;
+    public const ulong m_pAutoaimServices = 0x9e0;
+    public const ulong m_pObserverServices = 0x9e8;
+    public const ulong m_pWaterServices = 0x9f0;
+    public const ulong m_pUseServices = 0x9f8;
+    public const ulong m_pFlashlightServices = 0xa00;
+    public const ulong m_pCameraServices = 0xa08;
+    public const ulong m_pMovementServices = 0xa10;
+    public const ulong m_ServerViewAngleChanges = 0xa20;
+    public const ulong m_nHighestGeneratedServerViewAngleChangeIndex = 0xa70;
+    public const ulong v_angle = 0xa74;
+    public const ulong v_anglePrevious = 0xa80;
+    public const ulong m_iHideHUD = 0xa8c;
+    public const ulong m_skybox3d = 0xa90;
+    public const ulong m_fTimeLastHurt = 0xb20;
+    public const ulong m_flDeathTime = 0xb24;
+    public const ulong m_fNextSuicideTime = 0xb28;
+    public const ulong m_fInitHUD = 0xb2c;
+    public const ulong m_pExpresser = 0xb30;
+    public const ulong m_hController = 0xb38;
+    public const ulong m_fHltvReplayDelay = 0xb40;
+    public const ulong m_fHltvReplayEnd = 0xb44;
+    public const ulong m_iHltvReplayEntity = 0xb48;
 }
 
 public static class CBasePlayerVData {
@@ -589,14 +583,14 @@ public static class CBasePlayerVData {
 }
 
 public static class CBasePlayerWeapon {
-    public const ulong m_nNextPrimaryAttackTick = 0xc10;
-    public const ulong m_flNextPrimaryAttackTickRatio = 0xc14;
-    public const ulong m_nNextSecondaryAttackTick = 0xc18;
-    public const ulong m_flNextSecondaryAttackTickRatio = 0xc1c;
-    public const ulong m_iClip1 = 0xc20;
-    public const ulong m_iClip2 = 0xc24;
-    public const ulong m_pReserveAmmo = 0xc28;
-    public const ulong m_OnPlayerUse = 0xc30;
+    public const ulong m_nNextPrimaryAttackTick = 0xc18;
+    public const ulong m_flNextPrimaryAttackTickRatio = 0xc1c;
+    public const ulong m_nNextSecondaryAttackTick = 0xc20;
+    public const ulong m_flNextSecondaryAttackTickRatio = 0xc24;
+    public const ulong m_iClip1 = 0xc28;
+    public const ulong m_iClip2 = 0xc2c;
+    public const ulong m_pReserveAmmo = 0xc30;
+    public const ulong m_OnPlayerUse = 0xc38;
 }
 
 public static class CBasePlayerWeaponVData {
@@ -624,50 +618,50 @@ public static class CBasePlayerWeaponVData {
 }
 
 public static class CBaseProp {
-    public const ulong m_bModelOverrodeBlockLOS = 0x888;
-    public const ulong m_iShapeType = 0x88c;
-    public const ulong m_bConformToCollisionBounds = 0x890;
-    public const ulong m_mPreferredCatchTransform = 0x894;
+    public const ulong m_bModelOverrodeBlockLOS = 0x890;
+    public const ulong m_iShapeType = 0x894;
+    public const ulong m_bConformToCollisionBounds = 0x898;
+    public const ulong m_mPreferredCatchTransform = 0x89c;
 }
 
 public static class CBasePropDoor {
-    public const ulong m_flAutoReturnDelay = 0xb10;
-    public const ulong m_hDoorList = 0xb18;
-    public const ulong m_nHardwareType = 0xb30;
-    public const ulong m_bNeedsHardware = 0xb34;
-    public const ulong m_eDoorState = 0xb38;
-    public const ulong m_bLocked = 0xb3c;
-    public const ulong m_closedPosition = 0xb40;
-    public const ulong m_closedAngles = 0xb4c;
-    public const ulong m_hBlocker = 0xb58;
-    public const ulong m_bFirstBlocked = 0xb5c;
-    public const ulong m_ls = 0xb60;
-    public const ulong m_bForceClosed = 0xb80;
-    public const ulong m_vecLatchWorldPosition = 0xb84;
-    public const ulong m_hActivator = 0xb90;
-    public const ulong m_SoundMoving = 0xba0;
-    public const ulong m_SoundOpen = 0xba8;
-    public const ulong m_SoundClose = 0xbb0;
-    public const ulong m_SoundLock = 0xbb8;
-    public const ulong m_SoundUnlock = 0xbc0;
-    public const ulong m_SoundLatch = 0xbc8;
-    public const ulong m_SoundPound = 0xbd0;
-    public const ulong m_SoundJiggle = 0xbd8;
-    public const ulong m_SoundLockedAnim = 0xbe0;
-    public const ulong m_numCloseAttempts = 0xbe8;
-    public const ulong m_nPhysicsMaterial = 0xbec;
-    public const ulong m_SlaveName = 0xbf0;
-    public const ulong m_hMaster = 0xbf8;
-    public const ulong m_OnBlockedClosing = 0xc00;
-    public const ulong m_OnBlockedOpening = 0xc28;
-    public const ulong m_OnUnblockedClosing = 0xc50;
-    public const ulong m_OnUnblockedOpening = 0xc78;
-    public const ulong m_OnFullyClosed = 0xca0;
-    public const ulong m_OnFullyOpen = 0xcc8;
-    public const ulong m_OnClose = 0xcf0;
-    public const ulong m_OnOpen = 0xd18;
-    public const ulong m_OnLockedUse = 0xd40;
-    public const ulong m_OnAjarOpen = 0xd68;
+    public const ulong m_flAutoReturnDelay = 0xb18;
+    public const ulong m_hDoorList = 0xb20;
+    public const ulong m_nHardwareType = 0xb38;
+    public const ulong m_bNeedsHardware = 0xb3c;
+    public const ulong m_eDoorState = 0xb40;
+    public const ulong m_bLocked = 0xb44;
+    public const ulong m_closedPosition = 0xb48;
+    public const ulong m_closedAngles = 0xb54;
+    public const ulong m_hBlocker = 0xb60;
+    public const ulong m_bFirstBlocked = 0xb64;
+    public const ulong m_ls = 0xb68;
+    public const ulong m_bForceClosed = 0xb88;
+    public const ulong m_vecLatchWorldPosition = 0xb8c;
+    public const ulong m_hActivator = 0xb98;
+    public const ulong m_SoundMoving = 0xba8;
+    public const ulong m_SoundOpen = 0xbb0;
+    public const ulong m_SoundClose = 0xbb8;
+    public const ulong m_SoundLock = 0xbc0;
+    public const ulong m_SoundUnlock = 0xbc8;
+    public const ulong m_SoundLatch = 0xbd0;
+    public const ulong m_SoundPound = 0xbd8;
+    public const ulong m_SoundJiggle = 0xbe0;
+    public const ulong m_SoundLockedAnim = 0xbe8;
+    public const ulong m_numCloseAttempts = 0xbf0;
+    public const ulong m_nPhysicsMaterial = 0xbf4;
+    public const ulong m_SlaveName = 0xbf8;
+    public const ulong m_hMaster = 0xc00;
+    public const ulong m_OnBlockedClosing = 0xc08;
+    public const ulong m_OnBlockedOpening = 0xc30;
+    public const ulong m_OnUnblockedClosing = 0xc58;
+    public const ulong m_OnUnblockedOpening = 0xc80;
+    public const ulong m_OnFullyClosed = 0xca8;
+    public const ulong m_OnFullyOpen = 0xcd0;
+    public const ulong m_OnClose = 0xcf8;
+    public const ulong m_OnOpen = 0xd20;
+    public const ulong m_OnLockedUse = 0xd48;
+    public const ulong m_OnAjarOpen = 0xd70;
 }
 
 public static class CBaseToggle {
@@ -704,17 +698,17 @@ public static class CBaseTrigger {
 }
 
 public static class CBaseViewModel {
-    public const ulong m_vecLastFacing = 0x890;
-    public const ulong m_nViewModelIndex = 0x89c;
-    public const ulong m_nAnimationParity = 0x8a0;
-    public const ulong m_flAnimationStartTime = 0x8a4;
-    public const ulong m_hWeapon = 0x8a8;
-    public const ulong m_sVMName = 0x8b0;
-    public const ulong m_sAnimationPrefix = 0x8b8;
-    public const ulong m_hOldLayerSequence = 0x8c0;
-    public const ulong m_oldLayer = 0x8c4;
-    public const ulong m_oldLayerStartTime = 0x8c8;
-    public const ulong m_hControlPanel = 0x8cc;
+    public const ulong m_vecLastFacing = 0x898;
+    public const ulong m_nViewModelIndex = 0x8a4;
+    public const ulong m_nAnimationParity = 0x8a8;
+    public const ulong m_flAnimationStartTime = 0x8ac;
+    public const ulong m_hWeapon = 0x8b0;
+    public const ulong m_sVMName = 0x8b8;
+    public const ulong m_sAnimationPrefix = 0x8c0;
+    public const ulong m_hOldLayerSequence = 0x8c8;
+    public const ulong m_oldLayer = 0x8cc;
+    public const ulong m_oldLayerStartTime = 0x8d0;
+    public const ulong m_hControlPanel = 0x8d4;
 }
 
 public static class CBeam {
@@ -788,30 +782,19 @@ public static class CBombTarget {
 }
 
 public static class CBot {
-    public const ulong m_pPlayer = 0x10;
-    public const ulong m_bHasSpawned = 0x18;
-    public const ulong m_id = 0x1c;
-    public const ulong m_isRunning = 0x90;
-    public const ulong m_isCrouching = 0x91;
-    public const ulong m_forwardSpeed = 0x94;
-    public const ulong m_leftSpeed = 0x98;
-    public const ulong m_verticalSpeed = 0x9c;
-    public const ulong m_buttonFlags = 0xa0;
-    public const ulong m_jumpTimestamp = 0xa8;
-    public const ulong m_viewForward = 0xac;
-    public const ulong m_postureStackIndex = 0xc8;
-}
-
-public static class CBreachChargeProjectile {
-    public const ulong m_bShouldExplode = 0x9c0;
-    public const ulong m_weaponThatThrewMe = 0x9c4;
-    public const ulong m_nParentBoneIndex = 0x9c8;
-    public const ulong m_vecParentBonePos = 0x9cc;
-    public const ulong m_bDefused = 0x9d8;
-    public const ulong m_bUnstuckFromPlayer = 0x9d9;
-    public const ulong m_bResolvedParent = 0x9da;
-    public const ulong m_vecLastKnownValidPos = 0x9dc;
-    public const ulong m_hDesiredParent = 0x9e8;
+    public const ulong m_pController = 0x10;
+    public const ulong m_pPlayer = 0x18;
+    public const ulong m_bHasSpawned = 0x20;
+    public const ulong m_id = 0x24;
+    public const ulong m_isRunning = 0x98;
+    public const ulong m_isCrouching = 0x99;
+    public const ulong m_forwardSpeed = 0x9c;
+    public const ulong m_leftSpeed = 0xa0;
+    public const ulong m_verticalSpeed = 0xa4;
+    public const ulong m_buttonFlags = 0xa8;
+    public const ulong m_jumpTimestamp = 0xb0;
+    public const ulong m_viewForward = 0xb4;
+    public const ulong m_postureStackIndex = 0xd0;
 }
 
 public static class CBreakable {
@@ -839,40 +822,40 @@ public static class CBreakable {
 }
 
 public static class CBreakableProp {
-    public const ulong m_OnBreak = 0x8d8;
-    public const ulong m_OnHealthChanged = 0x900;
-    public const ulong m_OnTakeDamage = 0x928;
-    public const ulong m_impactEnergyScale = 0x950;
-    public const ulong m_iMinHealthDmg = 0x954;
-    public const ulong m_preferredCarryAngles = 0x958;
-    public const ulong m_flPressureDelay = 0x964;
-    public const ulong m_hBreaker = 0x968;
-    public const ulong m_PerformanceMode = 0x96c;
-    public const ulong m_flDmgModBullet = 0x970;
-    public const ulong m_flDmgModClub = 0x974;
-    public const ulong m_flDmgModExplosive = 0x978;
-    public const ulong m_flDmgModFire = 0x97c;
-    public const ulong m_iszPhysicsDamageTableName = 0x980;
-    public const ulong m_iszBasePropData = 0x988;
-    public const ulong m_iInteractions = 0x990;
-    public const ulong m_flPreventDamageBeforeTime = 0x994;
-    public const ulong m_bHasBreakPiecesOrCommands = 0x998;
-    public const ulong m_explodeDamage = 0x99c;
-    public const ulong m_explodeRadius = 0x9a0;
-    public const ulong m_explosionDelay = 0x9a8;
-    public const ulong m_explosionBuildupSound = 0x9b0;
-    public const ulong m_explosionCustomEffect = 0x9b8;
-    public const ulong m_explosionCustomSound = 0x9c0;
-    public const ulong m_explosionModifier = 0x9c8;
-    public const ulong m_hPhysicsAttacker = 0x9d0;
-    public const ulong m_flLastPhysicsInfluenceTime = 0x9d4;
-    public const ulong m_bOriginalBlockLOS = 0x9d8;
-    public const ulong m_flDefaultFadeScale = 0x9dc;
-    public const ulong m_hLastAttacker = 0x9e0;
-    public const ulong m_hFlareEnt = 0x9e4;
-    public const ulong m_bUsePuntSound = 0x9e8;
-    public const ulong m_iszPuntSound = 0x9f0;
-    public const ulong m_noGhostCollision = 0x9f8;
+    public const ulong m_OnBreak = 0x8e0;
+    public const ulong m_OnHealthChanged = 0x908;
+    public const ulong m_OnTakeDamage = 0x930;
+    public const ulong m_impactEnergyScale = 0x958;
+    public const ulong m_iMinHealthDmg = 0x95c;
+    public const ulong m_preferredCarryAngles = 0x960;
+    public const ulong m_flPressureDelay = 0x96c;
+    public const ulong m_hBreaker = 0x970;
+    public const ulong m_PerformanceMode = 0x974;
+    public const ulong m_flDmgModBullet = 0x978;
+    public const ulong m_flDmgModClub = 0x97c;
+    public const ulong m_flDmgModExplosive = 0x980;
+    public const ulong m_flDmgModFire = 0x984;
+    public const ulong m_iszPhysicsDamageTableName = 0x988;
+    public const ulong m_iszBasePropData = 0x990;
+    public const ulong m_iInteractions = 0x998;
+    public const ulong m_flPreventDamageBeforeTime = 0x99c;
+    public const ulong m_bHasBreakPiecesOrCommands = 0x9a0;
+    public const ulong m_explodeDamage = 0x9a4;
+    public const ulong m_explodeRadius = 0x9a8;
+    public const ulong m_explosionDelay = 0x9b0;
+    public const ulong m_explosionBuildupSound = 0x9b8;
+    public const ulong m_explosionCustomEffect = 0x9c0;
+    public const ulong m_explosionCustomSound = 0x9c8;
+    public const ulong m_explosionModifier = 0x9d0;
+    public const ulong m_hPhysicsAttacker = 0x9d8;
+    public const ulong m_flLastPhysicsInfluenceTime = 0x9dc;
+    public const ulong m_bOriginalBlockLOS = 0x9e0;
+    public const ulong m_flDefaultFadeScale = 0x9e4;
+    public const ulong m_hLastAttacker = 0x9e8;
+    public const ulong m_hFlareEnt = 0x9ec;
+    public const ulong m_bUsePuntSound = 0x9f0;
+    public const ulong m_iszPuntSound = 0x9f8;
+    public const ulong m_noGhostCollision = 0xa00;
 }
 
 public static class CBreakableStageHelper {
@@ -939,20 +922,6 @@ public static class CBubbling {
     public const ulong m_state = 0x708;
 }
 
-public static class CBumpMineProjectile {
-    public const ulong m_bShouldExplode = 0x9c0;
-    public const ulong m_nParentBoneIndex = 0x9c4;
-    public const ulong m_vecParentBonePos = 0x9c8;
-    public const ulong m_bArmed = 0x9d4;
-    public const ulong m_bDefused = 0x9d5;
-    public const ulong m_bUnstuckFromPlayer = 0x9d6;
-    public const ulong m_vecTargetedObjects = 0x9d8;
-    public const ulong m_bResolvedParent = 0xa18;
-    public const ulong m_vecLastKnownValidPos = 0xa1c;
-    public const ulong m_hDesiredParent = 0xa28;
-    public const ulong m_bBeingUsed = 0xa2c;
-}
-
 public static class CBuoyancyHelper {
     public const ulong m_flFluidDensity = 0x18;
 }
@@ -962,191 +931,167 @@ public static class CBuyZone {
 }
 
 public static class CC4 {
-    public const ulong m_vecLastValidPlayerHeldPosition = 0xdd0;
-    public const ulong m_vecLastValidDroppedPosition = 0xddc;
-    public const ulong m_bDoValidDroppedPositionCheck = 0xde8;
-    public const ulong m_bStartedArming = 0xde9;
-    public const ulong m_fArmedTime = 0xdec;
-    public const ulong m_bBombPlacedAnimation = 0xdf0;
-    public const ulong m_bIsPlantingViaUse = 0xdf1;
-    public const ulong m_entitySpottedState = 0xdf8;
-    public const ulong m_nSpotRules = 0xe10;
-    public const ulong m_bPlayedArmingBeeps = 0xe14;
-    public const ulong m_bBombPlanted = 0xe1b;
-    public const ulong m_bDroppedFromDeath = 0xe1c;
+    public const ulong m_vecLastValidPlayerHeldPosition = 0xdd8;
+    public const ulong m_vecLastValidDroppedPosition = 0xde4;
+    public const ulong m_bDoValidDroppedPositionCheck = 0xdf0;
+    public const ulong m_bStartedArming = 0xdf1;
+    public const ulong m_fArmedTime = 0xdf4;
+    public const ulong m_bBombPlacedAnimation = 0xdf8;
+    public const ulong m_bIsPlantingViaUse = 0xdf9;
+    public const ulong m_entitySpottedState = 0xe00;
+    public const ulong m_nSpotRules = 0xe18;
+    public const ulong m_bPlayedArmingBeeps = 0xe1c;
+    public const ulong m_bBombPlanted = 0xe23;
+    public const ulong m_bDroppedFromDeath = 0xe24;
 }
 
 public static class CCSBot {
-    public const ulong m_lastCoopSpawnPoint = 0xd0;
-    public const ulong m_eyePosition = 0xe0;
-    public const ulong m_name = 0xec;
-    public const ulong m_combatRange = 0x12c;
-    public const ulong m_isRogue = 0x130;
-    public const ulong m_rogueTimer = 0x138;
-    public const ulong m_diedLastRound = 0x154;
-    public const ulong m_safeTime = 0x158;
-    public const ulong m_wasSafe = 0x15c;
-    public const ulong m_blindFire = 0x164;
-    public const ulong m_surpriseTimer = 0x168;
-    public const ulong m_bAllowActive = 0x180;
-    public const ulong m_isFollowing = 0x181;
-    public const ulong m_leader = 0x184;
-    public const ulong m_followTimestamp = 0x188;
-    public const ulong m_allowAutoFollowTime = 0x18c;
-    public const ulong m_hurryTimer = 0x190;
-    public const ulong m_alertTimer = 0x1a8;
-    public const ulong m_sneakTimer = 0x1c0;
-    public const ulong m_panicTimer = 0x1d8;
-    public const ulong m_stateTimestamp = 0x4d8;
-    public const ulong m_isAttacking = 0x4dc;
-    public const ulong m_isOpeningDoor = 0x4dd;
-    public const ulong m_taskEntity = 0x4e4;
-    public const ulong m_goalPosition = 0x4f4;
-    public const ulong m_goalEntity = 0x500;
-    public const ulong m_avoid = 0x504;
-    public const ulong m_avoidTimestamp = 0x508;
-    public const ulong m_isStopping = 0x50c;
-    public const ulong m_hasVisitedEnemySpawn = 0x50d;
-    public const ulong m_stillTimer = 0x510;
-    public const ulong m_bEyeAnglesUnderPathFinderControl = 0x520;
-    public const ulong m_pathIndex = 0x6618;
-    public const ulong m_areaEnteredTimestamp = 0x661c;
-    public const ulong m_repathTimer = 0x6620;
-    public const ulong m_avoidFriendTimer = 0x6638;
-    public const ulong m_isFriendInTheWay = 0x6650;
-    public const ulong m_politeTimer = 0x6658;
-    public const ulong m_isWaitingBehindFriend = 0x6670;
-    public const ulong m_pathLadderEnd = 0x669c;
-    public const ulong m_mustRunTimer = 0x66e8;
-    public const ulong m_waitTimer = 0x6700;
-    public const ulong m_updateTravelDistanceTimer = 0x6718;
-    public const ulong m_playerTravelDistance = 0x6730;
-    public const ulong m_travelDistancePhase = 0x6830;
-    public const ulong m_hostageEscortCount = 0x69c8;
-    public const ulong m_hostageEscortCountTimestamp = 0x69cc;
-    public const ulong m_desiredTeam = 0x69d0;
-    public const ulong m_hasJoined = 0x69d4;
-    public const ulong m_isWaitingForHostage = 0x69d5;
-    public const ulong m_inhibitWaitingForHostageTimer = 0x69d8;
-    public const ulong m_waitForHostageTimer = 0x69f0;
-    public const ulong m_noisePosition = 0x6a08;
-    public const ulong m_noiseTravelDistance = 0x6a14;
-    public const ulong m_noiseTimestamp = 0x6a18;
-    public const ulong m_noiseSource = 0x6a20;
-    public const ulong m_noiseBendTimer = 0x6a38;
-    public const ulong m_bentNoisePosition = 0x6a50;
-    public const ulong m_bendNoisePositionValid = 0x6a5c;
-    public const ulong m_lookAroundStateTimestamp = 0x6a60;
-    public const ulong m_lookAheadAngle = 0x6a64;
-    public const ulong m_forwardAngle = 0x6a68;
-    public const ulong m_inhibitLookAroundTimestamp = 0x6a6c;
-    public const ulong m_lookAtSpot = 0x6a74;
-    public const ulong m_lookAtSpotDuration = 0x6a84;
-    public const ulong m_lookAtSpotTimestamp = 0x6a88;
-    public const ulong m_lookAtSpotAngleTolerance = 0x6a8c;
-    public const ulong m_lookAtSpotClearIfClose = 0x6a90;
-    public const ulong m_lookAtSpotAttack = 0x6a91;
-    public const ulong m_lookAtDesc = 0x6a98;
-    public const ulong m_peripheralTimestamp = 0x6aa0;
-    public const ulong m_approachPointCount = 0x6c28;
-    public const ulong m_approachPointViewPosition = 0x6c2c;
-    public const ulong m_viewSteadyTimer = 0x6c38;
-    public const ulong m_tossGrenadeTimer = 0x6c50;
-    public const ulong m_isAvoidingGrenade = 0x6c70;
-    public const ulong m_spotCheckTimestamp = 0x6c90;
-    public const ulong m_checkedHidingSpotCount = 0x7098;
-    public const ulong m_lookPitch = 0x709c;
-    public const ulong m_lookPitchVel = 0x70a0;
-    public const ulong m_lookYaw = 0x70a4;
-    public const ulong m_lookYawVel = 0x70a8;
-    public const ulong m_targetSpot = 0x70ac;
-    public const ulong m_targetSpotVelocity = 0x70b8;
-    public const ulong m_targetSpotPredicted = 0x70c4;
-    public const ulong m_aimError = 0x70d0;
-    public const ulong m_aimGoal = 0x70dc;
-    public const ulong m_targetSpotTime = 0x70e8;
-    public const ulong m_aimFocus = 0x70ec;
-    public const ulong m_aimFocusInterval = 0x70f0;
-    public const ulong m_aimFocusNextUpdate = 0x70f4;
-    public const ulong m_ignoreEnemiesTimer = 0x7100;
-    public const ulong m_enemy = 0x7118;
-    public const ulong m_isEnemyVisible = 0x711c;
-    public const ulong m_visibleEnemyParts = 0x711d;
-    public const ulong m_lastEnemyPosition = 0x7120;
-    public const ulong m_lastSawEnemyTimestamp = 0x712c;
-    public const ulong m_firstSawEnemyTimestamp = 0x7130;
-    public const ulong m_currentEnemyAcquireTimestamp = 0x7134;
-    public const ulong m_enemyDeathTimestamp = 0x7138;
-    public const ulong m_friendDeathTimestamp = 0x713c;
-    public const ulong m_isLastEnemyDead = 0x7140;
-    public const ulong m_nearbyEnemyCount = 0x7144;
-    public const ulong m_bomber = 0x7350;
-    public const ulong m_nearbyFriendCount = 0x7354;
-    public const ulong m_closestVisibleFriend = 0x7358;
-    public const ulong m_closestVisibleHumanFriend = 0x735c;
-    public const ulong m_attentionInterval = 0x7360;
-    public const ulong m_attacker = 0x7370;
-    public const ulong m_attackedTimestamp = 0x7374;
-    public const ulong m_burnedByFlamesTimer = 0x7378;
-    public const ulong m_lastVictimID = 0x7388;
-    public const ulong m_isAimingAtEnemy = 0x738c;
-    public const ulong m_isRapidFiring = 0x738d;
-    public const ulong m_equipTimer = 0x7390;
-    public const ulong m_zoomTimer = 0x73a0;
-    public const ulong m_fireWeaponTimestamp = 0x73b8;
-    public const ulong m_lookForWeaponsOnGroundTimer = 0x73c0;
-    public const ulong m_bIsSleeping = 0x73d8;
-    public const ulong m_isEnemySniperVisible = 0x73d9;
-    public const ulong m_sawEnemySniperTimer = 0x73e0;
-    public const ulong m_enemyQueueIndex = 0x7498;
-    public const ulong m_enemyQueueCount = 0x7499;
-    public const ulong m_enemyQueueAttendIndex = 0x749a;
-    public const ulong m_isStuck = 0x749b;
-    public const ulong m_stuckTimestamp = 0x749c;
-    public const ulong m_stuckSpot = 0x74a0;
-    public const ulong m_wiggleTimer = 0x74b0;
-    public const ulong m_stuckJumpTimer = 0x74c8;
-    public const ulong m_nextCleanupCheckTimestamp = 0x74e0;
-    public const ulong m_avgVel = 0x74e4;
-    public const ulong m_avgVelIndex = 0x750c;
-    public const ulong m_avgVelCount = 0x7510;
-    public const ulong m_lastOrigin = 0x7514;
-    public const ulong m_lastRadioRecievedTimestamp = 0x7524;
-    public const ulong m_lastRadioSentTimestamp = 0x7528;
-    public const ulong m_radioSubject = 0x752c;
-    public const ulong m_radioPosition = 0x7530;
-    public const ulong m_voiceEndTimestamp = 0x753c;
-    public const ulong m_lastValidReactionQueueFrame = 0x7548;
-}
-
-public static class CCSEnvGunfire {
-    public const ulong m_iMinBurstSize = 0x4b0;
-    public const ulong m_iMaxBurstSize = 0x4b4;
-    public const ulong m_flMinBurstDelay = 0x4b8;
-    public const ulong m_flMaxBurstDelay = 0x4bc;
-    public const ulong m_flRateOfFire = 0x4c0;
-    public const ulong m_iszShootSound = 0x4c8;
-    public const ulong m_iszTracerType = 0x4d0;
-    public const ulong m_iszWeaponName = 0x4d8;
-    public const ulong m_bDisabled = 0x4e0;
-    public const ulong m_iShotsRemaining = 0x4e4;
-    public const ulong m_iSpread = 0x4e8;
-    public const ulong m_vecSpread = 0x4ec;
-    public const ulong m_vecTargetPosition = 0x4f4;
-    public const ulong m_flTargetDist = 0x500;
-    public const ulong m_flBias = 0x504;
-    public const ulong m_bCollide = 0x508;
-    public const ulong m_hTarget = 0x50c;
-    public const ulong m_bAllowNullTarget = 0x510;
-    public const ulong m_bAlwaysWallbangTracer = 0x511;
-    public const ulong m_flDamageScaleValue = 0x514;
-    public const ulong m_flAdditionalSpread = 0x518;
+    public const ulong m_lastCoopSpawnPoint = 0xd8;
+    public const ulong m_eyePosition = 0xe8;
+    public const ulong m_name = 0xf4;
+    public const ulong m_combatRange = 0x134;
+    public const ulong m_isRogue = 0x138;
+    public const ulong m_rogueTimer = 0x140;
+    public const ulong m_diedLastRound = 0x15c;
+    public const ulong m_safeTime = 0x160;
+    public const ulong m_wasSafe = 0x164;
+    public const ulong m_blindFire = 0x16c;
+    public const ulong m_surpriseTimer = 0x170;
+    public const ulong m_bAllowActive = 0x188;
+    public const ulong m_isFollowing = 0x189;
+    public const ulong m_leader = 0x18c;
+    public const ulong m_followTimestamp = 0x190;
+    public const ulong m_allowAutoFollowTime = 0x194;
+    public const ulong m_hurryTimer = 0x198;
+    public const ulong m_alertTimer = 0x1b0;
+    public const ulong m_sneakTimer = 0x1c8;
+    public const ulong m_panicTimer = 0x1e0;
+    public const ulong m_stateTimestamp = 0x4b0;
+    public const ulong m_isAttacking = 0x4b4;
+    public const ulong m_isOpeningDoor = 0x4b5;
+    public const ulong m_taskEntity = 0x4bc;
+    public const ulong m_goalPosition = 0x4cc;
+    public const ulong m_goalEntity = 0x4d8;
+    public const ulong m_avoid = 0x4dc;
+    public const ulong m_avoidTimestamp = 0x4e0;
+    public const ulong m_isStopping = 0x4e4;
+    public const ulong m_hasVisitedEnemySpawn = 0x4e5;
+    public const ulong m_stillTimer = 0x4e8;
+    public const ulong m_bEyeAnglesUnderPathFinderControl = 0x4f8;
+    public const ulong m_pathIndex = 0x65f0;
+    public const ulong m_areaEnteredTimestamp = 0x65f4;
+    public const ulong m_repathTimer = 0x65f8;
+    public const ulong m_avoidFriendTimer = 0x6610;
+    public const ulong m_isFriendInTheWay = 0x6628;
+    public const ulong m_politeTimer = 0x6630;
+    public const ulong m_isWaitingBehindFriend = 0x6648;
+    public const ulong m_pathLadderEnd = 0x6674;
+    public const ulong m_mustRunTimer = 0x66c0;
+    public const ulong m_waitTimer = 0x66d8;
+    public const ulong m_updateTravelDistanceTimer = 0x66f0;
+    public const ulong m_playerTravelDistance = 0x6708;
+    public const ulong m_travelDistancePhase = 0x6808;
+    public const ulong m_hostageEscortCount = 0x69a0;
+    public const ulong m_hostageEscortCountTimestamp = 0x69a4;
+    public const ulong m_desiredTeam = 0x69a8;
+    public const ulong m_hasJoined = 0x69ac;
+    public const ulong m_isWaitingForHostage = 0x69ad;
+    public const ulong m_inhibitWaitingForHostageTimer = 0x69b0;
+    public const ulong m_waitForHostageTimer = 0x69c8;
+    public const ulong m_noisePosition = 0x69e0;
+    public const ulong m_noiseTravelDistance = 0x69ec;
+    public const ulong m_noiseTimestamp = 0x69f0;
+    public const ulong m_noiseSource = 0x69f8;
+    public const ulong m_noiseBendTimer = 0x6a10;
+    public const ulong m_bentNoisePosition = 0x6a28;
+    public const ulong m_bendNoisePositionValid = 0x6a34;
+    public const ulong m_lookAroundStateTimestamp = 0x6a38;
+    public const ulong m_lookAheadAngle = 0x6a3c;
+    public const ulong m_forwardAngle = 0x6a40;
+    public const ulong m_inhibitLookAroundTimestamp = 0x6a44;
+    public const ulong m_lookAtSpot = 0x6a4c;
+    public const ulong m_lookAtSpotDuration = 0x6a5c;
+    public const ulong m_lookAtSpotTimestamp = 0x6a60;
+    public const ulong m_lookAtSpotAngleTolerance = 0x6a64;
+    public const ulong m_lookAtSpotClearIfClose = 0x6a68;
+    public const ulong m_lookAtSpotAttack = 0x6a69;
+    public const ulong m_lookAtDesc = 0x6a70;
+    public const ulong m_peripheralTimestamp = 0x6a78;
+    public const ulong m_approachPointCount = 0x6c00;
+    public const ulong m_approachPointViewPosition = 0x6c04;
+    public const ulong m_viewSteadyTimer = 0x6c10;
+    public const ulong m_tossGrenadeTimer = 0x6c28;
+    public const ulong m_isAvoidingGrenade = 0x6c48;
+    public const ulong m_spotCheckTimestamp = 0x6c68;
+    public const ulong m_checkedHidingSpotCount = 0x7070;
+    public const ulong m_lookPitch = 0x7074;
+    public const ulong m_lookPitchVel = 0x7078;
+    public const ulong m_lookYaw = 0x707c;
+    public const ulong m_lookYawVel = 0x7080;
+    public const ulong m_targetSpot = 0x7084;
+    public const ulong m_targetSpotVelocity = 0x7090;
+    public const ulong m_targetSpotPredicted = 0x709c;
+    public const ulong m_aimError = 0x70a8;
+    public const ulong m_aimGoal = 0x70b4;
+    public const ulong m_targetSpotTime = 0x70c0;
+    public const ulong m_aimFocus = 0x70c4;
+    public const ulong m_aimFocusInterval = 0x70c8;
+    public const ulong m_aimFocusNextUpdate = 0x70cc;
+    public const ulong m_ignoreEnemiesTimer = 0x70d8;
+    public const ulong m_enemy = 0x70f0;
+    public const ulong m_isEnemyVisible = 0x70f4;
+    public const ulong m_visibleEnemyParts = 0x70f5;
+    public const ulong m_lastEnemyPosition = 0x70f8;
+    public const ulong m_lastSawEnemyTimestamp = 0x7104;
+    public const ulong m_firstSawEnemyTimestamp = 0x7108;
+    public const ulong m_currentEnemyAcquireTimestamp = 0x710c;
+    public const ulong m_enemyDeathTimestamp = 0x7110;
+    public const ulong m_friendDeathTimestamp = 0x7114;
+    public const ulong m_isLastEnemyDead = 0x7118;
+    public const ulong m_nearbyEnemyCount = 0x711c;
+    public const ulong m_bomber = 0x7328;
+    public const ulong m_nearbyFriendCount = 0x732c;
+    public const ulong m_closestVisibleFriend = 0x7330;
+    public const ulong m_closestVisibleHumanFriend = 0x7334;
+    public const ulong m_attentionInterval = 0x7338;
+    public const ulong m_attacker = 0x7348;
+    public const ulong m_attackedTimestamp = 0x734c;
+    public const ulong m_burnedByFlamesTimer = 0x7350;
+    public const ulong m_lastVictimID = 0x7360;
+    public const ulong m_isAimingAtEnemy = 0x7364;
+    public const ulong m_isRapidFiring = 0x7365;
+    public const ulong m_equipTimer = 0x7368;
+    public const ulong m_zoomTimer = 0x7378;
+    public const ulong m_fireWeaponTimestamp = 0x7390;
+    public const ulong m_lookForWeaponsOnGroundTimer = 0x7398;
+    public const ulong m_bIsSleeping = 0x73b0;
+    public const ulong m_isEnemySniperVisible = 0x73b1;
+    public const ulong m_sawEnemySniperTimer = 0x73b8;
+    public const ulong m_enemyQueueIndex = 0x7470;
+    public const ulong m_enemyQueueCount = 0x7471;
+    public const ulong m_enemyQueueAttendIndex = 0x7472;
+    public const ulong m_isStuck = 0x7473;
+    public const ulong m_stuckTimestamp = 0x7474;
+    public const ulong m_stuckSpot = 0x7478;
+    public const ulong m_wiggleTimer = 0x7488;
+    public const ulong m_stuckJumpTimer = 0x74a0;
+    public const ulong m_nextCleanupCheckTimestamp = 0x74b8;
+    public const ulong m_avgVel = 0x74bc;
+    public const ulong m_avgVelIndex = 0x74e4;
+    public const ulong m_avgVelCount = 0x74e8;
+    public const ulong m_lastOrigin = 0x74ec;
+    public const ulong m_lastRadioRecievedTimestamp = 0x74fc;
+    public const ulong m_lastRadioSentTimestamp = 0x7500;
+    public const ulong m_radioSubject = 0x7504;
+    public const ulong m_radioPosition = 0x7508;
+    public const ulong m_voiceEndTimestamp = 0x7514;
+    public const ulong m_lastValidReactionQueueFrame = 0x7520;
 }
 
 public static class CCSGOViewModel {
-    public const ulong m_bShouldIgnoreOffsetAndAccuracy = 0x8d0;
-    public const ulong m_nWeaponParity = 0x8d4;
-    public const ulong m_nOldWeaponParity = 0x8d8;
+    public const ulong m_bShouldIgnoreOffsetAndAccuracy = 0x8d8;
+    public const ulong m_nWeaponParity = 0x8dc;
+    public const ulong m_nOldWeaponParity = 0x8e0;
 }
 
 public static class CCSGO_TeamPreviewCharacterPosition {
@@ -1210,170 +1155,160 @@ public static class CCSGameRules {
     public const ulong m_bIsValveDS = 0x12c;
     public const ulong m_bLogoMap = 0x12d;
     public const ulong m_bPlayAllStepSoundsOnServer = 0x12e;
-    public const ulong m_iNumGunGameProgressiveWeaponsCT = 0x130;
-    public const ulong m_iNumGunGameProgressiveWeaponsT = 0x134;
-    public const ulong m_iSpectatorSlotCount = 0x138;
-    public const ulong m_GGProgressiveWeaponOrderCT = 0x13c;
-    public const ulong m_GGProgressiveWeaponOrderT = 0x22c;
-    public const ulong m_GGProgressiveWeaponKillUpgradeOrderCT = 0x31c;
-    public const ulong m_GGProgressiveWeaponKillUpgradeOrderT = 0x40c;
-    public const ulong m_MatchDevice = 0x4fc;
-    public const ulong m_bHasMatchStarted = 0x500;
-    public const ulong m_nNextMapInMapgroup = 0x504;
-    public const ulong m_szTournamentEventName = 0x508;
-    public const ulong m_szTournamentEventStage = 0x708;
-    public const ulong m_szMatchStatTxt = 0x908;
-    public const ulong m_szTournamentPredictionsTxt = 0xb08;
-    public const ulong m_nTournamentPredictionsPct = 0xd08;
-    public const ulong m_flCMMItemDropRevealStartTime = 0xd0c;
-    public const ulong m_flCMMItemDropRevealEndTime = 0xd10;
-    public const ulong m_bIsDroppingItems = 0xd14;
-    public const ulong m_bIsQuestEligible = 0xd15;
-    public const ulong m_nGuardianModeWaveNumber = 0xd18;
-    public const ulong m_nGuardianModeSpecialKillsRemaining = 0xd1c;
-    public const ulong m_nGuardianModeSpecialWeaponNeeded = 0xd20;
-    public const ulong m_nGuardianGrenadesToGiveBots = 0xd24;
-    public const ulong m_nNumHeaviesToSpawn = 0xd28;
-    public const ulong m_numGlobalGiftsGiven = 0xd2c;
-    public const ulong m_numGlobalGifters = 0xd30;
-    public const ulong m_numGlobalGiftsPeriodSeconds = 0xd34;
-    public const ulong m_arrFeaturedGiftersAccounts = 0xd38;
-    public const ulong m_arrFeaturedGiftersGifts = 0xd48;
-    public const ulong m_arrProhibitedItemIndices = 0xd58;
-    public const ulong m_arrTournamentActiveCasterAccounts = 0xe20;
-    public const ulong m_numBestOfMaps = 0xe30;
-    public const ulong m_nHalloweenMaskListSeed = 0xe34;
-    public const ulong m_bBombDropped = 0xe38;
-    public const ulong m_bBombPlanted = 0xe39;
-    public const ulong m_iRoundWinStatus = 0xe3c;
-    public const ulong m_eRoundWinReason = 0xe40;
-    public const ulong m_bTCantBuy = 0xe44;
-    public const ulong m_bCTCantBuy = 0xe45;
-    public const ulong m_flGuardianBuyUntilTime = 0xe48;
-    public const ulong m_iMatchStats_RoundResults = 0xe4c;
-    public const ulong m_iMatchStats_PlayersAlive_CT = 0xec4;
-    public const ulong m_iMatchStats_PlayersAlive_T = 0xf3c;
-    public const ulong m_TeamRespawnWaveTimes = 0xfb4;
-    public const ulong m_flNextRespawnWave = 0x1034;
-    public const ulong m_nServerQuestID = 0x10b4;
-    public const ulong m_vMinimapMins = 0x10b8;
-    public const ulong m_vMinimapMaxs = 0x10c4;
-    public const ulong m_MinimapVerticalSectionHeights = 0x10d0;
-    public const ulong m_bDontIncrementCoopWave = 0x10f0;
-    public const ulong m_bSpawnedTerrorHuntHeavy = 0x10f1;
-    public const ulong m_nEndMatchMapGroupVoteTypes = 0x10f4;
-    public const ulong m_nEndMatchMapGroupVoteOptions = 0x111c;
-    public const ulong m_nEndMatchMapVoteWinner = 0x1144;
-    public const ulong m_iNumConsecutiveCTLoses = 0x1148;
-    public const ulong m_iNumConsecutiveTerroristLoses = 0x114c;
-    public const ulong m_bHasHostageBeenTouched = 0x1168;
-    public const ulong m_flIntermissionStartTime = 0x116c;
-    public const ulong m_flIntermissionEndTime = 0x1170;
-    public const ulong m_bLevelInitialized = 0x1174;
-    public const ulong m_iTotalRoundsPlayed = 0x1178;
-    public const ulong m_iUnBalancedRounds = 0x117c;
-    public const ulong m_endMatchOnRoundReset = 0x1180;
-    public const ulong m_endMatchOnThink = 0x1181;
-    public const ulong m_iFreezeTime = 0x1184;
-    public const ulong m_iNumTerrorist = 0x1188;
-    public const ulong m_iNumCT = 0x118c;
-    public const ulong m_iNumSpawnableTerrorist = 0x1190;
-    public const ulong m_iNumSpawnableCT = 0x1194;
-    public const ulong m_arrSelectedHostageSpawnIndices = 0x1198;
-    public const ulong m_bFirstConnected = 0x11b0;
-    public const ulong m_bCompleteReset = 0x11b1;
-    public const ulong m_bPickNewTeamsOnReset = 0x11b2;
-    public const ulong m_bScrambleTeamsOnRestart = 0x11b3;
-    public const ulong m_bSwapTeamsOnRestart = 0x11b4;
-    public const ulong m_nEndMatchTiedVotes = 0x11c0;
-    public const ulong m_bNeedToAskPlayersForContinueVote = 0x11dc;
-    public const ulong m_numQueuedMatchmakingAccounts = 0x11e0;
-    public const ulong m_pQueuedMatchmakingReservationString = 0x11e8;
-    public const ulong m_numTotalTournamentDrops = 0x11f0;
-    public const ulong m_numSpectatorsCountMax = 0x11f4;
-    public const ulong m_numSpectatorsCountMaxTV = 0x11f8;
-    public const ulong m_numSpectatorsCountMaxLnk = 0x11fc;
-    public const ulong m_bForceTeamChangeSilent = 0x1208;
-    public const ulong m_bLoadingRoundBackupData = 0x1209;
-    public const ulong m_nMatchInfoShowType = 0x1240;
-    public const ulong m_flMatchInfoDecidedTime = 0x1244;
-    public const ulong m_flCoopRespawnAndHealTime = 0x1260;
-    public const ulong m_coopBonusCoinsFound = 0x1264;
-    public const ulong m_coopBonusPistolsOnly = 0x1268;
-    public const ulong m_coopPlayersInDeploymentZone = 0x1269;
-    public const ulong m_coopMissionDeadPlayerRespawnEnabled = 0x126a;
-    public const ulong mTeamDMLastWinningTeamNumber = 0x126c;
-    public const ulong mTeamDMLastThinkTime = 0x1270;
-    public const ulong m_flTeamDMLastAnnouncementTime = 0x1274;
-    public const ulong m_iAccountTerrorist = 0x1278;
-    public const ulong m_iAccountCT = 0x127c;
-    public const ulong m_iSpawnPointCount_Terrorist = 0x1280;
-    public const ulong m_iSpawnPointCount_CT = 0x1284;
-    public const ulong m_iMaxNumTerrorists = 0x1288;
-    public const ulong m_iMaxNumCTs = 0x128c;
-    public const ulong m_iLoserBonus = 0x1290;
-    public const ulong m_iLoserBonusMostRecentTeam = 0x1294;
-    public const ulong m_tmNextPeriodicThink = 0x1298;
-    public const ulong m_bVoiceWonMatchBragFired = 0x129c;
-    public const ulong m_fWarmupNextChatNoticeTime = 0x12a0;
-    public const ulong m_iHostagesRescued = 0x12a8;
-    public const ulong m_iHostagesTouched = 0x12ac;
-    public const ulong m_flNextHostageAnnouncement = 0x12b0;
-    public const ulong m_bNoTerroristsKilled = 0x12b4;
-    public const ulong m_bNoCTsKilled = 0x12b5;
-    public const ulong m_bNoEnemiesKilled = 0x12b6;
-    public const ulong m_bCanDonateWeapons = 0x12b7;
-    public const ulong m_firstKillTime = 0x12bc;
-    public const ulong m_firstBloodTime = 0x12c4;
-    public const ulong m_hostageWasInjured = 0x12e0;
-    public const ulong m_hostageWasKilled = 0x12e1;
-    public const ulong m_bVoteCalled = 0x12f0;
-    public const ulong m_bServerVoteOnReset = 0x12f1;
-    public const ulong m_flVoteCheckThrottle = 0x12f4;
-    public const ulong m_bBuyTimeEnded = 0x12f8;
-    public const ulong m_nLastFreezeEndBeep = 0x12fc;
-    public const ulong m_bTargetBombed = 0x1300;
-    public const ulong m_bBombDefused = 0x1301;
-    public const ulong m_bMapHasBombZone = 0x1302;
-    public const ulong m_bGunGameRespawnWithBomb = 0x1303;
-    public const ulong m_fGunGameBombRespawnTimer = 0x1304;
-    public const ulong m_vecMainCTSpawnPos = 0x1324;
-    public const ulong m_CTSpawnPointsMasterList = 0x1330;
-    public const ulong m_TerroristSpawnPointsMasterList = 0x1348;
-    public const ulong m_iNextCTSpawnPoint = 0x1360;
-    public const ulong m_iNextTerroristSpawnPoint = 0x1364;
-    public const ulong m_CTSpawnPoints = 0x1368;
-    public const ulong m_TerroristSpawnPoints = 0x1380;
-    public const ulong m_bIsUnreservedGameServer = 0x1398;
-    public const ulong m_fAutobalanceDisplayTime = 0x139c;
-    public const ulong m_bAllowWeaponSwitch = 0x1608;
-    public const ulong m_bRoundTimeWarningTriggered = 0x1609;
-    public const ulong m_phaseChangeAnnouncementTime = 0x160c;
-    public const ulong m_fNextUpdateTeamClanNamesTime = 0x1610;
-    public const ulong m_flLastThinkTime = 0x1614;
-    public const ulong m_fAccumulatedRoundOffDamage = 0x1618;
-    public const ulong m_nShorthandedBonusLastEvalRound = 0x161c;
-    public const ulong m_bMatchAbortedDueToPlayerBan = 0x1898;
-    public const ulong m_bHasTriggeredRoundStartMusic = 0x1899;
-    public const ulong m_bHasTriggeredCoopSpawnReset = 0x189a;
-    public const ulong m_bSwitchingTeamsAtRoundReset = 0x189b;
-    public const ulong m_iMaxGunGameProgressiveWeaponIndex = 0x189c;
-    public const ulong m_pGameModeRules = 0x18b8;
-    public const ulong m_SurvivalRules = 0x18c0;
-    public const ulong m_BtGlobalBlackboard = 0x3558;
-    public const ulong m_hPlayerResource = 0x35c0;
-    public const ulong m_RetakeRules = 0x35c8;
-    public const ulong m_GuardianBotSkillLevelMax = 0x37ac;
-    public const ulong m_GuardianBotSkillLevelMin = 0x37b0;
-    public const ulong m_arrTeamUniqueKillWeaponsMatch = 0x37b8;
-    public const ulong m_bTeamLastKillUsedUniqueWeaponMatch = 0x3818;
-    public const ulong m_nMatchEndCount = 0x3840;
-    public const ulong m_nTTeamIntroVariant = 0x3844;
-    public const ulong m_nCTTeamIntroVariant = 0x3848;
-    public const ulong m_bTeamIntroPeriod = 0x384c;
-    public const ulong m_fTeamIntroPeriodEnd = 0x3850;
-    public const ulong m_bPlayedTeamIntroVO = 0x3854;
-    public const ulong m_flLastPerfSampleTime = 0x4810;
+    public const ulong m_iSpectatorSlotCount = 0x130;
+    public const ulong m_MatchDevice = 0x134;
+    public const ulong m_bHasMatchStarted = 0x138;
+    public const ulong m_nNextMapInMapgroup = 0x13c;
+    public const ulong m_szTournamentEventName = 0x140;
+    public const ulong m_szTournamentEventStage = 0x340;
+    public const ulong m_szMatchStatTxt = 0x540;
+    public const ulong m_szTournamentPredictionsTxt = 0x740;
+    public const ulong m_nTournamentPredictionsPct = 0x940;
+    public const ulong m_flCMMItemDropRevealStartTime = 0x944;
+    public const ulong m_flCMMItemDropRevealEndTime = 0x948;
+    public const ulong m_bIsDroppingItems = 0x94c;
+    public const ulong m_bIsQuestEligible = 0x94d;
+    public const ulong m_nGuardianModeWaveNumber = 0x950;
+    public const ulong m_nGuardianModeSpecialKillsRemaining = 0x954;
+    public const ulong m_nGuardianModeSpecialWeaponNeeded = 0x958;
+    public const ulong m_nGuardianGrenadesToGiveBots = 0x95c;
+    public const ulong m_nNumHeaviesToSpawn = 0x960;
+    public const ulong m_numGlobalGiftsGiven = 0x964;
+    public const ulong m_numGlobalGifters = 0x968;
+    public const ulong m_numGlobalGiftsPeriodSeconds = 0x96c;
+    public const ulong m_arrFeaturedGiftersAccounts = 0x970;
+    public const ulong m_arrFeaturedGiftersGifts = 0x980;
+    public const ulong m_arrProhibitedItemIndices = 0x990;
+    public const ulong m_arrTournamentActiveCasterAccounts = 0xa58;
+    public const ulong m_numBestOfMaps = 0xa68;
+    public const ulong m_nHalloweenMaskListSeed = 0xa6c;
+    public const ulong m_bBombDropped = 0xa70;
+    public const ulong m_bBombPlanted = 0xa71;
+    public const ulong m_iRoundWinStatus = 0xa74;
+    public const ulong m_eRoundWinReason = 0xa78;
+    public const ulong m_bTCantBuy = 0xa7c;
+    public const ulong m_bCTCantBuy = 0xa7d;
+    public const ulong m_flGuardianBuyUntilTime = 0xa80;
+    public const ulong m_iMatchStats_RoundResults = 0xa84;
+    public const ulong m_iMatchStats_PlayersAlive_CT = 0xafc;
+    public const ulong m_iMatchStats_PlayersAlive_T = 0xb74;
+    public const ulong m_TeamRespawnWaveTimes = 0xbec;
+    public const ulong m_flNextRespawnWave = 0xc6c;
+    public const ulong m_nServerQuestID = 0xcec;
+    public const ulong m_vMinimapMins = 0xcf0;
+    public const ulong m_vMinimapMaxs = 0xcfc;
+    public const ulong m_MinimapVerticalSectionHeights = 0xd08;
+    public const ulong m_bDontIncrementCoopWave = 0xd28;
+    public const ulong m_bSpawnedTerrorHuntHeavy = 0xd29;
+    public const ulong m_nEndMatchMapGroupVoteTypes = 0xd2c;
+    public const ulong m_nEndMatchMapGroupVoteOptions = 0xd54;
+    public const ulong m_nEndMatchMapVoteWinner = 0xd7c;
+    public const ulong m_iNumConsecutiveCTLoses = 0xd80;
+    public const ulong m_iNumConsecutiveTerroristLoses = 0xd84;
+    public const ulong m_bHasHostageBeenTouched = 0xda0;
+    public const ulong m_flIntermissionStartTime = 0xda4;
+    public const ulong m_flIntermissionEndTime = 0xda8;
+    public const ulong m_bLevelInitialized = 0xdac;
+    public const ulong m_iTotalRoundsPlayed = 0xdb0;
+    public const ulong m_iUnBalancedRounds = 0xdb4;
+    public const ulong m_endMatchOnRoundReset = 0xdb8;
+    public const ulong m_endMatchOnThink = 0xdb9;
+    public const ulong m_iFreezeTime = 0xdbc;
+    public const ulong m_iNumTerrorist = 0xdc0;
+    public const ulong m_iNumCT = 0xdc4;
+    public const ulong m_iNumSpawnableTerrorist = 0xdc8;
+    public const ulong m_iNumSpawnableCT = 0xdcc;
+    public const ulong m_arrSelectedHostageSpawnIndices = 0xdd0;
+    public const ulong m_bFirstConnected = 0xde8;
+    public const ulong m_bCompleteReset = 0xde9;
+    public const ulong m_bPickNewTeamsOnReset = 0xdea;
+    public const ulong m_bScrambleTeamsOnRestart = 0xdeb;
+    public const ulong m_bSwapTeamsOnRestart = 0xdec;
+    public const ulong m_nEndMatchTiedVotes = 0xdf8;
+    public const ulong m_bNeedToAskPlayersForContinueVote = 0xe14;
+    public const ulong m_numQueuedMatchmakingAccounts = 0xe18;
+    public const ulong m_pQueuedMatchmakingReservationString = 0xe20;
+    public const ulong m_numTotalTournamentDrops = 0xe28;
+    public const ulong m_numSpectatorsCountMax = 0xe2c;
+    public const ulong m_numSpectatorsCountMaxTV = 0xe30;
+    public const ulong m_numSpectatorsCountMaxLnk = 0xe34;
+    public const ulong m_bForceTeamChangeSilent = 0xe40;
+    public const ulong m_bLoadingRoundBackupData = 0xe41;
+    public const ulong m_nMatchInfoShowType = 0xe78;
+    public const ulong m_flMatchInfoDecidedTime = 0xe7c;
+    public const ulong m_flCoopRespawnAndHealTime = 0xe98;
+    public const ulong m_coopBonusCoinsFound = 0xe9c;
+    public const ulong m_coopBonusPistolsOnly = 0xea0;
+    public const ulong m_coopPlayersInDeploymentZone = 0xea1;
+    public const ulong m_coopMissionDeadPlayerRespawnEnabled = 0xea2;
+    public const ulong mTeamDMLastWinningTeamNumber = 0xea4;
+    public const ulong mTeamDMLastThinkTime = 0xea8;
+    public const ulong m_flTeamDMLastAnnouncementTime = 0xeac;
+    public const ulong m_iAccountTerrorist = 0xeb0;
+    public const ulong m_iAccountCT = 0xeb4;
+    public const ulong m_iSpawnPointCount_Terrorist = 0xeb8;
+    public const ulong m_iSpawnPointCount_CT = 0xebc;
+    public const ulong m_iMaxNumTerrorists = 0xec0;
+    public const ulong m_iMaxNumCTs = 0xec4;
+    public const ulong m_iLoserBonus = 0xec8;
+    public const ulong m_iLoserBonusMostRecentTeam = 0xecc;
+    public const ulong m_tmNextPeriodicThink = 0xed0;
+    public const ulong m_bVoiceWonMatchBragFired = 0xed4;
+    public const ulong m_fWarmupNextChatNoticeTime = 0xed8;
+    public const ulong m_iHostagesRescued = 0xee0;
+    public const ulong m_iHostagesTouched = 0xee4;
+    public const ulong m_flNextHostageAnnouncement = 0xee8;
+    public const ulong m_bNoTerroristsKilled = 0xeec;
+    public const ulong m_bNoCTsKilled = 0xeed;
+    public const ulong m_bNoEnemiesKilled = 0xeee;
+    public const ulong m_bCanDonateWeapons = 0xeef;
+    public const ulong m_firstKillTime = 0xef4;
+    public const ulong m_firstBloodTime = 0xefc;
+    public const ulong m_hostageWasInjured = 0xf18;
+    public const ulong m_hostageWasKilled = 0xf19;
+    public const ulong m_bVoteCalled = 0xf28;
+    public const ulong m_bServerVoteOnReset = 0xf29;
+    public const ulong m_flVoteCheckThrottle = 0xf2c;
+    public const ulong m_bBuyTimeEnded = 0xf30;
+    public const ulong m_nLastFreezeEndBeep = 0xf34;
+    public const ulong m_bTargetBombed = 0xf38;
+    public const ulong m_bBombDefused = 0xf39;
+    public const ulong m_bMapHasBombZone = 0xf3a;
+    public const ulong m_vecMainCTSpawnPos = 0xf58;
+    public const ulong m_CTSpawnPointsMasterList = 0xf68;
+    public const ulong m_TerroristSpawnPointsMasterList = 0xf80;
+    public const ulong m_iNextCTSpawnPoint = 0xf98;
+    public const ulong m_iNextTerroristSpawnPoint = 0xf9c;
+    public const ulong m_CTSpawnPoints = 0xfa0;
+    public const ulong m_TerroristSpawnPoints = 0xfb8;
+    public const ulong m_bIsUnreservedGameServer = 0xfd0;
+    public const ulong m_fAutobalanceDisplayTime = 0xfd4;
+    public const ulong m_bAllowWeaponSwitch = 0x1240;
+    public const ulong m_bRoundTimeWarningTriggered = 0x1241;
+    public const ulong m_phaseChangeAnnouncementTime = 0x1244;
+    public const ulong m_fNextUpdateTeamClanNamesTime = 0x1248;
+    public const ulong m_flLastThinkTime = 0x124c;
+    public const ulong m_fAccumulatedRoundOffDamage = 0x1250;
+    public const ulong m_nShorthandedBonusLastEvalRound = 0x1254;
+    public const ulong m_bMatchAbortedDueToPlayerBan = 0x14d0;
+    public const ulong m_bHasTriggeredRoundStartMusic = 0x14d1;
+    public const ulong m_bHasTriggeredCoopSpawnReset = 0x14d2;
+    public const ulong m_bSwitchingTeamsAtRoundReset = 0x14d3;
+    public const ulong m_pGameModeRules = 0x14f0;
+    public const ulong m_BtGlobalBlackboard = 0x14f8;
+    public const ulong m_hPlayerResource = 0x1560;
+    public const ulong m_RetakeRules = 0x1568;
+    public const ulong m_GuardianBotSkillLevelMax = 0x174c;
+    public const ulong m_GuardianBotSkillLevelMin = 0x1750;
+    public const ulong m_arrTeamUniqueKillWeaponsMatch = 0x1758;
+    public const ulong m_bTeamLastKillUsedUniqueWeaponMatch = 0x17b8;
+    public const ulong m_nMatchEndCount = 0x17e0;
+    public const ulong m_nTTeamIntroVariant = 0x17e4;
+    public const ulong m_nCTTeamIntroVariant = 0x17e8;
+    public const ulong m_bTeamIntroPeriod = 0x17ec;
+    public const ulong m_fTeamIntroPeriodEnd = 0x17f0;
+    public const ulong m_bPlayedTeamIntroVO = 0x17f4;
+    public const ulong m_flLastPerfSampleTime = 0x27b0;
 }
 
 public static class CCSGameRulesProxy {
@@ -1382,6 +1317,16 @@ public static class CCSGameRulesProxy {
 
 public static class CCSPlace {
     public const ulong m_name = 0x708;
+}
+
+public static class CCSPlayerBase_CameraServices {
+    public const ulong m_iFOV = 0x170;
+    public const ulong m_iFOVStart = 0x174;
+    public const ulong m_flFOVTime = 0x178;
+    public const ulong m_flFOVRate = 0x17c;
+    public const ulong m_hZoomOwner = 0x180;
+    public const ulong m_hTriggerFogList = 0x188;
+    public const ulong m_hLastFogTrigger = 0x1a0;
 }
 
 public static class CCSPlayerController {
@@ -1445,11 +1390,10 @@ public static class CCSPlayerController {
     public const ulong m_nPawnCharacterDefIndex = 0x80a;
     public const ulong m_iPawnLifetimeStart = 0x80c;
     public const ulong m_iPawnLifetimeEnd = 0x810;
-    public const ulong m_iPawnGunGameLevel = 0x814;
-    public const ulong m_iPawnBotDifficulty = 0x818;
-    public const ulong m_hOriginalControllerOfCurrentPawn = 0x81c;
-    public const ulong m_iScore = 0x820;
-    public const ulong m_iRoundScore = 0x824;
+    public const ulong m_iPawnBotDifficulty = 0x814;
+    public const ulong m_hOriginalControllerOfCurrentPawn = 0x818;
+    public const ulong m_iScore = 0x81c;
+    public const ulong m_iRoundScore = 0x820;
     public const ulong m_vecKills = 0x828;
     public const ulong m_iMVPs = 0x840;
     public const ulong m_nUpdateCounter = 0x844;
@@ -1492,218 +1436,201 @@ public static class CCSPlayerController_InventoryServices {
 }
 
 public static class CCSPlayerPawn {
-    public const ulong m_pParachuteServices = 0x1628;
-    public const ulong m_pBulletServices = 0x1630;
-    public const ulong m_pHostageServices = 0x1638;
-    public const ulong m_pBuyServices = 0x1640;
-    public const ulong m_pPingServices = 0x1648;
-    public const ulong m_pRadioServices = 0x1650;
-    public const ulong m_pDamageReactServices = 0x1658;
-    public const ulong m_iRetakesOffering = 0x1728;
-    public const ulong m_iRetakesOfferingCard = 0x172c;
-    public const ulong m_bRetakesHasDefuseKit = 0x1730;
-    public const ulong m_bRetakesMVPLastRound = 0x1731;
-    public const ulong m_iRetakesMVPBoostItem = 0x1734;
-    public const ulong m_RetakesMVPBoostExtraUtility = 0x1738;
-    public const ulong m_bIsBuyMenuOpen = 0x173c;
-    public const ulong m_xLastHeadBoneTransform = 0x1c90;
-    public const ulong m_bLastHeadBoneTransformIsValid = 0x1cb0;
-    public const ulong m_iPlayerLocked = 0x1cb4;
-    public const ulong m_flNextSprayDecalTime = 0x1cbc;
-    public const ulong m_nRagdollDamageBone = 0x1cc4;
-    public const ulong m_vRagdollDamageForce = 0x1cc8;
-    public const ulong m_vRagdollDamagePosition = 0x1cd4;
-    public const ulong m_szRagdollDamageWeaponName = 0x1ce0;
-    public const ulong m_bRagdollDamageHeadshot = 0x1d20;
-    public const ulong m_EconGloves = 0x1d28;
-    public const ulong m_qDeathEyeAngles = 0x1fa0;
-    public const ulong m_bSkipOneHeadConstraintUpdate = 0x1fac;
+    public const ulong m_pBulletServices = 0x1568;
+    public const ulong m_pHostageServices = 0x1570;
+    public const ulong m_pBuyServices = 0x1578;
+    public const ulong m_pActionTrackingServices = 0x1580;
+    public const ulong m_pRadioServices = 0x1588;
+    public const ulong m_pDamageReactServices = 0x1590;
+    public const ulong m_nCharacterDefIndex = 0x1598;
+    public const ulong m_hPreviousModel = 0x15a0;
+    public const ulong m_bHasFemaleVoice = 0x15a8;
+    public const ulong m_strVOPrefix = 0x15b0;
+    public const ulong m_szLastPlaceName = 0x15b8;
+    public const ulong m_bInBuyZone = 0x1678;
+    public const ulong m_bWasInBuyZone = 0x1679;
+    public const ulong m_bInHostageRescueZone = 0x167a;
+    public const ulong m_bInBombZone = 0x167b;
+    public const ulong m_bWasInHostageRescueZone = 0x167c;
+    public const ulong m_iRetakesOffering = 0x1680;
+    public const ulong m_iRetakesOfferingCard = 0x1684;
+    public const ulong m_bRetakesHasDefuseKit = 0x1688;
+    public const ulong m_bRetakesMVPLastRound = 0x1689;
+    public const ulong m_iRetakesMVPBoostItem = 0x168c;
+    public const ulong m_RetakesMVPBoostExtraUtility = 0x1690;
+    public const ulong m_flHealthShotBoostExpirationTime = 0x1694;
+    public const ulong m_flLandseconds = 0x1698;
+    public const ulong m_aimPunchAngle = 0x169c;
+    public const ulong m_aimPunchAngleVel = 0x16a8;
+    public const ulong m_aimPunchTickBase = 0x16b4;
+    public const ulong m_aimPunchTickFraction = 0x16b8;
+    public const ulong m_aimPunchCache = 0x16c0;
+    public const ulong m_bIsBuyMenuOpen = 0x16d8;
+    public const ulong m_xLastHeadBoneTransform = 0x1c30;
+    public const ulong m_bLastHeadBoneTransformIsValid = 0x1c50;
+    public const ulong m_lastLandTime = 0x1c54;
+    public const ulong m_iPlayerLocked = 0x1c58;
+    public const ulong m_flTimeOfLastInjury = 0x1c60;
+    public const ulong m_flNextSprayDecalTime = 0x1c64;
+    public const ulong m_bNextSprayDecalTimeExpedited = 0x1c68;
+    public const ulong m_nRagdollDamageBone = 0x1c6c;
+    public const ulong m_vRagdollDamageForce = 0x1c70;
+    public const ulong m_vRagdollDamagePosition = 0x1c7c;
+    public const ulong m_szRagdollDamageWeaponName = 0x1c88;
+    public const ulong m_bRagdollDamageHeadshot = 0x1cc8;
+    public const ulong m_EconGloves = 0x1cd0;
+    public const ulong m_qDeathEyeAngles = 0x1f48;
+    public const ulong m_bSkipOneHeadConstraintUpdate = 0x1f54;
 }
 
 public static class CCSPlayerPawnBase {
-    public const ulong m_CTouchExpansionComponent = 0xb58;
-    public const ulong m_pActionTrackingServices = 0xba8;
-    public const ulong m_pViewModelServices = 0xbb0;
-    public const ulong m_iDisplayHistoryBits = 0xbb8;
-    public const ulong m_flLastAttackedTeammate = 0xbbc;
-    public const ulong m_hOriginalController = 0xbc0;
-    public const ulong m_blindUntilTime = 0xbc4;
-    public const ulong m_blindStartTime = 0xbc8;
-    public const ulong m_allowAutoFollowTime = 0xbcc;
-    public const ulong m_bHasFemaleVoice = 0xbd0;
+    public const ulong m_CTouchExpansionComponent = 0xb60;
+    public const ulong m_pPingServices = 0xbb0;
+    public const ulong m_pViewModelServices = 0xbb8;
+    public const ulong m_iDisplayHistoryBits = 0xbc0;
+    public const ulong m_flLastAttackedTeammate = 0xbc4;
+    public const ulong m_hOriginalController = 0xbc8;
+    public const ulong m_blindUntilTime = 0xbcc;
+    public const ulong m_blindStartTime = 0xbd0;
+    public const ulong m_allowAutoFollowTime = 0xbd4;
     public const ulong m_entitySpottedState = 0xbd8;
     public const ulong m_nSpotRules = 0xbf0;
-    public const ulong m_flTimeOfLastInjury = 0xbf4;
-    public const ulong m_nRelativeDirectionOfLastInjury = 0xbf8;
-    public const ulong m_iPlayerState = 0xbfc;
-    public const ulong m_chickenIdleSoundTimer = 0xc08;
-    public const ulong m_chickenJumpSoundTimer = 0xc20;
-    public const ulong m_vecLastBookmarkedPosition = 0xcd8;
-    public const ulong m_flLastDistanceTraveledNotice = 0xce4;
-    public const ulong m_flAccumulatedDistanceTraveled = 0xce8;
-    public const ulong m_flLastFriendlyFireDamageReductionRatio = 0xcec;
-    public const ulong m_bRespawning = 0xcf0;
-    public const ulong m_iNumGunGameTRBombTotalPoints = 0xcf4;
-    public const ulong m_bShouldProgressGunGameTRBombModeWeapon = 0xcf8;
-    public const ulong m_nLastPickupPriority = 0xcfc;
-    public const ulong m_flLastPickupPriorityTime = 0xd00;
-    public const ulong m_passiveItems = 0xd04;
-    public const ulong m_bIsScoped = 0xd08;
-    public const ulong m_bIsWalking = 0xd09;
-    public const ulong m_bResumeZoom = 0xd0a;
-    public const ulong m_bIsDefusing = 0xd0b;
-    public const ulong m_bIsGrabbingHostage = 0xd0c;
-    public const ulong m_iBlockingUseActionInProgress = 0xd10;
-    public const ulong m_fImmuneToGunGameDamageTime = 0xd14;
-    public const ulong m_bGunGameImmunity = 0xd18;
-    public const ulong m_bMadeFinalGunGameProgressiveKill = 0xd19;
-    public const ulong m_iGunGameProgressiveWeaponIndex = 0xd1c;
-    public const ulong m_iNumGunGameTRKillPoints = 0xd20;
-    public const ulong m_iNumGunGameKillsWithCurrentWeapon = 0xd24;
-    public const ulong m_unTotalRoundDamageDealt = 0xd28;
-    public const ulong m_fMolotovDamageTime = 0xd2c;
-    public const ulong m_bHasMovedSinceSpawn = 0xd30;
-    public const ulong m_bCanMoveDuringFreezePeriod = 0xd31;
-    public const ulong m_isCurrentGunGameLeader = 0xd32;
-    public const ulong m_isCurrentGunGameTeamLeader = 0xd33;
-    public const ulong m_flGuardianTooFarDistFrac = 0xd34;
-    public const ulong m_flNextGuardianTooFarHurtTime = 0xd38;
-    public const ulong m_flDetectedByEnemySensorTime = 0xd3c;
-    public const ulong m_bIsSpawnRappelling = 0xd40;
-    public const ulong m_vecSpawnRappellingRopeOrigin = 0xd44;
-    public const ulong m_nSurvivalTeam = 0xd50;
-    public const ulong m_hSurvivalAssassinationTarget = 0xd54;
-    public const ulong m_nCompletedSurvivalAssassinations = 0xd58;
-    public const ulong m_flDealtDamageToEnemyMostRecentTimestamp = 0xd5c;
-    public const ulong m_flHealthShotBoostExpirationTime = 0xd60;
-    public const ulong m_flLastEquippedHelmetTime = 0xd64;
-    public const ulong m_flLastEquippedArmorTime = 0xd68;
-    public const ulong m_nHeavyAssaultSuitCooldownRemaining = 0xd6c;
-    public const ulong m_bResetArmorNextSpawn = 0xd70;
-    public const ulong m_flLastBumpMineBumpTime = 0xd74;
-    public const ulong m_flEmitSoundTime = 0xd78;
-    public const ulong m_iNumSpawns = 0xd7c;
-    public const ulong m_iShouldHaveCash = 0xd80;
-    public const ulong m_bJustKilledTeammate = 0xd84;
-    public const ulong m_bPunishedForTK = 0xd85;
-    public const ulong m_bInvalidSteamLogonDelayed = 0xd86;
-    public const ulong m_iTeamKills = 0xd88;
-    public const ulong m_flLastAction = 0xd8c;
-    public const ulong m_flNameChangeHistory = 0xd90;
-    public const ulong m_fLastGivenDefuserTime = 0xda4;
-    public const ulong m_fLastGivenBombTime = 0xda8;
-    public const ulong m_bHasNightVision = 0xdac;
-    public const ulong m_bNightVisionOn = 0xdad;
-    public const ulong m_fNextRadarUpdateTime = 0xdb0;
-    public const ulong m_flLastMoneyUpdateTime = 0xdb4;
-    public const ulong m_MenuStringBuffer = 0xdb8;
-    public const ulong m_fIntroCamTime = 0x11b8;
-    public const ulong m_nMyCollisionGroup = 0x11bc;
-    public const ulong m_bInBombZone = 0x11c0;
-    public const ulong m_bInBuyZone = 0x11c1;
-    public const ulong m_bInNoDefuseArea = 0x11c2;
-    public const ulong m_bKilledByTaser = 0x11c3;
-    public const ulong m_iMoveState = 0x11c4;
-    public const ulong m_nPreviousModelIndex = 0x11c8;
-    public const ulong m_grenadeParameterStashTime = 0x11d0;
-    public const ulong m_bGrenadeParametersStashed = 0x11d4;
-    public const ulong m_angStashedShootAngles = 0x11d8;
-    public const ulong m_vecStashedGrenadeThrowPosition = 0x11e4;
-    public const ulong m_vecStashedVelocity = 0x11f0;
-    public const ulong m_angShootAngleHistory = 0x11fc;
-    public const ulong m_vecThrowPositionHistory = 0x1214;
-    public const ulong m_vecVelocityHistory = 0x122c;
-    public const ulong m_nCharacterDefIndex = 0x1244;
-    public const ulong m_bDiedAirborne = 0x1246;
-    public const ulong m_iBombSiteIndex = 0x1248;
-    public const ulong m_nWhichBombZone = 0x124c;
-    public const ulong m_bInBombZoneTrigger = 0x1250;
-    public const ulong m_bWasInBombZoneTrigger = 0x1251;
-    public const ulong m_bWasInHostageRescueZone = 0x1252;
-    public const ulong m_bWasInBuyZone = 0x1253;
-    public const ulong m_bInHostageRescueZone = 0x1254;
-    public const ulong m_flStamina = 0x1258;
-    public const ulong m_iDirection = 0x125c;
-    public const ulong m_iShotsFired = 0x1260;
-    public const ulong m_ArmorValue = 0x1264;
-    public const ulong m_flFlinchStack = 0x1268;
-    public const ulong m_flVelocityModifier = 0x126c;
-    public const ulong m_flHitHeading = 0x1270;
-    public const ulong m_nHitBodyPart = 0x1274;
-    public const ulong m_iHostagesKilled = 0x1278;
-    public const ulong m_vecTotalBulletForce = 0x127c;
-    public const ulong m_flFlashDuration = 0x1288;
-    public const ulong m_flFlashMaxAlpha = 0x128c;
-    public const ulong m_flProgressBarStartTime = 0x1290;
-    public const ulong m_iProgressBarDuration = 0x1294;
-    public const ulong m_bWaitForNoAttack = 0x1298;
-    public const ulong m_flLowerBodyYawTarget = 0x129c;
-    public const ulong m_bStrafing = 0x12a0;
-    public const ulong m_lastStandingPos = 0x12a4;
-    public const ulong m_ignoreLadderJumpTime = 0x12b0;
-    public const ulong m_ladderSurpressionTimer = 0x12b8;
-    public const ulong m_lastLadderNormal = 0x12d0;
-    public const ulong m_lastLadderPos = 0x12dc;
-    public const ulong m_thirdPersonHeading = 0x12e8;
-    public const ulong m_flSlopeDropOffset = 0x12f4;
-    public const ulong m_flSlopeDropHeight = 0x12f8;
-    public const ulong m_vHeadConstraintOffset = 0x12fc;
-    public const ulong m_iLastWeaponFireUsercmd = 0x1310;
-    public const ulong m_angEyeAngles = 0x1314;
-    public const ulong m_bVCollisionInitted = 0x1320;
-    public const ulong m_storedSpawnPosition = 0x1324;
-    public const ulong m_storedSpawnAngle = 0x1330;
-    public const ulong m_bIsSpawning = 0x133c;
-    public const ulong m_bHideTargetID = 0x133d;
-    public const ulong m_nNumDangerZoneDamageHits = 0x1340;
-    public const ulong m_bHud_MiniScoreHidden = 0x1344;
-    public const ulong m_bHud_RadarHidden = 0x1345;
-    public const ulong m_nLastKillerIndex = 0x1348;
-    public const ulong m_nLastConcurrentKilled = 0x134c;
-    public const ulong m_nDeathCamMusic = 0x1350;
-    public const ulong m_iAddonBits = 0x1354;
-    public const ulong m_iPrimaryAddon = 0x1358;
-    public const ulong m_iSecondaryAddon = 0x135c;
-    public const ulong m_nTeamDamageGivenForMatch = 0x1360;
-    public const ulong m_bTDGaveProtectionWarning = 0x1364;
-    public const ulong m_bTDGaveProtectionWarningThisRound = 0x1365;
-    public const ulong m_flLastTHWarningTime = 0x1368;
-    public const ulong m_currentDeafnessFilter = 0x136c;
-    public const ulong m_enemyPlayersKilledThisRound = 0x1370;
-    public const ulong m_NumEnemiesKilledThisSpawn = 0x1388;
-    public const ulong m_maxNumEnemiesKillStreak = 0x138c;
-    public const ulong m_NumEnemiesKilledThisRound = 0x1390;
-    public const ulong m_NumEnemiesAtRoundStart = 0x1394;
-    public const ulong m_iRoundsWon = 0x1398;
-    public const ulong m_lastRoundResult = 0x139c;
-    public const ulong m_wasNotKilledNaturally = 0x13a0;
-    public const ulong m_vecPlayerPatchEconIndices = 0x13a4;
-    public const ulong m_iDeathFlags = 0x13b8;
-    public const ulong m_hPet = 0x13bc;
-    public const ulong m_unCurrentEquipmentValue = 0x1588;
-    public const ulong m_unRoundStartEquipmentValue = 0x158a;
-    public const ulong m_unFreezetimeEndEquipmentValue = 0x158c;
-    public const ulong m_szLastPlaceName = 0x158e;
-    public const ulong m_nSuicides = 0x15a0;
-    public const ulong m_nSurvivalTeamNumber = 0x15a4;
-    public const ulong m_aimPunchAngle = 0x15a8;
-    public const ulong m_aimPunchAngleVel = 0x15b4;
-    public const ulong m_aimPunchTickBase = 0x15c0;
-    public const ulong m_aimPunchTickFraction = 0x15c4;
-    public const ulong m_aimPunchCache = 0x15c8;
-    public const ulong m_bHasDeathInfo = 0x15e0;
-    public const ulong m_flDeathInfoTime = 0x15e4;
-    public const ulong m_vecDeathInfoOrigin = 0x15e8;
-    public const ulong m_bKilledByHeadshot = 0x15f4;
-    public const ulong m_LastHitBox = 0x15f8;
-    public const ulong m_LastHealth = 0x15fc;
-    public const ulong m_flLastCollisionCeiling = 0x1600;
-    public const ulong m_flLastCollisionCeilingChangeTime = 0x1604;
-    public const ulong m_strVOPrefix = 0x1608;
-    public const ulong m_flLandseconds = 0x1610;
-    public const ulong m_pBot = 0x1618;
-    public const ulong m_bBotAllowActive = 0x1620;
-    public const ulong m_bCommittingSuicideOnTeamChange = 0x1621;
+    public const ulong m_iPlayerState = 0xbf4;
+    public const ulong m_chickenIdleSoundTimer = 0xc00;
+    public const ulong m_chickenJumpSoundTimer = 0xc18;
+    public const ulong m_vecLastBookmarkedPosition = 0xcd0;
+    public const ulong m_flLastDistanceTraveledNotice = 0xcdc;
+    public const ulong m_flAccumulatedDistanceTraveled = 0xce0;
+    public const ulong m_flLastFriendlyFireDamageReductionRatio = 0xce4;
+    public const ulong m_bRespawning = 0xce8;
+    public const ulong m_nLastPickupPriority = 0xcec;
+    public const ulong m_flLastPickupPriorityTime = 0xcf0;
+    public const ulong m_bIsScoped = 0xcf4;
+    public const ulong m_bIsWalking = 0xcf5;
+    public const ulong m_bResumeZoom = 0xcf6;
+    public const ulong m_bIsDefusing = 0xcf7;
+    public const ulong m_bIsGrabbingHostage = 0xcf8;
+    public const ulong m_iBlockingUseActionInProgress = 0xcfc;
+    public const ulong m_fImmuneToGunGameDamageTime = 0xd00;
+    public const ulong m_bGunGameImmunity = 0xd04;
+    public const ulong m_unTotalRoundDamageDealt = 0xd08;
+    public const ulong m_fMolotovDamageTime = 0xd0c;
+    public const ulong m_bHasMovedSinceSpawn = 0xd10;
+    public const ulong m_bCanMoveDuringFreezePeriod = 0xd11;
+    public const ulong m_flGuardianTooFarDistFrac = 0xd14;
+    public const ulong m_flNextGuardianTooFarHurtTime = 0xd18;
+    public const ulong m_flDetectedByEnemySensorTime = 0xd1c;
+    public const ulong m_flDealtDamageToEnemyMostRecentTimestamp = 0xd20;
+    public const ulong m_flLastEquippedHelmetTime = 0xd24;
+    public const ulong m_flLastEquippedArmorTime = 0xd28;
+    public const ulong m_nHeavyAssaultSuitCooldownRemaining = 0xd2c;
+    public const ulong m_bResetArmorNextSpawn = 0xd30;
+    public const ulong m_flLastBumpMineBumpTime = 0xd34;
+    public const ulong m_flEmitSoundTime = 0xd38;
+    public const ulong m_iNumSpawns = 0xd3c;
+    public const ulong m_iShouldHaveCash = 0xd40;
+    public const ulong m_bJustKilledTeammate = 0xd44;
+    public const ulong m_bPunishedForTK = 0xd45;
+    public const ulong m_bInvalidSteamLogonDelayed = 0xd46;
+    public const ulong m_iTeamKills = 0xd48;
+    public const ulong m_flLastAction = 0xd4c;
+    public const ulong m_flNameChangeHistory = 0xd50;
+    public const ulong m_fLastGivenDefuserTime = 0xd64;
+    public const ulong m_fLastGivenBombTime = 0xd68;
+    public const ulong m_bHasNightVision = 0xd6c;
+    public const ulong m_bNightVisionOn = 0xd6d;
+    public const ulong m_fNextRadarUpdateTime = 0xd70;
+    public const ulong m_flLastMoneyUpdateTime = 0xd74;
+    public const ulong m_MenuStringBuffer = 0xd78;
+    public const ulong m_fIntroCamTime = 0x1178;
+    public const ulong m_nMyCollisionGroup = 0x117c;
+    public const ulong m_bInNoDefuseArea = 0x1180;
+    public const ulong m_bKilledByTaser = 0x1181;
+    public const ulong m_iMoveState = 0x1184;
+    public const ulong m_grenadeParameterStashTime = 0x1188;
+    public const ulong m_bGrenadeParametersStashed = 0x118c;
+    public const ulong m_angStashedShootAngles = 0x1190;
+    public const ulong m_vecStashedGrenadeThrowPosition = 0x119c;
+    public const ulong m_vecStashedVelocity = 0x11a8;
+    public const ulong m_angShootAngleHistory = 0x11b4;
+    public const ulong m_vecThrowPositionHistory = 0x11cc;
+    public const ulong m_vecVelocityHistory = 0x11e4;
+    public const ulong m_bDiedAirborne = 0x11fc;
+    public const ulong m_iBombSiteIndex = 0x1200;
+    public const ulong m_nWhichBombZone = 0x1204;
+    public const ulong m_bInBombZoneTrigger = 0x1208;
+    public const ulong m_bWasInBombZoneTrigger = 0x1209;
+    public const ulong m_iDirection = 0x120c;
+    public const ulong m_iShotsFired = 0x1210;
+    public const ulong m_ArmorValue = 0x1214;
+    public const ulong m_flFlinchStack = 0x1218;
+    public const ulong m_flVelocityModifier = 0x121c;
+    public const ulong m_flHitHeading = 0x1220;
+    public const ulong m_nHitBodyPart = 0x1224;
+    public const ulong m_iHostagesKilled = 0x1228;
+    public const ulong m_vecTotalBulletForce = 0x122c;
+    public const ulong m_flFlashDuration = 0x1238;
+    public const ulong m_flFlashMaxAlpha = 0x123c;
+    public const ulong m_flProgressBarStartTime = 0x1240;
+    public const ulong m_iProgressBarDuration = 0x1244;
+    public const ulong m_bWaitForNoAttack = 0x1248;
+    public const ulong m_flLowerBodyYawTarget = 0x124c;
+    public const ulong m_bStrafing = 0x1250;
+    public const ulong m_lastStandingPos = 0x1254;
+    public const ulong m_ignoreLadderJumpTime = 0x1260;
+    public const ulong m_ladderSurpressionTimer = 0x1268;
+    public const ulong m_lastLadderNormal = 0x1280;
+    public const ulong m_lastLadderPos = 0x128c;
+    public const ulong m_thirdPersonHeading = 0x1298;
+    public const ulong m_flSlopeDropOffset = 0x12a4;
+    public const ulong m_flSlopeDropHeight = 0x12a8;
+    public const ulong m_vHeadConstraintOffset = 0x12ac;
+    public const ulong m_iLastWeaponFireUsercmd = 0x12c0;
+    public const ulong m_angEyeAngles = 0x12c4;
+    public const ulong m_bVCollisionInitted = 0x12d0;
+    public const ulong m_storedSpawnPosition = 0x12d4;
+    public const ulong m_storedSpawnAngle = 0x12e0;
+    public const ulong m_bIsSpawning = 0x12ec;
+    public const ulong m_bHideTargetID = 0x12ed;
+    public const ulong m_nNumDangerZoneDamageHits = 0x12f0;
+    public const ulong m_bHud_MiniScoreHidden = 0x12f4;
+    public const ulong m_bHud_RadarHidden = 0x12f5;
+    public const ulong m_nLastKillerIndex = 0x12f8;
+    public const ulong m_nLastConcurrentKilled = 0x12fc;
+    public const ulong m_nDeathCamMusic = 0x1300;
+    public const ulong m_iAddonBits = 0x1304;
+    public const ulong m_iPrimaryAddon = 0x1308;
+    public const ulong m_iSecondaryAddon = 0x130c;
+    public const ulong m_nTeamDamageGivenForMatch = 0x1310;
+    public const ulong m_bTDGaveProtectionWarning = 0x1314;
+    public const ulong m_bTDGaveProtectionWarningThisRound = 0x1315;
+    public const ulong m_flLastTHWarningTime = 0x1318;
+    public const ulong m_currentDeafnessFilter = 0x131c;
+    public const ulong m_NumEnemiesKilledThisSpawn = 0x1320;
+    public const ulong m_NumEnemiesKilledThisRound = 0x1324;
+    public const ulong m_NumEnemiesAtRoundStart = 0x1328;
+    public const ulong m_iRoundsWon = 0x132c;
+    public const ulong m_lastRoundResult = 0x1330;
+    public const ulong m_wasNotKilledNaturally = 0x1334;
+    public const ulong m_vecPlayerPatchEconIndices = 0x1338;
+    public const ulong m_iDeathFlags = 0x134c;
+    public const ulong m_hPet = 0x1350;
+    public const ulong m_unCurrentEquipmentValue = 0x1520;
+    public const ulong m_unRoundStartEquipmentValue = 0x1522;
+    public const ulong m_unFreezetimeEndEquipmentValue = 0x1524;
+    public const ulong m_nSuicides = 0x1528;
+    public const ulong m_nSurvivalTeamNumber = 0x152c;
+    public const ulong m_bHasDeathInfo = 0x1530;
+    public const ulong m_flDeathInfoTime = 0x1534;
+    public const ulong m_vecDeathInfoOrigin = 0x1538;
+    public const ulong m_bKilledByHeadshot = 0x1544;
+    public const ulong m_LastHitBox = 0x1548;
+    public const ulong m_LastHealth = 0x154c;
+    public const ulong m_flLastCollisionCeiling = 0x1550;
+    public const ulong m_flLastCollisionCeilingChangeTime = 0x1554;
+    public const ulong m_pBot = 0x1558;
+    public const ulong m_bBotAllowActive = 0x1560;
+    public const ulong m_bCommittingSuicideOnTeamChange = 0x1561;
 }
 
 public static class CCSPlayerResource {
@@ -1720,10 +1647,10 @@ public static class CCSPlayerResource {
 }
 
 public static class CCSPlayer_ActionTrackingServices {
-    public const ulong m_hLastWeaponBeforeC4AutoSwitch = 0x230;
-    public const ulong m_bIsRescuing = 0x264;
-    public const ulong m_weaponPurchasesThisMatch = 0x268;
-    public const ulong m_weaponPurchasesThisRound = 0x2c0;
+    public const ulong m_hLastWeaponBeforeC4AutoSwitch = 0x208;
+    public const ulong m_bIsRescuing = 0x23c;
+    public const ulong m_weaponPurchasesThisMatch = 0x240;
+    public const ulong m_weaponPurchasesThisRound = 0x298;
 }
 
 public static class CCSPlayer_BulletServices {
@@ -1732,16 +1659,6 @@ public static class CCSPlayer_BulletServices {
 
 public static class CCSPlayer_BuyServices {
     public const ulong m_vecSellbackPurchaseEntries = 0xc8;
-}
-
-public static class CCSPlayer_CameraServices {
-    public const ulong m_iFOV = 0x170;
-    public const ulong m_iFOVStart = 0x174;
-    public const ulong m_flFOVTime = 0x178;
-    public const ulong m_flFOVRate = 0x17c;
-    public const ulong m_hZoomOwner = 0x180;
-    public const ulong m_hTriggerFogList = 0x188;
-    public const ulong m_hLastFogTrigger = 0x1a0;
 }
 
 public static class CCSPlayer_HostageServices {
@@ -1784,15 +1701,15 @@ public static class CCSPlayer_MovementServices {
     public const ulong m_vecPreviouslyPredictedOrigin = 0x4b0;
     public const ulong m_bMadeFootstepNoise = 0x4bc;
     public const ulong m_iFootsteps = 0x4c0;
-    public const ulong m_nRoundFootstepsMade = 0x4c4;
-    public const ulong m_bOldJumpPressed = 0x4c8;
-    public const ulong m_flJumpPressedTime = 0x4cc;
-    public const ulong m_flJumpUntil = 0x4d0;
-    public const ulong m_flJumpVel = 0x4d4;
-    public const ulong m_fStashGrenadeParameterWhen = 0x4d8;
-    public const ulong m_nButtonDownMaskPrev = 0x4e0;
-    public const ulong m_flOffsetTickCompleteTime = 0x4e8;
-    public const ulong m_flOffsetTickStashedSpeed = 0x4ec;
+    public const ulong m_bOldJumpPressed = 0x4c4;
+    public const ulong m_flJumpPressedTime = 0x4c8;
+    public const ulong m_flJumpUntil = 0x4cc;
+    public const ulong m_flJumpVel = 0x4d0;
+    public const ulong m_fStashGrenadeParameterWhen = 0x4d4;
+    public const ulong m_nButtonDownMaskPrev = 0x4d8;
+    public const ulong m_flOffsetTickCompleteTime = 0x4e0;
+    public const ulong m_flOffsetTickStashedSpeed = 0x4e4;
+    public const ulong m_flStamina = 0x4e8;
 }
 
 public static class CCSPlayer_PingServices {
@@ -1842,16 +1759,6 @@ public static class CCSPlayer_WeaponServices {
     public const ulong m_bPickedUpWeapon = 0xce;
 }
 
-public static class CCSPropExplodingBarrel {
-    public const ulong m_hBarrelTop = 0xb78;
-    public const ulong m_bExploded = 0xb7c;
-    public const ulong m_nAccumulatedDamage = 0xb80;
-}
-
-public static class CCSPropExplodingBarrelTop {
-    public const ulong m_flOverrideAlpha = 0xb70;
-}
-
 public static class CCSTeam {
     public const ulong m_nLastRecievedShorthandedRoundBonus = 0x568;
     public const ulong m_nShorthandedRoundBonusStartRound = 0x56c;
@@ -1867,13 +1774,168 @@ public static class CCSTeam {
     public const ulong m_szTeamLogoImage = 0x814;
     public const ulong m_flNextResourceTime = 0x81c;
     public const ulong m_iLastUpdateSentAt = 0x820;
-    public const ulong m_flLastPlayerSortTime = 0x824;
-    public const ulong m_nLastGGLeader_CT = 0x828;
-    public const ulong m_nLastGGLeader_T = 0x82c;
-    public const ulong m_nGGLeaderSlot_CT = 0x830;
-    public const ulong m_nGGLeaderSlot_T = 0x834;
-    public const ulong m_bGGHasLeader_CT = 0x838;
-    public const ulong m_bGGHasLeader_T = 0x839;
+}
+
+public static class CCSWeaponBase {
+    public const ulong m_bRemoveable = 0xc88;
+    public const ulong m_flFireSequenceStartTime = 0xc8c;
+    public const ulong m_nFireSequenceStartTimeChange = 0xc90;
+    public const ulong m_nFireSequenceStartTimeAck = 0xc94;
+    public const ulong m_bPlayerFireEventIsPrimary = 0xc98;
+    public const ulong m_seqIdle = 0xc9c;
+    public const ulong m_seqFirePrimary = 0xca0;
+    public const ulong m_seqFireSecondary = 0xca4;
+    public const ulong m_bPlayerAmmoStockOnPickup = 0xcb0;
+    public const ulong m_bRequireUseToTouch = 0xcb1;
+    public const ulong m_iState = 0xcb4;
+    public const ulong m_flLastTimeInAir = 0xcb8;
+    public const ulong m_flLastDeployTime = 0xcbc;
+    public const ulong m_nViewModelIndex = 0xcc0;
+    public const ulong m_bReloadsWithClips = 0xcc4;
+    public const ulong m_flTimeWeaponIdle = 0xce0;
+    public const ulong m_bFireOnEmpty = 0xce4;
+    public const ulong m_OnPlayerPickup = 0xce8;
+    public const ulong m_weaponMode = 0xd10;
+    public const ulong m_flTurningInaccuracyDelta = 0xd14;
+    public const ulong m_vecTurningInaccuracyEyeDirLast = 0xd18;
+    public const ulong m_flTurningInaccuracy = 0xd24;
+    public const ulong m_fAccuracyPenalty = 0xd28;
+    public const ulong m_flLastAccuracyUpdateTime = 0xd2c;
+    public const ulong m_fAccuracySmoothedForZoom = 0xd30;
+    public const ulong m_fScopeZoomEndTime = 0xd34;
+    public const ulong m_iRecoilIndex = 0xd38;
+    public const ulong m_flRecoilIndex = 0xd3c;
+    public const ulong m_bBurstMode = 0xd40;
+    public const ulong m_flPostponeFireReadyTime = 0xd44;
+    public const ulong m_bInReload = 0xd48;
+    public const ulong m_bReloadVisuallyComplete = 0xd49;
+    public const ulong m_flDroppedAtTime = 0xd4c;
+    public const ulong m_bIsHauledBack = 0xd50;
+    public const ulong m_bSilencerOn = 0xd51;
+    public const ulong m_flTimeSilencerSwitchComplete = 0xd54;
+    public const ulong m_iOriginalTeamNumber = 0xd58;
+    public const ulong m_flNextAttackRenderTimeOffset = 0xd5c;
+    public const ulong m_bCanBePickedUp = 0xd68;
+    public const ulong m_bUseCanOverrideNextOwnerTouchTime = 0xd69;
+    public const ulong m_nextOwnerTouchTime = 0xd6c;
+    public const ulong m_nextPrevOwnerTouchTime = 0xd70;
+    public const ulong m_hPrevOwner = 0xd74;
+    public const ulong m_nDropTick = 0xd78;
+    public const ulong m_donated = 0xd9c;
+    public const ulong m_fLastShotTime = 0xda0;
+    public const ulong m_bWasOwnedByCT = 0xda4;
+    public const ulong m_bWasOwnedByTerrorist = 0xda5;
+    public const ulong m_bFiredOutOfAmmoEvent = 0xda6;
+    public const ulong m_numRemoveUnownedWeaponThink = 0xda8;
+    public const ulong m_IronSightController = 0xdb0;
+    public const ulong m_iIronSightMode = 0xdc8;
+    public const ulong m_flLastLOSTraceFailureTime = 0xdcc;
+    public const ulong m_iNumEmptyAttacks = 0xdd0;
+}
+
+public static class CCSWeaponBaseGun {
+    public const ulong m_zoomLevel = 0xdd8;
+    public const ulong m_iBurstShotsRemaining = 0xddc;
+    public const ulong m_silencedModelIndex = 0xde8;
+    public const ulong m_inPrecache = 0xdec;
+    public const ulong m_bNeedsBoltAction = 0xded;
+    public const ulong m_bSkillReloadAvailable = 0xdee;
+    public const ulong m_bSkillReloadLiftedReloadKey = 0xdef;
+    public const ulong m_bSkillBoltInterruptAvailable = 0xdf0;
+    public const ulong m_bSkillBoltLiftedFireKey = 0xdf1;
+}
+
+public static class CCSWeaponBaseVData {
+    public const ulong m_WeaponType = 0x240;
+    public const ulong m_WeaponCategory = 0x244;
+    public const ulong m_szViewModel = 0x248;
+    public const ulong m_szPlayerModel = 0x328;
+    public const ulong m_szWorldDroppedModel = 0x408;
+    public const ulong m_szAimsightLensMaskModel = 0x4e8;
+    public const ulong m_szMagazineModel = 0x5c8;
+    public const ulong m_szHeatEffect = 0x6a8;
+    public const ulong m_szEjectBrassEffect = 0x788;
+    public const ulong m_szMuzzleFlashParticleAlt = 0x868;
+    public const ulong m_szMuzzleFlashThirdPersonParticle = 0x948;
+    public const ulong m_szMuzzleFlashThirdPersonParticleAlt = 0xa28;
+    public const ulong m_szTracerParticle = 0xb08;
+    public const ulong m_GearSlot = 0xbe8;
+    public const ulong m_GearSlotPosition = 0xbec;
+    public const ulong m_DefaultLoadoutSlot = 0xbf0;
+    public const ulong m_sWrongTeamMsg = 0xbf8;
+    public const ulong m_nPrice = 0xc00;
+    public const ulong m_nKillAward = 0xc04;
+    public const ulong m_nPrimaryReserveAmmoMax = 0xc08;
+    public const ulong m_nSecondaryReserveAmmoMax = 0xc0c;
+    public const ulong m_bMeleeWeapon = 0xc10;
+    public const ulong m_bHasBurstMode = 0xc11;
+    public const ulong m_bIsRevolver = 0xc12;
+    public const ulong m_bCannotShootUnderwater = 0xc13;
+    public const ulong m_szName = 0xc18;
+    public const ulong m_szAnimExtension = 0xc20;
+    public const ulong m_eSilencerType = 0xc28;
+    public const ulong m_nCrosshairMinDistance = 0xc2c;
+    public const ulong m_nCrosshairDeltaDistance = 0xc30;
+    public const ulong m_flCycleTime = 0xc34;
+    public const ulong m_flMaxSpeed = 0xc3c;
+    public const ulong m_flSpread = 0xc44;
+    public const ulong m_flInaccuracyCrouch = 0xc4c;
+    public const ulong m_flInaccuracyStand = 0xc54;
+    public const ulong m_flInaccuracyJump = 0xc5c;
+    public const ulong m_flInaccuracyLand = 0xc64;
+    public const ulong m_flInaccuracyLadder = 0xc6c;
+    public const ulong m_flInaccuracyFire = 0xc74;
+    public const ulong m_flInaccuracyMove = 0xc7c;
+    public const ulong m_flRecoilAngle = 0xc84;
+    public const ulong m_flRecoilAngleVariance = 0xc8c;
+    public const ulong m_flRecoilMagnitude = 0xc94;
+    public const ulong m_flRecoilMagnitudeVariance = 0xc9c;
+    public const ulong m_nTracerFrequency = 0xca4;
+    public const ulong m_flInaccuracyJumpInitial = 0xcac;
+    public const ulong m_flInaccuracyJumpApex = 0xcb0;
+    public const ulong m_flInaccuracyReload = 0xcb4;
+    public const ulong m_nRecoilSeed = 0xcb8;
+    public const ulong m_nSpreadSeed = 0xcbc;
+    public const ulong m_flTimeToIdleAfterFire = 0xcc0;
+    public const ulong m_flIdleInterval = 0xcc4;
+    public const ulong m_flAttackMovespeedFactor = 0xcc8;
+    public const ulong m_flHeatPerShot = 0xccc;
+    public const ulong m_flInaccuracyPitchShift = 0xcd0;
+    public const ulong m_flInaccuracyAltSoundThreshold = 0xcd4;
+    public const ulong m_flBotAudibleRange = 0xcd8;
+    public const ulong m_szUseRadioSubtitle = 0xce0;
+    public const ulong m_bUnzoomsAfterShot = 0xce8;
+    public const ulong m_bHideViewModelWhenZoomed = 0xce9;
+    public const ulong m_nZoomLevels = 0xcec;
+    public const ulong m_nZoomFOV1 = 0xcf0;
+    public const ulong m_nZoomFOV2 = 0xcf4;
+    public const ulong m_flZoomTime0 = 0xcf8;
+    public const ulong m_flZoomTime1 = 0xcfc;
+    public const ulong m_flZoomTime2 = 0xd00;
+    public const ulong m_flIronSightPullUpSpeed = 0xd04;
+    public const ulong m_flIronSightPutDownSpeed = 0xd08;
+    public const ulong m_flIronSightFOV = 0xd0c;
+    public const ulong m_flIronSightPivotForward = 0xd10;
+    public const ulong m_flIronSightLooseness = 0xd14;
+    public const ulong m_angPivotAngle = 0xd18;
+    public const ulong m_vecIronSightEyePos = 0xd24;
+    public const ulong m_nDamage = 0xd30;
+    public const ulong m_flHeadshotMultiplier = 0xd34;
+    public const ulong m_flArmorRatio = 0xd38;
+    public const ulong m_flPenetration = 0xd3c;
+    public const ulong m_flRange = 0xd40;
+    public const ulong m_flRangeModifier = 0xd44;
+    public const ulong m_flFlinchVelocityModifierLarge = 0xd48;
+    public const ulong m_flFlinchVelocityModifierSmall = 0xd4c;
+    public const ulong m_flRecoveryTimeCrouch = 0xd50;
+    public const ulong m_flRecoveryTimeStand = 0xd54;
+    public const ulong m_flRecoveryTimeCrouchFinal = 0xd58;
+    public const ulong m_flRecoveryTimeStandFinal = 0xd5c;
+    public const ulong m_nRecoveryTransitionStartBullet = 0xd60;
+    public const ulong m_nRecoveryTransitionEndBullet = 0xd64;
+    public const ulong m_flThrowVelocity = 0xd68;
+    public const ulong m_vSmokeColor = 0xd6c;
+    public const ulong m_szAnimClass = 0xd78;
 }
 
 public static class CChangeLevel {
@@ -1887,39 +1949,40 @@ public static class CChangeLevel {
 }
 
 public static class CChicken {
-    public const ulong m_AttributeManager = 0xb20;
-    public const ulong m_OriginalOwnerXuidLow = 0xde8;
-    public const ulong m_OriginalOwnerXuidHigh = 0xdec;
-    public const ulong m_updateTimer = 0xdf0;
-    public const ulong m_stuckAnchor = 0xe08;
-    public const ulong m_stuckTimer = 0xe18;
-    public const ulong m_collisionStuckTimer = 0xe30;
-    public const ulong m_isOnGround = 0xe48;
-    public const ulong m_activity = 0xe4c;
-    public const ulong m_activityTimer = 0xe50;
-    public const ulong m_turnRate = 0xe68;
-    public const ulong m_fleeFrom = 0xe6c;
-    public const ulong m_moveRateThrottleTimer = 0xe70;
-    public const ulong m_startleTimer = 0xe88;
-    public const ulong m_vocalizeTimer = 0xea0;
-    public const ulong m_flWhenZombified = 0xeb8;
-    public const ulong m_jumpedThisFrame = 0xebc;
-    public const ulong m_leader = 0xec0;
-    public const ulong m_reuseTimer = 0xec8;
-    public const ulong m_hasBeenUsed = 0xee0;
-    public const ulong m_jumpTimer = 0xee8;
-    public const ulong m_flLastJumpTime = 0xf00;
-    public const ulong m_bInJump = 0xf04;
-    public const ulong m_isWaitingForLeader = 0xf05;
-    public const ulong m_repathTimer = 0x2f10;
-    public const ulong m_inhibitDoorTimer = 0x2f28;
-    public const ulong m_inhibitObstacleAvoidanceTimer = 0x2fb8;
-    public const ulong m_vecPathGoal = 0x2fd8;
-    public const ulong m_flActiveFollowStartTime = 0x2fe4;
-    public const ulong m_followMinuteTimer = 0x2fe8;
-    public const ulong m_vecLastEggPoopPosition = 0x3000;
-    public const ulong m_vecEggsPooped = 0x3010;
-    public const ulong m_BlockDirectionTimer = 0x3030;
+    public const ulong m_AttributeManager = 0xb28;
+    public const ulong m_OriginalOwnerXuidLow = 0xdf0;
+    public const ulong m_OriginalOwnerXuidHigh = 0xdf4;
+    public const ulong m_updateTimer = 0xdf8;
+    public const ulong m_stuckAnchor = 0xe10;
+    public const ulong m_stuckTimer = 0xe20;
+    public const ulong m_collisionStuckTimer = 0xe38;
+    public const ulong m_isOnGround = 0xe50;
+    public const ulong m_vFallVelocity = 0xe54;
+    public const ulong m_activity = 0xe60;
+    public const ulong m_activityTimer = 0xe68;
+    public const ulong m_turnRate = 0xe80;
+    public const ulong m_fleeFrom = 0xe84;
+    public const ulong m_moveRateThrottleTimer = 0xe88;
+    public const ulong m_startleTimer = 0xea0;
+    public const ulong m_vocalizeTimer = 0xeb8;
+    public const ulong m_flWhenZombified = 0xed0;
+    public const ulong m_jumpedThisFrame = 0xed4;
+    public const ulong m_leader = 0xed8;
+    public const ulong m_reuseTimer = 0xee0;
+    public const ulong m_hasBeenUsed = 0xef8;
+    public const ulong m_jumpTimer = 0xf00;
+    public const ulong m_flLastJumpTime = 0xf18;
+    public const ulong m_bInJump = 0xf1c;
+    public const ulong m_isWaitingForLeader = 0xf1d;
+    public const ulong m_repathTimer = 0x2f28;
+    public const ulong m_inhibitDoorTimer = 0x2f40;
+    public const ulong m_inhibitObstacleAvoidanceTimer = 0x2fd0;
+    public const ulong m_vecPathGoal = 0x2ff0;
+    public const ulong m_flActiveFollowStartTime = 0x2ffc;
+    public const ulong m_followMinuteTimer = 0x3000;
+    public const ulong m_vecLastEggPoopPosition = 0x3018;
+    public const ulong m_vecEggsPooped = 0x3028;
+    public const ulong m_BlockDirectionTimer = 0x3048;
 }
 
 public static class CCollisionProperty {
@@ -2002,7 +2065,7 @@ public static class CConstantForceController {
 }
 
 public static class CConstraintAnchor {
-    public const ulong m_massScale = 0x888;
+    public const ulong m_massScale = 0x890;
 }
 
 public static class CCopyRecipientFilter {
@@ -2014,15 +2077,6 @@ public static class CCredits {
     public const ulong m_OnCreditsDone = 0x4b0;
     public const ulong m_bRolledOutroCredits = 0x4d8;
     public const ulong m_flLogoLength = 0x4dc;
-}
-
-public static class CDZDoor {
-    public const ulong m_bIsSecurityDoor = 0xe50;
-    public const ulong m_hSpawnPoint = 0xe54;
-    public const ulong m_bPaidToUnlock = 0xe58;
-    public const ulong m_nPlayDoorOpenSound = 0xe5c;
-    public const ulong m_nAttachmentIndex1 = 0xe90;
-    public const ulong m_nAttachmentIndex2 = 0xe91;
 }
 
 public static class CDamageRecord {
@@ -2042,121 +2096,14 @@ public static class CDamageRecord {
     public const ulong m_killType = 0x69;
 }
 
-public static class CDangerZone {
-    public const ulong m_vecDangerZoneOriginStartedAt = 0x4b0;
-    public const ulong m_flBombLaunchTime = 0x4bc;
-    public const ulong m_flExtraRadius = 0x4c0;
-    public const ulong m_flExtraRadiusStartTime = 0x4c4;
-    public const ulong m_flExtraRadiusTotalLerpTime = 0x4c8;
-    public const ulong m_nDropOrder = 0x4cc;
-    public const ulong m_iWave = 0x4d0;
-    public const ulong m_nMyZoneIndex = 0x4d4;
-    public const ulong m_nZoneNeighbors = 0x4d8;
-}
-
-public static class CDangerZoneController {
-    public const ulong m_bDangerZoneControllerEnabled = 0x4b0;
-    public const ulong m_bMissionControlledExplosions = 0x4b1;
-    public const ulong m_vecEndGameCircleStart = 0x4b4;
-    public const ulong m_vecEndGameCircleEnd = 0x4c0;
-    public const ulong m_flStartTime = 0x4cc;
-    public const ulong m_flFinalExpansionTime = 0x4d0;
-    public const ulong m_DangerZones = 0x4d4;
-    public const ulong m_flWaveEndTimes = 0x57c;
-    public const ulong m_hTheFinalZone = 0x590;
-    public const ulong m_flLastDangerZoneStatusLogged = 0x594;
-    public const ulong m_flLastDangerZoneDamageTime = 0x598;
-    public const ulong m_bFirstBombWarning = 0x59c;
-    public const ulong m_numWaveRewardsGranted = 0x5a0;
-    public const ulong m_pGasCanLaunchers = 0x5a8;
-}
-
 public static class CDebugHistory {
     public const ulong m_nNpcEvents = 0x44f0;
 }
 
 public static class CDecoyProjectile {
-    public const ulong m_shotsRemaining = 0xa28;
-    public const ulong m_fExpireTime = 0xa2c;
-    public const ulong m_decoyWeaponDefIndex = 0xa38;
-}
-
-public static class CDrone {
-    public const ulong m_hMoveToThisEntity = 0xb88;
-    public const ulong m_hDeliveryCargo = 0xb8c;
-    public const ulong m_hRecentCargo = 0xb90;
-    public const ulong m_bPilotTakeoverAllowed = 0xb94;
-    public const ulong m_hPotentialCargo = 0xb98;
-    public const ulong m_hCurrentPilot = 0xb9c;
-    public const ulong m_vecTagPositions = 0xba0;
-    public const ulong m_vecTagIncrements = 0xcc0;
-    public const ulong m_flLastUpdateTargetScanTime = 0xd20;
-    public const ulong m_bWasControlledByPlayer = 0xd24;
-    public const ulong m_bHovering = 0xd25;
-    public const ulong m_pStateSound = 0xd28;
-    public const ulong m_vecGroundOffset = 0xd30;
-    public const ulong m_bQueuingOrders = 0xd58;
-    public const ulong m_flLastOrdersChangeTimestamp = 0xd5c;
-    public const ulong m_vecLastKnownAcceleration = 0xd60;
-    public const ulong m_vecLastKnownVelocity = 0xd6c;
-    public const ulong m_vecLastKnownAngImpulse = 0xd78;
-    public const ulong m_flLastKnownSpeed = 0xd84;
-    public const ulong m_flMaxSpeed = 0xd88;
-    public const ulong m_vecCurrentDestination = 0xd8c;
-    public const ulong m_flLastKnownDistanceToDestination = 0xd98;
-    public const ulong m_flLastKnownWaypointAccuracy = 0xd9c;
-    public const ulong m_vecWaypointQueue = 0xda0;
-    public const ulong m_vecSparsePositionHistory = 0xdb8;
-    public const ulong m_vecPositionHistory = 0xdd0;
-    public const ulong m_vecUnstuckQueue = 0xde8;
-    public const ulong m_flLastKnownGroundHeight = 0xe00;
-    public const ulong m_GroundCheckTimer = 0xe08;
-    public const ulong m_ActInjuredTimer = 0xe20;
-    public const ulong m_flPowerCutUntil = 0xe38;
-    public const ulong m_WanderTimer = 0xe40;
-    public const ulong m_flLastTimeSawAttackTarget = 0xe58;
-    public const ulong m_vecLastKnownAttackTargetPosition = 0xe5c;
-    public const ulong m_hAttackTarget = 0xe68;
-    public const ulong m_IntervalThinkTimer = 0xe70;
-    public const ulong m_bDoIntervalThink = 0xe88;
-    public const ulong m_flLastDroppedGrenadeAt = 0xe8c;
-    public const ulong m_flSpawnTimeStamp = 0xe90;
-    public const ulong m_bInPlayArea = 0xe94;
-    public const ulong m_vecSpawnPosition = 0xe98;
-    public const ulong m_vecLastKnownMoveToEntityPosition = 0xea4;
-    public const ulong m_tCargoCollisionGroup = 0xeb0;
-    public const ulong m_flTimeArrivedAtMoveToEntity = 0xeb4;
-    public const ulong m_vecAvoidanceDir = 0xeb8;
-    public const ulong m_flAvoidanceTime = 0xec4;
-    public const ulong m_bUpgraded = 0xec8;
-    public const ulong m_hCargoOwner = 0xecc;
-    public const ulong m_vecPlayerControlThrust = 0xed8;
-    public const ulong m_flRopeLength = 0xee4;
-    public const ulong m_bDidDropOnRoofWarning = 0xee8;
-    public const ulong m_flSelfDestructTime = 0xeec;
-    public const ulong m_bSelfDestructFire = 0xef0;
-    public const ulong m_bSelfDestructSpark = 0xef1;
-    public const ulong m_hLastKnownPilot = 0xef4;
-    public const ulong m_bHasAlwaysBeenInZone = 0xef8;
-    public const ulong m_nJammedAmount = 0xefc;
-    public const ulong m_hPlayerThatOrderedMe = 0xf00;
-}
-
-public static class CDronegun {
-    public const ulong m_vecAttentionTarget = 0x898;
-    public const ulong m_vecTargetOffset = 0x8a4;
-    public const ulong m_bHasTarget = 0x8b0;
-    public const ulong m_vecAttentionCurrent = 0x8b4;
-    public const ulong m_nPoseParamPitch = 0x8c0;
-    public const ulong m_nPoseParamYaw = 0x8c4;
-    public const ulong m_bVarInit = 0x8c8;
-    public const ulong m_flDisorientEndTime = 0x8cc;
-    public const ulong m_hEnvGunfire = 0x8e8;
-    public const ulong m_flLastShootTime = 0x8ec;
-    public const ulong m_flLastSound1 = 0x8f0;
-    public const ulong m_flLastSound2 = 0x8f4;
-    public const ulong m_flLastSound3 = 0x8f8;
-    public const ulong m_nAttachMuzzle = 0x8fc;
+    public const ulong m_shotsRemaining = 0xa30;
+    public const ulong m_fExpireTime = 0xa34;
+    public const ulong m_decoyWeaponDefIndex = 0xa40;
 }
 
 public static class CDynamicLight {
@@ -2172,41 +2119,41 @@ public static class CDynamicLight {
 }
 
 public static class CDynamicProp {
-    public const ulong m_bCreateNavObstacle = 0xa08;
-    public const ulong m_bUseHitboxesForRenderBox = 0xa09;
-    public const ulong m_bUseAnimGraph = 0xa0a;
-    public const ulong m_pOutputAnimBegun = 0xa10;
-    public const ulong m_pOutputAnimOver = 0xa38;
-    public const ulong m_pOutputAnimLoopCycleOver = 0xa60;
-    public const ulong m_OnAnimReachedStart = 0xa88;
-    public const ulong m_OnAnimReachedEnd = 0xab0;
-    public const ulong m_iszDefaultAnim = 0xad8;
-    public const ulong m_nDefaultAnimLoopMode = 0xae0;
-    public const ulong m_bAnimateOnServer = 0xae4;
-    public const ulong m_bRandomizeCycle = 0xae5;
-    public const ulong m_bStartDisabled = 0xae6;
-    public const ulong m_bScriptedMovement = 0xae7;
-    public const ulong m_bFiredStartEndOutput = 0xae8;
-    public const ulong m_bForceNpcExclude = 0xae9;
-    public const ulong m_bCreateNonSolid = 0xaea;
-    public const ulong m_bIsOverrideProp = 0xaeb;
-    public const ulong m_iInitialGlowState = 0xaec;
-    public const ulong m_nGlowRange = 0xaf0;
-    public const ulong m_nGlowRangeMin = 0xaf4;
-    public const ulong m_glowColor = 0xaf8;
-    public const ulong m_nGlowTeam = 0xafc;
+    public const ulong m_bCreateNavObstacle = 0xa10;
+    public const ulong m_bUseHitboxesForRenderBox = 0xa11;
+    public const ulong m_bUseAnimGraph = 0xa12;
+    public const ulong m_pOutputAnimBegun = 0xa18;
+    public const ulong m_pOutputAnimOver = 0xa40;
+    public const ulong m_pOutputAnimLoopCycleOver = 0xa68;
+    public const ulong m_OnAnimReachedStart = 0xa90;
+    public const ulong m_OnAnimReachedEnd = 0xab8;
+    public const ulong m_iszDefaultAnim = 0xae0;
+    public const ulong m_nDefaultAnimLoopMode = 0xae8;
+    public const ulong m_bAnimateOnServer = 0xaec;
+    public const ulong m_bRandomizeCycle = 0xaed;
+    public const ulong m_bStartDisabled = 0xaee;
+    public const ulong m_bScriptedMovement = 0xaef;
+    public const ulong m_bFiredStartEndOutput = 0xaf0;
+    public const ulong m_bForceNpcExclude = 0xaf1;
+    public const ulong m_bCreateNonSolid = 0xaf2;
+    public const ulong m_bIsOverrideProp = 0xaf3;
+    public const ulong m_iInitialGlowState = 0xaf4;
+    public const ulong m_nGlowRange = 0xaf8;
+    public const ulong m_nGlowRangeMin = 0xafc;
+    public const ulong m_glowColor = 0xb00;
+    public const ulong m_nGlowTeam = 0xb04;
 }
 
 public static class CEconEntity {
-    public const ulong m_AttributeManager = 0x928;
-    public const ulong m_OriginalOwnerXuidLow = 0xbf0;
-    public const ulong m_OriginalOwnerXuidHigh = 0xbf4;
-    public const ulong m_nFallbackPaintKit = 0xbf8;
-    public const ulong m_nFallbackSeed = 0xbfc;
-    public const ulong m_flFallbackWear = 0xc00;
-    public const ulong m_nFallbackStatTrak = 0xc04;
-    public const ulong m_hOldProvidee = 0xc08;
-    public const ulong m_iOldOwnerClass = 0xc0c;
+    public const ulong m_AttributeManager = 0x930;
+    public const ulong m_OriginalOwnerXuidLow = 0xbf8;
+    public const ulong m_OriginalOwnerXuidHigh = 0xbfc;
+    public const ulong m_nFallbackPaintKit = 0xc00;
+    public const ulong m_nFallbackSeed = 0xc04;
+    public const ulong m_flFallbackWear = 0xc08;
+    public const ulong m_nFallbackStatTrak = 0xc0c;
+    public const ulong m_hOldProvidee = 0xc10;
+    public const ulong m_iOldOwnerClass = 0xc14;
 }
 
 public static class CEconItemAttribute {
@@ -2234,8 +2181,8 @@ public static class CEconItemView {
 }
 
 public static class CEconWearable {
-    public const ulong m_nForceSkin = 0xc10;
-    public const ulong m_bAlwaysAllow = 0xc14;
+    public const ulong m_nForceSkin = 0xc18;
+    public const ulong m_bAlwaysAllow = 0xc1c;
 }
 
 public static class CEffectData {
@@ -2337,53 +2284,53 @@ public static class CEnvBeverage {
 }
 
 public static class CEnvCombinedLightProbeVolume {
-    public const ulong m_Color = 0x1580;
-    public const ulong m_flBrightness = 0x1584;
-    public const ulong m_hCubemapTexture = 0x1588;
-    public const ulong m_bCustomCubemapTexture = 0x1590;
-    public const ulong m_hLightProbeTexture = 0x1598;
-    public const ulong m_hLightProbeDirectLightIndicesTexture = 0x15a0;
-    public const ulong m_hLightProbeDirectLightScalarsTexture = 0x15a8;
-    public const ulong m_hLightProbeDirectLightShadowsTexture = 0x15b0;
-    public const ulong m_vBoxMins = 0x15b8;
-    public const ulong m_vBoxMaxs = 0x15c4;
-    public const ulong m_LightGroups = 0x15d0;
-    public const ulong m_bMoveable = 0x15d8;
-    public const ulong m_nHandshake = 0x15dc;
-    public const ulong m_nEnvCubeMapArrayIndex = 0x15e0;
-    public const ulong m_nPriority = 0x15e4;
-    public const ulong m_bStartDisabled = 0x15e8;
-    public const ulong m_flEdgeFadeDist = 0x15ec;
-    public const ulong m_vEdgeFadeDists = 0x15f0;
-    public const ulong m_nLightProbeSizeX = 0x15fc;
-    public const ulong m_nLightProbeSizeY = 0x1600;
-    public const ulong m_nLightProbeSizeZ = 0x1604;
-    public const ulong m_nLightProbeAtlasX = 0x1608;
-    public const ulong m_nLightProbeAtlasY = 0x160c;
-    public const ulong m_nLightProbeAtlasZ = 0x1610;
-    public const ulong m_bEnabled = 0x1629;
+    public const ulong m_Color = 0x1518;
+    public const ulong m_flBrightness = 0x151c;
+    public const ulong m_hCubemapTexture = 0x1520;
+    public const ulong m_bCustomCubemapTexture = 0x1528;
+    public const ulong m_hLightProbeTexture = 0x1530;
+    public const ulong m_hLightProbeDirectLightIndicesTexture = 0x1538;
+    public const ulong m_hLightProbeDirectLightScalarsTexture = 0x1540;
+    public const ulong m_hLightProbeDirectLightShadowsTexture = 0x1548;
+    public const ulong m_vBoxMins = 0x1550;
+    public const ulong m_vBoxMaxs = 0x155c;
+    public const ulong m_LightGroups = 0x1568;
+    public const ulong m_bMoveable = 0x1570;
+    public const ulong m_nHandshake = 0x1574;
+    public const ulong m_nEnvCubeMapArrayIndex = 0x1578;
+    public const ulong m_nPriority = 0x157c;
+    public const ulong m_bStartDisabled = 0x1580;
+    public const ulong m_flEdgeFadeDist = 0x1584;
+    public const ulong m_vEdgeFadeDists = 0x1588;
+    public const ulong m_nLightProbeSizeX = 0x1594;
+    public const ulong m_nLightProbeSizeY = 0x1598;
+    public const ulong m_nLightProbeSizeZ = 0x159c;
+    public const ulong m_nLightProbeAtlasX = 0x15a0;
+    public const ulong m_nLightProbeAtlasY = 0x15a4;
+    public const ulong m_nLightProbeAtlasZ = 0x15a8;
+    public const ulong m_bEnabled = 0x15c1;
 }
 
 public static class CEnvCubemap {
-    public const ulong m_hCubemapTexture = 0x5a0;
-    public const ulong m_bCustomCubemapTexture = 0x5a8;
-    public const ulong m_flInfluenceRadius = 0x5ac;
-    public const ulong m_vBoxProjectMins = 0x5b0;
-    public const ulong m_vBoxProjectMaxs = 0x5bc;
-    public const ulong m_LightGroups = 0x5c8;
-    public const ulong m_bMoveable = 0x5d0;
-    public const ulong m_nHandshake = 0x5d4;
-    public const ulong m_nEnvCubeMapArrayIndex = 0x5d8;
-    public const ulong m_nPriority = 0x5dc;
-    public const ulong m_flEdgeFadeDist = 0x5e0;
-    public const ulong m_vEdgeFadeDists = 0x5e4;
-    public const ulong m_flDiffuseScale = 0x5f0;
-    public const ulong m_bStartDisabled = 0x5f4;
-    public const ulong m_bDefaultEnvMap = 0x5f5;
-    public const ulong m_bDefaultSpecEnvMap = 0x5f6;
-    public const ulong m_bIndoorCubeMap = 0x5f7;
-    public const ulong m_bCopyDiffuseFromDefaultCubemap = 0x5f8;
-    public const ulong m_bEnabled = 0x608;
+    public const ulong m_hCubemapTexture = 0x538;
+    public const ulong m_bCustomCubemapTexture = 0x540;
+    public const ulong m_flInfluenceRadius = 0x544;
+    public const ulong m_vBoxProjectMins = 0x548;
+    public const ulong m_vBoxProjectMaxs = 0x554;
+    public const ulong m_LightGroups = 0x560;
+    public const ulong m_bMoveable = 0x568;
+    public const ulong m_nHandshake = 0x56c;
+    public const ulong m_nEnvCubeMapArrayIndex = 0x570;
+    public const ulong m_nPriority = 0x574;
+    public const ulong m_flEdgeFadeDist = 0x578;
+    public const ulong m_vEdgeFadeDists = 0x57c;
+    public const ulong m_flDiffuseScale = 0x588;
+    public const ulong m_bStartDisabled = 0x58c;
+    public const ulong m_bDefaultEnvMap = 0x58d;
+    public const ulong m_bDefaultSpecEnvMap = 0x58e;
+    public const ulong m_bIndoorCubeMap = 0x58f;
+    public const ulong m_bCopyDiffuseFromDefaultCubemap = 0x590;
+    public const ulong m_bEnabled = 0x5a0;
 }
 
 public static class CEnvCubemapFog {
@@ -2483,39 +2430,6 @@ public static class CEnvFireSource {
     public const ulong m_bEnabled = 0x4b0;
     public const ulong m_radius = 0x4b4;
     public const ulong m_damage = 0x4b8;
-}
-
-public static class CEnvGasCanister {
-    public const ulong m_bLanded = 0x888;
-    public const ulong m_flDamageRadius = 0x88c;
-    public const ulong m_flDamage = 0x890;
-    public const ulong m_bIncomingSoundStarted = 0x894;
-    public const ulong m_bHasDetonated = 0x895;
-    public const ulong m_bLaunched = 0x896;
-    public const ulong m_OnLaunched = 0x898;
-    public const ulong m_OnImpacted = 0x8c0;
-    public const ulong m_OnOpened = 0x8e8;
-    public const ulong m_vecImpactPosition = 0x910;
-    public const ulong m_vecStartPosition = 0x91c;
-    public const ulong m_vecEnterWorldPosition = 0x928;
-    public const ulong m_vecDirection = 0x934;
-    public const ulong m_vecStartAngles = 0x940;
-    public const ulong m_flFlightTime = 0x94c;
-    public const ulong m_flFlightSpeed = 0x950;
-    public const ulong m_flLaunchTime = 0x954;
-    public const ulong m_flInitialZSpeed = 0x958;
-    public const ulong m_flZAcceleration = 0x95c;
-    public const ulong m_flHorizSpeed = 0x960;
-    public const ulong m_bLaunchedFromWithinWorld = 0x964;
-    public const ulong m_vecParabolaDirection = 0x968;
-    public const ulong m_flWorldEnterTime = 0x974;
-    public const ulong m_vecSkyboxOrigin = 0x978;
-    public const ulong m_flSkyboxScale = 0x984;
-    public const ulong m_bInSkybox = 0x988;
-    public const ulong m_bDoImpactEffects = 0x989;
-    public const ulong m_nMyZoneIndex = 0x98c;
-    public const ulong m_hSkyboxCopy = 0x990;
-    public const ulong m_flLaunchHeight = 0x994;
 }
 
 public static class CEnvGlobal {
@@ -2915,30 +2829,30 @@ public static class CFiringModeInt {
 }
 
 public static class CFish {
-    public const ulong m_pool = 0x888;
-    public const ulong m_id = 0x88c;
-    public const ulong m_x = 0x890;
-    public const ulong m_y = 0x894;
-    public const ulong m_z = 0x898;
-    public const ulong m_angle = 0x89c;
-    public const ulong m_angleChange = 0x8a0;
-    public const ulong m_forward = 0x8a4;
-    public const ulong m_perp = 0x8b0;
-    public const ulong m_poolOrigin = 0x8bc;
-    public const ulong m_waterLevel = 0x8c8;
-    public const ulong m_speed = 0x8cc;
-    public const ulong m_desiredSpeed = 0x8d0;
-    public const ulong m_calmSpeed = 0x8d4;
-    public const ulong m_panicSpeed = 0x8d8;
-    public const ulong m_avoidRange = 0x8dc;
-    public const ulong m_turnTimer = 0x8e0;
-    public const ulong m_turnClockwise = 0x8f8;
-    public const ulong m_goTimer = 0x900;
-    public const ulong m_moveTimer = 0x918;
-    public const ulong m_panicTimer = 0x930;
-    public const ulong m_disperseTimer = 0x948;
-    public const ulong m_proximityTimer = 0x960;
-    public const ulong m_visible = 0x978;
+    public const ulong m_pool = 0x890;
+    public const ulong m_id = 0x894;
+    public const ulong m_x = 0x898;
+    public const ulong m_y = 0x89c;
+    public const ulong m_z = 0x8a0;
+    public const ulong m_angle = 0x8a4;
+    public const ulong m_angleChange = 0x8a8;
+    public const ulong m_forward = 0x8ac;
+    public const ulong m_perp = 0x8b8;
+    public const ulong m_poolOrigin = 0x8c4;
+    public const ulong m_waterLevel = 0x8d0;
+    public const ulong m_speed = 0x8d4;
+    public const ulong m_desiredSpeed = 0x8d8;
+    public const ulong m_calmSpeed = 0x8dc;
+    public const ulong m_panicSpeed = 0x8e0;
+    public const ulong m_avoidRange = 0x8e4;
+    public const ulong m_turnTimer = 0x8e8;
+    public const ulong m_turnClockwise = 0x900;
+    public const ulong m_goTimer = 0x908;
+    public const ulong m_moveTimer = 0x920;
+    public const ulong m_panicTimer = 0x938;
+    public const ulong m_disperseTimer = 0x950;
+    public const ulong m_proximityTimer = 0x968;
+    public const ulong m_visible = 0x980;
 }
 
 public static class CFishPool {
@@ -2952,19 +2866,19 @@ public static class CFishPool {
 }
 
 public static class CFists {
-    public const ulong m_bPlayingUninterruptableAct = 0xdd0;
-    public const ulong m_nUninterruptableActivity = 0xdd4;
-    public const ulong m_bRestorePrevWep = 0xdd8;
-    public const ulong m_hWeaponBeforePrevious = 0xddc;
-    public const ulong m_hWeaponPrevious = 0xde0;
-    public const ulong m_bDelayedHardPunchIncoming = 0xde4;
-    public const ulong m_bDestroyAfterTaunt = 0xde5;
+    public const ulong m_bPlayingUninterruptableAct = 0xdd8;
+    public const ulong m_nUninterruptableActivity = 0xddc;
+    public const ulong m_bRestorePrevWep = 0xde0;
+    public const ulong m_hWeaponBeforePrevious = 0xde4;
+    public const ulong m_hWeaponPrevious = 0xde8;
+    public const ulong m_bDelayedHardPunchIncoming = 0xdec;
+    public const ulong m_bDestroyAfterTaunt = 0xded;
 }
 
 public static class CFlashbangProjectile {
-    public const ulong m_flTimeToDetonate = 0xa20;
-    public const ulong m_numOpponentsHit = 0xa24;
-    public const ulong m_numTeammatesHit = 0xa25;
+    public const ulong m_flTimeToDetonate = 0xa28;
+    public const ulong m_numOpponentsHit = 0xa2c;
+    public const ulong m_numTeammatesHit = 0xa2d;
 }
 
 public static class CFogController {
@@ -3405,10 +3319,6 @@ public static class CGradientFog {
     public const ulong m_bGradientFogNeedsTextures = 0x4ea;
 }
 
-public static class CGrassBurn {
-    public const ulong m_flGrassBurnClearTime = 0x4b0;
-}
-
 public static class CGunTarget {
     public const ulong m_on = 0x780;
     public const ulong m_hTargetEnt = 0x784;
@@ -3437,48 +3347,48 @@ public static class CHitboxComponent {
 }
 
 public static class CHostage {
-    public const ulong m_OnHostageBeginGrab = 0x9e0;
-    public const ulong m_OnFirstPickedUp = 0xa08;
-    public const ulong m_OnDroppedNotRescued = 0xa30;
-    public const ulong m_OnRescued = 0xa58;
-    public const ulong m_entitySpottedState = 0xa80;
-    public const ulong m_nSpotRules = 0xa98;
-    public const ulong m_uiHostageSpawnExclusionGroupMask = 0xa9c;
-    public const ulong m_nHostageSpawnRandomFactor = 0xaa0;
-    public const ulong m_bRemove = 0xaa4;
-    public const ulong m_vel = 0xaa8;
-    public const ulong m_isRescued = 0xab4;
-    public const ulong m_jumpedThisFrame = 0xab5;
-    public const ulong m_nHostageState = 0xab8;
-    public const ulong m_leader = 0xabc;
-    public const ulong m_lastLeader = 0xac0;
-    public const ulong m_reuseTimer = 0xac8;
-    public const ulong m_hasBeenUsed = 0xae0;
-    public const ulong m_accel = 0xae4;
-    public const ulong m_isRunning = 0xaf0;
-    public const ulong m_isCrouching = 0xaf1;
-    public const ulong m_jumpTimer = 0xaf8;
-    public const ulong m_isWaitingForLeader = 0xb10;
-    public const ulong m_repathTimer = 0x2b20;
-    public const ulong m_inhibitDoorTimer = 0x2b38;
-    public const ulong m_inhibitObstacleAvoidanceTimer = 0x2bc8;
-    public const ulong m_wiggleTimer = 0x2be8;
-    public const ulong m_isAdjusted = 0x2c04;
-    public const ulong m_bHandsHaveBeenCut = 0x2c05;
-    public const ulong m_hHostageGrabber = 0x2c08;
-    public const ulong m_fLastGrabTime = 0x2c0c;
-    public const ulong m_vecPositionWhenStartedDroppingToGround = 0x2c10;
-    public const ulong m_vecGrabbedPos = 0x2c1c;
-    public const ulong m_flRescueStartTime = 0x2c28;
-    public const ulong m_flGrabSuccessTime = 0x2c2c;
-    public const ulong m_flDropStartTime = 0x2c30;
-    public const ulong m_nApproachRewardPayouts = 0x2c34;
-    public const ulong m_nPickupEventCount = 0x2c38;
-    public const ulong m_vecSpawnGroundPos = 0x2c3c;
+    public const ulong m_OnHostageBeginGrab = 0x9e8;
+    public const ulong m_OnFirstPickedUp = 0xa10;
+    public const ulong m_OnDroppedNotRescued = 0xa38;
+    public const ulong m_OnRescued = 0xa60;
+    public const ulong m_entitySpottedState = 0xa88;
+    public const ulong m_nSpotRules = 0xaa0;
+    public const ulong m_uiHostageSpawnExclusionGroupMask = 0xaa4;
+    public const ulong m_nHostageSpawnRandomFactor = 0xaa8;
+    public const ulong m_bRemove = 0xaac;
+    public const ulong m_vel = 0xab0;
+    public const ulong m_isRescued = 0xabc;
+    public const ulong m_jumpedThisFrame = 0xabd;
+    public const ulong m_nHostageState = 0xac0;
+    public const ulong m_leader = 0xac4;
+    public const ulong m_lastLeader = 0xac8;
+    public const ulong m_reuseTimer = 0xad0;
+    public const ulong m_hasBeenUsed = 0xae8;
+    public const ulong m_accel = 0xaec;
+    public const ulong m_isRunning = 0xaf8;
+    public const ulong m_isCrouching = 0xaf9;
+    public const ulong m_jumpTimer = 0xb00;
+    public const ulong m_isWaitingForLeader = 0xb18;
+    public const ulong m_repathTimer = 0x2b28;
+    public const ulong m_inhibitDoorTimer = 0x2b40;
+    public const ulong m_inhibitObstacleAvoidanceTimer = 0x2bd0;
+    public const ulong m_wiggleTimer = 0x2bf0;
+    public const ulong m_isAdjusted = 0x2c0c;
+    public const ulong m_bHandsHaveBeenCut = 0x2c0d;
+    public const ulong m_hHostageGrabber = 0x2c10;
+    public const ulong m_fLastGrabTime = 0x2c14;
+    public const ulong m_vecPositionWhenStartedDroppingToGround = 0x2c18;
+    public const ulong m_vecGrabbedPos = 0x2c24;
+    public const ulong m_flRescueStartTime = 0x2c30;
+    public const ulong m_flGrabSuccessTime = 0x2c34;
+    public const ulong m_flDropStartTime = 0x2c38;
+    public const ulong m_nApproachRewardPayouts = 0x2c3c;
+    public const ulong m_nPickupEventCount = 0x2c40;
+    public const ulong m_vecSpawnGroundPos = 0x2c44;
 }
 
 public static class CHostageExpresserShim {
-    public const ulong m_pExpresser = 0x9c8;
+    public const ulong m_pExpresser = 0x9d0;
 }
 
 public static class CInButtonState {
@@ -3532,12 +3442,6 @@ public static class CInfoDynamicShadowHintBox {
 public static class CInfoGameEventProxy {
     public const ulong m_iszEventName = 0x4b0;
     public const ulong m_flRange = 0x4b8;
-}
-
-public static class CInfoMapRegion {
-    public const ulong m_flRadius = 0x4b0;
-    public const ulong m_strLocToken = 0x4b8;
-    public const ulong m_szLocToken = 0x4c0;
 }
 
 public static class CInfoOffscreenPanoramaTexture {
@@ -3609,65 +3513,59 @@ public static class CIronSightController {
 }
 
 public static class CItem {
-    public const ulong m_OnPlayerTouch = 0x890;
-    public const ulong m_bActivateWhenAtRest = 0x8b8;
-    public const ulong m_OnCacheInteraction = 0x8c0;
-    public const ulong m_OnPlayerPickup = 0x8e8;
-    public const ulong m_OnGlovePulled = 0x910;
-    public const ulong m_vOriginalSpawnOrigin = 0x938;
-    public const ulong m_vOriginalSpawnAngles = 0x944;
-    public const ulong m_bPhysStartAsleep = 0x950;
-}
-
-public static class CItemCash {
-    public const ulong m_bufCashOriginalSource = 0x960;
-    public const ulong m_nBundleSize = 0x9a0;
-    public const ulong m_flAllowPickupTime = 0x9a8;
+    public const ulong m_OnPlayerTouch = 0x898;
+    public const ulong m_bActivateWhenAtRest = 0x8c0;
+    public const ulong m_OnCacheInteraction = 0x8c8;
+    public const ulong m_OnPlayerPickup = 0x8f0;
+    public const ulong m_OnGlovePulled = 0x918;
+    public const ulong m_vOriginalSpawnOrigin = 0x940;
+    public const ulong m_vOriginalSpawnAngles = 0x94c;
+    public const ulong m_bPhysStartAsleep = 0x958;
 }
 
 public static class CItemDefuser {
-    public const ulong m_entitySpottedState = 0x960;
-    public const ulong m_nSpotRules = 0x978;
+    public const ulong m_entitySpottedState = 0x968;
+    public const ulong m_nSpotRules = 0x980;
 }
 
 public static class CItemDogtags {
-    public const ulong m_OwningPlayer = 0x960;
-    public const ulong m_KillingPlayer = 0x964;
+    public const ulong m_OwningPlayer = 0x968;
+    public const ulong m_KillingPlayer = 0x96c;
 }
 
 public static class CItemGeneric {
-    public const ulong m_bHasTriggerRadius = 0x968;
-    public const ulong m_bHasPickupRadius = 0x969;
-    public const ulong m_flPickupRadiusSqr = 0x96c;
-    public const ulong m_flTriggerRadiusSqr = 0x970;
-    public const ulong m_flLastPickupCheck = 0x974;
-    public const ulong m_bPlayerCounterListenerAdded = 0x978;
-    public const ulong m_bPlayerInTriggerRadius = 0x979;
-    public const ulong m_hSpawnParticleEffect = 0x980;
-    public const ulong m_pAmbientSoundEffect = 0x988;
-    public const ulong m_bAutoStartAmbientSound = 0x990;
-    public const ulong m_pSpawnScriptFunction = 0x998;
-    public const ulong m_hPickupParticleEffect = 0x9a0;
-    public const ulong m_pPickupSoundEffect = 0x9a8;
-    public const ulong m_pPickupScriptFunction = 0x9b0;
-    public const ulong m_hTimeoutParticleEffect = 0x9b8;
-    public const ulong m_pTimeoutSoundEffect = 0x9c0;
-    public const ulong m_pTimeoutScriptFunction = 0x9c8;
-    public const ulong m_pPickupFilterName = 0x9d0;
-    public const ulong m_hPickupFilter = 0x9d8;
-    public const ulong m_OnPickup = 0x9e0;
-    public const ulong m_OnTimeout = 0xa08;
-    public const ulong m_OnTriggerStartTouch = 0xa30;
-    public const ulong m_OnTriggerTouch = 0xa58;
-    public const ulong m_OnTriggerEndTouch = 0xa80;
-    public const ulong m_pAllowPickupScriptFunction = 0xaa8;
-    public const ulong m_flPickupRadius = 0xab0;
-    public const ulong m_flTriggerRadius = 0xab4;
-    public const ulong m_pTriggerSoundEffect = 0xab8;
-    public const ulong m_bGlowWhenInTrigger = 0xac0;
-    public const ulong m_glowColor = 0xac1;
-    public const ulong m_bUseable = 0xac5;
-    public const ulong m_hTriggerHelper = 0xac8;
+    public const ulong m_bHasTriggerRadius = 0x970;
+    public const ulong m_bHasPickupRadius = 0x971;
+    public const ulong m_flPickupRadiusSqr = 0x974;
+    public const ulong m_flTriggerRadiusSqr = 0x978;
+    public const ulong m_flLastPickupCheck = 0x97c;
+    public const ulong m_bPlayerCounterListenerAdded = 0x980;
+    public const ulong m_bPlayerInTriggerRadius = 0x981;
+    public const ulong m_hSpawnParticleEffect = 0x988;
+    public const ulong m_pAmbientSoundEffect = 0x990;
+    public const ulong m_bAutoStartAmbientSound = 0x998;
+    public const ulong m_pSpawnScriptFunction = 0x9a0;
+    public const ulong m_hPickupParticleEffect = 0x9a8;
+    public const ulong m_pPickupSoundEffect = 0x9b0;
+    public const ulong m_pPickupScriptFunction = 0x9b8;
+    public const ulong m_hTimeoutParticleEffect = 0x9c0;
+    public const ulong m_pTimeoutSoundEffect = 0x9c8;
+    public const ulong m_pTimeoutScriptFunction = 0x9d0;
+    public const ulong m_pPickupFilterName = 0x9d8;
+    public const ulong m_hPickupFilter = 0x9e0;
+    public const ulong m_OnPickup = 0x9e8;
+    public const ulong m_OnTimeout = 0xa10;
+    public const ulong m_OnTriggerStartTouch = 0xa38;
+    public const ulong m_OnTriggerTouch = 0xa60;
+    public const ulong m_OnTriggerEndTouch = 0xa88;
+    public const ulong m_pAllowPickupScriptFunction = 0xab0;
+    public const ulong m_flPickupRadius = 0xab8;
+    public const ulong m_flTriggerRadius = 0xabc;
+    public const ulong m_pTriggerSoundEffect = 0xac0;
+    public const ulong m_bGlowWhenInTrigger = 0xac8;
+    public const ulong m_glowColor = 0xac9;
+    public const ulong m_bUseable = 0xacd;
+    public const ulong m_hTriggerHelper = 0xad0;
 }
 
 public static class CItemGenericTriggerHelper {
@@ -3860,14 +3758,6 @@ public static class CLogicDistanceCheck {
     public const ulong m_InZone1 = 0x4c8;
     public const ulong m_InZone2 = 0x4f0;
     public const ulong m_InZone3 = 0x518;
-}
-
-public static class CLogicEventListener {
-    public const ulong m_iszEventName = 0x4c0;
-    public const ulong m_bIsEnabled = 0x4c8;
-    public const ulong m_nTeam = 0x4cc;
-    public const ulong m_bFetchEventData = 0x4d0;
-    public const ulong m_OnEventFired = 0x4d8;
 }
 
 public static class CLogicGameEvent {
@@ -4079,9 +3969,9 @@ public static class CMathRemap {
 }
 
 public static class CMelee {
-    public const ulong m_flThrowAt = 0xdd0;
-    public const ulong m_hThrower = 0xdd4;
-    public const ulong m_bDidThrowDamage = 0xdd8;
+    public const ulong m_flThrowAt = 0xdd8;
+    public const ulong m_hThrower = 0xddc;
+    public const ulong m_bDidThrowDamage = 0xde0;
 }
 
 public static class CMessage {
@@ -4112,10 +4002,10 @@ public static class CModelState {
 }
 
 public static class CMolotovProjectile {
-    public const ulong m_bIsIncGrenade = 0xa20;
-    public const ulong m_bDetonated = 0xa2c;
-    public const ulong m_stillTimer = 0xa30;
-    public const ulong m_bHasBouncedOffPlayer = 0xb10;
+    public const ulong m_bIsIncGrenade = 0xa28;
+    public const ulong m_bDetonated = 0xa34;
+    public const ulong m_stillTimer = 0xa38;
+    public const ulong m_bHasBouncedOffPlayer = 0xb18;
 }
 
 public static class CMomentaryRotButton {
@@ -4282,21 +4172,7 @@ public static class COmniLight {
 }
 
 public static class COrnamentProp {
-    public const ulong m_initialOwner = 0xb00;
-}
-
-public static class CParadropChopper {
-    public const ulong m_vecDropPos = 0x88c;
-    public const ulong m_flLastDistFromDrop = 0x898;
-    public const ulong m_bDroppedParadrop = 0x89c;
-    public const ulong m_pSoundLoop = 0x8a0;
-    public const ulong m_flSpawnTime = 0x8a8;
-    public const ulong m_flFlightTime = 0x8ac;
-    public const ulong m_bPlayerIsFinishedRappelling = 0x8b0;
-    public const ulong m_flPlayerFinishedRappellingTime = 0x8b4;
-    public const ulong m_strFlyoverDropEvent = 0x8b8;
-    public const ulong m_hCallingPlayer = 0x8c0;
-    public const ulong m_bCalledByPlayer = 0x8c4;
+    public const ulong m_initialOwner = 0xb08;
 }
 
 public static class CParticleSystem {
@@ -4477,18 +4353,18 @@ public static class CPhysLength {
 }
 
 public static class CPhysMagnet {
-    public const ulong m_OnMagnetAttach = 0x888;
-    public const ulong m_OnMagnetDetach = 0x8b0;
-    public const ulong m_massScale = 0x8d8;
-    public const ulong m_forceLimit = 0x8dc;
-    public const ulong m_torqueLimit = 0x8e0;
-    public const ulong m_MagnettedEntities = 0x8e8;
-    public const ulong m_bActive = 0x900;
-    public const ulong m_bHasHitSomething = 0x901;
-    public const ulong m_flTotalMass = 0x904;
-    public const ulong m_flRadius = 0x908;
-    public const ulong m_flNextSuckTime = 0x90c;
-    public const ulong m_iMaxObjectsAttached = 0x910;
+    public const ulong m_OnMagnetAttach = 0x890;
+    public const ulong m_OnMagnetDetach = 0x8b8;
+    public const ulong m_massScale = 0x8e0;
+    public const ulong m_forceLimit = 0x8e4;
+    public const ulong m_torqueLimit = 0x8e8;
+    public const ulong m_MagnettedEntities = 0x8f0;
+    public const ulong m_bActive = 0x908;
+    public const ulong m_bHasHitSomething = 0x909;
+    public const ulong m_flTotalMass = 0x90c;
+    public const ulong m_flRadius = 0x910;
+    public const ulong m_flNextSuckTime = 0x914;
+    public const ulong m_iMaxObjectsAttached = 0x918;
 }
 
 public static class CPhysMotor {
@@ -4499,54 +4375,6 @@ public static class CPhysMotor {
     public const ulong m_angularAcceleration = 0x4c4;
     public const ulong m_lastTime = 0x4c8;
     public const ulong m_motor = 0x4e0;
-}
-
-public static class CPhysPropAmmoBox {
-    public const ulong m_nUsesRemaining = 0xb98;
-    public const ulong m_flTimeLastUsed = 0xb9c;
-}
-
-public static class CPhysPropLootCrate {
-    public const ulong m_bRenderInPSPM = 0xb98;
-    public const ulong m_bRenderInTablet = 0xb99;
-    public const ulong m_flSpawnTime = 0xb9c;
-    public const ulong m_bTakeDamageFromDangerZone = 0xba0;
-    public const ulong m_pszCrateName = 0xba8;
-    public const ulong m_hCrateOwner = 0xbb0;
-    public const ulong m_bOwnedByPlayer = 0xbb4;
-    public const ulong m_flDampingOriginalSpeed = 0xbb8;
-    public const ulong m_flDampingOriginalRot = 0xbbc;
-}
-
-public static class CPhysPropMapPlacedLongUseEntity {
-    public const ulong m_iszStartUseSound = 0xba0;
-    public const ulong m_nPingType = 0xba8;
-    public const ulong m_nLongUseActionType = 0xbac;
-    public const ulong m_flLongUseDuration = 0xbb0;
-    public const ulong m_OnUseCompleted = 0xbb8;
-}
-
-public static class CPhysPropMoneyCrate {
-    public const ulong m_nCurrentCashCount = 0xbc0;
-    public const ulong m_nCashCount = 0xbc4;
-    public const ulong m_flTimeLastUsed = 0xbc8;
-}
-
-public static class CPhysPropParadropCrate {
-    public const ulong m_bFalling = 0xbc0;
-    public const ulong m_nNumThinksAtZeroVerticalVelocity = 0xbc4;
-}
-
-public static class CPhysPropRadarJammer {
-    public const ulong m_flSpawnTime = 0xba0;
-    public const ulong m_flLastSoundTime = 0xba4;
-    public const ulong m_vecJammedHexCenters = 0xba8;
-    public const ulong m_vecLastJammedOrigin = 0xbc0;
-}
-
-public static class CPhysPropWeaponUpgrade {
-    public const ulong m_nEventPriority = 0xb98;
-    public const ulong m_flTimeLastUsed = 0xb9c;
 }
 
 public static class CPhysPulley {
@@ -4599,48 +4427,48 @@ public static class CPhysicsEntitySolver {
 }
 
 public static class CPhysicsProp {
-    public const ulong m_MotionEnabled = 0xa08;
-    public const ulong m_OnAwakened = 0xa30;
-    public const ulong m_OnAwake = 0xa58;
-    public const ulong m_OnAsleep = 0xa80;
-    public const ulong m_OnPlayerUse = 0xaa8;
-    public const ulong m_OnPlayerPickup = 0xad0;
-    public const ulong m_OnOutOfWorld = 0xaf8;
-    public const ulong m_massScale = 0xb20;
-    public const ulong m_inertiaScale = 0xb24;
-    public const ulong m_buoyancyScale = 0xb28;
-    public const ulong m_damageType = 0xb2c;
-    public const ulong m_damageToEnableMotion = 0xb30;
-    public const ulong m_flForceToEnableMotion = 0xb34;
-    public const ulong m_bThrownByPlayer = 0xb38;
-    public const ulong m_bDroppedByPlayer = 0xb39;
-    public const ulong m_bTouchedByPlayer = 0xb3a;
-    public const ulong m_bFirstCollisionAfterLaunch = 0xb3b;
-    public const ulong m_iExploitableByPlayer = 0xb3c;
-    public const ulong m_bHasBeenAwakened = 0xb40;
-    public const ulong m_bIsOverrideProp = 0xb41;
-    public const ulong m_fNextCheckDisableMotionContactsTime = 0xb44;
-    public const ulong m_iInitialGlowState = 0xb48;
-    public const ulong m_nGlowRange = 0xb4c;
-    public const ulong m_nGlowRangeMin = 0xb50;
-    public const ulong m_glowColor = 0xb54;
-    public const ulong m_bForceNavIgnore = 0xb58;
-    public const ulong m_bNoNavmeshBlocker = 0xb59;
-    public const ulong m_bForceNpcExclude = 0xb5a;
-    public const ulong m_bShouldAutoConvertBackFromDebris = 0xb5b;
-    public const ulong m_bMuteImpactEffects = 0xb5c;
-    public const ulong m_bAcceptDamageFromHeldObjects = 0xb64;
-    public const ulong m_bEnableUseOutput = 0xb65;
-    public const ulong m_bAwake = 0xb66;
-    public const ulong m_nCollisionGroupOverride = 0xb68;
+    public const ulong m_MotionEnabled = 0xa10;
+    public const ulong m_OnAwakened = 0xa38;
+    public const ulong m_OnAwake = 0xa60;
+    public const ulong m_OnAsleep = 0xa88;
+    public const ulong m_OnPlayerUse = 0xab0;
+    public const ulong m_OnPlayerPickup = 0xad8;
+    public const ulong m_OnOutOfWorld = 0xb00;
+    public const ulong m_massScale = 0xb28;
+    public const ulong m_inertiaScale = 0xb2c;
+    public const ulong m_buoyancyScale = 0xb30;
+    public const ulong m_damageType = 0xb34;
+    public const ulong m_damageToEnableMotion = 0xb38;
+    public const ulong m_flForceToEnableMotion = 0xb3c;
+    public const ulong m_bThrownByPlayer = 0xb40;
+    public const ulong m_bDroppedByPlayer = 0xb41;
+    public const ulong m_bTouchedByPlayer = 0xb42;
+    public const ulong m_bFirstCollisionAfterLaunch = 0xb43;
+    public const ulong m_iExploitableByPlayer = 0xb44;
+    public const ulong m_bHasBeenAwakened = 0xb48;
+    public const ulong m_bIsOverrideProp = 0xb49;
+    public const ulong m_fNextCheckDisableMotionContactsTime = 0xb4c;
+    public const ulong m_iInitialGlowState = 0xb50;
+    public const ulong m_nGlowRange = 0xb54;
+    public const ulong m_nGlowRangeMin = 0xb58;
+    public const ulong m_glowColor = 0xb5c;
+    public const ulong m_bForceNavIgnore = 0xb60;
+    public const ulong m_bNoNavmeshBlocker = 0xb61;
+    public const ulong m_bForceNpcExclude = 0xb62;
+    public const ulong m_bShouldAutoConvertBackFromDebris = 0xb63;
+    public const ulong m_bMuteImpactEffects = 0xb64;
+    public const ulong m_bAcceptDamageFromHeldObjects = 0xb6c;
+    public const ulong m_bEnableUseOutput = 0xb6d;
+    public const ulong m_bAwake = 0xb6e;
+    public const ulong m_nCollisionGroupOverride = 0xb70;
 }
 
 public static class CPhysicsPropRespawnable {
-    public const ulong m_vOriginalSpawnOrigin = 0xb70;
-    public const ulong m_vOriginalSpawnAngles = 0xb7c;
-    public const ulong m_vOriginalMins = 0xb88;
-    public const ulong m_vOriginalMaxs = 0xb94;
-    public const ulong m_flRespawnDuration = 0xba0;
+    public const ulong m_vOriginalSpawnOrigin = 0xb78;
+    public const ulong m_vOriginalSpawnAngles = 0xb84;
+    public const ulong m_vOriginalMins = 0xb90;
+    public const ulong m_vOriginalMaxs = 0xb9c;
+    public const ulong m_flRespawnDuration = 0xba8;
 }
 
 public static class CPhysicsShake {
@@ -4663,34 +4491,33 @@ public static class CPhysicsWire {
 }
 
 public static class CPlantedC4 {
-    public const ulong m_bPlantedAtQuestTarget = 0x888;
-    public const ulong m_bBombTicking = 0x889;
-    public const ulong m_flC4Blow = 0x88c;
-    public const ulong m_nBombSite = 0x890;
-    public const ulong m_nSourceSoundscapeHash = 0x894;
-    public const ulong m_OnBombDefused = 0x898;
-    public const ulong m_OnBombBeginDefuse = 0x8c0;
-    public const ulong m_OnBombDefuseAborted = 0x8e8;
-    public const ulong m_bCannotBeDefused = 0x910;
-    public const ulong m_entitySpottedState = 0x918;
-    public const ulong m_nSpotRules = 0x930;
-    public const ulong m_bTrainingPlacedByPlayer = 0x934;
-    public const ulong m_bHasExploded = 0x935;
-    public const ulong m_flTimerLength = 0x938;
-    public const ulong m_bBeingDefused = 0x93c;
-    public const ulong m_fLastDefuseTime = 0x944;
-    public const ulong m_flDefuseLength = 0x94c;
-    public const ulong m_flDefuseCountDown = 0x950;
-    public const ulong m_bBombDefused = 0x954;
-    public const ulong m_hBombDefuser = 0x958;
-    public const ulong m_hControlPanel = 0x95c;
-    public const ulong m_iProgressBarTime = 0x960;
-    public const ulong m_bVoiceAlertFired = 0x964;
-    public const ulong m_bVoiceAlertPlayed = 0x965;
-    public const ulong m_flNextBotBeepTime = 0x96c;
-    public const ulong m_bPlantedAfterPickup = 0x974;
-    public const ulong m_angCatchUpToPlayerEye = 0x978;
-    public const ulong m_flLastSpinDetectionTime = 0x984;
+    public const ulong m_bBombTicking = 0x890;
+    public const ulong m_flC4Blow = 0x894;
+    public const ulong m_nBombSite = 0x898;
+    public const ulong m_nSourceSoundscapeHash = 0x89c;
+    public const ulong m_OnBombDefused = 0x8a0;
+    public const ulong m_OnBombBeginDefuse = 0x8c8;
+    public const ulong m_OnBombDefuseAborted = 0x8f0;
+    public const ulong m_bCannotBeDefused = 0x918;
+    public const ulong m_entitySpottedState = 0x920;
+    public const ulong m_nSpotRules = 0x938;
+    public const ulong m_bTrainingPlacedByPlayer = 0x93c;
+    public const ulong m_bHasExploded = 0x93d;
+    public const ulong m_flTimerLength = 0x940;
+    public const ulong m_bBeingDefused = 0x944;
+    public const ulong m_fLastDefuseTime = 0x94c;
+    public const ulong m_flDefuseLength = 0x954;
+    public const ulong m_flDefuseCountDown = 0x958;
+    public const ulong m_bBombDefused = 0x95c;
+    public const ulong m_hBombDefuser = 0x960;
+    public const ulong m_hControlPanel = 0x964;
+    public const ulong m_iProgressBarTime = 0x968;
+    public const ulong m_bVoiceAlertFired = 0x96c;
+    public const ulong m_bVoiceAlertPlayed = 0x96d;
+    public const ulong m_flNextBotBeepTime = 0x974;
+    public const ulong m_bPlantedAfterPickup = 0x97c;
+    public const ulong m_angCatchUpToPlayerEye = 0x980;
+    public const ulong m_flLastSpinDetectionTime = 0x98c;
 }
 
 public static class CPlatTrigger {
@@ -4908,58 +4735,36 @@ public static class CPointClientUIWorldTextPanel {
 }
 
 public static class CPointCommentaryNode {
-    public const ulong m_iszPreCommands = 0x888;
-    public const ulong m_iszPostCommands = 0x890;
-    public const ulong m_iszCommentaryFile = 0x898;
-    public const ulong m_iszViewTarget = 0x8a0;
-    public const ulong m_hViewTarget = 0x8a8;
-    public const ulong m_hViewTargetAngles = 0x8ac;
-    public const ulong m_iszViewPosition = 0x8b0;
-    public const ulong m_hViewPosition = 0x8b8;
-    public const ulong m_hViewPositionMover = 0x8bc;
-    public const ulong m_bPreventMovement = 0x8c0;
-    public const ulong m_bUnderCrosshair = 0x8c1;
-    public const ulong m_bUnstoppable = 0x8c2;
-    public const ulong m_flFinishedTime = 0x8c4;
-    public const ulong m_vecFinishOrigin = 0x8c8;
-    public const ulong m_vecOriginalAngles = 0x8d4;
-    public const ulong m_vecFinishAngles = 0x8e0;
-    public const ulong m_bPreventChangesWhileMoving = 0x8ec;
-    public const ulong m_bDisabled = 0x8ed;
-    public const ulong m_vecTeleportOrigin = 0x8f0;
-    public const ulong m_flAbortedPlaybackAt = 0x8fc;
-    public const ulong m_pOnCommentaryStarted = 0x900;
-    public const ulong m_pOnCommentaryStopped = 0x928;
-    public const ulong m_bActive = 0x950;
-    public const ulong m_flStartTime = 0x954;
-    public const ulong m_flStartTimeInCommentary = 0x958;
-    public const ulong m_iszTitle = 0x960;
-    public const ulong m_iszSpeakers = 0x968;
-    public const ulong m_iNodeNumber = 0x970;
-    public const ulong m_iNodeNumberMax = 0x974;
-    public const ulong m_bListenedTo = 0x978;
-}
-
-public static class CPointDZDroneGunSpawn {
-    public const ulong m_bSpawnAutomatically = 0x4b8;
-}
-
-public static class CPointDZItemSpawnGroup {
-    public const ulong m_flRadius = 0x4b0;
-}
-
-public static class CPointDZParadropDenialRegion {
-    public const ulong m_flRadius = 0x4b8;
-}
-
-public static class CPointDZWeaponSpawn {
-    public const ulong m_nGroupID = 0x4c0;
-    public const ulong m_flDefaultWeight = 0x4c4;
-    public const ulong m_flCurrentWeight = 0x4c8;
-    public const ulong m_hItem = 0x4cc;
-    public const ulong m_iszDoorName = 0x4d0;
-    public const ulong m_hDoor = 0x4d8;
-    public const ulong m_nPrice = 0x4dc;
+    public const ulong m_iszPreCommands = 0x890;
+    public const ulong m_iszPostCommands = 0x898;
+    public const ulong m_iszCommentaryFile = 0x8a0;
+    public const ulong m_iszViewTarget = 0x8a8;
+    public const ulong m_hViewTarget = 0x8b0;
+    public const ulong m_hViewTargetAngles = 0x8b4;
+    public const ulong m_iszViewPosition = 0x8b8;
+    public const ulong m_hViewPosition = 0x8c0;
+    public const ulong m_hViewPositionMover = 0x8c4;
+    public const ulong m_bPreventMovement = 0x8c8;
+    public const ulong m_bUnderCrosshair = 0x8c9;
+    public const ulong m_bUnstoppable = 0x8ca;
+    public const ulong m_flFinishedTime = 0x8cc;
+    public const ulong m_vecFinishOrigin = 0x8d0;
+    public const ulong m_vecOriginalAngles = 0x8dc;
+    public const ulong m_vecFinishAngles = 0x8e8;
+    public const ulong m_bPreventChangesWhileMoving = 0x8f4;
+    public const ulong m_bDisabled = 0x8f5;
+    public const ulong m_vecTeleportOrigin = 0x8f8;
+    public const ulong m_flAbortedPlaybackAt = 0x904;
+    public const ulong m_pOnCommentaryStarted = 0x908;
+    public const ulong m_pOnCommentaryStopped = 0x930;
+    public const ulong m_bActive = 0x958;
+    public const ulong m_flStartTime = 0x95c;
+    public const ulong m_flStartTimeInCommentary = 0x960;
+    public const ulong m_iszTitle = 0x968;
+    public const ulong m_iszSpeakers = 0x970;
+    public const ulong m_iNodeNumber = 0x978;
+    public const ulong m_iNodeNumberMax = 0x97c;
+    public const ulong m_bListenedTo = 0x980;
 }
 
 public static class CPointEntityFinder {
@@ -4993,8 +4798,10 @@ public static class CPointHurt {
 public static class CPointPrefab {
     public const ulong m_targetMapName = 0x4b0;
     public const ulong m_forceWorldGroupID = 0x4b8;
-    public const ulong m_fixupNames = 0x4c0;
-    public const ulong m_bLoadDynamic = 0x4c1;
+    public const ulong m_associatedRelayTargetName = 0x4c0;
+    public const ulong m_fixupNames = 0x4c8;
+    public const ulong m_bLoadDynamic = 0x4c9;
+    public const ulong m_associatedRelayEntity = 0x4cc;
 }
 
 public static class CPointProximitySensor {
@@ -5145,36 +4952,31 @@ public static class CProjectedDecal {
     public const ulong m_flDistance = 0x4b4;
 }
 
-public static class CPropCounter {
-    public const ulong m_flDisplayValue = 0x888;
-    public const ulong m_nInitialValue = 0x88c;
-}
-
 public static class CPropDoorRotating {
-    public const ulong m_vecAxis = 0xd90;
-    public const ulong m_flDistance = 0xd9c;
-    public const ulong m_eSpawnPosition = 0xda0;
-    public const ulong m_eOpenDirection = 0xda4;
-    public const ulong m_eCurrentOpenDirection = 0xda8;
-    public const ulong m_flAjarAngle = 0xdac;
-    public const ulong m_angRotationAjarDeprecated = 0xdb0;
-    public const ulong m_angRotationClosed = 0xdbc;
-    public const ulong m_angRotationOpenForward = 0xdc8;
-    public const ulong m_angRotationOpenBack = 0xdd4;
-    public const ulong m_angGoal = 0xde0;
-    public const ulong m_vecForwardBoundsMin = 0xdec;
-    public const ulong m_vecForwardBoundsMax = 0xdf8;
-    public const ulong m_vecBackBoundsMin = 0xe04;
-    public const ulong m_vecBackBoundsMax = 0xe10;
-    public const ulong m_bAjarDoorShouldntAlwaysOpen = 0xe1c;
-    public const ulong m_hEntityBlocker = 0xe20;
+    public const ulong m_vecAxis = 0xd98;
+    public const ulong m_flDistance = 0xda4;
+    public const ulong m_eSpawnPosition = 0xda8;
+    public const ulong m_eOpenDirection = 0xdac;
+    public const ulong m_eCurrentOpenDirection = 0xdb0;
+    public const ulong m_flAjarAngle = 0xdb4;
+    public const ulong m_angRotationAjarDeprecated = 0xdb8;
+    public const ulong m_angRotationClosed = 0xdc4;
+    public const ulong m_angRotationOpenForward = 0xdd0;
+    public const ulong m_angRotationOpenBack = 0xddc;
+    public const ulong m_angGoal = 0xde8;
+    public const ulong m_vecForwardBoundsMin = 0xdf4;
+    public const ulong m_vecForwardBoundsMax = 0xe00;
+    public const ulong m_vecBackBoundsMin = 0xe0c;
+    public const ulong m_vecBackBoundsMax = 0xe18;
+    public const ulong m_bAjarDoorShouldntAlwaysOpen = 0xe24;
+    public const ulong m_hEntityBlocker = 0xe28;
 }
 
 public static class CPropDoorRotatingBreakable {
-    public const ulong m_bBreakable = 0xe28;
-    public const ulong m_isAbleToCloseAreaPortals = 0xe29;
-    public const ulong m_currentDamageState = 0xe2c;
-    public const ulong m_damageStates = 0xe30;
+    public const ulong m_bBreakable = 0xe30;
+    public const ulong m_isAbleToCloseAreaPortals = 0xe31;
+    public const ulong m_currentDamageState = 0xe34;
+    public const ulong m_damageStates = 0xe38;
 }
 
 public static class CPulseCell_Inflow_GameEvent {
@@ -5242,43 +5044,43 @@ public static class CRagdollManager {
 }
 
 public static class CRagdollProp {
-    public const ulong m_ragdoll = 0x890;
-    public const ulong m_bStartDisabled = 0x8c8;
-    public const ulong m_ragPos = 0x8d0;
-    public const ulong m_ragAngles = 0x8e8;
-    public const ulong m_hRagdollSource = 0x900;
-    public const ulong m_lastUpdateTickCount = 0x904;
-    public const ulong m_allAsleep = 0x908;
-    public const ulong m_bFirstCollisionAfterLaunch = 0x909;
-    public const ulong m_hDamageEntity = 0x90c;
-    public const ulong m_hKiller = 0x910;
-    public const ulong m_hPhysicsAttacker = 0x914;
-    public const ulong m_flLastPhysicsInfluenceTime = 0x918;
-    public const ulong m_flFadeOutStartTime = 0x91c;
-    public const ulong m_flFadeTime = 0x920;
-    public const ulong m_vecLastOrigin = 0x924;
-    public const ulong m_flAwakeTime = 0x930;
-    public const ulong m_flLastOriginChangeTime = 0x934;
-    public const ulong m_nBloodColor = 0x938;
-    public const ulong m_strOriginClassName = 0x940;
-    public const ulong m_strSourceClassName = 0x948;
-    public const ulong m_bHasBeenPhysgunned = 0x950;
-    public const ulong m_bShouldTeleportPhysics = 0x951;
-    public const ulong m_flBlendWeight = 0x954;
-    public const ulong m_flDefaultFadeScale = 0x958;
-    public const ulong m_ragdollMins = 0x960;
-    public const ulong m_ragdollMaxs = 0x978;
-    public const ulong m_bShouldDeleteActivationRecord = 0x990;
-    public const ulong m_bValidatePoweredRagdollPose = 0x9f0;
+    public const ulong m_ragdoll = 0x898;
+    public const ulong m_bStartDisabled = 0x8d0;
+    public const ulong m_ragPos = 0x8d8;
+    public const ulong m_ragAngles = 0x8f0;
+    public const ulong m_hRagdollSource = 0x908;
+    public const ulong m_lastUpdateTickCount = 0x90c;
+    public const ulong m_allAsleep = 0x910;
+    public const ulong m_bFirstCollisionAfterLaunch = 0x911;
+    public const ulong m_hDamageEntity = 0x914;
+    public const ulong m_hKiller = 0x918;
+    public const ulong m_hPhysicsAttacker = 0x91c;
+    public const ulong m_flLastPhysicsInfluenceTime = 0x920;
+    public const ulong m_flFadeOutStartTime = 0x924;
+    public const ulong m_flFadeTime = 0x928;
+    public const ulong m_vecLastOrigin = 0x92c;
+    public const ulong m_flAwakeTime = 0x938;
+    public const ulong m_flLastOriginChangeTime = 0x93c;
+    public const ulong m_nBloodColor = 0x940;
+    public const ulong m_strOriginClassName = 0x948;
+    public const ulong m_strSourceClassName = 0x950;
+    public const ulong m_bHasBeenPhysgunned = 0x958;
+    public const ulong m_bShouldTeleportPhysics = 0x959;
+    public const ulong m_flBlendWeight = 0x95c;
+    public const ulong m_flDefaultFadeScale = 0x960;
+    public const ulong m_ragdollMins = 0x968;
+    public const ulong m_ragdollMaxs = 0x980;
+    public const ulong m_bShouldDeleteActivationRecord = 0x998;
+    public const ulong m_bValidatePoweredRagdollPose = 0x9f8;
 }
 
 public static class CRagdollPropAttached {
-    public const ulong m_boneIndexAttached = 0xa30;
-    public const ulong m_ragdollAttachedObjectIndex = 0xa34;
-    public const ulong m_attachmentPointBoneSpace = 0xa38;
-    public const ulong m_attachmentPointRagdollSpace = 0xa44;
-    public const ulong m_bShouldDetach = 0xa50;
-    public const ulong m_bShouldDeleteAttachedActivationRecord = 0xa60;
+    public const ulong m_boneIndexAttached = 0xa38;
+    public const ulong m_ragdollAttachedObjectIndex = 0xa3c;
+    public const ulong m_attachmentPointBoneSpace = 0xa40;
+    public const ulong m_attachmentPointRagdollSpace = 0xa4c;
+    public const ulong m_bShouldDetach = 0xa58;
+    public const ulong m_bShouldDeleteAttachedActivationRecord = 0xa68;
 }
 
 public static class CRandSimTimer {
@@ -5537,8 +5339,8 @@ public static class CScriptComponent {
 }
 
 public static class CScriptItem {
-    public const ulong m_OnPlayerPickup = 0x960;
-    public const ulong m_MoveTypeOverride = 0x988;
+    public const ulong m_OnPlayerPickup = 0x968;
+    public const ulong m_MoveTypeOverride = 0x990;
 }
 
 public static class CScriptNavBlocker {
@@ -5632,9 +5434,9 @@ public static class CScriptedSequence {
 }
 
 public static class CSensorGrenadeProjectile {
-    public const ulong m_fExpireTime = 0xa20;
-    public const ulong m_fNextDetectPlayerSound = 0xa24;
-    public const ulong m_hDisplayGrenade = 0xa28;
+    public const ulong m_fExpireTime = 0xa28;
+    public const ulong m_fNextDetectPlayerSound = 0xa2c;
+    public const ulong m_hDisplayGrenade = 0xa30;
 }
 
 public static class CShatterGlassShard {
@@ -5671,9 +5473,9 @@ public static class CShatterGlassShard {
 }
 
 public static class CShatterGlassShardPhysics {
-    public const ulong m_bDebris = 0xb70;
-    public const ulong m_hParentShard = 0xb74;
-    public const ulong m_ShardDesc = 0xb78;
+    public const ulong m_bDebris = 0xb78;
+    public const ulong m_hParentShard = 0xb7c;
+    public const ulong m_ShardDesc = 0xb80;
 }
 
 public static class CSimTimer {
@@ -5730,14 +5532,14 @@ public static class CSkyboxReference {
 }
 
 public static class CSmokeGrenadeProjectile {
-    public const ulong m_nSmokeEffectTickBegin = 0xa38;
-    public const ulong m_bDidSmokeEffect = 0xa3c;
-    public const ulong m_nRandomSeed = 0xa40;
-    public const ulong m_vSmokeColor = 0xa44;
-    public const ulong m_vSmokeDetonationPos = 0xa50;
-    public const ulong m_VoxelFrameData = 0xa60;
-    public const ulong m_flLastBounce = 0xa78;
-    public const ulong m_fllastSimulationTime = 0xa7c;
+    public const ulong m_nSmokeEffectTickBegin = 0xa40;
+    public const ulong m_bDidSmokeEffect = 0xa44;
+    public const ulong m_nRandomSeed = 0xa48;
+    public const ulong m_vSmokeColor = 0xa4c;
+    public const ulong m_vSmokeDetonationPos = 0xa58;
+    public const ulong m_VoxelFrameData = 0xa68;
+    public const ulong m_flLastBounce = 0xa80;
+    public const ulong m_fllastSimulationTime = 0xa84;
 }
 
 public static class CSmoothFunc {
@@ -5986,80 +5788,6 @@ public static class CSun {
     public const ulong m_flFarZScale = 0x740;
 }
 
-public static class CSurvivalGameRules {
-    public const ulong m_bBoundsInitialized = 0x8;
-    public const ulong m_vecPlayAreaMins = 0xc;
-    public const ulong m_vecPlayAreaMaxs = 0x18;
-    public const ulong m_iPlayerSpawnHexIndices = 0x24;
-    public const ulong m_SpawnTileState = 0x124;
-    public const ulong m_flSpawnSelectionTimeStartCurrentStage = 0x204;
-    public const ulong m_flSpawnSelectionTimeEndCurrentStage = 0x208;
-    public const ulong m_flSpawnSelectionTimeEndLastStage = 0x20c;
-    public const ulong m_spawnStage = 0x210;
-    public const ulong m_flTabletHexOriginX = 0x214;
-    public const ulong m_flTabletHexOriginY = 0x218;
-    public const ulong m_flTabletHexSize = 0x21c;
-    public const ulong m_roundData_playerXuids = 0x220;
-    public const ulong m_roundData_playerPositions = 0x420;
-    public const ulong m_roundData_playerTeams = 0x520;
-    public const ulong m_SurvivalGameRuleDecisionTypes = 0x620;
-    public const ulong m_SurvivalGameRuleDecisionValues = 0x660;
-    public const ulong m_flSurvivalStartTime = 0x6a0;
-    public const ulong m_flLastThinkTime = 0x6a4;
-    public const ulong m_nBlockedTileIndices = 0x6a8;
-    public const ulong m_vecPlayerSpawnLocations = 0x790;
-    public const ulong m_bWaitingForMoreThanOnePlayer = 0x7a8;
-    public const ulong m_bSurvivalEventFired_FadeEveryoneOutFromMapSelection = 0x7a9;
-    public const ulong m_bSurvivalEventFired_TimeForSmokeBeacons = 0x7aa;
-    public const ulong m_bSurvivalEventFired_FirstParadropIncoming = 0x7ab;
-    public const ulong m_bSurvivalEventFired_WarnedEveryoneAboutRespawnEnding = 0x7ac;
-    public const ulong m_flLastWinConditionDetectedTime = 0x7b0;
-    public const ulong m_nWinConditionStageProgress = 0x7b4;
-    public const ulong m_nEntIndexOfRunnerUpPlayer = 0x7b8;
-    public const ulong m_nEntIndexOfKilledPlayerCheckingWinConditions = 0x7bc;
-    public const ulong m_flTimeOfLastParadrop = 0x7c0;
-    public const ulong m_bSurvivalEventFired_PlayedWinnerSurrenderAnim = 0x7f8;
-    public const ulong m_hWinnerPlayer = 0x7fc;
-    public const ulong m_vecLoadedOutPlayers = 0x800;
-    public const ulong m_vecRespawnedPlayers = 0x818;
-    public const ulong m_vecMetalCrates = 0x830;
-    public const ulong m_flLastDroneSpawnTime = 0x848;
-    public const ulong m_hSpawnChopper = 0x868;
-}
-
-public static class CSurvivalSpawnChopper {
-    public const ulong m_pSoundLoop = 0x888;
-    public const ulong m_flSpawnTimeStamp = 0x890;
-    public const ulong m_flFlightPathRotationOffset = 0x894;
-    public const ulong m_bFlipX = 0x898;
-    public const ulong m_bFlipY = 0x899;
-    public const ulong m_bCircling = 0x89a;
-    public const ulong m_flLastPassengerCheckTime = 0x89c;
-}
-
-public static class CTablet {
-    public const ulong m_bPendingBuyMenu = 0xdd8;
-    public const ulong m_flUpgradeExpirationTime = 0xddc;
-    public const ulong m_vecLocalHexFlags = 0xdec;
-    public const ulong m_nContractKillGridIndex = 0xe94;
-    public const ulong m_nContractKillGridHighResIndex = 0xe98;
-    public const ulong m_bTabletReceptionIsBlocked = 0xe9c;
-    public const ulong m_flScanProgress = 0xea0;
-    public const ulong m_flBootTime = 0xea4;
-    public const ulong m_flShowMapTime = 0xea8;
-    public const ulong m_vecNearestMetalCratePos = 0xeac;
-    public const ulong m_skinState = 0xeb8;
-    public const ulong m_vecNotificationIds = 0xebc;
-    public const ulong m_vecNotificationTimestamps = 0xedc;
-    public const ulong m_nLastPurchaseIndex = 0xefc;
-    public const ulong m_vecPlayerPositionHistory = 0xf00;
-    public const ulong m_vecLastPlayerPosition = 0x1020;
-    public const ulong m_flNextCheckForIncomingDronesTime = 0x1028;
-    public const ulong m_flLastPlayerOccupiedGridUpdate = 0x102c;
-    public const ulong m_flLastTabletBlockedTime = 0x1030;
-    public const ulong m_flLastClosePoseParamVal = 0x10e0;
-}
-
 public static class CTakeDamageInfo {
     public const ulong m_vecDamageForce = 0x8;
     public const ulong m_vecDamagePosition = 0x14;
@@ -6078,7 +5806,7 @@ public static class CTakeDamageInfo {
     public const ulong m_nDamageFlags = 0x70;
     public const ulong m_nNumObjectsPenetrated = 0x74;
     public const ulong m_hScriptInstance = 0x78;
-    public const ulong m_bInTakeDamageFlow = 0x98;
+    public const ulong m_bInTakeDamageFlow = 0x94;
 }
 
 public static class CTakeDamageResult {
@@ -6317,10 +6045,6 @@ public static class CTriggerRemove {
     public const ulong m_OnRemove = 0x8a8;
 }
 
-public static class CTriggerSafeMoneyGather {
-    public const ulong m_vecCashBundles = 0x8a8;
-}
-
 public static class CTriggerSave {
     public const ulong m_bForceNewLevelUnit = 0x8a8;
     public const ulong m_fDangerousTimer = 0x8ac;
@@ -6366,17 +6090,6 @@ public static class CTriggerVolume {
     public const ulong m_hFilter = 0x708;
 }
 
-public static class CTripWireFireProjectile {
-    public const ulong m_flAttachTime = 0x9c0;
-    public const ulong m_vecTripWireEndPositions = 0x9c4;
-    public const ulong m_bTripWireEndPositionsUsed = 0xa3c;
-    public const ulong m_hStuckToEnt = 0xa48;
-    public const ulong m_nLastStuckToEntModelIndex = 0xa4c;
-    public const ulong m_xformStuckToEnt = 0xa50;
-    public const ulong m_vecTrapSetPosition = 0xa70;
-    public const ulong m_nWireSoundsPlayed = 0xa7c;
-}
-
 public static class CVoteController {
     public const ulong m_iActiveIssueIndex = 0x4b0;
     public const ulong m_iOnlyTeamToVote = 0x4b4;
@@ -6386,190 +6099,27 @@ public static class CVoteController {
     public const ulong m_acceptingVotesTimer = 0x4d8;
     public const ulong m_executeCommandTimer = 0x4f0;
     public const ulong m_resetVoteTimer = 0x508;
-    public const ulong m_arrVotedUsers = 0x520;
-    public const ulong m_nVotesCast = 0x538;
-    public const ulong m_playerHoldingVote = 0x638;
-    public const ulong m_playerOverrideForVote = 0x63c;
-    public const ulong m_nHighestCountIndex = 0x640;
-    public const ulong m_potentialIssues = 0x648;
-    public const ulong m_VoteOptions = 0x660;
+    public const ulong m_nVotesCast = 0x520;
+    public const ulong m_playerHoldingVote = 0x620;
+    public const ulong m_playerOverrideForVote = 0x624;
+    public const ulong m_nHighestCountIndex = 0x628;
+    public const ulong m_potentialIssues = 0x630;
+    public const ulong m_VoteOptions = 0x648;
 }
 
 public static class CWeaponBaseItem {
-    public const ulong m_SequenceCompleteTimer = 0xdd0;
-    public const ulong m_bRedraw = 0xde8;
-}
-
-public static class CWeaponCSBase {
-    public const ulong m_bRemoveable = 0xc80;
-    public const ulong m_flFireSequenceStartTime = 0xc84;
-    public const ulong m_nFireSequenceStartTimeChange = 0xc88;
-    public const ulong m_nFireSequenceStartTimeAck = 0xc8c;
-    public const ulong m_bPlayerFireEventIsPrimary = 0xc90;
-    public const ulong m_seqIdle = 0xc94;
-    public const ulong m_seqFirePrimary = 0xc98;
-    public const ulong m_seqFireSecondary = 0xc9c;
-    public const ulong m_bPlayerAmmoStockOnPickup = 0xca8;
-    public const ulong m_bRequireUseToTouch = 0xca9;
-    public const ulong m_iState = 0xcac;
-    public const ulong m_flLastTimeInAir = 0xcb0;
-    public const ulong m_flLastDeployTime = 0xcb4;
-    public const ulong m_nViewModelIndex = 0xcb8;
-    public const ulong m_bReloadsWithClips = 0xcbc;
-    public const ulong m_flTimeWeaponIdle = 0xcd8;
-    public const ulong m_bFireOnEmpty = 0xcdc;
-    public const ulong m_OnPlayerPickup = 0xce0;
-    public const ulong m_weaponMode = 0xd08;
-    public const ulong m_flTurningInaccuracyDelta = 0xd0c;
-    public const ulong m_vecTurningInaccuracyEyeDirLast = 0xd10;
-    public const ulong m_flTurningInaccuracy = 0xd1c;
-    public const ulong m_fAccuracyPenalty = 0xd20;
-    public const ulong m_flLastAccuracyUpdateTime = 0xd24;
-    public const ulong m_fAccuracySmoothedForZoom = 0xd28;
-    public const ulong m_fScopeZoomEndTime = 0xd2c;
-    public const ulong m_iRecoilIndex = 0xd30;
-    public const ulong m_flRecoilIndex = 0xd34;
-    public const ulong m_bBurstMode = 0xd38;
-    public const ulong m_flPostponeFireReadyTime = 0xd3c;
-    public const ulong m_bInReload = 0xd40;
-    public const ulong m_bReloadVisuallyComplete = 0xd41;
-    public const ulong m_flDroppedAtTime = 0xd44;
-    public const ulong m_bIsHauledBack = 0xd48;
-    public const ulong m_bSilencerOn = 0xd49;
-    public const ulong m_flTimeSilencerSwitchComplete = 0xd4c;
-    public const ulong m_iOriginalTeamNumber = 0xd50;
-    public const ulong m_flNextAttackRenderTimeOffset = 0xd54;
-    public const ulong m_bCanBePickedUp = 0xd60;
-    public const ulong m_bUseCanOverrideNextOwnerTouchTime = 0xd61;
-    public const ulong m_nextOwnerTouchTime = 0xd64;
-    public const ulong m_nextPrevOwnerTouchTime = 0xd68;
-    public const ulong m_hPrevOwner = 0xd6c;
-    public const ulong m_nDropTick = 0xd70;
-    public const ulong m_donated = 0xd94;
-    public const ulong m_fLastShotTime = 0xd98;
-    public const ulong m_bWasOwnedByCT = 0xd9c;
-    public const ulong m_bWasOwnedByTerrorist = 0xd9d;
-    public const ulong m_bFiredOutOfAmmoEvent = 0xd9e;
-    public const ulong m_numRemoveUnownedWeaponThink = 0xda0;
-    public const ulong m_IronSightController = 0xda8;
-    public const ulong m_iIronSightMode = 0xdc0;
-    public const ulong m_flLastLOSTraceFailureTime = 0xdc4;
-    public const ulong m_iNumEmptyAttacks = 0xdc8;
-}
-
-public static class CWeaponCSBaseGun {
-    public const ulong m_zoomLevel = 0xdd0;
-    public const ulong m_iBurstShotsRemaining = 0xdd4;
-    public const ulong m_silencedModelIndex = 0xde0;
-    public const ulong m_inPrecache = 0xde4;
-    public const ulong m_bNeedsBoltAction = 0xde5;
-    public const ulong m_bSkillReloadAvailable = 0xde6;
-    public const ulong m_bSkillReloadLiftedReloadKey = 0xde7;
-    public const ulong m_bSkillBoltInterruptAvailable = 0xde8;
-    public const ulong m_bSkillBoltLiftedFireKey = 0xde9;
-}
-
-public static class CWeaponCSBaseVData {
-    public const ulong m_WeaponType = 0x240;
-    public const ulong m_WeaponCategory = 0x244;
-    public const ulong m_szViewModel = 0x248;
-    public const ulong m_szPlayerModel = 0x328;
-    public const ulong m_szWorldDroppedModel = 0x408;
-    public const ulong m_szAimsightLensMaskModel = 0x4e8;
-    public const ulong m_szMagazineModel = 0x5c8;
-    public const ulong m_szHeatEffect = 0x6a8;
-    public const ulong m_szEjectBrassEffect = 0x788;
-    public const ulong m_szMuzzleFlashParticleAlt = 0x868;
-    public const ulong m_szMuzzleFlashThirdPersonParticle = 0x948;
-    public const ulong m_szMuzzleFlashThirdPersonParticleAlt = 0xa28;
-    public const ulong m_szTracerParticle = 0xb08;
-    public const ulong m_GearSlot = 0xbe8;
-    public const ulong m_GearSlotPosition = 0xbec;
-    public const ulong m_DefaultLoadoutSlot = 0xbf0;
-    public const ulong m_sWrongTeamMsg = 0xbf8;
-    public const ulong m_nPrice = 0xc00;
-    public const ulong m_nKillAward = 0xc04;
-    public const ulong m_nPrimaryReserveAmmoMax = 0xc08;
-    public const ulong m_nSecondaryReserveAmmoMax = 0xc0c;
-    public const ulong m_bMeleeWeapon = 0xc10;
-    public const ulong m_bHasBurstMode = 0xc11;
-    public const ulong m_bIsRevolver = 0xc12;
-    public const ulong m_bCannotShootUnderwater = 0xc13;
-    public const ulong m_szName = 0xc18;
-    public const ulong m_szAnimExtension = 0xc20;
-    public const ulong m_eSilencerType = 0xc28;
-    public const ulong m_nCrosshairMinDistance = 0xc2c;
-    public const ulong m_nCrosshairDeltaDistance = 0xc30;
-    public const ulong m_flCycleTime = 0xc34;
-    public const ulong m_flMaxSpeed = 0xc3c;
-    public const ulong m_flSpread = 0xc44;
-    public const ulong m_flInaccuracyCrouch = 0xc4c;
-    public const ulong m_flInaccuracyStand = 0xc54;
-    public const ulong m_flInaccuracyJump = 0xc5c;
-    public const ulong m_flInaccuracyLand = 0xc64;
-    public const ulong m_flInaccuracyLadder = 0xc6c;
-    public const ulong m_flInaccuracyFire = 0xc74;
-    public const ulong m_flInaccuracyMove = 0xc7c;
-    public const ulong m_flRecoilAngle = 0xc84;
-    public const ulong m_flRecoilAngleVariance = 0xc8c;
-    public const ulong m_flRecoilMagnitude = 0xc94;
-    public const ulong m_flRecoilMagnitudeVariance = 0xc9c;
-    public const ulong m_nTracerFrequency = 0xca4;
-    public const ulong m_flInaccuracyJumpInitial = 0xcac;
-    public const ulong m_flInaccuracyJumpApex = 0xcb0;
-    public const ulong m_flInaccuracyReload = 0xcb4;
-    public const ulong m_nRecoilSeed = 0xcb8;
-    public const ulong m_nSpreadSeed = 0xcbc;
-    public const ulong m_flTimeToIdleAfterFire = 0xcc0;
-    public const ulong m_flIdleInterval = 0xcc4;
-    public const ulong m_flAttackMovespeedFactor = 0xcc8;
-    public const ulong m_flHeatPerShot = 0xccc;
-    public const ulong m_flInaccuracyPitchShift = 0xcd0;
-    public const ulong m_flInaccuracyAltSoundThreshold = 0xcd4;
-    public const ulong m_flBotAudibleRange = 0xcd8;
-    public const ulong m_szUseRadioSubtitle = 0xce0;
-    public const ulong m_bUnzoomsAfterShot = 0xce8;
-    public const ulong m_bHideViewModelWhenZoomed = 0xce9;
-    public const ulong m_nZoomLevels = 0xcec;
-    public const ulong m_nZoomFOV1 = 0xcf0;
-    public const ulong m_nZoomFOV2 = 0xcf4;
-    public const ulong m_flZoomTime0 = 0xcf8;
-    public const ulong m_flZoomTime1 = 0xcfc;
-    public const ulong m_flZoomTime2 = 0xd00;
-    public const ulong m_flIronSightPullUpSpeed = 0xd04;
-    public const ulong m_flIronSightPutDownSpeed = 0xd08;
-    public const ulong m_flIronSightFOV = 0xd0c;
-    public const ulong m_flIronSightPivotForward = 0xd10;
-    public const ulong m_flIronSightLooseness = 0xd14;
-    public const ulong m_angPivotAngle = 0xd18;
-    public const ulong m_vecIronSightEyePos = 0xd24;
-    public const ulong m_nDamage = 0xd30;
-    public const ulong m_flHeadshotMultiplier = 0xd34;
-    public const ulong m_flArmorRatio = 0xd38;
-    public const ulong m_flPenetration = 0xd3c;
-    public const ulong m_flRange = 0xd40;
-    public const ulong m_flRangeModifier = 0xd44;
-    public const ulong m_flFlinchVelocityModifierLarge = 0xd48;
-    public const ulong m_flFlinchVelocityModifierSmall = 0xd4c;
-    public const ulong m_flRecoveryTimeCrouch = 0xd50;
-    public const ulong m_flRecoveryTimeStand = 0xd54;
-    public const ulong m_flRecoveryTimeCrouchFinal = 0xd58;
-    public const ulong m_flRecoveryTimeStandFinal = 0xd5c;
-    public const ulong m_nRecoveryTransitionStartBullet = 0xd60;
-    public const ulong m_nRecoveryTransitionEndBullet = 0xd64;
-    public const ulong m_flThrowVelocity = 0xd68;
-    public const ulong m_vSmokeColor = 0xd6c;
-    public const ulong m_szAnimClass = 0xd78;
+    public const ulong m_SequenceCompleteTimer = 0xdd8;
+    public const ulong m_bRedraw = 0xdf0;
 }
 
 public static class CWeaponShield {
-    public const ulong m_flBulletDamageAbsorbed = 0xdf0;
-    public const ulong m_flLastBulletHitSoundTime = 0xdf4;
-    public const ulong m_flDisplayHealth = 0xdf8;
+    public const ulong m_flBulletDamageAbsorbed = 0xdf8;
+    public const ulong m_flLastBulletHitSoundTime = 0xdfc;
+    public const ulong m_flDisplayHealth = 0xe00;
 }
 
 public static class CWeaponTaser {
-    public const ulong m_fFireTime = 0xdf0;
+    public const ulong m_fFireTime = 0xdf8;
 }
 
 public static class CommandToolCommand_t {
@@ -6763,8 +6313,8 @@ public static class SpawnPointCoopEnemy {
 public static class SummaryTakeDamageInfo_t {
     public const ulong nSummarisedCount = 0x0;
     public const ulong info = 0x8;
-    public const ulong result = 0xa8;
-    public const ulong hTarget = 0xb0;
+    public const ulong result = 0xa0;
+    public const ulong hTarget = 0xa8;
 }
 
 public static class VPhysicsCollisionAttribute_t {

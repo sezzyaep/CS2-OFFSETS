@@ -83,6 +83,7 @@ public static class BlendItem_t {
 
 public static class BoneDemoCaptureSettings_t {
     public const ulong m_boneName = 0x0;
+    public const ulong m_flChainLength = 0x8;
 }
 
 public static class CActionComponentUpdater {
@@ -177,21 +178,22 @@ public static class CAnimDecoder {
 }
 
 public static class CAnimDemoCaptureSettings {
-    public const ulong m_flMaxSplineErrorRotation = 0x0;
-    public const ulong m_flMaxSplineErrorTranslation = 0x4;
-    public const ulong m_flMaxSplineErrorScale = 0x8;
-    public const ulong m_flIkRotation_MaxSplineError = 0xc;
-    public const ulong m_flIkTranslation_MaxSplineError = 0x10;
-    public const ulong m_flMaxQuantizationErrorRotation = 0x14;
-    public const ulong m_flMaxQuantizationErrorTranslation = 0x18;
-    public const ulong m_flMaxQuantizationErrorScale = 0x1c;
-    public const ulong m_flIkRotation_MaxQuantizationError = 0x20;
-    public const ulong m_flIkTranslation_MaxQuantizationError = 0x24;
-    public const ulong m_baseSequence = 0x28;
-    public const ulong m_nBaseSequenceFrame = 0x30;
-    public const ulong m_boneSelectionMode = 0x34;
-    public const ulong m_bones = 0x38;
-    public const ulong m_ikChains = 0x50;
+    public const ulong m_rangeBoneChainLength = 0x0;
+    public const ulong m_rangeMaxSplineErrorRotation = 0x8;
+    public const ulong m_flMaxSplineErrorTranslation = 0x10;
+    public const ulong m_flMaxSplineErrorScale = 0x14;
+    public const ulong m_flIkRotation_MaxSplineError = 0x18;
+    public const ulong m_flIkTranslation_MaxSplineError = 0x1c;
+    public const ulong m_flMaxQuantizationErrorRotation = 0x20;
+    public const ulong m_flMaxQuantizationErrorTranslation = 0x24;
+    public const ulong m_flMaxQuantizationErrorScale = 0x28;
+    public const ulong m_flIkRotation_MaxQuantizationError = 0x2c;
+    public const ulong m_flIkTranslation_MaxQuantizationError = 0x30;
+    public const ulong m_baseSequence = 0x38;
+    public const ulong m_nBaseSequenceFrame = 0x40;
+    public const ulong m_boneSelectionMode = 0x44;
+    public const ulong m_bones = 0x48;
+    public const ulong m_ikChains = 0x60;
 }
 
 public static class CAnimDesc {

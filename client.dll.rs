@@ -65,7 +65,7 @@ pub mod CBaseAnimGraph {
     pub const m_bBuiltRagdoll: usize = 0xd00;
     pub const m_pRagdollPose: usize = 0xd18;
     pub const m_bClientRagdoll: usize = 0xd20;
-    pub const m_bHasAnimatedMaterialAttributes: usize = 0xd21;
+    pub const m_bHasAnimatedMaterialAttributes: usize = 0xd30;
 }
 
 pub mod CBaseAnimGraphController {
@@ -147,10 +147,10 @@ pub mod CBasePlayerWeaponVData {
 }
 
 pub mod CBaseProp {
-    pub const m_bModelOverrodeBlockLOS: usize = 0xe70;
-    pub const m_iShapeType: usize = 0xe74;
-    pub const m_bConformToCollisionBounds: usize = 0xe78;
-    pub const m_mPreferredCatchTransform: usize = 0xe7c;
+    pub const m_bModelOverrodeBlockLOS: usize = 0xe80;
+    pub const m_iShapeType: usize = 0xe84;
+    pub const m_bConformToCollisionBounds: usize = 0xe88;
+    pub const m_mPreferredCatchTransform: usize = 0xe8c;
 }
 
 pub mod CBodyComponent {
@@ -195,6 +195,26 @@ pub mod CCSGameModeRules_Deathmatch {
     pub const m_flDMBonusStartTime: usize = 0x34;
     pub const m_flDMBonusTimeLength: usize = 0x38;
     pub const m_nDMBonusWeaponLoadoutSlot: usize = 0x3c;
+}
+
+pub mod CCSObserver_ObserverServices {
+    pub const m_hLastObserverTarget: usize = 0x58;
+    pub const m_vecObserverInterpolateOffset: usize = 0x5c;
+    pub const m_vecObserverInterpStartPos: usize = 0x68;
+    pub const m_flObsInterp_PathLength: usize = 0x74;
+    pub const m_qObsInterp_OrientationStart: usize = 0x80;
+    pub const m_qObsInterp_OrientationTravelDir: usize = 0x90;
+    pub const m_obsInterpState: usize = 0xa0;
+    pub const m_bObserverInterpolationNeedsDeferredSetup: usize = 0xa4;
+}
+
+pub mod CCSPlayerBase_CameraServices {
+    pub const m_iFOV: usize = 0x210;
+    pub const m_iFOVStart: usize = 0x214;
+    pub const m_flFOVTime: usize = 0x218;
+    pub const m_flFOVRate: usize = 0x21c;
+    pub const m_hZoomOwner: usize = 0x220;
+    pub const m_flLastShotFOV: usize = 0x224;
 }
 
 pub mod CCSPlayerController {
@@ -249,13 +269,12 @@ pub mod CCSPlayerController {
     pub const m_nPawnCharacterDefIndex: usize = 0x812;
     pub const m_iPawnLifetimeStart: usize = 0x814;
     pub const m_iPawnLifetimeEnd: usize = 0x818;
-    pub const m_iPawnGunGameLevel: usize = 0x81c;
-    pub const m_iPawnBotDifficulty: usize = 0x820;
-    pub const m_hOriginalControllerOfCurrentPawn: usize = 0x824;
-    pub const m_iScore: usize = 0x828;
-    pub const m_vecKills: usize = 0x830;
-    pub const m_iMVPs: usize = 0x848;
-    pub const m_bIsPlayerNameDirty: usize = 0x84c;
+    pub const m_iPawnBotDifficulty: usize = 0x81c;
+    pub const m_hOriginalControllerOfCurrentPawn: usize = 0x820;
+    pub const m_iScore: usize = 0x824;
+    pub const m_vecKills: usize = 0x828;
+    pub const m_iMVPs: usize = 0x840;
+    pub const m_bIsPlayerNameDirty: usize = 0x844;
 }
 
 pub mod CCSPlayerController_ActionTrackingServices {
@@ -305,12 +324,6 @@ pub mod CCSPlayer_BuyServices {
 }
 
 pub mod CCSPlayer_CameraServices {
-    pub const m_iFOV: usize = 0x210;
-    pub const m_iFOVStart: usize = 0x214;
-    pub const m_flFOVTime: usize = 0x218;
-    pub const m_flFOVRate: usize = 0x21c;
-    pub const m_hZoomOwner: usize = 0x220;
-    pub const m_flLastShotFOV: usize = 0x224;
     pub const m_flDeathCamTilt: usize = 0x228;
 }
 
@@ -360,18 +373,8 @@ pub mod CCSPlayer_MovementServices {
     pub const m_nButtonDownMaskPrev: usize = 0x4c0;
     pub const m_flOffsetTickCompleteTime: usize = 0x4c8;
     pub const m_flOffsetTickStashedSpeed: usize = 0x4cc;
-    pub const m_bUpdatePredictedOriginAfterDataUpdate: usize = 0x4d0;
-}
-
-pub mod CCSPlayer_ObserverServices {
-    pub const m_hLastObserverTarget: usize = 0x58;
-    pub const m_vecObserverInterpolateOffset: usize = 0x5c;
-    pub const m_vecObserverInterpStartPos: usize = 0x68;
-    pub const m_flObsInterp_PathLength: usize = 0x74;
-    pub const m_qObsInterp_OrientationStart: usize = 0x80;
-    pub const m_qObsInterp_OrientationTravelDir: usize = 0x90;
-    pub const m_obsInterpState: usize = 0xa0;
-    pub const m_bObserverInterpolationNeedsDeferredSetup: usize = 0xa4;
+    pub const m_flStamina: usize = 0x4d0;
+    pub const m_bUpdatePredictedOriginAfterDataUpdate: usize = 0x4d4;
 }
 
 pub mod CCSPlayer_PingServices {
@@ -392,6 +395,99 @@ pub mod CCSPlayer_WeaponServices {
     pub const m_flNextAttack: usize = 0xa8;
     pub const m_bIsLookingAtWeapon: usize = 0xac;
     pub const m_bIsHoldingLookAtWeapon: usize = 0xad;
+}
+
+pub mod CCSWeaponBaseVData {
+    pub const m_WeaponType: usize = 0x240;
+    pub const m_WeaponCategory: usize = 0x244;
+    pub const m_szViewModel: usize = 0x248;
+    pub const m_szPlayerModel: usize = 0x328;
+    pub const m_szWorldDroppedModel: usize = 0x408;
+    pub const m_szAimsightLensMaskModel: usize = 0x4e8;
+    pub const m_szMagazineModel: usize = 0x5c8;
+    pub const m_szHeatEffect: usize = 0x6a8;
+    pub const m_szEjectBrassEffect: usize = 0x788;
+    pub const m_szMuzzleFlashParticleAlt: usize = 0x868;
+    pub const m_szMuzzleFlashThirdPersonParticle: usize = 0x948;
+    pub const m_szMuzzleFlashThirdPersonParticleAlt: usize = 0xa28;
+    pub const m_szTracerParticle: usize = 0xb08;
+    pub const m_GearSlot: usize = 0xbe8;
+    pub const m_GearSlotPosition: usize = 0xbec;
+    pub const m_DefaultLoadoutSlot: usize = 0xbf0;
+    pub const m_sWrongTeamMsg: usize = 0xbf8;
+    pub const m_nPrice: usize = 0xc00;
+    pub const m_nKillAward: usize = 0xc04;
+    pub const m_nPrimaryReserveAmmoMax: usize = 0xc08;
+    pub const m_nSecondaryReserveAmmoMax: usize = 0xc0c;
+    pub const m_bMeleeWeapon: usize = 0xc10;
+    pub const m_bHasBurstMode: usize = 0xc11;
+    pub const m_bIsRevolver: usize = 0xc12;
+    pub const m_bCannotShootUnderwater: usize = 0xc13;
+    pub const m_szName: usize = 0xc18;
+    pub const m_szAnimExtension: usize = 0xc20;
+    pub const m_eSilencerType: usize = 0xc28;
+    pub const m_nCrosshairMinDistance: usize = 0xc2c;
+    pub const m_nCrosshairDeltaDistance: usize = 0xc30;
+    pub const m_flCycleTime: usize = 0xc34;
+    pub const m_flMaxSpeed: usize = 0xc3c;
+    pub const m_flSpread: usize = 0xc44;
+    pub const m_flInaccuracyCrouch: usize = 0xc4c;
+    pub const m_flInaccuracyStand: usize = 0xc54;
+    pub const m_flInaccuracyJump: usize = 0xc5c;
+    pub const m_flInaccuracyLand: usize = 0xc64;
+    pub const m_flInaccuracyLadder: usize = 0xc6c;
+    pub const m_flInaccuracyFire: usize = 0xc74;
+    pub const m_flInaccuracyMove: usize = 0xc7c;
+    pub const m_flRecoilAngle: usize = 0xc84;
+    pub const m_flRecoilAngleVariance: usize = 0xc8c;
+    pub const m_flRecoilMagnitude: usize = 0xc94;
+    pub const m_flRecoilMagnitudeVariance: usize = 0xc9c;
+    pub const m_nTracerFrequency: usize = 0xca4;
+    pub const m_flInaccuracyJumpInitial: usize = 0xcac;
+    pub const m_flInaccuracyJumpApex: usize = 0xcb0;
+    pub const m_flInaccuracyReload: usize = 0xcb4;
+    pub const m_nRecoilSeed: usize = 0xcb8;
+    pub const m_nSpreadSeed: usize = 0xcbc;
+    pub const m_flTimeToIdleAfterFire: usize = 0xcc0;
+    pub const m_flIdleInterval: usize = 0xcc4;
+    pub const m_flAttackMovespeedFactor: usize = 0xcc8;
+    pub const m_flHeatPerShot: usize = 0xccc;
+    pub const m_flInaccuracyPitchShift: usize = 0xcd0;
+    pub const m_flInaccuracyAltSoundThreshold: usize = 0xcd4;
+    pub const m_flBotAudibleRange: usize = 0xcd8;
+    pub const m_szUseRadioSubtitle: usize = 0xce0;
+    pub const m_bUnzoomsAfterShot: usize = 0xce8;
+    pub const m_bHideViewModelWhenZoomed: usize = 0xce9;
+    pub const m_nZoomLevels: usize = 0xcec;
+    pub const m_nZoomFOV1: usize = 0xcf0;
+    pub const m_nZoomFOV2: usize = 0xcf4;
+    pub const m_flZoomTime0: usize = 0xcf8;
+    pub const m_flZoomTime1: usize = 0xcfc;
+    pub const m_flZoomTime2: usize = 0xd00;
+    pub const m_flIronSightPullUpSpeed: usize = 0xd04;
+    pub const m_flIronSightPutDownSpeed: usize = 0xd08;
+    pub const m_flIronSightFOV: usize = 0xd0c;
+    pub const m_flIronSightPivotForward: usize = 0xd10;
+    pub const m_flIronSightLooseness: usize = 0xd14;
+    pub const m_angPivotAngle: usize = 0xd18;
+    pub const m_vecIronSightEyePos: usize = 0xd24;
+    pub const m_nDamage: usize = 0xd30;
+    pub const m_flHeadshotMultiplier: usize = 0xd34;
+    pub const m_flArmorRatio: usize = 0xd38;
+    pub const m_flPenetration: usize = 0xd3c;
+    pub const m_flRange: usize = 0xd40;
+    pub const m_flRangeModifier: usize = 0xd44;
+    pub const m_flFlinchVelocityModifierLarge: usize = 0xd48;
+    pub const m_flFlinchVelocityModifierSmall: usize = 0xd4c;
+    pub const m_flRecoveryTimeCrouch: usize = 0xd50;
+    pub const m_flRecoveryTimeStand: usize = 0xd54;
+    pub const m_flRecoveryTimeCrouchFinal: usize = 0xd58;
+    pub const m_flRecoveryTimeStandFinal: usize = 0xd5c;
+    pub const m_nRecoveryTransitionStartBullet: usize = 0xd60;
+    pub const m_nRecoveryTransitionEndBullet: usize = 0xd64;
+    pub const m_flThrowVelocity: usize = 0xd68;
+    pub const m_vSmokeColor: usize = 0xd6c;
+    pub const m_szAnimClass: usize = 0xd78;
 }
 
 pub mod CClientAlphaProperty {
@@ -1028,108 +1124,10 @@ pub mod CTimeline {
     pub const m_bStopped: usize = 0x220;
 }
 
-pub mod CWeaponCSBaseVData {
-    pub const m_WeaponType: usize = 0x240;
-    pub const m_WeaponCategory: usize = 0x244;
-    pub const m_szViewModel: usize = 0x248;
-    pub const m_szPlayerModel: usize = 0x328;
-    pub const m_szWorldDroppedModel: usize = 0x408;
-    pub const m_szAimsightLensMaskModel: usize = 0x4e8;
-    pub const m_szMagazineModel: usize = 0x5c8;
-    pub const m_szHeatEffect: usize = 0x6a8;
-    pub const m_szEjectBrassEffect: usize = 0x788;
-    pub const m_szMuzzleFlashParticleAlt: usize = 0x868;
-    pub const m_szMuzzleFlashThirdPersonParticle: usize = 0x948;
-    pub const m_szMuzzleFlashThirdPersonParticleAlt: usize = 0xa28;
-    pub const m_szTracerParticle: usize = 0xb08;
-    pub const m_GearSlot: usize = 0xbe8;
-    pub const m_GearSlotPosition: usize = 0xbec;
-    pub const m_DefaultLoadoutSlot: usize = 0xbf0;
-    pub const m_sWrongTeamMsg: usize = 0xbf8;
-    pub const m_nPrice: usize = 0xc00;
-    pub const m_nKillAward: usize = 0xc04;
-    pub const m_nPrimaryReserveAmmoMax: usize = 0xc08;
-    pub const m_nSecondaryReserveAmmoMax: usize = 0xc0c;
-    pub const m_bMeleeWeapon: usize = 0xc10;
-    pub const m_bHasBurstMode: usize = 0xc11;
-    pub const m_bIsRevolver: usize = 0xc12;
-    pub const m_bCannotShootUnderwater: usize = 0xc13;
-    pub const m_szName: usize = 0xc18;
-    pub const m_szAnimExtension: usize = 0xc20;
-    pub const m_eSilencerType: usize = 0xc28;
-    pub const m_nCrosshairMinDistance: usize = 0xc2c;
-    pub const m_nCrosshairDeltaDistance: usize = 0xc30;
-    pub const m_flCycleTime: usize = 0xc34;
-    pub const m_flMaxSpeed: usize = 0xc3c;
-    pub const m_flSpread: usize = 0xc44;
-    pub const m_flInaccuracyCrouch: usize = 0xc4c;
-    pub const m_flInaccuracyStand: usize = 0xc54;
-    pub const m_flInaccuracyJump: usize = 0xc5c;
-    pub const m_flInaccuracyLand: usize = 0xc64;
-    pub const m_flInaccuracyLadder: usize = 0xc6c;
-    pub const m_flInaccuracyFire: usize = 0xc74;
-    pub const m_flInaccuracyMove: usize = 0xc7c;
-    pub const m_flRecoilAngle: usize = 0xc84;
-    pub const m_flRecoilAngleVariance: usize = 0xc8c;
-    pub const m_flRecoilMagnitude: usize = 0xc94;
-    pub const m_flRecoilMagnitudeVariance: usize = 0xc9c;
-    pub const m_nTracerFrequency: usize = 0xca4;
-    pub const m_flInaccuracyJumpInitial: usize = 0xcac;
-    pub const m_flInaccuracyJumpApex: usize = 0xcb0;
-    pub const m_flInaccuracyReload: usize = 0xcb4;
-    pub const m_nRecoilSeed: usize = 0xcb8;
-    pub const m_nSpreadSeed: usize = 0xcbc;
-    pub const m_flTimeToIdleAfterFire: usize = 0xcc0;
-    pub const m_flIdleInterval: usize = 0xcc4;
-    pub const m_flAttackMovespeedFactor: usize = 0xcc8;
-    pub const m_flHeatPerShot: usize = 0xccc;
-    pub const m_flInaccuracyPitchShift: usize = 0xcd0;
-    pub const m_flInaccuracyAltSoundThreshold: usize = 0xcd4;
-    pub const m_flBotAudibleRange: usize = 0xcd8;
-    pub const m_szUseRadioSubtitle: usize = 0xce0;
-    pub const m_bUnzoomsAfterShot: usize = 0xce8;
-    pub const m_bHideViewModelWhenZoomed: usize = 0xce9;
-    pub const m_nZoomLevels: usize = 0xcec;
-    pub const m_nZoomFOV1: usize = 0xcf0;
-    pub const m_nZoomFOV2: usize = 0xcf4;
-    pub const m_flZoomTime0: usize = 0xcf8;
-    pub const m_flZoomTime1: usize = 0xcfc;
-    pub const m_flZoomTime2: usize = 0xd00;
-    pub const m_flIronSightPullUpSpeed: usize = 0xd04;
-    pub const m_flIronSightPutDownSpeed: usize = 0xd08;
-    pub const m_flIronSightFOV: usize = 0xd0c;
-    pub const m_flIronSightPivotForward: usize = 0xd10;
-    pub const m_flIronSightLooseness: usize = 0xd14;
-    pub const m_angPivotAngle: usize = 0xd18;
-    pub const m_vecIronSightEyePos: usize = 0xd24;
-    pub const m_nDamage: usize = 0xd30;
-    pub const m_flHeadshotMultiplier: usize = 0xd34;
-    pub const m_flArmorRatio: usize = 0xd38;
-    pub const m_flPenetration: usize = 0xd3c;
-    pub const m_flRange: usize = 0xd40;
-    pub const m_flRangeModifier: usize = 0xd44;
-    pub const m_flFlinchVelocityModifierLarge: usize = 0xd48;
-    pub const m_flFlinchVelocityModifierSmall: usize = 0xd4c;
-    pub const m_flRecoveryTimeCrouch: usize = 0xd50;
-    pub const m_flRecoveryTimeStand: usize = 0xd54;
-    pub const m_flRecoveryTimeCrouchFinal: usize = 0xd58;
-    pub const m_flRecoveryTimeStandFinal: usize = 0xd5c;
-    pub const m_nRecoveryTransitionStartBullet: usize = 0xd60;
-    pub const m_nRecoveryTransitionEndBullet: usize = 0xd64;
-    pub const m_flThrowVelocity: usize = 0xd68;
-    pub const m_vSmokeColor: usize = 0xd6c;
-    pub const m_szAnimClass: usize = 0xd78;
-}
-
 pub mod C_AttributeContainer {
     pub const m_Item: usize = 0x50;
     pub const m_iExternalItemProviderRegisteredToken: usize = 0x498;
     pub const m_ullRegisteredAsItemID: usize = 0x4a0;
-}
-
-pub mod C_BRC4Target {
-    pub const m_bBrokenOpen: usize = 0xe78;
-    pub const m_flRadius: usize = 0xe7c;
 }
 
 pub mod C_BarnLight {
@@ -1193,34 +1191,34 @@ pub mod C_BaseButton {
 }
 
 pub mod C_BaseCSGrenade {
-    pub const m_bClientPredictDelete: usize = 0x18d0;
-    pub const m_bRedraw: usize = 0x18f8;
-    pub const m_bIsHeldByPlayer: usize = 0x18f9;
-    pub const m_bPinPulled: usize = 0x18fa;
-    pub const m_bJumpThrow: usize = 0x18fb;
-    pub const m_eThrowStatus: usize = 0x18fc;
-    pub const m_fThrowTime: usize = 0x1900;
-    pub const m_flThrowStrength: usize = 0x1904;
-    pub const m_flThrowStrengthApproach: usize = 0x1908;
-    pub const m_fDropTime: usize = 0x190c;
+    pub const m_bClientPredictDelete: usize = 0x18e0;
+    pub const m_bRedraw: usize = 0x1908;
+    pub const m_bIsHeldByPlayer: usize = 0x1909;
+    pub const m_bPinPulled: usize = 0x190a;
+    pub const m_bJumpThrow: usize = 0x190b;
+    pub const m_eThrowStatus: usize = 0x190c;
+    pub const m_fThrowTime: usize = 0x1910;
+    pub const m_flThrowStrength: usize = 0x1914;
+    pub const m_flThrowStrengthApproach: usize = 0x1918;
+    pub const m_fDropTime: usize = 0x191c;
 }
 
 pub mod C_BaseCSGrenadeProjectile {
-    pub const m_vInitialVelocity: usize = 0x1058;
-    pub const m_nBounces: usize = 0x1064;
-    pub const m_nExplodeEffectIndex: usize = 0x1068;
-    pub const m_nExplodeEffectTickBegin: usize = 0x1070;
-    pub const m_vecExplodeEffectOrigin: usize = 0x1074;
-    pub const m_flSpawnTime: usize = 0x1080;
-    pub const vecLastTrailLinePos: usize = 0x1084;
-    pub const flNextTrailLineTime: usize = 0x1090;
-    pub const m_bExplodeEffectBegan: usize = 0x1094;
-    pub const m_bCanCreateGrenadeTrail: usize = 0x1095;
-    pub const m_nSnapshotTrajectoryEffectIndex: usize = 0x1098;
-    pub const m_hSnapshotTrajectoryParticleSnapshot: usize = 0x10a0;
-    pub const m_arrTrajectoryTrailPoints: usize = 0x10a8;
-    pub const m_arrTrajectoryTrailPointCreationTimes: usize = 0x10c0;
-    pub const m_flTrajectoryTrailEffectCreationTime: usize = 0x10d8;
+    pub const m_vInitialVelocity: usize = 0x1068;
+    pub const m_nBounces: usize = 0x1074;
+    pub const m_nExplodeEffectIndex: usize = 0x1078;
+    pub const m_nExplodeEffectTickBegin: usize = 0x1080;
+    pub const m_vecExplodeEffectOrigin: usize = 0x1084;
+    pub const m_flSpawnTime: usize = 0x1090;
+    pub const vecLastTrailLinePos: usize = 0x1094;
+    pub const flNextTrailLineTime: usize = 0x10a0;
+    pub const m_bExplodeEffectBegan: usize = 0x10a4;
+    pub const m_bCanCreateGrenadeTrail: usize = 0x10a5;
+    pub const m_nSnapshotTrajectoryEffectIndex: usize = 0x10a8;
+    pub const m_hSnapshotTrajectoryParticleSnapshot: usize = 0x10b0;
+    pub const m_arrTrajectoryTrailPoints: usize = 0x10b8;
+    pub const m_arrTrajectoryTrailPointCreationTimes: usize = 0x10d0;
+    pub const m_flTrajectoryTrailEffectCreationTime: usize = 0x10e8;
 }
 
 pub mod C_BaseClientUIEntity {
@@ -1231,14 +1229,14 @@ pub mod C_BaseClientUIEntity {
 }
 
 pub mod C_BaseCombatCharacter {
-    pub const m_hMyWearables: usize = 0x1008;
-    pub const m_bloodColor: usize = 0x1020;
-    pub const m_leftFootAttachment: usize = 0x1024;
-    pub const m_rightFootAttachment: usize = 0x1025;
-    pub const m_nWaterWakeMode: usize = 0x1028;
-    pub const m_flWaterWorldZ: usize = 0x102c;
-    pub const m_flWaterNextTraceTime: usize = 0x1030;
-    pub const m_flFieldOfView: usize = 0x1034;
+    pub const m_hMyWearables: usize = 0x1018;
+    pub const m_bloodColor: usize = 0x1030;
+    pub const m_leftFootAttachment: usize = 0x1034;
+    pub const m_rightFootAttachment: usize = 0x1035;
+    pub const m_nWaterWakeMode: usize = 0x1038;
+    pub const m_flWaterWorldZ: usize = 0x103c;
+    pub const m_flWaterNextTraceTime: usize = 0x1040;
+    pub const m_flFieldOfView: usize = 0x1044;
 }
 
 pub mod C_BaseDoor {
@@ -1334,25 +1332,25 @@ pub mod C_BaseFire {
 }
 
 pub mod C_BaseFlex {
-    pub const m_flexWeight: usize = 0xe80;
-    pub const m_vLookTargetPosition: usize = 0xe98;
-    pub const m_blinktoggle: usize = 0xeb0;
-    pub const m_nLastFlexUpdateFrameCount: usize = 0xf10;
-    pub const m_CachedViewTarget: usize = 0xf14;
-    pub const m_nNextSceneEventId: usize = 0xf20;
-    pub const m_iBlink: usize = 0xf24;
-    pub const m_blinktime: usize = 0xf28;
-    pub const m_prevblinktoggle: usize = 0xf2c;
-    pub const m_iJawOpen: usize = 0xf30;
-    pub const m_flJawOpenAmount: usize = 0xf34;
-    pub const m_flBlinkAmount: usize = 0xf38;
-    pub const m_iMouthAttachment: usize = 0xf3c;
-    pub const m_iEyeAttachment: usize = 0xf3d;
-    pub const m_bResetFlexWeightsOnModelChange: usize = 0xf3e;
-    pub const m_nEyeOcclusionRendererBone: usize = 0xf58;
-    pub const m_mEyeOcclusionRendererCameraToBoneTransform: usize = 0xf5c;
-    pub const m_vEyeOcclusionRendererHalfExtent: usize = 0xf8c;
-    pub const m_PhonemeClasses: usize = 0xfa8;
+    pub const m_flexWeight: usize = 0xe90;
+    pub const m_vLookTargetPosition: usize = 0xea8;
+    pub const m_blinktoggle: usize = 0xec0;
+    pub const m_nLastFlexUpdateFrameCount: usize = 0xf20;
+    pub const m_CachedViewTarget: usize = 0xf24;
+    pub const m_nNextSceneEventId: usize = 0xf30;
+    pub const m_iBlink: usize = 0xf34;
+    pub const m_blinktime: usize = 0xf38;
+    pub const m_prevblinktoggle: usize = 0xf3c;
+    pub const m_iJawOpen: usize = 0xf40;
+    pub const m_flJawOpenAmount: usize = 0xf44;
+    pub const m_flBlinkAmount: usize = 0xf48;
+    pub const m_iMouthAttachment: usize = 0xf4c;
+    pub const m_iEyeAttachment: usize = 0xf4d;
+    pub const m_bResetFlexWeightsOnModelChange: usize = 0xf4e;
+    pub const m_nEyeOcclusionRendererBone: usize = 0xf68;
+    pub const m_mEyeOcclusionRendererCameraToBoneTransform: usize = 0xf6c;
+    pub const m_vEyeOcclusionRendererHalfExtent: usize = 0xf9c;
+    pub const m_PhonemeClasses: usize = 0xfb8;
 }
 
 pub mod C_BaseFlex_Emphasized_Phoneme {
@@ -1364,18 +1362,18 @@ pub mod C_BaseFlex_Emphasized_Phoneme {
 }
 
 pub mod C_BaseGrenade {
-    pub const m_bHasWarnedAI: usize = 0x1008;
-    pub const m_bIsSmokeGrenade: usize = 0x1009;
-    pub const m_bIsLive: usize = 0x100a;
-    pub const m_DmgRadius: usize = 0x100c;
-    pub const m_flDetonateTime: usize = 0x1010;
-    pub const m_flWarnAITime: usize = 0x1014;
-    pub const m_flDamage: usize = 0x1018;
-    pub const m_iszBounceSound: usize = 0x1020;
-    pub const m_ExplosionSound: usize = 0x1028;
-    pub const m_hThrower: usize = 0x1034;
-    pub const m_flNextAttack: usize = 0x1050;
-    pub const m_hOriginalThrower: usize = 0x1054;
+    pub const m_bHasWarnedAI: usize = 0x1018;
+    pub const m_bIsSmokeGrenade: usize = 0x1019;
+    pub const m_bIsLive: usize = 0x101a;
+    pub const m_DmgRadius: usize = 0x101c;
+    pub const m_flDetonateTime: usize = 0x1020;
+    pub const m_flWarnAITime: usize = 0x1024;
+    pub const m_flDamage: usize = 0x1028;
+    pub const m_iszBounceSound: usize = 0x1030;
+    pub const m_ExplosionSound: usize = 0x1038;
+    pub const m_hThrower: usize = 0x1044;
+    pub const m_flNextAttack: usize = 0x105c;
+    pub const m_hOriginalThrower: usize = 0x1060;
 }
 
 pub mod C_BaseModelEntity {
@@ -1414,52 +1412,52 @@ pub mod C_BaseModelEntity {
 }
 
 pub mod C_BasePlayerPawn {
-    pub const m_pWeaponServices: usize = 0x1098;
-    pub const m_pItemServices: usize = 0x10a0;
-    pub const m_pAutoaimServices: usize = 0x10a8;
-    pub const m_pObserverServices: usize = 0x10b0;
-    pub const m_pWaterServices: usize = 0x10b8;
-    pub const m_pUseServices: usize = 0x10c0;
-    pub const m_pFlashlightServices: usize = 0x10c8;
-    pub const m_pCameraServices: usize = 0x10d0;
-    pub const m_pMovementServices: usize = 0x10d8;
-    pub const m_ServerViewAngleChanges: usize = 0x10e8;
-    pub const m_nHighestConsumedServerViewAngleChangeIndex: usize = 0x1138;
-    pub const v_angle: usize = 0x113c;
-    pub const v_anglePrevious: usize = 0x1148;
-    pub const m_iHideHUD: usize = 0x1154;
-    pub const m_skybox3d: usize = 0x1158;
-    pub const m_flDeathTime: usize = 0x11e8;
-    pub const m_vecPredictionError: usize = 0x11ec;
-    pub const m_flPredictionErrorTime: usize = 0x11f8;
-    pub const m_flFOVSensitivityAdjust: usize = 0x11fc;
-    pub const m_flMouseSensitivity: usize = 0x1200;
-    pub const m_vOldOrigin: usize = 0x1204;
-    pub const m_flOldSimulationTime: usize = 0x1210;
-    pub const m_nLastExecutedCommandNumber: usize = 0x1214;
-    pub const m_nLastExecutedCommandTick: usize = 0x1218;
-    pub const m_hController: usize = 0x121c;
-    pub const m_bIsSwappingToPredictableController: usize = 0x1220;
+    pub const m_pWeaponServices: usize = 0x10a8;
+    pub const m_pItemServices: usize = 0x10b0;
+    pub const m_pAutoaimServices: usize = 0x10b8;
+    pub const m_pObserverServices: usize = 0x10c0;
+    pub const m_pWaterServices: usize = 0x10c8;
+    pub const m_pUseServices: usize = 0x10d0;
+    pub const m_pFlashlightServices: usize = 0x10d8;
+    pub const m_pCameraServices: usize = 0x10e0;
+    pub const m_pMovementServices: usize = 0x10e8;
+    pub const m_ServerViewAngleChanges: usize = 0x10f8;
+    pub const m_nHighestConsumedServerViewAngleChangeIndex: usize = 0x1148;
+    pub const v_angle: usize = 0x114c;
+    pub const v_anglePrevious: usize = 0x1158;
+    pub const m_iHideHUD: usize = 0x1164;
+    pub const m_skybox3d: usize = 0x1168;
+    pub const m_flDeathTime: usize = 0x11f8;
+    pub const m_vecPredictionError: usize = 0x11fc;
+    pub const m_flPredictionErrorTime: usize = 0x1208;
+    pub const m_flFOVSensitivityAdjust: usize = 0x120c;
+    pub const m_flMouseSensitivity: usize = 0x1210;
+    pub const m_vOldOrigin: usize = 0x1214;
+    pub const m_flOldSimulationTime: usize = 0x1220;
+    pub const m_nLastExecutedCommandNumber: usize = 0x1224;
+    pub const m_nLastExecutedCommandTick: usize = 0x1228;
+    pub const m_hController: usize = 0x122c;
+    pub const m_bIsSwappingToPredictableController: usize = 0x1230;
 }
 
 pub mod C_BasePlayerWeapon {
-    pub const m_nNextPrimaryAttackTick: usize = 0x1550;
-    pub const m_flNextPrimaryAttackTickRatio: usize = 0x1554;
-    pub const m_nNextSecondaryAttackTick: usize = 0x1558;
-    pub const m_flNextSecondaryAttackTickRatio: usize = 0x155c;
-    pub const m_iClip1: usize = 0x1560;
-    pub const m_iClip2: usize = 0x1564;
-    pub const m_pReserveAmmo: usize = 0x1568;
+    pub const m_nNextPrimaryAttackTick: usize = 0x1560;
+    pub const m_flNextPrimaryAttackTickRatio: usize = 0x1564;
+    pub const m_nNextSecondaryAttackTick: usize = 0x1568;
+    pub const m_flNextSecondaryAttackTickRatio: usize = 0x156c;
+    pub const m_iClip1: usize = 0x1570;
+    pub const m_iClip2: usize = 0x1574;
+    pub const m_pReserveAmmo: usize = 0x1578;
 }
 
 pub mod C_BasePropDoor {
-    pub const m_eDoorState: usize = 0x10e8;
-    pub const m_modelChanged: usize = 0x10ec;
-    pub const m_bLocked: usize = 0x10ed;
-    pub const m_closedPosition: usize = 0x10f0;
-    pub const m_closedAngles: usize = 0x10fc;
-    pub const m_hMaster: usize = 0x1108;
-    pub const m_vWhereToSetLightingOrigin: usize = 0x110c;
+    pub const m_eDoorState: usize = 0x10f8;
+    pub const m_modelChanged: usize = 0x10fc;
+    pub const m_bLocked: usize = 0x10fd;
+    pub const m_closedPosition: usize = 0x1100;
+    pub const m_closedAngles: usize = 0x110c;
+    pub const m_hMaster: usize = 0x1118;
+    pub const m_vWhereToSetLightingOrigin: usize = 0x111c;
 }
 
 pub mod C_BaseTrigger {
@@ -1468,23 +1466,23 @@ pub mod C_BaseTrigger {
 }
 
 pub mod C_BaseViewModel {
-    pub const m_vecLastFacing: usize = 0xe78;
-    pub const m_nViewModelIndex: usize = 0xe84;
-    pub const m_nAnimationParity: usize = 0xe88;
-    pub const m_flAnimationStartTime: usize = 0xe8c;
-    pub const m_hWeapon: usize = 0xe90;
-    pub const m_sVMName: usize = 0xe98;
-    pub const m_sAnimationPrefix: usize = 0xea0;
-    pub const m_hWeaponModel: usize = 0xea8;
-    pub const m_iCameraAttachment: usize = 0xeac;
-    pub const m_vecLastCameraAngles: usize = 0xeb0;
-    pub const m_previousElapsedDuration: usize = 0xebc;
-    pub const m_previousCycle: usize = 0xec0;
-    pub const m_nOldAnimationParity: usize = 0xec4;
-    pub const m_hOldLayerSequence: usize = 0xec8;
-    pub const m_oldLayer: usize = 0xecc;
-    pub const m_oldLayerStartTime: usize = 0xed0;
-    pub const m_hControlPanel: usize = 0xed4;
+    pub const m_vecLastFacing: usize = 0xe88;
+    pub const m_nViewModelIndex: usize = 0xe94;
+    pub const m_nAnimationParity: usize = 0xe98;
+    pub const m_flAnimationStartTime: usize = 0xe9c;
+    pub const m_hWeapon: usize = 0xea0;
+    pub const m_sVMName: usize = 0xea8;
+    pub const m_sAnimationPrefix: usize = 0xeb0;
+    pub const m_hWeaponModel: usize = 0xeb8;
+    pub const m_iCameraAttachment: usize = 0xebc;
+    pub const m_vecLastCameraAngles: usize = 0xec0;
+    pub const m_previousElapsedDuration: usize = 0xecc;
+    pub const m_previousCycle: usize = 0xed0;
+    pub const m_nOldAnimationParity: usize = 0xed4;
+    pub const m_hOldLayerSequence: usize = 0xed8;
+    pub const m_oldLayer: usize = 0xedc;
+    pub const m_oldLayerStartTime: usize = 0xee0;
+    pub const m_hControlPanel: usize = 0xee4;
 }
 
 pub mod C_Beam {
@@ -1514,83 +1512,69 @@ pub mod C_Beam {
     pub const m_hEndEntity: usize = 0xd78;
 }
 
-pub mod C_BreachChargeProjectile {
-    pub const m_bShouldExplode: usize = 0x1058;
-    pub const m_weaponThatThrewMe: usize = 0x105c;
-    pub const m_nParentBoneIndex: usize = 0x1060;
-    pub const m_vecParentBonePos: usize = 0x1064;
-}
-
 pub mod C_BreakableProp {
-    pub const m_OnBreak: usize = 0xeb8;
-    pub const m_OnHealthChanged: usize = 0xee0;
-    pub const m_OnTakeDamage: usize = 0xf08;
-    pub const m_impactEnergyScale: usize = 0xf30;
-    pub const m_iMinHealthDmg: usize = 0xf34;
-    pub const m_flPressureDelay: usize = 0xf38;
-    pub const m_hBreaker: usize = 0xf3c;
-    pub const m_PerformanceMode: usize = 0xf40;
-    pub const m_flDmgModBullet: usize = 0xf44;
-    pub const m_flDmgModClub: usize = 0xf48;
-    pub const m_flDmgModExplosive: usize = 0xf4c;
-    pub const m_flDmgModFire: usize = 0xf50;
-    pub const m_iszPhysicsDamageTableName: usize = 0xf58;
-    pub const m_iszBasePropData: usize = 0xf60;
-    pub const m_iInteractions: usize = 0xf68;
-    pub const m_flPreventDamageBeforeTime: usize = 0xf6c;
-    pub const m_bHasBreakPiecesOrCommands: usize = 0xf70;
-    pub const m_explodeDamage: usize = 0xf74;
-    pub const m_explodeRadius: usize = 0xf78;
-    pub const m_explosionDelay: usize = 0xf80;
-    pub const m_explosionBuildupSound: usize = 0xf88;
-    pub const m_explosionCustomEffect: usize = 0xf90;
-    pub const m_explosionCustomSound: usize = 0xf98;
-    pub const m_explosionModifier: usize = 0xfa0;
-    pub const m_hPhysicsAttacker: usize = 0xfa8;
-    pub const m_flLastPhysicsInfluenceTime: usize = 0xfac;
-    pub const m_flDefaultFadeScale: usize = 0xfb0;
-    pub const m_hLastAttacker: usize = 0xfb4;
-    pub const m_hFlareEnt: usize = 0xfb8;
-    pub const m_noGhostCollision: usize = 0xfbc;
+    pub const m_OnBreak: usize = 0xec8;
+    pub const m_OnHealthChanged: usize = 0xef0;
+    pub const m_OnTakeDamage: usize = 0xf18;
+    pub const m_impactEnergyScale: usize = 0xf40;
+    pub const m_iMinHealthDmg: usize = 0xf44;
+    pub const m_flPressureDelay: usize = 0xf48;
+    pub const m_hBreaker: usize = 0xf4c;
+    pub const m_PerformanceMode: usize = 0xf50;
+    pub const m_flDmgModBullet: usize = 0xf54;
+    pub const m_flDmgModClub: usize = 0xf58;
+    pub const m_flDmgModExplosive: usize = 0xf5c;
+    pub const m_flDmgModFire: usize = 0xf60;
+    pub const m_iszPhysicsDamageTableName: usize = 0xf68;
+    pub const m_iszBasePropData: usize = 0xf70;
+    pub const m_iInteractions: usize = 0xf78;
+    pub const m_flPreventDamageBeforeTime: usize = 0xf7c;
+    pub const m_bHasBreakPiecesOrCommands: usize = 0xf80;
+    pub const m_explodeDamage: usize = 0xf84;
+    pub const m_explodeRadius: usize = 0xf88;
+    pub const m_explosionDelay: usize = 0xf90;
+    pub const m_explosionBuildupSound: usize = 0xf98;
+    pub const m_explosionCustomEffect: usize = 0xfa0;
+    pub const m_explosionCustomSound: usize = 0xfa8;
+    pub const m_explosionModifier: usize = 0xfb0;
+    pub const m_hPhysicsAttacker: usize = 0xfb8;
+    pub const m_flLastPhysicsInfluenceTime: usize = 0xfbc;
+    pub const m_flDefaultFadeScale: usize = 0xfc0;
+    pub const m_hLastAttacker: usize = 0xfc4;
+    pub const m_hFlareEnt: usize = 0xfc8;
+    pub const m_noGhostCollision: usize = 0xfcc;
 }
 
 pub mod C_BulletHitModel {
-    pub const m_matLocal: usize = 0xe70;
-    pub const m_iBoneIndex: usize = 0xea0;
-    pub const m_hPlayerParent: usize = 0xea4;
-    pub const m_bIsHit: usize = 0xea8;
-    pub const m_flTimeCreated: usize = 0xeac;
-    pub const m_vecStartPos: usize = 0xeb0;
-}
-
-pub mod C_BumpMineProjectile {
-    pub const m_bShouldExplode: usize = 0x1058;
-    pub const m_nParentBoneIndex: usize = 0x105c;
-    pub const m_vecParentBonePos: usize = 0x1060;
-    pub const m_bArmed: usize = 0x106c;
+    pub const m_matLocal: usize = 0xe80;
+    pub const m_iBoneIndex: usize = 0xeb0;
+    pub const m_hPlayerParent: usize = 0xeb4;
+    pub const m_bIsHit: usize = 0xeb8;
+    pub const m_flTimeCreated: usize = 0xebc;
+    pub const m_vecStartPos: usize = 0xec0;
 }
 
 pub mod C_C4 {
-    pub const m_szScreenText: usize = 0x18d0;
-    pub const m_bombdroppedlightParticleIndex: usize = 0x18f0;
-    pub const m_bStartedArming: usize = 0x18f4;
-    pub const m_fArmedTime: usize = 0x18f8;
-    pub const m_bBombPlacedAnimation: usize = 0x18fc;
-    pub const m_bIsPlantingViaUse: usize = 0x18fd;
-    pub const m_entitySpottedState: usize = 0x1900;
-    pub const m_nSpotRules: usize = 0x1918;
-    pub const m_bPlayedArmingBeeps: usize = 0x191c;
-    pub const m_bBombPlanted: usize = 0x1923;
-    pub const m_bDroppedFromDeath: usize = 0x1924;
+    pub const m_szScreenText: usize = 0x18e0;
+    pub const m_bombdroppedlightParticleIndex: usize = 0x1900;
+    pub const m_bStartedArming: usize = 0x1904;
+    pub const m_fArmedTime: usize = 0x1908;
+    pub const m_bBombPlacedAnimation: usize = 0x190c;
+    pub const m_bIsPlantingViaUse: usize = 0x190d;
+    pub const m_entitySpottedState: usize = 0x1910;
+    pub const m_nSpotRules: usize = 0x1928;
+    pub const m_bPlayedArmingBeeps: usize = 0x192c;
+    pub const m_bBombPlanted: usize = 0x1933;
+    pub const m_bDroppedFromDeath: usize = 0x1934;
 }
 
 pub mod C_CSGOViewModel {
-    pub const m_bShouldIgnoreOffsetAndAccuracy: usize = 0xf00;
-    pub const m_nWeaponParity: usize = 0xf04;
-    pub const m_nOldWeaponParity: usize = 0xf08;
-    pub const m_nLastKnownAssociatedWeaponEntIndex: usize = 0xf0c;
-    pub const m_bNeedToQueueHighResComposite: usize = 0xf10;
-    pub const m_vLoweredWeaponOffset: usize = 0xf54;
+    pub const m_bShouldIgnoreOffsetAndAccuracy: usize = 0xf10;
+    pub const m_nWeaponParity: usize = 0xf14;
+    pub const m_nOldWeaponParity: usize = 0xf18;
+    pub const m_nLastKnownAssociatedWeaponEntIndex: usize = 0xf1c;
+    pub const m_bNeedToQueueHighResComposite: usize = 0xf20;
+    pub const m_vLoweredWeaponOffset: usize = 0xf64;
 }
 
 pub mod C_CSGO_MapPreviewCameraPath {
@@ -1618,17 +1602,17 @@ pub mod C_CSGO_MapPreviewCameraPathNode {
 }
 
 pub mod C_CSGO_PreviewModel {
-    pub const m_animgraph: usize = 0x1008;
-    pub const m_animgraphCharacterModeString: usize = 0x1010;
-    pub const m_defaultAnim: usize = 0x1018;
-    pub const m_nDefaultAnimLoopMode: usize = 0x1020;
-    pub const m_flInitialModelScale: usize = 0x1024;
+    pub const m_animgraph: usize = 0x1018;
+    pub const m_animgraphCharacterModeString: usize = 0x1020;
+    pub const m_defaultAnim: usize = 0x1028;
+    pub const m_nDefaultAnimLoopMode: usize = 0x1030;
+    pub const m_flInitialModelScale: usize = 0x1034;
 }
 
 pub mod C_CSGO_PreviewPlayer {
-    pub const m_animgraph: usize = 0x2300;
-    pub const m_animgraphCharacterModeString: usize = 0x2308;
-    pub const m_flInitialModelScale: usize = 0x2310;
+    pub const m_animgraph: usize = 0x22a0;
+    pub const m_animgraphCharacterModeString: usize = 0x22a8;
+    pub const m_flInitialModelScale: usize = 0x22b0;
 }
 
 pub mod C_CSGO_TeamPreviewCamera {
@@ -1689,76 +1673,68 @@ pub mod C_CSGameRules {
     pub const m_bIsValveDS: usize = 0x98;
     pub const m_bLogoMap: usize = 0x99;
     pub const m_bPlayAllStepSoundsOnServer: usize = 0x9a;
-    pub const m_iNumGunGameProgressiveWeaponsCT: usize = 0x9c;
-    pub const m_iNumGunGameProgressiveWeaponsT: usize = 0xa0;
-    pub const m_iSpectatorSlotCount: usize = 0xa4;
-    pub const m_GGProgressiveWeaponOrderCT: usize = 0xa8;
-    pub const m_GGProgressiveWeaponOrderT: usize = 0x198;
-    pub const m_GGProgressiveWeaponKillUpgradeOrderCT: usize = 0x288;
-    pub const m_GGProgressiveWeaponKillUpgradeOrderT: usize = 0x378;
-    pub const m_MatchDevice: usize = 0x468;
-    pub const m_bHasMatchStarted: usize = 0x46c;
-    pub const m_nNextMapInMapgroup: usize = 0x470;
-    pub const m_szTournamentEventName: usize = 0x474;
-    pub const m_szTournamentEventStage: usize = 0x674;
-    pub const m_szMatchStatTxt: usize = 0x874;
-    pub const m_szTournamentPredictionsTxt: usize = 0xa74;
-    pub const m_nTournamentPredictionsPct: usize = 0xc74;
-    pub const m_flCMMItemDropRevealStartTime: usize = 0xc78;
-    pub const m_flCMMItemDropRevealEndTime: usize = 0xc7c;
-    pub const m_bIsDroppingItems: usize = 0xc80;
-    pub const m_bIsQuestEligible: usize = 0xc81;
-    pub const m_nGuardianModeWaveNumber: usize = 0xc84;
-    pub const m_nGuardianModeSpecialKillsRemaining: usize = 0xc88;
-    pub const m_nGuardianModeSpecialWeaponNeeded: usize = 0xc8c;
-    pub const m_nGuardianGrenadesToGiveBots: usize = 0xc90;
-    pub const m_nNumHeaviesToSpawn: usize = 0xc94;
-    pub const m_numGlobalGiftsGiven: usize = 0xc98;
-    pub const m_numGlobalGifters: usize = 0xc9c;
-    pub const m_numGlobalGiftsPeriodSeconds: usize = 0xca0;
-    pub const m_arrFeaturedGiftersAccounts: usize = 0xca4;
-    pub const m_arrFeaturedGiftersGifts: usize = 0xcb4;
-    pub const m_arrProhibitedItemIndices: usize = 0xcc4;
-    pub const m_arrTournamentActiveCasterAccounts: usize = 0xd8c;
-    pub const m_numBestOfMaps: usize = 0xd9c;
-    pub const m_nHalloweenMaskListSeed: usize = 0xda0;
-    pub const m_bBombDropped: usize = 0xda4;
-    pub const m_bBombPlanted: usize = 0xda5;
-    pub const m_iRoundWinStatus: usize = 0xda8;
-    pub const m_eRoundWinReason: usize = 0xdac;
-    pub const m_bTCantBuy: usize = 0xdb0;
-    pub const m_bCTCantBuy: usize = 0xdb1;
-    pub const m_flGuardianBuyUntilTime: usize = 0xdb4;
-    pub const m_iMatchStats_RoundResults: usize = 0xdb8;
-    pub const m_iMatchStats_PlayersAlive_CT: usize = 0xe30;
-    pub const m_iMatchStats_PlayersAlive_T: usize = 0xea8;
-    pub const m_TeamRespawnWaveTimes: usize = 0xf20;
-    pub const m_flNextRespawnWave: usize = 0xfa0;
-    pub const m_nServerQuestID: usize = 0x1020;
-    pub const m_vMinimapMins: usize = 0x1024;
-    pub const m_vMinimapMaxs: usize = 0x1030;
-    pub const m_MinimapVerticalSectionHeights: usize = 0x103c;
-    pub const m_bDontIncrementCoopWave: usize = 0x105c;
-    pub const m_bSpawnedTerrorHuntHeavy: usize = 0x105d;
-    pub const m_nEndMatchMapGroupVoteTypes: usize = 0x1060;
-    pub const m_nEndMatchMapGroupVoteOptions: usize = 0x1088;
-    pub const m_nEndMatchMapVoteWinner: usize = 0x10b0;
-    pub const m_iNumConsecutiveCTLoses: usize = 0x10b4;
-    pub const m_iNumConsecutiveTerroristLoses: usize = 0x10b8;
-    pub const m_bMarkClientStopRecordAtRoundEnd: usize = 0x10d8;
-    pub const m_bMatchAbortedDueToPlayerBan: usize = 0x1130;
-    pub const m_bHasTriggeredRoundStartMusic: usize = 0x1131;
-    pub const m_bHasTriggeredCoopSpawnReset: usize = 0x1132;
-    pub const m_bSwitchingTeamsAtRoundReset: usize = 0x1133;
-    pub const m_iMaxGunGameProgressiveWeaponIndex: usize = 0x1134;
-    pub const m_pGameModeRules: usize = 0x1150;
-    pub const m_SurvivalRules: usize = 0x1158;
-    pub const m_RetakeRules: usize = 0x1818;
-    pub const m_nMatchEndCount: usize = 0x1930;
-    pub const m_nTTeamIntroVariant: usize = 0x1934;
-    pub const m_nCTTeamIntroVariant: usize = 0x1938;
-    pub const m_bTeamIntroPeriod: usize = 0x193c;
-    pub const m_flLastPerfSampleTime: usize = 0x28f8;
+    pub const m_iSpectatorSlotCount: usize = 0x9c;
+    pub const m_MatchDevice: usize = 0xa0;
+    pub const m_bHasMatchStarted: usize = 0xa4;
+    pub const m_nNextMapInMapgroup: usize = 0xa8;
+    pub const m_szTournamentEventName: usize = 0xac;
+    pub const m_szTournamentEventStage: usize = 0x2ac;
+    pub const m_szMatchStatTxt: usize = 0x4ac;
+    pub const m_szTournamentPredictionsTxt: usize = 0x6ac;
+    pub const m_nTournamentPredictionsPct: usize = 0x8ac;
+    pub const m_flCMMItemDropRevealStartTime: usize = 0x8b0;
+    pub const m_flCMMItemDropRevealEndTime: usize = 0x8b4;
+    pub const m_bIsDroppingItems: usize = 0x8b8;
+    pub const m_bIsQuestEligible: usize = 0x8b9;
+    pub const m_nGuardianModeWaveNumber: usize = 0x8bc;
+    pub const m_nGuardianModeSpecialKillsRemaining: usize = 0x8c0;
+    pub const m_nGuardianModeSpecialWeaponNeeded: usize = 0x8c4;
+    pub const m_nGuardianGrenadesToGiveBots: usize = 0x8c8;
+    pub const m_nNumHeaviesToSpawn: usize = 0x8cc;
+    pub const m_numGlobalGiftsGiven: usize = 0x8d0;
+    pub const m_numGlobalGifters: usize = 0x8d4;
+    pub const m_numGlobalGiftsPeriodSeconds: usize = 0x8d8;
+    pub const m_arrFeaturedGiftersAccounts: usize = 0x8dc;
+    pub const m_arrFeaturedGiftersGifts: usize = 0x8ec;
+    pub const m_arrProhibitedItemIndices: usize = 0x8fc;
+    pub const m_arrTournamentActiveCasterAccounts: usize = 0x9c4;
+    pub const m_numBestOfMaps: usize = 0x9d4;
+    pub const m_nHalloweenMaskListSeed: usize = 0x9d8;
+    pub const m_bBombDropped: usize = 0x9dc;
+    pub const m_bBombPlanted: usize = 0x9dd;
+    pub const m_iRoundWinStatus: usize = 0x9e0;
+    pub const m_eRoundWinReason: usize = 0x9e4;
+    pub const m_bTCantBuy: usize = 0x9e8;
+    pub const m_bCTCantBuy: usize = 0x9e9;
+    pub const m_flGuardianBuyUntilTime: usize = 0x9ec;
+    pub const m_iMatchStats_RoundResults: usize = 0x9f0;
+    pub const m_iMatchStats_PlayersAlive_CT: usize = 0xa68;
+    pub const m_iMatchStats_PlayersAlive_T: usize = 0xae0;
+    pub const m_TeamRespawnWaveTimes: usize = 0xb58;
+    pub const m_flNextRespawnWave: usize = 0xbd8;
+    pub const m_nServerQuestID: usize = 0xc58;
+    pub const m_vMinimapMins: usize = 0xc5c;
+    pub const m_vMinimapMaxs: usize = 0xc68;
+    pub const m_MinimapVerticalSectionHeights: usize = 0xc74;
+    pub const m_bDontIncrementCoopWave: usize = 0xc94;
+    pub const m_bSpawnedTerrorHuntHeavy: usize = 0xc95;
+    pub const m_nEndMatchMapGroupVoteTypes: usize = 0xc98;
+    pub const m_nEndMatchMapGroupVoteOptions: usize = 0xcc0;
+    pub const m_nEndMatchMapVoteWinner: usize = 0xce8;
+    pub const m_iNumConsecutiveCTLoses: usize = 0xcec;
+    pub const m_iNumConsecutiveTerroristLoses: usize = 0xcf0;
+    pub const m_bMarkClientStopRecordAtRoundEnd: usize = 0xd10;
+    pub const m_bMatchAbortedDueToPlayerBan: usize = 0xd68;
+    pub const m_bHasTriggeredRoundStartMusic: usize = 0xd69;
+    pub const m_bHasTriggeredCoopSpawnReset: usize = 0xd6a;
+    pub const m_bSwitchingTeamsAtRoundReset: usize = 0xd6b;
+    pub const m_pGameModeRules: usize = 0xd88;
+    pub const m_RetakeRules: usize = 0xd90;
+    pub const m_nMatchEndCount: usize = 0xea8;
+    pub const m_nTTeamIntroVariant: usize = 0xeac;
+    pub const m_nCTTeamIntroVariant: usize = 0xeb0;
+    pub const m_bTeamIntroPeriod: usize = 0xeb4;
+    pub const m_flLastPerfSampleTime: usize = 0x1e70;
 }
 
 pub mod C_CSGameRulesProxy {
@@ -1766,51 +1742,74 @@ pub mod C_CSGameRulesProxy {
 }
 
 pub mod C_CSObserverPawn {
-    pub const m_hDetectParentChange: usize = 0x17c8;
+    pub const m_hDetectParentChange: usize = 0x16a0;
 }
 
 pub mod C_CSPlayerPawn {
-    pub const m_pBulletServices: usize = 0x17c8;
-    pub const m_pHostageServices: usize = 0x17d0;
-    pub const m_pBuyServices: usize = 0x17d8;
-    pub const m_pGlowServices: usize = 0x17e0;
-    pub const m_bIsBuyMenuOpen: usize = 0x17e8;
-    pub const m_iRetakesOffering: usize = 0x18d0;
-    pub const m_iRetakesOfferingCard: usize = 0x18d4;
-    pub const m_bRetakesHasDefuseKit: usize = 0x18d8;
-    pub const m_bRetakesMVPLastRound: usize = 0x18d9;
-    pub const m_iRetakesMVPBoostItem: usize = 0x18dc;
-    pub const m_RetakesMVPBoostExtraUtility: usize = 0x18e0;
-    pub const m_bNeedToReApplyGloves: usize = 0x1900;
-    pub const m_EconGloves: usize = 0x1908;
-    pub const m_bMustSyncRagdollState: usize = 0x1d50;
-    pub const m_nRagdollDamageBone: usize = 0x1d54;
-    pub const m_vRagdollDamageForce: usize = 0x1d58;
-    pub const m_vRagdollDamagePosition: usize = 0x1d64;
-    pub const m_szRagdollDamageWeaponName: usize = 0x1d70;
-    pub const m_bRagdollDamageHeadshot: usize = 0x1db0;
-    pub const m_bLastHeadBoneTransformIsValid: usize = 0x22d0;
-    pub const m_qDeathEyeAngles: usize = 0x22ec;
-    pub const m_bSkipOneHeadConstraintUpdate: usize = 0x22f8;
+    pub const m_pBulletServices: usize = 0x16a0;
+    pub const m_pHostageServices: usize = 0x16a8;
+    pub const m_pBuyServices: usize = 0x16b0;
+    pub const m_pGlowServices: usize = 0x16b8;
+    pub const m_pActionTrackingServices: usize = 0x16c0;
+    pub const m_flHealthShotBoostExpirationTime: usize = 0x16c8;
+    pub const m_flLastFiredWeaponTime: usize = 0x16cc;
+    pub const m_bHasFemaleVoice: usize = 0x16d0;
+    pub const m_flLandseconds: usize = 0x16d4;
+    pub const m_flOldFallVelocity: usize = 0x16d8;
+    pub const m_szLastPlaceName: usize = 0x16dc;
+    pub const m_bPrevDefuser: usize = 0x16ee;
+    pub const m_bPrevHelmet: usize = 0x16ef;
+    pub const m_nPrevArmorVal: usize = 0x16f0;
+    pub const m_nPrevGrenadeAmmoCount: usize = 0x16f4;
+    pub const m_unPreviousWeaponHash: usize = 0x16f8;
+    pub const m_unWeaponHash: usize = 0x16fc;
+    pub const m_bInBuyZone: usize = 0x1700;
+    pub const m_bPreviouslyInBuyZone: usize = 0x1701;
+    pub const m_aimPunchAngle: usize = 0x1704;
+    pub const m_aimPunchAngleVel: usize = 0x1710;
+    pub const m_aimPunchTickBase: usize = 0x171c;
+    pub const m_aimPunchTickFraction: usize = 0x1720;
+    pub const m_aimPunchCache: usize = 0x1728;
+    pub const m_bInLanding: usize = 0x1748;
+    pub const m_flLandingTime: usize = 0x174c;
+    pub const m_bInHostageRescueZone: usize = 0x1750;
+    pub const m_bInBombZone: usize = 0x1751;
+    pub const m_bIsBuyMenuOpen: usize = 0x1752;
+    pub const m_flTimeOfLastInjury: usize = 0x1754;
+    pub const m_flNextSprayDecalTime: usize = 0x1758;
+    pub const m_iRetakesOffering: usize = 0x1870;
+    pub const m_iRetakesOfferingCard: usize = 0x1874;
+    pub const m_bRetakesHasDefuseKit: usize = 0x1878;
+    pub const m_bRetakesMVPLastRound: usize = 0x1879;
+    pub const m_iRetakesMVPBoostItem: usize = 0x187c;
+    pub const m_RetakesMVPBoostExtraUtility: usize = 0x1880;
+    pub const m_bNeedToReApplyGloves: usize = 0x18a0;
+    pub const m_EconGloves: usize = 0x18a8;
+    pub const m_bMustSyncRagdollState: usize = 0x1cf0;
+    pub const m_nRagdollDamageBone: usize = 0x1cf4;
+    pub const m_vRagdollDamageForce: usize = 0x1cf8;
+    pub const m_vRagdollDamagePosition: usize = 0x1d04;
+    pub const m_szRagdollDamageWeaponName: usize = 0x1d10;
+    pub const m_bRagdollDamageHeadshot: usize = 0x1d50;
+    pub const m_bLastHeadBoneTransformIsValid: usize = 0x2270;
+    pub const m_lastLandTime: usize = 0x2274;
+    pub const m_qDeathEyeAngles: usize = 0x2290;
+    pub const m_bSkipOneHeadConstraintUpdate: usize = 0x229c;
 }
 
 pub mod C_CSPlayerPawnBase {
-    pub const m_pActionTrackingServices: usize = 0x1240;
-    pub const m_pPingServices: usize = 0x1248;
-    pub const m_pViewModelServices: usize = 0x1250;
-    pub const m_fRenderingClipPlane: usize = 0x1258;
-    pub const m_nLastClipPlaneSetupFrame: usize = 0x1268;
-    pub const m_vecLastClipCameraPos: usize = 0x126c;
-    pub const m_vecLastClipCameraForward: usize = 0x1278;
-    pub const m_bClipHitStaticWorld: usize = 0x1284;
-    pub const m_bCachedPlaneIsValid: usize = 0x1285;
-    pub const m_pClippingWeapon: usize = 0x1288;
-    pub const m_bHasFemaleVoice: usize = 0x1290;
-    pub const m_previousPlayerState: usize = 0x1294;
-    pub const m_flLastCollisionCeiling: usize = 0x1298;
-    pub const m_flLastCollisionCeilingChangeTime: usize = 0x129c;
-    pub const m_bInLanding: usize = 0x12b8;
-    pub const m_flLandingTime: usize = 0x12bc;
+    pub const m_pPingServices: usize = 0x1250;
+    pub const m_pViewModelServices: usize = 0x1258;
+    pub const m_fRenderingClipPlane: usize = 0x1260;
+    pub const m_nLastClipPlaneSetupFrame: usize = 0x1270;
+    pub const m_vecLastClipCameraPos: usize = 0x1274;
+    pub const m_vecLastClipCameraForward: usize = 0x1280;
+    pub const m_bClipHitStaticWorld: usize = 0x128c;
+    pub const m_bCachedPlaneIsValid: usize = 0x128d;
+    pub const m_pClippingWeapon: usize = 0x1290;
+    pub const m_previousPlayerState: usize = 0x1298;
+    pub const m_flLastCollisionCeiling: usize = 0x129c;
+    pub const m_flLastCollisionCeilingChangeTime: usize = 0x12a0;
     pub const m_grenadeParameterStashTime: usize = 0x12c0;
     pub const m_bGrenadeParametersStashed: usize = 0x12c4;
     pub const m_angStashedShootAngles: usize = 0x12c8;
@@ -1835,151 +1834,111 @@ pub mod C_CSPlayerPawnBase {
     pub const m_fImmuneToGunGameDamageTimeLast: usize = 0x13a0;
     pub const m_bGunGameImmunity: usize = 0x13a4;
     pub const m_bHasMovedSinceSpawn: usize = 0x13a5;
-    pub const m_bMadeFinalGunGameProgressiveKill: usize = 0x13a6;
-    pub const m_iGunGameProgressiveWeaponIndex: usize = 0x13a8;
-    pub const m_iNumGunGameTRKillPoints: usize = 0x13ac;
-    pub const m_iNumGunGameKillsWithCurrentWeapon: usize = 0x13b0;
-    pub const m_unTotalRoundDamageDealt: usize = 0x13b4;
-    pub const m_fMolotovUseTime: usize = 0x13b8;
-    pub const m_fMolotovDamageTime: usize = 0x13bc;
-    pub const m_bInBombZone: usize = 0x13c0;
-    pub const m_nWhichBombZone: usize = 0x13c4;
-    pub const m_bInBuyZone: usize = 0x13c8;
-    pub const m_bInNoDefuseArea: usize = 0x13c9;
-    pub const m_iThrowGrenadeCounter: usize = 0x13cc;
-    pub const m_bWaitForNoAttack: usize = 0x13d0;
-    pub const m_flGuardianTooFarDistFrac: usize = 0x13d4;
-    pub const m_flDetectedByEnemySensorTime: usize = 0x13d8;
-    pub const m_flNextGuardianTooFarWarning: usize = 0x13dc;
-    pub const m_bSuppressGuardianTooFarWarningAudio: usize = 0x13e0;
-    pub const m_bKilledByTaser: usize = 0x13e1;
-    pub const m_iMoveState: usize = 0x13e4;
-    pub const m_bCanMoveDuringFreezePeriod: usize = 0x13e8;
-    pub const m_isCurrentGunGameLeader: usize = 0x13e9;
-    pub const m_isCurrentGunGameTeamLeader: usize = 0x13ea;
-    pub const m_flLowerBodyYawTarget: usize = 0x13ec;
-    pub const m_bStrafing: usize = 0x13f0;
-    pub const m_szLastPlaceName: usize = 0x13f1;
-    pub const m_flLastSpawnTimeIndex: usize = 0x1404;
-    pub const m_flEmitSoundTime: usize = 0x1408;
-    pub const m_iAddonBits: usize = 0x140c;
-    pub const m_iPrimaryAddon: usize = 0x1410;
-    pub const m_iSecondaryAddon: usize = 0x1414;
-    pub const m_iProgressBarDuration: usize = 0x1418;
-    pub const m_flProgressBarStartTime: usize = 0x141c;
-    pub const m_flStamina: usize = 0x1420;
-    pub const m_iDirection: usize = 0x1424;
-    pub const m_iShotsFired: usize = 0x1428;
-    pub const m_bNightVisionOn: usize = 0x142c;
-    pub const m_bHasNightVision: usize = 0x142d;
-    pub const m_flVelocityModifier: usize = 0x1430;
-    pub const m_flHitHeading: usize = 0x1434;
-    pub const m_nHitBodyPart: usize = 0x1438;
-    pub const m_iStartAccount: usize = 0x143c;
-    pub const m_bIsSpawnRappelling: usize = 0x1440;
-    pub const m_vecSpawnRappellingRopeOrigin: usize = 0x1444;
-    pub const m_flSpawnRappellingFadeOutForClientViewOffset: usize = 0x1450;
-    pub const m_nSurvivalTeam: usize = 0x1454;
-    pub const m_hSurvivalAssassinationTarget: usize = 0x1458;
-    pub const m_flHealthShotBoostExpirationTime: usize = 0x145c;
-    pub const m_flLastKnownParachuteScreenEffectAmount: usize = 0x1460;
-    pub const m_vecIntroStartEyePosition: usize = 0x1464;
-    pub const m_vecIntroStartPlayerForward: usize = 0x1470;
-    pub const m_flClientDeathTime: usize = 0x147c;
-    pub const m_flNightVisionAlpha: usize = 0x1488;
-    pub const m_bScreenTearFrameCaptured: usize = 0x148c;
-    pub const m_flFlashBangTime: usize = 0x1490;
-    pub const m_flFlashScreenshotAlpha: usize = 0x1494;
-    pub const m_flFlashOverlayAlpha: usize = 0x1498;
-    pub const m_bFlashBuildUp: usize = 0x149c;
-    pub const m_bFlashDspHasBeenCleared: usize = 0x149d;
-    pub const m_bFlashScreenshotHasBeenGrabbed: usize = 0x149e;
-    pub const m_flFlashMaxAlpha: usize = 0x14a0;
-    pub const m_flFlashDuration: usize = 0x14a4;
-    pub const m_flLastFiredWeaponTime: usize = 0x14a8;
-    pub const m_lastStandingPos: usize = 0x14ac;
-    pub const m_vecLastMuzzleFlashPos: usize = 0x14b8;
-    pub const m_angLastMuzzleFlashAngle: usize = 0x14c4;
-    pub const m_hMuzzleFlashShape: usize = 0x14d0;
-    pub const m_iHealthBarRenderMaskIndex: usize = 0x14d4;
-    pub const m_flHealthFadeValue: usize = 0x14d8;
-    pub const m_flHealthFadeAlpha: usize = 0x14dc;
-    pub const m_nMyCollisionGroup: usize = 0x14e0;
-    pub const m_ignoreLadderJumpTime: usize = 0x14e4;
-    pub const m_ladderSurpressionTimer: usize = 0x14e8;
-    pub const m_lastLadderNormal: usize = 0x1500;
-    pub const m_lastLadderPos: usize = 0x150c;
-    pub const m_flDeathCCWeight: usize = 0x1520;
-    pub const m_bOldIsScoped: usize = 0x1524;
-    pub const m_flPrevRoundEndTime: usize = 0x1528;
-    pub const m_flPrevMatchEndTime: usize = 0x152c;
-    pub const m_unCurrentEquipmentValue: usize = 0x1530;
-    pub const m_unRoundStartEquipmentValue: usize = 0x1532;
-    pub const m_unFreezetimeEndEquipmentValue: usize = 0x1534;
-    pub const m_passiveItems: usize = 0x1536;
-    pub const m_vecThirdPersonViewPositionOverride: usize = 0x153c;
-    pub const m_nHeavyAssaultSuitCooldownRemaining: usize = 0x1548;
-    pub const m_ArmorValue: usize = 0x154c;
-    pub const m_angEyeAngles: usize = 0x1550;
-    pub const m_bInHostageRescueZone: usize = 0x1568;
-    pub const m_fNextThinkPushAway: usize = 0x156c;
-    pub const m_bShouldAutobuyDMWeapons: usize = 0x1570;
-    pub const m_bShouldAutobuyNow: usize = 0x1571;
-    pub const m_bHud_MiniScoreHidden: usize = 0x1572;
-    pub const m_bHud_RadarHidden: usize = 0x1573;
-    pub const m_nLastKillerIndex: usize = 0x1574;
-    pub const m_nLastConcurrentKilled: usize = 0x1578;
-    pub const m_nDeathCamMusic: usize = 0x157c;
-    pub const m_iIDEntIndex: usize = 0x1580;
-    pub const m_delayTargetIDTimer: usize = 0x1588;
-    pub const m_iTargetedWeaponEntIndex: usize = 0x15a0;
-    pub const m_iOldIDEntIndex: usize = 0x15a4;
-    pub const m_holdTargetIDTimer: usize = 0x15a8;
-    pub const m_flCurrentMusicStartTime: usize = 0x160c;
-    pub const m_flMusicRoundStartTime: usize = 0x1610;
-    pub const m_bDeferStartMusicOnWarmup: usize = 0x1614;
-    pub const m_cycleLatch: usize = 0x1618;
-    pub const m_serverIntendedCycle: usize = 0x161c;
-    pub const m_vecPlayerPatchEconIndices: usize = 0x1620;
-    pub const m_bHideTargetID: usize = 0x163c;
-    pub const m_nextTaserShakeTime: usize = 0x1640;
-    pub const m_firstTaserShakeTime: usize = 0x1644;
-    pub const m_flLastSmokeOverlayAlpha: usize = 0x1648;
-    pub const m_vLastSmokeOverlayColor: usize = 0x164c;
-    pub const m_nPlayerSmokedFx: usize = 0x1658;
-    pub const m_flNextMagDropTime: usize = 0x165c;
-    pub const m_nLastMagDropAttachmentIndex: usize = 0x1660;
-    pub const m_vecBulletHitModels: usize = 0x1668;
-    pub const m_vecPickupModelSlerpers: usize = 0x1680;
-    pub const m_vecLastAliveLocalVelocity: usize = 0x1698;
-    pub const m_flLastNearbyItemHighlightCheck: usize = 0x16a4;
-    pub const m_bInSurvivalDangerZone: usize = 0x16a8;
-    pub const m_bNearDangerZone: usize = 0x16a9;
-    pub const m_entitySpottedState: usize = 0x16e0;
-    pub const m_flTimeOfLastInjury: usize = 0x16f8;
-    pub const m_nRelativeDirectionOfLastInjury: usize = 0x16fc;
-    pub const m_nSurvivalTeamNumber: usize = 0x1700;
-    pub const m_flNextSprayDecalTime: usize = 0x1704;
-    pub const m_bPreviouslyInBuyZone: usize = 0x1708;
-    pub const m_unPreviousWeaponHash: usize = 0x170c;
-    pub const m_unWeaponHash: usize = 0x1710;
-    pub const m_bPrevDefuser: usize = 0x1714;
-    pub const m_bPrevHelmet: usize = 0x1715;
-    pub const m_nPrevArmorVal: usize = 0x1718;
-    pub const m_nPrevGrenadeAmmoCount: usize = 0x171c;
-    pub const m_bGuardianShouldSprayCustomXMark: usize = 0x1720;
-    pub const m_aimPunchAngle: usize = 0x1724;
-    pub const m_aimPunchAngleVel: usize = 0x1730;
-    pub const m_aimPunchTickBase: usize = 0x173c;
-    pub const m_aimPunchTickFraction: usize = 0x1740;
-    pub const m_aimPunchCache: usize = 0x1748;
-    pub const m_flOldFallVelocity: usize = 0x1768;
-    pub const m_bHasDeathInfo: usize = 0x176c;
-    pub const m_flDeathInfoTime: usize = 0x1770;
-    pub const m_vecDeathInfoOrigin: usize = 0x1774;
-    pub const m_bKilledByHeadshot: usize = 0x1780;
-    pub const m_hOriginalController: usize = 0x1784;
-    pub const m_flLandseconds: usize = 0x1798;
+    pub const m_unTotalRoundDamageDealt: usize = 0x13a8;
+    pub const m_fMolotovUseTime: usize = 0x13ac;
+    pub const m_fMolotovDamageTime: usize = 0x13b0;
+    pub const m_nWhichBombZone: usize = 0x13b4;
+    pub const m_bInNoDefuseArea: usize = 0x13b8;
+    pub const m_iThrowGrenadeCounter: usize = 0x13bc;
+    pub const m_bWaitForNoAttack: usize = 0x13c0;
+    pub const m_flGuardianTooFarDistFrac: usize = 0x13c4;
+    pub const m_flDetectedByEnemySensorTime: usize = 0x13c8;
+    pub const m_flNextGuardianTooFarWarning: usize = 0x13cc;
+    pub const m_bSuppressGuardianTooFarWarningAudio: usize = 0x13d0;
+    pub const m_bKilledByTaser: usize = 0x13d1;
+    pub const m_iMoveState: usize = 0x13d4;
+    pub const m_bCanMoveDuringFreezePeriod: usize = 0x13d8;
+    pub const m_flLowerBodyYawTarget: usize = 0x13dc;
+    pub const m_bStrafing: usize = 0x13e0;
+    pub const m_flLastSpawnTimeIndex: usize = 0x13e4;
+    pub const m_flEmitSoundTime: usize = 0x13e8;
+    pub const m_iAddonBits: usize = 0x13ec;
+    pub const m_iPrimaryAddon: usize = 0x13f0;
+    pub const m_iSecondaryAddon: usize = 0x13f4;
+    pub const m_iProgressBarDuration: usize = 0x13f8;
+    pub const m_flProgressBarStartTime: usize = 0x13fc;
+    pub const m_iDirection: usize = 0x1400;
+    pub const m_iShotsFired: usize = 0x1404;
+    pub const m_bNightVisionOn: usize = 0x1408;
+    pub const m_bHasNightVision: usize = 0x1409;
+    pub const m_flVelocityModifier: usize = 0x140c;
+    pub const m_flHitHeading: usize = 0x1410;
+    pub const m_nHitBodyPart: usize = 0x1414;
+    pub const m_iStartAccount: usize = 0x1418;
+    pub const m_vecIntroStartEyePosition: usize = 0x141c;
+    pub const m_vecIntroStartPlayerForward: usize = 0x1428;
+    pub const m_flClientDeathTime: usize = 0x1434;
+    pub const m_flNightVisionAlpha: usize = 0x1438;
+    pub const m_bScreenTearFrameCaptured: usize = 0x143c;
+    pub const m_flFlashBangTime: usize = 0x1440;
+    pub const m_flFlashScreenshotAlpha: usize = 0x1444;
+    pub const m_flFlashOverlayAlpha: usize = 0x1448;
+    pub const m_bFlashBuildUp: usize = 0x144c;
+    pub const m_bFlashDspHasBeenCleared: usize = 0x144d;
+    pub const m_bFlashScreenshotHasBeenGrabbed: usize = 0x144e;
+    pub const m_flFlashMaxAlpha: usize = 0x1450;
+    pub const m_flFlashDuration: usize = 0x1454;
+    pub const m_lastStandingPos: usize = 0x1458;
+    pub const m_vecLastMuzzleFlashPos: usize = 0x1464;
+    pub const m_angLastMuzzleFlashAngle: usize = 0x1470;
+    pub const m_hMuzzleFlashShape: usize = 0x147c;
+    pub const m_iHealthBarRenderMaskIndex: usize = 0x1480;
+    pub const m_flHealthFadeValue: usize = 0x1484;
+    pub const m_flHealthFadeAlpha: usize = 0x1488;
+    pub const m_nMyCollisionGroup: usize = 0x148c;
+    pub const m_ignoreLadderJumpTime: usize = 0x1490;
+    pub const m_ladderSurpressionTimer: usize = 0x1498;
+    pub const m_lastLadderNormal: usize = 0x14b0;
+    pub const m_lastLadderPos: usize = 0x14bc;
+    pub const m_flDeathCCWeight: usize = 0x14d0;
+    pub const m_bOldIsScoped: usize = 0x14d4;
+    pub const m_flPrevRoundEndTime: usize = 0x14d8;
+    pub const m_flPrevMatchEndTime: usize = 0x14dc;
+    pub const m_unCurrentEquipmentValue: usize = 0x14e0;
+    pub const m_unRoundStartEquipmentValue: usize = 0x14e2;
+    pub const m_unFreezetimeEndEquipmentValue: usize = 0x14e4;
+    pub const m_vecThirdPersonViewPositionOverride: usize = 0x14e8;
+    pub const m_nHeavyAssaultSuitCooldownRemaining: usize = 0x14f4;
+    pub const m_ArmorValue: usize = 0x14f8;
+    pub const m_angEyeAngles: usize = 0x1500;
+    pub const m_fNextThinkPushAway: usize = 0x1518;
+    pub const m_bShouldAutobuyDMWeapons: usize = 0x151c;
+    pub const m_bShouldAutobuyNow: usize = 0x151d;
+    pub const m_bHud_MiniScoreHidden: usize = 0x151e;
+    pub const m_bHud_RadarHidden: usize = 0x151f;
+    pub const m_nLastKillerIndex: usize = 0x1520;
+    pub const m_nLastConcurrentKilled: usize = 0x1524;
+    pub const m_nDeathCamMusic: usize = 0x1528;
+    pub const m_iIDEntIndex: usize = 0x152c;
+    pub const m_delayTargetIDTimer: usize = 0x1530;
+    pub const m_iTargetedWeaponEntIndex: usize = 0x1548;
+    pub const m_iOldIDEntIndex: usize = 0x154c;
+    pub const m_holdTargetIDTimer: usize = 0x1550;
+    pub const m_flCurrentMusicStartTime: usize = 0x156c;
+    pub const m_flMusicRoundStartTime: usize = 0x1570;
+    pub const m_bDeferStartMusicOnWarmup: usize = 0x1574;
+    pub const m_cycleLatch: usize = 0x1578;
+    pub const m_serverIntendedCycle: usize = 0x157c;
+    pub const m_vecPlayerPatchEconIndices: usize = 0x1580;
+    pub const m_bHideTargetID: usize = 0x159c;
+    pub const m_nextTaserShakeTime: usize = 0x15a0;
+    pub const m_firstTaserShakeTime: usize = 0x15a4;
+    pub const m_flLastSmokeOverlayAlpha: usize = 0x15a8;
+    pub const m_vLastSmokeOverlayColor: usize = 0x15ac;
+    pub const m_nPlayerSmokedFx: usize = 0x15b8;
+    pub const m_flNextMagDropTime: usize = 0x15bc;
+    pub const m_nLastMagDropAttachmentIndex: usize = 0x15c0;
+    pub const m_vecBulletHitModels: usize = 0x15c8;
+    pub const m_vecPickupModelSlerpers: usize = 0x15e0;
+    pub const m_vecLastAliveLocalVelocity: usize = 0x15f8;
+    pub const m_entitySpottedState: usize = 0x1620;
+    pub const m_nSurvivalTeamNumber: usize = 0x1638;
+    pub const m_bGuardianShouldSprayCustomXMark: usize = 0x163c;
+    pub const m_bHasDeathInfo: usize = 0x163d;
+    pub const m_flDeathInfoTime: usize = 0x1640;
+    pub const m_vecDeathInfoOrigin: usize = 0x1644;
+    pub const m_bKilledByHeadshot: usize = 0x1650;
+    pub const m_hOriginalController: usize = 0x1654;
 }
 
 pub mod C_CSPlayerResource {
@@ -1995,10 +1954,6 @@ pub mod C_CSPlayerResource {
     pub const m_foundGoalPositions: usize = 0x5d1;
 }
 
-pub mod C_CSPropExplodingBarrelTop {
-    pub const m_flOverrideAlpha: usize = 0xfc8;
-}
-
 pub mod C_CSTeam {
     pub const m_szTeamMatchStat: usize = 0x5f8;
     pub const m_numMapVictories: usize = 0x7f8;
@@ -2008,38 +1963,108 @@ pub mod C_CSTeam {
     pub const m_scoreOvertime: usize = 0x808;
     pub const m_szClanTeamname: usize = 0x80c;
     pub const m_iClanID: usize = 0x890;
-    pub const m_nGGLeaderSlot_CT: usize = 0x894;
-    pub const m_nGGLeaderSlot_T: usize = 0x898;
-    pub const m_szTeamFlagImage: usize = 0x89c;
-    pub const m_szTeamLogoImage: usize = 0x8a4;
+    pub const m_szTeamFlagImage: usize = 0x894;
+    pub const m_szTeamLogoImage: usize = 0x89c;
+}
+
+pub mod C_CSWeaponBase {
+    pub const m_flFireSequenceStartTime: usize = 0x15d0;
+    pub const m_nFireSequenceStartTimeChange: usize = 0x15d4;
+    pub const m_nFireSequenceStartTimeAck: usize = 0x15d8;
+    pub const m_bPlayerFireEventIsPrimary: usize = 0x15dc;
+    pub const m_seqIdle: usize = 0x15e0;
+    pub const m_seqFirePrimary: usize = 0x15e4;
+    pub const m_seqFireSecondary: usize = 0x15e8;
+    pub const m_iState: usize = 0x1600;
+    pub const m_flCrosshairDistance: usize = 0x1604;
+    pub const m_iAmmoLastCheck: usize = 0x1608;
+    pub const m_iAlpha: usize = 0x160c;
+    pub const m_iScopeTextureID: usize = 0x1610;
+    pub const m_iCrosshairTextureID: usize = 0x1614;
+    pub const m_flGunAccuracyPosition: usize = 0x1618;
+    pub const m_nViewModelIndex: usize = 0x161c;
+    pub const m_bReloadsWithClips: usize = 0x1620;
+    pub const m_flTimeWeaponIdle: usize = 0x1624;
+    pub const m_bFireOnEmpty: usize = 0x1628;
+    pub const m_OnPlayerPickup: usize = 0x1630;
+    pub const m_weaponMode: usize = 0x1658;
+    pub const m_flTurningInaccuracyDelta: usize = 0x165c;
+    pub const m_vecTurningInaccuracyEyeDirLast: usize = 0x1660;
+    pub const m_flTurningInaccuracy: usize = 0x166c;
+    pub const m_fAccuracyPenalty: usize = 0x1670;
+    pub const m_flLastAccuracyUpdateTime: usize = 0x1674;
+    pub const m_fAccuracySmoothedForZoom: usize = 0x1678;
+    pub const m_fScopeZoomEndTime: usize = 0x167c;
+    pub const m_iRecoilIndex: usize = 0x1680;
+    pub const m_flRecoilIndex: usize = 0x1684;
+    pub const m_bBurstMode: usize = 0x1688;
+    pub const m_flPostponeFireReadyTime: usize = 0x168c;
+    pub const m_bInReload: usize = 0x1690;
+    pub const m_bReloadVisuallyComplete: usize = 0x1691;
+    pub const m_flDroppedAtTime: usize = 0x1694;
+    pub const m_bIsHauledBack: usize = 0x1698;
+    pub const m_bSilencerOn: usize = 0x1699;
+    pub const m_flTimeSilencerSwitchComplete: usize = 0x169c;
+    pub const m_iOriginalTeamNumber: usize = 0x16a0;
+    pub const m_flNextAttackRenderTimeOffset: usize = 0x16a4;
+    pub const m_bVisualsDataSet: usize = 0x1720;
+    pub const m_bOldFirstPersonSpectatedState: usize = 0x1721;
+    pub const m_hOurPing: usize = 0x1724;
+    pub const m_nOurPingIndex: usize = 0x1728;
+    pub const m_vecOurPingPos: usize = 0x172c;
+    pub const m_bGlowForPing: usize = 0x1738;
+    pub const m_bUIWeapon: usize = 0x1739;
+    pub const m_hPrevOwner: usize = 0x1748;
+    pub const m_nDropTick: usize = 0x174c;
+    pub const m_donated: usize = 0x176c;
+    pub const m_fLastShotTime: usize = 0x1770;
+    pub const m_bWasOwnedByCT: usize = 0x1774;
+    pub const m_bWasOwnedByTerrorist: usize = 0x1775;
+    pub const m_gunHeat: usize = 0x1778;
+    pub const m_smokeAttachments: usize = 0x177c;
+    pub const m_lastSmokeTime: usize = 0x1780;
+    pub const m_flLastClientFireBulletTime: usize = 0x1784;
+    pub const m_IronSightController: usize = 0x17e0;
+    pub const m_iIronSightMode: usize = 0x1890;
+    pub const m_flLastLOSTraceFailureTime: usize = 0x18a0;
+    pub const m_iNumEmptyAttacks: usize = 0x18a4;
+}
+
+pub mod C_CSWeaponBaseGun {
+    pub const m_zoomLevel: usize = 0x18e0;
+    pub const m_iBurstShotsRemaining: usize = 0x18e4;
+    pub const m_iSilencerBodygroup: usize = 0x18e8;
+    pub const m_silencedModelIndex: usize = 0x18f8;
+    pub const m_inPrecache: usize = 0x18fc;
+    pub const m_bNeedsBoltAction: usize = 0x18fd;
 }
 
 pub mod C_Chicken {
-    pub const m_hHolidayHatAddon: usize = 0x10e0;
-    pub const m_jumpedThisFrame: usize = 0x10e4;
-    pub const m_leader: usize = 0x10e8;
-    pub const m_AttributeManager: usize = 0x10f0;
-    pub const m_OriginalOwnerXuidLow: usize = 0x1598;
-    pub const m_OriginalOwnerXuidHigh: usize = 0x159c;
-    pub const m_bAttributesInitialized: usize = 0x15a0;
-    pub const m_hWaterWakeParticles: usize = 0x15a4;
+    pub const m_hHolidayHatAddon: usize = 0x10f0;
+    pub const m_jumpedThisFrame: usize = 0x10f4;
+    pub const m_leader: usize = 0x10f8;
+    pub const m_AttributeManager: usize = 0x1100;
+    pub const m_OriginalOwnerXuidLow: usize = 0x15a8;
+    pub const m_OriginalOwnerXuidHigh: usize = 0x15ac;
+    pub const m_bAttributesInitialized: usize = 0x15b0;
+    pub const m_hWaterWakeParticles: usize = 0x15b4;
 }
 
 pub mod C_ClientRagdoll {
-    pub const m_bFadeOut: usize = 0xe70;
-    pub const m_bImportant: usize = 0xe71;
-    pub const m_flEffectTime: usize = 0xe74;
-    pub const m_gibDespawnTime: usize = 0xe78;
-    pub const m_iCurrentFriction: usize = 0xe7c;
-    pub const m_iMinFriction: usize = 0xe80;
-    pub const m_iMaxFriction: usize = 0xe84;
-    pub const m_iFrictionAnimState: usize = 0xe88;
-    pub const m_bReleaseRagdoll: usize = 0xe8c;
-    pub const m_iEyeAttachment: usize = 0xe8d;
-    pub const m_bFadingOut: usize = 0xe8e;
-    pub const m_flScaleEnd: usize = 0xe90;
-    pub const m_flScaleTimeStart: usize = 0xeb8;
-    pub const m_flScaleTimeEnd: usize = 0xee0;
+    pub const m_bFadeOut: usize = 0xe80;
+    pub const m_bImportant: usize = 0xe81;
+    pub const m_flEffectTime: usize = 0xe84;
+    pub const m_gibDespawnTime: usize = 0xe88;
+    pub const m_iCurrentFriction: usize = 0xe8c;
+    pub const m_iMinFriction: usize = 0xe90;
+    pub const m_iMaxFriction: usize = 0xe94;
+    pub const m_iFrictionAnimState: usize = 0xe98;
+    pub const m_bReleaseRagdoll: usize = 0xe9c;
+    pub const m_iEyeAttachment: usize = 0xe9d;
+    pub const m_bFadingOut: usize = 0xe9e;
+    pub const m_flScaleEnd: usize = 0xea0;
+    pub const m_flScaleTimeStart: usize = 0xec8;
+    pub const m_flScaleTimeEnd: usize = 0xef0;
 }
 
 pub mod C_ColorCorrection {
@@ -2085,63 +2110,8 @@ pub mod C_CsmFovOverride {
     pub const m_flCsmFovOverrideValue: usize = 0x548;
 }
 
-pub mod C_DangerZone {
-    pub const m_vecDangerZoneOriginStartedAt: usize = 0x540;
-    pub const m_flBombLaunchTime: usize = 0x54c;
-    pub const m_flExtraRadius: usize = 0x550;
-    pub const m_flExtraRadiusStartTime: usize = 0x554;
-    pub const m_flExtraRadiusTotalLerpTime: usize = 0x558;
-    pub const m_nDropOrder: usize = 0x55c;
-    pub const m_iWave: usize = 0x560;
-}
-
-pub mod C_DangerZoneController {
-    pub const m_bDangerZoneControllerEnabled: usize = 0x540;
-    pub const m_bMissionControlledExplosions: usize = 0x541;
-    pub const m_vecEndGameCircleStart: usize = 0x544;
-    pub const m_vecEndGameCircleEnd: usize = 0x550;
-    pub const m_flStartTime: usize = 0x55c;
-    pub const m_flFinalExpansionTime: usize = 0x560;
-    pub const m_DangerZones: usize = 0x564;
-    pub const m_flWaveEndTimes: usize = 0x60c;
-    pub const m_hTheFinalZone: usize = 0x620;
-}
-
 pub mod C_DecoyProjectile {
-    pub const m_flTimeParticleEffectSpawn: usize = 0x1100;
-}
-
-pub mod C_Drone {
-    pub const m_vecClientSideTrailPositions: usize = 0xfd8;
-    pub const m_hMoveToThisEntity: usize = 0xff0;
-    pub const m_hDeliveryCargo: usize = 0xff4;
-    pub const m_hRecentCargo: usize = 0xff8;
-    pub const m_bPilotTakeoverAllowed: usize = 0xffc;
-    pub const m_hPotentialCargo: usize = 0x1000;
-    pub const m_hCurrentPilot: usize = 0x1004;
-    pub const m_vecTagPositions: usize = 0x1008;
-    pub const m_vecTagIncrements: usize = 0x1128;
-    pub const m_flLastTimeCargoWasAttached: usize = 0x1188;
-    pub const m_vecLastKnownCargoAttachPositions: usize = 0x118c;
-    pub const m_vecThrusterLastPos: usize = 0x11bc;
-    pub const m_vecThrusterSmoothVel: usize = 0x11c8;
-    pub const m_vecThrusterSmoothAccel: usize = 0x11d4;
-    pub const m_flJammedEffectAmount: usize = 0x11e0;
-}
-
-pub mod C_Dronegun {
-    pub const m_vecAttentionTarget: usize = 0xe78;
-    pub const m_vecTargetOffset: usize = 0xe84;
-    pub const m_bHasTarget: usize = 0xe90;
-    pub const m_vecAttentionCurrent: usize = 0xe94;
-    pub const m_nPoseParamPitch: usize = 0xea0;
-    pub const m_nPoseParamYaw: usize = 0xea4;
-    pub const m_bVarInit: usize = 0xea8;
-    pub const m_nAttachMuzzle: usize = 0xea9;
-    pub const m_flLastClientThinkTime: usize = 0xeac;
-    pub const m_flNextSpark: usize = 0xeb0;
-    pub const m_nBoneOverrideIndex: usize = 0xeb4;
-    pub const m_vecLaserTracePos: usize = 0xeb8;
+    pub const m_flTimeParticleEffectSpawn: usize = 0x1110;
 }
 
 pub mod C_DynamicLight {
@@ -2155,54 +2125,54 @@ pub mod C_DynamicLight {
 }
 
 pub mod C_DynamicProp {
-    pub const m_bUseHitboxesForRenderBox: usize = 0xfc0;
-    pub const m_bUseAnimGraph: usize = 0xfc1;
-    pub const m_pOutputAnimBegun: usize = 0xfc8;
-    pub const m_pOutputAnimOver: usize = 0xff0;
-    pub const m_pOutputAnimLoopCycleOver: usize = 0x1018;
-    pub const m_OnAnimReachedStart: usize = 0x1040;
-    pub const m_OnAnimReachedEnd: usize = 0x1068;
-    pub const m_iszDefaultAnim: usize = 0x1090;
-    pub const m_nDefaultAnimLoopMode: usize = 0x1098;
-    pub const m_bAnimateOnServer: usize = 0x109c;
-    pub const m_bRandomizeCycle: usize = 0x109d;
-    pub const m_bStartDisabled: usize = 0x109e;
-    pub const m_bScriptedMovement: usize = 0x109f;
-    pub const m_bFiredStartEndOutput: usize = 0x10a0;
-    pub const m_bForceNpcExclude: usize = 0x10a1;
-    pub const m_bCreateNonSolid: usize = 0x10a2;
-    pub const m_bIsOverrideProp: usize = 0x10a3;
-    pub const m_iInitialGlowState: usize = 0x10a4;
-    pub const m_nGlowRange: usize = 0x10a8;
-    pub const m_nGlowRangeMin: usize = 0x10ac;
-    pub const m_glowColor: usize = 0x10b0;
-    pub const m_nGlowTeam: usize = 0x10b4;
-    pub const m_iCachedFrameCount: usize = 0x10b8;
-    pub const m_vecCachedRenderMins: usize = 0x10bc;
-    pub const m_vecCachedRenderMaxs: usize = 0x10c8;
+    pub const m_bUseHitboxesForRenderBox: usize = 0xfd0;
+    pub const m_bUseAnimGraph: usize = 0xfd1;
+    pub const m_pOutputAnimBegun: usize = 0xfd8;
+    pub const m_pOutputAnimOver: usize = 0x1000;
+    pub const m_pOutputAnimLoopCycleOver: usize = 0x1028;
+    pub const m_OnAnimReachedStart: usize = 0x1050;
+    pub const m_OnAnimReachedEnd: usize = 0x1078;
+    pub const m_iszDefaultAnim: usize = 0x10a0;
+    pub const m_nDefaultAnimLoopMode: usize = 0x10a8;
+    pub const m_bAnimateOnServer: usize = 0x10ac;
+    pub const m_bRandomizeCycle: usize = 0x10ad;
+    pub const m_bStartDisabled: usize = 0x10ae;
+    pub const m_bScriptedMovement: usize = 0x10af;
+    pub const m_bFiredStartEndOutput: usize = 0x10b0;
+    pub const m_bForceNpcExclude: usize = 0x10b1;
+    pub const m_bCreateNonSolid: usize = 0x10b2;
+    pub const m_bIsOverrideProp: usize = 0x10b3;
+    pub const m_iInitialGlowState: usize = 0x10b4;
+    pub const m_nGlowRange: usize = 0x10b8;
+    pub const m_nGlowRangeMin: usize = 0x10bc;
+    pub const m_glowColor: usize = 0x10c0;
+    pub const m_nGlowTeam: usize = 0x10c4;
+    pub const m_iCachedFrameCount: usize = 0x10c8;
+    pub const m_vecCachedRenderMins: usize = 0x10cc;
+    pub const m_vecCachedRenderMaxs: usize = 0x10d8;
 }
 
 pub mod C_EconEntity {
-    pub const m_flFlexDelayTime: usize = 0x1018;
-    pub const m_flFlexDelayedWeight: usize = 0x1020;
-    pub const m_bAttributesInitialized: usize = 0x1028;
-    pub const m_AttributeManager: usize = 0x1030;
-    pub const m_OriginalOwnerXuidLow: usize = 0x14d8;
-    pub const m_OriginalOwnerXuidHigh: usize = 0x14dc;
-    pub const m_nFallbackPaintKit: usize = 0x14e0;
-    pub const m_nFallbackSeed: usize = 0x14e4;
-    pub const m_flFallbackWear: usize = 0x14e8;
-    pub const m_nFallbackStatTrak: usize = 0x14ec;
-    pub const m_bClientside: usize = 0x14f0;
-    pub const m_bParticleSystemsCreated: usize = 0x14f1;
-    pub const m_vecAttachedParticles: usize = 0x14f8;
-    pub const m_hViewmodelAttachment: usize = 0x1510;
-    pub const m_iOldTeam: usize = 0x1514;
-    pub const m_bAttachmentDirty: usize = 0x1518;
-    pub const m_nUnloadedModelIndex: usize = 0x151c;
-    pub const m_iNumOwnerValidationRetries: usize = 0x1520;
-    pub const m_hOldProvidee: usize = 0x1530;
-    pub const m_vecAttachedModels: usize = 0x1538;
+    pub const m_flFlexDelayTime: usize = 0x1028;
+    pub const m_flFlexDelayedWeight: usize = 0x1030;
+    pub const m_bAttributesInitialized: usize = 0x1038;
+    pub const m_AttributeManager: usize = 0x1040;
+    pub const m_OriginalOwnerXuidLow: usize = 0x14e8;
+    pub const m_OriginalOwnerXuidHigh: usize = 0x14ec;
+    pub const m_nFallbackPaintKit: usize = 0x14f0;
+    pub const m_nFallbackSeed: usize = 0x14f4;
+    pub const m_flFallbackWear: usize = 0x14f8;
+    pub const m_nFallbackStatTrak: usize = 0x14fc;
+    pub const m_bClientside: usize = 0x1500;
+    pub const m_bParticleSystemsCreated: usize = 0x1501;
+    pub const m_vecAttachedParticles: usize = 0x1508;
+    pub const m_hViewmodelAttachment: usize = 0x1520;
+    pub const m_iOldTeam: usize = 0x1524;
+    pub const m_bAttachmentDirty: usize = 0x1528;
+    pub const m_nUnloadedModelIndex: usize = 0x152c;
+    pub const m_iNumOwnerValidationRetries: usize = 0x1530;
+    pub const m_hOldProvidee: usize = 0x1540;
+    pub const m_vecAttachedModels: usize = 0x1548;
 }
 
 pub mod C_EconEntity_AttachedModelData_t {
@@ -2240,8 +2210,8 @@ pub mod C_EconItemView {
 }
 
 pub mod C_EconWearable {
-    pub const m_nForceSkin: usize = 0x1550;
-    pub const m_bAlwaysAllow: usize = 0x1554;
+    pub const m_nForceSkin: usize = 0x1560;
+    pub const m_bAlwaysAllow: usize = 0x1564;
 }
 
 pub mod C_EntityDissolve {
@@ -2267,53 +2237,53 @@ pub mod C_EntityFlame {
 }
 
 pub mod C_EnvCombinedLightProbeVolume {
-    pub const m_Color: usize = 0x1610;
-    pub const m_flBrightness: usize = 0x1614;
-    pub const m_hCubemapTexture: usize = 0x1618;
-    pub const m_bCustomCubemapTexture: usize = 0x1620;
-    pub const m_hLightProbeTexture: usize = 0x1628;
-    pub const m_hLightProbeDirectLightIndicesTexture: usize = 0x1630;
-    pub const m_hLightProbeDirectLightScalarsTexture: usize = 0x1638;
-    pub const m_hLightProbeDirectLightShadowsTexture: usize = 0x1640;
-    pub const m_vBoxMins: usize = 0x1648;
-    pub const m_vBoxMaxs: usize = 0x1654;
-    pub const m_LightGroups: usize = 0x1660;
-    pub const m_bMoveable: usize = 0x1668;
-    pub const m_nHandshake: usize = 0x166c;
-    pub const m_nEnvCubeMapArrayIndex: usize = 0x1670;
-    pub const m_nPriority: usize = 0x1674;
-    pub const m_bStartDisabled: usize = 0x1678;
-    pub const m_flEdgeFadeDist: usize = 0x167c;
-    pub const m_vEdgeFadeDists: usize = 0x1680;
-    pub const m_nLightProbeSizeX: usize = 0x168c;
-    pub const m_nLightProbeSizeY: usize = 0x1690;
-    pub const m_nLightProbeSizeZ: usize = 0x1694;
-    pub const m_nLightProbeAtlasX: usize = 0x1698;
-    pub const m_nLightProbeAtlasY: usize = 0x169c;
-    pub const m_nLightProbeAtlasZ: usize = 0x16a0;
-    pub const m_bEnabled: usize = 0x16b9;
+    pub const m_Color: usize = 0x15a8;
+    pub const m_flBrightness: usize = 0x15ac;
+    pub const m_hCubemapTexture: usize = 0x15b0;
+    pub const m_bCustomCubemapTexture: usize = 0x15b8;
+    pub const m_hLightProbeTexture: usize = 0x15c0;
+    pub const m_hLightProbeDirectLightIndicesTexture: usize = 0x15c8;
+    pub const m_hLightProbeDirectLightScalarsTexture: usize = 0x15d0;
+    pub const m_hLightProbeDirectLightShadowsTexture: usize = 0x15d8;
+    pub const m_vBoxMins: usize = 0x15e0;
+    pub const m_vBoxMaxs: usize = 0x15ec;
+    pub const m_LightGroups: usize = 0x15f8;
+    pub const m_bMoveable: usize = 0x1600;
+    pub const m_nHandshake: usize = 0x1604;
+    pub const m_nEnvCubeMapArrayIndex: usize = 0x1608;
+    pub const m_nPriority: usize = 0x160c;
+    pub const m_bStartDisabled: usize = 0x1610;
+    pub const m_flEdgeFadeDist: usize = 0x1614;
+    pub const m_vEdgeFadeDists: usize = 0x1618;
+    pub const m_nLightProbeSizeX: usize = 0x1624;
+    pub const m_nLightProbeSizeY: usize = 0x1628;
+    pub const m_nLightProbeSizeZ: usize = 0x162c;
+    pub const m_nLightProbeAtlasX: usize = 0x1630;
+    pub const m_nLightProbeAtlasY: usize = 0x1634;
+    pub const m_nLightProbeAtlasZ: usize = 0x1638;
+    pub const m_bEnabled: usize = 0x1651;
 }
 
 pub mod C_EnvCubemap {
-    pub const m_hCubemapTexture: usize = 0x630;
-    pub const m_bCustomCubemapTexture: usize = 0x638;
-    pub const m_flInfluenceRadius: usize = 0x63c;
-    pub const m_vBoxProjectMins: usize = 0x640;
-    pub const m_vBoxProjectMaxs: usize = 0x64c;
-    pub const m_LightGroups: usize = 0x658;
-    pub const m_bMoveable: usize = 0x660;
-    pub const m_nHandshake: usize = 0x664;
-    pub const m_nEnvCubeMapArrayIndex: usize = 0x668;
-    pub const m_nPriority: usize = 0x66c;
-    pub const m_flEdgeFadeDist: usize = 0x670;
-    pub const m_vEdgeFadeDists: usize = 0x674;
-    pub const m_flDiffuseScale: usize = 0x680;
-    pub const m_bStartDisabled: usize = 0x684;
-    pub const m_bDefaultEnvMap: usize = 0x685;
-    pub const m_bDefaultSpecEnvMap: usize = 0x686;
-    pub const m_bIndoorCubeMap: usize = 0x687;
-    pub const m_bCopyDiffuseFromDefaultCubemap: usize = 0x688;
-    pub const m_bEnabled: usize = 0x698;
+    pub const m_hCubemapTexture: usize = 0x5c8;
+    pub const m_bCustomCubemapTexture: usize = 0x5d0;
+    pub const m_flInfluenceRadius: usize = 0x5d4;
+    pub const m_vBoxProjectMins: usize = 0x5d8;
+    pub const m_vBoxProjectMaxs: usize = 0x5e4;
+    pub const m_LightGroups: usize = 0x5f0;
+    pub const m_bMoveable: usize = 0x5f8;
+    pub const m_nHandshake: usize = 0x5fc;
+    pub const m_nEnvCubeMapArrayIndex: usize = 0x600;
+    pub const m_nPriority: usize = 0x604;
+    pub const m_flEdgeFadeDist: usize = 0x608;
+    pub const m_vEdgeFadeDists: usize = 0x60c;
+    pub const m_flDiffuseScale: usize = 0x618;
+    pub const m_bStartDisabled: usize = 0x61c;
+    pub const m_bDefaultEnvMap: usize = 0x61d;
+    pub const m_bDefaultSpecEnvMap: usize = 0x61e;
+    pub const m_bIndoorCubeMap: usize = 0x61f;
+    pub const m_bCopyDiffuseFromDefaultCubemap: usize = 0x620;
+    pub const m_bEnabled: usize = 0x630;
 }
 
 pub mod C_EnvCubemapFog {
@@ -2352,33 +2322,6 @@ pub mod C_EnvDecal {
 pub mod C_EnvDetailController {
     pub const m_flFadeStartDist: usize = 0x540;
     pub const m_flFadeEndDist: usize = 0x544;
-}
-
-pub mod C_EnvGasCanister {
-    pub const m_bLanded: usize = 0xe70;
-    pub const m_bSpawnedSkyboxParticles: usize = 0xed8;
-    pub const m_flKillImpactParticlesTime: usize = 0xedc;
-    pub const m_vecImpactPosition: usize = 0xee0;
-    pub const m_vecStartPosition: usize = 0xeec;
-    pub const m_vecEnterWorldPosition: usize = 0xef8;
-    pub const m_vecDirection: usize = 0xf04;
-    pub const m_vecStartAngles: usize = 0xf10;
-    pub const m_flFlightTime: usize = 0xf1c;
-    pub const m_flFlightSpeed: usize = 0xf20;
-    pub const m_flLaunchTime: usize = 0xf24;
-    pub const m_flInitialZSpeed: usize = 0xf28;
-    pub const m_flZAcceleration: usize = 0xf2c;
-    pub const m_flHorizSpeed: usize = 0xf30;
-    pub const m_bLaunchedFromWithinWorld: usize = 0xf34;
-    pub const m_vecParabolaDirection: usize = 0xf38;
-    pub const m_flWorldEnterTime: usize = 0xf44;
-    pub const m_vecSkyboxOrigin: usize = 0xf48;
-    pub const m_flSkyboxScale: usize = 0xf54;
-    pub const m_bInSkybox: usize = 0xf58;
-    pub const m_bDoImpactEffects: usize = 0xf59;
-    pub const m_nMyZoneIndex: usize = 0xf5c;
-    pub const m_hSkyboxCopy: usize = 0xf60;
-    pub const m_flLaunchHeight: usize = 0xf64;
 }
 
 pub mod C_EnvLightProbeVolume {
@@ -2550,34 +2493,34 @@ pub mod C_FireSprite {
 }
 
 pub mod C_Fish {
-    pub const m_pos: usize = 0xe70;
-    pub const m_vel: usize = 0xe7c;
-    pub const m_angles: usize = 0xe88;
-    pub const m_localLifeState: usize = 0xe94;
-    pub const m_deathDepth: usize = 0xe98;
-    pub const m_deathAngle: usize = 0xe9c;
-    pub const m_buoyancy: usize = 0xea0;
-    pub const m_wiggleTimer: usize = 0xea8;
-    pub const m_wigglePhase: usize = 0xec0;
-    pub const m_wiggleRate: usize = 0xec4;
-    pub const m_actualPos: usize = 0xec8;
-    pub const m_actualAngles: usize = 0xed4;
-    pub const m_poolOrigin: usize = 0xee0;
-    pub const m_waterLevel: usize = 0xeec;
-    pub const m_gotUpdate: usize = 0xef0;
-    pub const m_x: usize = 0xef4;
-    pub const m_y: usize = 0xef8;
-    pub const m_z: usize = 0xefc;
-    pub const m_angle: usize = 0xf00;
-    pub const m_errorHistory: usize = 0xf04;
-    pub const m_errorHistoryIndex: usize = 0xf54;
-    pub const m_errorHistoryCount: usize = 0xf58;
-    pub const m_averageError: usize = 0xf5c;
+    pub const m_pos: usize = 0xe80;
+    pub const m_vel: usize = 0xe8c;
+    pub const m_angles: usize = 0xe98;
+    pub const m_localLifeState: usize = 0xea4;
+    pub const m_deathDepth: usize = 0xea8;
+    pub const m_deathAngle: usize = 0xeac;
+    pub const m_buoyancy: usize = 0xeb0;
+    pub const m_wiggleTimer: usize = 0xeb8;
+    pub const m_wigglePhase: usize = 0xed0;
+    pub const m_wiggleRate: usize = 0xed4;
+    pub const m_actualPos: usize = 0xed8;
+    pub const m_actualAngles: usize = 0xee4;
+    pub const m_poolOrigin: usize = 0xef0;
+    pub const m_waterLevel: usize = 0xefc;
+    pub const m_gotUpdate: usize = 0xf00;
+    pub const m_x: usize = 0xf04;
+    pub const m_y: usize = 0xf08;
+    pub const m_z: usize = 0xf0c;
+    pub const m_angle: usize = 0xf10;
+    pub const m_errorHistory: usize = 0xf14;
+    pub const m_errorHistoryIndex: usize = 0xf64;
+    pub const m_errorHistoryCount: usize = 0xf68;
+    pub const m_averageError: usize = 0xf6c;
 }
 
 pub mod C_Fists {
-    pub const m_bPlayingUninterruptableAct: usize = 0x18d0;
-    pub const m_nUninterruptableActivity: usize = 0x18d4;
+    pub const m_bPlayingUninterruptableAct: usize = 0x18e0;
+    pub const m_nUninterruptableActivity: usize = 0x18e4;
 }
 
 pub mod C_FogController {
@@ -2648,42 +2591,35 @@ pub mod C_GradientFog {
     pub const m_bGradientFogNeedsTextures: usize = 0x57a;
 }
 
-pub mod C_GrassBurn {
-    pub const m_flGrassBurnClearTime: usize = 0x540;
-    pub const m_bClientPendingClear: usize = 0x544;
-    pub const m_flGrassBurnClearTimeLocal: usize = 0x548;
-    pub const m_vecGrassBurnPositions: usize = 0x550;
-}
-
 pub mod C_HandleTest {
     pub const m_Handle: usize = 0x540;
     pub const m_bSendHandle: usize = 0x544;
 }
 
 pub mod C_Hostage {
-    pub const m_entitySpottedState: usize = 0x1098;
-    pub const m_leader: usize = 0x10b0;
-    pub const m_reuseTimer: usize = 0x10b8;
-    pub const m_vel: usize = 0x10d0;
-    pub const m_isRescued: usize = 0x10dc;
-    pub const m_jumpedThisFrame: usize = 0x10dd;
-    pub const m_nHostageState: usize = 0x10e0;
-    pub const m_bHandsHaveBeenCut: usize = 0x10e4;
-    pub const m_hHostageGrabber: usize = 0x10e8;
-    pub const m_fLastGrabTime: usize = 0x10ec;
-    pub const m_vecGrabbedPos: usize = 0x10f0;
-    pub const m_flRescueStartTime: usize = 0x10fc;
-    pub const m_flGrabSuccessTime: usize = 0x1100;
-    pub const m_flDropStartTime: usize = 0x1104;
-    pub const m_flDeadOrRescuedTime: usize = 0x1108;
-    pub const m_blinkTimer: usize = 0x1110;
-    pub const m_lookAt: usize = 0x1128;
-    pub const m_lookAroundTimer: usize = 0x1138;
-    pub const m_isInit: usize = 0x1150;
-    pub const m_eyeAttachment: usize = 0x1151;
-    pub const m_chestAttachment: usize = 0x1152;
-    pub const m_pPredictionOwner: usize = 0x1158;
-    pub const m_fNewestAlphaThinkTime: usize = 0x1160;
+    pub const m_entitySpottedState: usize = 0x10a8;
+    pub const m_leader: usize = 0x10c0;
+    pub const m_reuseTimer: usize = 0x10c8;
+    pub const m_vel: usize = 0x10e0;
+    pub const m_isRescued: usize = 0x10ec;
+    pub const m_jumpedThisFrame: usize = 0x10ed;
+    pub const m_nHostageState: usize = 0x10f0;
+    pub const m_bHandsHaveBeenCut: usize = 0x10f4;
+    pub const m_hHostageGrabber: usize = 0x10f8;
+    pub const m_fLastGrabTime: usize = 0x10fc;
+    pub const m_vecGrabbedPos: usize = 0x1100;
+    pub const m_flRescueStartTime: usize = 0x110c;
+    pub const m_flGrabSuccessTime: usize = 0x1110;
+    pub const m_flDropStartTime: usize = 0x1114;
+    pub const m_flDeadOrRescuedTime: usize = 0x1118;
+    pub const m_blinkTimer: usize = 0x1120;
+    pub const m_lookAt: usize = 0x1138;
+    pub const m_lookAroundTimer: usize = 0x1148;
+    pub const m_isInit: usize = 0x1160;
+    pub const m_eyeAttachment: usize = 0x1161;
+    pub const m_chestAttachment: usize = 0x1162;
+    pub const m_pPredictionOwner: usize = 0x1168;
+    pub const m_fNewestAlphaThinkTime: usize = 0x1170;
 }
 
 pub mod C_Inferno {
@@ -2712,12 +2648,6 @@ pub mod C_Inferno {
     pub const m_flLastGrassBurnThink: usize = 0x828c;
 }
 
-pub mod C_InfoMapRegion {
-    pub const m_flRadius: usize = 0x540;
-    pub const m_szLocToken: usize = 0x544;
-    pub const m_pNext: usize = 0x5c8;
-}
-
 pub mod C_InfoVisibilityBox {
     pub const m_nMode: usize = 0x544;
     pub const m_vBoxSize: usize = 0x548;
@@ -2741,13 +2671,13 @@ pub mod C_IronSightController {
 }
 
 pub mod C_Item {
-    pub const m_bShouldGlow: usize = 0x1550;
-    pub const m_pReticleHintTextName: usize = 0x1551;
+    pub const m_bShouldGlow: usize = 0x1560;
+    pub const m_pReticleHintTextName: usize = 0x1561;
 }
 
 pub mod C_ItemDogtags {
-    pub const m_OwningPlayer: usize = 0x1658;
-    pub const m_KillingPlayer: usize = 0x165c;
+    pub const m_OwningPlayer: usize = 0x1668;
+    pub const m_KillingPlayer: usize = 0x166c;
 }
 
 pub mod C_LightEntity {
@@ -2776,31 +2706,31 @@ pub mod C_LightGlowOverlay {
 }
 
 pub mod C_LocalTempEntity {
-    pub const flags: usize = 0xe88;
-    pub const die: usize = 0xe8c;
-    pub const m_flFrameMax: usize = 0xe90;
-    pub const x: usize = 0xe94;
-    pub const y: usize = 0xe98;
-    pub const fadeSpeed: usize = 0xe9c;
-    pub const bounceFactor: usize = 0xea0;
-    pub const hitSound: usize = 0xea4;
-    pub const priority: usize = 0xea8;
-    pub const tentOffset: usize = 0xeac;
-    pub const m_vecTempEntAngVelocity: usize = 0xeb8;
-    pub const tempent_renderamt: usize = 0xec4;
-    pub const m_vecNormal: usize = 0xec8;
-    pub const m_flSpriteScale: usize = 0xed4;
-    pub const m_nFlickerFrame: usize = 0xed8;
-    pub const m_flFrameRate: usize = 0xedc;
-    pub const m_flFrame: usize = 0xee0;
-    pub const m_pszImpactEffect: usize = 0xee8;
-    pub const m_pszParticleEffect: usize = 0xef0;
-    pub const m_bParticleCollision: usize = 0xef8;
-    pub const m_iLastCollisionFrame: usize = 0xefc;
-    pub const m_vLastCollisionOrigin: usize = 0xf00;
-    pub const m_vecTempEntVelocity: usize = 0xf0c;
-    pub const m_vecPrevAbsOrigin: usize = 0xf18;
-    pub const m_vecTempEntAcceleration: usize = 0xf24;
+    pub const flags: usize = 0xe98;
+    pub const die: usize = 0xe9c;
+    pub const m_flFrameMax: usize = 0xea0;
+    pub const x: usize = 0xea4;
+    pub const y: usize = 0xea8;
+    pub const fadeSpeed: usize = 0xeac;
+    pub const bounceFactor: usize = 0xeb0;
+    pub const hitSound: usize = 0xeb4;
+    pub const priority: usize = 0xeb8;
+    pub const tentOffset: usize = 0xebc;
+    pub const m_vecTempEntAngVelocity: usize = 0xec8;
+    pub const tempent_renderamt: usize = 0xed4;
+    pub const m_vecNormal: usize = 0xed8;
+    pub const m_flSpriteScale: usize = 0xee4;
+    pub const m_nFlickerFrame: usize = 0xee8;
+    pub const m_flFrameRate: usize = 0xeec;
+    pub const m_flFrame: usize = 0xef0;
+    pub const m_pszImpactEffect: usize = 0xef8;
+    pub const m_pszParticleEffect: usize = 0xf00;
+    pub const m_bParticleCollision: usize = 0xf08;
+    pub const m_iLastCollisionFrame: usize = 0xf0c;
+    pub const m_vLastCollisionOrigin: usize = 0xf10;
+    pub const m_vecTempEntVelocity: usize = 0xf1c;
+    pub const m_vecPrevAbsOrigin: usize = 0xf28;
+    pub const m_vecTempEntAcceleration: usize = 0xf34;
 }
 
 pub mod C_MapVetoPickController {
@@ -2824,30 +2754,21 @@ pub mod C_MapVetoPickController {
 }
 
 pub mod C_Melee {
-    pub const m_flThrowAt: usize = 0x18d0;
+    pub const m_flThrowAt: usize = 0x18e0;
 }
 
 pub mod C_MolotovProjectile {
-    pub const m_bIsIncGrenade: usize = 0x10e0;
+    pub const m_bIsIncGrenade: usize = 0x10f0;
 }
 
 pub mod C_Multimeter {
-    pub const m_hTargetC4: usize = 0xe78;
+    pub const m_hTargetC4: usize = 0xe88;
 }
 
 pub mod C_OmniLight {
     pub const m_flInnerAngle: usize = 0xf08;
     pub const m_flOuterAngle: usize = 0xf0c;
     pub const m_bShowLight: usize = 0xf10;
-}
-
-pub mod C_ParadropChopper {
-    pub const m_vecLastRopeTargetPos: usize = 0xe78;
-    pub const m_flLastRopeTime: usize = 0xe84;
-    pub const m_nRappelABone: usize = 0xe88;
-    pub const m_nRappelBBone: usize = 0xe8c;
-    pub const m_hCallingPlayer: usize = 0xe90;
-    pub const m_bCalledByPlayer: usize = 0xe94;
 }
 
 pub mod C_ParticleSystem {
@@ -2897,76 +2818,68 @@ pub mod C_PathParticleRope {
 }
 
 pub mod C_PhysMagnet {
-    pub const m_aAttachedObjectsFromServer: usize = 0xe70;
-    pub const m_aAttachedObjects: usize = 0xe88;
+    pub const m_aAttachedObjectsFromServer: usize = 0xe80;
+    pub const m_aAttachedObjects: usize = 0xe98;
 }
 
 pub mod C_PhysPropClientside {
-    pub const m_flTouchDelta: usize = 0xfc0;
-    pub const m_fDeathTime: usize = 0xfc4;
-    pub const m_impactEnergyScale: usize = 0xfc8;
-    pub const m_inertiaScale: usize = 0xfcc;
-    pub const m_flDmgModBullet: usize = 0xfd0;
-    pub const m_flDmgModClub: usize = 0xfd4;
-    pub const m_flDmgModExplosive: usize = 0xfd8;
-    pub const m_flDmgModFire: usize = 0xfdc;
-    pub const m_iszPhysicsDamageTableName: usize = 0xfe0;
-    pub const m_iszBasePropData: usize = 0xfe8;
-    pub const m_iInteractions: usize = 0xff0;
-    pub const m_bHasBreakPiecesOrCommands: usize = 0xff4;
-    pub const m_vecDamagePosition: usize = 0xff8;
-    pub const m_vecDamageDirection: usize = 0x1004;
-    pub const m_nDamageType: usize = 0x1010;
-}
-
-pub mod C_PhysPropLootCrate {
-    pub const m_bRenderInPSPM: usize = 0xfd0;
-    pub const m_bRenderInTablet: usize = 0xfd1;
-    pub const m_iMaxHealth: usize = 0xfd4;
-    pub const m_iHealth: usize = 0xfd8;
+    pub const m_flTouchDelta: usize = 0xfd0;
+    pub const m_fDeathTime: usize = 0xfd4;
+    pub const m_impactEnergyScale: usize = 0xfd8;
+    pub const m_inertiaScale: usize = 0xfdc;
+    pub const m_flDmgModBullet: usize = 0xfe0;
+    pub const m_flDmgModClub: usize = 0xfe4;
+    pub const m_flDmgModExplosive: usize = 0xfe8;
+    pub const m_flDmgModFire: usize = 0xfec;
+    pub const m_iszPhysicsDamageTableName: usize = 0xff0;
+    pub const m_iszBasePropData: usize = 0xff8;
+    pub const m_iInteractions: usize = 0x1000;
+    pub const m_bHasBreakPiecesOrCommands: usize = 0x1004;
+    pub const m_vecDamagePosition: usize = 0x1008;
+    pub const m_vecDamageDirection: usize = 0x1014;
+    pub const m_nDamageType: usize = 0x1020;
 }
 
 pub mod C_PhysicsProp {
-    pub const m_bAwake: usize = 0xfc0;
+    pub const m_bAwake: usize = 0xfd0;
 }
 
 pub mod C_PickUpModelSlerper {
-    pub const m_hPlayerParent: usize = 0xe70;
-    pub const m_hItem: usize = 0xe74;
-    pub const m_flTimePickedUp: usize = 0xe78;
-    pub const m_angOriginal: usize = 0xe7c;
-    pub const m_vecPosOriginal: usize = 0xe88;
-    pub const m_angRandom: usize = 0xe98;
+    pub const m_hPlayerParent: usize = 0xe80;
+    pub const m_hItem: usize = 0xe84;
+    pub const m_flTimePickedUp: usize = 0xe88;
+    pub const m_angOriginal: usize = 0xe8c;
+    pub const m_vecPosOriginal: usize = 0xe98;
+    pub const m_angRandom: usize = 0xea8;
 }
 
 pub mod C_PlantedC4 {
-    pub const m_bBombTicking: usize = 0xe70;
-    pub const m_nBombSite: usize = 0xe74;
-    pub const m_nSourceSoundscapeHash: usize = 0xe78;
-    pub const m_entitySpottedState: usize = 0xe80;
-    pub const m_flNextGlow: usize = 0xe98;
-    pub const m_flNextBeep: usize = 0xe9c;
-    pub const m_flC4Blow: usize = 0xea0;
-    pub const m_bCannotBeDefused: usize = 0xea4;
-    pub const m_bHasExploded: usize = 0xea5;
-    pub const m_flTimerLength: usize = 0xea8;
-    pub const m_bBeingDefused: usize = 0xeac;
-    pub const m_bTenSecWarning: usize = 0xeb0;
-    pub const m_bTriggerWarning: usize = 0xeb4;
-    pub const m_bExplodeWarning: usize = 0xeb8;
-    pub const m_bC4Activated: usize = 0xebc;
-    pub const m_bLocalBRMusicPlayed: usize = 0xebd;
-    pub const m_flDefuseLength: usize = 0xec0;
-    pub const m_flDefuseCountDown: usize = 0xec4;
-    pub const m_bBombDefused: usize = 0xec8;
-    pub const m_hBombDefuser: usize = 0xecc;
-    pub const m_hControlPanel: usize = 0xed0;
-    pub const m_hDefuserMultimeter: usize = 0xed4;
-    pub const m_flNextRadarFlashTime: usize = 0xed8;
-    pub const m_bRadarFlash: usize = 0xedc;
-    pub const m_pBombDefuser: usize = 0xee0;
-    pub const m_fLastDefuseTime: usize = 0xee4;
-    pub const m_pPredictionOwner: usize = 0xee8;
+    pub const m_bBombTicking: usize = 0xe80;
+    pub const m_nBombSite: usize = 0xe84;
+    pub const m_nSourceSoundscapeHash: usize = 0xe88;
+    pub const m_entitySpottedState: usize = 0xe90;
+    pub const m_flNextGlow: usize = 0xea8;
+    pub const m_flNextBeep: usize = 0xeac;
+    pub const m_flC4Blow: usize = 0xeb0;
+    pub const m_bCannotBeDefused: usize = 0xeb4;
+    pub const m_bHasExploded: usize = 0xeb5;
+    pub const m_flTimerLength: usize = 0xeb8;
+    pub const m_bBeingDefused: usize = 0xebc;
+    pub const m_bTenSecWarning: usize = 0xec0;
+    pub const m_bTriggerWarning: usize = 0xec4;
+    pub const m_bExplodeWarning: usize = 0xec8;
+    pub const m_bC4Activated: usize = 0xecc;
+    pub const m_flDefuseLength: usize = 0xed0;
+    pub const m_flDefuseCountDown: usize = 0xed4;
+    pub const m_bBombDefused: usize = 0xed8;
+    pub const m_hBombDefuser: usize = 0xedc;
+    pub const m_hControlPanel: usize = 0xee0;
+    pub const m_hDefuserMultimeter: usize = 0xee4;
+    pub const m_flNextRadarFlashTime: usize = 0xee8;
+    pub const m_bRadarFlash: usize = 0xeec;
+    pub const m_pBombDefuser: usize = 0xef0;
+    pub const m_fLastDefuseTime: usize = 0xef4;
+    pub const m_pPredictionOwner: usize = 0xef8;
 }
 
 pub mod C_PlayerPing {
@@ -3094,19 +3007,19 @@ pub mod C_PointClientUIWorldTextPanel {
 }
 
 pub mod C_PointCommentaryNode {
-    pub const m_bActive: usize = 0xe78;
-    pub const m_bWasActive: usize = 0xe79;
-    pub const m_flEndTime: usize = 0xe7c;
-    pub const m_flStartTime: usize = 0xe80;
-    pub const m_flStartTimeInCommentary: usize = 0xe84;
-    pub const m_iszCommentaryFile: usize = 0xe88;
-    pub const m_iszTitle: usize = 0xe90;
-    pub const m_iszSpeakers: usize = 0xe98;
-    pub const m_iNodeNumber: usize = 0xea0;
-    pub const m_iNodeNumberMax: usize = 0xea4;
-    pub const m_bListenedTo: usize = 0xea8;
-    pub const m_hViewPosition: usize = 0xeb8;
-    pub const m_bRestartAfterRestore: usize = 0xebc;
+    pub const m_bActive: usize = 0xe88;
+    pub const m_bWasActive: usize = 0xe89;
+    pub const m_flEndTime: usize = 0xe8c;
+    pub const m_flStartTime: usize = 0xe90;
+    pub const m_flStartTimeInCommentary: usize = 0xe94;
+    pub const m_iszCommentaryFile: usize = 0xe98;
+    pub const m_iszTitle: usize = 0xea0;
+    pub const m_iszSpeakers: usize = 0xea8;
+    pub const m_iNodeNumber: usize = 0xeb0;
+    pub const m_iNodeNumberMax: usize = 0xeb4;
+    pub const m_bListenedTo: usize = 0xeb8;
+    pub const m_hViewPosition: usize = 0xec8;
+    pub const m_bRestartAfterRestore: usize = 0xecc;
 }
 
 pub mod C_PointValueRemapper {
@@ -3183,15 +3096,8 @@ pub mod C_Precipitation {
 }
 
 pub mod C_PredictedViewModel {
-    pub const m_LagAnglesHistory: usize = 0xed8;
-    pub const m_vPredictedOffset: usize = 0xef0;
-}
-
-pub mod C_PropCounter {
-    pub const m_flDisplayValue: usize = 0xe70;
-    pub const m_flDisplayValueLocal: usize = 0xe74;
-    pub const m_flTimeOfLastValueChange: usize = 0xe78;
-    pub const m_flPreviousValue: usize = 0xe7c;
+    pub const m_LagAnglesHistory: usize = 0xee8;
+    pub const m_vPredictedOffset: usize = 0xf00;
 }
 
 pub mod C_RagdollManager {
@@ -3199,24 +3105,24 @@ pub mod C_RagdollManager {
 }
 
 pub mod C_RagdollProp {
-    pub const m_ragPos: usize = 0xe78;
-    pub const m_ragAngles: usize = 0xe90;
-    pub const m_flBlendWeight: usize = 0xea8;
-    pub const m_hRagdollSource: usize = 0xeac;
-    pub const m_iEyeAttachment: usize = 0xeb0;
-    pub const m_flBlendWeightCurrent: usize = 0xeb4;
-    pub const m_parentPhysicsBoneIndices: usize = 0xeb8;
-    pub const m_worldSpaceBoneComputationOrder: usize = 0xed0;
+    pub const m_ragPos: usize = 0xe88;
+    pub const m_ragAngles: usize = 0xea0;
+    pub const m_flBlendWeight: usize = 0xeb8;
+    pub const m_hRagdollSource: usize = 0xebc;
+    pub const m_iEyeAttachment: usize = 0xec0;
+    pub const m_flBlendWeightCurrent: usize = 0xec4;
+    pub const m_parentPhysicsBoneIndices: usize = 0xec8;
+    pub const m_worldSpaceBoneComputationOrder: usize = 0xee0;
 }
 
 pub mod C_RagdollPropAttached {
-    pub const m_boneIndexAttached: usize = 0xee8;
-    pub const m_ragdollAttachedObjectIndex: usize = 0xeec;
-    pub const m_attachmentPointBoneSpace: usize = 0xef0;
-    pub const m_attachmentPointRagdollSpace: usize = 0xefc;
-    pub const m_vecOffset: usize = 0xf08;
-    pub const m_parentTime: usize = 0xf14;
-    pub const m_bHasParent: usize = 0xf18;
+    pub const m_boneIndexAttached: usize = 0xef8;
+    pub const m_ragdollAttachedObjectIndex: usize = 0xefc;
+    pub const m_attachmentPointBoneSpace: usize = 0xf00;
+    pub const m_attachmentPointRagdollSpace: usize = 0xf0c;
+    pub const m_vecOffset: usize = 0xf18;
+    pub const m_parentTime: usize = 0xf24;
+    pub const m_bHasParent: usize = 0xf28;
 }
 
 pub mod C_RectLight {
@@ -3299,7 +3205,7 @@ pub mod C_SceneEntity_QueuedEvents_t {
 }
 
 pub mod C_ShatterGlassShardPhysics {
-    pub const m_ShardDesc: usize = 0xfd0;
+    pub const m_ShardDesc: usize = 0xfe0;
 }
 
 pub mod C_SkyCamera {
@@ -3310,14 +3216,14 @@ pub mod C_SkyCamera {
 }
 
 pub mod C_SmokeGrenadeProjectile {
-    pub const m_nSmokeEffectTickBegin: usize = 0x10e8;
-    pub const m_bDidSmokeEffect: usize = 0x10ec;
-    pub const m_nRandomSeed: usize = 0x10f0;
-    pub const m_vSmokeColor: usize = 0x10f4;
-    pub const m_vSmokeDetonationPos: usize = 0x1100;
-    pub const m_VoxelFrameData: usize = 0x1110;
-    pub const m_bSmokeVolumeDataReceived: usize = 0x1128;
-    pub const m_bSmokeEffectSpawned: usize = 0x1129;
+    pub const m_nSmokeEffectTickBegin: usize = 0x10f8;
+    pub const m_bDidSmokeEffect: usize = 0x10fc;
+    pub const m_nRandomSeed: usize = 0x1100;
+    pub const m_vSmokeColor: usize = 0x1104;
+    pub const m_vSmokeDetonationPos: usize = 0x1110;
+    pub const m_VoxelFrameData: usize = 0x1120;
+    pub const m_bSmokeVolumeDataReceived: usize = 0x1138;
+    pub const m_bSmokeEffectSpawned: usize = 0x1139;
 }
 
 pub mod C_SoundAreaEntityBase {
@@ -3401,57 +3307,6 @@ pub mod C_SunGlowOverlay {
     pub const m_bModulateByDot: usize = 0xd0;
 }
 
-pub mod C_SurvivalGameRules {
-    pub const m_vecPlayAreaMins: usize = 0x8;
-    pub const m_vecPlayAreaMaxs: usize = 0x14;
-    pub const m_iPlayerSpawnHexIndices: usize = 0x20;
-    pub const m_SpawnTileState: usize = 0x120;
-    pub const m_flSpawnSelectionTimeStartCurrentStage: usize = 0x200;
-    pub const m_flSpawnSelectionTimeEndCurrentStage: usize = 0x204;
-    pub const m_flSpawnSelectionTimeEndLastStage: usize = 0x208;
-    pub const m_spawnStage: usize = 0x20c;
-    pub const m_flTabletHexOriginX: usize = 0x210;
-    pub const m_flTabletHexOriginY: usize = 0x214;
-    pub const m_flTabletHexSize: usize = 0x218;
-    pub const m_roundData_playerXuids: usize = 0x220;
-    pub const m_roundData_playerPositions: usize = 0x420;
-    pub const m_roundData_playerTeams: usize = 0x520;
-    pub const m_SurvivalGameRuleDecisionTypes: usize = 0x620;
-    pub const m_SurvivalGameRuleDecisionValues: usize = 0x660;
-    pub const m_flSurvivalStartTime: usize = 0x6a0;
-    pub const m_flLastThinkTime: usize = 0x6a4;
-}
-
-pub mod C_Tablet {
-    pub const m_flUpgradeExpirationTime: usize = 0x18d8;
-    pub const m_vecLocalHexFlags: usize = 0x18e8;
-    pub const m_nContractKillGridIndex: usize = 0x1990;
-    pub const m_nContractKillGridHighResIndex: usize = 0x1994;
-    pub const m_bTabletReceptionIsBlocked: usize = 0x1998;
-    pub const m_flScanProgress: usize = 0x199c;
-    pub const m_flBootTime: usize = 0x19a0;
-    pub const m_flShowMapTime: usize = 0x19a4;
-    pub const m_vecNearestMetalCratePos: usize = 0x19a8;
-    pub const m_skinState: usize = 0x19b4;
-    pub const m_vecNotificationIds: usize = 0x19b8;
-    pub const m_vecNotificationTimestamps: usize = 0x19d8;
-    pub const m_nLastPurchaseIndex: usize = 0x19f8;
-    pub const m_vecPlayerPositionHistory: usize = 0x19fc;
-    pub const m_vecLocalHexFlagsClientCopy: usize = 0x1b1c;
-    pub const m_vecLastHexPlayerOccupancyChange: usize = 0x1bc4;
-    pub const m_radarMaterial: usize = 0x1fe8;
-    pub const m_buildingMaterial: usize = 0x1ff0;
-    pub const m_hZoneOverlayMaterial: usize = 0x1ff8;
-    pub const m_flNoiseFadeAlpha: usize = 0x2000;
-    pub const m_WorkingColor: usize = 0x2004;
-    pub const m_vecLastCameraPos: usize = 0x2008;
-    pub const m_angLastCameraAng: usize = 0x2014;
-    pub const m_nDrawElementCount: usize = 0x2020;
-    pub const m_flPrevScanProgress: usize = 0x2024;
-    pub const m_nRenderTargetRes: usize = 0x2028;
-    pub const m_flLastClosePoseParamVal: usize = 0x202c;
-}
-
 pub mod C_Team {
     pub const m_aPlayerControllers: usize = 0x540;
     pub const m_aPlayers: usize = 0x558;
@@ -3519,17 +3374,8 @@ pub mod C_TriggerBuoyancy {
     pub const m_flFluidDensity: usize = 0xce8;
 }
 
-pub mod C_TripWireFireProjectile {
-    pub const m_flAttachTime: usize = 0x1058;
-    pub const m_vecTripWireEndPositions: usize = 0x105c;
-    pub const m_bTripWireEndPositionsUsed: usize = 0x10d4;
-    pub const m_nTripWireStartIndex0: usize = 0x10e0;
-    pub const m_nTripWireEndIndex0: usize = 0x10e4;
-    pub const m_nTripWireCenterIndex0: usize = 0x10e8;
-}
-
 pub mod C_ViewmodelWeapon {
-    pub const m_worldModel: usize = 0xe70;
+    pub const m_worldModel: usize = 0xe80;
 }
 
 pub mod C_VoteController {
@@ -3543,93 +3389,16 @@ pub mod C_VoteController {
 }
 
 pub mod C_WeaponBaseItem {
-    pub const m_SequenceCompleteTimer: usize = 0x18d0;
-    pub const m_bRedraw: usize = 0x18e8;
-}
-
-pub mod C_WeaponCSBase {
-    pub const m_flFireSequenceStartTime: usize = 0x15c0;
-    pub const m_nFireSequenceStartTimeChange: usize = 0x15c4;
-    pub const m_nFireSequenceStartTimeAck: usize = 0x15c8;
-    pub const m_bPlayerFireEventIsPrimary: usize = 0x15cc;
-    pub const m_seqIdle: usize = 0x15d0;
-    pub const m_seqFirePrimary: usize = 0x15d4;
-    pub const m_seqFireSecondary: usize = 0x15d8;
-    pub const m_iState: usize = 0x15f0;
-    pub const m_flCrosshairDistance: usize = 0x15f4;
-    pub const m_iAmmoLastCheck: usize = 0x15f8;
-    pub const m_iAlpha: usize = 0x15fc;
-    pub const m_iScopeTextureID: usize = 0x1600;
-    pub const m_iCrosshairTextureID: usize = 0x1604;
-    pub const m_flGunAccuracyPosition: usize = 0x1608;
-    pub const m_nViewModelIndex: usize = 0x160c;
-    pub const m_bReloadsWithClips: usize = 0x1610;
-    pub const m_flTimeWeaponIdle: usize = 0x1614;
-    pub const m_bFireOnEmpty: usize = 0x1618;
-    pub const m_OnPlayerPickup: usize = 0x1620;
-    pub const m_weaponMode: usize = 0x1648;
-    pub const m_flTurningInaccuracyDelta: usize = 0x164c;
-    pub const m_vecTurningInaccuracyEyeDirLast: usize = 0x1650;
-    pub const m_flTurningInaccuracy: usize = 0x165c;
-    pub const m_fAccuracyPenalty: usize = 0x1660;
-    pub const m_flLastAccuracyUpdateTime: usize = 0x1664;
-    pub const m_fAccuracySmoothedForZoom: usize = 0x1668;
-    pub const m_fScopeZoomEndTime: usize = 0x166c;
-    pub const m_iRecoilIndex: usize = 0x1670;
-    pub const m_flRecoilIndex: usize = 0x1674;
-    pub const m_bBurstMode: usize = 0x1678;
-    pub const m_flPostponeFireReadyTime: usize = 0x167c;
-    pub const m_bInReload: usize = 0x1680;
-    pub const m_bReloadVisuallyComplete: usize = 0x1681;
-    pub const m_flDroppedAtTime: usize = 0x1684;
-    pub const m_bIsHauledBack: usize = 0x1688;
-    pub const m_bSilencerOn: usize = 0x1689;
-    pub const m_flTimeSilencerSwitchComplete: usize = 0x168c;
-    pub const m_iOriginalTeamNumber: usize = 0x1690;
-    pub const m_flNextAttackRenderTimeOffset: usize = 0x1694;
-    pub const m_bVisualsDataSet: usize = 0x1710;
-    pub const m_bOldFirstPersonSpectatedState: usize = 0x1711;
-    pub const m_hOurPing: usize = 0x1714;
-    pub const m_nOurPingIndex: usize = 0x1718;
-    pub const m_vecOurPingPos: usize = 0x171c;
-    pub const m_bGlowForPing: usize = 0x1728;
-    pub const m_bUIWeapon: usize = 0x1729;
-    pub const m_hPrevOwner: usize = 0x1738;
-    pub const m_nDropTick: usize = 0x173c;
-    pub const m_donated: usize = 0x175c;
-    pub const m_fLastShotTime: usize = 0x1760;
-    pub const m_bWasOwnedByCT: usize = 0x1764;
-    pub const m_bWasOwnedByTerrorist: usize = 0x1765;
-    pub const m_gunHeat: usize = 0x1768;
-    pub const m_smokeAttachments: usize = 0x176c;
-    pub const m_lastSmokeTime: usize = 0x1770;
-    pub const m_flLastClientFireBulletTime: usize = 0x1774;
-    pub const m_IronSightController: usize = 0x17d0;
-    pub const m_iIronSightMode: usize = 0x1880;
-    pub const m_flLastLOSTraceFailureTime: usize = 0x1890;
-    pub const m_iNumEmptyAttacks: usize = 0x1894;
-}
-
-pub mod C_WeaponCSBaseGun {
-    pub const m_zoomLevel: usize = 0x18d0;
-    pub const m_iBurstShotsRemaining: usize = 0x18d4;
-    pub const m_iSilencerBodygroup: usize = 0x18d8;
-    pub const m_silencedModelIndex: usize = 0x18e8;
-    pub const m_inPrecache: usize = 0x18ec;
-    pub const m_bNeedsBoltAction: usize = 0x18ed;
+    pub const m_SequenceCompleteTimer: usize = 0x18e0;
+    pub const m_bRedraw: usize = 0x18f8;
 }
 
 pub mod C_WeaponShield {
-    pub const m_flDisplayHealth: usize = 0x18f0;
+    pub const m_flDisplayHealth: usize = 0x1900;
 }
 
 pub mod C_WeaponTaser {
-    pub const m_fFireTime: usize = 0x18f0;
-}
-
-pub mod C_WeaponZoneRepulsor {
-    pub const m_flPitchLocal: usize = 0x18f0;
-    pub const m_flLastTimeNotIdle: usize = 0x18f4;
+    pub const m_fFireTime: usize = 0x1900;
 }
 
 pub mod C_fogplayerparams_t {

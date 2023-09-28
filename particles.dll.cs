@@ -1819,8 +1819,9 @@ public static class C_OP_InstantaneousEmitter {
     public const ulong m_nParticlesToEmit = 0x1c0;
     public const ulong m_flStartTime = 0x318;
     public const ulong m_flInitFromKilledParentParticles = 0x470;
-    public const ulong m_nMaxEmittedPerFrame = 0x474;
-    public const ulong m_nSnapshotControlPoint = 0x478;
+    public const ulong m_flParentParticleScale = 0x478;
+    public const ulong m_nMaxEmittedPerFrame = 0x5d0;
+    public const ulong m_nSnapshotControlPoint = 0x5d4;
 }
 
 public static class C_OP_InterpolateRadius {
@@ -2387,6 +2388,7 @@ public static class C_OP_RemapAverageHitboxSpeedtoCP {
     public const ulong m_nInControlPointNumber = 0x1d0;
     public const ulong m_nOutControlPointNumber = 0x1d4;
     public const ulong m_nField = 0x1d8;
+    public const ulong m_nHitboxDataType = 0x1dc;
     public const ulong m_flInputMin = 0x1e0;
     public const ulong m_flInputMax = 0x338;
     public const ulong m_flOutputMin = 0x490;
@@ -3590,6 +3592,10 @@ public static class C_OP_SetVectorAttributeToVectorExpression {
     public const ulong m_nOutputField = 0xe78;
     public const ulong m_nSetMethod = 0xe7c;
     public const ulong m_bNormalizedOutput = 0xe80;
+}
+
+public static class C_OP_ShapeMatchingConstraint {
+    public const ulong m_flShapeRestorationTime = 0x1c0;
 }
 
 public static class C_OP_SnapshotRigidSkinToBones {
