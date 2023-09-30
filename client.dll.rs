@@ -1735,6 +1735,7 @@ pub mod C_CSGameRules {
     pub const m_nCTTeamIntroVariant: usize = 0xeb0;
     pub const m_bTeamIntroPeriod: usize = 0xeb4;
     pub const m_flLastPerfSampleTime: usize = 0x1e70;
+    pub const m_bSkipNextPerfSample: usize = 0x1e78;
 }
 
 pub mod C_CSGameRulesProxy {

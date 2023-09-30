@@ -1311,6 +1311,7 @@ pub mod CCSGameRules {
     pub const m_fTeamIntroPeriodEnd: usize = 0x17f0;
     pub const m_bPlayedTeamIntroVO: usize = 0x17f4;
     pub const m_flLastPerfSampleTime: usize = 0x27b0;
+    pub const m_bSkipNextPerfSample: usize = 0x27b8;
 }
 
 pub mod CCSGameRulesProxy {

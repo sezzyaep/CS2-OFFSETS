@@ -1733,6 +1733,7 @@ public static class C_CSGameRules {
     public const ulong m_nCTTeamIntroVariant = 0xeb0;
     public const ulong m_bTeamIntroPeriod = 0xeb4;
     public const ulong m_flLastPerfSampleTime = 0x1e70;
+    public const ulong m_bSkipNextPerfSample = 0x1e78;
 }
 
 public static class C_CSGameRulesProxy {

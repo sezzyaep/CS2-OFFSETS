@@ -8,49 +8,49 @@ namespace animationsystem_dll {
 }
 
 namespace client_dll {
-    constexpr std::ptrdiff_t LegacyGameUI001 = 0x88d1a0;
-    constexpr std::ptrdiff_t Source2ClientUI001 = 0x87bb90;
-    constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x79b2d0;
-    constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x7270e0;
-    constexpr std::ptrdiff_t Source2Client002 = 0x727100;
-    constexpr std::ptrdiff_t GameClientExports001 = 0x7270f0;
-    constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x48a9c0;
-    constexpr std::ptrdiff_t Source2ClientConfig001 = 0x471d50;
+    constexpr std::ptrdiff_t LegacyGameUI001 = 0x88d0b0;
+    constexpr std::ptrdiff_t Source2ClientUI001 = 0x87baa0;
+    constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x79b240;
+    constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x727050;
+    constexpr std::ptrdiff_t Source2Client002 = 0x727070;
+    constexpr std::ptrdiff_t GameClientExports001 = 0x727060;
+    constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x48a900;
+    constexpr std::ptrdiff_t Source2ClientConfig001 = 0x471c90;
 }
 
 namespace engine2_dll {
-    constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x1e44f0;
-    constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x1da1c0;
-    constexpr std::ptrdiff_t KeyValueCache001 = 0x1d6560;
-    constexpr std::ptrdiff_t HostStateMgr001 = 0x1d3fa0;
-    constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x1cf3c0;
-    constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x1cf3b0;
-    constexpr std::ptrdiff_t EngineServiceMgr001 = 0x1cacd0;
-    constexpr std::ptrdiff_t VProfService_001 = 0x1b8c60;
-    constexpr std::ptrdiff_t ToolService_001 = 0x1b79c0;
-    constexpr std::ptrdiff_t StatsService_001 = 0x1b2c40;
-    constexpr std::ptrdiff_t SplitScreenService_001 = 0x1afeb0;
-    constexpr std::ptrdiff_t SoundService_001 = 0x1aaa00;
-    constexpr std::ptrdiff_t ScreenshotService001 = 0x1a68d0;
-    constexpr std::ptrdiff_t RenderService_001 = 0x1a3c30;
-    constexpr std::ptrdiff_t NetworkService_001 = 0x1a3740;
-    constexpr std::ptrdiff_t NetworkServerService_001 = 0x19e7e0;
-    constexpr std::ptrdiff_t NetworkP2PService_001 = 0x19a1f0;
-    constexpr std::ptrdiff_t NetworkClientService_001 = 0x193e20;
-    constexpr std::ptrdiff_t MapListService_001 = 0x18ce60;
-    constexpr std::ptrdiff_t InputService_001 = 0x17abd0;
-    constexpr std::ptrdiff_t GameUIService_001 = 0x175690;
-    constexpr std::ptrdiff_t GameResourceServiceServerV001 = 0x1733f0;
-    constexpr std::ptrdiff_t GameResourceServiceClientV001 = 0x1733e0;
-    constexpr std::ptrdiff_t BugService001 = 0x16c410;
-    constexpr std::ptrdiff_t BenchmarkService001 = 0x16abe0;
-    constexpr std::ptrdiff_t VENGINE_GAMEUIFUNCS_VERSION005 = 0x118300;
-    constexpr std::ptrdiff_t EngineGameUI001 = 0x1175c0;
-    constexpr std::ptrdiff_t INETSUPPORT_001 = 0xe6da0;
-    constexpr std::ptrdiff_t Source2EngineToServerStringTable001 = 0xa1820;
-    constexpr std::ptrdiff_t Source2EngineToServer001 = 0x8b650;
-    constexpr std::ptrdiff_t Source2EngineToClientStringTable001 = 0x84050;
-    constexpr std::ptrdiff_t Source2EngineToClient001 = 0x5a6b0;
+    constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x1e4f40;
+    constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x1dac10;
+    constexpr std::ptrdiff_t KeyValueCache001 = 0x1d6fb0;
+    constexpr std::ptrdiff_t HostStateMgr001 = 0x1d49c0;
+    constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x1cfde0;
+    constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x1cfdd0;
+    constexpr std::ptrdiff_t EngineServiceMgr001 = 0x1cb6f0;
+    constexpr std::ptrdiff_t VProfService_001 = 0x1b8d20;
+    constexpr std::ptrdiff_t ToolService_001 = 0x1b7a80;
+    constexpr std::ptrdiff_t StatsService_001 = 0x1b2d00;
+    constexpr std::ptrdiff_t SplitScreenService_001 = 0x1aff70;
+    constexpr std::ptrdiff_t SoundService_001 = 0x1aaac0;
+    constexpr std::ptrdiff_t ScreenshotService001 = 0x1a6990;
+    constexpr std::ptrdiff_t RenderService_001 = 0x1a3cf0;
+    constexpr std::ptrdiff_t NetworkService_001 = 0x1a3800;
+    constexpr std::ptrdiff_t NetworkServerService_001 = 0x19e8a0;
+    constexpr std::ptrdiff_t NetworkP2PService_001 = 0x19a2b0;
+    constexpr std::ptrdiff_t NetworkClientService_001 = 0x193ee0;
+    constexpr std::ptrdiff_t MapListService_001 = 0x18cf20;
+    constexpr std::ptrdiff_t InputService_001 = 0x17ac70;
+    constexpr std::ptrdiff_t GameUIService_001 = 0x175730;
+    constexpr std::ptrdiff_t GameResourceServiceServerV001 = 0x173490;
+    constexpr std::ptrdiff_t GameResourceServiceClientV001 = 0x173480;
+    constexpr std::ptrdiff_t BugService001 = 0x16c4b0;
+    constexpr std::ptrdiff_t BenchmarkService001 = 0x16ac80;
+    constexpr std::ptrdiff_t VENGINE_GAMEUIFUNCS_VERSION005 = 0x1183a0;
+    constexpr std::ptrdiff_t EngineGameUI001 = 0x117660;
+    constexpr std::ptrdiff_t INETSUPPORT_001 = 0xe6e40;
+    constexpr std::ptrdiff_t Source2EngineToServerStringTable001 = 0xa18a0;
+    constexpr std::ptrdiff_t Source2EngineToServer001 = 0x8b6d0;
+    constexpr std::ptrdiff_t Source2EngineToClientStringTable001 = 0x840d0;
+    constexpr std::ptrdiff_t Source2EngineToClient001 = 0x5a730;
 }
 
 namespace filesystem_stdio_dll {
@@ -104,7 +104,7 @@ namespace navsystem_dll {
 }
 
 namespace networksystem_dll {
-    constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0xd29c0;
+    constexpr std::ptrdiff_t SerializedEntitiesVersion001 = 0xd2a60;
     constexpr std::ptrdiff_t NetworkSystemVersion001 = 0xbcd00;
     constexpr std::ptrdiff_t NetworkMessagesVersion001 = 0x9cd30;
     constexpr std::ptrdiff_t FlattenedSerializersVersion001 = 0x7c4e0;
@@ -131,9 +131,9 @@ namespace pulse_system_dll {
 }
 
 namespace rendersystemdx11_dll {
-    constexpr std::ptrdiff_t RenderUtils_001 = 0x53440;
-    constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x4aaa0;
-    constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x4aa90;
+    constexpr std::ptrdiff_t RenderUtils_001 = 0x53470;
+    constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x4aad0;
+    constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x4aac0;
 }
 
 namespace resourcesystem_dll {
@@ -146,9 +146,9 @@ namespace scenefilecache_dll {
 }
 
 namespace scenesystem_dll {
-    constexpr std::ptrdiff_t SceneUtils_001 = 0x13d610;
-    constexpr std::ptrdiff_t SceneSystem_002 = 0xcaab0;
-    constexpr std::ptrdiff_t RenderingPipelines_001 = 0x8ea10;
+    constexpr std::ptrdiff_t SceneUtils_001 = 0x13d620;
+    constexpr std::ptrdiff_t SceneSystem_002 = 0xcaac0;
+    constexpr std::ptrdiff_t RenderingPipelines_001 = 0x8ea20;
 }
 
 namespace schemasystem_dll {
@@ -156,16 +156,16 @@ namespace schemasystem_dll {
 }
 
 namespace server_dll {
-    constexpr std::ptrdiff_t NavGameTest001 = 0xa2b310;
-    constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x82f8c0;
-    constexpr std::ptrdiff_t Source2GameClients001 = 0x82f8d0;
-    constexpr std::ptrdiff_t Source2GameEntities001 = 0x82f8e0;
-    constexpr std::ptrdiff_t Source2Server001 = 0x82f8f0;
-    constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x584640;
-    constexpr std::ptrdiff_t Source2ServerConfig001 = 0x564650;
-    constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x2c69a0;
-    constexpr std::ptrdiff_t customnavsystem001 = 0x243420;
-    constexpr std::ptrdiff_t Source2GameDirector001 = 0x13e9c0;
+    constexpr std::ptrdiff_t NavGameTest001 = 0xa2d390;
+    constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x831940;
+    constexpr std::ptrdiff_t Source2GameClients001 = 0x831950;
+    constexpr std::ptrdiff_t Source2GameEntities001 = 0x831960;
+    constexpr std::ptrdiff_t Source2Server001 = 0x831970;
+    constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x586680;
+    constexpr std::ptrdiff_t Source2ServerConfig001 = 0x566690;
+    constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x2c89a0;
+    constexpr std::ptrdiff_t customnavsystem001 = 0x245420;
+    constexpr std::ptrdiff_t Source2GameDirector001 = 0x13ed30;
 }
 
 namespace soundsystem_dll {
