@@ -14,14 +14,18 @@ public static class client_dll {
     public const ulong Source2ClientConfig001 = 0x471c90;
 }
 
+public static class crashhandler64_dll {
+    public const ulong  = 0xffff800322cf0000;
+}
+
 public static class engine2_dll {
-    public const ulong SimpleEngineLoopService_001 = 0x1e4f40;
-    public const ulong ClientServerEngineLoopService_001 = 0x1dac10;
-    public const ulong KeyValueCache001 = 0x1d6fb0;
-    public const ulong HostStateMgr001 = 0x1d49c0;
-    public const ulong GameEventSystemServerV001 = 0x1cfde0;
-    public const ulong GameEventSystemClientV001 = 0x1cfdd0;
-    public const ulong EngineServiceMgr001 = 0x1cb6f0;
+    public const ulong SimpleEngineLoopService_001 = 0x1e4f50;
+    public const ulong ClientServerEngineLoopService_001 = 0x1dac20;
+    public const ulong KeyValueCache001 = 0x1d6fc0;
+    public const ulong HostStateMgr001 = 0x1d49d0;
+    public const ulong GameEventSystemServerV001 = 0x1cfdf0;
+    public const ulong GameEventSystemClientV001 = 0x1cfde0;
+    public const ulong EngineServiceMgr001 = 0x1cb700;
     public const ulong VProfService_001 = 0x1b8d20;
     public const ulong ToolService_001 = 0x1b7a80;
     public const ulong StatsService_001 = 0x1b2d00;

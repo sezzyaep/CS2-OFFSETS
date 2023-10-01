@@ -16,14 +16,18 @@ pub mod client_dll {
     pub const Source2ClientConfig001: usize = 0x471c90;
 }
 
+pub mod crashhandler64_dll {
+    pub const : usize = 0xffff800322cf0000;
+}
+
 pub mod engine2_dll {
-    pub const SimpleEngineLoopService_001: usize = 0x1e4f40;
-    pub const ClientServerEngineLoopService_001: usize = 0x1dac10;
-    pub const KeyValueCache001: usize = 0x1d6fb0;
-    pub const HostStateMgr001: usize = 0x1d49c0;
-    pub const GameEventSystemServerV001: usize = 0x1cfde0;
-    pub const GameEventSystemClientV001: usize = 0x1cfdd0;
-    pub const EngineServiceMgr001: usize = 0x1cb6f0;
+    pub const SimpleEngineLoopService_001: usize = 0x1e4f50;
+    pub const ClientServerEngineLoopService_001: usize = 0x1dac20;
+    pub const KeyValueCache001: usize = 0x1d6fc0;
+    pub const HostStateMgr001: usize = 0x1d49d0;
+    pub const GameEventSystemServerV001: usize = 0x1cfdf0;
+    pub const GameEventSystemClientV001: usize = 0x1cfde0;
+    pub const EngineServiceMgr001: usize = 0x1cb700;
     pub const VProfService_001: usize = 0x1b8d20;
     pub const ToolService_001: usize = 0x1b7a80;
     pub const StatsService_001: usize = 0x1b2d00;

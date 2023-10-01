@@ -18,14 +18,18 @@ namespace client_dll {
     constexpr std::ptrdiff_t Source2ClientConfig001 = 0x471c90;
 }
 
+namespace crashhandler64_dll {
+    constexpr std::ptrdiff_t  = 0xffff800322cf0000;
+}
+
 namespace engine2_dll {
-    constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x1e4f40;
-    constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x1dac10;
-    constexpr std::ptrdiff_t KeyValueCache001 = 0x1d6fb0;
-    constexpr std::ptrdiff_t HostStateMgr001 = 0x1d49c0;
-    constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x1cfde0;
-    constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x1cfdd0;
-    constexpr std::ptrdiff_t EngineServiceMgr001 = 0x1cb6f0;
+    constexpr std::ptrdiff_t SimpleEngineLoopService_001 = 0x1e4f50;
+    constexpr std::ptrdiff_t ClientServerEngineLoopService_001 = 0x1dac20;
+    constexpr std::ptrdiff_t KeyValueCache001 = 0x1d6fc0;
+    constexpr std::ptrdiff_t HostStateMgr001 = 0x1d49d0;
+    constexpr std::ptrdiff_t GameEventSystemServerV001 = 0x1cfdf0;
+    constexpr std::ptrdiff_t GameEventSystemClientV001 = 0x1cfde0;
+    constexpr std::ptrdiff_t EngineServiceMgr001 = 0x1cb700;
     constexpr std::ptrdiff_t VProfService_001 = 0x1b8d20;
     constexpr std::ptrdiff_t ToolService_001 = 0x1b7a80;
     constexpr std::ptrdiff_t StatsService_001 = 0x1b2d00;
