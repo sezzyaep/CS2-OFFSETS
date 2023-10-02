@@ -1189,16 +1189,16 @@ public static class C_BaseButton {
 }
 
 public static class C_BaseCSGrenade {
-    public const ulong m_bClientPredictDelete = 0x18e0;
-    public const ulong m_bRedraw = 0x1908;
-    public const ulong m_bIsHeldByPlayer = 0x1909;
-    public const ulong m_bPinPulled = 0x190a;
-    public const ulong m_bJumpThrow = 0x190b;
-    public const ulong m_eThrowStatus = 0x190c;
-    public const ulong m_fThrowTime = 0x1910;
-    public const ulong m_flThrowStrength = 0x1914;
-    public const ulong m_flThrowStrengthApproach = 0x1918;
-    public const ulong m_fDropTime = 0x191c;
+    public const ulong m_bClientPredictDelete = 0x1940;
+    public const ulong m_bRedraw = 0x1968;
+    public const ulong m_bIsHeldByPlayer = 0x1969;
+    public const ulong m_bPinPulled = 0x196a;
+    public const ulong m_bJumpThrow = 0x196b;
+    public const ulong m_eThrowStatus = 0x196c;
+    public const ulong m_fThrowTime = 0x1970;
+    public const ulong m_flThrowStrength = 0x1974;
+    public const ulong m_flThrowStrengthApproach = 0x1978;
+    public const ulong m_fDropTime = 0x197c;
 }
 
 public static class C_BaseCSGrenadeProjectile {
@@ -1553,17 +1553,17 @@ public static class C_BulletHitModel {
 }
 
 public static class C_C4 {
-    public const ulong m_szScreenText = 0x18e0;
-    public const ulong m_bombdroppedlightParticleIndex = 0x1900;
-    public const ulong m_bStartedArming = 0x1904;
-    public const ulong m_fArmedTime = 0x1908;
-    public const ulong m_bBombPlacedAnimation = 0x190c;
-    public const ulong m_bIsPlantingViaUse = 0x190d;
-    public const ulong m_entitySpottedState = 0x1910;
-    public const ulong m_nSpotRules = 0x1928;
-    public const ulong m_bPlayedArmingBeeps = 0x192c;
-    public const ulong m_bBombPlanted = 0x1933;
-    public const ulong m_bDroppedFromDeath = 0x1934;
+    public const ulong m_szScreenText = 0x1940;
+    public const ulong m_bombdroppedlightParticleIndex = 0x1960;
+    public const ulong m_bStartedArming = 0x1964;
+    public const ulong m_fArmedTime = 0x1968;
+    public const ulong m_bBombPlacedAnimation = 0x196c;
+    public const ulong m_bIsPlantingViaUse = 0x196d;
+    public const ulong m_entitySpottedState = 0x1970;
+    public const ulong m_nSpotRules = 0x1988;
+    public const ulong m_bPlayedArmingBeeps = 0x198c;
+    public const ulong m_bBombPlanted = 0x1993;
+    public const ulong m_bDroppedFromDeath = 0x1994;
 }
 
 public static class C_CSGOViewModel {
@@ -1733,7 +1733,6 @@ public static class C_CSGameRules {
     public const ulong m_nCTTeamIntroVariant = 0xeb0;
     public const ulong m_bTeamIntroPeriod = 0xeb4;
     public const ulong m_flLastPerfSampleTime = 0x1e70;
-    public const ulong m_bSkipNextPerfSample = 0x1e78;
 }
 
 public static class C_CSGameRulesProxy {
@@ -1974,17 +1973,18 @@ public static class C_CSWeaponBase {
     public const ulong m_seqIdle = 0x15e0;
     public const ulong m_seqFirePrimary = 0x15e4;
     public const ulong m_seqFireSecondary = 0x15e8;
-    public const ulong m_iState = 0x1600;
-    public const ulong m_flCrosshairDistance = 0x1604;
-    public const ulong m_iAmmoLastCheck = 0x1608;
-    public const ulong m_iAlpha = 0x160c;
-    public const ulong m_iScopeTextureID = 0x1610;
-    public const ulong m_iCrosshairTextureID = 0x1614;
-    public const ulong m_flGunAccuracyPosition = 0x1618;
-    public const ulong m_nViewModelIndex = 0x161c;
-    public const ulong m_bReloadsWithClips = 0x1620;
-    public const ulong m_flTimeWeaponIdle = 0x1624;
-    public const ulong m_bFireOnEmpty = 0x1628;
+    public const ulong m_ClientPreviousWeaponState = 0x1600;
+    public const ulong m_iState = 0x1604;
+    public const ulong m_flCrosshairDistance = 0x1608;
+    public const ulong m_iAmmoLastCheck = 0x160c;
+    public const ulong m_iAlpha = 0x1610;
+    public const ulong m_iScopeTextureID = 0x1614;
+    public const ulong m_iCrosshairTextureID = 0x1618;
+    public const ulong m_flGunAccuracyPosition = 0x161c;
+    public const ulong m_nViewModelIndex = 0x1620;
+    public const ulong m_bReloadsWithClips = 0x1624;
+    public const ulong m_flTimeWeaponIdle = 0x1628;
+    public const ulong m_bFireOnEmpty = 0x162c;
     public const ulong m_OnPlayerPickup = 0x1630;
     public const ulong m_weaponMode = 0x1658;
     public const ulong m_flTurningInaccuracyDelta = 0x165c;
@@ -2023,19 +2023,19 @@ public static class C_CSWeaponBase {
     public const ulong m_smokeAttachments = 0x177c;
     public const ulong m_lastSmokeTime = 0x1780;
     public const ulong m_flLastClientFireBulletTime = 0x1784;
-    public const ulong m_IronSightController = 0x17e0;
-    public const ulong m_iIronSightMode = 0x1890;
-    public const ulong m_flLastLOSTraceFailureTime = 0x18a0;
-    public const ulong m_iNumEmptyAttacks = 0x18a4;
+    public const ulong m_IronSightController = 0x1840;
+    public const ulong m_iIronSightMode = 0x18f0;
+    public const ulong m_flLastLOSTraceFailureTime = 0x1900;
+    public const ulong m_iNumEmptyAttacks = 0x1904;
 }
 
 public static class C_CSWeaponBaseGun {
-    public const ulong m_zoomLevel = 0x18e0;
-    public const ulong m_iBurstShotsRemaining = 0x18e4;
-    public const ulong m_iSilencerBodygroup = 0x18e8;
-    public const ulong m_silencedModelIndex = 0x18f8;
-    public const ulong m_inPrecache = 0x18fc;
-    public const ulong m_bNeedsBoltAction = 0x18fd;
+    public const ulong m_zoomLevel = 0x1940;
+    public const ulong m_iBurstShotsRemaining = 0x1944;
+    public const ulong m_iSilencerBodygroup = 0x1948;
+    public const ulong m_silencedModelIndex = 0x1958;
+    public const ulong m_inPrecache = 0x195c;
+    public const ulong m_bNeedsBoltAction = 0x195d;
 }
 
 public static class C_Chicken {
@@ -2518,8 +2518,8 @@ public static class C_Fish {
 }
 
 public static class C_Fists {
-    public const ulong m_bPlayingUninterruptableAct = 0x18e0;
-    public const ulong m_nUninterruptableActivity = 0x18e4;
+    public const ulong m_bPlayingUninterruptableAct = 0x1940;
+    public const ulong m_nUninterruptableActivity = 0x1944;
 }
 
 public static class C_FogController {
@@ -2753,7 +2753,7 @@ public static class C_MapVetoPickController {
 }
 
 public static class C_Melee {
-    public const ulong m_flThrowAt = 0x18e0;
+    public const ulong m_flThrowAt = 0x1940;
 }
 
 public static class C_MolotovProjectile {
@@ -3388,16 +3388,16 @@ public static class C_VoteController {
 }
 
 public static class C_WeaponBaseItem {
-    public const ulong m_SequenceCompleteTimer = 0x18e0;
-    public const ulong m_bRedraw = 0x18f8;
+    public const ulong m_SequenceCompleteTimer = 0x1940;
+    public const ulong m_bRedraw = 0x1958;
 }
 
 public static class C_WeaponShield {
-    public const ulong m_flDisplayHealth = 0x1900;
+    public const ulong m_flDisplayHealth = 0x1960;
 }
 
 public static class C_WeaponTaser {
-    public const ulong m_fFireTime = 0x1900;
+    public const ulong m_fFireTime = 0x1960;
 }
 
 public static class C_fogplayerparams_t {

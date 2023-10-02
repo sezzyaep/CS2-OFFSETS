@@ -1193,16 +1193,16 @@ namespace C_BaseButton {
 }
 
 namespace C_BaseCSGrenade {
-    constexpr std::ptrdiff_t m_bClientPredictDelete = 0x18e0;
-    constexpr std::ptrdiff_t m_bRedraw = 0x1908;
-    constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x1909;
-    constexpr std::ptrdiff_t m_bPinPulled = 0x190a;
-    constexpr std::ptrdiff_t m_bJumpThrow = 0x190b;
-    constexpr std::ptrdiff_t m_eThrowStatus = 0x190c;
-    constexpr std::ptrdiff_t m_fThrowTime = 0x1910;
-    constexpr std::ptrdiff_t m_flThrowStrength = 0x1914;
-    constexpr std::ptrdiff_t m_flThrowStrengthApproach = 0x1918;
-    constexpr std::ptrdiff_t m_fDropTime = 0x191c;
+    constexpr std::ptrdiff_t m_bClientPredictDelete = 0x1940;
+    constexpr std::ptrdiff_t m_bRedraw = 0x1968;
+    constexpr std::ptrdiff_t m_bIsHeldByPlayer = 0x1969;
+    constexpr std::ptrdiff_t m_bPinPulled = 0x196a;
+    constexpr std::ptrdiff_t m_bJumpThrow = 0x196b;
+    constexpr std::ptrdiff_t m_eThrowStatus = 0x196c;
+    constexpr std::ptrdiff_t m_fThrowTime = 0x1970;
+    constexpr std::ptrdiff_t m_flThrowStrength = 0x1974;
+    constexpr std::ptrdiff_t m_flThrowStrengthApproach = 0x1978;
+    constexpr std::ptrdiff_t m_fDropTime = 0x197c;
 }
 
 namespace C_BaseCSGrenadeProjectile {
@@ -1557,17 +1557,17 @@ namespace C_BulletHitModel {
 }
 
 namespace C_C4 {
-    constexpr std::ptrdiff_t m_szScreenText = 0x18e0;
-    constexpr std::ptrdiff_t m_bombdroppedlightParticleIndex = 0x1900;
-    constexpr std::ptrdiff_t m_bStartedArming = 0x1904;
-    constexpr std::ptrdiff_t m_fArmedTime = 0x1908;
-    constexpr std::ptrdiff_t m_bBombPlacedAnimation = 0x190c;
-    constexpr std::ptrdiff_t m_bIsPlantingViaUse = 0x190d;
-    constexpr std::ptrdiff_t m_entitySpottedState = 0x1910;
-    constexpr std::ptrdiff_t m_nSpotRules = 0x1928;
-    constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x192c;
-    constexpr std::ptrdiff_t m_bBombPlanted = 0x1933;
-    constexpr std::ptrdiff_t m_bDroppedFromDeath = 0x1934;
+    constexpr std::ptrdiff_t m_szScreenText = 0x1940;
+    constexpr std::ptrdiff_t m_bombdroppedlightParticleIndex = 0x1960;
+    constexpr std::ptrdiff_t m_bStartedArming = 0x1964;
+    constexpr std::ptrdiff_t m_fArmedTime = 0x1968;
+    constexpr std::ptrdiff_t m_bBombPlacedAnimation = 0x196c;
+    constexpr std::ptrdiff_t m_bIsPlantingViaUse = 0x196d;
+    constexpr std::ptrdiff_t m_entitySpottedState = 0x1970;
+    constexpr std::ptrdiff_t m_nSpotRules = 0x1988;
+    constexpr std::ptrdiff_t m_bPlayedArmingBeeps = 0x198c;
+    constexpr std::ptrdiff_t m_bBombPlanted = 0x1993;
+    constexpr std::ptrdiff_t m_bDroppedFromDeath = 0x1994;
 }
 
 namespace C_CSGOViewModel {
@@ -1737,7 +1737,6 @@ namespace C_CSGameRules {
     constexpr std::ptrdiff_t m_nCTTeamIntroVariant = 0xeb0;
     constexpr std::ptrdiff_t m_bTeamIntroPeriod = 0xeb4;
     constexpr std::ptrdiff_t m_flLastPerfSampleTime = 0x1e70;
-    constexpr std::ptrdiff_t m_bSkipNextPerfSample = 0x1e78;
 }
 
 namespace C_CSGameRulesProxy {
@@ -1978,17 +1977,18 @@ namespace C_CSWeaponBase {
     constexpr std::ptrdiff_t m_seqIdle = 0x15e0;
     constexpr std::ptrdiff_t m_seqFirePrimary = 0x15e4;
     constexpr std::ptrdiff_t m_seqFireSecondary = 0x15e8;
-    constexpr std::ptrdiff_t m_iState = 0x1600;
-    constexpr std::ptrdiff_t m_flCrosshairDistance = 0x1604;
-    constexpr std::ptrdiff_t m_iAmmoLastCheck = 0x1608;
-    constexpr std::ptrdiff_t m_iAlpha = 0x160c;
-    constexpr std::ptrdiff_t m_iScopeTextureID = 0x1610;
-    constexpr std::ptrdiff_t m_iCrosshairTextureID = 0x1614;
-    constexpr std::ptrdiff_t m_flGunAccuracyPosition = 0x1618;
-    constexpr std::ptrdiff_t m_nViewModelIndex = 0x161c;
-    constexpr std::ptrdiff_t m_bReloadsWithClips = 0x1620;
-    constexpr std::ptrdiff_t m_flTimeWeaponIdle = 0x1624;
-    constexpr std::ptrdiff_t m_bFireOnEmpty = 0x1628;
+    constexpr std::ptrdiff_t m_ClientPreviousWeaponState = 0x1600;
+    constexpr std::ptrdiff_t m_iState = 0x1604;
+    constexpr std::ptrdiff_t m_flCrosshairDistance = 0x1608;
+    constexpr std::ptrdiff_t m_iAmmoLastCheck = 0x160c;
+    constexpr std::ptrdiff_t m_iAlpha = 0x1610;
+    constexpr std::ptrdiff_t m_iScopeTextureID = 0x1614;
+    constexpr std::ptrdiff_t m_iCrosshairTextureID = 0x1618;
+    constexpr std::ptrdiff_t m_flGunAccuracyPosition = 0x161c;
+    constexpr std::ptrdiff_t m_nViewModelIndex = 0x1620;
+    constexpr std::ptrdiff_t m_bReloadsWithClips = 0x1624;
+    constexpr std::ptrdiff_t m_flTimeWeaponIdle = 0x1628;
+    constexpr std::ptrdiff_t m_bFireOnEmpty = 0x162c;
     constexpr std::ptrdiff_t m_OnPlayerPickup = 0x1630;
     constexpr std::ptrdiff_t m_weaponMode = 0x1658;
     constexpr std::ptrdiff_t m_flTurningInaccuracyDelta = 0x165c;
@@ -2027,19 +2027,19 @@ namespace C_CSWeaponBase {
     constexpr std::ptrdiff_t m_smokeAttachments = 0x177c;
     constexpr std::ptrdiff_t m_lastSmokeTime = 0x1780;
     constexpr std::ptrdiff_t m_flLastClientFireBulletTime = 0x1784;
-    constexpr std::ptrdiff_t m_IronSightController = 0x17e0;
-    constexpr std::ptrdiff_t m_iIronSightMode = 0x1890;
-    constexpr std::ptrdiff_t m_flLastLOSTraceFailureTime = 0x18a0;
-    constexpr std::ptrdiff_t m_iNumEmptyAttacks = 0x18a4;
+    constexpr std::ptrdiff_t m_IronSightController = 0x1840;
+    constexpr std::ptrdiff_t m_iIronSightMode = 0x18f0;
+    constexpr std::ptrdiff_t m_flLastLOSTraceFailureTime = 0x1900;
+    constexpr std::ptrdiff_t m_iNumEmptyAttacks = 0x1904;
 }
 
 namespace C_CSWeaponBaseGun {
-    constexpr std::ptrdiff_t m_zoomLevel = 0x18e0;
-    constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x18e4;
-    constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x18e8;
-    constexpr std::ptrdiff_t m_silencedModelIndex = 0x18f8;
-    constexpr std::ptrdiff_t m_inPrecache = 0x18fc;
-    constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x18fd;
+    constexpr std::ptrdiff_t m_zoomLevel = 0x1940;
+    constexpr std::ptrdiff_t m_iBurstShotsRemaining = 0x1944;
+    constexpr std::ptrdiff_t m_iSilencerBodygroup = 0x1948;
+    constexpr std::ptrdiff_t m_silencedModelIndex = 0x1958;
+    constexpr std::ptrdiff_t m_inPrecache = 0x195c;
+    constexpr std::ptrdiff_t m_bNeedsBoltAction = 0x195d;
 }
 
 namespace C_Chicken {
@@ -2522,8 +2522,8 @@ namespace C_Fish {
 }
 
 namespace C_Fists {
-    constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0x18e0;
-    constexpr std::ptrdiff_t m_nUninterruptableActivity = 0x18e4;
+    constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0x1940;
+    constexpr std::ptrdiff_t m_nUninterruptableActivity = 0x1944;
 }
 
 namespace C_FogController {
@@ -2757,7 +2757,7 @@ namespace C_MapVetoPickController {
 }
 
 namespace C_Melee {
-    constexpr std::ptrdiff_t m_flThrowAt = 0x18e0;
+    constexpr std::ptrdiff_t m_flThrowAt = 0x1940;
 }
 
 namespace C_MolotovProjectile {
@@ -3392,16 +3392,16 @@ namespace C_VoteController {
 }
 
 namespace C_WeaponBaseItem {
-    constexpr std::ptrdiff_t m_SequenceCompleteTimer = 0x18e0;
-    constexpr std::ptrdiff_t m_bRedraw = 0x18f8;
+    constexpr std::ptrdiff_t m_SequenceCompleteTimer = 0x1940;
+    constexpr std::ptrdiff_t m_bRedraw = 0x1958;
 }
 
 namespace C_WeaponShield {
-    constexpr std::ptrdiff_t m_flDisplayHealth = 0x1900;
+    constexpr std::ptrdiff_t m_flDisplayHealth = 0x1960;
 }
 
 namespace C_WeaponTaser {
-    constexpr std::ptrdiff_t m_fFireTime = 0x1900;
+    constexpr std::ptrdiff_t m_fFireTime = 0x1960;
 }
 
 namespace C_fogplayerparams_t {

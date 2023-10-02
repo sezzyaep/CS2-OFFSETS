@@ -1,9 +1,9 @@
 {
     "client_dll": {
-        "entity_list": 24688792,
-        "global_vars": 23653608,
-        "local_player_controller": 25010456,
-        "view_angles": 26052016,
-        "view_matrix": 25663216
+        "entity_list": 24697032,
+        "global_vars": 23661816,
+        "local_player_controller": 25018696,
+        "view_angles": 26060224,
+        "view_matrix": 25671440
     }
 }

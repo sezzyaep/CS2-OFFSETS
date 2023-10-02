@@ -1309,7 +1309,7 @@ public static class CCSGameRules {
     public const ulong m_fTeamIntroPeriodEnd = 0x17f0;
     public const ulong m_bPlayedTeamIntroVO = 0x17f4;
     public const ulong m_flLastPerfSampleTime = 0x27b0;
-    public const ulong m_bSkipNextPerfSample = 0x27b8;
+    public const ulong m_bSkipNextServerPerfSample = 0x27b8;
 }
 
 public static class CCSGameRulesProxy {
