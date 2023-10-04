@@ -1,9 +1,23 @@
 {
-    "client_dll": {
-        "entity_list": 24697032,
-        "global_vars": 23661816,
-        "local_player_controller": 25018696,
-        "view_angles": 26060224,
-        "view_matrix": 25671440
-    }
+  "client_dll": {
+    "dwEntityList": 24697048,
+    "dwForceBackward": 23678720,
+    "dwForceCrouch": 23679440,
+    "dwForceForward": 23678576,
+    "dwForceJump": 23679296,
+    "dwForceLeft": 23678864,
+    "dwForceRight": 23679008,
+    "dwGlobalVars": 23661864,
+    "dwInterfaceLinkList": 26688408,
+    "dwLocalPlayerController": 25018696,
+    "dwLocalPlayerPawn": 25668664,
+    "dwPlantedC4": 25693568,
+    "dwViewAngles": 26060528,
+    "dwViewMatrix": 25671456
+  },
+  "engine2_dll": {
+    "dwNetworkGameClient": 4762288,
+    "dwNetworkGameClient_maxClients": 592,
+    "dwNetworkGameClient_signOnState": 576
+  }
 }

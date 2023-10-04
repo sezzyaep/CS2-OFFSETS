@@ -1,46 +1,49 @@
+// Created using https://github.com/a2x/cs2-dumper
+// 2023-10-04 09:08:48.553019400 UTC
+
 public static class CSSDSEndFrameViewInfo {
-    public const ulong m_nViewId = 0x0;
-    public const ulong m_ViewName = 0x8;
+    public const nint m_nViewId = 0x0; // uint64_t
+    public const nint m_ViewName = 0x8; // CUtlString
 }
 
 public static class CSSDSMsg_EndFrame {
-    public const ulong m_Views = 0x0;
+    public const nint m_Views = 0x0; // CUtlVector<CSSDSEndFrameViewInfo>
 }
 
 public static class CSSDSMsg_LayerBase {
-    public const ulong m_viewId = 0x0;
-    public const ulong m_ViewName = 0x10;
-    public const ulong m_nLayerIndex = 0x18;
-    public const ulong m_nLayerId = 0x20;
-    public const ulong m_LayerName = 0x28;
-    public const ulong m_displayText = 0x30;
+    public const nint m_viewId = 0x0; // SceneViewId_t
+    public const nint m_ViewName = 0x10; // CUtlString
+    public const nint m_nLayerIndex = 0x18; // int32_t
+    public const nint m_nLayerId = 0x20; // uint64_t
+    public const nint m_LayerName = 0x28; // CUtlString
+    public const nint m_displayText = 0x30; // CUtlString
 }
 
 public static class CSSDSMsg_ViewRender {
-    public const ulong m_viewId = 0x0;
-    public const ulong m_ViewName = 0x10;
+    public const nint m_viewId = 0x0; // SceneViewId_t
+    public const nint m_ViewName = 0x10; // CUtlString
 }
 
 public static class CSSDSMsg_ViewTarget {
-    public const ulong m_Name = 0x0;
-    public const ulong m_TextureId = 0x8;
-    public const ulong m_nWidth = 0x10;
-    public const ulong m_nHeight = 0x14;
-    public const ulong m_nRequestedWidth = 0x18;
-    public const ulong m_nRequestedHeight = 0x1c;
-    public const ulong m_nNumMipLevels = 0x20;
-    public const ulong m_nDepth = 0x24;
-    public const ulong m_nMultisampleNumSamples = 0x28;
-    public const ulong m_nFormat = 0x2c;
+    public const nint m_Name = 0x0; // CUtlString
+    public const nint m_TextureId = 0x8; // uint64_t
+    public const nint m_nWidth = 0x10; // int32_t
+    public const nint m_nHeight = 0x14; // int32_t
+    public const nint m_nRequestedWidth = 0x18; // int32_t
+    public const nint m_nRequestedHeight = 0x1C; // int32_t
+    public const nint m_nNumMipLevels = 0x20; // int32_t
+    public const nint m_nDepth = 0x24; // int32_t
+    public const nint m_nMultisampleNumSamples = 0x28; // int32_t
+    public const nint m_nFormat = 0x2C; // int32_t
 }
 
 public static class CSSDSMsg_ViewTargetList {
-    public const ulong m_viewId = 0x0;
-    public const ulong m_ViewName = 0x10;
-    public const ulong m_Targets = 0x18;
+    public const nint m_viewId = 0x0; // SceneViewId_t
+    public const nint m_ViewName = 0x10; // CUtlString
+    public const nint m_Targets = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
 }
 
 public static class SceneViewId_t {
-    public const ulong m_nViewId = 0x0;
-    public const ulong m_nFrameCount = 0x8;
+    public const nint m_nViewId = 0x0; // uint64_t
+    public const nint m_nFrameCount = 0x8; // uint64_t
 }
