@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 09:19:17.348183600 UTC
+// 2023-10-04 23:32:07.736672700 UTC
 
 pub mod MaterialParamBuffer_t {
     pub const m_value: usize = 0x8; // CUtlBinaryBlock

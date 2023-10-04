@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 09:19:20.125625 UTC
+// 2023-10-04 23:32:10.965500400 UTC
 
 public static class ActiveModelConfig_t {
     public const nint m_Handle = 0x28; // ModelConfigHandle_t

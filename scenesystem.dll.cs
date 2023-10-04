@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 09:19:17.876699100 UTC
+// 2023-10-04 23:32:08.488412300 UTC
 
 public static class CSSDSEndFrameViewInfo {
     public const nint m_nViewId = 0x0; // uint64_t

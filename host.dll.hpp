@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 09:19:20.378867600 UTC
+// 2023-10-04 23:32:11.243781800 UTC
 
 namespace CAnimScriptBase {
     constexpr std::ptrdiff_t m_bIsValid = 0x8; // bool

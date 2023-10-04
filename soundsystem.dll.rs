@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 09:19:17.860476400 UTC
+// 2023-10-04 23:32:08.468451 UTC
 
 pub mod CDSPMixgroupModifier {
     pub const m_mixgroup: usize = 0x0; // CUtlString
