@@ -1,5 +1,5 @@
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.600884800 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.948263600 UTC
 
 public static class CPulseCell_Base {
     public const nint m_nEditorNodeID = 0x8; // PulseDocNodeID_t

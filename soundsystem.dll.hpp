@@ -2,8 +2,8 @@
 
 #include <cstddef>
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.522539100 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.838597500 UTC
 
 namespace CDSPMixgroupModifier {
     constexpr std::ptrdiff_t m_mixgroup = 0x0; // CUtlString

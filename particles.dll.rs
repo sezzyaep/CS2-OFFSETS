@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.969142900 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:18.510872 UTC
 
 pub mod CBaseRendererSource2 {
     pub const m_flRadiusScale: usize = 0x200; // CParticleCollectionRendererFloatInput

@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:50.883735800 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:20.922307800 UTC
 
 pub mod animationsystem_dll {
     pub const AnimationSystemUtils_001: usize = 0x64510;

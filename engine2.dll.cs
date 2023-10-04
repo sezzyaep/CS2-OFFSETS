@@ -1,5 +1,5 @@
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.136910 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.315914200 UTC
 
 public static class CEntityComponentHelper {
     public const nint m_flags = 0x8; // uint32_t

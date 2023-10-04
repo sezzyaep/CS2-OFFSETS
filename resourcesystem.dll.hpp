@@ -2,8 +2,8 @@
 
 #include <cstddef>
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.114161900 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.276632500 UTC
 
 namespace AABB_t {
     constexpr std::ptrdiff_t m_vMinBounds = 0x0; // Vector

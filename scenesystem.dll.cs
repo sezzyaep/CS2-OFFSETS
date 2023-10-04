@@ -1,5 +1,5 @@
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.553019400 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.876699100 UTC
 
 public static class CSSDSEndFrameViewInfo {
     public const nint m_nViewId = 0x0; // uint64_t

@@ -2,8 +2,8 @@
 
 #include <cstddef>
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:50.388056 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:20.378867600 UTC
 
 namespace CAnimScriptBase {
     constexpr std::ptrdiff_t m_bIsValid = 0x8; // bool

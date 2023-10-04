@@ -2,8 +2,8 @@
 
 #include <cstddef>
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.122319300 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.290428300 UTC
 
 namespace RenderInputLayoutField_t {
     constexpr std::ptrdiff_t m_pSemanticName = 0x0; // uint8_t[32]

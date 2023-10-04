@@ -2,8 +2,8 @@
 
 #include <cstddef>
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.149790400 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.336361 UTC
 
 namespace MaterialParamBuffer_t {
     constexpr std::ptrdiff_t m_value = 0x8; // CUtlBinaryBlock

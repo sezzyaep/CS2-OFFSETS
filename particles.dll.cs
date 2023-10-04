@@ -1,5 +1,5 @@
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.867373200 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:18.357887800 UTC
 
 public static class CBaseRendererSource2 {
     public const nint m_flRadiusScale = 0x200; // CParticleCollectionRendererFloatInput

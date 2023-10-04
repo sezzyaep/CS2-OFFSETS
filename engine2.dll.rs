@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.141506800 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.323781700 UTC
 
 pub mod CEntityComponentHelper {
     pub const m_flags: usize = 0x8; // uint32_t

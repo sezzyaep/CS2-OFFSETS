@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.555246500 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.880985400 UTC
 
 pub mod CSSDSEndFrameViewInfo {
     pub const m_nViewId: usize = 0x0; // uint64_t

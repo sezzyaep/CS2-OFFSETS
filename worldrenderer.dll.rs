@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:48.578269200 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:17.914819100 UTC
 
 pub mod AggregateLODSetup_t {
     pub const m_vLODOrigin: usize = 0x0; // Vector

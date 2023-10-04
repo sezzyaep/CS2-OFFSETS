@@ -1,5 +1,5 @@
-// Created using https://github.com/a2x/cs2-dumper
-// 2023-10-04 09:08:50.877659900 UTC
+// Dumped With FrezzyHook.com
+// 2023-10-04 09:19:20.913811 UTC
 
 public static class animationsystem_dll {
     public const nint AnimationSystemUtils_001 = 0x64510;
