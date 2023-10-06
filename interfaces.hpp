@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:11.899261900 UTC
+// 2023-10-06 11:31:44.899115300 UTC
 
 namespace animationsystem_dll {
     constexpr std::ptrdiff_t AnimationSystemUtils_001 = 0x64510;
@@ -131,6 +131,12 @@ namespace particles_dll {
 
 namespace pulse_system_dll {
     constexpr std::ptrdiff_t IPulseSystem_001 = 0x5A20;
+}
+
+namespace rendersystemdx11_dll {
+    constexpr std::ptrdiff_t RenderUtils_001 = 0x53470;
+    constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x4AAD0;
+    constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x4AAC0;
 }
 
 namespace resourcesystem_dll {

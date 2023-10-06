@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.056842100 UTC
+// 2023-10-06 11:31:40.630641 UTC
 
 public static class AimMatrixOpFixedSettings_t {
     public const nint m_attachment = 0x0; // CAnimAttachment

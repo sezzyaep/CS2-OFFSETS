@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.616450100 UTC
+// 2023-10-06 11:31:41.137548300 UTC
 
 public static class CPulseCell_Base {
     public const nint m_nEditorNodeID = 0x8; // PulseDocNodeID_t

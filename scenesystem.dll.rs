@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.493438700 UTC
+// 2023-10-06 11:31:41.039410 UTC
 
 pub mod CSSDSEndFrameViewInfo {
     pub const m_nViewId: usize = 0x0; // uint64_t

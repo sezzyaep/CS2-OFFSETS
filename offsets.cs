@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:21.649248100 UTC
+// 2023-10-06 11:31:54.766331800 UTC
 
 public static class client_dll {
     public const nint dwEntityList = 0x178D8E8;

@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:21.654469800 UTC
+// 2023-10-06 11:31:54.772193600 UTC
 
 pub mod client_dll {
     pub const dwEntityList: usize = 0x178D8E8;

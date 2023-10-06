@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.575193800 UTC
+// 2023-10-06 11:31:41.088550200 UTC
 
 pub mod AggregateLODSetup_t {
     pub const m_vLODOrigin: usize = 0x0; // Vector

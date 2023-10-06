@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.962045500 UTC
+// 2023-10-06 11:31:40.546988300 UTC
 
 namespace AimMatrixOpFixedSettings_t {
     constexpr std::ptrdiff_t m_attachment = 0x0; // CAnimAttachment

@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:09.845430500 UTC
+// 2023-10-06 11:31:42.509234900 UTC
 
 namespace ActiveModelConfig_t {
     constexpr std::ptrdiff_t m_Handle = 0x28; // ModelConfigHandle_t

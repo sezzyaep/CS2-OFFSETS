@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.728943500 UTC
+// 2023-10-06 11:31:40.215288900 UTC
 
 public static class MaterialParamBuffer_t {
     public const nint m_value = 0x8; // CUtlBinaryBlock

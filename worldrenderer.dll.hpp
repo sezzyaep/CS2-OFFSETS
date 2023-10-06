@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.536372500 UTC
+// 2023-10-06 11:31:41.066930800 UTC
 
 namespace AggregateLODSetup_t {
     constexpr std::ptrdiff_t m_vLODOrigin = 0x0; // Vector

@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:09.235220500 UTC
+// 2023-10-06 11:31:41.798342400 UTC
 
 pub mod CBaseRendererSource2 {
     pub const m_flRadiusScale: usize = 0x200; // CParticleCollectionRendererFloatInput

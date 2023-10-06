@@ -109,6 +109,11 @@
   "pulse_system_dll": {
     "IPulseSystem_001": 23072
   },
+  "rendersystemdx11_dll": {
+    "RenderDeviceMgr001": 305856,
+    "RenderUtils_001": 341104,
+    "VRenderDeviceMgrBackdoor001": 305872
+  },
   "resourcesystem_dll": {
     "ResourceSystem013": 67248
   },

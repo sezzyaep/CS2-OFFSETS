@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:11.917694100 UTC
+// 2023-10-06 11:31:44.916533600 UTC
 
 pub mod animationsystem_dll {
     pub const AnimationSystemUtils_001: usize = 0x64510;
@@ -129,6 +129,12 @@ pub mod particles_dll {
 
 pub mod pulse_system_dll {
     pub const IPulseSystem_001: usize = 0x5A20;
+}
+
+pub mod rendersystemdx11_dll {
+    pub const RenderUtils_001: usize = 0x53470;
+    pub const VRenderDeviceMgrBackdoor001: usize = 0x4AAD0;
+    pub const RenderDeviceMgr001: usize = 0x4AAC0;
 }
 
 pub mod resourcesystem_dll {

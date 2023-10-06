@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.484114800 UTC
+// 2023-10-06 11:31:41.030141700 UTC
 
 namespace CSSDSEndFrameViewInfo {
     constexpr std::ptrdiff_t m_nViewId = 0x0; // uint64_t

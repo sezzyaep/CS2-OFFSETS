@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.618277 UTC
+// 2023-10-06 11:31:40.062087500 UTC
 
 public static class CExampleSchemaVData_Monomorphic {
     public const nint m_nExample1 = 0x0; // int32_t

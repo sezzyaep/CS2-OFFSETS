@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.169345700 UTC
+// 2023-10-06 11:31:40.726408600 UTC
 
 pub mod AimMatrixOpFixedSettings_t {
     pub const m_attachment: usize = 0x0; // CAnimAttachment

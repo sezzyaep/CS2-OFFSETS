@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:11.907202400 UTC
+// 2023-10-06 11:31:44.906244 UTC
 
 public static class animationsystem_dll {
     public const nint AnimationSystemUtils_001 = 0x64510;
@@ -127,6 +127,12 @@ public static class particles_dll {
 
 public static class pulse_system_dll {
     public const nint IPulseSystem_001 = 0x5A20;
+}
+
+public static class rendersystemdx11_dll {
+    public const nint RenderUtils_001 = 0x53470;
+    public const nint VRenderDeviceMgrBackdoor001 = 0x4AAD0;
+    public const nint RenderDeviceMgr001 = 0x4AAC0;
 }
 
 public static class resourcesystem_dll {

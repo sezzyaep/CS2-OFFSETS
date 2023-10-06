@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:21.646030600 UTC
+// 2023-10-06 11:31:54.751695800 UTC
 
 namespace client_dll {
     constexpr std::ptrdiff_t dwEntityList = 0x178D8E8;

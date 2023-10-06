@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.715517200 UTC
+// 2023-10-06 11:31:40.206102 UTC
 
 namespace MaterialParamBuffer_t {
     constexpr std::ptrdiff_t m_value = 0x8; // CUtlBinaryBlock

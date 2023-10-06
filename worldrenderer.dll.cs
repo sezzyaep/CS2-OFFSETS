@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.549404100 UTC
+// 2023-10-06 11:31:41.076873800 UTC
 
 public static class AggregateLODSetup_t {
     public const nint m_vLODOrigin = 0x0; // Vector

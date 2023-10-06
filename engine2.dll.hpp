@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.681740500 UTC
+// 2023-10-06 11:31:40.140409300 UTC
 
 namespace CEntityComponentHelper {
     constexpr std::ptrdiff_t m_flags = 0x8; // uint32_t

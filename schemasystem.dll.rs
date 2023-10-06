@@ -1,7 +1,7 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.623956500 UTC
+// 2023-10-06 11:31:40.067701700 UTC
 
 pub mod CExampleSchemaVData_Monomorphic {
     pub const m_nExample1: usize = 0x0; // int32_t

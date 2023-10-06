@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:07.689773900 UTC
+// 2023-10-06 11:31:40.148347700 UTC
 
 public static class CEntityComponentHelper {
     public const nint m_flags = 0x8; // uint32_t

@@ -3,7 +3,7 @@
 #include <cstddef>
 
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:08.603212400 UTC
+// 2023-10-06 11:31:41.128233 UTC
 
 namespace CPulseCell_Base {
     constexpr std::ptrdiff_t m_nEditorNodeID = 0x8; // PulseDocNodeID_t

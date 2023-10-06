@@ -1,5 +1,5 @@
 // Dumped With FrezzyHook.com
-// 2023-10-04 23:32:09.093556100 UTC
+// 2023-10-06 11:31:41.644729900 UTC
 
 public static class CBaseRendererSource2 {
     public const nint m_flRadiusScale = 0x200; // CParticleCollectionRendererFloatInput
