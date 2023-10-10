@@ -1,27 +1,9 @@
 #![allow(non_snake_case, non_upper_case_globals)]
 
-// Dumped With FrezzyHook.com
-// 2023-10-06 11:31:54.772193600 UTC
-
 pub mod client_dll {
-    pub const dwEntityList: usize = 0x178D8E8;
-    pub const dwForceBackward: usize = 0x1694EF0;
-    pub const dwForceCrouch: usize = 0x16951C0;
-    pub const dwForceForward: usize = 0x1694E60;
-    pub const dwForceJump: usize = 0x1695130;
-    pub const dwForceLeft: usize = 0x1694F80;
-    pub const dwForceRight: usize = 0x1695010;
-    pub const dwGlobalVars: usize = 0x1690D18;
-    pub const dwInterfaceLinkList: usize = 0x1973BA8;
-    pub const dwLocalPlayerController: usize = 0x17DC158;
-    pub const dwLocalPlayerPawn: usize = 0x187AC48;
-    pub const dwPlantedC4: usize = 0x1880DE0;
-    pub const dwViewAngles: usize = 0x18DA700;
-    pub const dwViewMatrix: usize = 0x187B730;
-}
-
-pub mod engine2_dll {
-    pub const dwNetworkGameClient: usize = 0x48BAB0;
-    pub const dwNetworkGameClient_maxClients: usize = 0x250;
-    pub const dwNetworkGameClient_signOnState: usize = 0x240;
+    pub const entity_list: usize = 0x178a808;
+    pub const global_vars: usize = 0x168dd60;
+    pub const local_player_controller: usize = 0x1877c30;
+    pub const view_angles: usize = 0x18d77b0;
+    pub const view_matrix: usize = 0x18787e0;
 }
