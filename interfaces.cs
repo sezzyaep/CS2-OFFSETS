@@ -4,29 +4,25 @@ public static class animationsystem_dll {
 }
 
 public static class client_dll {
-    public const ulong LegacyGameUI001 = 0x88d230;
-    public const ulong Source2ClientUI001 = 0x87bcd0;
-    public const ulong Source2ClientPrediction001 = 0x79ae80;
-    public const ulong ClientToolsInfo_001 = 0x726d90;
-    public const ulong Source2Client002 = 0x726db0;
-    public const ulong GameClientExports001 = 0x726da0;
-    public const ulong EmptyWorldService001_Client = 0x48a8b0;
-    public const ulong Source2ClientConfig001 = 0x471b70;
-}
-
-public static class crashhandler64_dll {
-    public const ulong  = 0xffff8000eee80000;
+    public const ulong LegacyGameUI001 = 0x88dc60;
+    public const ulong Source2ClientUI001 = 0x87c700;
+    public const ulong Source2ClientPrediction001 = 0x79b650;
+    public const ulong ClientToolsInfo_001 = 0x727560;
+    public const ulong Source2Client002 = 0x727580;
+    public const ulong GameClientExports001 = 0x727570;
+    public const ulong EmptyWorldService001_Client = 0x48b120;
+    public const ulong Source2ClientConfig001 = 0x472130;
 }
 
 public static class engine2_dll {
-    public const ulong SimpleEngineLoopService_001 = 0x1e1bb0;
-    public const ulong ClientServerEngineLoopService_001 = 0x1d7880;
-    public const ulong KeyValueCache001 = 0x1d3ec0;
-    public const ulong HostStateMgr001 = 0x1d18d0;
-    public const ulong GameEventSystemServerV001 = 0x1ccf90;
-    public const ulong GameEventSystemClientV001 = 0x1ccf80;
-    public const ulong EngineServiceMgr001 = 0x1c8c70;
-    public const ulong VProfService_001 = 0x1b6750;
+    public const ulong SimpleEngineLoopService_001 = 0x1e1bc0;
+    public const ulong ClientServerEngineLoopService_001 = 0x1d7890;
+    public const ulong KeyValueCache001 = 0x1d3ed0;
+    public const ulong HostStateMgr001 = 0x1d18e0;
+    public const ulong GameEventSystemServerV001 = 0x1ccfa0;
+    public const ulong GameEventSystemClientV001 = 0x1ccf90;
+    public const ulong EngineServiceMgr001 = 0x1c8c80;
+    public const ulong VProfService_001 = 0x1b6760;
     public const ulong ToolService_001 = 0x1b54b0;
     public const ulong StatsService_001 = 0x1b0730;
     public const ulong SplitScreenService_001 = 0x1ad9a0;
@@ -131,9 +127,9 @@ public static class pulse_system_dll {
 }
 
 public static class rendersystemdx11_dll {
-    public const ulong RenderUtils_001 = 0x52c20;
-    public const ulong VRenderDeviceMgrBackdoor001 = 0x4a330;
-    public const ulong RenderDeviceMgr001 = 0x4a320;
+    public const ulong RenderUtils_001 = 0x52c90;
+    public const ulong VRenderDeviceMgrBackdoor001 = 0x4a3a0;
+    public const ulong RenderDeviceMgr001 = 0x4a390;
 }
 
 public static class resourcesystem_dll {
@@ -146,9 +142,9 @@ public static class scenefilecache_dll {
 }
 
 public static class scenesystem_dll {
-    public const ulong SceneUtils_001 = 0x13ce80;
-    public const ulong SceneSystem_002 = 0xcac60;
-    public const ulong RenderingPipelines_001 = 0x8ed20;
+    public const ulong SceneUtils_001 = 0x13d030;
+    public const ulong SceneSystem_002 = 0xcae10;
+    public const ulong RenderingPipelines_001 = 0x8eed0;
 }
 
 public static class schemasystem_dll {
@@ -156,16 +152,16 @@ public static class schemasystem_dll {
 }
 
 public static class server_dll {
-    public const ulong NavGameTest001 = 0xa2dfa0;
-    public const ulong ServerToolsInfo_001 = 0x832910;
-    public const ulong Source2GameClients001 = 0x832920;
-    public const ulong Source2GameEntities001 = 0x832930;
-    public const ulong Source2Server001 = 0x832940;
-    public const ulong EmptyWorldService001_Server = 0x5877f0;
-    public const ulong Source2ServerConfig001 = 0x5674f0;
-    public const ulong EntitySubclassUtilsV001 = 0x2c8070;
-    public const ulong customnavsystem001 = 0x244d50;
-    public const ulong Source2GameDirector001 = 0x13ea50;
+    public const ulong NavGameTest001 = 0xa2c470;
+    public const ulong ServerToolsInfo_001 = 0x830de0;
+    public const ulong Source2GameClients001 = 0x830df0;
+    public const ulong Source2GameEntities001 = 0x830e00;
+    public const ulong Source2Server001 = 0x830e10;
+    public const ulong EmptyWorldService001_Server = 0x587870;
+    public const ulong Source2ServerConfig001 = 0x567870;
+    public const ulong EntitySubclassUtilsV001 = 0x2c8210;
+    public const ulong customnavsystem001 = 0x244db0;
+    public const ulong Source2GameDirector001 = 0x13eab0;
 }
 
 public static class soundsystem_dll {
@@ -235,5 +231,5 @@ public static class vstdlib_s64_dll {
 }
 
 public static class worldrenderer_dll {
-    public const ulong WorldRendererMgr001 = 0x21480;
+    public const ulong WorldRendererMgr001 = 0x21530;
 }
