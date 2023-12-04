@@ -1,6 +1,6 @@
 '''
 Dumped With https://frezzyhook.com
-Tue, 21 Nov 2023 00:41:53 +0000
+Mon, 4 Dec 2023 22:58:45 +0000
 '''
 
 class CEmptyEntityInstance:
@@ -124,6 +124,8 @@ class EventClientProcessGameInput_t:
 class EventClientProcessInput_t:
     m_LoopState = 0x0 # EngineLoopState_t
     m_flRealTime = 0x28 # float
+    m_flTickInterval = 0x2C # float
+    m_flTickStartTime = 0x30 # double
 
 class EventClientProcessNetworking_t:
 
@@ -138,10 +140,6 @@ class EventClientSimulate_t: # EventSimulate_t
 
 class EventFrameBoundary_t:
     m_flFrameTime = 0x0 # float
-
-class EventHostTimescaleChanged_t:
-    m_flOldValue = 0x0 # float
-    m_flNewValue = 0x4 # float
 
 class EventModInitialized_t:
 

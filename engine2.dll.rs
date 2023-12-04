@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Tue, 21 Nov 2023 00:41:53 +0000
+ * Mon, 4 Dec 2023 22:58:45 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -154,6 +154,8 @@ pub mod EventClientProcessGameInput_t {
 pub mod EventClientProcessInput_t {
     pub const m_LoopState: usize = 0x0; // EngineLoopState_t
     pub const m_flRealTime: usize = 0x28; // float
+    pub const m_flTickInterval: usize = 0x2C; // float
+    pub const m_flTickStartTime: usize = 0x30; // double
 }
 
 pub mod EventClientProcessNetworking_t {
@@ -173,11 +175,6 @@ pub mod EventClientSimulate_t { // EventSimulate_t
 
 pub mod EventFrameBoundary_t {
     pub const m_flFrameTime: usize = 0x0; // float
-}
-
-pub mod EventHostTimescaleChanged_t {
-    pub const m_flOldValue: usize = 0x0; // float
-    pub const m_flNewValue: usize = 0x4; // float
 }
 
 pub mod EventModInitialized_t {
