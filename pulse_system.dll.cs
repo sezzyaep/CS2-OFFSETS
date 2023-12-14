@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Mon, 4 Dec 2023 22:58:46 +0000
+ * Thu, 14 Dec 2023 13:49:57 +0000
  */
 
 public static class CBasePulseGraphInstance {
