@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Thu, 14 Dec 2023 13:49:58 +0000
+ * Fri, 22 Dec 2023 00:15:10 +0000
  */
 
 public static class ActiveModelConfig_t {
@@ -1523,6 +1523,8 @@ public static class CCSPlayerController { // CBasePlayerController
     public const nint m_dblLastReceivedPacketPlatFloatTime = 0xF8F8; // double
     public const nint m_LastTeamDamageWarningTime = 0xF900; // GameTime_t
     public const nint m_LastTimePlayerWasDisconnectedForPawnsRemove = 0xF904; // GameTime_t
+    public const nint m_nSuspiciousHitCount = 0xF908; // uint32_t
+    public const nint m_nNonSuspiciousHitStreak = 0xF90C; // uint32_t
 }
 
 public static class CCSPlayerController_ActionTrackingServices { // CPlayerControllerComponent

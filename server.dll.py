@@ -1,6 +1,6 @@
 '''
 Dumped With https://frezzyhook.com
-Thu, 14 Dec 2023 13:49:59 +0000
+Fri, 22 Dec 2023 00:15:10 +0000
 '''
 
 class ActiveModelConfig_t:
@@ -1414,6 +1414,8 @@ class CCSPlayerController: # CBasePlayerController
     m_dblLastReceivedPacketPlatFloatTime = 0xF8F8 # double
     m_LastTeamDamageWarningTime = 0xF900 # GameTime_t
     m_LastTimePlayerWasDisconnectedForPawnsRemove = 0xF904 # GameTime_t
+    m_nSuspiciousHitCount = 0xF908 # uint32_t
+    m_nNonSuspiciousHitStreak = 0xF90C # uint32_t
 
 class CCSPlayerController_ActionTrackingServices: # CPlayerControllerComponent
     m_perRoundStats = 0x40 # CUtlVectorEmbeddedNetworkVar<CSPerRoundStats_t>

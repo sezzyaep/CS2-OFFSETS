@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Thu, 14 Dec 2023 13:49:59 +0000
+ * Fri, 22 Dec 2023 00:15:10 +0000
  */
 
 #pragma once
@@ -1527,6 +1527,8 @@ namespace CCSPlayerController { // CBasePlayerController
     constexpr std::ptrdiff_t m_dblLastReceivedPacketPlatFloatTime = 0xF8F8; // double
     constexpr std::ptrdiff_t m_LastTeamDamageWarningTime = 0xF900; // GameTime_t
     constexpr std::ptrdiff_t m_LastTimePlayerWasDisconnectedForPawnsRemove = 0xF904; // GameTime_t
+    constexpr std::ptrdiff_t m_nSuspiciousHitCount = 0xF908; // uint32_t
+    constexpr std::ptrdiff_t m_nNonSuspiciousHitStreak = 0xF90C; // uint32_t
 }
 
 namespace CCSPlayerController_ActionTrackingServices { // CPlayerControllerComponent

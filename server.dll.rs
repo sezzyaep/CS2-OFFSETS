@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Thu, 14 Dec 2023 13:49:59 +0000
+ * Fri, 22 Dec 2023 00:15:11 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -1525,6 +1525,8 @@ pub mod CCSPlayerController { // CBasePlayerController
     pub const m_dblLastReceivedPacketPlatFloatTime: usize = 0xF8F8; // double
     pub const m_LastTeamDamageWarningTime: usize = 0xF900; // GameTime_t
     pub const m_LastTimePlayerWasDisconnectedForPawnsRemove: usize = 0xF904; // GameTime_t
+    pub const m_nSuspiciousHitCount: usize = 0xF908; // uint32_t
+    pub const m_nNonSuspiciousHitStreak: usize = 0xF90C; // uint32_t
 }
 
 pub mod CCSPlayerController_ActionTrackingServices { // CPlayerControllerComponent
