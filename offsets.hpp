@@ -1,16 +1,11 @@
 struct ClientDLL {
-    dwEntityList: 0x17BB5B0,
-    dwGameRules: 0x18173C8,
-    dwGlobalVars: 0x16B7BE0,
-    dwLocalPlayerController: 0x180AA20,
-    dwLocalPlayerPawn: 0x16C2B18,
-    dwPlantedC4: 0x181E988,
- 
-  
-    dwForceForward: 0x16BBCB0,
-    dwForceJump: 0x16BBF80,
-    dwViewAngles: 0x187A9D0,
-    dwViewMatrix: 0x1819D40,
+
+    constexpr std::ptrdiff_t entity_list = 0x17c1950;
+    constexpr std::ptrdiff_t global_vars = 0x16bdc98;
+    constexpr std::ptrdiff_t local_player_controller = 0x16c8e50;
+    constexpr std::ptrdiff_t view_angles = 0x187f190;
+    constexpr std::ptrdiff_t view_matrix = 0x1820150;
+
 }
  
 struct Engine2DLL {
