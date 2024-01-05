@@ -1,10 +1,10 @@
 struct ClientDLL {
 
-    constexpr std::ptrdiff_t entity_list = 0x17c1950;
-    constexpr std::ptrdiff_t global_vars = 0x16bdc98;
-    constexpr std::ptrdiff_t local_player_controller = 0x16c8e50;
-    constexpr std::ptrdiff_t view_angles = 0x187f190;
-    constexpr std::ptrdiff_t view_matrix = 0x1820150;
+ constexpr std::ptrdiff_t entity_list = 0x17c1950;
+ constexpr std::ptrdiff_t global_vars = 0x16bdcb8;
+ constexpr std::ptrdiff_t local_player_controller = 0x16c8e70;
+ constexpr std::ptrdiff_t view_angles = 0x187f190;
+ constexpr std::ptrdiff_t view_matrix = 0x1820150;
 
 }
  
