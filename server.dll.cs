@@ -1,6 +1,6 @@
 /*
  * Dumped With https://frezzyhook.com
- * Fri, 22 Dec 2023 00:15:10 +0000
+ * Fri, 5 Jan 2024 00:50:07 +0000
  */
 
 public static class ActiveModelConfig_t {
