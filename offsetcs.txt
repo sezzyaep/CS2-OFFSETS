@@ -10,5 +10,5 @@ s_bIsLocalPlayerController_Offset = 0x6B8
 s_bPawnHasDefuser = 0xED8
 dwLocalPlayerPawn = 0x16BC5B8
 dwPlantedC4 = 0x1824A88
-m_flDetectedByEnemySensorTime = 0x13DC
+m_flDetectedByEnemySensorTime = 0x13E4
 m_bIsDefusing = 0x13A8
