@@ -1,63 +1,53 @@
-struct ClientDLL {
+/*
+ * All offsets dumped with: https://frezzyhook.com
+ * Sun, 7 Jan 2024 23:54:52 +0000
+ */
 
- constexpr std::ptrdiff_t entity_list = 0x17c1950;
- constexpr std::ptrdiff_t global_vars = 0x16bdcb8;
- constexpr std::ptrdiff_t local_player_controller = 0x16c8e70;
- constexpr std::ptrdiff_t view_angles = 0x187f190;
- constexpr std::ptrdiff_t view_matrix = 0x1820150;
+#pragma once
 
+#include <cstddef>
+
+namespace client_dll { // client.dll
+    constexpr std::ptrdiff_t dwEntityList = 0x17C1950;
+    constexpr std::ptrdiff_t dwForceAttack = 0x16C1E90;
+    constexpr std::ptrdiff_t dwForceAttack2 = 0x16C1F20;
+    constexpr std::ptrdiff_t dwForceBackward = 0x16C2160;
+    constexpr std::ptrdiff_t dwForceCrouch = 0x16C2430;
+    constexpr std::ptrdiff_t dwForceForward = 0x16C20D0;
+    constexpr std::ptrdiff_t dwForceJump = 0x16C23A0;
+    constexpr std::ptrdiff_t dwForceLeft = 0x16C21F0;
+    constexpr std::ptrdiff_t dwForceRight = 0x16C2280;
+    constexpr std::ptrdiff_t dwGameEntitySystem = 0x18ED240;
+    constexpr std::ptrdiff_t dwGameEntitySystem_getHighestEntityIndex = 0x1510;
+    constexpr std::ptrdiff_t dwGameRules = 0x181E048;
+    constexpr std::ptrdiff_t dwGlobalVars = 0x16BDCB8;
+    constexpr std::ptrdiff_t dwGlowManager = 0x181D7B0;
+    constexpr std::ptrdiff_t dwInterfaceLinkList = 0x191AED8;
+    constexpr std::ptrdiff_t dwLocalPlayerController = 0x1810F48;
+    constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x16C8F58;
+    constexpr std::ptrdiff_t dwPlantedC4 = 0x1824A88;
+    constexpr std::ptrdiff_t dwPrediction = 0x16C8E20;
+    constexpr std::ptrdiff_t dwSensitivity = 0x181ED48;
+    constexpr std::ptrdiff_t dwSensitivity_sensitivity = 0x40;
+    constexpr std::ptrdiff_t dwViewAngles = 0x1880DC0;
+    constexpr std::ptrdiff_t dwViewMatrix = 0x1820150;
+    constexpr std::ptrdiff_t dwViewRender = 0x1820998;
 }
- 
-struct Engine2DLL {
-    dwBuildNumber: 0x48A344,
+
+namespace engine2_dll { // engine2.dll
+    constexpr std::ptrdiff_t dwBuildNumber = 0x4E13D4;
+    constexpr std::ptrdiff_t dwNetworkGameClient = 0x4E0988;
+    constexpr std::ptrdiff_t dwNetworkGameClient_getLocalPlayer = 0xF0;
+    constexpr std::ptrdiff_t dwNetworkGameClient_maxClients = 0x250;
+    constexpr std::ptrdiff_t dwNetworkGameClient_signOnState = 0x240;
+    constexpr std::ptrdiff_t dwWindowHeight = 0x597E0C;
+    constexpr std::ptrdiff_t dwWindowWidth = 0x597E08;
 }
- 
-struct InputSystemDLL {
-    dwInputSystem: 0x35760,
+
+namespace game_info { // Some additional information about the game at dump time
+    constexpr std::ptrdiff_t buildNumber = 0x36A0; // Game build number
 }
- 
-struct CBasePlayerPawn {
-    m_pWeaponServices: 0x10A8,
-    m_pItemServices: 0x10B0,
-    m_vOldOrigin: 0x1224,
-    m_pClippingWeapon: 0x12A8,
-    m_bIsScoped: 0x13A0,
-    m_bIsDefusing: 0x13A8,
-    m_bIsGrabbingHostage: 0x13A9,
-    m_iShotsFired: 0x1418,
-    m_flFlashDuration: 0x1468,
-    m_ArmorValue: 0x1508,
-    m_angEyeAngles: 0x1510,
-    m_iIDEntIndex: 0x153C,
-    m_aimPunchCache: 0x1738,
-}
- 
-struct CBaseEntity {
-    m_pGameSceneNode: 0x310,
-    m_iItemDefinitionIndex: 0x1BA,
-    m_Item: 0x50,
-    m_iTeamNum: 0x3BF,
-    m_iHealth: 0x32C,
-    m_lifeState: 0x330,
-    m_hPawn: 0x60C,
-    m_hPlayerPawn: 0x7EC,
-    m_AttributeManager: 0x1040,
-    m_iszPlayerName: 0x640,    
-}
- 
-struct CItemServices {
-    m_bHasDefuser: 0x40,
-    m_bHasHelmet: 0x41,
-}
- 
-struct CCSGameRules {
-    m_bFreezePeriod: 0x30,
-    m_bWarmupPeriod: 0x31,
-    m_bHasMatchStarted: 0xA4,
-    m_bBombPlanted: 0x9DD,
-}
- 
-struct CPlantedC4 {
-    m_nBombSite: 0xE84;
-    m_flC4Blow: 0xEB0;
+
+namespace inputsystem_dll { // inputsystem.dll
+    constexpr std::ptrdiff_t dwInputSystem = 0x35760;
 }
