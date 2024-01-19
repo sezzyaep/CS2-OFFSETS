@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Sun, 7 Jan 2024 23:54:51 +0000
+ * Fri, 19 Jan 2024 22:30:13 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -183,26 +183,26 @@ pub mod steamaudio_dll { // steamaudio.dll
 }
 
 pub mod steamclient64_dll { // steamclient64.dll
-    pub const IVALIDATE001: usize = 0x84FE60;
-    pub const CLIENTENGINE_INTERFACE_VERSION005: usize = 0x84BD10;
-    pub const SteamClient021: usize = 0x646160;
-    pub const SteamClient020: usize = 0x646150;
-    pub const SteamClient019: usize = 0x646140;
-    pub const SteamClient018: usize = 0x646130;
-    pub const SteamClient017: usize = 0x646120;
-    pub const SteamClient016: usize = 0x646110;
-    pub const SteamClient015: usize = 0x646100;
-    pub const SteamClient014: usize = 0x6460F0;
-    pub const SteamClient013: usize = 0x6460E0;
-    pub const SteamClient012: usize = 0x6460D0;
-    pub const SteamClient011: usize = 0x6460C0;
-    pub const SteamClient010: usize = 0x6460B0;
-    pub const SteamClient009: usize = 0x6460A0;
-    pub const SteamClient008: usize = 0x646090;
-    pub const SteamClient007: usize = 0x646080;
-    pub const SteamClient006: usize = 0x646070;
-    pub const p2pvoice002: usize = 0xD97C0;
-    pub const p2pvoicesingleton002: usize = 0xD6220;
+    pub const IVALIDATE001: usize = 0x861720;
+    pub const CLIENTENGINE_INTERFACE_VERSION005: usize = 0x85D5D0;
+    pub const SteamClient021: usize = 0x65E570;
+    pub const SteamClient020: usize = 0x65E560;
+    pub const SteamClient019: usize = 0x65E550;
+    pub const SteamClient018: usize = 0x65E540;
+    pub const SteamClient017: usize = 0x65E530;
+    pub const SteamClient016: usize = 0x65E520;
+    pub const SteamClient015: usize = 0x65E510;
+    pub const SteamClient014: usize = 0x65E500;
+    pub const SteamClient013: usize = 0x65E4F0;
+    pub const SteamClient012: usize = 0x65E4E0;
+    pub const SteamClient011: usize = 0x65E4D0;
+    pub const SteamClient010: usize = 0x65E4C0;
+    pub const SteamClient009: usize = 0x65E4B0;
+    pub const SteamClient008: usize = 0x65E4A0;
+    pub const SteamClient007: usize = 0x65E490;
+    pub const SteamClient006: usize = 0x65E480;
+    pub const p2pvoice002: usize = 0xD9EB0;
+    pub const p2pvoicesingleton002: usize = 0xD6910;
 }
 
 pub mod tier0_dll { // tier0.dll
@@ -234,7 +234,7 @@ pub mod vscript_dll { // vscript.dll
 }
 
 pub mod vstdlib_s64_dll { // vstdlib_s64.dll
-    pub const IVALIDATE001: usize = 0x25000;
+    pub const IVALIDATE001: usize = 0x250E0;
     pub const VEngineCvar002: usize = 0x5760;
 }
 

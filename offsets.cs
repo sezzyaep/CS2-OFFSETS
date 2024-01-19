@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Sun, 7 Jan 2024 23:54:52 +0000
+ * Fri, 19 Jan 2024 22:30:13 +0000
  */
 
 public static class client_dll { // client.dll
@@ -41,7 +41,7 @@ public static class engine2_dll { // engine2.dll
 }
 
 public static class game_info { // Some additional information about the game at dump time
-    public const nint buildNumber = 0x36A0; // Game build number
+    public const nint buildNumber = 0x36A1; // Game build number
 }
 
 public static class inputsystem_dll { // inputsystem.dll

@@ -1,6 +1,6 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Sun, 7 Jan 2024 23:54:51 +0000
+Fri, 19 Jan 2024 22:30:13 +0000
 '''
 
 class animationsystem_dll: # animationsystem.dll
@@ -155,26 +155,26 @@ class steamaudio_dll: # steamaudio.dll
     SteamAudio001 = 0x12EE0
 
 class steamclient64_dll: # steamclient64.dll
-    IVALIDATE001 = 0x84FE60
-    CLIENTENGINE_INTERFACE_VERSION005 = 0x84BD10
-    SteamClient021 = 0x646160
-    SteamClient020 = 0x646150
-    SteamClient019 = 0x646140
-    SteamClient018 = 0x646130
-    SteamClient017 = 0x646120
-    SteamClient016 = 0x646110
-    SteamClient015 = 0x646100
-    SteamClient014 = 0x6460F0
-    SteamClient013 = 0x6460E0
-    SteamClient012 = 0x6460D0
-    SteamClient011 = 0x6460C0
-    SteamClient010 = 0x6460B0
-    SteamClient009 = 0x6460A0
-    SteamClient008 = 0x646090
-    SteamClient007 = 0x646080
-    SteamClient006 = 0x646070
-    p2pvoice002 = 0xD97C0
-    p2pvoicesingleton002 = 0xD6220
+    IVALIDATE001 = 0x861720
+    CLIENTENGINE_INTERFACE_VERSION005 = 0x85D5D0
+    SteamClient021 = 0x65E570
+    SteamClient020 = 0x65E560
+    SteamClient019 = 0x65E550
+    SteamClient018 = 0x65E540
+    SteamClient017 = 0x65E530
+    SteamClient016 = 0x65E520
+    SteamClient015 = 0x65E510
+    SteamClient014 = 0x65E500
+    SteamClient013 = 0x65E4F0
+    SteamClient012 = 0x65E4E0
+    SteamClient011 = 0x65E4D0
+    SteamClient010 = 0x65E4C0
+    SteamClient009 = 0x65E4B0
+    SteamClient008 = 0x65E4A0
+    SteamClient007 = 0x65E490
+    SteamClient006 = 0x65E480
+    p2pvoice002 = 0xD9EB0
+    p2pvoicesingleton002 = 0xD6910
 
 class tier0_dll: # tier0.dll
     VStringTokenSystem001 = 0x18C360
@@ -199,7 +199,7 @@ class vscript_dll: # vscript.dll
     VScriptManager010 = 0x31DA0
 
 class vstdlib_s64_dll: # vstdlib_s64.dll
-    IVALIDATE001 = 0x25000
+    IVALIDATE001 = 0x250E0
     VEngineCvar002 = 0x5760
 
 class worldrenderer_dll: # worldrenderer.dll

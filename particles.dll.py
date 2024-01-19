@@ -1,6 +1,6 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Sun, 7 Jan 2024 23:54:49 +0000
+Fri, 19 Jan 2024 22:30:10 +0000
 '''
 
 class CBaseRendererSource2: # CParticleFunctionRenderer

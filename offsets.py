@@ -1,6 +1,6 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Sun, 7 Jan 2024 23:54:52 +0000
+Fri, 19 Jan 2024 22:30:13 +0000
 '''
 
 class client_dll: # client.dll
@@ -39,7 +39,7 @@ class engine2_dll: # engine2.dll
     dwWindowWidth = 0x597E08
 
 class game_info: # Some additional information about the game at dump time
-    buildNumber = 0x36A0 # Game build number
+    buildNumber = 0x36A1 # Game build number
 
 class inputsystem_dll: # inputsystem.dll
     dwInputSystem = 0x35760
