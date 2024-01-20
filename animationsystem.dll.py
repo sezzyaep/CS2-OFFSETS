@@ -1,6 +1,6 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Fri, 19 Jan 2024 22:30:08 +0000
+Sat, 20 Jan 2024 00:08:00 +0000
 '''
 
 class AimMatrixOpFixedSettings_t:

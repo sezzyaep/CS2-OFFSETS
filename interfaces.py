@@ -1,6 +1,6 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Fri, 19 Jan 2024 22:30:13 +0000
+Sat, 20 Jan 2024 00:08:04 +0000
 '''
 
 class animationsystem_dll: # animationsystem.dll
@@ -8,14 +8,14 @@ class animationsystem_dll: # animationsystem.dll
     AnimationSystem_001 = 0x5F1D0
 
 class client_dll: # client.dll
-    LegacyGameUI001 = 0x8A2450
-    Source2ClientUI001 = 0x891690
-    Source2ClientPrediction001 = 0x7A96E0
-    ClientToolsInfo_001 = 0x735BD0
-    Source2Client002 = 0x735BF0
-    GameClientExports001 = 0x735BE0
-    EmptyWorldService001_Client = 0x490D10
-    Source2ClientConfig001 = 0x477C50
+    LegacyGameUI001 = 0x8A2480
+    Source2ClientUI001 = 0x8916C0
+    Source2ClientPrediction001 = 0x7A96F0
+    ClientToolsInfo_001 = 0x735BC0
+    Source2Client002 = 0x735BE0
+    GameClientExports001 = 0x735BD0
+    EmptyWorldService001_Client = 0x490D00
+    Source2ClientConfig001 = 0x477C40
 
 class engine2_dll: # engine2.dll
     SimpleEngineLoopService_001 = 0x1E65E0

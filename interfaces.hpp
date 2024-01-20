@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Fri, 19 Jan 2024 22:30:13 +0000
+ * Sat, 20 Jan 2024 00:08:04 +0000
  */
 
 #pragma once
@@ -13,14 +13,14 @@ namespace animationsystem_dll { // animationsystem.dll
 }
 
 namespace client_dll { // client.dll
-    constexpr std::ptrdiff_t LegacyGameUI001 = 0x8A2450;
-    constexpr std::ptrdiff_t Source2ClientUI001 = 0x891690;
-    constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x7A96E0;
-    constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x735BD0;
-    constexpr std::ptrdiff_t Source2Client002 = 0x735BF0;
-    constexpr std::ptrdiff_t GameClientExports001 = 0x735BE0;
-    constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x490D10;
-    constexpr std::ptrdiff_t Source2ClientConfig001 = 0x477C50;
+    constexpr std::ptrdiff_t LegacyGameUI001 = 0x8A2480;
+    constexpr std::ptrdiff_t Source2ClientUI001 = 0x8916C0;
+    constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x7A96F0;
+    constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x735BC0;
+    constexpr std::ptrdiff_t Source2Client002 = 0x735BE0;
+    constexpr std::ptrdiff_t GameClientExports001 = 0x735BD0;
+    constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x490D00;
+    constexpr std::ptrdiff_t Source2ClientConfig001 = 0x477C40;
 }
 
 namespace engine2_dll { // engine2.dll
