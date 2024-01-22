@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Sat, 20 Jan 2024 00:08:04 +0000
+ * Mon, 22 Jan 2024 17:40:39 +0000
  */
 
 public static class animationsystem_dll { // animationsystem.dll
@@ -9,14 +9,14 @@ public static class animationsystem_dll { // animationsystem.dll
 }
 
 public static class client_dll { // client.dll
-    public const nint LegacyGameUI001 = 0x8A2480;
-    public const nint Source2ClientUI001 = 0x8916C0;
-    public const nint Source2ClientPrediction001 = 0x7A96F0;
-    public const nint ClientToolsInfo_001 = 0x735BC0;
-    public const nint Source2Client002 = 0x735BE0;
-    public const nint GameClientExports001 = 0x735BD0;
-    public const nint EmptyWorldService001_Client = 0x490D00;
-    public const nint Source2ClientConfig001 = 0x477C40;
+    public const nint LegacyGameUI001 = 0x8A26B0;
+    public const nint Source2ClientUI001 = 0x8918F0;
+    public const nint Source2ClientPrediction001 = 0x7A9920;
+    public const nint ClientToolsInfo_001 = 0x735DE0;
+    public const nint Source2Client002 = 0x735E00;
+    public const nint GameClientExports001 = 0x735DF0;
+    public const nint EmptyWorldService001_Client = 0x490F20;
+    public const nint Source2ClientConfig001 = 0x477E60;
 }
 
 public static class engine2_dll { // engine2.dll

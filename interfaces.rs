@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Sat, 20 Jan 2024 00:08:04 +0000
+ * Mon, 22 Jan 2024 17:40:39 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -11,14 +11,14 @@ pub mod animationsystem_dll { // animationsystem.dll
 }
 
 pub mod client_dll { // client.dll
-    pub const LegacyGameUI001: usize = 0x8A2480;
-    pub const Source2ClientUI001: usize = 0x8916C0;
-    pub const Source2ClientPrediction001: usize = 0x7A96F0;
-    pub const ClientToolsInfo_001: usize = 0x735BC0;
-    pub const Source2Client002: usize = 0x735BE0;
-    pub const GameClientExports001: usize = 0x735BD0;
-    pub const EmptyWorldService001_Client: usize = 0x490D00;
-    pub const Source2ClientConfig001: usize = 0x477C40;
+    pub const LegacyGameUI001: usize = 0x8A26B0;
+    pub const Source2ClientUI001: usize = 0x8918F0;
+    pub const Source2ClientPrediction001: usize = 0x7A9920;
+    pub const ClientToolsInfo_001: usize = 0x735DE0;
+    pub const Source2Client002: usize = 0x735E00;
+    pub const GameClientExports001: usize = 0x735DF0;
+    pub const EmptyWorldService001_Client: usize = 0x490F20;
+    pub const Source2ClientConfig001: usize = 0x477E60;
 }
 
 pub mod engine2_dll { // engine2.dll

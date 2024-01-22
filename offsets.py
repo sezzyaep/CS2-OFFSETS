@@ -1,33 +1,31 @@
 '''
 All offsets dumped with: https://frezzyhook.com
-Sat, 20 Jan 2024 00:08:05 +0000
+Mon, 22 Jan 2024 17:40:39 +0000
 '''
 
 class client_dll: # client.dll
-    dwEntityList = 0x17C26A0
-    dwForceAttack = 0x16C1E80
-    dwForceAttack2 = 0x16C1F10
-    dwForceBackward = 0x16C2150
-    dwForceCrouch = 0x16C2420
-    dwForceForward = 0x16C20C0
-    dwForceJump = 0x16C2390
-    dwForceLeft = 0x16C21E0
-    dwForceRight = 0x16C2270
-    dwGameEntitySystem = 0x18F2DB0
+    dwEntityList = 0x17CE6A0
+    dwForceBackward = 0x16CE150
+    dwForceCrouch = 0x16CE420
+    dwForceForward = 0x16CE0C0
+    dwForceJump = 0x16CE390
+    dwForceLeft = 0x16CE1E0
+    dwForceRight = 0x16CE270
+    dwGameEntitySystem = 0x18FEDD0
     dwGameEntitySystem_getHighestEntityIndex = 0x1510
-    dwGameRules = 0x181ED98
-    dwGlobalVars = 0x16BDCA8
-    dwGlowManager = 0x181E500
-    dwInterfaceLinkList = 0x1920A48
-    dwLocalPlayerController = 0x1811C98
-    dwLocalPlayerPawn = 0x16C8F48
-    dwPlantedC4 = 0x18257D8
-    dwPrediction = 0x16C8E10
-    dwSensitivity = 0x181FA98
+    dwGameRules = 0x182AD98
+    dwGlobalVars = 0x16C9CA8
+    dwGlowManager = 0x182A500
+    dwInterfaceLinkList = 0x192CA68
+    dwLocalPlayerController = 0x181DC98
+    dwLocalPlayerPawn = 0x16D4F48
+    dwPlantedC4 = 0x18317D8
+    dwPrediction = 0x16D4E10
+    dwSensitivity = 0x182BA98
     dwSensitivity_sensitivity = 0x40
-    dwViewAngles = 0x1882140
-    dwViewMatrix = 0x1820EA0
-    dwViewRender = 0x18216E8
+    dwViewAngles = 0x188E140
+    dwViewMatrix = 0x182CEA0
+    dwViewRender = 0x182D6E8
 
 class engine2_dll: # engine2.dll
     dwBuildNumber = 0x4E13D4
