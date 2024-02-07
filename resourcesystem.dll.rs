@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Mon, 22 Jan 2024 17:40:35 +0000
+ * Wed, 7 Feb 2024 07:28:26 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -85,6 +85,9 @@ pub mod InfoForResourceTypeCDotaItemDefinitionResource {
 pub mod InfoForResourceTypeCEntityLump {
 }
 
+pub mod InfoForResourceTypeCGcExportableExternalData {
+}
+
 pub mod InfoForResourceTypeCJavaScriptResource {
 }
 
@@ -95,6 +98,12 @@ pub mod InfoForResourceTypeCMorphSetData {
 }
 
 pub mod InfoForResourceTypeCNmClip {
+}
+
+pub mod InfoForResourceTypeCNmGraph {
+}
+
+pub mod InfoForResourceTypeCNmGraphDataSet {
 }
 
 pub mod InfoForResourceTypeCNmSkeleton {
@@ -148,6 +157,9 @@ pub mod InfoForResourceTypeCVSoundEventScriptList {
 pub mod InfoForResourceTypeCVSoundStackScriptList {
 }
 
+pub mod InfoForResourceTypeCVoiceContainerBase {
+}
+
 pub mod InfoForResourceTypeCVoxelVisibility {
 }
 
@@ -179,9 +191,6 @@ pub mod InfoForResourceTypeProceduralTestResource_t {
 }
 
 pub mod InfoForResourceTypeTestResource_t {
-}
-
-pub mod InfoForResourceTypeVSound_t {
 }
 
 pub mod InfoForResourceTypeWorld_t {

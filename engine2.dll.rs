@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Mon, 22 Jan 2024 17:40:35 +0000
+ * Wed, 7 Feb 2024 07:28:26 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -40,6 +40,7 @@ pub mod CEntityInstance {
     pub const m_iszPrivateVScripts: usize = 0x8; // CUtlSymbolLarge
     pub const m_pEntity: usize = 0x10; // CEntityIdentity*
     pub const m_CScriptComponent: usize = 0x28; // CScriptComponent*
+    pub const m_bVisibleinPVS: usize = 0x30; // bool
 }
 
 pub mod CNetworkVarChainer {
@@ -94,6 +95,7 @@ pub mod EventClientFrameSimulate_t {
     pub const m_LoopState: usize = 0x0; // EngineLoopState_t
     pub const m_flRealTime: usize = 0x28; // float
     pub const m_flFrameTime: usize = 0x2C; // float
+    pub const m_flWhenScheduleSendTickPacket: usize = 0x30; // double
 }
 
 pub mod EventClientOutput_t {
@@ -163,11 +165,6 @@ pub mod EventClientProcessNetworking_t {
 
 pub mod EventClientSceneSystemThreadStateChange_t {
     pub const m_bThreadsActive: usize = 0x0; // bool
-}
-
-pub mod EventClientSendInput_t {
-    pub const m_bFinalClientCommandTick: usize = 0x0; // bool
-    pub const m_nAdditionalClientCommandsToCreate: usize = 0x4; // int32_t
 }
 
 pub mod EventClientSimulate_t { // EventSimulate_t
