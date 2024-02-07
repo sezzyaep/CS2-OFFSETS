@@ -11,7 +11,7 @@
  s_iIDEntIndex = 0x15A4
  dwPlantedC4 = 0x19151B8
  flFlashDuration = 0x1468
- m_flDetectedByEnemySensorTime = 0x13DC
+ m_flDetectedByEnemySensorTime = 0x1440
  m_pBulletServices = 0x16B0
  m_pClippingWeapon = 0x12A8
  m_pInGameMoneyServices = 0x6E8
