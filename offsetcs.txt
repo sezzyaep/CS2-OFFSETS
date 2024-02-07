@@ -3,7 +3,7 @@
  localplayer_Offset = 0x18FF918
  s_dwPawnHealth_Offset = 0x334
  s_dwPlayerPawn_Offset = 0x604
- s_dwSanitizedName_Offset = 0x638
+ s_dwSanitizedName_Offset = 0x748
  s_Position_Offset = 0x127C
  s_teamnum_Offset = 0x3CB
  s_bIsLocalPlayerController_Offset = 0x6C8
