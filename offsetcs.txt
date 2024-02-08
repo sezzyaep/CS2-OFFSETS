@@ -1,6 +1,6 @@
- s_dwEntityList_Offset = 0x18AFFB8
- viewmatrix_Offset = 0x190F2A0
- localplayer_Offset = 0x18FF918
+ s_dwEntityList_Offset = 0x18B0FB8
+ viewmatrix_Offset = 0x19102A0
+ localplayer_Offset = 0x1900918
  s_dwPawnHealth_Offset = 0x334
  s_dwPlayerPawn_Offset = 0x604
  s_dwSanitizedName_Offset = 0x748
@@ -9,12 +9,12 @@
  s_bIsLocalPlayerController_Offset = 0x6C8
  s_bPawnHasDefuser = 0x7F8
  s_iIDEntIndex = 0x15A4
- dwPlantedC4 = 0x19151B8
+ dwPlantedC4 = 0x19161B8
  flFlashDuration = 0x1468
  m_flDetectedByEnemySensorTime = 0x1440
  m_pBulletServices = 0x16B0
  m_pClippingWeapon = 0x12A8
  m_pInGameMoneyServices = 0x6E8
  m_iAccount = 0x40
- m_GlobalVar = 0x16C9CA8
+ m_GlobalVar = 0x1719E30
  m_flC4Blow = 0xEB0
