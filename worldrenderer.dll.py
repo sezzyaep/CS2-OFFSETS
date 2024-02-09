@@ -1,6 +1,6 @@
 '''
-Dumped With https://frezzyhook.com
-Fri, 5 Jan 2024 00:50:06 +0000
+All offsets dumped with: https://frezzyhook.com
+Fri, 9 Feb 2024 11:33:20 +0000
 '''
 
 class AggregateLODSetup_t:
@@ -58,6 +58,7 @@ class CEntityInstance:
     m_iszPrivateVScripts = 0x8 # CUtlSymbolLarge
     m_pEntity = 0x10 # CEntityIdentity*
     m_CScriptComponent = 0x28 # CScriptComponent*
+    m_bVisibleinPVS = 0x30 # bool
 
 class CScriptComponent: # CEntityComponent
     m_scriptClassName = 0x30 # CUtlSymbolLarge

@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Fri, 9 Feb 2024 00:24:33 +0000
+ * Fri, 9 Feb 2024 11:33:24 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -43,7 +43,7 @@ pub mod engine2_dll { // engine2.dll
 }
 
 pub mod game_info { // Some additional information about the game at dump time
-    pub const buildNumber: usize = 0x36A5; // Game build number
+    pub const buildNumber: usize = 0x36A6; // Game build number
 }
 
 pub mod inputsystem_dll { // inputsystem.dll

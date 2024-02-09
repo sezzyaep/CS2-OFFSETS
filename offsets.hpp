@@ -1,6 +1,6 @@
 /*
  * All offsets dumped with: https://frezzyhook.com
- * Fri, 9 Feb 2024 00:24:33 +0000
+ * Fri, 9 Feb 2024 11:33:24 +0000
  */
 
 #pragma once
@@ -45,7 +45,7 @@ namespace engine2_dll { // engine2.dll
 }
 
 namespace game_info { // Some additional information about the game at dump time
-    constexpr std::ptrdiff_t buildNumber = 0x36A5; // Game build number
+    constexpr std::ptrdiff_t buildNumber = 0x36A6; // Game build number
 }
 
 namespace inputsystem_dll { // inputsystem.dll

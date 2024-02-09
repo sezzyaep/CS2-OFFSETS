@@ -1,6 +1,6 @@
 /*
- * Dumped With https://frezzyhook.com
- * Fri, 5 Jan 2024 00:50:06 +0000
+ * All offsets dumped with: https://frezzyhook.com
+ * Fri, 9 Feb 2024 11:33:20 +0000
  */
 
 public static class AggregateLODSetup_t {
@@ -65,6 +65,7 @@ public static class CEntityInstance {
     public const nint m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
     public const nint m_pEntity = 0x10; // CEntityIdentity*
     public const nint m_CScriptComponent = 0x28; // CScriptComponent*
+    public const nint m_bVisibleinPVS = 0x30; // bool
 }
 
 public static class CScriptComponent { // CEntityComponent

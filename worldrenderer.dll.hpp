@@ -1,6 +1,6 @@
 /*
- * Dumped With https://frezzyhook.com
- * Fri, 5 Jan 2024 00:50:06 +0000
+ * All offsets dumped with: https://frezzyhook.com
+ * Fri, 9 Feb 2024 11:33:20 +0000
  */
 
 #pragma once
@@ -69,6 +69,7 @@ namespace CEntityInstance {
     constexpr std::ptrdiff_t m_iszPrivateVScripts = 0x8; // CUtlSymbolLarge
     constexpr std::ptrdiff_t m_pEntity = 0x10; // CEntityIdentity*
     constexpr std::ptrdiff_t m_CScriptComponent = 0x28; // CScriptComponent*
+    constexpr std::ptrdiff_t m_bVisibleinPVS = 0x30; // bool
 }
 
 namespace CScriptComponent { // CEntityComponent
