@@ -1,6 +1,6 @@
 /*
- * Dumped With https://frezzyhook.com
- * Fri, 5 Jan 2024 00:50:06 +0000
+ * All offsets dumped with: https://frezzyhook.com
+ * Tue, 13 Feb 2024 11:28:14 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -67,6 +67,7 @@ pub mod CEntityInstance {
     pub const m_iszPrivateVScripts: usize = 0x8; // CUtlSymbolLarge
     pub const m_pEntity: usize = 0x10; // CEntityIdentity*
     pub const m_CScriptComponent: usize = 0x28; // CScriptComponent*
+    pub const m_bVisibleinPVS: usize = 0x30; // bool
 }
 
 pub mod CScriptComponent { // CEntityComponent
