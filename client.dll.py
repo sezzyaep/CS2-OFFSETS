@@ -1,6 +1,6 @@
 '''
-All offsets dumped with: https://frezzyhook.com
-Sat, 17 Feb 2024 07:52:06 +0000
+Created using https://github.com/a2x/cs2-dumper
+Wed, 28 Feb 2024 22:49:48 +0000
 '''
 
 class ActiveModelConfig_t:
@@ -288,8 +288,12 @@ class CCSPlayerController: # CBasePlayerController
     m_hOriginalControllerOfCurrentPawn = 0x808 # CHandle<CCSPlayerController>
     m_iScore = 0x80C # int32_t
     m_vecKills = 0x810 # C_NetworkUtlVectorBase<EKillTypes_t>
-    m_iMVPs = 0x828 # int32_t
-    m_bIsPlayerNameDirty = 0x82C # bool
+    m_bMvpNoMusic = 0x828 # bool
+    m_eMvpReason = 0x82C # int32_t
+    m_iMusicKitID = 0x830 # int32_t
+    m_iMusicKitMVPs = 0x834 # int32_t
+    m_iMVPs = 0x838 # int32_t
+    m_bIsPlayerNameDirty = 0x83C # bool
 
 class CCSPlayerControllerAPI:
 
@@ -1577,7 +1581,6 @@ class C_C4: # C_CSWeaponBase
     m_nSpotRules = 0x1AC0 # int32_t
     m_bPlayedArmingBeeps = 0x1AC4 # bool[7]
     m_bBombPlanted = 0x1ACB # bool
-    m_bDroppedFromDeath = 0x1ACC # bool
 
 class C_CSGOViewModel: # C_PredictedViewModel
     m_bShouldIgnoreOffsetAndAccuracy = 0xF68 # bool

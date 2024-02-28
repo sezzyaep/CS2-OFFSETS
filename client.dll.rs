@@ -1,6 +1,6 @@
 /*
- * All offsets dumped with: https://frezzyhook.com
- * Sat, 17 Feb 2024 07:52:06 +0000
+ * Created using https://github.com/a2x/cs2-dumper
+ * Wed, 28 Feb 2024 22:49:48 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -329,8 +329,12 @@ pub mod CCSPlayerController { // CBasePlayerController
     pub const m_hOriginalControllerOfCurrentPawn: usize = 0x808; // CHandle<CCSPlayerController>
     pub const m_iScore: usize = 0x80C; // int32_t
     pub const m_vecKills: usize = 0x810; // C_NetworkUtlVectorBase<EKillTypes_t>
-    pub const m_iMVPs: usize = 0x828; // int32_t
-    pub const m_bIsPlayerNameDirty: usize = 0x82C; // bool
+    pub const m_bMvpNoMusic: usize = 0x828; // bool
+    pub const m_eMvpReason: usize = 0x82C; // int32_t
+    pub const m_iMusicKitID: usize = 0x830; // int32_t
+    pub const m_iMusicKitMVPs: usize = 0x834; // int32_t
+    pub const m_iMVPs: usize = 0x838; // int32_t
+    pub const m_bIsPlayerNameDirty: usize = 0x83C; // bool
 }
 
 pub mod CCSPlayerControllerAPI {
@@ -1736,7 +1740,6 @@ pub mod C_C4 { // C_CSWeaponBase
     pub const m_nSpotRules: usize = 0x1AC0; // int32_t
     pub const m_bPlayedArmingBeeps: usize = 0x1AC4; // bool[7]
     pub const m_bBombPlanted: usize = 0x1ACB; // bool
-    pub const m_bDroppedFromDeath: usize = 0x1ACC; // bool
 }
 
 pub mod C_CSGOViewModel { // C_PredictedViewModel

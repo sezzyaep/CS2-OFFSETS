@@ -1,6 +1,6 @@
 '''
-All offsets dumped with: https://frezzyhook.com
-Sat, 17 Feb 2024 07:52:03 +0000
+Created using https://github.com/a2x/cs2-dumper
+Wed, 28 Feb 2024 22:49:47 +0000
 '''
 
 class RenderInputLayoutField_t:
