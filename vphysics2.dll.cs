@@ -1,6 +1,6 @@
 /*
- * Created using https://github.com/a2x/cs2-dumper
- * Wed, 28 Feb 2024 22:49:47 +0000
+ * Dumped With FrezzyHook.com https://frezzyhook.com
+ * Sat, 16 Mar 2024 00:26:19 +0000
  */
 
 public static class CFeIndexedJiggleBone {
