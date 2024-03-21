@@ -1,6 +1,6 @@
 /*
- * Created using https://github.com/a2x/cs2-dumper
- * Wed, 28 Feb 2024 22:49:47 +0000
+ * Dumped With FrezzyHook.com https://frezzyhook.com
+ * Thu, 21 Mar 2024 03:23:33 +0000
  */
 
 #pragma once

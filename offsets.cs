@@ -1,6 +1,6 @@
 /*
  * Dumped With FrezzyHook.com https://frezzyhook.com
- * Sat, 16 Mar 2024 00:26:21 +0000
+ * Thu, 21 Mar 2024 03:23:34 +0000
  */
 
 public static class client_dll { // client.dll
@@ -42,7 +42,7 @@ public static class engine2_dll { // engine2.dll
 }
 
 public static class game_info { // Some additional information about the game at dump time
-    public const nint buildNumber = 0x36AD; // Game build number
+    public const nint buildNumber = 0x36B0; // Game build number
 }
 
 public static class inputsystem_dll { // inputsystem.dll

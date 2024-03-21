@@ -1,6 +1,6 @@
 /*
  * Dumped With FrezzyHook.com https://frezzyhook.com
- * Sat, 16 Mar 2024 00:26:21 +0000
+ * Thu, 21 Mar 2024 03:23:34 +0000
  */
 
 #![allow(non_snake_case, non_upper_case_globals)]
@@ -44,7 +44,7 @@ pub mod engine2_dll { // engine2.dll
 }
 
 pub mod game_info { // Some additional information about the game at dump time
-    pub const buildNumber: usize = 0x36AD; // Game build number
+    pub const buildNumber: usize = 0x36B0; // Game build number
 }
 
 pub mod inputsystem_dll { // inputsystem.dll

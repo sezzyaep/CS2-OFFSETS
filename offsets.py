@@ -1,6 +1,6 @@
 '''
 Dumped With FrezzyHook.com https://frezzyhook.com
-Sat, 16 Mar 2024 00:26:21 +0000
+Thu, 21 Mar 2024 03:23:34 +0000
 '''
 
 class client_dll: # client.dll
@@ -40,7 +40,7 @@ class engine2_dll: # engine2.dll
     dwWindowWidth = 0x5CBC60
 
 class game_info: # Some additional information about the game at dump time
-    buildNumber = 0x36AD # Game build number
+    buildNumber = 0x36B0 # Game build number
 
 class inputsystem_dll: # inputsystem.dll
     dwInputSystem = 0x367A0
