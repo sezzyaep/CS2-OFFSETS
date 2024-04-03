@@ -1,10 +1,9 @@
-/*
- * Dumped With FrezzyHook.com https://frezzyhook.com
- * Thu, 21 Mar 2024 03:23:32 +0000
- */
+// Frezzyhook.com
+// 2024-04-03 01:30:07.409821200 UTC
 
-#![allow(non_snake_case, non_upper_case_globals)]
+#![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
-pub mod ChangeAccessorFieldPathIndex_t {
-    pub const m_Value: usize = 0x0; // int16_t
+pub mod cs2_dumper {
+    pub mod schemas {
+    }
 }

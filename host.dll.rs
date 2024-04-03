@@ -1,14 +1,9 @@
-/*
- * Dumped With FrezzyHook.com https://frezzyhook.com
- * Thu, 21 Mar 2024 03:23:34 +0000
- */
+// Frezzyhook.com
+// 2024-04-03 01:30:07.409821200 UTC
 
-#![allow(non_snake_case, non_upper_case_globals)]
+#![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
-pub mod CAnimScriptBase {
-    pub const m_bIsValid: usize = 0x8; // bool
-}
-
-pub mod EmptyTestScript { // CAnimScriptBase
-    pub const m_hTest: usize = 0x10; // CAnimScriptParam<float>
+pub mod cs2_dumper {
+    pub mod schemas {
+    }
 }

@@ -1,12 +1,5 @@
-/*
- * Dumped With FrezzyHook.com https://frezzyhook.com
- * Thu, 21 Mar 2024 03:23:34 +0000
- */
+// Frezzyhook.com
+// 2024-04-03 01:30:07.409821200 UTC
 
-public static class CAnimScriptBase {
-    public const nint m_bIsValid = 0x8; // bool
-}
-
-public static class EmptyTestScript { // CAnimScriptBase
-    public const nint m_hTest = 0x10; // CAnimScriptParam<float>
+namespace CS2Dumper.Schemas {
 }

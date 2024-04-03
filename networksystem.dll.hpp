@@ -1,12 +1,11 @@
-/*
- * Dumped With FrezzyHook.com https://frezzyhook.com
- * Thu, 21 Mar 2024 03:23:32 +0000
- */
+// Frezzyhook.com
+// 2024-04-03 01:30:07.409821200 UTC
 
 #pragma once
 
 #include <cstddef>
 
-namespace ChangeAccessorFieldPathIndex_t {
-    constexpr std::ptrdiff_t m_Value = 0x0; // int16_t
+namespace cs2_dumper {
+    namespace schemas {
+    }
 }
