@@ -1,5 +1,5 @@
-// Frezzyhook.com
-// 2024-04-03 01:30:07.409821200 UTC
+// Offsets are automatically updated by frezzyhook.com.
+// 2024-04-17 00:29:31.133981800 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -7,22 +7,22 @@ pub mod cs2_dumper {
     pub mod offsets {
         // Module: client.dll
         pub mod client_dll {
-            pub const dwCSGOInput: usize = 0x192A5B0;
-            pub const dwEntityList: usize = 0x18C1DB8;
-            pub const dwGameEntitySystem: usize = 0x19DF760;
+            pub const dwCSGOInput: usize = 0x192A5E0;
+            pub const dwEntityList: usize = 0x18C1DE8;
+            pub const dwGameEntitySystem: usize = 0x19DF790;
             pub const dwGameEntitySystem_getHighestEntityIndex: usize = 0x1510;
-            pub const dwGameRules: usize = 0x191EC70;
+            pub const dwGameRules: usize = 0x191ECA0;
             pub const dwGlobalVars: usize = 0x1729BA0;
-            pub const dwGlowManager: usize = 0x191F090;
-            pub const dwLocalPlayerController: usize = 0x1911578;
+            pub const dwGlowManager: usize = 0x191F0C0;
+            pub const dwLocalPlayerController: usize = 0x19115A8;
             pub const dwLocalPlayerPawn: usize = 0x17361E8;
-            pub const dwPlantedC4: usize = 0x1927A68;
+            pub const dwPlantedC4: usize = 0x1927A98;
             pub const dwPrediction: usize = 0x17360B0;
-            pub const dwSensitivity: usize = 0x191F9B8;
+            pub const dwSensitivity: usize = 0x191F9E8;
             pub const dwSensitivity_sensitivity: usize = 0x40;
-            pub const dwViewAngles: usize = 0x192F940;
-            pub const dwViewMatrix: usize = 0x19231B0;
-            pub const dwViewRender: usize = 0x19239B0;
+            pub const dwViewAngles: usize = 0x192F970;
+            pub const dwViewMatrix: usize = 0x19231E0;
+            pub const dwViewRender: usize = 0x19239E0;
         }
         // Module: engine2.dll
         pub mod engine2_dll {

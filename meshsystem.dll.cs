@@ -1,5 +1,5 @@
-// Frezzyhook.com
-// 2024-04-03 01:30:07.409821200 UTC
+// Offsets are automatically updated by frezzyhook.com.
+// 2024-04-17 00:29:31.133981800 UTC
 
-namespace CS2Dumper.Schemas {
+namespace FrezzyHook.Schemas {
 }
