@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-17 00:29:31.133981800 UTC
+// 2024-04-23 01:09:05.541908700 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: resourcesystem.dll
@@ -182,8 +182,8 @@ namespace FrezzyHook.Schemas {
         // Parent: None
         // Fields count: 2
         public static class AABB_t {
-            public const nint m_vMinBounds = 0x0; // Vector
-            public const nint m_vMaxBounds = 0xC; // Vector
+            public const nint m_vMinBounds = 0x0; // 
+            public const nint m_vMaxBounds = 0xC; // 
         }
         // Parent: None
         // Fields count: 0

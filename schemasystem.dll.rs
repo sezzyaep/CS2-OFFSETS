@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-17 00:29:31.133981800 UTC
+// 2024-04-23 01:09:05.541908700 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -114,7 +114,7 @@ pub mod cs2_dumper {
             // Fields count: 22
             pub mod CSchemaSystemInternalRegistration {
                 pub const m_Vector2D: usize = 0x0; // Vector2D
-                pub const m_Vector: usize = 0x8; // Vector
+                pub const m_Vector: usize = 0x8; // 
                 pub const m_VectorAligned: usize = 0x20; // VectorAligned
                 pub const m_Quaternion: usize = 0x30; // Quaternion
                 pub const m_QAngle: usize = 0x40; // QAngle
@@ -122,7 +122,7 @@ pub mod cs2_dumper {
                 pub const m_RadianEuler: usize = 0x58; // RadianEuler
                 pub const m_DegreeEuler: usize = 0x64; // DegreeEuler
                 pub const m_QuaternionStorage: usize = 0x70; // QuaternionStorage
-                pub const m_matrix3x4_t: usize = 0x80; // 
+                pub const m_matrix3x4_t: usize = 0x80; // matrix3x4_t
                 pub const m_matrix3x4a_t: usize = 0xB0; // matrix3x4a_t
                 pub const m_Color: usize = 0xE0; // Color
                 pub const m_Vector4D: usize = 0xE4; // Vector4D

@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-17 00:29:31.133981800 UTC
+// 2024-04-23 01:09:05.541908700 UTC
 
 #pragma once
 
@@ -114,7 +114,7 @@ namespace cs2_dumper {
             // Fields count: 22
             namespace CSchemaSystemInternalRegistration {
                 constexpr std::ptrdiff_t m_Vector2D = 0x0; // Vector2D
-                constexpr std::ptrdiff_t m_Vector = 0x8; // Vector
+                constexpr std::ptrdiff_t m_Vector = 0x8; // 
                 constexpr std::ptrdiff_t m_VectorAligned = 0x20; // VectorAligned
                 constexpr std::ptrdiff_t m_Quaternion = 0x30; // Quaternion
                 constexpr std::ptrdiff_t m_QAngle = 0x40; // QAngle
@@ -122,7 +122,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_RadianEuler = 0x58; // RadianEuler
                 constexpr std::ptrdiff_t m_DegreeEuler = 0x64; // DegreeEuler
                 constexpr std::ptrdiff_t m_QuaternionStorage = 0x70; // QuaternionStorage
-                constexpr std::ptrdiff_t m_matrix3x4_t = 0x80; // 
+                constexpr std::ptrdiff_t m_matrix3x4_t = 0x80; // matrix3x4_t
                 constexpr std::ptrdiff_t m_matrix3x4a_t = 0xB0; // matrix3x4a_t
                 constexpr std::ptrdiff_t m_Color = 0xE0; // Color
                 constexpr std::ptrdiff_t m_Vector4D = 0xE4; // Vector4D
