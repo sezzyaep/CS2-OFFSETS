@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #pragma once
 
@@ -1666,8 +1666,8 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bPlayingUninterruptableAct = 0xE98; // bool
                 constexpr std::ptrdiff_t m_nUninterruptableActivity = 0xE9C; // PlayerAnimEvent_t
                 constexpr std::ptrdiff_t m_bRestorePrevWep = 0xEA0; // bool
-                constexpr std::ptrdiff_t m_hWeaponBeforePrevious = 0xEA4; // CHandle<CBasePlayerWeapon>
-                constexpr std::ptrdiff_t m_hWeaponPrevious = 0xEA8; // CHandle<CBasePlayerWeapon>
+                constexpr std::ptrdiff_t m_hWeaponBeforePrevious = 0xEA4; // 
+                constexpr std::ptrdiff_t m_hWeaponPrevious = 0xEA8; // 
                 constexpr std::ptrdiff_t m_bDelayedHardPunchIncoming = 0xEAC; // bool
                 constexpr std::ptrdiff_t m_bDestroyAfterTaunt = 0xEAD; // bool
             }
@@ -2863,7 +2863,7 @@ namespace cs2_dumper {
             // Fields count: 4
             namespace CFilterMultiple {
                 constexpr std::ptrdiff_t m_nFilterType = 0x518; // filter_t
-                constexpr std::ptrdiff_t m_iFilterName = 0x520; // CUtlSymbolLarge[10]
+                constexpr std::ptrdiff_t m_iFilterName = 0x520; // 
                 constexpr std::ptrdiff_t m_hFilter = 0x570; // CHandle<CBaseEntity>[10]
                 constexpr std::ptrdiff_t m_nFilterCount = 0x598; // int32
             }
@@ -3310,7 +3310,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nViewModelIndex = 0x8FC; // uint32
                 constexpr std::ptrdiff_t m_nAnimationParity = 0x900; // uint32
                 constexpr std::ptrdiff_t m_flAnimationStartTime = 0x904; // float32
-                constexpr std::ptrdiff_t m_hWeapon = 0x908; // CHandle<CBasePlayerWeapon>
+                constexpr std::ptrdiff_t m_hWeapon = 0x908; // 
                 constexpr std::ptrdiff_t m_sVMName = 0x910; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_sAnimationPrefix = 0x918; // CUtlSymbolLarge
                 constexpr std::ptrdiff_t m_hOldLayerSequence = 0x920; // HSequence
@@ -6780,8 +6780,8 @@ namespace cs2_dumper {
             // NetworkVarNames: m_hostageRescueZ (int)
             // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
             namespace CCSPlayerResource {
-                constexpr std::ptrdiff_t m_bHostageAlive = 0x4C0; // bool[12]
-                constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x4CC; // bool[12]
+                constexpr std::ptrdiff_t m_bHostageAlive = 0x4C0; // 
+                constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x4CC; // 
                 constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x4D8; // CEntityIndex[12]
                 constexpr std::ptrdiff_t m_bombsiteCenterA = 0x508; // 
                 constexpr std::ptrdiff_t m_bombsiteCenterB = 0x514; // 
@@ -6801,8 +6801,8 @@ namespace cs2_dumper {
             // NetworkVarNames: m_iAmmo (uint16)
             namespace CPlayer_WeaponServices {
                 constexpr std::ptrdiff_t m_hMyWeapons = 0x40; // CNetworkUtlVectorBase<CHandle<CBasePlayerWeapon>>
-                constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // CHandle<CBasePlayerWeapon>
-                constexpr std::ptrdiff_t m_hLastWeapon = 0x5C; // CHandle<CBasePlayerWeapon>
+                constexpr std::ptrdiff_t m_hActiveWeapon = 0x58; // 
+                constexpr std::ptrdiff_t m_hLastWeapon = 0x5C; // 
                 constexpr std::ptrdiff_t m_iAmmo = 0x60; // uint16[32]
                 constexpr std::ptrdiff_t m_bPreventWeaponPickup = 0xA0; // bool
             }
@@ -7651,7 +7651,7 @@ namespace cs2_dumper {
             // NetworkVarNames: m_weaponPurchasesThisMatch (WeaponPurchaseTracker_t)
             // NetworkVarNames: m_weaponPurchasesThisRound (WeaponPurchaseTracker_t)
             namespace CCSPlayer_ActionTrackingServices {
-                constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x208; // CHandle<CBasePlayerWeapon>
+                constexpr std::ptrdiff_t m_hLastWeaponBeforeC4AutoSwitch = 0x208; // 
                 constexpr std::ptrdiff_t m_bIsRescuing = 0x23C; // bool
                 constexpr std::ptrdiff_t m_weaponPurchasesThisMatch = 0x240; // WeaponPurchaseTracker_t
                 constexpr std::ptrdiff_t m_weaponPurchasesThisRound = 0x298; // WeaponPurchaseTracker_t
@@ -7989,7 +7989,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_hConstraintParent = 0x8B8; // CEntityHandle
                 constexpr std::ptrdiff_t m_bForceNpcExclude = 0x8BC; // bool
                 constexpr std::ptrdiff_t m_sGlowEntity = 0x8C0; // CUtlSymbolLarge
-                constexpr std::ptrdiff_t m_glowEntity = 0x8C8; // 
+                constexpr std::ptrdiff_t m_glowEntity = 0x8C8; // CHandle<CBaseModelEntity>
                 constexpr std::ptrdiff_t m_usable = 0x8CC; // bool
                 constexpr std::ptrdiff_t m_szDisplayText = 0x8D0; // CUtlSymbolLarge
             }
@@ -9082,7 +9082,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flNextAttack = 0xA8; // GameTime_t
                 constexpr std::ptrdiff_t m_bIsLookingAtWeapon = 0xAC; // bool
                 constexpr std::ptrdiff_t m_bIsHoldingLookAtWeapon = 0xAD; // bool
-                constexpr std::ptrdiff_t m_hSavedWeapon = 0xB0; // CHandle<CBasePlayerWeapon>
+                constexpr std::ptrdiff_t m_hSavedWeapon = 0xB0; // 
                 constexpr std::ptrdiff_t m_nTimeToMelee = 0xB4; // int32
                 constexpr std::ptrdiff_t m_nTimeToSecondary = 0xB8; // int32
                 constexpr std::ptrdiff_t m_nTimeToPrimary = 0xBC; // int32
@@ -9499,7 +9499,7 @@ namespace cs2_dumper {
             // NetworkVarNames: m_iDesiredOverlay (int32)
             // NetworkVarNames: m_bIsActive (bool)
             namespace CEnvScreenOverlay {
-                constexpr std::ptrdiff_t m_iszOverlayNames = 0x4C0; // CUtlSymbolLarge[10]
+                constexpr std::ptrdiff_t m_iszOverlayNames = 0x4C0; // 
                 constexpr std::ptrdiff_t m_flOverlayTimes = 0x510; // float32[10]
                 constexpr std::ptrdiff_t m_flStartTime = 0x538; // GameTime_t
                 constexpr std::ptrdiff_t m_iDesiredOverlay = 0x53C; // int32

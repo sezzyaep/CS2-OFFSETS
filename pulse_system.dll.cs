@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: pulse_system.dll
@@ -554,7 +554,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_nDestInstruction = 0x18; // int32
             public const nint m_nCallInfoIndex = 0x1C; // PulseRuntimeCallInfoIndex_t
             public const nint m_nConstIdx = 0x20; // PulseRuntimeConstantIndex_t
-            public const nint m_DomainValue = 0x28; // CBufferString
+            public const nint m_DomainValue = 0x28; // 
         }
         // Parent: None
         // Fields count: 5

@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -922,8 +922,8 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_hostageRescueZ (int)
             // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
             pub mod C_CSPlayerResource {
-                pub const m_bHostageAlive: usize = 0x550; // bool[12]
-                pub const m_isHostageFollowingSomeone: usize = 0x55C; // bool[12]
+                pub const m_bHostageAlive: usize = 0x550; // 
+                pub const m_isHostageFollowingSomeone: usize = 0x55C; // 
                 pub const m_iHostageEntityIDs: usize = 0x568; // CEntityIndex[12]
                 pub const m_bombsiteCenterA: usize = 0x598; // 
                 pub const m_bombsiteCenterB: usize = 0x5A4; // 
@@ -5815,7 +5815,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_iDesiredOverlay (int32)
             // NetworkVarNames: m_bIsActive (bool)
             pub mod C_EnvScreenOverlay {
-                pub const m_iszOverlayNames: usize = 0x550; // CUtlSymbolLarge[10]
+                pub const m_iszOverlayNames: usize = 0x550; // 
                 pub const m_flOverlayTimes: usize = 0x5A0; // float32[10]
                 pub const m_flStartTime: usize = 0x5C8; // GameTime_t
                 pub const m_iDesiredOverlay: usize = 0x5CC; // int32

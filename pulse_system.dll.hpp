@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #pragma once
 
@@ -559,7 +559,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nDestInstruction = 0x18; // int32
                 constexpr std::ptrdiff_t m_nCallInfoIndex = 0x1C; // PulseRuntimeCallInfoIndex_t
                 constexpr std::ptrdiff_t m_nConstIdx = 0x20; // PulseRuntimeConstantIndex_t
-                constexpr std::ptrdiff_t m_DomainValue = 0x28; // CBufferString
+                constexpr std::ptrdiff_t m_DomainValue = 0x28; // 
             }
             // Parent: None
             // Fields count: 5

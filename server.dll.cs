@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: server.dll
@@ -1661,8 +1661,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_bPlayingUninterruptableAct = 0xE98; // bool
             public const nint m_nUninterruptableActivity = 0xE9C; // PlayerAnimEvent_t
             public const nint m_bRestorePrevWep = 0xEA0; // bool
-            public const nint m_hWeaponBeforePrevious = 0xEA4; // CHandle<CBasePlayerWeapon>
-            public const nint m_hWeaponPrevious = 0xEA8; // CHandle<CBasePlayerWeapon>
+            public const nint m_hWeaponBeforePrevious = 0xEA4; // 
+            public const nint m_hWeaponPrevious = 0xEA8; // 
             public const nint m_bDelayedHardPunchIncoming = 0xEAC; // bool
             public const nint m_bDestroyAfterTaunt = 0xEAD; // bool
         }
@@ -2858,7 +2858,7 @@ namespace FrezzyHook.Schemas {
         // Fields count: 4
         public static class CFilterMultiple {
             public const nint m_nFilterType = 0x518; // filter_t
-            public const nint m_iFilterName = 0x520; // CUtlSymbolLarge[10]
+            public const nint m_iFilterName = 0x520; // 
             public const nint m_hFilter = 0x570; // CHandle<CBaseEntity>[10]
             public const nint m_nFilterCount = 0x598; // int32
         }
@@ -3305,7 +3305,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_nViewModelIndex = 0x8FC; // uint32
             public const nint m_nAnimationParity = 0x900; // uint32
             public const nint m_flAnimationStartTime = 0x904; // float32
-            public const nint m_hWeapon = 0x908; // CHandle<CBasePlayerWeapon>
+            public const nint m_hWeapon = 0x908; // 
             public const nint m_sVMName = 0x910; // CUtlSymbolLarge
             public const nint m_sAnimationPrefix = 0x918; // CUtlSymbolLarge
             public const nint m_hOldLayerSequence = 0x920; // HSequence
@@ -6775,8 +6775,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_hostageRescueZ (int)
         // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
         public static class CCSPlayerResource {
-            public const nint m_bHostageAlive = 0x4C0; // bool[12]
-            public const nint m_isHostageFollowingSomeone = 0x4CC; // bool[12]
+            public const nint m_bHostageAlive = 0x4C0; // 
+            public const nint m_isHostageFollowingSomeone = 0x4CC; // 
             public const nint m_iHostageEntityIDs = 0x4D8; // CEntityIndex[12]
             public const nint m_bombsiteCenterA = 0x508; // 
             public const nint m_bombsiteCenterB = 0x514; // 
@@ -6796,8 +6796,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_iAmmo (uint16)
         public static class CPlayer_WeaponServices {
             public const nint m_hMyWeapons = 0x40; // CNetworkUtlVectorBase<CHandle<CBasePlayerWeapon>>
-            public const nint m_hActiveWeapon = 0x58; // CHandle<CBasePlayerWeapon>
-            public const nint m_hLastWeapon = 0x5C; // CHandle<CBasePlayerWeapon>
+            public const nint m_hActiveWeapon = 0x58; // 
+            public const nint m_hLastWeapon = 0x5C; // 
             public const nint m_iAmmo = 0x60; // uint16[32]
             public const nint m_bPreventWeaponPickup = 0xA0; // bool
         }
@@ -7646,7 +7646,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_weaponPurchasesThisMatch (WeaponPurchaseTracker_t)
         // NetworkVarNames: m_weaponPurchasesThisRound (WeaponPurchaseTracker_t)
         public static class CCSPlayer_ActionTrackingServices {
-            public const nint m_hLastWeaponBeforeC4AutoSwitch = 0x208; // CHandle<CBasePlayerWeapon>
+            public const nint m_hLastWeaponBeforeC4AutoSwitch = 0x208; // 
             public const nint m_bIsRescuing = 0x23C; // bool
             public const nint m_weaponPurchasesThisMatch = 0x240; // WeaponPurchaseTracker_t
             public const nint m_weaponPurchasesThisRound = 0x298; // WeaponPurchaseTracker_t
@@ -7984,7 +7984,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_hConstraintParent = 0x8B8; // CEntityHandle
             public const nint m_bForceNpcExclude = 0x8BC; // bool
             public const nint m_sGlowEntity = 0x8C0; // CUtlSymbolLarge
-            public const nint m_glowEntity = 0x8C8; // 
+            public const nint m_glowEntity = 0x8C8; // CHandle<CBaseModelEntity>
             public const nint m_usable = 0x8CC; // bool
             public const nint m_szDisplayText = 0x8D0; // CUtlSymbolLarge
         }
@@ -9077,7 +9077,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flNextAttack = 0xA8; // GameTime_t
             public const nint m_bIsLookingAtWeapon = 0xAC; // bool
             public const nint m_bIsHoldingLookAtWeapon = 0xAD; // bool
-            public const nint m_hSavedWeapon = 0xB0; // CHandle<CBasePlayerWeapon>
+            public const nint m_hSavedWeapon = 0xB0; // 
             public const nint m_nTimeToMelee = 0xB4; // int32
             public const nint m_nTimeToSecondary = 0xB8; // int32
             public const nint m_nTimeToPrimary = 0xBC; // int32
@@ -9494,7 +9494,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_iDesiredOverlay (int32)
         // NetworkVarNames: m_bIsActive (bool)
         public static class CEnvScreenOverlay {
-            public const nint m_iszOverlayNames = 0x4C0; // CUtlSymbolLarge[10]
+            public const nint m_iszOverlayNames = 0x4C0; // 
             public const nint m_flOverlayTimes = 0x510; // float32[10]
             public const nint m_flStartTime = 0x538; // GameTime_t
             public const nint m_iDesiredOverlay = 0x53C; // int32

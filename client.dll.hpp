@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #pragma once
 
@@ -917,8 +917,8 @@ namespace cs2_dumper {
             // NetworkVarNames: m_hostageRescueZ (int)
             // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
             namespace C_CSPlayerResource {
-                constexpr std::ptrdiff_t m_bHostageAlive = 0x550; // bool[12]
-                constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x55C; // bool[12]
+                constexpr std::ptrdiff_t m_bHostageAlive = 0x550; // 
+                constexpr std::ptrdiff_t m_isHostageFollowingSomeone = 0x55C; // 
                 constexpr std::ptrdiff_t m_iHostageEntityIDs = 0x568; // CEntityIndex[12]
                 constexpr std::ptrdiff_t m_bombsiteCenterA = 0x598; // 
                 constexpr std::ptrdiff_t m_bombsiteCenterB = 0x5A4; // 
@@ -5810,7 +5810,7 @@ namespace cs2_dumper {
             // NetworkVarNames: m_iDesiredOverlay (int32)
             // NetworkVarNames: m_bIsActive (bool)
             namespace C_EnvScreenOverlay {
-                constexpr std::ptrdiff_t m_iszOverlayNames = 0x550; // CUtlSymbolLarge[10]
+                constexpr std::ptrdiff_t m_iszOverlayNames = 0x550; // 
                 constexpr std::ptrdiff_t m_flOverlayTimes = 0x5A0; // float32[10]
                 constexpr std::ptrdiff_t m_flStartTime = 0x5C8; // GameTime_t
                 constexpr std::ptrdiff_t m_iDesiredOverlay = 0x5CC; // int32

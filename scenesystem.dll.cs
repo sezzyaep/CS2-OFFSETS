@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: scenesystem.dll
@@ -62,7 +62,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_LayerBase {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
             public const nint m_nLayerIndex = 0x18; // int32
             public const nint m_nLayerId = 0x20; // uint64
@@ -82,7 +82,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_ViewTargetList {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
             public const nint m_Targets = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
         }
@@ -92,7 +92,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_ViewRender {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
         }
         // Parent: None

@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: client.dll
@@ -912,8 +912,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_hostageRescueZ (int)
         // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
         public static class C_CSPlayerResource {
-            public const nint m_bHostageAlive = 0x550; // bool[12]
-            public const nint m_isHostageFollowingSomeone = 0x55C; // bool[12]
+            public const nint m_bHostageAlive = 0x550; // 
+            public const nint m_isHostageFollowingSomeone = 0x55C; // 
             public const nint m_iHostageEntityIDs = 0x568; // CEntityIndex[12]
             public const nint m_bombsiteCenterA = 0x598; // 
             public const nint m_bombsiteCenterB = 0x5A4; // 
@@ -5805,7 +5805,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_iDesiredOverlay (int32)
         // NetworkVarNames: m_bIsActive (bool)
         public static class C_EnvScreenOverlay {
-            public const nint m_iszOverlayNames = 0x550; // CUtlSymbolLarge[10]
+            public const nint m_iszOverlayNames = 0x550; // 
             public const nint m_flOverlayTimes = 0x5A0; // float32[10]
             public const nint m_flStartTime = 0x5C8; // GameTime_t
             public const nint m_iDesiredOverlay = 0x5CC; // int32

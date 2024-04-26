@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -474,7 +474,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CSoundEventMetaData {
-                pub const m_soundEventVMix: usize = 0x0; // 
+                pub const m_soundEventVMix: usize = 0x0; // CStrongHandle<InfoForResourceTypeCVMixListResource>
             }
             // Parent: None
             // Fields count: 4

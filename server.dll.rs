@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -1790,8 +1790,8 @@ pub mod cs2_dumper {
                 pub const m_bPlayingUninterruptableAct: usize = 0xE98; // bool
                 pub const m_nUninterruptableActivity: usize = 0xE9C; // PlayerAnimEvent_t
                 pub const m_bRestorePrevWep: usize = 0xEA0; // bool
-                pub const m_hWeaponBeforePrevious: usize = 0xEA4; // CHandle<CBasePlayerWeapon>
-                pub const m_hWeaponPrevious: usize = 0xEA8; // CHandle<CBasePlayerWeapon>
+                pub const m_hWeaponBeforePrevious: usize = 0xEA4; // 
+                pub const m_hWeaponPrevious: usize = 0xEA8; // 
                 pub const m_bDelayedHardPunchIncoming: usize = 0xEAC; // bool
                 pub const m_bDestroyAfterTaunt: usize = 0xEAD; // bool
             }
@@ -2987,7 +2987,7 @@ pub mod cs2_dumper {
             // Fields count: 4
             pub mod CFilterMultiple {
                 pub const m_nFilterType: usize = 0x518; // filter_t
-                pub const m_iFilterName: usize = 0x520; // CUtlSymbolLarge[10]
+                pub const m_iFilterName: usize = 0x520; // 
                 pub const m_hFilter: usize = 0x570; // CHandle<CBaseEntity>[10]
                 pub const m_nFilterCount: usize = 0x598; // int32
             }
@@ -3434,7 +3434,7 @@ pub mod cs2_dumper {
                 pub const m_nViewModelIndex: usize = 0x8FC; // uint32
                 pub const m_nAnimationParity: usize = 0x900; // uint32
                 pub const m_flAnimationStartTime: usize = 0x904; // float32
-                pub const m_hWeapon: usize = 0x908; // CHandle<CBasePlayerWeapon>
+                pub const m_hWeapon: usize = 0x908; // 
                 pub const m_sVMName: usize = 0x910; // CUtlSymbolLarge
                 pub const m_sAnimationPrefix: usize = 0x918; // CUtlSymbolLarge
                 pub const m_hOldLayerSequence: usize = 0x920; // HSequence
@@ -6904,8 +6904,8 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_hostageRescueZ (int)
             // NetworkVarNames: m_bEndMatchNextMapAllVoted (bool)
             pub mod CCSPlayerResource {
-                pub const m_bHostageAlive: usize = 0x4C0; // bool[12]
-                pub const m_isHostageFollowingSomeone: usize = 0x4CC; // bool[12]
+                pub const m_bHostageAlive: usize = 0x4C0; // 
+                pub const m_isHostageFollowingSomeone: usize = 0x4CC; // 
                 pub const m_iHostageEntityIDs: usize = 0x4D8; // CEntityIndex[12]
                 pub const m_bombsiteCenterA: usize = 0x508; // 
                 pub const m_bombsiteCenterB: usize = 0x514; // 
@@ -6925,8 +6925,8 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_iAmmo (uint16)
             pub mod CPlayer_WeaponServices {
                 pub const m_hMyWeapons: usize = 0x40; // CNetworkUtlVectorBase<CHandle<CBasePlayerWeapon>>
-                pub const m_hActiveWeapon: usize = 0x58; // CHandle<CBasePlayerWeapon>
-                pub const m_hLastWeapon: usize = 0x5C; // CHandle<CBasePlayerWeapon>
+                pub const m_hActiveWeapon: usize = 0x58; // 
+                pub const m_hLastWeapon: usize = 0x5C; // 
                 pub const m_iAmmo: usize = 0x60; // uint16[32]
                 pub const m_bPreventWeaponPickup: usize = 0xA0; // bool
             }
@@ -7775,7 +7775,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_weaponPurchasesThisMatch (WeaponPurchaseTracker_t)
             // NetworkVarNames: m_weaponPurchasesThisRound (WeaponPurchaseTracker_t)
             pub mod CCSPlayer_ActionTrackingServices {
-                pub const m_hLastWeaponBeforeC4AutoSwitch: usize = 0x208; // CHandle<CBasePlayerWeapon>
+                pub const m_hLastWeaponBeforeC4AutoSwitch: usize = 0x208; // 
                 pub const m_bIsRescuing: usize = 0x23C; // bool
                 pub const m_weaponPurchasesThisMatch: usize = 0x240; // WeaponPurchaseTracker_t
                 pub const m_weaponPurchasesThisRound: usize = 0x298; // WeaponPurchaseTracker_t
@@ -8113,7 +8113,7 @@ pub mod cs2_dumper {
                 pub const m_hConstraintParent: usize = 0x8B8; // CEntityHandle
                 pub const m_bForceNpcExclude: usize = 0x8BC; // bool
                 pub const m_sGlowEntity: usize = 0x8C0; // CUtlSymbolLarge
-                pub const m_glowEntity: usize = 0x8C8; // 
+                pub const m_glowEntity: usize = 0x8C8; // CHandle<CBaseModelEntity>
                 pub const m_usable: usize = 0x8CC; // bool
                 pub const m_szDisplayText: usize = 0x8D0; // CUtlSymbolLarge
             }
@@ -9206,7 +9206,7 @@ pub mod cs2_dumper {
                 pub const m_flNextAttack: usize = 0xA8; // GameTime_t
                 pub const m_bIsLookingAtWeapon: usize = 0xAC; // bool
                 pub const m_bIsHoldingLookAtWeapon: usize = 0xAD; // bool
-                pub const m_hSavedWeapon: usize = 0xB0; // CHandle<CBasePlayerWeapon>
+                pub const m_hSavedWeapon: usize = 0xB0; // 
                 pub const m_nTimeToMelee: usize = 0xB4; // int32
                 pub const m_nTimeToSecondary: usize = 0xB8; // int32
                 pub const m_nTimeToPrimary: usize = 0xBC; // int32
@@ -9623,7 +9623,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_iDesiredOverlay (int32)
             // NetworkVarNames: m_bIsActive (bool)
             pub mod CEnvScreenOverlay {
-                pub const m_iszOverlayNames: usize = 0x4C0; // CUtlSymbolLarge[10]
+                pub const m_iszOverlayNames: usize = 0x4C0; // 
                 pub const m_flOverlayTimes: usize = 0x510; // float32[10]
                 pub const m_flStartTime: usize = 0x538; // GameTime_t
                 pub const m_iDesiredOverlay: usize = 0x53C; // int32

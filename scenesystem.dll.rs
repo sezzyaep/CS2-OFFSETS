@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -66,7 +66,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CSSDSMsg_LayerBase {
-                pub const m_viewId: usize = 0x0; // 
+                pub const m_viewId: usize = 0x0; // SceneViewId_t
                 pub const m_ViewName: usize = 0x10; // CUtlString
                 pub const m_nLayerIndex: usize = 0x18; // int32
                 pub const m_nLayerId: usize = 0x20; // uint64
@@ -86,7 +86,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CSSDSMsg_ViewTargetList {
-                pub const m_viewId: usize = 0x0; // 
+                pub const m_viewId: usize = 0x0; // SceneViewId_t
                 pub const m_ViewName: usize = 0x10; // CUtlString
                 pub const m_Targets: usize = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
             }
@@ -96,7 +96,7 @@ pub mod cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             pub mod CSSDSMsg_ViewRender {
-                pub const m_viewId: usize = 0x0; // 
+                pub const m_viewId: usize = 0x0; // SceneViewId_t
                 pub const m_ViewName: usize = 0x10; // CUtlString
             }
             // Parent: None

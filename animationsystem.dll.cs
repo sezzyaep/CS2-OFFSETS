@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 01:08:49.976978 UTC
+// 2024-04-26 23:45:54.202960600 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: animationsystem.dll
@@ -803,7 +803,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqBoneMaskList {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_nLocalBoneArray = 0x10; // CUtlVector<int16>
             public const nint m_flBoneWeightArray = 0x28; // CUtlVector<float32>
             public const nint m_flDefaultMorphCtrlWeight = 0x40; // float32
@@ -815,7 +815,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimEncodedFrames {
-            public const nint m_fileName = 0x0; // CBufferString
+            public const nint m_fileName = 0x0; // 
             public const nint m_nFrames = 0x10; // int32
             public const nint m_nFramesPerBlock = 0x14; // int32
             public const nint m_frameblockArray = 0x18; // CUtlVector<CAnimFrameBlockAnim>
@@ -878,7 +878,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimActivity {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_nActivity = 0x10; // int32
             public const nint m_nFlags = 0x14; // int32
             public const nint m_nWeight = 0x18; // int32
@@ -1302,9 +1302,9 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqPoseSetting {
-            public const nint m_sPoseParameter = 0x0; // CBufferString
-            public const nint m_sAttachment = 0x10; // CBufferString
-            public const nint m_sReferenceSequence = 0x20; // CBufferString
+            public const nint m_sPoseParameter = 0x0; // 
+            public const nint m_sAttachment = 0x10; // 
+            public const nint m_sReferenceSequence = 0x20; // 
             public const nint m_flValue = 0x30; // float32
             public const nint m_bX = 0x34; // bool
             public const nint m_bY = 0x35; // bool
@@ -1532,8 +1532,8 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimBoneDifference {
-            public const nint m_name = 0x0; // CBufferString
-            public const nint m_parent = 0x10; // CBufferString
+            public const nint m_name = 0x0; // 
+            public const nint m_parent = 0x10; // 
             public const nint m_posError = 0x20; // 
             public const nint m_bHasRotation = 0x2C; // bool
             public const nint m_bHasMovement = 0x2D; // bool
@@ -1852,7 +1852,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_blendTimes = 0x88; // CUtlVector<float32>
             public const nint m_choiceMethod = 0xA0; // ChoiceMethod
             public const nint m_choiceChangeMethod = 0xA4; // ChoiceChangeMethod
-            public const nint m_blendMethod = 0xA8; // 
+            public const nint m_blendMethod = 0xA8; // ChoiceBlendMethod
             public const nint m_blendTime = 0xAC; // float32
             public const nint m_bCrossFade = 0xB0; // bool
             public const nint m_bResetChosen = 0xB1; // bool
@@ -1998,7 +1998,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimUser {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_nType = 0x10; // int32
         }
         // Parent: CAnimComponentUpdater
@@ -2038,7 +2038,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqSynthAnimDesc {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_flags = 0x10; // CSeqSeqDescFlag
             public const nint m_transition = 0x1C; // CSeqTransition
             public const nint m_nLocalBaseReference = 0x24; // int16
@@ -2316,7 +2316,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqPoseParamDesc {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_flStart = 0x10; // float32
             public const nint m_flEnd = 0x14; // float32
             public const nint m_flLoop = 0x18; // float32
@@ -2514,12 +2514,12 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimDataChannelDesc {
-            public const nint m_szChannelClass = 0x0; // CBufferString
-            public const nint m_szVariableName = 0x10; // CBufferString
+            public const nint m_szChannelClass = 0x0; // 
+            public const nint m_szVariableName = 0x10; // 
             public const nint m_nFlags = 0x20; // int32
             public const nint m_nType = 0x24; // int32
-            public const nint m_szGrouping = 0x28; // CBufferString
-            public const nint m_szDescription = 0x38; // CBufferString
+            public const nint m_szGrouping = 0x28; // 
+            public const nint m_szDescription = 0x38; // 
             public const nint m_szElementNameArray = 0x48; // CUtlVector<CBufferString>
             public const nint m_nElementIndexArray = 0x60; // CUtlVector<int32>
             public const nint m_nElementMaskArray = 0x78; // CUtlVector<uint32>
@@ -2595,8 +2595,8 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimLocalHierarchy {
-            public const nint m_sBone = 0x0; // CBufferString
-            public const nint m_sNewParent = 0x10; // CBufferString
+            public const nint m_sBone = 0x0; // 
+            public const nint m_sNewParent = 0x10; // 
             public const nint m_nStartFrame = 0x20; // int32
             public const nint m_nPeakFrame = 0x24; // int32
             public const nint m_nTailFrame = 0x28; // int32
@@ -2673,7 +2673,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSequenceGroupData {
-            public const nint m_sName = 0x10; // CBufferString
+            public const nint m_sName = 0x10; // 
             public const nint m_nFlags = 0x20; // uint32
             public const nint m_localSequenceNameArray = 0x28; // CUtlVector<CBufferString>
             public const nint m_localS1SeqDescArray = 0x40; // CUtlVector<CSeqS1SeqDesc>
@@ -2683,7 +2683,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_localBoneMaskArray = 0xA0; // CUtlVector<CSeqBoneMaskList>
             public const nint m_localScaleSetArray = 0xB8; // CUtlVector<CSeqScaleSet>
             public const nint m_localBoneNameArray = 0xD0; // CUtlVector<CBufferString>
-            public const nint m_localNodeName = 0xE8; // CBufferString
+            public const nint m_localNodeName = 0xE8; // 
             public const nint m_localPoseParamArray = 0xF8; // CUtlVector<CSeqPoseParamDesc>
             public const nint m_keyValues = 0x110; // KeyValues3
             public const nint m_localIKAutoplayLockArray = 0x120; // CUtlVector<CSeqIKLock>
@@ -2747,7 +2747,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_nFrame = 0x8; // int32
             public const nint m_flCycle = 0xC; // float32
             public const nint m_EventData = 0x10; // KeyValues3
-            public const nint m_sLegacyOptions = 0x20; // CBufferString
+            public const nint m_sLegacyOptions = 0x20; // 
             public const nint m_sEventName = 0x30; // CGlobalSymbol
         }
         // Parent: None
@@ -2814,7 +2814,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimBone {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_parent = 0x10; // int32
             public const nint m_pos = 0x14; // 
             public const nint m_quat = 0x20; // QuaternionStorage
@@ -3043,7 +3043,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimDecoder {
-            public const nint m_szName = 0x0; // CBufferString
+            public const nint m_szName = 0x0; // 
             public const nint m_nVersion = 0x10; // int32
             public const nint m_nType = 0x14; // int32
         }
@@ -3368,7 +3368,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimUserDifference {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_nType = 0x10; // int32
         }
         // Parent: None
@@ -3454,7 +3454,7 @@ namespace FrezzyHook.Schemas {
         // MGetKV3ClassDefaults
         public static class CAnimationGroup {
             public const nint m_nFlags = 0x10; // uint32
-            public const nint m_name = 0x18; // CBufferString
+            public const nint m_name = 0x18; // 
             public const nint m_localHAnimArray_Handle = 0x60; // CUtlVector<CStrongHandle<InfoForResourceTypeCAnimData>>
             public const nint m_includedGroupArray_Handle = 0x78; // CUtlVector<CStrongHandle<InfoForResourceTypeCAnimationGroup>>
             public const nint m_directHSeqGroup_Handle = 0x90; // CStrongHandle<InfoForResourceTypeCSequenceGroupData>
@@ -3577,7 +3577,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqS1SeqDesc {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_flags = 0x10; // CSeqSeqDescFlag
             public const nint m_fetch = 0x20; // CSeqMultiFetch
             public const nint m_nLocalWeightlist = 0x90; // int32
@@ -3585,7 +3585,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_IKLockArray = 0xB0; // CUtlVector<CSeqIKLock>
             public const nint m_transition = 0xC8; // CSeqTransition
             public const nint m_SequenceKeys = 0xD0; // KeyValues3
-            public const nint m_LegacyKeyValueText = 0xE0; // CBufferString
+            public const nint m_LegacyKeyValueText = 0xE0; // 
             public const nint m_activityArray = 0xF0; // CUtlVector<CAnimActivity>
             public const nint m_footMotion = 0x108; // CUtlVector<CFootMotion>
         }
@@ -4002,7 +4002,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimDesc {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_flags = 0x10; // CAnimDesc_Flag
             public const nint fps = 0x18; // float32
             public const nint m_Data = 0x20; // CAnimEncodedFrames
@@ -4223,7 +4223,7 @@ namespace FrezzyHook.Schemas {
         // MGetKV3ClassDefaults
         public static class CSolveIKChainUpdateNode {
             public const nint m_targetHandles = 0x68; // CUtlVector<CSolveIKTargetHandle_t>
-            public const nint m_opFixedData = 0x80; // 
+            public const nint m_opFixedData = 0x80; // SolveIKChainPoseOpFixedSettings_
         }
         // Parent: None
         // Fields count: 12
@@ -4231,7 +4231,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqCmdSeqDesc {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_flags = 0x10; // CSeqSeqDescFlag
             public const nint m_transition = 0x1C; // CSeqTransition
             public const nint m_nFrameRangeSequence = 0x24; // int16
@@ -4414,7 +4414,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSeqScaleSet {
-            public const nint m_sName = 0x0; // CBufferString
+            public const nint m_sName = 0x0; // 
             public const nint m_bRootOffset = 0x10; // bool
             public const nint m_vRootOffset = 0x14; // 
             public const nint m_nLocalBoneArray = 0x20; // CUtlVector<int16>
@@ -4677,7 +4677,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimData {
-            public const nint m_name = 0x10; // CBufferString
+            public const nint m_name = 0x10; // 
             public const nint m_animArray = 0x20; // CUtlVector<CAnimDesc>
             public const nint m_decoderArray = 0x38; // CUtlVector<CAnimDecoder>
             public const nint m_nMaxUniqueFrameIndex = 0x50; // int32
@@ -4708,7 +4708,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimKeyData {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
             public const nint m_boneArray = 0x10; // CUtlVector<CAnimBone>
             public const nint m_userArray = 0x28; // CUtlVector<CAnimUser>
             public const nint m_morphArray = 0x40; // CUtlVector<CBufferString>
@@ -4726,7 +4726,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimMorphDifference {
-            public const nint m_name = 0x0; // CBufferString
+            public const nint m_name = 0x0; // 
         }
         // Parent: None
         // Fields count: 11
