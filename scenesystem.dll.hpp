@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-23 01:09:05.541908700 UTC
+// 2024-04-26 01:08:49.976978 UTC
 
 #pragma once
 
@@ -67,7 +67,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSSDSMsg_LayerBase {
-                constexpr std::ptrdiff_t m_viewId = 0x0; // SceneViewId_t
+                constexpr std::ptrdiff_t m_viewId = 0x0; // 
                 constexpr std::ptrdiff_t m_ViewName = 0x10; // CUtlString
                 constexpr std::ptrdiff_t m_nLayerIndex = 0x18; // int32
                 constexpr std::ptrdiff_t m_nLayerId = 0x20; // uint64
@@ -87,7 +87,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSSDSMsg_ViewTargetList {
-                constexpr std::ptrdiff_t m_viewId = 0x0; // SceneViewId_t
+                constexpr std::ptrdiff_t m_viewId = 0x0; // 
                 constexpr std::ptrdiff_t m_ViewName = 0x10; // CUtlString
                 constexpr std::ptrdiff_t m_Targets = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
             }
@@ -97,7 +97,7 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace CSSDSMsg_ViewRender {
-                constexpr std::ptrdiff_t m_viewId = 0x0; // SceneViewId_t
+                constexpr std::ptrdiff_t m_viewId = 0x0; // 
                 constexpr std::ptrdiff_t m_ViewName = 0x10; // CUtlString
             }
             // Parent: None

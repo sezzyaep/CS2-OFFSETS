@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-23 01:09:05.541908700 UTC
+// 2024-04-26 01:08:49.976978 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: soundsystem.dll
@@ -458,7 +458,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSoundEventMetaData {
-            public const nint m_soundEventVMix = 0x0; // CStrongHandle<InfoForResourceTypeCVMixListResource>
+            public const nint m_soundEventVMix = 0x0; // 
         }
         // Parent: None
         // Fields count: 4

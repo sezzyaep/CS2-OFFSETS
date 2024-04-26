@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-23 01:09:05.541908700 UTC
+// 2024-04-26 01:08:49.976978 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: animationsystem.dll
@@ -1459,27 +1459,26 @@ namespace FrezzyHook.Schemas {
             public const nint m_embeddedKeyvalues = 0x130; // CUtlString
         }
         // Parent: None
-        // Fields count: 16
+        // Fields count: 15
         //
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CAnimDemoCaptureSettings {
-            public const nint m_rangeBoneChainLength = 0x0; // Vector2D
-            public const nint m_rangeMaxSplineErrorRotation = 0x8; // Vector2D
-            public const nint m_flMaxSplineErrorTranslation = 0x10; // float32
-            public const nint m_flMaxSplineErrorScale = 0x14; // float32
+            public const nint m_vecErrorRangeSplineRotation = 0x0; // Vector2D
+            public const nint m_vecErrorRangeSplineTranslation = 0x8; // Vector2D
+            public const nint m_vecErrorRangeSplineScale = 0x10; // Vector2D
             public const nint m_flIkRotation_MaxSplineError = 0x18; // float32
             public const nint m_flIkTranslation_MaxSplineError = 0x1C; // float32
-            public const nint m_flMaxQuantizationErrorRotation = 0x20; // float32
-            public const nint m_flMaxQuantizationErrorTranslation = 0x24; // float32
-            public const nint m_flMaxQuantizationErrorScale = 0x28; // float32
-            public const nint m_flIkRotation_MaxQuantizationError = 0x2C; // float32
-            public const nint m_flIkTranslation_MaxQuantizationError = 0x30; // float32
-            public const nint m_baseSequence = 0x38; // CUtlString
-            public const nint m_nBaseSequenceFrame = 0x40; // int32
-            public const nint m_boneSelectionMode = 0x44; // EDemoBoneSelectionMode
-            public const nint m_bones = 0x48; // CUtlVector<BoneDemoCaptureSettings_t>
-            public const nint m_ikChains = 0x60; // CUtlVector<IKDemoCaptureSettings_t>
+            public const nint m_vecErrorRangeQuantizationRotation = 0x20; // Vector2D
+            public const nint m_vecErrorRangeQuantizationTranslation = 0x28; // Vector2D
+            public const nint m_vecErrorRangeQuantizationScale = 0x30; // Vector2D
+            public const nint m_flIkRotation_MaxQuantizationError = 0x38; // float32
+            public const nint m_flIkTranslation_MaxQuantizationError = 0x3C; // float32
+            public const nint m_baseSequence = 0x40; // CUtlString
+            public const nint m_nBaseSequenceFrame = 0x48; // int32
+            public const nint m_boneSelectionMode = 0x4C; // EDemoBoneSelectionMode
+            public const nint m_bones = 0x50; // CUtlVector<BoneDemoCaptureSettings_t>
+            public const nint m_ikChains = 0x68; // CUtlVector<IKDemoCaptureSettings_t>
         }
         // Parent: None
         // Fields count: 5
@@ -1853,7 +1852,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_blendTimes = 0x88; // CUtlVector<float32>
             public const nint m_choiceMethod = 0xA0; // ChoiceMethod
             public const nint m_choiceChangeMethod = 0xA4; // ChoiceChangeMethod
-            public const nint m_blendMethod = 0xA8; // ChoiceBlendMethod
+            public const nint m_blendMethod = 0xA8; // 
             public const nint m_blendTime = 0xAC; // float32
             public const nint m_bCrossFade = 0xB0; // bool
             public const nint m_bResetChosen = 0xB1; // bool
@@ -2854,13 +2853,18 @@ namespace FrezzyHook.Schemas {
             public const nint m_autoResetMap = 0xA0; // CUtlHashtable<CAnimParamHandle,int16>
         }
         // Parent: None
-        // Fields count: 2
+        // Fields count: 7
         //
         // Metadata:
         // MGetKV3ClassDefaults
         public static class BoneDemoCaptureSettings_t {
             public const nint m_boneName = 0x0; // CUtlString
-            public const nint m_flChainLength = 0x8; // float32
+            public const nint m_flErrorSplineRotationMax = 0x8; // float32
+            public const nint m_flErrorSplineTranslationMax = 0xC; // float32
+            public const nint m_flErrorSplineScaleMax = 0x10; // float32
+            public const nint m_flErrorQuantizationRotationMax = 0x14; // float32
+            public const nint m_flErrorQuantizationTranslationMax = 0x18; // float32
+            public const nint m_flErrorQuantizationScaleMax = 0x1C; // float32
         }
         // Parent: None
         // Fields count: 2
@@ -4219,7 +4223,7 @@ namespace FrezzyHook.Schemas {
         // MGetKV3ClassDefaults
         public static class CSolveIKChainUpdateNode {
             public const nint m_targetHandles = 0x68; // CUtlVector<CSolveIKTargetHandle_t>
-            public const nint m_opFixedData = 0x80; // SolveIKChainPoseOpFixedSettings_t
+            public const nint m_opFixedData = 0x80; // 
         }
         // Parent: None
         // Fields count: 12
