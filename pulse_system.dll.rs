@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 23:45:54.202960600 UTC
+// 2024-05-01 00:28:04.720524900 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -564,7 +564,7 @@ pub mod cs2_dumper {
                 pub const m_nDestInstruction: usize = 0x18; // int32
                 pub const m_nCallInfoIndex: usize = 0x1C; // PulseRuntimeCallInfoIndex_t
                 pub const m_nConstIdx: usize = 0x20; // PulseRuntimeConstantIndex_t
-                pub const m_DomainValue: usize = 0x28; // 
+                pub const m_DomainValue: usize = 0x28; // CBufferString
             }
             // Parent: None
             // Fields count: 5

@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 23:45:54.202960600 UTC
+// 2024-05-01 00:28:04.720524900 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: schemasystem.dll
@@ -109,7 +109,7 @@ namespace FrezzyHook.Schemas {
         // Fields count: 22
         public static class CSchemaSystemInternalRegistration {
             public const nint m_Vector2D = 0x0; // Vector2D
-            public const nint m_Vector = 0x8; // 
+            public const nint m_Vector = 0x8; // Vector
             public const nint m_VectorAligned = 0x20; // VectorAligned
             public const nint m_Quaternion = 0x30; // Quaternion
             public const nint m_QAngle = 0x40; // QAngle
@@ -122,7 +122,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_Color = 0xE0; // Color
             public const nint m_Vector4D = 0xE4; // Vector4D
             public const nint m_CTransform = 0x100; // CTransform
-            public const nint m_pKeyValues = 0x120; // KeyValues*
+            public const nint m_pKeyValues = 0x120; // 
             public const nint m_CUtlBinaryBlock = 0x128; // CUtlBinaryBlock
             public const nint m_CUtlString = 0x140; // CUtlString
             public const nint m_CUtlSymbol = 0x148; // CUtlSymbol

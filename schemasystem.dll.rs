@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-04-26 23:45:54.202960600 UTC
+// 2024-05-01 00:28:04.720524900 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -114,7 +114,7 @@ pub mod cs2_dumper {
             // Fields count: 22
             pub mod CSchemaSystemInternalRegistration {
                 pub const m_Vector2D: usize = 0x0; // Vector2D
-                pub const m_Vector: usize = 0x8; // 
+                pub const m_Vector: usize = 0x8; // Vector
                 pub const m_VectorAligned: usize = 0x20; // VectorAligned
                 pub const m_Quaternion: usize = 0x30; // Quaternion
                 pub const m_QAngle: usize = 0x40; // QAngle
@@ -127,7 +127,7 @@ pub mod cs2_dumper {
                 pub const m_Color: usize = 0xE0; // Color
                 pub const m_Vector4D: usize = 0xE4; // Vector4D
                 pub const m_CTransform: usize = 0x100; // CTransform
-                pub const m_pKeyValues: usize = 0x120; // KeyValues*
+                pub const m_pKeyValues: usize = 0x120; // 
                 pub const m_CUtlBinaryBlock: usize = 0x128; // CUtlBinaryBlock
                 pub const m_CUtlString: usize = 0x140; // CUtlString
                 pub const m_CUtlSymbol: usize = 0x148; // CUtlSymbol
