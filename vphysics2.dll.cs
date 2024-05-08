@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: vphysics2.dll
@@ -268,8 +268,8 @@ namespace FrezzyHook.Schemas {
         // Parent: None
         // Fields count: 4
         public static class constraint_hingeparams_t {
-            public const nint worldPosition = 0x0; // Vector
-            public const nint worldAxisDirection = 0xC; // Vector
+            public const nint worldPosition = 0x0; // 
+            public const nint worldAxisDirection = 0xC; // 
             public const nint hingeAxis = 0x18; // constraint_axislimit_t
             public const nint constraint = 0x28; // constraint_breakableparams_t
         }
@@ -347,11 +347,11 @@ namespace FrezzyHook.Schemas {
         // MGetKV3ClassDefaults
         public static class RnBodyDesc_t {
             public const nint m_sDebugName = 0x0; // CUtlString
-            public const nint m_vPosition = 0x8; // Vector
+            public const nint m_vPosition = 0x8; // 
             public const nint m_qOrientation = 0x14; // QuaternionStorage
-            public const nint m_vLinearVelocity = 0x24; // Vector
-            public const nint m_vAngularVelocity = 0x30; // Vector
-            public const nint m_vLocalMassCenter = 0x3C; // Vector
+            public const nint m_vLinearVelocity = 0x24; // 
+            public const nint m_vAngularVelocity = 0x30; // 
+            public const nint m_vLocalMassCenter = 0x3C; // 
             public const nint m_LocalInertiaInv = 0x48; // Vector[3]
             public const nint m_flMassInv = 0x6C; // float32
             public const nint m_flGameMass = 0x70; // float32
@@ -362,8 +362,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_flAngularDrag = 0x84; // float32
             public const nint m_flLinearBuoyancyDrag = 0x88; // float32
             public const nint m_flAngularBuoyancyDrag = 0x8C; // float32
-            public const nint m_vLastAwakeForceAccum = 0x90; // Vector
-            public const nint m_vLastAwakeTorqueAccum = 0x9C; // Vector
+            public const nint m_vLastAwakeForceAccum = 0x90; // 
+            public const nint m_vLastAwakeTorqueAccum = 0x9C; // 
             public const nint m_flBuoyancyFactor = 0xA8; // float32
             public const nint m_flGravityScale = 0xAC; // float32
             public const nint m_flTimeScale = 0xB0; // float32
@@ -417,22 +417,22 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnMesh_t {
-            public const nint m_vMin = 0x0; // Vector
-            public const nint m_vMax = 0xC; // Vector
+            public const nint m_vMin = 0x0; // 
+            public const nint m_vMax = 0xC; // 
             public const nint m_Nodes = 0x18; // CUtlVector<RnNode_t>
             public const nint m_Vertices = 0x30; // CUtlVectorSIMDPaddedVector
             public const nint m_Triangles = 0x48; // CUtlVector<RnTriangle_t>
             public const nint m_Wings = 0x60; // CUtlVector<RnWing_t>
             public const nint m_Materials = 0x78; // CUtlVector<uint8>
-            public const nint m_vOrthographicAreas = 0x90; // Vector
+            public const nint m_vOrthographicAreas = 0x90; // 
             public const nint m_nFlags = 0x9C; // uint32
             public const nint m_nDebugFlags = 0xA0; // uint32
         }
         // Parent: None
         // Fields count: 2
         public static class VertexPositionNormal_t {
-            public const nint m_vPosition = 0x0; // Vector
-            public const nint m_vNormal = 0xC; // Vector
+            public const nint m_vPosition = 0x0; // 
+            public const nint m_vNormal = 0xC; // 
         }
         // Parent: None
         // Fields count: 8
@@ -471,7 +471,7 @@ namespace FrezzyHook.Schemas {
         public static class FeCtrlSoftOffset_t {
             public const nint nCtrlParent = 0x0; // uint16
             public const nint nCtrlChild = 0x2; // uint16
-            public const nint vOffset = 0x4; // Vector
+            public const nint vOffset = 0x4; // 
             public const nint flAlpha = 0x10; // float32
         }
         // Parent: None
@@ -488,7 +488,7 @@ namespace FrezzyHook.Schemas {
             public const nint nVertexCount = 0x16; // uint16
             public const nint nMapOffset = 0x18; // uint32
             public const nint nNodeListOffset = 0x1C; // uint32
-            public const nint vCenterOfMass = 0x20; // Vector
+            public const nint vCenterOfMass = 0x20; // 
             public const nint flVolumetricSolveStrength = 0x2C; // float32
             public const nint nScaleSourceNode = 0x30; // int16
             public const nint nNodeListCount = 0x32; // uint16
@@ -531,7 +531,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeNodeReverseOffset_t {
-            public const nint vOffset = 0x0; // Vector
+            public const nint vOffset = 0x0; // 
             public const nint nBoneCtrl = 0xC; // uint16
             public const nint nTargetNode = 0xE; // uint16
         }
@@ -541,7 +541,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnPlane_t {
-            public const nint m_vNormal = 0x0; // Vector
+            public const nint m_vNormal = 0x0; // 
             public const nint m_flOffset = 0xC; // float32
         }
         // Parent: None
@@ -582,8 +582,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_flBaseForwardFriction = 0x74; // float32
             public const nint m_flRadius0 = 0x78; // float32
             public const nint m_flRadius1 = 0x7C; // float32
-            public const nint m_vPoint0 = 0x80; // Vector
-            public const nint m_vPoint1 = 0x8C; // Vector
+            public const nint m_vPoint0 = 0x80; // 
+            public const nint m_vPoint1 = 0x8C; // 
             public const nint m_nCollisionMask = 0x98; // uint16
         }
         // Parent: None
@@ -612,9 +612,9 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnNode_t {
-            public const nint m_vMin = 0x0; // Vector
+            public const nint m_vMin = 0x0; // 
             public const nint m_nChildren = 0xC; // uint32
-            public const nint m_vMax = 0x10; // Vector
+            public const nint m_vMax = 0x10; // 
             public const nint m_nTriangleOffset = 0x1C; // uint32
         }
         // Parent: None
@@ -624,7 +624,7 @@ namespace FrezzyHook.Schemas {
         // MGetKV3ClassDefaults
         public static class FeFitMatrix_t {
             public const nint bone = 0x0; // CTransform
-            public const nint vCenter = 0x20; // Vector
+            public const nint vCenter = 0x20; // 
             public const nint nEnd = 0x2C; // uint16
             public const nint nNode = 0x2E; // uint16
             public const nint nBeginDynamic = 0x30; // uint16
@@ -742,8 +742,8 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CastSphereSATParams_t {
-            public const nint m_vRayStart = 0x0; // Vector
-            public const nint m_vRayDelta = 0xC; // Vector
+            public const nint m_vRayStart = 0x0; // 
+            public const nint m_vRayDelta = 0xC; // 
             public const nint m_flRadius = 0x18; // float32
             public const nint m_flMaxFraction = 0x1C; // float32
             public const nint m_flScale = 0x20; // float32
@@ -791,7 +791,7 @@ namespace FrezzyHook.Schemas {
             public const nint tmFrame2 = 0x0; // CTransform
             public const nint nNode = 0x20; // uint16
             public const nint nCollisionMask = 0x22; // uint16
-            public const nint vSize = 0x24; // Vector
+            public const nint vSize = 0x24; // 
             public const nint nVertexMapIndex = 0x30; // uint16
             public const nint nFlags = 0x32; // uint16
         }
@@ -816,7 +816,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class FeCtrlOffset_t {
-            public const nint vOffset = 0x0; // Vector
+            public const nint vOffset = 0x0; // 
             public const nint nCtrlParent = 0xC; // uint16
             public const nint nCtrlChild = 0xE; // uint16
         }
@@ -877,10 +877,10 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class RnHull_t {
-            public const nint m_vCentroid = 0x0; // Vector
+            public const nint m_vCentroid = 0x0; // 
             public const nint m_flMaxAngularRadius = 0xC; // float32
             public const nint m_Bounds = 0x10; // AABB_t
-            public const nint m_vOrthographicAreas = 0x28; // Vector
+            public const nint m_vOrthographicAreas = 0x28; // 
             public const nint m_MassProperties = 0x34; // matrix3x4_t
             public const nint m_flVolume = 0x64; // float32
             public const nint m_flSurfaceArea = 0x68; // float32
@@ -898,7 +898,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CovMatrix3 {
-            public const nint m_vDiag = 0x0; // Vector
+            public const nint m_vDiag = 0x0; // 
             public const nint m_flXY = 0xC; // float32
             public const nint m_flXZ = 0x10; // float32
             public const nint m_flYZ = 0x14; // float32
@@ -1094,7 +1094,7 @@ namespace FrezzyHook.Schemas {
         // Parent: None
         // Fields count: 1
         public static class VertexPositionColor_t {
-            public const nint m_vPosition = 0x0; // Vector
+            public const nint m_vPosition = 0x0; // 
         }
         // Parent: None
         // Fields count: 3

@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: soundsystem.dll

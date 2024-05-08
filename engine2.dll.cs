@@ -1,9 +1,9 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: engine2.dll
-    // Classes count: 44
+    // Classes count: 43
     // Enums count: 4
     public static class Engine2Dll {
         // Alignment: 4
@@ -123,10 +123,6 @@ namespace FrezzyHook.Schemas {
         // Fields count: 1
         public static class EventPreDataUpdate_t {
             public const nint m_nCount = 0x0; // int32
-        }
-        // Parent: None
-        // Fields count: 0
-        public static class EventClientPredictionPostNetupdate_t {
         }
         // Parent: None
         // Fields count: 3

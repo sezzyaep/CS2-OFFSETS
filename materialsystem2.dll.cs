@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: materialsystem2.dll
@@ -104,7 +104,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flRadius = 0xC; // float32
             public const nint m_flRoundness = 0x10; // float32
             public const nint m_flFeather = 0x14; // float32
-            public const nint m_vColorTint = 0x18; // Vector
+            public const nint m_vColorTint = 0x18; // 
         }
         // Parent: None
         // Fields count: 5

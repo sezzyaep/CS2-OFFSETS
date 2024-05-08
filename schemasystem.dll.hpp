@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 #pragma once
 
@@ -114,7 +114,7 @@ namespace cs2_dumper {
             // Fields count: 22
             namespace CSchemaSystemInternalRegistration {
                 constexpr std::ptrdiff_t m_Vector2D = 0x0; // Vector2D
-                constexpr std::ptrdiff_t m_Vector = 0x8; // Vector
+                constexpr std::ptrdiff_t m_Vector = 0x8; // 
                 constexpr std::ptrdiff_t m_VectorAligned = 0x20; // VectorAligned
                 constexpr std::ptrdiff_t m_Quaternion = 0x30; // Quaternion
                 constexpr std::ptrdiff_t m_QAngle = 0x40; // QAngle
@@ -127,7 +127,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_Color = 0xE0; // Color
                 constexpr std::ptrdiff_t m_Vector4D = 0xE4; // Vector4D
                 constexpr std::ptrdiff_t m_CTransform = 0x100; // CTransform
-                constexpr std::ptrdiff_t m_pKeyValues = 0x120; // 
+                constexpr std::ptrdiff_t m_pKeyValues = 0x120; // KeyValues*
                 constexpr std::ptrdiff_t m_CUtlBinaryBlock = 0x128; // CUtlBinaryBlock
                 constexpr std::ptrdiff_t m_CUtlString = 0x140; // CUtlString
                 constexpr std::ptrdiff_t m_CUtlSymbol = 0x148; // CUtlSymbol

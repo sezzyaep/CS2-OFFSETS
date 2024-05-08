@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
@@ -187,8 +187,8 @@ pub mod cs2_dumper {
             // Parent: None
             // Fields count: 2
             pub mod AABB_t {
-                pub const m_vMinBounds: usize = 0x0; // Vector
-                pub const m_vMaxBounds: usize = 0xC; // Vector
+                pub const m_vMinBounds: usize = 0x0; // 
+                pub const m_vMaxBounds: usize = 0xC; // 
             }
             // Parent: None
             // Fields count: 0

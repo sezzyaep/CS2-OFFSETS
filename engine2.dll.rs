@@ -1,12 +1,12 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: engine2.dll
-        // Classes count: 44
+        // Classes count: 43
         // Enums count: 4
         pub mod engine2_dll {
             // Alignment: 4
@@ -130,10 +130,6 @@ pub mod cs2_dumper {
             // Fields count: 1
             pub mod EventPreDataUpdate_t {
                 pub const m_nCount: usize = 0x0; // int32
-            }
-            // Parent: None
-            // Fields count: 0
-            pub mod EventClientPredictionPostNetupdate_t {
             }
             // Parent: None
             // Fields count: 3

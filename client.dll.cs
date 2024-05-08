@@ -1,5 +1,5 @@
 // Offsets are automatically updated by frezzyhook.com.
-// 2024-05-01 00:28:04.720524900 UTC
+// 2024-05-08 04:40:40.591862300 UTC
 
 namespace FrezzyHook.Schemas {
     // Module: client.dll
@@ -128,7 +128,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flStamina (float)
         public static class CCSPlayer_MovementServices {
             public const nint m_flMaxFallVelocity = 0x218; // float32
-            public const nint m_vecLadderNormal = 0x21C; // Vector
+            public const nint m_vecLadderNormal = 0x21C; // 
             public const nint m_nLadderSurfacePropIndex = 0x228; // int32
             public const nint m_flDuckAmount = 0x22C; // float32
             public const nint m_flDuckSpeed = 0x230; // float32
@@ -149,9 +149,9 @@ namespace FrezzyHook.Schemas {
             public const nint m_bSpeedCropped = 0x478; // bool
             public const nint m_nOldWaterLevel = 0x47C; // int32
             public const nint m_flWaterEntryTime = 0x480; // float32
-            public const nint m_vecForward = 0x484; // Vector
-            public const nint m_vecLeft = 0x490; // Vector
-            public const nint m_vecUp = 0x49C; // Vector
+            public const nint m_vecForward = 0x484; // 
+            public const nint m_vecLeft = 0x490; // 
+            public const nint m_vecUp = 0x49C; // 
             public const nint m_nGameCodeHasMovedPlayerAfterCommand = 0x4A8; // int32
             public const nint m_bOldJumpPressed = 0x4AC; // bool
             public const nint m_flJumpPressedTime = 0x4B0; // float32
@@ -177,7 +177,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_nWorldGroupID (WorldGroupId_t)
         public static class sky3dparams_t {
             public const nint scale = 0x8; // int16
-            public const nint origin = 0xC; // Vector
+            public const nint origin = 0xC; // 
             public const nint bClip3DSkyBoxNearToWorldFar = 0x18; // bool
             public const nint flClip3DSkyBoxNearToWorldFarOffset = 0x1C; // float32
             public const nint fog = 0x20; // fogparams_t
@@ -391,8 +391,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_TeamRespawnWaveTimes = 0xB58; // float32[32]
             public const nint m_flNextRespawnWave = 0xBD8; // GameTime_t[32]
             public const nint m_nServerQuestID = 0xC58; // int32
-            public const nint m_vMinimapMins = 0xC5C; // Vector
-            public const nint m_vMinimapMaxs = 0xC68; // Vector
+            public const nint m_vMinimapMins = 0xC5C; // 
+            public const nint m_vMinimapMaxs = 0xC68; // 
             public const nint m_MinimapVerticalSectionHeights = 0xC74; // float32[8]
             public const nint m_bDontIncrementCoopWave = 0xC94; // bool
             public const nint m_bSpawnedTerrorHuntHeavy = 0xC95; // bool
@@ -491,8 +491,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_flShadowStrength = 0xC10; // float32
             public const nint m_nObjectCulling = 0xC14; // uint8
             public const nint m_nAddDecal = 0xC18; // int32
-            public const nint m_vDecalPosition = 0xC1C; // Vector
-            public const nint m_vDecalForwardAxis = 0xC28; // Vector
+            public const nint m_vDecalPosition = 0xC1C; // 
+            public const nint m_vDecalForwardAxis = 0xC28; // 
             public const nint m_flDecalHealBloodRate = 0xC34; // float32
             public const nint m_flDecalHealHeightRate = 0xC38; // float32
             public const nint m_ConfigEntitiesToPropagateMaterialDecalsTo = 0xC40; // C_NetworkUtlVectorBase<CHandle<C_BaseModelEntity>>
@@ -915,8 +915,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_bHostageAlive = 0x550; // bool[12]
             public const nint m_isHostageFollowingSomeone = 0x55C; // bool[12]
             public const nint m_iHostageEntityIDs = 0x568; // CEntityIndex[12]
-            public const nint m_bombsiteCenterA = 0x598; // Vector
-            public const nint m_bombsiteCenterB = 0x5A4; // Vector
+            public const nint m_bombsiteCenterA = 0x598; // 
+            public const nint m_bombsiteCenterB = 0x5A4; // 
             public const nint m_hostageRescueX = 0x5B0; // int32[4]
             public const nint m_hostageRescueY = 0x5C0; // int32[4]
             public const nint m_hostageRescueZ = 0x5D0; // int32[4]
@@ -974,8 +974,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_nSmokeEffectTickBegin = 0x1160; // int32
             public const nint m_bDidSmokeEffect = 0x1164; // bool
             public const nint m_nRandomSeed = 0x1168; // int32
-            public const nint m_vSmokeColor = 0x116C; // Vector
-            public const nint m_vSmokeDetonationPos = 0x1178; // Vector
+            public const nint m_vSmokeColor = 0x116C; // 
+            public const nint m_vSmokeDetonationPos = 0x1178; // 
             public const nint m_VoxelFrameData = 0x1188; // CUtlVector<uint8>
             public const nint m_bSmokeVolumeDataReceived = 0x11A0; // bool
             public const nint m_bSmokeEffectSpawned = 0x11A1; // bool
@@ -1026,8 +1026,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_nlosperiod = 0x8278; // int32
             public const nint m_maxFireHalfWidth = 0x827C; // float32
             public const nint m_maxFireHeight = 0x8280; // float32
-            public const nint m_minBounds = 0x8284; // Vector
-            public const nint m_maxBounds = 0x8290; // Vector
+            public const nint m_minBounds = 0x8284; // 
+            public const nint m_maxBounds = 0x8290; // 
             public const nint m_flLastGrassBurnThink = 0x829C; // float32
         }
         // Parent: CBaseAnimGraph
@@ -1052,7 +1052,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_hPingedEntity = 0x584; // CHandle<C_BaseEntity>
             public const nint m_iType = 0x588; // int32
             public const nint m_bUrgent = 0x58C; // bool
-            public const nint m_szPlaceName = 0x58D; // 
+            public const nint m_szPlaceName = 0x58D; // char[18]
         }
         // Parent: C_CSWeaponBaseGun
         // Fields count: 0
@@ -1089,14 +1089,14 @@ namespace FrezzyHook.Schemas {
         public static class C_CSGO_MapPreviewCameraPathNode {
             public const nint m_szParentPathUniqueID = 0x550; // CUtlSymbolLarge
             public const nint m_nPathIndex = 0x558; // int32
-            public const nint m_vInTangentLocal = 0x55C; // Vector
-            public const nint m_vOutTangentLocal = 0x568; // Vector
+            public const nint m_vInTangentLocal = 0x55C; // 
+            public const nint m_vOutTangentLocal = 0x568; // 
             public const nint m_flFOV = 0x574; // float32
             public const nint m_flSpeed = 0x578; // float32
             public const nint m_flEaseIn = 0x57C; // float32
             public const nint m_flEaseOut = 0x580; // float32
-            public const nint m_vInTangentWorld = 0x584; // Vector
-            public const nint m_vOutTangentWorld = 0x590; // Vector
+            public const nint m_vInTangentWorld = 0x584; // 
+            public const nint m_vOutTangentWorld = 0x590; // 
         }
         // Parent: C_CSWeaponBaseGun
         // Fields count: 0
@@ -1198,7 +1198,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bHasFemaleVoice = 0x14A0; // bool
             public const nint m_flLandingTimeSeconds = 0x14A4; // float32
             public const nint m_flOldFallVelocity = 0x14A8; // float32
-            public const nint m_szLastPlaceName = 0x14AC; // 
+            public const nint m_szLastPlaceName = 0x14AC; // char[18]
             public const nint m_bPrevDefuser = 0x14BE; // bool
             public const nint m_bPrevHelmet = 0x14BF; // bool
             public const nint m_nPrevArmorVal = 0x14C0; // int32
@@ -1230,11 +1230,11 @@ namespace FrezzyHook.Schemas {
             public const nint m_nEconGlovesChanged = 0x1AC0; // uint8
             public const nint m_bMustSyncRagdollState = 0x1AC1; // bool
             public const nint m_nRagdollDamageBone = 0x1AC4; // int32
-            public const nint m_vRagdollDamageForce = 0x1AC8; // Vector
-            public const nint m_vRagdollDamagePosition = 0x1AD4; // Vector
+            public const nint m_vRagdollDamageForce = 0x1AC8; // 
+            public const nint m_vRagdollDamagePosition = 0x1AD4; // 
             public const nint m_szRagdollDamageWeaponName = 0x1AE0; // char[64]
             public const nint m_bRagdollDamageHeadshot = 0x1B20; // bool
-            public const nint m_vRagdollServerOrigin = 0x1B24; // Vector
+            public const nint m_vRagdollServerOrigin = 0x1B24; // 
             public const nint m_bLastHeadBoneTransformIsValid = 0x2138; // bool
             public const nint m_lastLandTime = 0x213C; // GameTime_t
             public const nint m_bOnGroundLastTick = 0x2140; // bool
@@ -1253,7 +1253,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_thirdPersonHeading = 0x2228; // QAngle
             public const nint m_flSlopeDropOffset = 0x2240; // float32
             public const nint m_flSlopeDropHeight = 0x2250; // float32
-            public const nint m_vHeadConstraintOffset = 0x2260; // Vector
+            public const nint m_vHeadConstraintOffset = 0x2260; // 
             public const nint m_entitySpottedState = 0x2278; // EntitySpottedState_t
             public const nint m_bIsScoped = 0x2290; // bool
             public const nint m_bResumeZoom = 0x2291; // bool
@@ -1278,12 +1278,12 @@ namespace FrezzyHook.Schemas {
             public const nint m_bOldIsScoped = 0x22D0; // bool
             public const nint m_bHasDeathInfo = 0x22D1; // bool
             public const nint m_flDeathInfoTime = 0x22D4; // float32
-            public const nint m_vecDeathInfoOrigin = 0x22D8; // Vector
+            public const nint m_vecDeathInfoOrigin = 0x22D8; // 
             public const nint m_grenadeParameterStashTime = 0x22E4; // GameTime_t
             public const nint m_bGrenadeParametersStashed = 0x22E8; // bool
             public const nint m_angStashedShootAngles = 0x22EC; // QAngle
-            public const nint m_vecStashedGrenadeThrowPosition = 0x22F8; // Vector
-            public const nint m_vecStashedVelocity = 0x2304; // Vector
+            public const nint m_vecStashedGrenadeThrowPosition = 0x22F8; // 
+            public const nint m_vecStashedVelocity = 0x2304; // 
             public const nint m_angShootAngleHistory = 0x2310; // QAngle[2]
             public const nint m_vecThrowPositionHistory = 0x2328; // Vector[2]
             public const nint m_vecVelocityHistory = 0x2340; // Vector[2]
@@ -1299,9 +1299,9 @@ namespace FrezzyHook.Schemas {
         public static class C_RagdollPropAttached {
             public const nint m_boneIndexAttached = 0xF50; // uint32
             public const nint m_ragdollAttachedObjectIndex = 0xF54; // uint32
-            public const nint m_attachmentPointBoneSpace = 0xF58; // Vector
-            public const nint m_attachmentPointRagdollSpace = 0xF64; // Vector
-            public const nint m_vecOffset = 0xF70; // Vector
+            public const nint m_attachmentPointBoneSpace = 0xF58; // 
+            public const nint m_attachmentPointRagdollSpace = 0xF64; // 
+            public const nint m_vecOffset = 0xF70; // 
             public const nint m_parentTime = 0xF7C; // float32
             public const nint m_bHasParent = 0xF80; // bool
         }
@@ -1316,14 +1316,14 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_nExplodeEffectTickBegin (int)
         // NetworkVarNames: m_vecExplodeEffectOrigin (Vector)
         public static class C_BaseCSGrenadeProjectile {
-            public const nint m_vInitialPosition = 0x10C0; // Vector
-            public const nint m_vInitialVelocity = 0x10CC; // Vector
+            public const nint m_vInitialPosition = 0x10C0; // 
+            public const nint m_vInitialVelocity = 0x10CC; // 
             public const nint m_nBounces = 0x10D8; // int32
             public const nint m_nExplodeEffectIndex = 0x10E0; // CStrongHandle<InfoForResourceTypeIParticleSystemDefinition>
             public const nint m_nExplodeEffectTickBegin = 0x10E8; // int32
-            public const nint m_vecExplodeEffectOrigin = 0x10EC; // Vector
+            public const nint m_vecExplodeEffectOrigin = 0x10EC; // 
             public const nint m_flSpawnTime = 0x10F8; // GameTime_t
-            public const nint vecLastTrailLinePos = 0x10FC; // Vector
+            public const nint vecLastTrailLinePos = 0x10FC; // 
             public const nint flNextTrailLineTime = 0x1108; // GameTime_t
             public const nint m_bExplodeEffectBegan = 0x110C; // bool
             public const nint m_bCanCreateGrenadeTrail = 0x110D; // bool
@@ -1380,9 +1380,9 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_iEffectName (uint16)
         // NetworkVarNames: m_nExplosionType (uint8)
         public static class CEffectData {
-            public const nint m_vOrigin = 0x8; // Vector
-            public const nint m_vStart = 0x14; // Vector
-            public const nint m_vNormal = 0x20; // Vector
+            public const nint m_vOrigin = 0x8; // 
+            public const nint m_vStart = 0x14; // 
+            public const nint m_vNormal = 0x20; // 
             public const nint m_vAngles = 0x2C; // QAngle
             public const nint m_hEntity = 0x38; // CEntityHandle
             public const nint m_hOtherEntity = 0x3C; // CEntityHandle
@@ -1454,7 +1454,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bDucked = 0x1EC; // bool
             public const nint m_bDucking = 0x1ED; // bool
             public const nint m_bInDuckJump = 0x1EE; // bool
-            public const nint m_groundNormal = 0x1F0; // Vector
+            public const nint m_groundNormal = 0x1F0; // 
             public const nint m_flSurfaceFriction = 0x1FC; // float32
             public const nint m_surfaceProps = 0x200; // CUtlStringToken
             public const nint m_nStepside = 0x210; // int32
@@ -1574,8 +1574,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_vMin (Vector)
         // NetworkVarNames: m_vMax (Vector)
         public static class C_SoundAreaEntityOrientedBox {
-            public const nint m_vMin = 0x578; // Vector
-            public const nint m_vMax = 0x584; // Vector
+            public const nint m_vMin = 0x578; // 
+            public const nint m_vMax = 0x584; // 
         }
         // Parent: C_BaseModelEntity
         // Fields count: 8
@@ -1594,8 +1594,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_flFPS = 0xCD4; // float32
             public const nint m_hPositionKeys = 0xCD8; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_hRotationKeys = 0xCE0; // CStrongHandle<InfoForResourceTypeCTextureBase>
-            public const nint m_vAnimationBoundsMin = 0xCE8; // Vector
-            public const nint m_vAnimationBoundsMax = 0xCF4; // Vector
+            public const nint m_vAnimationBoundsMin = 0xCE8; // 
+            public const nint m_vAnimationBoundsMax = 0xCF4; // 
             public const nint m_flStartTime = 0xD00; // float32
             public const nint m_flStartFrame = 0xD04; // float32
         }
@@ -1615,7 +1615,7 @@ namespace FrezzyHook.Schemas {
         // Fields count: 3
         public static class CCSPlayer_WaterServices {
             public const nint m_flWaterJumpTime = 0x40; // float32
-            public const nint m_vecWaterJumpVel = 0x44; // Vector
+            public const nint m_vecWaterJumpVel = 0x44; // 
             public const nint m_flSwimSoundTime = 0x50; // float32
         }
         // Parent: C_BaseEntity
@@ -1770,8 +1770,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_hLightProbeDirectLightIndicesTexture = 0x1530; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_hLightProbeDirectLightScalarsTexture = 0x1538; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_hLightProbeDirectLightShadowsTexture = 0x1540; // CStrongHandle<InfoForResourceTypeCTextureBase>
-            public const nint m_vBoxMins = 0x1548; // Vector
-            public const nint m_vBoxMaxs = 0x1554; // Vector
+            public const nint m_vBoxMins = 0x1548; // 
+            public const nint m_vBoxMaxs = 0x1554; // 
             public const nint m_bMoveable = 0x1560; // bool
             public const nint m_nHandshake = 0x1564; // int32
             public const nint m_nPriority = 0x1568; // int32
@@ -1991,7 +1991,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flFadeOutLength = 0xCF0; // float32
             public const nint m_flNextSparkTime = 0xCF4; // GameTime_t
             public const nint m_nDissolveType = 0xCF8; // EntityDisolveType_t
-            public const nint m_vDissolverOrigin = 0xCFC; // Vector
+            public const nint m_vDissolverOrigin = 0xCFC; // 
             public const nint m_nMagnitude = 0xD08; // uint32
             public const nint m_bCoreExplode = 0xD0C; // bool
             public const nint m_bLinkedToServerEnt = 0xD0D; // bool
@@ -2053,8 +2053,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_pViewModelServices = 0x12C0; // CPlayer_ViewModelServices*
             public const nint m_fRenderingClipPlane = 0x12C8; // float32[4]
             public const nint m_nLastClipPlaneSetupFrame = 0x12D8; // int32
-            public const nint m_vecLastClipCameraPos = 0x12DC; // Vector
-            public const nint m_vecLastClipCameraForward = 0x12E8; // Vector
+            public const nint m_vecLastClipCameraPos = 0x12DC; // 
+            public const nint m_vecLastClipCameraForward = 0x12E8; // 
             public const nint m_bClipHitStaticWorld = 0x12F4; // bool
             public const nint m_bCachedPlaneIsValid = 0x12F5; // bool
             public const nint m_pClippingWeapon = 0x12F8; // C_CSWeaponBase*
@@ -2071,8 +2071,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_flLastSpawnTimeIndex = 0x1324; // GameTime_t
             public const nint m_iProgressBarDuration = 0x1328; // int32
             public const nint m_flProgressBarStartTime = 0x132C; // float32
-            public const nint m_vecIntroStartEyePosition = 0x1330; // Vector
-            public const nint m_vecIntroStartPlayerForward = 0x133C; // Vector
+            public const nint m_vecIntroStartEyePosition = 0x1330; // 
+            public const nint m_vecIntroStartPlayerForward = 0x133C; // 
             public const nint m_flClientDeathTime = 0x1348; // GameTime_t
             public const nint m_bScreenTearFrameCaptured = 0x134C; // bool
             public const nint m_flFlashBangTime = 0x1350; // float32
@@ -2107,13 +2107,13 @@ namespace FrezzyHook.Schemas {
             public const nint m_serverIntendedCycle = 0x1404; // float32
             public const nint m_flLastSmokeOverlayAlpha = 0x1408; // float32
             public const nint m_flLastSmokeAge = 0x140C; // float32
-            public const nint m_vLastSmokeOverlayColor = 0x1410; // Vector
+            public const nint m_vLastSmokeOverlayColor = 0x1410; // 
             public const nint m_nPlayerSmokedFx = 0x141C; // ParticleIndex_t
             public const nint m_nPlayerInfernoBodyFx = 0x1420; // ParticleIndex_t
             public const nint m_nPlayerInfernoFootFx = 0x1424; // ParticleIndex_t
             public const nint m_flNextMagDropTime = 0x1428; // float32
             public const nint m_nLastMagDropAttachmentIndex = 0x142C; // int32
-            public const nint m_vecLastAliveLocalVelocity = 0x1430; // Vector
+            public const nint m_vecLastAliveLocalVelocity = 0x1430; // 
             public const nint m_bGuardianShouldSprayCustomXMark = 0x1458; // bool
             public const nint m_hOriginalController = 0x1460; // CHandle<CCSPlayerController>
         }
@@ -2151,13 +2151,13 @@ namespace FrezzyHook.Schemas {
             public const nint m_flMaxGustDelay = 0x20; // float32
             public const nint m_flGustDuration = 0x24; // float32
             public const nint m_iGustDirChange = 0x28; // uint16
-            public const nint m_location = 0x2C; // Vector
+            public const nint m_location = 0x2C; // 
             public const nint m_iszGustSound = 0x38; // int32
             public const nint m_iWindDir = 0x3C; // int32
             public const nint m_flWindSpeed = 0x40; // float32
-            public const nint m_currentWindVector = 0x44; // Vector
-            public const nint m_CurrentSwayVector = 0x50; // Vector
-            public const nint m_PrevSwayVector = 0x5C; // Vector
+            public const nint m_currentWindVector = 0x44; // 
+            public const nint m_CurrentSwayVector = 0x50; // 
+            public const nint m_PrevSwayVector = 0x5C; // 
             public const nint m_iInitialWindDir = 0x68; // uint16
             public const nint m_flInitialWindSpeed = 0x6C; // float32
             public const nint m_flVariationTime = 0x70; // GameTime_t
@@ -2380,9 +2380,9 @@ namespace FrezzyHook.Schemas {
             public const nint m_bSuppressAnimEventSounds = 0xD4A; // bool
             public const nint m_bAnimGraphUpdateEnabled = 0xD58; // bool
             public const nint m_flMaxSlopeDistance = 0xD5C; // float32
-            public const nint m_vLastSlopeCheckPos = 0xD60; // Vector
+            public const nint m_vLastSlopeCheckPos = 0xD60; // 
             public const nint m_bAnimationUpdateScheduled = 0xD6C; // bool
-            public const nint m_vecForce = 0xD70; // Vector
+            public const nint m_vecForce = 0xD70; // 
             public const nint m_nForceBone = 0xD7C; // int32
             public const nint m_pClientsideRagdoll = 0xD80; // CBaseAnimGraph*
             public const nint m_bBuiltRagdoll = 0xD88; // bool
@@ -2524,8 +2524,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_z (float32)
         // NetworkVarNames: m_angle (float32)
         public static class C_Fish {
-            public const nint m_pos = 0xED8; // Vector
-            public const nint m_vel = 0xEE4; // Vector
+            public const nint m_pos = 0xED8; // 
+            public const nint m_vel = 0xEE4; // 
             public const nint m_angles = 0xEF0; // QAngle
             public const nint m_localLifeState = 0xEFC; // int32
             public const nint m_deathDepth = 0xF00; // float32
@@ -2534,9 +2534,9 @@ namespace FrezzyHook.Schemas {
             public const nint m_wiggleTimer = 0xF10; // CountdownTimer
             public const nint m_wigglePhase = 0xF28; // float32
             public const nint m_wiggleRate = 0xF2C; // float32
-            public const nint m_actualPos = 0xF30; // Vector
+            public const nint m_actualPos = 0xF30; // 
             public const nint m_actualAngles = 0xF3C; // QAngle
-            public const nint m_poolOrigin = 0xF48; // Vector
+            public const nint m_poolOrigin = 0xF48; // 
             public const nint m_waterLevel = 0xF54; // float32
             public const nint m_gotUpdate = 0xF58; // bool
             public const nint m_x = 0xF5C; // float32
@@ -2625,13 +2625,13 @@ namespace FrezzyHook.Schemas {
             public const nint m_iHideHUD = 0x11BC; // uint32
             public const nint m_skybox3d = 0x11C0; // sky3dparams_t
             public const nint m_flDeathTime = 0x1250; // GameTime_t
-            public const nint m_vecPredictionError = 0x1254; // Vector
+            public const nint m_vecPredictionError = 0x1254; // 
             public const nint m_flPredictionErrorTime = 0x1260; // GameTime_t
-            public const nint m_vecLastCameraSetupLocalOrigin = 0x1264; // Vector
+            public const nint m_vecLastCameraSetupLocalOrigin = 0x1264; // 
             public const nint m_flLastCameraSetupTime = 0x1270; // GameTime_t
             public const nint m_flFOVSensitivityAdjust = 0x1274; // float32
             public const nint m_flMouseSensitivity = 0x1278; // float32
-            public const nint m_vOldOrigin = 0x127C; // Vector
+            public const nint m_vOldOrigin = 0x127C; // 
             public const nint m_flOldSimulationTime = 0x1288; // float32
             public const nint m_nLastExecutedCommandNumber = 0x128C; // int32
             public const nint m_nLastExecutedCommandTick = 0x1290; // int32
@@ -2775,13 +2775,13 @@ namespace FrezzyHook.Schemas {
             public const nint m_PhysicsDelegate = 0x1028; // C_RopeKeyframe::CPhysicsDelegate
             public const nint m_hMaterial = 0x1038; // CStrongHandle<InfoForResourceTypeIMaterial2>
             public const nint m_TextureHeight = 0x1040; // int32
-            public const nint m_vecImpulse = 0x1044; // Vector
-            public const nint m_vecPreviousImpulse = 0x1050; // Vector
+            public const nint m_vecImpulse = 0x1044; // 
+            public const nint m_vecPreviousImpulse = 0x1050; // 
             public const nint m_flCurrentGustTimer = 0x105C; // float32
             public const nint m_flCurrentGustLifetime = 0x1060; // float32
             public const nint m_flTimeToNextGust = 0x1064; // float32
-            public const nint m_vWindDir = 0x1068; // Vector
-            public const nint m_vColorMod = 0x1074; // Vector
+            public const nint m_vWindDir = 0x1068; // 
+            public const nint m_vColorMod = 0x1074; // 
             public const nint m_vCachedEndPointAttachmentPos = 0x1080; // Vector[2]
             public const nint m_vCachedEndPointAttachmentAngle = 0x1098; // QAngle[2]
             public const nint m_bConstrainBetweenEndpoints = 0x10B0; // bool
@@ -2900,8 +2900,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flFalloffExponent (float)
         public static class C_EnvVolumetricFogVolume {
             public const nint m_bActive = 0x550; // bool
-            public const nint m_vBoxMins = 0x554; // Vector
-            public const nint m_vBoxMaxs = 0x560; // Vector
+            public const nint m_vBoxMins = 0x554; // 
+            public const nint m_vBoxMaxs = 0x560; // 
             public const nint m_bStartDisabled = 0x56C; // bool
             public const nint m_flStrength = 0x570; // float32
             public const nint m_nFalloffShape = 0x574; // int32
@@ -2987,15 +2987,15 @@ namespace FrezzyHook.Schemas {
             public const nint m_hLightProbeDirectLightIndicesTexture = 0x15C8; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_hLightProbeDirectLightScalarsTexture = 0x15D0; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_hLightProbeDirectLightShadowsTexture = 0x15D8; // CStrongHandle<InfoForResourceTypeCTextureBase>
-            public const nint m_vBoxMins = 0x15E0; // Vector
-            public const nint m_vBoxMaxs = 0x15EC; // Vector
+            public const nint m_vBoxMins = 0x15E0; // 
+            public const nint m_vBoxMaxs = 0x15EC; // 
             public const nint m_bMoveable = 0x15F8; // bool
             public const nint m_nHandshake = 0x15FC; // int32
             public const nint m_nEnvCubeMapArrayIndex = 0x1600; // int32
             public const nint m_nPriority = 0x1604; // int32
             public const nint m_bStartDisabled = 0x1608; // bool
             public const nint m_flEdgeFadeDist = 0x160C; // float32
-            public const nint m_vEdgeFadeDists = 0x1610; // Vector
+            public const nint m_vEdgeFadeDists = 0x1610; // 
             public const nint m_nLightProbeSizeX = 0x161C; // int32
             public const nint m_nLightProbeSizeY = 0x1620; // int32
             public const nint m_nLightProbeSizeZ = 0x1624; // int32
@@ -3144,11 +3144,11 @@ namespace FrezzyHook.Schemas {
             public const nint m_flSoftY = 0xE08; // float32
             public const nint m_flSkirt = 0xE0C; // float32
             public const nint m_flSkirtNear = 0xE10; // float32
-            public const nint m_vSizeParams = 0xE14; // Vector
+            public const nint m_vSizeParams = 0xE14; // 
             public const nint m_flRange = 0xE20; // float32
-            public const nint m_vShear = 0xE24; // Vector
+            public const nint m_vShear = 0xE24; // 
             public const nint m_nBakeSpecularToCubemaps = 0xE30; // int32
-            public const nint m_vBakeSpecularToCubemapsSize = 0xE34; // Vector
+            public const nint m_vBakeSpecularToCubemapsSize = 0xE34; // 
             public const nint m_nCastShadows = 0xE40; // int32
             public const nint m_nShadowMapSize = 0xE44; // int32
             public const nint m_nShadowPriority = 0xE48; // int32
@@ -3156,7 +3156,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_nBounceLight = 0xE50; // int32
             public const nint m_flBounceScale = 0xE54; // float32
             public const nint m_flMinRoughness = 0xE58; // float32
-            public const nint m_vAlternateColor = 0xE5C; // Vector
+            public const nint m_vAlternateColor = 0xE5C; // 
             public const nint m_fAlternateColorBrightness = 0xE68; // float32
             public const nint m_nFog = 0xE6C; // int32
             public const nint m_flFogStrength = 0xE70; // float32
@@ -3167,11 +3167,11 @@ namespace FrezzyHook.Schemas {
             public const nint m_flShadowFadeSizeStart = 0xE84; // float32
             public const nint m_flShadowFadeSizeEnd = 0xE88; // float32
             public const nint m_bPrecomputedFieldsValid = 0xE8C; // bool
-            public const nint m_vPrecomputedBoundsMins = 0xE90; // Vector
-            public const nint m_vPrecomputedBoundsMaxs = 0xE9C; // Vector
-            public const nint m_vPrecomputedOBBOrigin = 0xEA8; // Vector
+            public const nint m_vPrecomputedBoundsMins = 0xE90; // 
+            public const nint m_vPrecomputedBoundsMaxs = 0xE9C; // 
+            public const nint m_vPrecomputedOBBOrigin = 0xEA8; // 
             public const nint m_vPrecomputedOBBAngles = 0xEB4; // QAngle
-            public const nint m_vPrecomputedOBBExtent = 0xEC0; // Vector
+            public const nint m_vPrecomputedOBBExtent = 0xEC0; // 
         }
         // Parent: C_BaseEntity
         // Fields count: 8
@@ -3298,7 +3298,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_iszEffectName = 0x1028; // CUtlSymbolLarge
             public const nint m_iszControlPointNames = 0x1030; // CUtlSymbolLarge[64]
             public const nint m_nDataCP = 0x1230; // int32
-            public const nint m_vecDataCPValue = 0x1234; // Vector
+            public const nint m_vecDataCPValue = 0x1234; // 
             public const nint m_nTintCP = 0x1240; // int32
             public const nint m_clrTint = 0x1244; // Color
             public const nint m_bOldActive = 0x1268; // bool
@@ -3412,7 +3412,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_bClientSide (bool)
         // NetworkVarNames: m_bExclusive (bool)
         public static class C_ColorCorrection {
-            public const nint m_vecOrigin = 0x550; // Vector
+            public const nint m_vecOrigin = 0x550; // 
             public const nint m_MinFalloff = 0x55C; // float32
             public const nint m_MaxFalloff = 0x560; // float32
             public const nint m_flFadeInDuration = 0x564; // float32
@@ -3705,11 +3705,11 @@ namespace FrezzyHook.Schemas {
             public const nint m_bEnabled = 0x144; // bool
             public const nint m_bFlicker = 0x145; // bool
             public const nint m_bPrecomputedFieldsValid = 0x146; // bool
-            public const nint m_vPrecomputedBoundsMins = 0x148; // Vector
-            public const nint m_vPrecomputedBoundsMaxs = 0x154; // Vector
-            public const nint m_vPrecomputedOBBOrigin = 0x160; // Vector
+            public const nint m_vPrecomputedBoundsMins = 0x148; // 
+            public const nint m_vPrecomputedBoundsMaxs = 0x154; // 
+            public const nint m_vPrecomputedOBBOrigin = 0x160; // 
             public const nint m_vPrecomputedOBBAngles = 0x16C; // QAngle
-            public const nint m_vPrecomputedOBBExtent = 0x178; // Vector
+            public const nint m_vPrecomputedOBBExtent = 0x178; // 
             public const nint m_flPrecomputedMaxRange = 0x184; // float32
             public const nint m_nFogLightingMode = 0x188; // int32
             public const nint m_flFogContributionStength = 0x18C; // float32
@@ -3847,7 +3847,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flForwardMove = 0x1AC; // float32
             public const nint m_flLeftMove = 0x1B0; // float32
             public const nint m_flUpMove = 0x1B4; // float32
-            public const nint m_vecLastMovementImpulses = 0x1B8; // Vector
+            public const nint m_vecLastMovementImpulses = 0x1B8; // 
             public const nint m_vecOldViewAngles = 0x1C4; // QAngle
         }
         // Parent: CEntitySubclassVDataBase
@@ -3955,8 +3955,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_fxSSSunFlareEffectIndex = 0xCD0; // ParticleIndex_t
             public const nint m_fxSunFlareEffectIndex = 0xCD4; // ParticleIndex_t
             public const nint m_fdistNormalize = 0xCD8; // float32
-            public const nint m_vSunPos = 0xCDC; // Vector
-            public const nint m_vDirection = 0xCE8; // Vector
+            public const nint m_vSunPos = 0xCDC; // 
+            public const nint m_vDirection = 0xCE8; // 
             public const nint m_iszEffectName = 0xCF8; // CUtlSymbolLarge
             public const nint m_iszSSEffectName = 0xD00; // CUtlSymbolLarge
             public const nint m_clrOverlay = 0xD08; // Color
@@ -4031,7 +4031,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_hPlayerParent = 0xF0C; // CHandle<C_BaseEntity>
             public const nint m_bIsHit = 0xF10; // bool
             public const nint m_flTimeCreated = 0xF14; // float32
-            public const nint m_vecStartPos = 0xF18; // Vector
+            public const nint m_vecStartPos = 0xF18; // 
         }
         // Parent: C_BaseEntity
         // Fields count: 17
@@ -4172,11 +4172,11 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flAutoRideSpeed (float)
         // NetworkVarNames: m_bFakeLadder (bool)
         public static class C_FuncLadder {
-            public const nint m_vecLadderDir = 0xCD0; // Vector
+            public const nint m_vecLadderDir = 0xCD0; // 
             public const nint m_Dismounts = 0xCE0; // CUtlVector<CHandle<C_InfoLadderDismount>>
-            public const nint m_vecLocalTop = 0xCF8; // Vector
-            public const nint m_vecPlayerMountPositionTop = 0xD04; // Vector
-            public const nint m_vecPlayerMountPositionBottom = 0xD10; // Vector
+            public const nint m_vecLocalTop = 0xCF8; // 
+            public const nint m_vecPlayerMountPositionTop = 0xD04; // 
+            public const nint m_vecPlayerMountPositionBottom = 0xD10; // 
             public const nint m_flAutoRideSpeed = 0xD1C; // float32
             public const nint m_bDisabled = 0xD20; // bool
             public const nint m_bFakeLadder = 0xD21; // bool
@@ -4311,8 +4311,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_nIndirectTextureDimX = 0x56C; // int32
             public const nint m_nIndirectTextureDimY = 0x570; // int32
             public const nint m_nIndirectTextureDimZ = 0x574; // int32
-            public const nint m_vBoxMins = 0x578; // Vector
-            public const nint m_vBoxMaxs = 0x584; // Vector
+            public const nint m_vBoxMins = 0x578; // 
+            public const nint m_vBoxMaxs = 0x584; // 
             public const nint m_bActive = 0x590; // bool
             public const nint m_flStartAnisoTime = 0x594; // GameTime_t
             public const nint m_flStartScatterTime = 0x598; // GameTime_t
@@ -4404,13 +4404,13 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_bEnabled (bool)
         public static class C_InfoVisibilityBox {
             public const nint m_nMode = 0x554; // int32
-            public const nint m_vBoxSize = 0x558; // Vector
+            public const nint m_vBoxSize = 0x558; // 
             public const nint m_bEnabled = 0x564; // bool
         }
         // Parent: C_Sprite
         // Fields count: 2
         public static class C_FireSprite {
-            public const nint m_vecMoveDir = 0xE00; // Vector
+            public const nint m_vecMoveDir = 0xE00; // 
             public const nint m_bFadeFromAbove = 0xE0C; // bool
         }
         // Parent: C_CSGO_TeamIntroCharacterPosition
@@ -4610,7 +4610,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flGlowStartTime (float)
         // NetworkVarNames: m_bEligibleForScreenHighlight (bool)
         public static class CGlowProperty {
-            public const nint m_fGlowColor = 0x8; // Vector
+            public const nint m_fGlowColor = 0x8; // 
             public const nint m_iGlowType = 0x30; // int32
             public const nint m_iGlowTeam = 0x34; // int32
             public const nint m_nGlowRange = 0x38; // int32
@@ -4648,10 +4648,10 @@ namespace FrezzyHook.Schemas {
             public const nint m_linearForce = 0xCEC; // float32
             public const nint m_flFrequency = 0xCF0; // float32
             public const nint m_flDampingRatio = 0xCF4; // float32
-            public const nint m_vecLinearForcePointAt = 0xCF8; // Vector
+            public const nint m_vecLinearForcePointAt = 0xCF8; // 
             public const nint m_bCollapseToForcePoint = 0xD04; // bool
-            public const nint m_vecLinearForcePointAtWorld = 0xD08; // Vector
-            public const nint m_vecLinearForceDirection = 0xD14; // Vector
+            public const nint m_vecLinearForcePointAtWorld = 0xD08; // 
+            public const nint m_vecLinearForceDirection = 0xD14; // 
             public const nint m_bConvertToDebrisWhenPossible = 0xD20; // bool
         }
         // Parent: CPlayerPawnComponent
@@ -4698,14 +4698,14 @@ namespace FrezzyHook.Schemas {
             public const nint m_hCubemapTexture = 0x5D0; // CStrongHandle<InfoForResourceTypeCTextureBase>
             public const nint m_bCustomCubemapTexture = 0x5D8; // bool
             public const nint m_flInfluenceRadius = 0x5DC; // float32
-            public const nint m_vBoxProjectMins = 0x5E0; // Vector
-            public const nint m_vBoxProjectMaxs = 0x5EC; // Vector
+            public const nint m_vBoxProjectMins = 0x5E0; // 
+            public const nint m_vBoxProjectMaxs = 0x5EC; // 
             public const nint m_bMoveable = 0x5F8; // bool
             public const nint m_nHandshake = 0x5FC; // int32
             public const nint m_nEnvCubeMapArrayIndex = 0x600; // int32
             public const nint m_nPriority = 0x604; // int32
             public const nint m_flEdgeFadeDist = 0x608; // float32
-            public const nint m_vEdgeFadeDists = 0x60C; // Vector
+            public const nint m_vEdgeFadeDists = 0x60C; // 
             public const nint m_flDiffuseScale = 0x618; // float32
             public const nint m_bStartDisabled = 0x61C; // bool
             public const nint m_bDefaultEnvMap = 0x61D; // bool
@@ -4717,7 +4717,7 @@ namespace FrezzyHook.Schemas {
         // Parent: C_BaseViewModel
         // Fields count: 3
         public static class C_PredictedViewModel {
-            public const nint m_vPredictedLagOffset = 0xF40; // Vector
+            public const nint m_vPredictedLagOffset = 0xF40; // 
             public const nint m_targetSpeed = 0xF4C; // QAngle
             public const nint m_currentSpeed = 0xF58; // QAngle
         }
@@ -4775,7 +4775,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bFirstUpdate = 0x5B1; // bool
             public const nint m_flPreviousValue = 0x5B4; // float32
             public const nint m_flPreviousUpdateTickTime = 0x5B8; // GameTime_t
-            public const nint m_vecPreviousTestPoint = 0x5BC; // Vector
+            public const nint m_vecPreviousTestPoint = 0x5BC; // 
         }
         // Parent: C_CSWeaponBase
         // Fields count: 0
@@ -4857,8 +4857,8 @@ namespace FrezzyHook.Schemas {
         // Parent: CInfoDynamicShadowHint
         // Fields count: 2
         public static class CInfoDynamicShadowHintBox {
-            public const nint m_vBoxMins = 0x568; // Vector
-            public const nint m_vBoxMaxs = 0x574; // Vector
+            public const nint m_vBoxMins = 0x568; // 
+            public const nint m_vBoxMaxs = 0x574; // 
         }
         // Parent: C_SoundOpvarSetPointEntity
         // Fields count: 0
@@ -4929,8 +4929,8 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flCapsuleRadius (float)
         public static class CCollisionProperty {
             public const nint m_collisionAttribute = 0x10; // VPhysicsCollisionAttribute_t
-            public const nint m_vecMins = 0x40; // Vector
-            public const nint m_vecMaxs = 0x4C; // Vector
+            public const nint m_vecMins = 0x40; // 
+            public const nint m_vecMaxs = 0x4C; // 
             public const nint m_usSolidFlags = 0x5A; // uint8
             public const nint m_nSolidType = 0x5B; // SolidType_t
             public const nint m_triggerBloat = 0x5C; // uint8
@@ -4938,12 +4938,12 @@ namespace FrezzyHook.Schemas {
             public const nint m_CollisionGroup = 0x5E; // uint8
             public const nint m_nEnablePhysics = 0x5F; // uint8
             public const nint m_flBoundingRadius = 0x60; // float32
-            public const nint m_vecSpecifiedSurroundingMins = 0x64; // Vector
-            public const nint m_vecSpecifiedSurroundingMaxs = 0x70; // Vector
-            public const nint m_vecSurroundingMaxs = 0x7C; // Vector
-            public const nint m_vecSurroundingMins = 0x88; // Vector
-            public const nint m_vCapsuleCenter1 = 0x94; // Vector
-            public const nint m_vCapsuleCenter2 = 0xA0; // Vector
+            public const nint m_vecSpecifiedSurroundingMins = 0x64; // 
+            public const nint m_vecSpecifiedSurroundingMaxs = 0x70; // 
+            public const nint m_vecSurroundingMaxs = 0x7C; // 
+            public const nint m_vecSurroundingMins = 0x88; // 
+            public const nint m_vCapsuleCenter1 = 0x94; // 
+            public const nint m_vCapsuleCenter2 = 0xA0; // 
             public const nint m_flCapsuleRadius = 0xAC; // float32
         }
         // Parent: None
@@ -4987,10 +4987,10 @@ namespace FrezzyHook.Schemas {
             public const nint m_unAccountID = 0xCD4; // uint32
             public const nint m_unTraceID = 0xCD8; // uint32
             public const nint m_rtGcTime = 0xCDC; // uint32
-            public const nint m_vecEndPos = 0xCE0; // Vector
-            public const nint m_vecStart = 0xCEC; // Vector
-            public const nint m_vecLeft = 0xCF8; // Vector
-            public const nint m_vecNormal = 0xD04; // Vector
+            public const nint m_vecEndPos = 0xCE0; // 
+            public const nint m_vecStart = 0xCEC; // 
+            public const nint m_vecLeft = 0xCF8; // 
+            public const nint m_vecNormal = 0xD04; // 
             public const nint m_nPlayer = 0xD10; // int32
             public const nint m_nEntity = 0xD14; // int32
             public const nint m_nHitbox = 0xD18; // int32
@@ -5078,7 +5078,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: blend (bool)
         // NetworkVarNames: m_bNoReflectionFog (bool)
         public static class fogparams_t {
-            public const nint dirPrimary = 0x8; // Vector
+            public const nint dirPrimary = 0x8; // 
             public const nint colorPrimary = 0x14; // Color
             public const nint colorSecondary = 0x18; // Color
             public const nint colorPrimaryLerpTo = 0x1C; // Color
@@ -5112,10 +5112,10 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_blinktoggle (bool)
         public static class C_BaseFlex {
             public const nint m_flexWeight = 0xEE8; // C_NetworkUtlVectorBase<float32>
-            public const nint m_vLookTargetPosition = 0xF00; // Vector
+            public const nint m_vLookTargetPosition = 0xF00; // 
             public const nint m_blinktoggle = 0xF18; // bool
             public const nint m_nLastFlexUpdateFrameCount = 0xF78; // int32
-            public const nint m_CachedViewTarget = 0xF7C; // Vector
+            public const nint m_CachedViewTarget = 0xF7C; // 
             public const nint m_nNextSceneEventId = 0xF88; // uint32
             public const nint m_iBlink = 0xF8C; // int32
             public const nint m_blinktime = 0xF90; // float32
@@ -5128,7 +5128,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bResetFlexWeightsOnModelChange = 0xFA6; // bool
             public const nint m_nEyeOcclusionRendererBone = 0xFC0; // int32
             public const nint m_mEyeOcclusionRendererCameraToBoneTransform = 0xFC4; // matrix3x4_t
-            public const nint m_vEyeOcclusionRendererHalfExtent = 0xFF4; // Vector
+            public const nint m_vEyeOcclusionRendererHalfExtent = 0xFF4; // 
             public const nint m_PhonemeClasses = 0x1010; // C_BaseFlex::Emphasized_Phoneme[3]
         }
         // Parent: C_BaseEntity
@@ -5215,8 +5215,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_glowColor = 0x1118; // Color
             public const nint m_nGlowTeam = 0x111C; // int32
             public const nint m_iCachedFrameCount = 0x1120; // int32
-            public const nint m_vecCachedRenderMins = 0x1124; // Vector
-            public const nint m_vecCachedRenderMaxs = 0x1130; // Vector
+            public const nint m_vecCachedRenderMins = 0x1124; // 
+            public const nint m_vecCachedRenderMaxs = 0x1130; // 
         }
         // Parent: C_Sprite
         // Fields count: 0
@@ -5258,10 +5258,10 @@ namespace FrezzyHook.Schemas {
             public const nint bounceFactor = 0xF08; // float32
             public const nint hitSound = 0xF0C; // int32
             public const nint priority = 0xF10; // int32
-            public const nint tentOffset = 0xF14; // Vector
+            public const nint tentOffset = 0xF14; // 
             public const nint m_vecTempEntAngVelocity = 0xF20; // QAngle
             public const nint tempent_renderamt = 0xF2C; // int32
-            public const nint m_vecNormal = 0xF30; // Vector
+            public const nint m_vecNormal = 0xF30; // 
             public const nint m_flSpriteScale = 0xF3C; // float32
             public const nint m_nFlickerFrame = 0xF40; // int32
             public const nint m_flFrameRate = 0xF44; // float32
@@ -5270,10 +5270,10 @@ namespace FrezzyHook.Schemas {
             public const nint m_pszParticleEffect = 0xF58; // char*
             public const nint m_bParticleCollision = 0xF60; // bool
             public const nint m_iLastCollisionFrame = 0xF64; // int32
-            public const nint m_vLastCollisionOrigin = 0xF68; // Vector
-            public const nint m_vecTempEntVelocity = 0xF74; // Vector
-            public const nint m_vecPrevAbsOrigin = 0xF80; // Vector
-            public const nint m_vecTempEntAcceleration = 0xF8C; // Vector
+            public const nint m_vLastCollisionOrigin = 0xF68; // 
+            public const nint m_vecTempEntVelocity = 0xF74; // 
+            public const nint m_vecPrevAbsOrigin = 0xF80; // 
+            public const nint m_vecTempEntAcceleration = 0xF8C; // 
         }
         // Parent: None
         // Fields count: 2
@@ -5412,7 +5412,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_OnPlayerPickup = 0x16E0; // CEntityIOOutput
             public const nint m_weaponMode = 0x1708; // CSWeaponMode
             public const nint m_flTurningInaccuracyDelta = 0x170C; // float32
-            public const nint m_vecTurningInaccuracyEyeDirLast = 0x1710; // Vector
+            public const nint m_vecTurningInaccuracyEyeDirLast = 0x1710; // 
             public const nint m_flTurningInaccuracy = 0x171C; // float32
             public const nint m_fAccuracyPenalty = 0x1720; // float32
             public const nint m_flLastAccuracyUpdateTime = 0x1724; // GameTime_t
@@ -5437,7 +5437,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bOldFirstPersonSpectatedState = 0x17E9; // bool
             public const nint m_hOurPing = 0x17EC; // CHandle<C_BaseEntity>
             public const nint m_nOurPingIndex = 0x17F0; // CEntityIndex
-            public const nint m_vecOurPingPos = 0x17F4; // Vector
+            public const nint m_vecOurPingPos = 0x17F4; // 
             public const nint m_bGlowForPing = 0x1800; // bool
             public const nint m_bUIWeapon = 0x1801; // bool
             public const nint m_hPrevOwner = 0x1810; // CHandle<C_CSPlayerPawn>
@@ -5586,9 +5586,9 @@ namespace FrezzyHook.Schemas {
             public const nint m_spawnflags = 0x3CC; // uint32
             public const nint m_nNextThinkTick = 0x3D0; // GameTick_t
             public const nint m_fFlags = 0x3D4; // uint32
-            public const nint m_vecAbsVelocity = 0x3D8; // Vector
+            public const nint m_vecAbsVelocity = 0x3D8; // 
             public const nint m_vecVelocity = 0x3E8; // CNetworkVelocityVector
-            public const nint m_vecBaseVelocity = 0x418; // Vector
+            public const nint m_vecBaseVelocity = 0x418; // 
             public const nint m_hEffectEntity = 0x424; // CHandle<C_BaseEntity>
             public const nint m_hOwnerEntity = 0x428; // CHandle<C_BaseEntity>
             public const nint m_MoveCollide = 0x42C; // MoveCollide_t
@@ -5766,7 +5766,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flFrame = 0xD70; // float32
             public const nint m_nClipStyle = 0xD74; // BeamClipStyle_t
             public const nint m_bTurnedOff = 0xD78; // bool
-            public const nint m_vecEndPos = 0xD7C; // Vector
+            public const nint m_vecEndPos = 0xD7C; // 
             public const nint m_hEndEntity = 0xD88; // CHandle<C_BaseEntity>
         }
         // Parent: C_BaseEntity
@@ -5897,7 +5897,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flIronSightPivotForward = 0xD20; // float32
             public const nint m_flIronSightLooseness = 0xD24; // float32
             public const nint m_angPivotAngle = 0xD28; // QAngle
-            public const nint m_vecIronSightEyePos = 0xD34; // Vector
+            public const nint m_vecIronSightEyePos = 0xD34; // 
             public const nint m_nDamage = 0xD40; // int32
             public const nint m_flHeadshotMultiplier = 0xD44; // float32
             public const nint m_flArmorRatio = 0xD48; // float32
@@ -5913,7 +5913,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_nRecoveryTransitionStartBullet = 0xD70; // int32
             public const nint m_nRecoveryTransitionEndBullet = 0xD74; // int32
             public const nint m_flThrowVelocity = 0xD78; // float32
-            public const nint m_vSmokeColor = 0xD7C; // Vector
+            public const nint m_vSmokeColor = 0xD7C; // 
             public const nint m_szAnimClass = 0xD88; // CGlobalSymbol
         }
         // Parent: C_ModelPointEntity
@@ -6092,10 +6092,10 @@ namespace FrezzyHook.Schemas {
             public const nint m_eDoorState = 0x1150; // DoorState_t
             public const nint m_modelChanged = 0x1154; // bool
             public const nint m_bLocked = 0x1155; // bool
-            public const nint m_closedPosition = 0x1158; // Vector
+            public const nint m_closedPosition = 0x1158; // 
             public const nint m_closedAngles = 0x1164; // QAngle
             public const nint m_hMaster = 0x1170; // CHandle<C_BasePropDoor>
-            public const nint m_vWhereToSetLightingOrigin = 0x1174; // Vector
+            public const nint m_vWhereToSetLightingOrigin = 0x1174; // 
         }
         // Parent: C_CSGO_TeamSelectCharacterPosition
         // Fields count: 0
@@ -6116,8 +6116,8 @@ namespace FrezzyHook.Schemas {
             public const nint m_iszBasePropData = 0x1050; // CUtlSymbolLarge
             public const nint m_iInteractions = 0x1058; // int32
             public const nint m_bHasBreakPiecesOrCommands = 0x105C; // bool
-            public const nint m_vecDamagePosition = 0x1060; // Vector
-            public const nint m_vecDamageDirection = 0x106C; // Vector
+            public const nint m_vecDamagePosition = 0x1060; // 
+            public const nint m_vecDamageDirection = 0x106C; // 
             public const nint m_nDamageType = 0x1078; // int32
         }
         // Parent: C_CSGO_TeamPreviewCamera
@@ -6135,7 +6135,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_bDisabled = 0x550; // bool
             public const nint m_bWasEnabled = 0x558; // bool
             public const nint m_iszSoundAreaType = 0x560; // CUtlSymbolLarge
-            public const nint m_vPos = 0x568; // Vector
+            public const nint m_vPos = 0x568; // 
         }
         // Parent: C_BaseEntity
         // Fields count: 3
@@ -6201,7 +6201,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_flTransitionStartSpeed (float32)
         // NetworkVarNames: m_hConveyorModels (EHANDLE)
         public static class C_FuncConveyor {
-            public const nint m_vecMoveDirEntitySpace = 0xCD8; // Vector
+            public const nint m_vecMoveDirEntitySpace = 0xCD8; // 
             public const nint m_flTargetSpeed = 0xCE4; // float32
             public const nint m_nTransitionStartTick = 0xCE8; // GameTick_t
             public const nint m_nTransitionDurationTicks = 0xCEC; // int32
@@ -6254,7 +6254,7 @@ namespace FrezzyHook.Schemas {
         // NetworkVarNames: m_hWeapon (CHandle<CBasePlayerWeapon>)
         // NetworkVarNames: m_hControlPanel (CHandle<CBaseEntity>)
         public static class C_BaseViewModel {
-            public const nint m_vecLastFacing = 0xEE0; // Vector
+            public const nint m_vecLastFacing = 0xEE0; // 
             public const nint m_nViewModelIndex = 0xEEC; // uint32
             public const nint m_nAnimationParity = 0xEF0; // uint32
             public const nint m_flAnimationStartTime = 0xEF4; // float32
@@ -6308,7 +6308,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_vecOrigin = 0x80; // CNetworkOriginCellCoordQuantizedVector
             public const nint m_angRotation = 0xB8; // QAngle
             public const nint m_flScale = 0xC4; // float32
-            public const nint m_vecAbsOrigin = 0xC8; // Vector
+            public const nint m_vecAbsOrigin = 0xC8; // 
             public const nint m_angAbsRotation = 0xD4; // QAngle
             public const nint m_flAbsScale = 0xE0; // float32
             public const nint m_nParentAttachmentOrBone = 0xE4; // int16
@@ -6330,7 +6330,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_name = 0xF0; // CUtlStringToken
             public const nint m_hierarchyAttachName = 0x130; // CUtlStringToken
             public const nint m_flZOffset = 0x134; // float32
-            public const nint m_vRenderOrigin = 0x138; // Vector
+            public const nint m_vRenderOrigin = 0x138; // 
         }
         // Parent: C_MolotovGrenade
         // Fields count: 0
@@ -6380,8 +6380,8 @@ namespace FrezzyHook.Schemas {
         // Fields count: 8
         public static class CCSObserver_ObserverServices {
             public const nint m_hLastObserverTarget = 0x58; // CEntityHandle
-            public const nint m_vecObserverInterpolateOffset = 0x5C; // Vector
-            public const nint m_vecObserverInterpStartPos = 0x68; // Vector
+            public const nint m_vecObserverInterpolateOffset = 0x5C; // 
+            public const nint m_vecObserverInterpStartPos = 0x68; // 
             public const nint m_flObsInterp_PathLength = 0x74; // float32
             public const nint m_qObsInterp_OrientationStart = 0x80; // Quaternion
             public const nint m_qObsInterp_OrientationTravelDir = 0x90; // Quaternion
@@ -6422,20 +6422,20 @@ namespace FrezzyHook.Schemas {
             public const nint m_entitySpottedState = 0x1100; // EntitySpottedState_t
             public const nint m_leader = 0x1118; // CHandle<C_BaseEntity>
             public const nint m_reuseTimer = 0x1120; // CountdownTimer
-            public const nint m_vel = 0x1138; // Vector
+            public const nint m_vel = 0x1138; // 
             public const nint m_isRescued = 0x1144; // bool
             public const nint m_jumpedThisFrame = 0x1145; // bool
             public const nint m_nHostageState = 0x1148; // int32
             public const nint m_bHandsHaveBeenCut = 0x114C; // bool
             public const nint m_hHostageGrabber = 0x1150; // CHandle<C_CSPlayerPawn>
             public const nint m_fLastGrabTime = 0x1154; // GameTime_t
-            public const nint m_vecGrabbedPos = 0x1158; // Vector
+            public const nint m_vecGrabbedPos = 0x1158; // 
             public const nint m_flRescueStartTime = 0x1164; // GameTime_t
             public const nint m_flGrabSuccessTime = 0x1168; // GameTime_t
             public const nint m_flDropStartTime = 0x116C; // GameTime_t
             public const nint m_flDeadOrRescuedTime = 0x1170; // GameTime_t
             public const nint m_blinkTimer = 0x1178; // CountdownTimer
-            public const nint m_lookAt = 0x1190; // Vector
+            public const nint m_lookAt = 0x1190; // 
             public const nint m_lookAroundTimer = 0x11A0; // CountdownTimer
             public const nint m_isInit = 0x11B8; // bool
             public const nint m_eyeAttachment = 0x11B9; // AttachmentHandle_t
@@ -6534,7 +6534,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_pBombDefuser = 0xF44; // CHandle<C_CSPlayerPawn>
             public const nint m_fLastDefuseTime = 0xF48; // GameTime_t
             public const nint m_pPredictionOwner = 0xF50; // CBasePlayerController*
-            public const nint m_vecC4ExplodeSpectatePos = 0xF58; // Vector
+            public const nint m_vecC4ExplodeSpectatePos = 0xF58; // 
             public const nint m_vecC4ExplodeSpectateAng = 0xF64; // QAngle
             public const nint m_flC4ExplodeSpectateDuration = 0xF70; // float32
         }
