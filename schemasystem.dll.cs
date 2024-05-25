@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-namespace FrezzyHook.Schemas {
+namespace CS2Dumper.Schemas {
     // Module: schemasystem.dll
     // Classes count: 7
     // Enums count: 2
@@ -109,7 +109,7 @@ namespace FrezzyHook.Schemas {
         // Fields count: 22
         public static class CSchemaSystemInternalRegistration {
             public const nint m_Vector2D = 0x0; // Vector2D
-            public const nint m_Vector = 0x8; // 
+            public const nint m_Vector = 0x8; // Vector
             public const nint m_VectorAligned = 0x20; // VectorAligned
             public const nint m_Quaternion = 0x30; // Quaternion
             public const nint m_QAngle = 0x40; // QAngle

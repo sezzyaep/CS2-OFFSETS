@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -112,7 +112,7 @@ pub mod cs2_dumper {
                 pub const m_flRadius: usize = 0xC; // float32
                 pub const m_flRoundness: usize = 0x10; // float32
                 pub const m_flFeather: usize = 0x14; // float32
-                pub const m_vColorTint: usize = 0x18; // 
+                pub const m_vColorTint: usize = 0x18; // Vector
             }
             // Parent: None
             // Fields count: 5

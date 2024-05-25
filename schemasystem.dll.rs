@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -114,7 +114,7 @@ pub mod cs2_dumper {
             // Fields count: 22
             pub mod CSchemaSystemInternalRegistration {
                 pub const m_Vector2D: usize = 0x0; // Vector2D
-                pub const m_Vector: usize = 0x8; // 
+                pub const m_Vector: usize = 0x8; // Vector
                 pub const m_VectorAligned: usize = 0x20; // VectorAligned
                 pub const m_Quaternion: usize = 0x30; // Quaternion
                 pub const m_QAngle: usize = 0x40; // QAngle

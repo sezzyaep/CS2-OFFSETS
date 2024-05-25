@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-namespace FrezzyHook.Schemas {
+namespace CS2Dumper.Schemas {
     // Module: materialsystem2.dll
     // Classes count: 13
     // Enums count: 5
@@ -104,7 +104,7 @@ namespace FrezzyHook.Schemas {
             public const nint m_flRadius = 0xC; // float32
             public const nint m_flRoundness = 0x10; // float32
             public const nint m_flFeather = 0x14; // float32
-            public const nint m_vColorTint = 0x18; // 
+            public const nint m_vColorTint = 0x18; // Vector
         }
         // Parent: None
         // Fields count: 5

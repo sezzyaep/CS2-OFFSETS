@@ -1,5 +1,5 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
 #pragma once
 
@@ -8,7 +8,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: resourcesystem.dll
-        // Classes count: 59
+        // Classes count: 58
         // Enums count: 2
         namespace resourcesystem_dll {
             // Alignment: 1
@@ -187,8 +187,8 @@ namespace cs2_dumper {
             // Parent: None
             // Fields count: 2
             namespace AABB_t {
-                constexpr std::ptrdiff_t m_vMinBounds = 0x0; // 
-                constexpr std::ptrdiff_t m_vMaxBounds = 0xC; // 
+                constexpr std::ptrdiff_t m_vMinBounds = 0x0; // Vector
+                constexpr std::ptrdiff_t m_vMaxBounds = 0xC; // Vector
             }
             // Parent: None
             // Fields count: 0
@@ -279,20 +279,6 @@ namespace cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
-            namespace InfoForResourceTypeCNmGraph {
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            namespace InfoForResourceTypeCDACGameDefsData {
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
             namespace InfoForResourceTypeCPanoramaStyle {
             }
             // Parent: None
@@ -307,7 +293,21 @@ namespace cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
+            namespace InfoForResourceTypeCNmGraphVariation {
+            }
+            // Parent: None
+            // Fields count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
             namespace InfoForResourceTypeCCSGOEconItem {
+            }
+            // Parent: None
+            // Fields count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
+            namespace InfoForResourceTypeCNmGraphDefinition {
             }
             // Parent: None
             // Fields count: 0
@@ -420,13 +420,6 @@ namespace cs2_dumper {
             // Fields count: 1
             namespace FuseVariableIndex_t {
                 constexpr std::ptrdiff_t m_Value = 0x0; // uint16
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            namespace InfoForResourceTypeCNmGraphDataSet {
             }
             // Parent: None
             // Fields count: 0

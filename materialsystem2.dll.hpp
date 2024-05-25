@@ -1,5 +1,5 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
 #pragma once
 
@@ -109,7 +109,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_flRadius = 0xC; // float32
                 constexpr std::ptrdiff_t m_flRoundness = 0x10; // float32
                 constexpr std::ptrdiff_t m_flFeather = 0x14; // float32
-                constexpr std::ptrdiff_t m_vColorTint = 0x18; // 
+                constexpr std::ptrdiff_t m_vColorTint = 0x18; // Vector
             }
             // Parent: None
             // Fields count: 5

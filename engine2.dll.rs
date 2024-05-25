@@ -1,12 +1,12 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: engine2.dll
-        // Classes count: 43
+        // Classes count: 48
         // Enums count: 4
         pub mod engine2_dll {
             // Alignment: 4
@@ -21,7 +21,7 @@ pub mod cs2_dumper {
             // Members count: 4
             #[repr(u32)]
             pub enum EntityIOTargetType_t {
-                ENTITY_IO_TARGET_INVALID = 0xFFFFFFFFFFFFFFFF,
+                ENTITY_IO_TARGET_INVALID = u32::MAX,
                 ENTITY_IO_TARGET_ENTITYNAME = 0x2,
                 ENTITY_IO_TARGET_EHANDLE = 0x6,
                 ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME = 0x7
@@ -247,6 +247,10 @@ pub mod cs2_dumper {
                 pub const m_bFirstTick: usize = 0x28; // bool
                 pub const m_bLastTick: usize = 0x29; // bool
             }
+            // Parent: None
+            // Fields count: 0
+            pub mod EventClientAdvanceNonRenderedFrame_t {
+            }
             // Parent: EventSimulate_t
             // Fields count: 0
             pub mod EventServerProcessNetworking_t {
@@ -290,6 +294,22 @@ pub mod cs2_dumper {
             // Parent: EventSimulate_t
             // Fields count: 0
             pub mod EventServerPollNetworking_t {
+            }
+            // Parent: None
+            // Fields count: 0
+            pub mod  {
+            }
+            // Parent: None
+            // Fields count: 0
+            pub mod  {
+            }
+            // Parent: None
+            // Fields count: 0
+            pub mod  {
+            }
+            // Parent: None
+            // Fields count: 0
+            pub mod  {
             }
         }
     }

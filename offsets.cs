@@ -1,12 +1,12 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-05-23 23:39:12.846392100 UTC
+// 2024-05-24 21:57:40.319000800 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: client.dll
     public static class ClientDll {
         public const nint dwCSGOInput = 0x1A0D080;
         public const nint dwEntityList = 0x19A3328;
-        public const nint dwGameEntitySystem = 0x1AC2018;
+        public const nint dwGameEntitySystem = 0x1AC2028;
         public const nint dwGameEntitySystem_getHighestEntityIndex = 0x1510;
         public const nint dwGameRules = 0x1A00D08;
         public const nint dwGlobalVars = 0x1801BF0;
@@ -24,16 +24,19 @@ namespace CS2Dumper.Offsets {
     }
     // Module: engine2.dll
     public static class Engine2Dll {
-        public const nint dwBuildNumber = 0x51E784;
-        public const nint dwEngineViewData = 0x5DA9DC;
-        public const nint dwNetworkGameClient = 0x51DB58;
+        public const nint dwBuildNumber = 0x51D784;
+        public const nint dwEngineViewData = 0x5D99DC;
+        public const nint dwNetworkGameClient = 0x51CB58;
+        public const nint dwNetworkGameClient_clientTickCount = 0x178;
         public const nint dwNetworkGameClient_deltaTick = 0x278;
-        public const nint dwNetworkGameClient_getLocalPlayer = 0xF0;
-        public const nint dwNetworkGameClient_getMaxClients = 0x270;
+        public const nint dwNetworkGameClient_isBackgroundMap = 0x28145F;
+        public const nint dwNetworkGameClient_localPlayer = 0xF0;
+        public const nint dwNetworkGameClient_maxClients = 0x270;
+        public const nint dwNetworkGameClient_serverTickCount = 0x174;
         public const nint dwNetworkGameClient_signOnState = 0x260;
-        public const nint dwSoundService = 0x5DA940;
-        public const nint dwWindowHeight = 0x5DE2B4;
-        public const nint dwWindowWidth = 0x5DE2B0;
+        public const nint dwSoundService = 0x5D9940;
+        public const nint dwWindowHeight = 0x5DD2B4;
+        public const nint dwWindowWidth = 0x5DD2B0;
     }
     // Module: inputsystem.dll
     public static class InputsystemDll {

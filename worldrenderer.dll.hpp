@@ -1,5 +1,5 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
 #pragma once
 
@@ -41,7 +41,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_vTintColor = 0x3C; // Vector4D
                 constexpr std::ptrdiff_t m_skin = 0x50; // CUtlString
                 constexpr std::ptrdiff_t m_nObjectTypeFlags = 0x58; // ObjectTypeFlags_t
-                constexpr std::ptrdiff_t m_vLightingOrigin = 0x5C; // 
+                constexpr std::ptrdiff_t m_vLightingOrigin = 0x5C; // Vector
                 constexpr std::ptrdiff_t m_nOverlayRenderOrder = 0x68; // int16
                 constexpr std::ptrdiff_t m_nLODOverride = 0x6A; // int16
                 constexpr std::ptrdiff_t m_nCubeMapPrecomputedHandshake = 0x6C; // int32
@@ -55,9 +55,9 @@ namespace cs2_dumper {
             // Metadata:
             // MGetKV3ClassDefaults
             namespace AggregateLODSetup_t {
-                constexpr std::ptrdiff_t m_vLODOrigin = 0x0; // 
+                constexpr std::ptrdiff_t m_vLODOrigin = 0x0; // Vector
                 constexpr std::ptrdiff_t m_fMaxObjectScale = 0xC; // float32
-                constexpr std::ptrdiff_t m_fSwitchDistances = 0x10; // CUtlVectorFixedGrowable<float32>
+                constexpr std::ptrdiff_t m_fSwitchDistances = 0x10; // CUtlVector<float32>
             }
             // Parent: BaseSceneObjectOverride_t
             // Fields count: 4
@@ -102,9 +102,9 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace NodeData_t {
                 constexpr std::ptrdiff_t m_nParent = 0x0; // int32
-                constexpr std::ptrdiff_t m_vOrigin = 0x4; // 
-                constexpr std::ptrdiff_t m_vMinBounds = 0x10; // 
-                constexpr std::ptrdiff_t m_vMaxBounds = 0x1C; // 
+                constexpr std::ptrdiff_t m_vOrigin = 0x4; // Vector
+                constexpr std::ptrdiff_t m_vMinBounds = 0x10; // Vector
+                constexpr std::ptrdiff_t m_vMaxBounds = 0x1C; // Vector
                 constexpr std::ptrdiff_t m_flMinimumDistance = 0x28; // float32
                 constexpr std::ptrdiff_t m_ChildNodeIndices = 0x30; // CUtlVector<int32>
                 constexpr std::ptrdiff_t m_worldNodePrefix = 0x48; // CUtlString
@@ -136,20 +136,19 @@ namespace cs2_dumper {
             namespace WorldBuilderParams_t {
                 constexpr std::ptrdiff_t m_flMinDrawVolumeSize = 0x0; // float32
                 constexpr std::ptrdiff_t m_bBuildBakedLighting = 0x4; // bool
-                constexpr std::ptrdiff_t m_vLightmapUvScale = 0x8; // Vector2D
-                constexpr std::ptrdiff_t m_nCompileTimestamp = 0x10; // uint64
-                constexpr std::ptrdiff_t m_nCompileFingerprint = 0x18; // uint64
+                constexpr std::ptrdiff_t m_bakedLightingInfo = 0x8; // BakedLightingInfo_t
+                constexpr std::ptrdiff_t m_nCompileTimestamp = 0x38; // uint64
+                constexpr std::ptrdiff_t m_nCompileFingerprint = 0x40; // uint64
             }
             // Parent: None
-            // Fields count: 4
+            // Fields count: 3
             //
             // Metadata:
             // MGetKV3ClassDefaults
             namespace PermEntityLumpData_t {
                 constexpr std::ptrdiff_t m_name = 0x8; // CUtlString
-                constexpr std::ptrdiff_t m_hammerUniqueId = 0x10; // CUtlString
-                constexpr std::ptrdiff_t m_childLumps = 0x18; // CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>>
-                constexpr std::ptrdiff_t m_entityKeyValues = 0x30; // CUtlLeanVector<EntityKeyValueData_t>
+                constexpr std::ptrdiff_t m_childLumps = 0x10; // CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>>
+                constexpr std::ptrdiff_t m_entityKeyValues = 0x28; // CUtlLeanVector<EntityKeyValueData_t>
             }
             // Parent: None
             // Fields count: 13
@@ -194,7 +193,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nTimesToFire = 0x2C; // int32
             }
             // Parent: None
-            // Fields count: 5
+            // Fields count: 9
             //
             // Metadata:
             // MGetKV3ClassDefaults
@@ -203,6 +202,10 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_nLightmapGameVersionNumber = 0x4; // uint32
                 constexpr std::ptrdiff_t m_vLightmapUvScale = 0x8; // Vector2D
                 constexpr std::ptrdiff_t m_bHasLightmaps = 0x10; // bool
+                constexpr std::ptrdiff_t m_bBakedShadowsGamma20 = 0x11; // bool
+                constexpr std::ptrdiff_t m_bCompressionEnabled = 0x12; // bool
+                constexpr std::ptrdiff_t m_nChartPackIterations = 0x13; // uint8
+                constexpr std::ptrdiff_t m_nVradQuality = 0x14; // uint8
                 constexpr std::ptrdiff_t m_lightMaps = 0x18; // CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>>
             }
             // Parent: None
@@ -255,9 +258,9 @@ namespace cs2_dumper {
             // MGetKV3ClassDefaults
             namespace World_t {
                 constexpr std::ptrdiff_t m_builderParams = 0x0; // WorldBuilderParams_t
-                constexpr std::ptrdiff_t m_worldNodes = 0x20; // CUtlVector<NodeData_t>
-                constexpr std::ptrdiff_t m_worldLightingInfo = 0x38; // BakedLightingInfo_t
-                constexpr std::ptrdiff_t m_entityLumps = 0x68; // CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>>
+                constexpr std::ptrdiff_t m_worldNodes = 0x48; // CUtlVector<NodeData_t>
+                constexpr std::ptrdiff_t m_worldLightingInfo = 0x60; // BakedLightingInfo_t
+                constexpr std::ptrdiff_t m_entityLumps = 0x90; // CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>>
             }
             // Parent: None
             // Fields count: 10
@@ -303,8 +306,8 @@ namespace cs2_dumper {
             namespace CVoxelVisibility {
                 constexpr std::ptrdiff_t m_nBaseClusterCount = 0x40; // uint32
                 constexpr std::ptrdiff_t m_nPVSBytesPerCluster = 0x44; // uint32
-                constexpr std::ptrdiff_t m_vMinBounds = 0x48; // 
-                constexpr std::ptrdiff_t m_vMaxBounds = 0x54; // 
+                constexpr std::ptrdiff_t m_vMinBounds = 0x48; // Vector
+                constexpr std::ptrdiff_t m_vMaxBounds = 0x54; // Vector
                 constexpr std::ptrdiff_t m_flGridSize = 0x60; // float32
                 constexpr std::ptrdiff_t m_nSkyVisibilityCluster = 0x64; // uint32
                 constexpr std::ptrdiff_t m_nSunVisibilityCluster = 0x68; // uint32

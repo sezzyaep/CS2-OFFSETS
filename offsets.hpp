@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2024-05-23 23:39:12.846392100 UTC
+// 2024-05-24 21:57:40.319000800 UTC
 
 #pragma once
 
@@ -11,7 +11,7 @@ namespace cs2_dumper {
         namespace client_dll {
             constexpr std::ptrdiff_t dwCSGOInput = 0x1A0D080;
             constexpr std::ptrdiff_t dwEntityList = 0x19A3328;
-            constexpr std::ptrdiff_t dwGameEntitySystem = 0x1AC2018;
+            constexpr std::ptrdiff_t dwGameEntitySystem = 0x1AC2028;
             constexpr std::ptrdiff_t dwGameEntitySystem_getHighestEntityIndex = 0x1510;
             constexpr std::ptrdiff_t dwGameRules = 0x1A00D08;
             constexpr std::ptrdiff_t dwGlobalVars = 0x1801BF0;
@@ -29,16 +29,19 @@ namespace cs2_dumper {
         }
         // Module: engine2.dll
         namespace engine2_dll {
-            constexpr std::ptrdiff_t dwBuildNumber = 0x51E784;
-            constexpr std::ptrdiff_t dwEngineViewData = 0x5DA9DC;
-            constexpr std::ptrdiff_t dwNetworkGameClient = 0x51DB58;
+            constexpr std::ptrdiff_t dwBuildNumber = 0x51D784;
+            constexpr std::ptrdiff_t dwEngineViewData = 0x5D99DC;
+            constexpr std::ptrdiff_t dwNetworkGameClient = 0x51CB58;
+            constexpr std::ptrdiff_t dwNetworkGameClient_clientTickCount = 0x178;
             constexpr std::ptrdiff_t dwNetworkGameClient_deltaTick = 0x278;
-            constexpr std::ptrdiff_t dwNetworkGameClient_getLocalPlayer = 0xF0;
-            constexpr std::ptrdiff_t dwNetworkGameClient_getMaxClients = 0x270;
+            constexpr std::ptrdiff_t dwNetworkGameClient_isBackgroundMap = 0x28145F;
+            constexpr std::ptrdiff_t dwNetworkGameClient_localPlayer = 0xF0;
+            constexpr std::ptrdiff_t dwNetworkGameClient_maxClients = 0x270;
+            constexpr std::ptrdiff_t dwNetworkGameClient_serverTickCount = 0x174;
             constexpr std::ptrdiff_t dwNetworkGameClient_signOnState = 0x260;
-            constexpr std::ptrdiff_t dwSoundService = 0x5DA940;
-            constexpr std::ptrdiff_t dwWindowHeight = 0x5DE2B4;
-            constexpr std::ptrdiff_t dwWindowWidth = 0x5DE2B0;
+            constexpr std::ptrdiff_t dwSoundService = 0x5D9940;
+            constexpr std::ptrdiff_t dwWindowHeight = 0x5DD2B4;
+            constexpr std::ptrdiff_t dwWindowWidth = 0x5DD2B0;
         }
         // Module: inputsystem.dll
         namespace inputsystem_dll {

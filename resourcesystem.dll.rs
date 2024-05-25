@@ -1,12 +1,12 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: resourcesystem.dll
-        // Classes count: 59
+        // Classes count: 58
         // Enums count: 2
         pub mod resourcesystem_dll {
             // Alignment: 1
@@ -187,8 +187,8 @@ pub mod cs2_dumper {
             // Parent: None
             // Fields count: 2
             pub mod AABB_t {
-                pub const m_vMinBounds: usize = 0x0; // 
-                pub const m_vMaxBounds: usize = 0xC; // 
+                pub const m_vMinBounds: usize = 0x0; // Vector
+                pub const m_vMaxBounds: usize = 0xC; // Vector
             }
             // Parent: None
             // Fields count: 0
@@ -279,20 +279,6 @@ pub mod cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
-            pub mod InfoForResourceTypeCNmGraph {
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            pub mod InfoForResourceTypeCDACGameDefsData {
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
             pub mod InfoForResourceTypeCPanoramaStyle {
             }
             // Parent: None
@@ -307,7 +293,21 @@ pub mod cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
+            pub mod InfoForResourceTypeCNmGraphVariation {
+            }
+            // Parent: None
+            // Fields count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
             pub mod InfoForResourceTypeCCSGOEconItem {
+            }
+            // Parent: None
+            // Fields count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
+            pub mod InfoForResourceTypeCNmGraphDefinition {
             }
             // Parent: None
             // Fields count: 0
@@ -420,13 +420,6 @@ pub mod cs2_dumper {
             // Fields count: 1
             pub mod FuseVariableIndex_t {
                 pub const m_Value: usize = 0x0; // uint16
-            }
-            // Parent: None
-            // Fields count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            pub mod InfoForResourceTypeCNmGraphDataSet {
             }
             // Parent: None
             // Fields count: 0

@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-#![allow(non_upper_case_globals, non_camel_case_types, unused)]
+#![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
@@ -28,7 +28,7 @@ pub mod cs2_dumper {
                 RENDER_PRIM_TYPE_COUNT = 0xC
             }
             // Alignment: 4
-            // Members count: 12
+            // Members count: 13
             #[repr(u32)]
             pub enum RenderBufferFlags_t {
                 RENDER_BUFFER_USAGE_VERTEX_BUFFER = 0x1,
@@ -42,13 +42,14 @@ pub mod cs2_dumper {
                 RENDER_BUFFER_UAV_DRAW_INDIRECT_ARGS = 0x100,
                 RENDER_BUFFER_ACCELERATION_STRUCTURE = 0x200,
                 RENDER_BUFFER_SHADER_BINDING_TABLE = 0x400,
-                RENDER_BUFFER_PER_FRAME_WRITE_ONCE = 0x800
+                RENDER_BUFFER_PER_FRAME_WRITE_ONCE = 0x800,
+                RENDER_BUFFER_POOL_ALLOCATED = 0x1000
             }
             // Alignment: 1
             // Members count: 8
             #[repr(u8)]
             pub enum RenderMultisampleType_t {
-                RENDER_MULTISAMPLE_INVALID = 0xFFFFFFFFFFFFFFFF,
+                RENDER_MULTISAMPLE_INVALID = u8::MAX,
                 RENDER_MULTISAMPLE_NONE = 0x0,
                 RENDER_MULTISAMPLE_2X = 0x1,
                 RENDER_MULTISAMPLE_4X = 0x2,
@@ -70,7 +71,7 @@ pub mod cs2_dumper {
             // Members count: 3
             #[repr(u32)]
             pub enum RenderSlotType_t {
-                RENDER_SLOT_INVALID = 0xFFFFFFFFFFFFFFFF,
+                RENDER_SLOT_INVALID = u32::MAX,
                 RENDER_SLOT_PER_VERTEX = 0x0,
                 RENDER_SLOT_PER_INSTANCE = 0x1
             }

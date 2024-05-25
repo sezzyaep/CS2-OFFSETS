@@ -1,7 +1,7 @@
-// Offsets are automatically updated by frezzyhook.com.
-// 2024-05-08 04:40:40.591862300 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-05-24 21:57:40.319000800 UTC
 
-namespace FrezzyHook.Schemas {
+namespace CS2Dumper.Schemas {
     // Module: scenesystem.dll
     // Classes count: 9
     // Enums count: 1
@@ -62,7 +62,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_LayerBase {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
             public const nint m_nLayerIndex = 0x18; // int32
             public const nint m_nLayerId = 0x20; // uint64
@@ -82,7 +82,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_ViewTargetList {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
             public const nint m_Targets = 0x18; // CUtlVector<CSSDSMsg_ViewTarget>
         }
@@ -92,7 +92,7 @@ namespace FrezzyHook.Schemas {
         // Metadata:
         // MGetKV3ClassDefaults
         public static class CSSDSMsg_ViewRender {
-            public const nint m_viewId = 0x0; // 
+            public const nint m_viewId = 0x0; // SceneViewId_t
             public const nint m_ViewName = 0x10; // CUtlString
         }
         // Parent: None
