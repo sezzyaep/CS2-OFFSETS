@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-11 08:28:03.575464100 UTC
+// 2024-06-11 23:42:19.396033200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: pulse_system.dll

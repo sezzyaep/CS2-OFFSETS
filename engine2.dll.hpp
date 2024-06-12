@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-11 08:28:03.575464100 UTC
+// 2024-06-11 23:42:19.396033200 UTC
 
 #pragma once
 
@@ -216,7 +216,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_LoopState = 0x0; // EngineLoopState_t
                 constexpr std::ptrdiff_t m_flRealTime = 0x28; // float32
                 constexpr std::ptrdiff_t m_flFrameTime = 0x2C; // float32
-                constexpr std::ptrdiff_t m_flWhenScheduleSendTickPacket = 0x30; // float64
+                constexpr std::ptrdiff_t m_bScheduleSendTickPacket = 0x30; // bool
             }
             // Parent: EventAdvanceTick_t
             // Fields count: 0

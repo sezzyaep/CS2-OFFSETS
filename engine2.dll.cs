@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-11 08:28:03.575464100 UTC
+// 2024-06-11 23:42:19.396033200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: engine2.dll
@@ -211,7 +211,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_LoopState = 0x0; // EngineLoopState_t
             public const nint m_flRealTime = 0x28; // float32
             public const nint m_flFrameTime = 0x2C; // float32
-            public const nint m_flWhenScheduleSendTickPacket = 0x30; // float64
+            public const nint m_bScheduleSendTickPacket = 0x30; // bool
         }
         // Parent: EventAdvanceTick_t
         // Fields count: 0
