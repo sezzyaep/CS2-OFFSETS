@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-11 23:42:19.396033200 UTC
+// 2024-06-14 00:32:00.113314800 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
