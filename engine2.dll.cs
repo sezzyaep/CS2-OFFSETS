@@ -1,9 +1,9 @@
 // frezzyhook.com
-// 2024-06-21 12:19:40.533998900 UTC
+// 2024-06-25 23:37:32.871552400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: engine2.dll
-    // Classes count: 44
+    // Classes count: 48
     // Enums count: 4
     public static class Engine2Dll {
         // Alignment: 4
@@ -287,6 +287,22 @@ namespace CS2Dumper.Schemas {
         // Parent: EventSimulate_t
         // Fields count: 0
         public static class EventServerPollNetworking_t {
+        }
+        // Parent: None
+        // Fields count: 0
+        public static class  {
+        }
+        // Parent: None
+        // Fields count: 0
+        public static class  {
+        }
+        // Parent: None
+        // Fields count: 0
+        public static class  {
+        }
+        // Parent: None
+        // Fields count: 0
+        public static class  {
         }
     }
 }

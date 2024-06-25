@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-21 12:19:40.533998900 UTC
+// 2024-06-25 23:37:32.871552400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll

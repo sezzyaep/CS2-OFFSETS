@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-21 12:19:40.533998900 UTC
+// 2024-06-25 23:37:32.871552400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
@@ -1869,10 +1869,10 @@ namespace CS2Dumper.Schemas {
         // MGetKV3ClassDefaults
         public static class C_INIT_VelocityRadialRandom {
             public const nint m_nControlPointNumber = 0x1C0; // int32
-            public const nint m_fSpeedMin = 0x1C4; // float32
-            public const nint m_fSpeedMax = 0x1C8; // float32
-            public const nint m_vecLocalCoordinateSystemSpeedScale = 0x1CC; // Vector
-            public const nint m_bIgnoreDelta = 0x1D9; // bool
+            public const nint m_fSpeedMin = 0x1C8; // CPerParticleFloatInput
+            public const nint m_fSpeedMax = 0x320; // CPerParticleFloatInput
+            public const nint m_vecLocalCoordinateSystemSpeedScale = 0x478; // Vector
+            public const nint m_bIgnoreDelta = 0x485; // bool
         }
         // Parent: CParticleFunctionInitializer
         // Fields count: 3
