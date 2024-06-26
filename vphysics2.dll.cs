@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-25 23:37:32.871552400 UTC
+// 2024-06-26 22:19:10.922689 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: vphysics2.dll

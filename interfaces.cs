@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-25 23:37:32.871552400 UTC
+// 2024-06-26 22:19:10.922689 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -9,14 +9,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: client.dll
     public static class ClientDll {
-        public const nint ClientToolsInfo_001 = 0x747E00;
+        public const nint ClientToolsInfo_001 = 0x747DC0;
         public const nint EmptyWorldService001_Client = 0x482F10;
-        public const nint GameClientExports001 = 0x747E10;
-        public const nint LegacyGameUI001 = 0x8E3C00;
-        public const nint Source2Client002 = 0x747E20;
+        public const nint GameClientExports001 = 0x747DD0;
+        public const nint LegacyGameUI001 = 0x8E3BE0;
+        public const nint Source2Client002 = 0x747DE0;
         public const nint Source2ClientConfig001 = 0x466220;
-        public const nint Source2ClientPrediction001 = 0x7CB0E0;
-        public const nint Source2ClientUI001 = 0x8CA4D0;
+        public const nint Source2ClientPrediction001 = 0x7CB0A0;
+        public const nint Source2ClientUI001 = 0x8CA4B0;
     }
     // Module: engine2.dll
     public static class Engine2Dll {
@@ -55,8 +55,8 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: filesystem_stdio.dll
     public static class FilesystemStdioDll {
-        public const nint VAsyncFileSystem2_001 = 0x674A0;
-        public const nint VFileSystem017 = 0x67490;
+        public const nint VAsyncFileSystem2_001 = 0x67540;
+        public const nint VFileSystem017 = 0x67530;
     }
     // Module: host.dll
     public static class HostDll {
@@ -132,9 +132,9 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: rendersystemdx11.dll
     public static class Rendersystemdx11Dll {
-        public const nint RenderDeviceMgr001 = 0x50550;
-        public const nint RenderUtils_001 = 0x5A750;
-        public const nint VRenderDeviceMgrBackdoor001 = 0x50560;
+        public const nint RenderDeviceMgr001 = 0x505B0;
+        public const nint RenderUtils_001 = 0x5A7B0;
+        public const nint VRenderDeviceMgrBackdoor001 = 0x505C0;
     }
     // Module: resourcesystem.dll
     public static class ResourcesystemDll {
@@ -159,12 +159,12 @@ namespace CS2Dumper.Interfaces {
     public static class ServerDll {
         public const nint EmptyWorldService001_Server = 0x565C70;
         public const nint EntitySubclassUtilsV001 = 0x2BDC00;
-        public const nint NavGameTest001 = 0xA58470;
-        public const nint ServerToolsInfo_001 = 0x84A4D0;
-        public const nint Source2GameClients001 = 0x84A4E0;
+        public const nint NavGameTest001 = 0xA584C0;
+        public const nint ServerToolsInfo_001 = 0x84A520;
+        public const nint Source2GameClients001 = 0x84A530;
         public const nint Source2GameDirector001 = 0x124410;
-        public const nint Source2GameEntities001 = 0x84A4F0;
-        public const nint Source2Server001 = 0x84A500;
+        public const nint Source2GameEntities001 = 0x84A540;
+        public const nint Source2Server001 = 0x84A550;
         public const nint Source2ServerConfig001 = 0x550990;
         public const nint customnavsystem001 = 0x22BF60;
     }

@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-25 23:37:32.871552400 UTC
+// 2024-06-26 22:19:10.922689 UTC
 
 #pragma once
 
@@ -14,14 +14,14 @@ namespace cs2_dumper {
         }
         // Module: client.dll
         namespace client_dll {
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x747E00;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x747DC0;
             constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x482F10;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x747E10;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x8E3C00;
-            constexpr std::ptrdiff_t Source2Client002 = 0x747E20;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x747DD0;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x8E3BE0;
+            constexpr std::ptrdiff_t Source2Client002 = 0x747DE0;
             constexpr std::ptrdiff_t Source2ClientConfig001 = 0x466220;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x7CB0E0;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x8CA4D0;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x7CB0A0;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x8CA4B0;
         }
         // Module: engine2.dll
         namespace engine2_dll {
@@ -60,8 +60,8 @@ namespace cs2_dumper {
         }
         // Module: filesystem_stdio.dll
         namespace filesystem_stdio_dll {
-            constexpr std::ptrdiff_t VAsyncFileSystem2_001 = 0x674A0;
-            constexpr std::ptrdiff_t VFileSystem017 = 0x67490;
+            constexpr std::ptrdiff_t VAsyncFileSystem2_001 = 0x67540;
+            constexpr std::ptrdiff_t VFileSystem017 = 0x67530;
         }
         // Module: host.dll
         namespace host_dll {
@@ -137,9 +137,9 @@ namespace cs2_dumper {
         }
         // Module: rendersystemdx11.dll
         namespace rendersystemdx11_dll {
-            constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x50550;
-            constexpr std::ptrdiff_t RenderUtils_001 = 0x5A750;
-            constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x50560;
+            constexpr std::ptrdiff_t RenderDeviceMgr001 = 0x505B0;
+            constexpr std::ptrdiff_t RenderUtils_001 = 0x5A7B0;
+            constexpr std::ptrdiff_t VRenderDeviceMgrBackdoor001 = 0x505C0;
         }
         // Module: resourcesystem.dll
         namespace resourcesystem_dll {
@@ -164,12 +164,12 @@ namespace cs2_dumper {
         namespace server_dll {
             constexpr std::ptrdiff_t EmptyWorldService001_Server = 0x565C70;
             constexpr std::ptrdiff_t EntitySubclassUtilsV001 = 0x2BDC00;
-            constexpr std::ptrdiff_t NavGameTest001 = 0xA58470;
-            constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x84A4D0;
-            constexpr std::ptrdiff_t Source2GameClients001 = 0x84A4E0;
+            constexpr std::ptrdiff_t NavGameTest001 = 0xA584C0;
+            constexpr std::ptrdiff_t ServerToolsInfo_001 = 0x84A520;
+            constexpr std::ptrdiff_t Source2GameClients001 = 0x84A530;
             constexpr std::ptrdiff_t Source2GameDirector001 = 0x124410;
-            constexpr std::ptrdiff_t Source2GameEntities001 = 0x84A4F0;
-            constexpr std::ptrdiff_t Source2Server001 = 0x84A500;
+            constexpr std::ptrdiff_t Source2GameEntities001 = 0x84A540;
+            constexpr std::ptrdiff_t Source2Server001 = 0x84A550;
             constexpr std::ptrdiff_t Source2ServerConfig001 = 0x550990;
             constexpr std::ptrdiff_t customnavsystem001 = 0x22BF60;
         }

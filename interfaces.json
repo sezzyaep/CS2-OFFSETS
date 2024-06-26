@@ -4,14 +4,14 @@
     "AnimationSystem_001": 477424
   },
   "client.dll": {
-    "ClientToolsInfo_001": 7634432,
+    "ClientToolsInfo_001": 7634368,
     "EmptyWorldService001_Client": 4730640,
-    "GameClientExports001": 7634448,
-    "LegacyGameUI001": 9321472,
-    "Source2Client002": 7634464,
+    "GameClientExports001": 7634384,
+    "LegacyGameUI001": 9321440,
+    "Source2Client002": 7634400,
     "Source2ClientConfig001": 4612640,
-    "Source2ClientPrediction001": 8171744,
-    "Source2ClientUI001": 9217232
+    "Source2ClientPrediction001": 8171680,
+    "Source2ClientUI001": 9217200
   },
   "engine2.dll": {
     "BenchmarkService001": 1590720,
@@ -48,8 +48,8 @@
     "VProfService_001": 1924528
   },
   "filesystem_stdio.dll": {
-    "VAsyncFileSystem2_001": 423072,
-    "VFileSystem017": 423056
+    "VAsyncFileSystem2_001": 423232,
+    "VFileSystem017": 423216
   },
   "host.dll": {
     "DebugDrawQueueManager001": 86384,
@@ -110,9 +110,9 @@
     "IPulseSystem_001": 16064
   },
   "rendersystemdx11.dll": {
-    "RenderDeviceMgr001": 329040,
-    "RenderUtils_001": 370512,
-    "VRenderDeviceMgrBackdoor001": 329056
+    "RenderDeviceMgr001": 329136,
+    "RenderUtils_001": 370608,
+    "VRenderDeviceMgrBackdoor001": 329152
   },
   "resourcesystem.dll": {
     "ResourceSystem013": 68656
@@ -132,12 +132,12 @@
   "server.dll": {
     "EmptyWorldService001_Server": 5659760,
     "EntitySubclassUtilsV001": 2874368,
-    "NavGameTest001": 10847344,
-    "ServerToolsInfo_001": 8692944,
-    "Source2GameClients001": 8692960,
+    "NavGameTest001": 10847424,
+    "ServerToolsInfo_001": 8693024,
+    "Source2GameClients001": 8693040,
     "Source2GameDirector001": 1197072,
-    "Source2GameEntities001": 8692976,
-    "Source2Server001": 8692992,
+    "Source2GameEntities001": 8693056,
+    "Source2Server001": 8693072,
     "Source2ServerConfig001": 5573008,
     "customnavsystem001": 2277216
   },
