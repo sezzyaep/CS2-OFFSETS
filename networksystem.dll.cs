@@ -1,5 +1,5 @@
 // frezzyhook.com
-// 2024-06-26 22:19:10.922689 UTC
+// 2024-06-28 06:07:19.967056100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll
