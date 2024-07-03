@@ -1,5 +1,5 @@
-// frezzyhook.com
-// 2024-06-28 06:07:19.967056100 UTC
+// Dumped By FrezzyHook.com
+// 2024-07-03 10:57:59.320973200 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -239,8 +239,7 @@ pub mod cs2_dumper {
                 USE_ROTATION_EXPANDED_BOUNDS = 0x5,
                 USE_ROTATION_EXPANDED_ORIENTED_BOUNDS = 0x6,
                 USE_COLLISION_BOUNDS_NEVER_VPHYSICS = 0x7,
-                USE_ROTATION_EXPANDED_SEQUENCE_BOUNDS = 0x8,
-                SURROUNDING_TYPE_BIT_COUNT = 0x3
+                USE_ROTATION_EXPANDED_SEQUENCE_BOUNDS = 0x8
             }
             // Alignment: 4
             // Members count: 5
@@ -589,11 +588,7 @@ pub mod cs2_dumper {
                 TS_AT_TOP = 0x0,
                 TS_AT_BOTTOM = 0x1,
                 TS_GOING_UP = 0x2,
-                TS_GOING_DOWN = 0x3,
-                DOOR_OPEN = 0x0,
-                DOOR_CLOSED = 0x1,
-                DOOR_OPENING = 0x2,
-                DOOR_CLOSING = 0x3
+                TS_GOING_DOWN = 0x3
             }
             // Alignment: 4
             // Members count: 74
@@ -603,8 +598,6 @@ pub mod cs2_dumper {
                 LOADOUT_SLOT_INVALID = u32::MAX,
                 LOADOUT_SLOT_MELEE = 0x0,
                 LOADOUT_SLOT_C4 = 0x1,
-                LOADOUT_SLOT_FIRST_AUTO_BUY_WEAPON = 0x0,
-                LOADOUT_SLOT_LAST_AUTO_BUY_WEAPON = 0x1,
                 LOADOUT_SLOT_SECONDARY0 = 0x2,
                 LOADOUT_SLOT_SECONDARY1 = 0x3,
                 LOADOUT_SLOT_SECONDARY2 = 0x4,
@@ -629,32 +622,22 @@ pub mod cs2_dumper {
                 LOADOUT_SLOT_HEAVY3 = 0x17,
                 LOADOUT_SLOT_HEAVY4 = 0x18,
                 LOADOUT_SLOT_HEAVY5 = 0x19,
-                LOADOUT_SLOT_FIRST_WHEEL_WEAPON = 0x2,
-                LOADOUT_SLOT_LAST_WHEEL_WEAPON = 0x19,
-                LOADOUT_SLOT_FIRST_PRIMARY_WEAPON = 0x8,
-                LOADOUT_SLOT_LAST_PRIMARY_WEAPON = 0x19,
                 LOADOUT_SLOT_FIRST_WHEEL_GRENADE = 0x1A,
-                LOADOUT_SLOT_GRENADE0 = 0x1A,
                 LOADOUT_SLOT_GRENADE1 = 0x1B,
                 LOADOUT_SLOT_GRENADE2 = 0x1C,
                 LOADOUT_SLOT_GRENADE3 = 0x1D,
                 LOADOUT_SLOT_GRENADE4 = 0x1E,
                 LOADOUT_SLOT_GRENADE5 = 0x1F,
-                LOADOUT_SLOT_LAST_WHEEL_GRENADE = 0x1F,
                 LOADOUT_SLOT_EQUIPMENT0 = 0x20,
                 LOADOUT_SLOT_EQUIPMENT1 = 0x21,
                 LOADOUT_SLOT_EQUIPMENT2 = 0x22,
                 LOADOUT_SLOT_EQUIPMENT3 = 0x23,
                 LOADOUT_SLOT_EQUIPMENT4 = 0x24,
                 LOADOUT_SLOT_EQUIPMENT5 = 0x25,
-                LOADOUT_SLOT_FIRST_WHEEL_EQUIPMENT = 0x20,
-                LOADOUT_SLOT_LAST_WHEEL_EQUIPMENT = 0x25,
                 LOADOUT_SLOT_CLOTHING_CUSTOMPLAYER = 0x26,
                 LOADOUT_SLOT_CLOTHING_CUSTOMHEAD = 0x27,
                 LOADOUT_SLOT_CLOTHING_FACEMASK = 0x28,
                 LOADOUT_SLOT_CLOTHING_HANDS = 0x29,
-                LOADOUT_SLOT_FIRST_COSMETIC = 0x29,
-                LOADOUT_SLOT_LAST_COSMETIC = 0x29,
                 LOADOUT_SLOT_CLOTHING_EYEWEAR = 0x2A,
                 LOADOUT_SLOT_CLOTHING_HAT = 0x2B,
                 LOADOUT_SLOT_CLOTHING_LOWERBODY = 0x2C,
@@ -670,8 +653,6 @@ pub mod cs2_dumper {
                 LOADOUT_SLOT_MUSICKIT = 0x36,
                 LOADOUT_SLOT_FLAIR0 = 0x37,
                 LOADOUT_SLOT_SPRAY0 = 0x38,
-                LOADOUT_SLOT_FIRST_ALL_CHARACTER = 0x36,
-                LOADOUT_SLOT_LAST_ALL_CHARACTER = 0x38,
                 LOADOUT_SLOT_COUNT = 0x39
             }
             // Alignment: 4
@@ -683,7 +664,6 @@ pub mod cs2_dumper {
                 NAV_MESH_NON_ZUP = 0x8000,
                 NAV_MESH_SHORT_HEIGHT = 0x10000,
                 NAV_MESH_NON_ZUP_TRANSITION = 0x20000,
-                NAV_MESH_CROUCH = 0x10000,
                 NAV_MESH_JUMP = 0x2,
                 NAV_MESH_PRECISE = 0x4,
                 NAV_MESH_NO_JUMP = 0x8,
@@ -764,8 +744,7 @@ pub mod cs2_dumper {
             pub enum BeamClipStyle_t {
                 kNOCLIP = 0x0,
                 kGEOCLIP = 0x1,
-                kMODELCLIP = 0x2,
-                kBEAMCLIPSTYLE_NUMBITS = 0x2
+                kMODELCLIP = 0x2
             }
             // Alignment: 4
             // Members count: 4
@@ -871,9 +850,7 @@ pub mod cs2_dumper {
                 GEAR_SLOT_RESERVED_SLOT11 = 0xA,
                 GEAR_SLOT_BOOSTS = 0xB,
                 GEAR_SLOT_UTILITY = 0xC,
-                GEAR_SLOT_COUNT = 0xD,
-                GEAR_SLOT_FIRST = 0x0,
-                GEAR_SLOT_LAST = 0xC
+                GEAR_SLOT_COUNT = 0xD
             }
             // Alignment: 4
             // Members count: 10
@@ -985,7 +962,6 @@ pub mod cs2_dumper {
                 IN_SPEED = 0x10000,
                 IN_JOYAUTOSPRINT = 0x20000,
                 IN_FIRST_MOD_SPECIFIC_BIT = 0x100000000,
-                IN_USEORRELOAD = 0x100000000,
                 IN_SCORE = 0x200000000,
                 IN_ZOOM = 0x400000000,
                 IN_LOOK_AT_WEAPON = 0x800000000
@@ -1078,8 +1054,7 @@ pub mod cs2_dumper {
             #[repr(u32)]
             pub enum AmmoFlags_t {
                 AMMO_FORCE_DROP_IF_CARRIED = 0x1,
-                AMMO_RESERVE_STAYS_WITH_WEAPON = 0x2,
-                AMMO_FLAG_MAX = 0x2
+                AMMO_RESERVE_STAYS_WITH_WEAPON = 0x2
             }
             // Alignment: 4
             // Members count: 6
@@ -1388,7 +1363,6 @@ pub mod cs2_dumper {
                 DMG_DISSOLVE = 0x200000,
                 DMG_BLAST_SURFACE = 0x400000,
                 DMG_BUCKSHOT = 0x1000000,
-                DMG_LASTGENERICFLAG = 0x1000000,
                 DMG_HEADSHOT = 0x2000000,
                 DMG_DANGERZONE = 0x4000000
             }
@@ -1415,8 +1389,7 @@ pub mod cs2_dumper {
                 MOVECOLLIDE_FLY_BOUNCE = 0x1,
                 MOVECOLLIDE_FLY_CUSTOM = 0x2,
                 MOVECOLLIDE_FLY_SLIDE = 0x3,
-                MOVECOLLIDE_COUNT = 0x4,
-                MOVECOLLIDE_MAX_BITS = 0x3
+                MOVECOLLIDE_COUNT = 0x4
             }
             // Alignment: 4
             // Members count: 7
@@ -1602,7 +1575,6 @@ pub mod cs2_dumper {
                 DFLAG_ALWAYS_FIRE_DAMAGE_EVENTS = 0x200,
                 DFLAG_RADIUS_DMG = 0x400,
                 DFLAG_FORCEREDUCEARMOR_DMG = 0x800,
-                DMG_LASTDFLAG = 0x800,
                 DFLAG_IGNORE_ARMOR = 0x1000,
                 DFLAG_SUPPRESS_UTILREMOVE = 0x2000
             }
@@ -1621,12 +1593,7 @@ pub mod cs2_dumper {
                 D_HT = 0x1,
                 D_FR = 0x2,
                 D_LI = 0x3,
-                D_NU = 0x4,
-                D_ERROR = 0x0,
-                D_HATE = 0x1,
-                D_FEAR = 0x2,
-                D_LIKE = 0x3,
-                D_NEUTRAL = 0x4
+                D_NU = 0x4
             }
             // Alignment: 4
             // Members count: 3
@@ -1688,9 +1655,7 @@ pub mod cs2_dumper {
                 MOVETYPE_OBSERVER = 0x8,
                 MOVETYPE_LADDER = 0x9,
                 MOVETYPE_CUSTOM = 0xA,
-                MOVETYPE_LAST = 0xB,
-                MOVETYPE_INVALID = 0xB,
-                MOVETYPE_MAX_BITS = 0x5
+                MOVETYPE_LAST = 0xB
             }
             // Parent: CBaseCombatCharacter
             // Fields count: 1

@@ -1,5 +1,5 @@
-// frezzyhook.com
-// 2024-06-28 06:07:19.967056100 UTC
+// Dumped By FrezzyHook.com
+// 2024-07-03 10:57:59.320973200 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -135,14 +135,11 @@ pub mod cs2_dumper {
                 SNDLVL_50dB = 0x32,
                 SNDLVL_55dB = 0x37,
                 SNDLVL_IDLE = 0x3C,
-                SNDLVL_60dB = 0x3C,
                 SNDLVL_65dB = 0x41,
                 SNDLVL_STATIC = 0x42,
                 SNDLVL_70dB = 0x46,
                 SNDLVL_NORM = 0x4B,
-                SNDLVL_75dB = 0x4B,
                 SNDLVL_80dB = 0x50,
-                SNDLVL_TALKING = 0x50,
                 SNDLVL_85dB = 0x55,
                 SNDLVL_90dB = 0x5A,
                 SNDLVL_95dB = 0x5F,
@@ -152,7 +149,6 @@ pub mod cs2_dumper {
                 SNDLVL_120dB = 0x78,
                 SNDLVL_130dB = 0x82,
                 SNDLVL_GUNFIRE = 0x8C,
-                SNDLVL_140dB = 0x8C,
                 SNDLVL_150dB = 0x96,
                 SNDLVL_180dB = 0xB4
             }
@@ -212,8 +208,7 @@ pub mod cs2_dumper {
                 FILTER_SLOPE_12dB = 0x4,
                 FILTER_SLOPE_24dB = 0x5,
                 FILTER_SLOPE_36dB = 0x6,
-                FILTER_SLOPE_48dB = 0x7,
-                FILTER_SLOPE_MAX = 0x7
+                FILTER_SLOPE_48dB = 0x7
             }
             // Alignment: 4
             // Members count: 8

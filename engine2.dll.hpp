@@ -1,5 +1,5 @@
-// frezzyhook.com
-// 2024-06-28 06:07:19.967056100 UTC
+// Dumped By FrezzyHook.com
+// 2024-07-03 10:57:59.320973200 UTC
 
 #pragma once
 
@@ -8,7 +8,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: engine2.dll
-        // Classes count: 48
+        // Classes count: 44
         // Enums count: 4
         namespace engine2_dll {
             // Alignment: 4
@@ -292,22 +292,6 @@ namespace cs2_dumper {
             // Parent: EventSimulate_t
             // Fields count: 0
             namespace EventServerPollNetworking_t {
-            }
-            // Parent: None
-            // Fields count: 0
-            namespace  {
-            }
-            // Parent: None
-            // Fields count: 0
-            namespace  {
-            }
-            // Parent: None
-            // Fields count: 0
-            namespace  {
-            }
-            // Parent: None
-            // Fields count: 0
-            namespace  {
             }
         }
     }

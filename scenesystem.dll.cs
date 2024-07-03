@@ -1,5 +1,5 @@
-// frezzyhook.com
-// 2024-06-28 06:07:19.967056100 UTC
+// Dumped By FrezzyHook.com
+// 2024-07-03 10:57:59.320973200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: scenesystem.dll

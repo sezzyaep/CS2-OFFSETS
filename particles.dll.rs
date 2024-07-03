@@ -1,5 +1,5 @@
-// frezzyhook.com
-// 2024-06-28 06:07:19.967056100 UTC
+// Dumped By FrezzyHook.com
+// 2024-07-03 10:57:59.320973200 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -243,8 +243,7 @@ pub mod cs2_dumper {
             #[repr(u32)]
             pub enum ParticleParentSetMode_t {
                 PARTICLE_SET_PARENT_NO = 0x0,
-                PARTICLE_SET_PARENT_IMMEDIATE = 0x1,
-                PARTICLE_SET_PARENT_ROOT = 0x1
+                PARTICLE_SET_PARENT_IMMEDIATE = 0x1
             }
             // Alignment: 4
             // Members count: 5
