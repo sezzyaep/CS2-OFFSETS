@@ -1,5 +1,5 @@
 // Dumped By FrezzyHook.com
-// 2024-07-03 10:57:59.320973200 UTC
+// 2024-07-12 09:25:12.891147300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: worldrenderer.dll
