@@ -1,5 +1,5 @@
-// Dumped By FrezzyHook.com
-// 2024-07-25 22:23:28.287805200 UTC
+// Dumped by Frezzyhook
+// 2024-08-14 21:32:41.026172100 UTC
 
 #pragma once
 
@@ -8,21 +8,21 @@
 namespace cs2_dumper {
     // Module: client.dll
     namespace buttons {
-        constexpr std::ptrdiff_t attack = 0x181D170;
-        constexpr std::ptrdiff_t attack2 = 0x181D200;
-        constexpr std::ptrdiff_t back = 0x181D440;
-        constexpr std::ptrdiff_t duck = 0x181D710;
-        constexpr std::ptrdiff_t forward = 0x181D3B0;
-        constexpr std::ptrdiff_t jump = 0x181D680;
-        constexpr std::ptrdiff_t left = 0x181D4D0;
-        constexpr std::ptrdiff_t lookatweapon = 0x1A28D70;
-        constexpr std::ptrdiff_t reload = 0x181D0E0;
-        constexpr std::ptrdiff_t right = 0x181D560;
-        constexpr std::ptrdiff_t showscores = 0x1A28C50;
-        constexpr std::ptrdiff_t sprint = 0x181D050;
-        constexpr std::ptrdiff_t turnleft = 0x181D290;
-        constexpr std::ptrdiff_t turnright = 0x181D320;
-        constexpr std::ptrdiff_t use = 0x181D5F0;
-        constexpr std::ptrdiff_t zoom = 0x1A28CE0;
+        constexpr std::ptrdiff_t attack = 0x17CD000;
+        constexpr std::ptrdiff_t attack2 = 0x17CD090;
+        constexpr std::ptrdiff_t back = 0x17CD2D0;
+        constexpr std::ptrdiff_t duck = 0x17CD5A0;
+        constexpr std::ptrdiff_t forward = 0x17CD240;
+        constexpr std::ptrdiff_t jump = 0x17CD510;
+        constexpr std::ptrdiff_t left = 0x17CD360;
+        constexpr std::ptrdiff_t lookatweapon = 0x19DADA0;
+        constexpr std::ptrdiff_t reload = 0x17CCF70;
+        constexpr std::ptrdiff_t right = 0x17CD3F0;
+        constexpr std::ptrdiff_t showscores = 0x19DAC80;
+        constexpr std::ptrdiff_t sprint = 0x17CCEE0;
+        constexpr std::ptrdiff_t turnleft = 0x17CD120;
+        constexpr std::ptrdiff_t turnright = 0x17CD1B0;
+        constexpr std::ptrdiff_t use = 0x17CD480;
+        constexpr std::ptrdiff_t zoom = 0x19DAD10;
     }
 }
