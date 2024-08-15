@@ -1,5 +1,5 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -7,6 +7,7 @@ pub mod cs2_dumper {
     pub mod offsets {
         // Module: client.dll
         pub mod client_dll {
+            pub const dwCSGOInput: usize = 0x19D4BA8;
             pub const dwEntityList: usize = 0x1969668;
             pub const dwGameEntitySystem: usize = 0x1A89298;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x1510;
@@ -19,6 +20,7 @@ pub mod cs2_dumper {
             pub const dwPrediction: usize = 0x17D4680;
             pub const dwSensitivity: usize = 0x19C7B18;
             pub const dwSensitivity_sensitivity: usize = 0x40;
+            pub const dwViewAngles: usize = 0x19DA928;
             pub const dwViewMatrix: usize = 0x19CB4D0;
             pub const dwViewRender: usize = 0x19CBC60;
             pub const dwWeaponC4: usize = 0x196D560;

@@ -1,9 +1,10 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: client.dll
     public static class ClientDll {
+        public const nint dwCSGOInput = 0x19D4BA8;
         public const nint dwEntityList = 0x1969668;
         public const nint dwGameEntitySystem = 0x1A89298;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x1510;
@@ -16,6 +17,7 @@ namespace CS2Dumper.Offsets {
         public const nint dwPrediction = 0x17D4680;
         public const nint dwSensitivity = 0x19C7B18;
         public const nint dwSensitivity_sensitivity = 0x40;
+        public const nint dwViewAngles = 0x19DA928;
         public const nint dwViewMatrix = 0x19CB4D0;
         public const nint dwViewRender = 0x19CBC60;
         public const nint dwWeaponC4 = 0x196D560;

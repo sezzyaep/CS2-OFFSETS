@@ -1,5 +1,5 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 #pragma once
 
@@ -9,6 +9,7 @@ namespace cs2_dumper {
     namespace offsets {
         // Module: client.dll
         namespace client_dll {
+            constexpr std::ptrdiff_t dwCSGOInput = 0x19D4BA8;
             constexpr std::ptrdiff_t dwEntityList = 0x1969668;
             constexpr std::ptrdiff_t dwGameEntitySystem = 0x1A89298;
             constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x1510;
@@ -21,6 +22,7 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t dwPrediction = 0x17D4680;
             constexpr std::ptrdiff_t dwSensitivity = 0x19C7B18;
             constexpr std::ptrdiff_t dwSensitivity_sensitivity = 0x40;
+            constexpr std::ptrdiff_t dwViewAngles = 0x19DA928;
             constexpr std::ptrdiff_t dwViewMatrix = 0x19CB4D0;
             constexpr std::ptrdiff_t dwViewRender = 0x19CBC60;
             constexpr std::ptrdiff_t dwWeaponC4 = 0x196D560;

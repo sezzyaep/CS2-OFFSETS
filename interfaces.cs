@@ -1,5 +1,5 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -17,6 +17,10 @@ namespace CS2Dumper.Interfaces {
         public const nint Source2ClientConfig001 = 0x1965820;
         public const nint Source2ClientPrediction001 = 0x17D4680;
         public const nint Source2ClientUI001 = 0x17E7870;
+    }
+    // Module: crashhandler64.dll
+    public static class Crashhandler64Dll {
+        public const nint  = 0xFFFF8007657E0007;
     }
     // Module: engine2.dll
     public static class Engine2Dll {

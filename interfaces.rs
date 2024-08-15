@@ -1,5 +1,5 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -20,6 +20,10 @@ pub mod cs2_dumper {
             pub const Source2ClientConfig001: usize = 0x1965820;
             pub const Source2ClientPrediction001: usize = 0x17D4680;
             pub const Source2ClientUI001: usize = 0x17E7870;
+        }
+        // Module: crashhandler64.dll
+        pub mod crashhandler64_dll {
+            pub const : usize = 0xFFFF8007657E0007;
         }
         // Module: engine2.dll
         pub mod engine2_dll {

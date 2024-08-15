@@ -1,5 +1,5 @@
 // Dumped by Frezzyhook
-// 2024-08-14 21:32:41.026172100 UTC
+// 2024-08-15 09:07:12.935868300 UTC
 
 #pragma once
 
@@ -22,6 +22,10 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1965820;
             constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x17D4680;
             constexpr std::ptrdiff_t Source2ClientUI001 = 0x17E7870;
+        }
+        // Module: crashhandler64.dll
+        namespace crashhandler64_dll {
+            constexpr std::ptrdiff_t  = 0xFFFF8007657E0007;
         }
         // Module: engine2.dll
         namespace engine2_dll {
