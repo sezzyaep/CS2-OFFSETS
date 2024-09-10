@@ -1,5 +1,5 @@
-// Dumped by Frezzyhook
-// 2024-08-19 21:58:37.441816900 UTC
+//Dumped By Frezzyhook.club
+// 2024-09-08 20:29:46.832441500 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -9,14 +9,14 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: client.dll
     public static class ClientDll {
-        public const nint ClientToolsInfo_001 = 0x17CC650;
-        public const nint EmptyWorldService001_Client = 0x1789D80;
-        public const nint GameClientExports001 = 0x17C9308;
-        public const nint LegacyGameUI001 = 0x17E8E10;
-        public const nint Source2Client002 = 0x19C4E50;
-        public const nint Source2ClientConfig001 = 0x19657F0;
-        public const nint Source2ClientPrediction001 = 0x17D46B0;
-        public const nint Source2ClientUI001 = 0x17E7890;
+        public const nint ClientToolsInfo_001 = 0x17BB630;
+        public const nint EmptyWorldService001_Client = 0x1778D70;
+        public const nint GameClientExports001 = 0x17B82E8;
+        public const nint LegacyGameUI001 = 0x17D7DD0;
+        public const nint Source2Client002 = 0x19B23A0;
+        public const nint Source2ClientConfig001 = 0x1952D30;
+        public const nint Source2ClientPrediction001 = 0x17C3690;
+        public const nint Source2ClientUI001 = 0x17D6860;
     }
     // Module: engine2.dll
     public static class Engine2Dll {
@@ -89,11 +89,11 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: materialsystem2.dll
     public static class Materialsystem2Dll {
-        public const nint FontManager_001 = 0x10D320;
-        public const nint MaterialUtils_001 = 0x1084F0;
-        public const nint PostProcessingSystem_001 = 0x108400;
-        public const nint TextLayout_001 = 0x108480;
-        public const nint VMaterialSystem2_001 = 0x10C930;
+        public const nint FontManager_001 = 0x10E320;
+        public const nint MaterialUtils_001 = 0x1094F0;
+        public const nint PostProcessingSystem_001 = 0x109400;
+        public const nint TextLayout_001 = 0x109480;
+        public const nint VMaterialSystem2_001 = 0x10D930;
     }
     // Module: meshsystem.dll
     public static class MeshsystemDll {
@@ -157,23 +157,23 @@ namespace CS2Dumper.Interfaces {
     }
     // Module: server.dll
     public static class ServerDll {
-        public const nint EmptyWorldService001_Server = 0x13176D0;
-        public const nint EntitySubclassUtilsV001 = 0x12CA200;
-        public const nint NavGameTest001 = 0x13B5768;
-        public const nint ServerToolsInfo_001 = 0x136AEE8;
-        public const nint Source2GameClients001 = 0x13662C0;
-        public const nint Source2GameDirector001 = 0x1494B70;
-        public const nint Source2GameEntities001 = 0x136AE10;
-        public const nint Source2Server001 = 0x136AC80;
-        public const nint Source2ServerConfig001 = 0x154F988;
-        public const nint customnavsystem001 = 0x12AFA78;
+        public const nint EmptyWorldService001_Server = 0x13176A0;
+        public const nint EntitySubclassUtilsV001 = 0x12CA1E0;
+        public const nint NavGameTest001 = 0x13B5748;
+        public const nint ServerToolsInfo_001 = 0x136AEC8;
+        public const nint Source2GameClients001 = 0x13662A0;
+        public const nint Source2GameDirector001 = 0x1494AD0;
+        public const nint Source2GameEntities001 = 0x136ADF0;
+        public const nint Source2Server001 = 0x136AC60;
+        public const nint Source2ServerConfig001 = 0x154F908;
+        public const nint customnavsystem001 = 0x12AFA68;
     }
     // Module: soundsystem.dll
     public static class SoundsystemDll {
-        public const nint SoundOpSystem001 = 0x3353A0;
-        public const nint SoundOpSystemEdit001 = 0x335270;
-        public const nint SoundSystem001 = 0x334E40;
-        public const nint VMixEditTool001 = 0x48288DEA;
+        public const nint SoundOpSystem001 = 0x335390;
+        public const nint SoundOpSystemEdit001 = 0x335260;
+        public const nint SoundSystem001 = 0x334E30;
+        public const nint VMixEditTool001 = 0x48288DBA;
     }
     // Module: steamaudio.dll
     public static class SteamaudioDll {

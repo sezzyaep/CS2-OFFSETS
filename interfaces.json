@@ -4,14 +4,14 @@
     "AnimationSystem_001": 5799664
   },
   "client.dll": {
-    "ClientToolsInfo_001": 24954448,
-    "EmptyWorldService001_Client": 24681856,
-    "GameClientExports001": 24941320,
-    "LegacyGameUI001": 25071120,
-    "Source2Client002": 27020880,
-    "Source2ClientConfig001": 26630128,
-    "Source2ClientPrediction001": 24987312,
-    "Source2ClientUI001": 25065616
+    "ClientToolsInfo_001": 24884784,
+    "EmptyWorldService001_Client": 24612208,
+    "GameClientExports001": 24871656,
+    "LegacyGameUI001": 25001424,
+    "Source2Client002": 26944416,
+    "Source2ClientConfig001": 26553648,
+    "Source2ClientPrediction001": 24917648,
+    "Source2ClientUI001": 24995936
   },
   "engine2.dll": {
     "BenchmarkService001": 5461520,
@@ -76,11 +76,11 @@
     "MATCHFRAMEWORK_001": 1754000
   },
   "materialsystem2.dll": {
-    "FontManager_001": 1102624,
-    "MaterialUtils_001": 1082608,
-    "PostProcessingSystem_001": 1082368,
-    "TextLayout_001": 1082496,
-    "VMaterialSystem2_001": 1100080
+    "FontManager_001": 1106720,
+    "MaterialUtils_001": 1086704,
+    "PostProcessingSystem_001": 1086464,
+    "TextLayout_001": 1086592,
+    "VMaterialSystem2_001": 1104176
   },
   "meshsystem.dll": {
     "MeshSystem001": 1329712
@@ -130,22 +130,22 @@
     "SchemaSystem_001": 378640
   },
   "server.dll": {
-    "EmptyWorldService001_Server": 20018896,
-    "EntitySubclassUtilsV001": 19702272,
-    "NavGameTest001": 20666216,
-    "ServerToolsInfo_001": 20360936,
-    "Source2GameClients001": 20341440,
-    "Source2GameDirector001": 21580656,
-    "Source2GameEntities001": 20360720,
-    "Source2Server001": 20360320,
-    "Source2ServerConfig001": 22346120,
-    "customnavsystem001": 19593848
+    "EmptyWorldService001_Server": 20018848,
+    "EntitySubclassUtilsV001": 19702240,
+    "NavGameTest001": 20666184,
+    "ServerToolsInfo_001": 20360904,
+    "Source2GameClients001": 20341408,
+    "Source2GameDirector001": 21580496,
+    "Source2GameEntities001": 20360688,
+    "Source2Server001": 20360288,
+    "Source2ServerConfig001": 22345992,
+    "customnavsystem001": 19593832
   },
   "soundsystem.dll": {
-    "SoundOpSystem001": 3363744,
-    "SoundOpSystemEdit001": 3363440,
-    "SoundSystem001": 3362368,
-    "VMixEditTool001": 1210617322
+    "SoundOpSystem001": 3363728,
+    "SoundOpSystemEdit001": 3363424,
+    "SoundSystem001": 3362352,
+    "VMixEditTool001": 1210617274
   },
   "steamaudio.dll": {
     "SteamAudio001": 2447184

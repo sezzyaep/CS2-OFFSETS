@@ -1,5 +1,5 @@
-// Dumped by Frezzyhook
-// 2024-08-19 21:58:37.441816900 UTC
+//Dumped By Frezzyhook.club
+// 2024-09-08 20:29:46.832441500 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -7,21 +7,23 @@ pub mod cs2_dumper {
     pub mod offsets {
         // Module: client.dll
         pub mod client_dll {
-            pub const dwEntityList: usize = 0x1969518;
-            pub const dwGameEntitySystem: usize = 0x1A891A8;
+            pub const dwCSGOInput: usize = 0x19C20D8;
+            pub const dwEntityList: usize = 0x1956A68;
+            pub const dwGameEntitySystem: usize = 0x1A76178;
             pub const dwGameEntitySystem_highestEntityIndex: usize = 0x1510;
-            pub const dwGameRules: usize = 0x19C6508;
-            pub const dwGlobalVars: usize = 0x17C8518;
-            pub const dwGlowManager: usize = 0x19C6528;
-            pub const dwLocalPlayerController: usize = 0x19B9178;
-            pub const dwLocalPlayerPawn: usize = 0x17D4810;
-            pub const dwPlantedC4: usize = 0x19CFED8;
-            pub const dwPrediction: usize = 0x17D46B0;
-            pub const dwSensitivity: usize = 0x19C7AE8;
+            pub const dwGameRules: usize = 0x19B3A58;
+            pub const dwGlobalVars: usize = 0x17B74F8;
+            pub const dwGlowManager: usize = 0x19B3A78;
+            pub const dwLocalPlayerController: usize = 0x19A66C8;
+            pub const dwLocalPlayerPawn: usize = 0x17C37F0;
+            pub const dwPlantedC4: usize = 0x19BD438;
+            pub const dwPrediction: usize = 0x17C3690;
+            pub const dwSensitivity: usize = 0x19B5038;
             pub const dwSensitivity_sensitivity: usize = 0x40;
-            pub const dwViewMatrix: usize = 0x19CB4A0;
-            pub const dwViewRender: usize = 0x19CBC30;
-            pub const dwWeaponC4: usize = 0x196D520;
+            pub const dwViewAngles: usize = 0x19C7E58;
+            pub const dwViewMatrix: usize = 0x19B89F0;
+            pub const dwViewRender: usize = 0x19B9180;
+            pub const dwWeaponC4: usize = 0x195AA70;
         }
         // Module: engine2.dll
         pub mod engine2_dll {
@@ -48,7 +50,7 @@ pub mod cs2_dumper {
         }
         // Module: soundsystem.dll
         pub mod soundsystem_dll {
-            pub const dwSoundSystem: usize = 0x334E40;
+            pub const dwSoundSystem: usize = 0x334E30;
             pub const dwSoundSystem_engineViewData: usize = 0x7C;
         }
     }

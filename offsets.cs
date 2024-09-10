@@ -1,24 +1,26 @@
-// Dumped by Frezzyhook
-// 2024-08-19 21:58:37.441816900 UTC
+//Dumped By Frezzyhook.club
+// 2024-09-08 20:29:46.832441500 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: client.dll
     public static class ClientDll {
-        public const nint dwEntityList = 0x1969518;
-        public const nint dwGameEntitySystem = 0x1A891A8;
+        public const nint dwCSGOInput = 0x19C20D8;
+        public const nint dwEntityList = 0x1956A68;
+        public const nint dwGameEntitySystem = 0x1A76178;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x1510;
-        public const nint dwGameRules = 0x19C6508;
-        public const nint dwGlobalVars = 0x17C8518;
-        public const nint dwGlowManager = 0x19C6528;
-        public const nint dwLocalPlayerController = 0x19B9178;
-        public const nint dwLocalPlayerPawn = 0x17D4810;
-        public const nint dwPlantedC4 = 0x19CFED8;
-        public const nint dwPrediction = 0x17D46B0;
-        public const nint dwSensitivity = 0x19C7AE8;
+        public const nint dwGameRules = 0x19B3A58;
+        public const nint dwGlobalVars = 0x17B74F8;
+        public const nint dwGlowManager = 0x19B3A78;
+        public const nint dwLocalPlayerController = 0x19A66C8;
+        public const nint dwLocalPlayerPawn = 0x17C37F0;
+        public const nint dwPlantedC4 = 0x19BD438;
+        public const nint dwPrediction = 0x17C3690;
+        public const nint dwSensitivity = 0x19B5038;
         public const nint dwSensitivity_sensitivity = 0x40;
-        public const nint dwViewMatrix = 0x19CB4A0;
-        public const nint dwViewRender = 0x19CBC30;
-        public const nint dwWeaponC4 = 0x196D520;
+        public const nint dwViewAngles = 0x19C7E58;
+        public const nint dwViewMatrix = 0x19B89F0;
+        public const nint dwViewRender = 0x19B9180;
+        public const nint dwWeaponC4 = 0x195AA70;
     }
     // Module: engine2.dll
     public static class Engine2Dll {
@@ -45,7 +47,7 @@ namespace CS2Dumper.Offsets {
     }
     // Module: soundsystem.dll
     public static class SoundsystemDll {
-        public const nint dwSoundSystem = 0x334E40;
+        public const nint dwSoundSystem = 0x334E30;
         public const nint dwSoundSystem_engineViewData = 0x7C;
     }
 }
