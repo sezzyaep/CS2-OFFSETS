@@ -1,5 +1,5 @@
-//Dumped By Frezzyhook.club
-// 2024-09-08 20:29:46.832441500 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2024-10-23 23:23:29.394824600 UTC
 
 #pragma once
 
