@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2024-12-09 07:37:17.236524200 UTC
+// Fuck this update.
+// 2024-12-19 11:15:27.556001200 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
@@ -2923,13 +2923,13 @@ namespace CS2Dumper.Schemas {
         // Parent: C_CSGO_MapPreviewCameraPath
         // Field count: 7
         public static class C_CSGO_TeamPreviewCamera {
-            public const nint m_nVariant = 0x5D0; // int32
-            public const nint m_bDofEnabled = 0x5D4; // bool
-            public const nint m_flDofNearBlurry = 0x5D8; // float32
-            public const nint m_flDofNearCrisp = 0x5DC; // float32
-            public const nint m_flDofFarCrisp = 0x5E0; // float32
-            public const nint m_flDofFarBlurry = 0x5E4; // float32
-            public const nint m_flDofTiltToGround = 0x5E8; // float32
+            public const nint m_nVariant = 0x5D8; // int32
+            public const nint m_bDofEnabled = 0x5DC; // bool
+            public const nint m_flDofNearBlurry = 0x5E0; // float32
+            public const nint m_flDofNearCrisp = 0x5E4; // float32
+            public const nint m_flDofFarCrisp = 0x5E8; // float32
+            public const nint m_flDofFarBlurry = 0x5EC; // float32
+            public const nint m_flDofTiltToGround = 0x5F0; // float32
         }
         // Parent: CCSPlayerBase_CameraServices
         // Field count: 2
