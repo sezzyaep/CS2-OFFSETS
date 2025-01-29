@@ -1,5 +1,5 @@
-// Fuck this update.
-// 2024-12-19 11:15:27.556001200 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2025-01-29 00:36:05.477120500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 

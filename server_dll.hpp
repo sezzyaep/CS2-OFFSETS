@@ -1,5 +1,5 @@
-// Fuck this update.
-// 2024-12-19 11:15:27.556001200 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2025-01-29 00:36:05.477120500 UTC
 
 #pragma once
 
@@ -3650,7 +3650,7 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_bUnloadingStarted = 0x5A5; // bool
             }
             // Parent: CBaseEntity
-            // Field count: 24
+            // Field count: 23
             //
             // Metadata:
             // MNetworkIncludeByName
@@ -3684,9 +3684,8 @@ namespace cs2_dumper {
                 constexpr std::ptrdiff_t m_fLerpTime = 0x5D8; // float32
                 constexpr std::ptrdiff_t m_bLagCompensation = 0x5DC; // bool
                 constexpr std::ptrdiff_t m_bPredict = 0x5DD; // bool
-                constexpr std::ptrdiff_t m_bAutoKickDisabled = 0x5DE; // bool
-                constexpr std::ptrdiff_t m_bIsLowViolence = 0x5DF; // bool
-                constexpr std::ptrdiff_t m_bGamePaused = 0x5E0; // bool
+                constexpr std::ptrdiff_t m_bIsLowViolence = 0x5E4; // bool
+                constexpr std::ptrdiff_t m_bGamePaused = 0x5E5; // bool
                 constexpr std::ptrdiff_t m_iIgnoreGlobalChat = 0x720; // ChatIgnoreType_t
                 constexpr std::ptrdiff_t m_flLastPlayerTalkTime = 0x724; // float32
                 constexpr std::ptrdiff_t m_flLastEntitySteadyState = 0x728; // float32

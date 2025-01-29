@@ -1,5 +1,5 @@
-// Fuck this update.
-// 2024-12-19 11:15:27.556001200 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2025-01-29 00:36:05.477120500 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -3752,7 +3752,7 @@ pub mod cs2_dumper {
                 pub const m_bUnloadingStarted: usize = 0x5A5; // bool
             }
             // Parent: CBaseEntity
-            // Field count: 24
+            // Field count: 23
             //
             // Metadata:
             // MNetworkIncludeByName
@@ -3786,9 +3786,8 @@ pub mod cs2_dumper {
                 pub const m_fLerpTime: usize = 0x5D8; // float32
                 pub const m_bLagCompensation: usize = 0x5DC; // bool
                 pub const m_bPredict: usize = 0x5DD; // bool
-                pub const m_bAutoKickDisabled: usize = 0x5DE; // bool
-                pub const m_bIsLowViolence: usize = 0x5DF; // bool
-                pub const m_bGamePaused: usize = 0x5E0; // bool
+                pub const m_bIsLowViolence: usize = 0x5E4; // bool
+                pub const m_bGamePaused: usize = 0x5E5; // bool
                 pub const m_iIgnoreGlobalChat: usize = 0x720; // ChatIgnoreType_t
                 pub const m_flLastPlayerTalkTime: usize = 0x724; // float32
                 pub const m_flLastEntitySteadyState: usize = 0x728; // float32

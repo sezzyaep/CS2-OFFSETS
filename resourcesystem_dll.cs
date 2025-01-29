@@ -1,5 +1,5 @@
-// Fuck this update.
-// 2024-12-19 11:15:27.556001200 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2025-01-29 00:36:05.477120500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: resourcesystem.dll
