@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-01-29 00:36:05.477120500 UTC
+// FrezzyHookzzyhook.club
+// 2025-05-08 01:21:40.038497400 UTC
 
-namespace CS2Dumper.Schemas {
+namespace FrezzyHook.Schemas {
     // Module: animationsystem.dll
     // Class count: 497
     // Enum count: 94
@@ -30,7 +30,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum BoneTransformSpace_t : uint {
-            BoneTransformSpace_Invalid = 0xFFFFFFFFFFFFFFFF,
+            BoneTransformSpace_Invalid = unchecked((uint)-1),
             BoneTransformSpace_Parent = 0x0,
             BoneTransformSpace_Model = 0x1,
             BoneTransformSpace_World = 0x2
@@ -72,7 +72,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 1
         // Member count: 6
         public enum MovementGait_t : byte {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+            eInvalid = unchecked((byte)-1),
             eSlow = 0x0,
             eMedium = 0x1,
             eFast = 0x2,
@@ -343,7 +343,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum ModelBoneFlexComponent_t : uint {
-            MODEL_BONE_FLEX_INVALID = 0xFFFFFFFFFFFFFFFF,
+            MODEL_BONE_FLEX_INVALID = unchecked((uint)-1),
             MODEL_BONE_FLEX_TX = 0x0,
             MODEL_BONE_FLEX_TY = 0x1,
             MODEL_BONE_FLEX_TZ = 0x2
@@ -671,7 +671,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 2
         // Member count: 3
         public enum AnimScriptType : ushort {
-            ANIMSCRIPT_TYPE_INVALID = 0xFFFFFFFFFFFFFFFF,
+            ANIMSCRIPT_TYPE_INVALID = unchecked((ushort)-1),
             ANIMSCRIPT_FUSE_GENERAL = 0x0,
             ANIMSCRIPT_FUSE_STATEMACHINE = 0x1
         }
@@ -725,7 +725,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum HandshakeTagType_t : uint {
-            eInvalid = 0xFFFFFFFFFFFFFFFF,
+            eInvalid = unchecked((uint)-1),
             eTask = 0x0,
             eMovement = 0x1,
             eCount = 0x2
@@ -733,7 +733,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 18
         public enum ParticleAttachment_t : uint {
-            PATTACH_INVALID = 0xFFFFFFFFFFFFFFFF,
+            PATTACH_INVALID = unchecked((uint)-1),
             PATTACH_ABSORIGIN = 0x0,
             PATTACH_ABSORIGIN_FOLLOW = 0x1,
             PATTACH_CUSTOMORIGIN = 0x2,
@@ -887,7 +887,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 5
         public enum ModelConfigAttachmentType_t : uint {
-            MODEL_CONFIG_ATTACHMENT_INVALID = 0xFFFFFFFFFFFFFFFF,
+            MODEL_CONFIG_ATTACHMENT_INVALID = unchecked((uint)-1),
             MODEL_CONFIG_ATTACHMENT_BONE_OR_ATTACHMENT = 0x0,
             MODEL_CONFIG_ATTACHMENT_ROOT_RELATIVE = 0x1,
             MODEL_CONFIG_ATTACHMENT_BONEMERGE = 0x2,

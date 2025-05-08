@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-01-29 00:36:05.477120500 UTC
+// FrezzyHookzzyhook.club
+// 2025-05-08 01:21:40.038497400 UTC
 
-namespace CS2Dumper.Schemas {
+namespace FrezzyHook.Schemas {
     // Module: soundsystem.dll
     // Class count: 74
     // Enum count: 18
@@ -33,7 +33,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 2
         // Member count: 10
         public enum VMixFilterType_t : ushort {
-            FILTER_UNKNOWN = 0xFFFFFFFFFFFFFFFF,
+            FILTER_UNKNOWN = unchecked((ushort)-1),
             FILTER_LOWPASS = 0x0,
             FILTER_HIGHPASS = 0x1,
             FILTER_BANDPASS = 0x2,

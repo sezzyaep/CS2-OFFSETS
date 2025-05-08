@@ -1,7 +1,7 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-01-29 00:36:05.477120500 UTC
+// FrezzyHookzzyhook.club
+// 2025-05-08 01:21:40.038497400 UTC
 
-namespace CS2Dumper.Schemas {
+namespace FrezzyHook.Schemas {
     // Module: pulse_system.dll
     // Class count: 112
     // Enum count: 9
@@ -40,7 +40,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 21
         public enum PulseValueType_t : uint {
-            PVAL_INVALID = 0xFFFFFFFFFFFFFFFF,
+            PVAL_INVALID = unchecked((uint)-1),
             PVAL_BOOL = 0x0,
             PVAL_INT = 0x1,
             PVAL_FLOAT = 0x2,
@@ -161,7 +161,7 @@ namespace CS2Dumper.Schemas {
         // Alignment: 4
         // Member count: 4
         public enum PulseDomainValueType_t : uint {
-            INVALID = 0xFFFFFFFFFFFFFFFF,
+            INVALID = unchecked((uint)-1),
             ENTITY_NAME = 0x0,
             PANEL_ID = 0x1,
             COUNT = 0x2

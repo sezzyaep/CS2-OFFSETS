@@ -1,24 +1,24 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-01-29 00:36:05.477120500 UTC
+// FrezzyHookzzyhook.club
+// 2025-05-08 01:21:40.038497400 UTC
 
-namespace CS2Dumper {
+namespace FrezzyHook {
     // Module: client.dll
     public static class Buttons {
-        public const nint attack = 0x1875710;
-        public const nint attack2 = 0x18757A0;
-        public const nint back = 0x18759E0;
-        public const nint duck = 0x1875CB0;
-        public const nint forward = 0x1875950;
-        public const nint jump = 0x1875C20;
-        public const nint left = 0x1875A70;
-        public const nint lookatweapon = 0x1A9DF50;
-        public const nint reload = 0x1875680;
-        public const nint right = 0x1875B00;
-        public const nint showscores = 0x1A9DE30;
-        public const nint sprint = 0x18755F0;
-        public const nint turnleft = 0x1875830;
-        public const nint turnright = 0x18758C0;
-        public const nint use = 0x1875B90;
-        public const nint zoom = 0x1A9DEC0;
+        public const nint attack = 0x18438D0;
+        public const nint attack2 = 0x1843960;
+        public const nint back = 0x1843BA0;
+        public const nint duck = 0x1843E70;
+        public const nint forward = 0x1843B10;
+        public const nint jump = 0x1843DE0;
+        public const nint left = 0x1843C30;
+        public const nint lookatweapon = 0x1A69D60;
+        public const nint reload = 0x1843840;
+        public const nint right = 0x1843CC0;
+        public const nint showscores = 0x1A69C40;
+        public const nint sprint = 0x18437B0;
+        public const nint turnleft = 0x18439F0;
+        public const nint turnright = 0x1843A80;
+        public const nint use = 0x1843D50;
+        public const nint zoom = 0x1A69CD0;
     }
 }
