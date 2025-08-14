@@ -1,24 +1,24 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
-namespace FrezzyHook {
+namespace CS2Dumper {
     // Module: client.dll
     public static class Buttons {
-        public const nint attack = 0x18438D0;
-        public const nint attack2 = 0x1843960;
-        public const nint back = 0x1843BA0;
-        public const nint duck = 0x1843E70;
-        public const nint forward = 0x1843B10;
-        public const nint jump = 0x1843DE0;
-        public const nint left = 0x1843C30;
-        public const nint lookatweapon = 0x1A69D60;
-        public const nint reload = 0x1843840;
-        public const nint right = 0x1843CC0;
-        public const nint showscores = 0x1A69C40;
-        public const nint sprint = 0x18437B0;
-        public const nint turnleft = 0x18439F0;
-        public const nint turnright = 0x1843A80;
-        public const nint use = 0x1843D50;
-        public const nint zoom = 0x1A69CD0;
+        public const nint attack = 0x1BEAB30;
+        public const nint attack2 = 0x1BEABC0;
+        public const nint back = 0x1BEAE00;
+        public const nint duck = 0x1BEB0D0;
+        public const nint forward = 0x1BEAD70;
+        public const nint jump = 0x1BEB040;
+        public const nint left = 0x1BEAE90;
+        public const nint lookatweapon = 0x1E3CEF0;
+        public const nint reload = 0x1BEAAA0;
+        public const nint right = 0x1BEAF20;
+        public const nint showscores = 0x1E3CDD0;
+        public const nint sprint = 0x1BEAA10;
+        public const nint turnleft = 0x1BEAC50;
+        public const nint turnright = 0x1BEACE0;
+        public const nint use = 0x1BEAFB0;
+        public const nint zoom = 0x1E3CE60;
     }
 }

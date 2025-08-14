@@ -1,5 +1,5 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
 #pragma once
 
@@ -9,50 +9,49 @@ namespace cs2_dumper {
     namespace offsets {
         // Module: client.dll
         namespace client_dll {
-            constexpr std::ptrdiff_t dwCSGOInput = 0x1A69E40;
-            constexpr std::ptrdiff_t dwEntityList = 0x19F6FA0;
-            constexpr std::ptrdiff_t dwGameEntitySystem = 0x1B1A668;
+            constexpr std::ptrdiff_t dwCSGOInput = 0x1E3CFD0;
+            constexpr std::ptrdiff_t dwEntityList = 0x1D15578;
+            constexpr std::ptrdiff_t dwGameEntitySystem = 0x1FB5638;
             constexpr std::ptrdiff_t dwGameEntitySystem_highestEntityIndex = 0x20F0;
-            constexpr std::ptrdiff_t dwGameRules = 0x1A5B878;
-            constexpr std::ptrdiff_t dwGlobalVars = 0x183F128;
-            constexpr std::ptrdiff_t dwGlowManager = 0x1A5AFC0;
-            constexpr std::ptrdiff_t dwLocalPlayerController = 0x1A45A80;
-            constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x184B0B0;
-            constexpr std::ptrdiff_t dwPlantedC4 = 0x1A66008;
-            constexpr std::ptrdiff_t dwPrediction = 0x184AF30;
-            constexpr std::ptrdiff_t dwSensitivity = 0x1A5C598;
-            constexpr std::ptrdiff_t dwSensitivity_sensitivity = 0x40;
-            constexpr std::ptrdiff_t dwViewAngles = 0x1A6A210;
-            constexpr std::ptrdiff_t dwViewMatrix = 0x1A5FF70;
-            constexpr std::ptrdiff_t dwViewRender = 0x1A608E8;
-            constexpr std::ptrdiff_t dwWeaponC4 = 0x19F9470;
+            constexpr std::ptrdiff_t dwGameRules = 0x1E31AE0;
+            constexpr std::ptrdiff_t dwGlobalVars = 0x1BE69B0;
+            constexpr std::ptrdiff_t dwGlowManager = 0x1E2E8C8;
+            constexpr std::ptrdiff_t dwLocalPlayerController = 0x1E1E850;
+            constexpr std::ptrdiff_t dwLocalPlayerPawn = 0x1BF14A0;
+            constexpr std::ptrdiff_t dwPlantedC4 = 0x1E37E10;
+            constexpr std::ptrdiff_t dwPrediction = 0x1BF13D0;
+            constexpr std::ptrdiff_t dwSensitivity = 0x1E2F3D8;
+            constexpr std::ptrdiff_t dwSensitivity_sensitivity = 0x48;
+            constexpr std::ptrdiff_t dwViewAngles = 0x1E3D780;
+            constexpr std::ptrdiff_t dwViewMatrix = 0x1E328A0;
+            constexpr std::ptrdiff_t dwViewRender = 0x1E336D0;
+            constexpr std::ptrdiff_t dwWeaponC4 = 0x1DCFCE0;
         }
         // Module: engine2.dll
         namespace engine2_dll {
-            constexpr std::ptrdiff_t dwBuildNumber = 0x541BE4;
-            constexpr std::ptrdiff_t dwNetworkGameClient = 0x540CE0;
-            constexpr std::ptrdiff_t dwNetworkGameClient_clientTickCount = 0x368;
-            constexpr std::ptrdiff_t dwNetworkGameClient_deltaTick = 0x244;
-            constexpr std::ptrdiff_t dwNetworkGameClient_isBackgroundMap = 0x281447;
-            constexpr std::ptrdiff_t dwNetworkGameClient_localPlayer = 0xF0;
-            constexpr std::ptrdiff_t dwNetworkGameClient_maxClients = 0x238;
-            constexpr std::ptrdiff_t dwNetworkGameClient_serverTickCount = 0x36C;
-            constexpr std::ptrdiff_t dwNetworkGameClient_signOnState = 0x228;
-            constexpr std::ptrdiff_t dwWindowHeight = 0x62456C;
-            constexpr std::ptrdiff_t dwWindowWidth = 0x624568;
+            constexpr std::ptrdiff_t dwBuildNumber = 0x5E1144;
+            constexpr std::ptrdiff_t dwNetworkGameClient = 0x5E0230;
+            constexpr std::ptrdiff_t dwNetworkGameClient_clientTickCount = 0x358;
+            constexpr std::ptrdiff_t dwNetworkGameClient_deltaTick = 0x23C;
+            constexpr std::ptrdiff_t dwNetworkGameClient_isBackgroundMap = 0x2C142F;
+            constexpr std::ptrdiff_t dwNetworkGameClient_localPlayer = 0xE8;
+            constexpr std::ptrdiff_t dwNetworkGameClient_maxClients = 0x230;
+            constexpr std::ptrdiff_t dwNetworkGameClient_serverTickCount = 0x23C;
+            constexpr std::ptrdiff_t dwNetworkGameClient_signOnState = 0x220;
+            constexpr std::ptrdiff_t dwWindowHeight = 0x8D93B4;
+            constexpr std::ptrdiff_t dwWindowWidth = 0x8D93B0;
         }
         // Module: inputsystem.dll
         namespace inputsystem_dll {
-            constexpr std::ptrdiff_t dwInputSystem = 0x387E0;
+            constexpr std::ptrdiff_t dwInputSystem = 0x45A20;
         }
         // Module: matchmaking.dll
         namespace matchmaking_dll {
-            constexpr std::ptrdiff_t dwGameTypes = 0x1A3190;
-            constexpr std::ptrdiff_t dwGameTypes_mapName = 0x120;
+            constexpr std::ptrdiff_t dwGameTypes = 0x1B4F10;
         }
         // Module: soundsystem.dll
         namespace soundsystem_dll {
-            constexpr std::ptrdiff_t dwSoundSystem = 0x3A15C0;
+            constexpr std::ptrdiff_t dwSoundSystem = 0x3DEB80;
             constexpr std::ptrdiff_t dwSoundSystem_engineViewData = 0x7C;
         }
     }

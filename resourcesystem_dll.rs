@@ -1,12 +1,12 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: resourcesystem.dll
-        // Class count: 59
+        // Class count: 58
         // Enum count: 2
         pub mod resourcesystem_dll {
             // Alignment: 1
@@ -156,14 +156,6 @@ pub mod cs2_dumper {
             pub mod InfoForResourceTypeCVoxelVisibility {
             }
             // Parent: None
-            // Field count: 1
-            //
-            // Metadata:
-            // MGetKV3ClassDefaults
-            pub mod TestResource_t {
-                pub const m_name: usize = 0x0; // CUtlString
-            }
-            // Parent: None
             // Field count: 0
             //
             // Metadata:
@@ -258,7 +250,7 @@ pub mod cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
-            pub mod InfoForResourceTypeTestResource_t {
+            pub mod InfoForResourceTypeCTestResourceData {
             }
             // Parent: None
             // Field count: 0
@@ -300,7 +292,7 @@ pub mod cs2_dumper {
             //
             // Metadata:
             // MResourceTypeForInfoType
-            pub mod InfoForResourceTypeCNmGraphVariation {
+            pub mod InfoForResourceTypeCSurfaceGraph {
             }
             // Parent: None
             // Field count: 0

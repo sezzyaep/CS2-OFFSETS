@@ -1,5 +1,5 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
 #pragma once
 
@@ -29,7 +29,7 @@ namespace cs2_dumper {
                 REFERENCE_PASSTHROUGH = 0xC
             };
             // Alignment: 4
-            // Member count: 16
+            // Member count: 17
             enum class EStyleNodeType : uint32_t {
                 ROOT = 0x0,
                 EXPRESSION = 0x1,
@@ -46,7 +46,8 @@ namespace cs2_dumper {
                 REFERENCE_CONTENT = 0xC,
                 REFERENCE_COMPILED = 0xD,
                 REFERENCE_PASSTHROUGH = 0xE,
-                COMPILER_CONDITIONAL = 0xF
+                REFERENCE_PANEL = 0xF,
+                COMPILER_CONDITIONAL = 0x10
             };
         }
     }

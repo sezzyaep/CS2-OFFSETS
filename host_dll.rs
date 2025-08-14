@@ -1,5 +1,5 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -9,7 +9,7 @@ pub mod cs2_dumper {
         // Class count: 2
         // Enum count: 0
         pub mod host_dll {
-            // Parent: CAnimScriptBase
+            // Parent: None
             // Field count: 1
             pub mod EmptyTestScript {
                 pub const m_hTest: usize = 0x10; // CAnimScriptParam<float32>

@@ -1,12 +1,12 @@
-// FrezzyHookzzyhook.club
-// 2025-05-08 01:21:40.038497400 UTC
+// frezzyhook.club
+// 2025-08-14 22:47:16.130456300 UTC
 
-namespace FrezzyHook.Schemas {
+namespace CS2Dumper.Schemas {
     // Module: host.dll
     // Class count: 2
     // Enum count: 0
     public static class HostDll {
-        // Parent: CAnimScriptBase
+        // Parent: None
         // Field count: 1
         public static class EmptyTestScript {
             public const nint m_hTest = 0x10; // CAnimScriptParam<float32>
