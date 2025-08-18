@@ -1,5 +1,5 @@
 // frezzyhook.club
-// 2025-08-14 22:47:16.130456300 UTC
+// 2025-08-18 23:32:27.021105900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: engine2.dll
