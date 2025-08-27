@@ -1,5 +1,5 @@
-// frezzyhook.club
-// 2025-08-18 23:32:27.021105900 UTC
+// Generated using https://github.com/a2x/cs2-dumper
+// 2025-08-27 00:03:41.150113700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: resourcesystem.dll
