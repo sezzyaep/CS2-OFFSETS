@@ -1,5 +1,5 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-09-23 02:11:08.716709200 UTC
+// 2025-09-24 17:26:24.300732300 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -161,15 +161,15 @@ pub mod cs2_dumper {
         // Module: server.dll
         pub mod server_dll {
             pub const EmptyWorldService001_Server: usize = 0x16FE8B0;
-            pub const EntitySubclassUtilsV001: usize = 0x16AAFA0;
-            pub const NavGameTest001: usize = 0x17A5E10;
-            pub const ServerToolsInfo_001: usize = 0x1755D68;
-            pub const Source2GameClients001: usize = 0x1751720;
+            pub const EntitySubclassUtilsV001: usize = 0x16AAFB0;
+            pub const NavGameTest001: usize = 0x17A5E20;
+            pub const ServerToolsInfo_001: usize = 0x1755D78;
+            pub const Source2GameClients001: usize = 0x1751730;
             pub const Source2GameDirector001: usize = 0x18AF520;
-            pub const Source2GameEntities001: usize = 0x1755470;
-            pub const Source2Server001: usize = 0x17552D0;
+            pub const Source2GameEntities001: usize = 0x1755480;
+            pub const Source2Server001: usize = 0x17552E0;
             pub const Source2ServerConfig001: usize = 0x1980948;
-            pub const customnavsystem001: usize = 0x168AAA8;
+            pub const customnavsystem001: usize = 0x168AAB8;
         }
         // Module: soundsystem.dll
         pub mod soundsystem_dll {
@@ -216,6 +216,10 @@ pub mod cs2_dumper {
         // Module: v8system.dll
         pub mod v8system_dll {
             pub const Source2V8System001: usize = 0x315B0;
+        }
+        // Module: vconcomm.dll
+        pub mod vconcomm_dll {
+            pub const VConComm001: usize = 0x375C0;
         }
         // Module: vphysics2.dll
         pub mod vphysics2_dll {
