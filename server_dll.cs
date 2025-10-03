@@ -1,9 +1,9 @@
 // Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-02 02:52:26.541956400 UTC
+// 2025-10-03 00:34:49.749963100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
-    // Class count: 717
+    // Class count: 718
     // Enum count: 150
     public static class ServerDll {
         // Alignment: 4
@@ -1705,7 +1705,7 @@ namespace CS2Dumper.Schemas {
             MOVETYPE_INVALID = 0xB,
             MOVETYPE_MAX_BITS = 0x5
         }
-        // Parent: CCSWeaponBase
+        // Parent: CCSWeaponBaseShotgun
         // Field count: 0
         public static class CWeaponNOVA {
         }
@@ -2653,6 +2653,10 @@ namespace CS2Dumper.Schemas {
         // Parent: None
         // Field count: 0
         public static class CTestPulseIOAPI {
+        }
+        // Parent: CCSWeaponBase
+        // Field count: 0
+        public static class CCSWeaponBaseShotgun {
         }
         // Parent: None
         // Field count: 7
@@ -6379,7 +6383,7 @@ namespace CS2Dumper.Schemas {
         // Field count: 0
         public static class CLightSpotEntity {
         }
-        // Parent: CCSWeaponBase
+        // Parent: CCSWeaponBaseShotgun
         // Field count: 0
         public static class CWeaponSawedoff {
         }
@@ -11803,7 +11807,7 @@ namespace CS2Dumper.Schemas {
         // Field count: 0
         public static class CCSPlayer_DamageReactServices {
         }
-        // Parent: CCSWeaponBase
+        // Parent: CCSWeaponBaseShotgun
         // Field count: 0
         public static class CWeaponXM1014 {
         }
