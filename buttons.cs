@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-03 00:34:49.749963100 UTC
+// Dumped with FrezzyHOOK
+// 2025-10-04 02:46:36.528794800 UTC
 
 namespace CS2Dumper {
     // Module: client.dll
