@@ -1,5 +1,5 @@
-// Dumped with FrezzyHOOK
-// 2025-10-04 02:46:36.528794800 UTC
+// FrezzyHook d1mp
+// 2025-10-15 07:09:44.993313600 UTC
 
 #pragma once
 
@@ -8,7 +8,7 @@
 namespace cs2_dumper {
     namespace schemas {
         // Module: resourcesystem.dll
-        // Class count: 58
+        // Class count: 59
         // Enum count: 2
         namespace resourcesystem_dll {
             // Alignment: 1
@@ -57,13 +57,6 @@ namespace cs2_dumper {
             // Metadata:
             // MResourceTypeForInfoType
             namespace InfoForResourceTypeCMorphSetData {
-            }
-            // Parent: None
-            // Field count: 0
-            //
-            // Metadata:
-            // MResourceTypeForInfoType
-            namespace InfoForResourceTypeCChoreoSceneFileData {
             }
             // Parent: None
             // Field count: 0
@@ -184,6 +177,13 @@ namespace cs2_dumper {
             namespace InfoForResourceTypeProceduralTestResource_t {
             }
             // Parent: None
+            // Field count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
+            namespace InfoForResourceTypeCChoreoSceneFileList {
+            }
+            // Parent: None
             // Field count: 2
             namespace AABB_t {
                 constexpr std::ptrdiff_t m_vMinBounds = 0x0; // Vector
@@ -237,6 +237,13 @@ namespace cs2_dumper {
             // Metadata:
             // MResourceTypeForInfoType
             namespace InfoForResourceTypeCTypeScriptResource {
+            }
+            // Parent: None
+            // Field count: 0
+            //
+            // Metadata:
+            // MResourceTypeForInfoType
+            namespace InfoForResourceTypeCChoreoSceneResource {
             }
             // Parent: None
             // Field count: 0

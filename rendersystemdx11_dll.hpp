@@ -1,5 +1,5 @@
-// Dumped with FrezzyHOOK
-// 2025-10-04 02:46:36.528794800 UTC
+// FrezzyHook d1mp
+// 2025-10-15 07:09:44.993313600 UTC
 
 #pragma once
 
@@ -30,7 +30,7 @@ namespace cs2_dumper {
                 RENDER_PRIM_TYPE_COUNT = 0xD
             };
             // Alignment: 4
-            // Member count: 12
+            // Member count: 13
             enum class RenderBufferFlags_t : uint32_t {
                 RENDER_BUFFER_USAGE_NONE = 0x0,
                 RENDER_BUFFER_USAGE_VERTEX_BUFFER = 0x1,
@@ -43,7 +43,8 @@ namespace cs2_dumper {
                 RENDER_BUFFER_ACCELERATION_STRUCTURE = 0x200,
                 RENDER_BUFFER_SHADER_BINDING_TABLE = 0x400,
                 RENDER_BUFFER_POOL_ALLOCATED = 0x800,
-                RENDER_BUFFER_USAGE_CONDITIONAL_RENDERING = 0x1000
+                RENDER_BUFFER_USAGE_CONDITIONAL_RENDERING = 0x1000,
+                RENDER_BUFFER_IMMOVABLE_ALLOCATION = 0x2000
             };
             // Alignment: 1
             // Member count: 3
