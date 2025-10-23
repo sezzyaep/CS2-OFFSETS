@@ -1,5 +1,5 @@
-// Generated using https://github.com/a2x/cs2-dumper
-// 2025-10-14 23:58:25.486779500 UTC
+// FrezzyHook d1mp
+// 2025-10-23 01:04:56.165593100 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: animationsystem.dll
