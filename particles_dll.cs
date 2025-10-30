@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-10-23 01:04:56.165593100 UTC
+// 2025-10-30 00:30:40.957679400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: particles.dll
