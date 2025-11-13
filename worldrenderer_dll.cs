@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-10-30 00:30:40.957679400 UTC
+// 2025-11-13 03:05:55.671238400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: worldrenderer.dll

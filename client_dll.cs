@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-10-30 00:30:40.957679400 UTC
+// 2025-11-13 03:05:55.671238400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll
@@ -3977,7 +3977,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_vMaxs = 0x6CC; // Vector
         }
         // Parent: CPlayer_MovementServices_Humanoid
-        // Field count: 39
+        // Field count: 40
         //
         // Metadata:
         // NetworkVarNames: m_vecLadderNormal (Vector)
@@ -3999,6 +3999,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_flOffsetTickStashedSpeed (float)
         // NetworkVarNames: m_flStamina (float)
         // NetworkVarNames: m_bWasSurfing (bool)
+        // NetworkVarNames: m_bJumpApexPending (bool)
         public static class CCSPlayer_MovementServices {
             public const nint m_vecLadderNormal = 0x278; // Vector
             public const nint m_nLadderSurfacePropIndex = 0x284; // int32
@@ -4039,6 +4040,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flTicksSinceLastSurfingDetected = 0x538; // float32
             public const nint m_bWasSurfing = 0x53C; // bool
             public const nint m_vecInputRotated = 0x5CC; // Vector
+            public const nint m_bJumpApexPending = 0xDF8; // bool
         }
         // Parent: 
         // Field count: 5
@@ -6433,8 +6435,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_bIsHoldingLookAtWeapon = 0xCD; // bool
             public const nint m_nOldTotalShootPositionHistoryCount = 0xD0; // uint32
             public const nint m_nOldTotalInputHistoryCount = 0x368; // uint32
-            public const nint m_networkAnimTiming = 0x18C8; // C_NetworkUtlVectorBase<uint8>
-            public const nint m_bBlockInspectUntilNextGraphUpdate = 0x18E0; // bool
+            public const nint m_networkAnimTiming = 0x18E0; // C_NetworkUtlVectorBase<uint8>
+            public const nint m_bBlockInspectUntilNextGraphUpdate = 0x18F8; // bool
         }
         // Parent: CBaseAnimGraph
         // Field count: 2

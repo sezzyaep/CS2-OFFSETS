@@ -1,26 +1,26 @@
 // FrezzyHook d1mp
-// 2025-10-30 00:30:40.957679400 UTC
+// 2025-11-13 03:05:55.671238400 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
 pub mod cs2_dumper {
     // Module: client.dll
     pub mod buttons {
-        pub const attack: usize = 0x1BE1220;
-        pub const attack2: usize = 0x1BE12B0;
-        pub const back: usize = 0x1BE14F0;
-        pub const duck: usize = 0x1BE17C0;
-        pub const forward: usize = 0x1BE1460;
-        pub const jump: usize = 0x1BE1730;
-        pub const left: usize = 0x1BE1580;
-        pub const lookatweapon: usize = 0x1E34CB0;
-        pub const reload: usize = 0x1BE1190;
-        pub const right: usize = 0x1BE1610;
-        pub const showscores: usize = 0x1E34B90;
-        pub const sprint: usize = 0x1BE1100;
-        pub const turnleft: usize = 0x1BE1340;
-        pub const turnright: usize = 0x1BE13D0;
-        pub const r#use: usize = 0x1BE16A0;
-        pub const zoom: usize = 0x1E34C20;
+        pub const attack: usize = 0x1BE53A0;
+        pub const attack2: usize = 0x1BE5430;
+        pub const back: usize = 0x1BE5670;
+        pub const duck: usize = 0x1BE5940;
+        pub const forward: usize = 0x1BE55E0;
+        pub const jump: usize = 0x1BE58B0;
+        pub const left: usize = 0x1BE5700;
+        pub const lookatweapon: usize = 0x1E39060;
+        pub const reload: usize = 0x1BE5310;
+        pub const right: usize = 0x1BE5790;
+        pub const showscores: usize = 0x1E38F40;
+        pub const sprint: usize = 0x1BE5280;
+        pub const turnleft: usize = 0x1BE54C0;
+        pub const turnright: usize = 0x1BE5550;
+        pub const r#use: usize = 0x1BE5820;
+        pub const zoom: usize = 0x1E38FD0;
     }
 }

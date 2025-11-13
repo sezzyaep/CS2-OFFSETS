@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-10-30 00:30:40.957679400 UTC
+// 2025-11-13 03:05:55.671238400 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
@@ -1488,7 +1488,7 @@ pub mod cs2_dumper {
                 k_eSplinePushTowards = 0x2
             }
             // Alignment: 2
-            // Member count: 28
+            // Member count: 30
             #[repr(u16)]
             pub enum WeaponGameplayAnimState {
                 WPN_ANIMSTATE_UNINITIALIZED = 0x0,
@@ -1517,8 +1517,10 @@ pub mod cs2_dumper {
                 WPN_ANIMSTATE_RELOAD_OUTRO = 0x321,
                 WPN_ANIMSTATE_INSPECT = 0x3E8,
                 WPN_ANIMSTATE_INSPECT_OUTRO = 0x3E9,
-                WPN_ANIMSTATE_END_VALID = 0x44C,
-                WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x44D
+                WPN_ANIMSTATE_INVENTORY_UI_TUMBLE = 0x5DC,
+                WPN_ANIMSTATE_INVENTORY_UI_KEYCHAIN_APPLY = 0x5DD,
+                WPN_ANIMSTATE_END_VALID = 0x7D0,
+                WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x7D1
             }
             // Alignment: 4
             // Member count: 2
@@ -6508,7 +6510,7 @@ pub mod cs2_dumper {
                 pub const m_shakeCallback: usize = 0x528; // CPhysicsShake
             }
             // Parent: CPlayer_MovementServices_Humanoid
-            // Field count: 41
+            // Field count: 42
             //
             // Metadata:
             // NetworkVarNames: m_vecLadderNormal (Vector)
@@ -6530,6 +6532,7 @@ pub mod cs2_dumper {
             // NetworkVarNames: m_flOffsetTickStashedSpeed (float)
             // NetworkVarNames: m_flStamina (float)
             // NetworkVarNames: m_bWasSurfing (bool)
+            // NetworkVarNames: m_bJumpApexPending (bool)
             pub mod CCSPlayer_MovementServices {
                 pub const m_vecLadderNormal: usize = 0x280; // Vector
                 pub const m_nLadderSurfacePropIndex: usize = 0x28C; // int32
@@ -6572,6 +6575,7 @@ pub mod cs2_dumper {
                 pub const m_flTicksSinceLastSurfingDetected: usize = 0x548; // float32
                 pub const m_bWasSurfing: usize = 0x54C; // bool
                 pub const m_vecInputRotated: usize = 0x5DC; // Vector
+                pub const m_bJumpApexPending: usize = 0xE08; // bool
             }
             // Parent: 
             // Field count: 5
@@ -10384,8 +10388,8 @@ pub mod cs2_dumper {
                 pub const m_bPickedUpWeapon: usize = 0xD6; // bool
                 pub const m_bDisableAutoDeploy: usize = 0xD7; // bool
                 pub const m_bIsPickingUpGroundWeapon: usize = 0xD8; // bool
-                pub const m_networkAnimTiming: usize = 0x18C0; // CNetworkUtlVectorBase<uint8>
-                pub const m_bBlockInspectUntilNextGraphUpdate: usize = 0x18D8; // bool
+                pub const m_networkAnimTiming: usize = 0x18D8; // CNetworkUtlVectorBase<uint8>
+                pub const m_bBlockInspectUntilNextGraphUpdate: usize = 0x18F0; // bool
             }
             // Parent: None
             // Field count: 6

@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-10-30 00:30:40.957679400 UTC
+// 2025-11-13 03:05:55.671238400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
@@ -1391,7 +1391,7 @@ namespace CS2Dumper.Schemas {
             k_eSplinePushTowards = 0x2
         }
         // Alignment: 2
-        // Member count: 28
+        // Member count: 30
         public enum WeaponGameplayAnimState : ushort {
             WPN_ANIMSTATE_UNINITIALIZED = 0x0,
             WPN_ANIMSTATE_DROPPED = 0x1,
@@ -1419,8 +1419,10 @@ namespace CS2Dumper.Schemas {
             WPN_ANIMSTATE_RELOAD_OUTRO = 0x321,
             WPN_ANIMSTATE_INSPECT = 0x3E8,
             WPN_ANIMSTATE_INSPECT_OUTRO = 0x3E9,
-            WPN_ANIMSTATE_END_VALID = 0x44C,
-            WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x44D
+            WPN_ANIMSTATE_INVENTORY_UI_TUMBLE = 0x5DC,
+            WPN_ANIMSTATE_INVENTORY_UI_KEYCHAIN_APPLY = 0x5DD,
+            WPN_ANIMSTATE_END_VALID = 0x7D0,
+            WEAPON_LEGACY_STATE_CLEAR_FIRING = 0x7D1
         }
         // Alignment: 4
         // Member count: 2
@@ -6391,7 +6393,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_shakeCallback = 0x528; // CPhysicsShake
         }
         // Parent: CPlayer_MovementServices_Humanoid
-        // Field count: 41
+        // Field count: 42
         //
         // Metadata:
         // NetworkVarNames: m_vecLadderNormal (Vector)
@@ -6413,6 +6415,7 @@ namespace CS2Dumper.Schemas {
         // NetworkVarNames: m_flOffsetTickStashedSpeed (float)
         // NetworkVarNames: m_flStamina (float)
         // NetworkVarNames: m_bWasSurfing (bool)
+        // NetworkVarNames: m_bJumpApexPending (bool)
         public static class CCSPlayer_MovementServices {
             public const nint m_vecLadderNormal = 0x280; // Vector
             public const nint m_nLadderSurfacePropIndex = 0x28C; // int32
@@ -6455,6 +6458,7 @@ namespace CS2Dumper.Schemas {
             public const nint m_flTicksSinceLastSurfingDetected = 0x548; // float32
             public const nint m_bWasSurfing = 0x54C; // bool
             public const nint m_vecInputRotated = 0x5DC; // Vector
+            public const nint m_bJumpApexPending = 0xE08; // bool
         }
         // Parent: 
         // Field count: 5
@@ -10267,8 +10271,8 @@ namespace CS2Dumper.Schemas {
             public const nint m_bPickedUpWeapon = 0xD6; // bool
             public const nint m_bDisableAutoDeploy = 0xD7; // bool
             public const nint m_bIsPickingUpGroundWeapon = 0xD8; // bool
-            public const nint m_networkAnimTiming = 0x18C0; // CNetworkUtlVectorBase<uint8>
-            public const nint m_bBlockInspectUntilNextGraphUpdate = 0x18D8; // bool
+            public const nint m_networkAnimTiming = 0x18D8; // CNetworkUtlVectorBase<uint8>
+            public const nint m_bBlockInspectUntilNextGraphUpdate = 0x18F0; // bool
         }
         // Parent: None
         // Field count: 6
