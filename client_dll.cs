@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-11-13 03:05:55.671238400 UTC
+// 2025-11-14 01:54:19.539773900 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: client.dll

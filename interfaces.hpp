@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-11-13 03:05:55.671238400 UTC
+// 2025-11-14 01:54:19.539773900 UTC
 
 #pragma once
 
@@ -14,14 +14,14 @@ namespace cs2_dumper {
         }
         // Module: client.dll
         namespace client_dll {
-            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x1BE4BB0;
-            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1B9FFC0;
-            constexpr std::ptrdiff_t GameClientExports001 = 0x1BE1890;
-            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1C00130;
-            constexpr std::ptrdiff_t Source2Client002 = 0x1E29540;
-            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1DC2DE0;
-            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1BEBE50;
-            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1BFE670;
+            constexpr std::ptrdiff_t ClientToolsInfo_001 = 0x1BE5BB0;
+            constexpr std::ptrdiff_t EmptyWorldService001_Client = 0x1BA0FB0;
+            constexpr std::ptrdiff_t GameClientExports001 = 0x1BE2890;
+            constexpr std::ptrdiff_t LegacyGameUI001 = 0x1C01130;
+            constexpr std::ptrdiff_t Source2Client002 = 0x1E2A540;
+            constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1DC3DE0;
+            constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1BECE50;
+            constexpr std::ptrdiff_t Source2ClientUI001 = 0x1BFF670;
         }
         // Module: engine2.dll
         namespace engine2_dll {
