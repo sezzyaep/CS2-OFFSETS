@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-11-14 01:54:19.539773900 UTC
+// 2025-11-20 02:49:58.295737500 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: rendersystemdx11.dll
