@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-11-20 02:49:58.295737500 UTC
+// 2025-11-25 21:50:16.979880700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: scenesystem.dll
