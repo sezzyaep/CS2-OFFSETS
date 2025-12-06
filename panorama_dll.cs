@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-11-25 21:50:16.979880700 UTC
+// 2025-12-06 00:50:21.493221 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: panorama.dll
