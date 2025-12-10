@@ -1,26 +1,26 @@
 // FrezzyHook d1mp
-// 2025-12-08 22:41:56.594295400 UTC
+// 2025-12-10 03:09:51.254541600 UTC
 
 namespace CS2Dumper.Offsets {
     // Module: client.dll
     public static class ClientDll {
-        public const nint dwCSGOInput = 0x1E3B150;
-        public const nint dwEntityList = 0x1D12CE8;
-        public const nint dwGameEntitySystem = 0x1FB79D0;
+        public const nint dwCSGOInput = 0x1E3C150;
+        public const nint dwEntityList = 0x1D13CE8;
+        public const nint dwGameEntitySystem = 0x1FB89D0;
         public const nint dwGameEntitySystem_highestEntityIndex = 0x20F0;
-        public const nint dwGameRules = 0x1E30410;
-        public const nint dwGlobalVars = 0x1BE31C0;
-        public const nint dwGlowManager = 0x1E2D2B8;
-        public const nint dwLocalPlayerController = 0x1E1CC18;
-        public const nint dwLocalPlayerPawn = 0x1BEDF28;
-        public const nint dwPlantedC4 = 0x1E35BE8;
-        public const nint dwPrediction = 0x1BEDE40;
-        public const nint dwSensitivity = 0x1E2DD08;
+        public const nint dwGameRules = 0x1E31410;
+        public const nint dwGlobalVars = 0x1BE41C0;
+        public const nint dwGlowManager = 0x1E2E2B8;
+        public const nint dwLocalPlayerController = 0x1E1DC18;
+        public const nint dwLocalPlayerPawn = 0x1BEEF28;
+        public const nint dwPlantedC4 = 0x1E36BE8;
+        public const nint dwPrediction = 0x1BEEE40;
+        public const nint dwSensitivity = 0x1E2ED08;
         public const nint dwSensitivity_sensitivity = 0x50;
-        public const nint dwViewAngles = 0x1E3B800;
-        public const nint dwViewMatrix = 0x1E313D0;
-        public const nint dwViewRender = 0x1E31F48;
-        public const nint dwWeaponC4 = 0x1DCE190;
+        public const nint dwViewAngles = 0x1E3C800;
+        public const nint dwViewMatrix = 0x1E323D0;
+        public const nint dwViewRender = 0x1E32F48;
+        public const nint dwWeaponC4 = 0x1DCF190;
     }
     // Module: engine2.dll
     public static class Engine2Dll {
