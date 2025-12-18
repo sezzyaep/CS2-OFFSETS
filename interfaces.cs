@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-12-10 03:09:51.254541600 UTC
+// 2025-12-18 21:29:47.187383200 UTC
 
 namespace CS2Dumper.Interfaces {
     // Module: animationsystem.dll
@@ -17,6 +17,10 @@ namespace CS2Dumper.Interfaces {
         public const nint Source2ClientConfig001 = 0x1DC5DD0;
         public const nint Source2ClientPrediction001 = 0x1BEEE40;
         public const nint Source2ClientUI001 = 0x1C01670;
+    }
+    // Module: crashhandler64.dll
+    public static class Crashhandler64Dll {
+        public static readonly nint  = unchecked((nint)0xFFFF800211430007);
     }
     // Module: engine2.dll
     public static class Engine2Dll {

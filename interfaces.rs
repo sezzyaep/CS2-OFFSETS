@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-12-10 03:09:51.254541600 UTC
+// 2025-12-18 21:29:47.187383200 UTC
 
 #![allow(non_upper_case_globals, unused)]
 
@@ -20,6 +20,10 @@ pub mod cs2_dumper {
             pub const Source2ClientConfig001: usize = 0x1DC5DD0;
             pub const Source2ClientPrediction001: usize = 0x1BEEE40;
             pub const Source2ClientUI001: usize = 0x1C01670;
+        }
+        // Module: crashhandler64.dll
+        pub mod crashhandler64_dll {
+            pub const : usize = 0xFFFF800211430007;
         }
         // Module: engine2.dll
         pub mod engine2_dll {

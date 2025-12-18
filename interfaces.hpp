@@ -1,5 +1,5 @@
 // FrezzyHook d1mp
-// 2025-12-10 03:09:51.254541600 UTC
+// 2025-12-18 21:29:47.187383200 UTC
 
 #pragma once
 
@@ -22,6 +22,10 @@ namespace cs2_dumper {
             constexpr std::ptrdiff_t Source2ClientConfig001 = 0x1DC5DD0;
             constexpr std::ptrdiff_t Source2ClientPrediction001 = 0x1BEEE40;
             constexpr std::ptrdiff_t Source2ClientUI001 = 0x1C01670;
+        }
+        // Module: crashhandler64.dll
+        namespace crashhandler64_dll {
+            constexpr std::ptrdiff_t  = 0xFFFF800211430007;
         }
         // Module: engine2.dll
         namespace engine2_dll {
