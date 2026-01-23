@@ -1,9 +1,9 @@
-// FrezzyHook d1mp
-// 2025-12-18 21:29:47.187383200 UTC
+// Dumped With fhook
+// 2026-01-23 04:58:45.849061700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll
-    // Class count: 1
+    // Class count: 0
     // Enum count: 1
     public static class NetworksystemDll {
         // Alignment: 4
@@ -13,11 +13,6 @@ namespace CS2Dumper.Schemas {
             OOPVSUpdates_OptIn = 0x1,
             OOPVSUpdates_Default = 0x2,
             OOPVSUpdates_Count = 0x3
-        }
-        // Parent: None
-        // Field count: 1
-        public static class ChangeAccessorFieldPathIndex_t {
-            public const nint m_Value = 0x0; // int32
         }
     }
 }

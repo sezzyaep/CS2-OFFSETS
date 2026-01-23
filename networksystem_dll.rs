@@ -1,12 +1,12 @@
-// FrezzyHook d1mp
-// 2025-12-18 21:29:47.187383200 UTC
+// Dumped With fhook
+// 2026-01-23 04:58:45.849061700 UTC
 
 #![allow(non_upper_case_globals, non_camel_case_types, non_snake_case, unused)]
 
 pub mod cs2_dumper {
     pub mod schemas {
         // Module: networksystem.dll
-        // Class count: 1
+        // Class count: 0
         // Enum count: 1
         pub mod networksystem_dll {
             // Alignment: 4
@@ -17,11 +17,6 @@ pub mod cs2_dumper {
                 OOPVSUpdates_OptIn = 0x1,
                 OOPVSUpdates_Default = 0x2,
                 OOPVSUpdates_Count = 0x3
-            }
-            // Parent: None
-            // Field count: 1
-            pub mod ChangeAccessorFieldPathIndex_t {
-                pub const m_Value: usize = 0x0; // int32
             }
         }
     }

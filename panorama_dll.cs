@@ -1,5 +1,5 @@
-// FrezzyHook d1mp
-// 2025-12-18 21:29:47.187383200 UTC
+// Dumped With fhook
+// 2026-01-23 04:58:45.849061700 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: panorama.dll
