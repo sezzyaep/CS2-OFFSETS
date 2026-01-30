@@ -1,5 +1,5 @@
 // Dumped With fhook
-// 2026-01-23 04:58:45.849061700 UTC
+// 2026-01-30 09:16:49.875773300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: panorama.dll

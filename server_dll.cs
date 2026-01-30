@@ -1,5 +1,5 @@
 // Dumped With fhook
-// 2026-01-23 04:58:45.849061700 UTC
+// 2026-01-30 09:16:49.875773300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: server.dll
@@ -8438,15 +8438,15 @@ namespace CS2Dumper.Schemas {
             public const nint m_bBombDefused = 0xEF1; // bool
             public const nint m_bMapHasBombZone = 0xEF2; // bool
             public const nint m_vecMainCTSpawnPos = 0xF40; // Vector
-            public const nint m_CTSpawnPointsMasterList = 0xF50; // CUtlVector<SpawnPoint*>
-            public const nint m_TerroristSpawnPointsMasterList = 0xF68; // CUtlVector<SpawnPoint*>
+            public const nint m_CTSpawnPointsMasterList = 0xF50; // CUtlVector<CHandle<SpawnPoint>>
+            public const nint m_TerroristSpawnPointsMasterList = 0xF68; // CUtlVector<CHandle<SpawnPoint>>
             public const nint m_bRespawningAllRespawnablePlayers = 0xF80; // bool
             public const nint m_iNextCTSpawnPoint = 0xF84; // int32
             public const nint m_flCTSpawnPointUsedTime = 0xF88; // float32
             public const nint m_iNextTerroristSpawnPoint = 0xF8C; // int32
             public const nint m_flTerroristSpawnPointUsedTime = 0xF90; // float32
-            public const nint m_CTSpawnPoints = 0xF98; // CUtlVector<SpawnPoint*>
-            public const nint m_TerroristSpawnPoints = 0xFB0; // CUtlVector<SpawnPoint*>
+            public const nint m_CTSpawnPoints = 0xF98; // CUtlVector<CHandle<SpawnPoint>>
+            public const nint m_TerroristSpawnPoints = 0xFB0; // CUtlVector<CHandle<SpawnPoint>>
             public const nint m_bIsUnreservedGameServer = 0xFC8; // bool
             public const nint m_fAutobalanceDisplayTime = 0xFCC; // float32
             public const nint m_bAllowWeaponSwitch = 0x1008; // bool
@@ -11271,7 +11271,7 @@ namespace CS2Dumper.Schemas {
         public static class CPointPulse {
         }
         // Parent: CBaseCSGrenadeProjectile
-        // Field count: 4
+        // Field count: 3
         //
         // Metadata:
         // NetworkVarNames: m_bIsIncGrenade (bool)
@@ -11279,7 +11279,6 @@ namespace CS2Dumper.Schemas {
             public const nint m_bIsIncGrenade = 0xBB0; // bool
             public const nint m_bDetonated = 0xBC8; // bool
             public const nint m_stillTimer = 0xBD0; // IntervalTimer
-            public const nint m_bHasBouncedOffPlayer = 0xCB0; // bool
         }
         // Parent: CBaseFilter
         // Field count: 1
