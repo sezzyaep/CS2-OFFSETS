@@ -1,14 +1,15 @@
-// Dumped With fhook
-// 2026-02-21 20:55:59.226873100 UTC
+
+// 2026-03-19 00:02:53.609238500 UTC
 
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 namespace cs2_dumper {
     namespace schemas {
         // Module: networksystem.dll
-        // Class count: 0
+        // Class count: 1
         // Enum count: 1
         namespace networksystem_dll {
             // Alignment: 4
@@ -19,6 +20,11 @@ namespace cs2_dumper {
                 OOPVSUpdates_Default = 0x2,
                 OOPVSUpdates_Count = 0x3
             };
+            // Parent: None
+            // Field count: 1
+            namespace ChangeAccessorFieldPathIndex_t {
+                constexpr std::ptrdiff_t m_Value = 0x0; // int32
+            }
         }
     }
 }

@@ -1,9 +1,10 @@
-// FrezzyHook d1mp
-// 2025-12-18 21:29:47.187383200 UTC
+
+// 2026-03-19 00:02:53.609238500 UTC
 
 #pragma once
 
 #include <cstddef>
+#include <cstdint>
 
 namespace cs2_dumper {
     namespace schemas {
