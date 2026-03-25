@@ -1,10 +1,9 @@
-
-// 2026-03-19 00:02:53.609238500 UTC
+// Dumped With fhook
+// 2026-03-25 21:06:23.307163400 UTC
 
 #pragma once
 
 #include <cstddef>
-#include <cstdint>
 
 namespace cs2_dumper {
     namespace schemas {

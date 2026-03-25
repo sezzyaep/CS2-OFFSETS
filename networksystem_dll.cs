@@ -1,9 +1,9 @@
-
-// 2026-03-19 00:02:53.609238500 UTC
+// Dumped With fhook
+// 2026-03-25 21:06:23.307163400 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: networksystem.dll
-    // Class count: 1
+    // Class count: 0
     // Enum count: 1
     public static class NetworksystemDll {
         // Alignment: 4
@@ -13,11 +13,6 @@ namespace CS2Dumper.Schemas {
             OOPVSUpdates_OptIn = 0x1,
             OOPVSUpdates_Default = 0x2,
             OOPVSUpdates_Count = 0x3
-        }
-        // Parent: None
-        // Field count: 1
-        public static class ChangeAccessorFieldPathIndex_t {
-            public const nint m_Value = 0x0; // int32
         }
     }
 }
