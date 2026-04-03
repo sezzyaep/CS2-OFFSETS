@@ -1,5 +1,5 @@
 // Dumped With fhook
-// 2026-03-25 21:06:23.307163400 UTC
+// 2026-04-02 22:37:10.280776300 UTC
 
 namespace CS2Dumper.Schemas {
     // Module: rendersystemdx11.dll
