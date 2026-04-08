@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: host.dll</h2>
+    <h3>Class: EmptyTestScript</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_hTest</td><td class="type">CAnimScriptParam<float32></td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CAnimScriptBase</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bIsValid</td><td class="type">bool</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

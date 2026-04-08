@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: schemasystem.dll</h2>
+    <h3>Enum: fieldtype_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>FIELD_VOID</td><td class="value">0</td></tr>
+            <tr><td>FIELD_FLOAT32</td><td class="value">1</td></tr>
+            <tr><td>FIELD_STRING</td><td class="value">2</td></tr>
+            <tr><td>FIELD_VECTOR</td><td class="value">3</td></tr>
+            <tr><td>FIELD_QUATERNION</td><td class="value">4</td></tr>
+            <tr><td>FIELD_INT32</td><td class="value">5</td></tr>
+            <tr><td>FIELD_BOOLEAN</td><td class="value">6</td></tr>
+            <tr><td>FIELD_INT16</td><td class="value">7</td></tr>
+            <tr><td>FIELD_CHARACTER</td><td class="value">8</td></tr>
+            <tr><td>FIELD_COLOR32</td><td class="value">9</td></tr>
+            <tr><td>FIELD_EMBEDDED</td><td class="value">10</td></tr>
+            <tr><td>FIELD_CUSTOM</td><td class="value">11</td></tr>
+            <tr><td>FIELD_CLASSPTR</td><td class="value">12</td></tr>
+            <tr><td>FIELD_EHANDLE</td><td class="value">13</td></tr>
+            <tr><td>FIELD_POSITION_VECTOR</td><td class="value">14</td></tr>
+            <tr><td>FIELD_TIME</td><td class="value">15</td></tr>
+            <tr><td>FIELD_TICK</td><td class="value">16</td></tr>
+            <tr><td>FIELD_SOUNDNAME</td><td class="value">17</td></tr>
+            <tr><td>FIELD_INPUT</td><td class="value">18</td></tr>
+            <tr><td>FIELD_FUNCTION</td><td class="value">19</td></tr>
+            <tr><td>FIELD_VMATRIX</td><td class="value">20</td></tr>
+            <tr><td>FIELD_VMATRIX_WORLDSPACE</td><td class="value">21</td></tr>
+            <tr><td>FIELD_MATRIX3X4_WORLDSPACE</td><td class="value">22</td></tr>
+            <tr><td>FIELD_INTERVAL</td><td class="value">23</td></tr>
+            <tr><td>FIELD_UNUSED</td><td class="value">24</td></tr>
+            <tr><td>FIELD_VECTOR2D</td><td class="value">25</td></tr>
+            <tr><td>FIELD_INT64</td><td class="value">26</td></tr>
+            <tr><td>FIELD_VECTOR4D</td><td class="value">27</td></tr>
+            <tr><td>FIELD_RESOURCE</td><td class="value">28</td></tr>
+            <tr><td>FIELD_TYPEUNKNOWN</td><td class="value">29</td></tr>
+            <tr><td>FIELD_CSTRING</td><td class="value">30</td></tr>
+            <tr><td>FIELD_HSCRIPT</td><td class="value">31</td></tr>
+            <tr><td>FIELD_VARIANT</td><td class="value">32</td></tr>
+            <tr><td>FIELD_UINT64</td><td class="value">33</td></tr>
+            <tr><td>FIELD_FLOAT64</td><td class="value">34</td></tr>
+            <tr><td>FIELD_POSITIVEINTEGER_OR_NULL</td><td class="value">35</td></tr>
+            <tr><td>FIELD_HSCRIPT_NEW_INSTANCE</td><td class="value">36</td></tr>
+            <tr><td>FIELD_UINT32</td><td class="value">37</td></tr>
+            <tr><td>FIELD_UTLSTRINGTOKEN</td><td class="value">38</td></tr>
+            <tr><td>FIELD_QANGLE</td><td class="value">39</td></tr>
+            <tr><td>FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_VECTOR</td><td class="value">40</td></tr>
+            <tr><td>FIELD_HMATERIAL</td><td class="value">41</td></tr>
+            <tr><td>FIELD_HMODEL</td><td class="value">42</td></tr>
+            <tr><td>FIELD_NETWORK_QUANTIZED_VECTOR</td><td class="value">43</td></tr>
+            <tr><td>FIELD_NETWORK_QUANTIZED_FLOAT</td><td class="value">44</td></tr>
+            <tr><td>FIELD_DIRECTION_VECTOR_WORLDSPACE</td><td class="value">45</td></tr>
+            <tr><td>FIELD_QANGLE_WORLDSPACE</td><td class="value">46</td></tr>
+            <tr><td>FIELD_QUATERNION_WORLDSPACE</td><td class="value">47</td></tr>
+            <tr><td>FIELD_HSCRIPT_LIGHTBINDING</td><td class="value">48</td></tr>
+            <tr><td>FIELD_V8_VALUE</td><td class="value">49</td></tr>
+            <tr><td>FIELD_V8_OBJECT</td><td class="value">50</td></tr>
+            <tr><td>FIELD_V8_ARRAY</td><td class="value">51</td></tr>
+            <tr><td>FIELD_V8_CALLBACK_INFO</td><td class="value">52</td></tr>
+            <tr><td>FIELD_UTLSTRING</td><td class="value">53</td></tr>
+            <tr><td>FIELD_NETWORK_ORIGIN_CELL_QUANTIZED_POSITION_VECTOR</td><td class="value">54</td></tr>
+            <tr><td>FIELD_HRENDERTEXTURE</td><td class="value">55</td></tr>
+            <tr><td>FIELD_HPARTICLESYSTEMDEFINITION</td><td class="value">56</td></tr>
+            <tr><td>FIELD_UINT8</td><td class="value">57</td></tr>
+            <tr><td>FIELD_UINT16</td><td class="value">58</td></tr>
+            <tr><td>FIELD_CTRANSFORM</td><td class="value">59</td></tr>
+            <tr><td>FIELD_CTRANSFORM_WORLDSPACE</td><td class="value">60</td></tr>
+            <tr><td>FIELD_HPOSTPROCESSING</td><td class="value">61</td></tr>
+            <tr><td>FIELD_MATRIX3X4</td><td class="value">62</td></tr>
+            <tr><td>FIELD_SHIM</td><td class="value">63</td></tr>
+            <tr><td>FIELD_CMOTIONTRANSFORM</td><td class="value">64</td></tr>
+            <tr><td>FIELD_CMOTIONTRANSFORM_WORLDSPACE</td><td class="value">65</td></tr>
+            <tr><td>FIELD_ATTACHMENT_HANDLE</td><td class="value">66</td></tr>
+            <tr><td>FIELD_AMMO_INDEX</td><td class="value">67</td></tr>
+            <tr><td>FIELD_CONDITION_ID</td><td class="value">68</td></tr>
+            <tr><td>FIELD_AI_SCHEDULE_BITS</td><td class="value">69</td></tr>
+            <tr><td>FIELD_MODIFIER_HANDLE</td><td class="value">70</td></tr>
+            <tr><td>FIELD_ROTATION_VECTOR</td><td class="value">71</td></tr>
+            <tr><td>FIELD_ROTATION_VECTOR_WORLDSPACE</td><td class="value">72</td></tr>
+            <tr><td>FIELD_HVDATA</td><td class="value">73</td></tr>
+            <tr><td>FIELD_SCALE32</td><td class="value">74</td></tr>
+            <tr><td>FIELD_STRING_AND_TOKEN</td><td class="value">75</td></tr>
+            <tr><td>FIELD_ENGINE_TIME</td><td class="value">76</td></tr>
+            <tr><td>FIELD_ENGINE_TICK</td><td class="value">77</td></tr>
+            <tr><td>FIELD_WORLD_GROUP_ID</td><td class="value">78</td></tr>
+            <tr><td>FIELD_GLOBALSYMBOL</td><td class="value">79</td></tr>
+            <tr><td>FIELD_HNMGRAPHDEFINITION</td><td class="value">80</td></tr>
+            <tr><td>FIELD_TYPECOUNT</td><td class="value">81</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: ThreeState_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>TRS_FALSE</td><td class="value">0</td></tr>
+            <tr><td>TRS_TRUE</td><td class="value">1</td></tr>
+            <tr><td>TRS_NONE</td><td class="value">2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCResourceManifestInternal</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CSchemaSystemInternalRegistration</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Vector2D</td><td class="type">Vector2D</td><td class="value">0x0</td></tr>
+            <tr><td>m_Vector</td><td class="type">Vector</td><td class="value">0x8</td></tr>
+            <tr><td>m_VectorWS</td><td class="type">VectorWS</td><td class="value">0x14</td></tr>
+            <tr><td>m_VectorAligned</td><td class="type">VectorAligned</td><td class="value">0x20</td></tr>
+            <tr><td>m_Quaternion</td><td class="type">Quaternion</td><td class="value">0x30</td></tr>
+            <tr><td>m_QAngle</td><td class="type">QAngle</td><td class="value">0x40</td></tr>
+            <tr><td>m_RotationVector</td><td class="type">RotationVector</td><td class="value">0x4C</td></tr>
+            <tr><td>m_RadianEuler</td><td class="type">RadianEuler</td><td class="value">0x58</td></tr>
+            <tr><td>m_DegreeEuler</td><td class="type">DegreeEuler</td><td class="value">0x64</td></tr>
+            <tr><td>m_QuaternionStorage</td><td class="type">QuaternionStorage</td><td class="value">0x70</td></tr>
+            <tr><td>m_matrix3x4_t</td><td class="type">matrix3x4_t</td><td class="value">0x80</td></tr>
+            <tr><td>m_matrix3x4a_t</td><td class="type">matrix3x4a_t</td><td class="value">0xB0</td></tr>
+            <tr><td>m_Color</td><td class="type">Color</td><td class="value">0xE0</td></tr>
+            <tr><td>m_Vector4D</td><td class="type">Vector4D</td><td class="value">0xE4</td></tr>
+            <tr><td>m_CTransform</td><td class="type">CTransform</td><td class="value">0x100</td></tr>
+            <tr><td>m_pKeyValues</td><td class="type">KeyValues*</td><td class="value">0x120</td></tr>
+            <tr><td>m_CUtlBinaryBlock</td><td class="type">CUtlBinaryBlock</td><td class="value">0x128</td></tr>
+            <tr><td>m_CUtlString</td><td class="type">CUtlString</td><td class="value">0x138</td></tr>
+            <tr><td>m_CUtlSymbol</td><td class="type">CUtlSymbol</td><td class="value">0x140</td></tr>
+            <tr><td>m_stringToken</td><td class="type">CUtlStringToken</td><td class="value">0x144</td></tr>
+            <tr><td>m_stringTokenWithStorage</td><td class="type">CUtlStringTokenWithStorage</td><td class="value">0x148</td></tr>
+            <tr><td>m_ResourceTypes</td><td class="type">CResourceArray<CResourcePointer<CResourceString>></td><td class="value">0x160</td></tr>
+            <tr><td>m_KV3</td><td class="type">KeyValues3</td><td class="value">0x168</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CExampleSchemaVData_PolymorphicDerivedA</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nDerivedA</td><td class="type">int32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CExampleSchemaVData_PolymorphicBase</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nBase</td><td class="type">int32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CExampleSchemaVData_PolymorphicDerivedB</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nDerivedB</td><td class="type">int32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: ResourceId_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">uint64</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CExampleSchemaVData_Monomorphic</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nExample1</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nExample2</td><td class="type">int32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

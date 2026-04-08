@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: vphysics2.dll</h2>
+    <h3>Enum: JointMotion_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>JOINT_MOTION_FREE</td><td class="value">0</td></tr>
+            <tr><td>JOINT_MOTION_LOCKED</td><td class="value">1</td></tr>
+            <tr><td>JOINT_MOTION_COUNT</td><td class="value">2</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: JointAxis_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>JOINT_AXIS_X</td><td class="value">0</td></tr>
+            <tr><td>JOINT_AXIS_Y</td><td class="value">1</td></tr>
+            <tr><td>JOINT_AXIS_Z</td><td class="value">2</td></tr>
+            <tr><td>JOINT_AXIS_COUNT</td><td class="value">3</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: DynamicContinuousContactBehavior_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>DYNAMIC_CONTINUOUS_ALLOW_IF_REQUESTED_BY_OTHER_BODY</td><td class="value">0</td></tr>
+            <tr><td>DYNAMIC_CONTINUOUS_ALWAYS</td><td class="value">1</td></tr>
+            <tr><td>DYNAMIC_CONTINUOUS_NEVER</td><td class="value">2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnSphereDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Sphere</td><td class="type">SphereBase_t<float32></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnSoftbodyParticle_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_flMassInv</td><td class="type">float32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnHullDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Hull</td><td class="type">RnHull_t</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnCapsuleDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Capsule</td><td class="type">RnCapsule_t</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: PhysFeModelDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_CtrlHash</td><td class="type">CUtlVector<uint32></td><td class="value">0x0</td></tr>
+            <tr><td>m_CtrlName</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x18</td></tr>
+            <tr><td>m_nStaticNodeFlags</td><td class="type">uint32</td><td class="value">0x30</td></tr>
+            <tr><td>m_nDynamicNodeFlags</td><td class="type">uint32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flLocalForce</td><td class="type">float32</td><td class="value">0x38</td></tr>
+            <tr><td>m_flLocalRotation</td><td class="type">float32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_nNodeCount</td><td class="type">uint16</td><td class="value">0x40</td></tr>
+            <tr><td>m_nStaticNodes</td><td class="type">uint16</td><td class="value">0x42</td></tr>
+            <tr><td>m_nRotLockStaticNodes</td><td class="type">uint16</td><td class="value">0x44</td></tr>
+            <tr><td>m_nFirstPositionDrivenNode</td><td class="type">uint16</td><td class="value">0x46</td></tr>
+            <tr><td>m_nSimdTriCount1</td><td class="type">uint16</td><td class="value">0x48</td></tr>
+            <tr><td>m_nSimdTriCount2</td><td class="type">uint16</td><td class="value">0x4A</td></tr>
+            <tr><td>m_nSimdQuadCount1</td><td class="type">uint16</td><td class="value">0x4C</td></tr>
+            <tr><td>m_nSimdQuadCount2</td><td class="type">uint16</td><td class="value">0x4E</td></tr>
+            <tr><td>m_nQuadCount1</td><td class="type">uint16</td><td class="value">0x50</td></tr>
+            <tr><td>m_nQuadCount2</td><td class="type">uint16</td><td class="value">0x52</td></tr>
+            <tr><td>m_nTreeDepth</td><td class="type">uint16</td><td class="value">0x54</td></tr>
+            <tr><td>m_nNodeBaseJiggleboneDependsCount</td><td class="type">uint16</td><td class="value">0x56</td></tr>
+            <tr><td>m_nRopeCount</td><td class="type">uint16</td><td class="value">0x58</td></tr>
+            <tr><td>m_Ropes</td><td class="type">CUtlVector<uint16></td><td class="value">0x60</td></tr>
+            <tr><td>m_NodeBases</td><td class="type">CUtlVector<FeNodeBase_t></td><td class="value">0x78</td></tr>
+            <tr><td>m_SimdNodeBases</td><td class="type">CUtlVector<FeSimdNodeBase_t></td><td class="value">0x90</td></tr>
+            <tr><td>m_Quads</td><td class="type">CUtlVector<FeQuad_t></td><td class="value">0xA8</td></tr>
+            <tr><td>m_SimdQuads</td><td class="type">CUtlVector<FeSimdQuad_t></td><td class="value">0xC0</td></tr>
+            <tr><td>m_SimdTris</td><td class="type">CUtlVector<FeSimdTri_t></td><td class="value">0xD8</td></tr>
+            <tr><td>m_SimdRods</td><td class="type">CUtlVector<FeSimdRodConstraint_t></td><td class="value">0xF0</td></tr>
+            <tr><td>m_SimdRodsAnim</td><td class="type">CUtlVector<FeSimdRodConstraintAnim_t></td><td class="value">0x108</td></tr>
+            <tr><td>m_InitPose</td><td class="type">CUtlVector<CTransform></td><td class="value">0x120</td></tr>
+            <tr><td>m_Rods</td><td class="type">CUtlVector<FeRodConstraint_t></td><td class="value">0x138</td></tr>
+            <tr><td>m_Twists</td><td class="type">CUtlVector<FeTwistConstraint_t></td><td class="value">0x150</td></tr>
+            <tr><td>m_HingeLimits</td><td class="type">CUtlVector<FeHingeLimit_t></td><td class="value">0x168</td></tr>
+            <tr><td>m_AntiTunnelBytecode</td><td class="type">CUtlVector<uint32></td><td class="value">0x180</td></tr>
+            <tr><td>m_DynKinLinks</td><td class="type">CUtlVector<FeDynKinLink_t></td><td class="value">0x198</td></tr>
+            <tr><td>m_AntiTunnelProbes</td><td class="type">CUtlVector<FeAntiTunnelProbe_t></td><td class="value">0x1B0</td></tr>
+            <tr><td>m_AntiTunnelTargetNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x1C8</td></tr>
+            <tr><td>m_NodeStrayBoxes</td><td class="type">CUtlVector<FeNodeStrayBox_t></td><td class="value">0x1E0</td></tr>
+            <tr><td>m_AxialEdges</td><td class="type">CUtlVector<FeAxialEdgeBend_t></td><td class="value">0x1F8</td></tr>
+            <tr><td>m_NodeInvMasses</td><td class="type">CUtlVector<float32></td><td class="value">0x210</td></tr>
+            <tr><td>m_CtrlOffsets</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x228</td></tr>
+            <tr><td>m_CtrlOsOffsets</td><td class="type">CUtlVector<FeCtrlOsOffset_t></td><td class="value">0x240</td></tr>
+            <tr><td>m_FollowNodes</td><td class="type">CUtlVector<FeFollowNode_t></td><td class="value">0x258</td></tr>
+            <tr><td>m_CollisionPlanes</td><td class="type">CUtlVector<FeCollisionPlane_t></td><td class="value">0x270</td></tr>
+            <tr><td>m_NodeIntegrator</td><td class="type">CUtlVector<FeNodeIntegrator_t></td><td class="value">0x288</td></tr>
+            <tr><td>m_SpringIntegrator</td><td class="type">CUtlVector<FeSpringIntegrator_t></td><td class="value">0x2A0</td></tr>
+            <tr><td>m_SimdSpringIntegrator</td><td class="type">CUtlVector<FeSimdSpringIntegrator_t></td><td class="value">0x2B8</td></tr>
+            <tr><td>m_WorldCollisionParams</td><td class="type">CUtlVector<FeWorldCollisionParams_t></td><td class="value">0x2D0</td></tr>
+            <tr><td>m_LegacyStretchForce</td><td class="type">CUtlVector<float32></td><td class="value">0x2E8</td></tr>
+            <tr><td>m_NodeCollisionRadii</td><td class="type">CUtlVector<float32></td><td class="value">0x300</td></tr>
+            <tr><td>m_DynNodeFriction</td><td class="type">CUtlVector<float32></td><td class="value">0x318</td></tr>
+            <tr><td>m_LocalRotation</td><td class="type">CUtlVector<float32></td><td class="value">0x330</td></tr>
+            <tr><td>m_LocalForce</td><td class="type">CUtlVector<float32></td><td class="value">0x348</td></tr>
+            <tr><td>m_TaperedCapsuleStretches</td><td class="type">CUtlVector<FeTaperedCapsuleStretch_t></td><td class="value">0x360</td></tr>
+            <tr><td>m_TaperedCapsuleRigids</td><td class="type">CUtlVector<FeTaperedCapsuleRigid_t></td><td class="value">0x378</td></tr>
+            <tr><td>m_SphereRigids</td><td class="type">CUtlVector<FeSphereRigid_t></td><td class="value">0x390</td></tr>
+            <tr><td>m_WorldCollisionNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x3A8</td></tr>
+            <tr><td>m_TreeParents</td><td class="type">CUtlVector<uint16></td><td class="value">0x3C0</td></tr>
+            <tr><td>m_TreeCollisionMasks</td><td class="type">CUtlVector<uint16></td><td class="value">0x3D8</td></tr>
+            <tr><td>m_TreeChildren</td><td class="type">CUtlVector<FeTreeChildren_t></td><td class="value">0x3F0</td></tr>
+            <tr><td>m_FreeNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x408</td></tr>
+            <tr><td>m_FitMatrices</td><td class="type">CUtlVector<FeFitMatrix_t></td><td class="value">0x420</td></tr>
+            <tr><td>m_FitWeights</td><td class="type">CUtlVector<FeFitWeight_t></td><td class="value">0x438</td></tr>
+            <tr><td>m_ReverseOffsets</td><td class="type">CUtlVector<FeNodeReverseOffset_t></td><td class="value">0x450</td></tr>
+            <tr><td>m_AnimStrayRadii</td><td class="type">CUtlVector<FeAnimStrayRadius_t></td><td class="value">0x468</td></tr>
+            <tr><td>m_SimdAnimStrayRadii</td><td class="type">CUtlVector<FeSimdAnimStrayRadius_t></td><td class="value">0x480</td></tr>
+            <tr><td>m_KelagerBends</td><td class="type">CUtlVector<FeKelagerBend2_t></td><td class="value">0x498</td></tr>
+            <tr><td>m_CtrlSoftOffsets</td><td class="type">CUtlVector<FeCtrlSoftOffset_t></td><td class="value">0x4B0</td></tr>
+            <tr><td>m_JiggleBones</td><td class="type">CUtlVector<CFeIndexedJiggleBone></td><td class="value">0x4C8</td></tr>
+            <tr><td>m_SourceElems</td><td class="type">CUtlVector<uint16></td><td class="value">0x4E0</td></tr>
+            <tr><td>m_GoalDampedSpringIntegrators</td><td class="type">CUtlVector<uint32></td><td class="value">0x4F8</td></tr>
+            <tr><td>m_Tris</td><td class="type">CUtlVector<FeTri_t></td><td class="value">0x510</td></tr>
+            <tr><td>m_nTriCount1</td><td class="type">uint16</td><td class="value">0x528</td></tr>
+            <tr><td>m_nTriCount2</td><td class="type">uint16</td><td class="value">0x52A</td></tr>
+            <tr><td>m_nReservedUint8</td><td class="type">uint8</td><td class="value">0x52C</td></tr>
+            <tr><td>m_nExtraPressureIterations</td><td class="type">uint8</td><td class="value">0x52D</td></tr>
+            <tr><td>m_nExtraGoalIterations</td><td class="type">uint8</td><td class="value">0x52E</td></tr>
+            <tr><td>m_nExtraIterations</td><td class="type">uint8</td><td class="value">0x52F</td></tr>
+            <tr><td>m_SDFRigids</td><td class="type">CUtlVector<FeSDFRigid_t></td><td class="value">0x530</td></tr>
+            <tr><td>m_BoxRigids</td><td class="type">CUtlVector<FeBoxRigid_t></td><td class="value">0x548</td></tr>
+            <tr><td>m_DynNodeVertexSet</td><td class="type">CUtlVector<uint8></td><td class="value">0x560</td></tr>
+            <tr><td>m_VertexSetNames</td><td class="type">CUtlVector<uint32></td><td class="value">0x578</td></tr>
+            <tr><td>m_RigidColliderPriorities</td><td class="type">CUtlVector<FeRigidColliderIndices_t></td><td class="value">0x590</td></tr>
+            <tr><td>m_MorphLayers</td><td class="type">CUtlVector<FeMorphLayerDepr_t></td><td class="value">0x5A8</td></tr>
+            <tr><td>m_MorphSetData</td><td class="type">CUtlVector<uint8></td><td class="value">0x5C0</td></tr>
+            <tr><td>m_VertexMaps</td><td class="type">CUtlVector<FeVertexMapDesc_t></td><td class="value">0x5D8</td></tr>
+            <tr><td>m_VertexMapValues</td><td class="type">CUtlVector<uint8></td><td class="value">0x5F0</td></tr>
+            <tr><td>m_Effects</td><td class="type">CUtlVector<FeEffectDesc_t></td><td class="value">0x608</td></tr>
+            <tr><td>m_LockToParent</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x620</td></tr>
+            <tr><td>m_LockToGoal</td><td class="type">CUtlVector<uint16></td><td class="value">0x638</td></tr>
+            <tr><td>m_SkelParents</td><td class="type">CUtlVector<int16></td><td class="value">0x650</td></tr>
+            <tr><td>m_DynNodeWindBases</td><td class="type">CUtlVector<FeNodeWindBase_t></td><td class="value">0x668</td></tr>
+            <tr><td>m_SelfCollisionLayers</td><td class="type">CUtlVector<FeModelSelfCollisionLayer_t></td><td class="value">0x680</td></tr>
+            <tr><td>m_flInternalPressure</td><td class="type">float32</td><td class="value">0x698</td></tr>
+            <tr><td>m_flDefaultTimeDilation</td><td class="type">float32</td><td class="value">0x69C</td></tr>
+            <tr><td>m_flWindage</td><td class="type">float32</td><td class="value">0x6A0</td></tr>
+            <tr><td>m_flWindDrag</td><td class="type">float32</td><td class="value">0x6A4</td></tr>
+            <tr><td>m_flDefaultSurfaceStretch</td><td class="type">float32</td><td class="value">0x6A8</td></tr>
+            <tr><td>m_flDefaultThreadStretch</td><td class="type">float32</td><td class="value">0x6AC</td></tr>
+            <tr><td>m_flDefaultGravityScale</td><td class="type">float32</td><td class="value">0x6B0</td></tr>
+            <tr><td>m_flDefaultVelAirDrag</td><td class="type">float32</td><td class="value">0x6B4</td></tr>
+            <tr><td>m_flDefaultExpAirDrag</td><td class="type">float32</td><td class="value">0x6B8</td></tr>
+            <tr><td>m_flDefaultVelQuadAirDrag</td><td class="type">float32</td><td class="value">0x6BC</td></tr>
+            <tr><td>m_flDefaultExpQuadAirDrag</td><td class="type">float32</td><td class="value">0x6C0</td></tr>
+            <tr><td>m_flRodVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x6C4</td></tr>
+            <tr><td>m_flQuadVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x6C8</td></tr>
+            <tr><td>m_flAddWorldCollisionRadius</td><td class="type">float32</td><td class="value">0x6CC</td></tr>
+            <tr><td>m_flDefaultVolumetricSolveAmount</td><td class="type">float32</td><td class="value">0x6D0</td></tr>
+            <tr><td>m_flMotionSmoothCDT</td><td class="type">float32</td><td class="value">0x6D4</td></tr>
+            <tr><td>m_flLocalDrag1</td><td class="type">float32</td><td class="value">0x6D8</td></tr>
+            <tr><td>m_nRodVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x6DC</td></tr>
+            <tr><td>m_nQuadVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x6DE</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnMeshDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Mesh</td><td class="type">RnMesh_t</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnSoftbodySpring_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nParticle</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>m_flLength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnSoftbodyCapsule_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vCenter</td><td class="type">Vector[2]</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRadius</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nParticle</td><td class="type">uint16[2]</td><td class="value">0x1C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: vphysics_save_cphysicsbody_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nOldPointer</td><td class="type">uint64</td><td class="value">0xE0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBuildBoxRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x40</td></tr>
+            <tr><td>m_nVertexMapHash</td><td class="type">uint32</td><td class="value">0x44</td></tr>
+            <tr><td>m_nAntitunnelGroupBits</td><td class="type">uint32</td><td class="value">0x48</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CFeIndexedJiggleBone</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nNode</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nJiggleParent</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_jiggleBone</td><td class="type">CFeJiggleBone</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBandBendLimit_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flDistMin</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flDistMax</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeTaperedCapsuleStretch_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>nCollisionMask</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>nDummy</td><td class="type">uint16</td><td class="value">0x6</td></tr>
+            <tr><td>flRadius</td><td class="type">float32[2]</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: constraint_axislimit_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flMinRotation</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flMaxRotation</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flMotorTargetAngSpeed</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flMotorMaxTorque</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdRodConstraintAnim_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][2]</td><td class="value">0x0</td></tr>
+            <tr><td>f4Weight0</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+            <tr><td>f4RelaxationFactor</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdRodConstraint_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][2]</td><td class="value">0x0</td></tr>
+            <tr><td>f4MaxDist</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+            <tr><td>f4MinDist</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+            <tr><td>f4Weight0</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
+            <tr><td>f4RelaxationFactor</td><td class="type">fltx4</td><td class="value">0x40</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: constraint_hingeparams_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>worldPosition</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>worldAxisDirection</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>hingeAxis</td><td class="type">constraint_axislimit_t</td><td class="value">0x18</td></tr>
+            <tr><td>constraint</td><td class="type">constraint_breakableparams_t</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBuildSphereRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nVertexMapHash</td><td class="type">uint32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nAntitunnelGroupBits</td><td class="type">uint32</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdAnimStrayRadius_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][2]</td><td class="value">0x0</td></tr>
+            <tr><td>flMaxDist</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+            <tr><td>flRelaxationFactor</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnTriangle_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nIndex</td><td class="type">int32[3]</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeProxyVertexMap_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_flWeight</td><td class="type">float32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeNodeIntegrator_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flPointDamping</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flAnimationForceAttraction</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flAnimationVertexAttraction</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flGravity</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnCapsule_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vCenter</td><td class="type">Vector[2]</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRadius</td><td class="type">float32</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CFeNamedJiggleBone</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_strParentBone</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_transform</td><td class="type">CTransform</td><td class="value">0x10</td></tr>
+            <tr><td>m_nJiggleParent</td><td class="type">uint32</td><td class="value">0x30</td></tr>
+            <tr><td>m_jiggleBone</td><td class="type">CFeJiggleBone</td><td class="value">0x34</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeAntiTunnelProbeBuild_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flWeight</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flActivationDistance</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flBias</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flCurvature</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0x10</td></tr>
+            <tr><td>nProbeNode</td><td class="type">uint16</td><td class="value">0x14</td></tr>
+            <tr><td>targetNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnBodyDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_sDebugName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_vPosition</td><td class="type">Vector</td><td class="value">0x8</td></tr>
+            <tr><td>m_qOrientation</td><td class="type">QuaternionStorage</td><td class="value">0x14</td></tr>
+            <tr><td>m_vLinearVelocity</td><td class="type">Vector</td><td class="value">0x24</td></tr>
+            <tr><td>m_vAngularVelocity</td><td class="type">Vector</td><td class="value">0x30</td></tr>
+            <tr><td>m_vLocalMassCenter</td><td class="type">Vector</td><td class="value">0x3C</td></tr>
+            <tr><td>m_LocalInertiaInv</td><td class="type">Vector[3]</td><td class="value">0x48</td></tr>
+            <tr><td>m_flMassInv</td><td class="type">float32</td><td class="value">0x6C</td></tr>
+            <tr><td>m_flGameMass</td><td class="type">float32</td><td class="value">0x70</td></tr>
+            <tr><td>m_flMassScaleInv</td><td class="type">float32</td><td class="value">0x74</td></tr>
+            <tr><td>m_flInertiaScaleInv</td><td class="type">float32</td><td class="value">0x78</td></tr>
+            <tr><td>m_flLinearDamping</td><td class="type">float32</td><td class="value">0x7C</td></tr>
+            <tr><td>m_flAngularDamping</td><td class="type">float32</td><td class="value">0x80</td></tr>
+            <tr><td>m_flLinearDragScale</td><td class="type">float32</td><td class="value">0x84</td></tr>
+            <tr><td>m_flAngularDragScale</td><td class="type">float32</td><td class="value">0x88</td></tr>
+            <tr><td>m_flLinearFluidDragScale</td><td class="type">float32</td><td class="value">0x8C</td></tr>
+            <tr><td>m_flAngularFluidDragScale</td><td class="type">float32</td><td class="value">0x90</td></tr>
+            <tr><td>m_vLastAwakeForceAccum</td><td class="type">Vector</td><td class="value">0x94</td></tr>
+            <tr><td>m_vLastAwakeTorqueAccum</td><td class="type">Vector</td><td class="value">0xA0</td></tr>
+            <tr><td>m_flBuoyancyScale</td><td class="type">float32</td><td class="value">0xAC</td></tr>
+            <tr><td>m_flGravityScale</td><td class="type">float32</td><td class="value">0xB0</td></tr>
+            <tr><td>m_flTimeScale</td><td class="type">float32</td><td class="value">0xB4</td></tr>
+            <tr><td>m_nBodyType</td><td class="type">int32</td><td class="value">0xB8</td></tr>
+            <tr><td>m_nGameIndex</td><td class="type">uint32</td><td class="value">0xBC</td></tr>
+            <tr><td>m_nGameFlags</td><td class="type">uint32</td><td class="value">0xC0</td></tr>
+            <tr><td>m_nMinVelocityIterations</td><td class="type">int8</td><td class="value">0xC4</td></tr>
+            <tr><td>m_nMinPositionIterations</td><td class="type">int8</td><td class="value">0xC5</td></tr>
+            <tr><td>m_nMassPriority</td><td class="type">int8</td><td class="value">0xC6</td></tr>
+            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0xC7</td></tr>
+            <tr><td>m_bSleeping</td><td class="type">bool</td><td class="value">0xC8</td></tr>
+            <tr><td>m_bIsContinuousEnabled</td><td class="type">bool</td><td class="value">0xC9</td></tr>
+            <tr><td>m_bDragEnabled</td><td class="type">bool</td><td class="value">0xCA</td></tr>
+            <tr><td>m_vGravity</td><td class="type">Vector</td><td class="value">0xCC</td></tr>
+            <tr><td>m_bSpeculativeEnabled</td><td class="type">bool</td><td class="value">0xD8</td></tr>
+            <tr><td>m_bHasShadowController</td><td class="type">bool</td><td class="value">0xD9</td></tr>
+            <tr><td>m_nDynamicContinuousContactBehavior</td><td class="type">DynamicContinuousContactBehavior_t</td><td class="value">0xDA</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: OldFeEdge_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_flK</td><td class="type">float32[3]</td><td class="value">0x0</td></tr>
+            <tr><td>invA</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>t</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>flThetaRelaxed</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>flThetaFactor</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>c01</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>c02</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>c03</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>c04</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>flAxialModelDist</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>flAxialModelWeights</td><td class="type">float32[4]</td><td class="value">0x30</td></tr>
+            <tr><td>m_nNode</td><td class="type">uint16[4]</td><td class="value">0x40</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeFollowNode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nParentNode</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nChildNode</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>flWeight</td><td class="type">float32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnMesh_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vMin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vMax</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>m_Nodes</td><td class="type">CUtlVector<RnNode_t></td><td class="value">0x18</td></tr>
+            <tr><td>m_Vertices</td><td class="type">CUtlVectorSIMDPaddedVector</td><td class="value">0x30</td></tr>
+            <tr><td>m_Triangles</td><td class="type">CUtlVector<RnTriangle_t></td><td class="value">0x48</td></tr>
+            <tr><td>m_Wings</td><td class="type">CUtlVector<RnWing_t></td><td class="value">0x60</td></tr>
+            <tr><td>m_TriangleEdgeFlags</td><td class="type">CUtlVector<uint8></td><td class="value">0x78</td></tr>
+            <tr><td>m_Materials</td><td class="type">CUtlVector<uint8></td><td class="value">0x90</td></tr>
+            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0xA8</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0xB4</td></tr>
+            <tr><td>m_nDebugFlags</td><td class="type">uint32</td><td class="value">0xB8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: VertexPositionNormal_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vPosition</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vNormal</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBuildSDFRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x50</td></tr>
+            <tr><td>m_nVertexMapHash</td><td class="type">uint32</td><td class="value">0x54</td></tr>
+            <tr><td>m_nAntitunnelGroupBits</td><td class="type">uint32</td><td class="value">0x58</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnBlendVertex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nWeight0</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>m_nIndex0</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_nWeight1</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>m_nIndex1</td><td class="type">uint16</td><td class="value">0x6</td></tr>
+            <tr><td>m_nWeight2</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+            <tr><td>m_nIndex2</td><td class="type">uint16</td><td class="value">0xA</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint16</td><td class="value">0xC</td></tr>
+            <tr><td>m_nTargetIndex</td><td class="type">uint16</td><td class="value">0xE</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CFeMorphLayer</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nNameHash</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_Nodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x10</td></tr>
+            <tr><td>m_InitPos</td><td class="type">CUtlVector<Vector></td><td class="value">0x28</td></tr>
+            <tr><td>m_Gravity</td><td class="type">CUtlVector<float32></td><td class="value">0x40</td></tr>
+            <tr><td>m_GoalStrength</td><td class="type">CUtlVector<float32></td><td class="value">0x58</td></tr>
+            <tr><td>m_GoalDamping</td><td class="type">CUtlVector<float32></td><td class="value">0x70</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeCtrlSoftOffset_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nCtrlParent</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nCtrlChild</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>vOffset</td><td class="type">Vector</td><td class="value">0x4</td></tr>
+            <tr><td>flAlpha</td><td class="type">float32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeVertexMapDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>sName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>nNameHash</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>nColor</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0x10</td></tr>
+            <tr><td>nVertexBase</td><td class="type">uint16</td><td class="value">0x14</td></tr>
+            <tr><td>nVertexCount</td><td class="type">uint16</td><td class="value">0x16</td></tr>
+            <tr><td>nMapOffset</td><td class="type">uint32</td><td class="value">0x18</td></tr>
+            <tr><td>nNodeListOffset</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
+            <tr><td>vCenterOfMass</td><td class="type">Vector</td><td class="value">0x20</td></tr>
+            <tr><td>flVolumetricSolveStrength</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>nScaleSourceNode</td><td class="type">int16</td><td class="value">0x30</td></tr>
+            <tr><td>nNodeListCount</td><td class="type">uint16</td><td class="value">0x32</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeTaperedCapsuleRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vSphere</td><td class="type">fltx4[2]</td><td class="value">0x0</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x20</td></tr>
+            <tr><td>nCollisionMask</td><td class="type">uint16</td><td class="value">0x22</td></tr>
+            <tr><td>nVertexMapIndex</td><td class="type">uint16</td><td class="value">0x24</td></tr>
+            <tr><td>nFlags</td><td class="type">uint16</td><td class="value">0x26</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeAnimStrayRadius_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>flMaxDist</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flRelaxationFactor</td><td class="type">float32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeEdgeDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nEdge</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>nSide</td><td class="type">uint16[2][2]</td><td class="value">0x4</td></tr>
+            <tr><td>nVirtElem</td><td class="type">uint16[2]</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeNodeStrayBox_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vMin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>vMax</td><td class="type">Vector</td><td class="value">0x10</td></tr>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x1C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeNodeReverseOffset_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vOffset</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>nBoneCtrl</td><td class="type">uint16</td><td class="value">0xC</td></tr>
+            <tr><td>nTargetNode</td><td class="type">uint16</td><td class="value">0xE</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnPlane_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vNormal</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_flOffset</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSDFRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vLocalMin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>vLocalMax</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>flBounciness</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x1C</td></tr>
+            <tr><td>nCollisionMask</td><td class="type">uint16</td><td class="value">0x1E</td></tr>
+            <tr><td>nVertexMapIndex</td><td class="type">uint16</td><td class="value">0x20</td></tr>
+            <tr><td>nFlags</td><td class="type">uint16</td><td class="value">0x22</td></tr>
+            <tr><td>m_Distances</td><td class="type">CUtlVector<float32></td><td class="value">0x28</td></tr>
+            <tr><td>m_nWidth</td><td class="type">int32</td><td class="value">0x40</td></tr>
+            <tr><td>m_nHeight</td><td class="type">int32</td><td class="value">0x44</td></tr>
+            <tr><td>m_nDepth</td><td class="type">int32</td><td class="value">0x48</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CFeJiggleBone</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flLength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flTipMass</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flYawStiffness</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flYawDamping</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flPitchStiffness</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flPitchDamping</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flAlongStiffness</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flAlongDamping</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flAngleLimit</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flMinYaw</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flMaxYaw</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flYawFriction</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_flYawBounce</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flMinPitch</td><td class="type">float32</td><td class="value">0x38</td></tr>
+            <tr><td>m_flMaxPitch</td><td class="type">float32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_flPitchFriction</td><td class="type">float32</td><td class="value">0x40</td></tr>
+            <tr><td>m_flPitchBounce</td><td class="type">float32</td><td class="value">0x44</td></tr>
+            <tr><td>m_flBaseMass</td><td class="type">float32</td><td class="value">0x48</td></tr>
+            <tr><td>m_flBaseStiffness</td><td class="type">float32</td><td class="value">0x4C</td></tr>
+            <tr><td>m_flBaseDamping</td><td class="type">float32</td><td class="value">0x50</td></tr>
+            <tr><td>m_flBaseMinLeft</td><td class="type">float32</td><td class="value">0x54</td></tr>
+            <tr><td>m_flBaseMaxLeft</td><td class="type">float32</td><td class="value">0x58</td></tr>
+            <tr><td>m_flBaseLeftFriction</td><td class="type">float32</td><td class="value">0x5C</td></tr>
+            <tr><td>m_flBaseMinUp</td><td class="type">float32</td><td class="value">0x60</td></tr>
+            <tr><td>m_flBaseMaxUp</td><td class="type">float32</td><td class="value">0x64</td></tr>
+            <tr><td>m_flBaseUpFriction</td><td class="type">float32</td><td class="value">0x68</td></tr>
+            <tr><td>m_flBaseMinForward</td><td class="type">float32</td><td class="value">0x6C</td></tr>
+            <tr><td>m_flBaseMaxForward</td><td class="type">float32</td><td class="value">0x70</td></tr>
+            <tr><td>m_flBaseForwardFriction</td><td class="type">float32</td><td class="value">0x74</td></tr>
+            <tr><td>m_flRadius0</td><td class="type">float32</td><td class="value">0x78</td></tr>
+            <tr><td>m_flRadius1</td><td class="type">float32</td><td class="value">0x7C</td></tr>
+            <tr><td>m_vPoint0</td><td class="type">Vector</td><td class="value">0x80</td></tr>
+            <tr><td>m_vPoint1</td><td class="type">Vector</td><td class="value">0x8C</td></tr>
+            <tr><td>m_nCollisionMask</td><td class="type">uint16</td><td class="value">0x98</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CRegionSVM</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Planes</td><td class="type">CUtlVector<RnPlane_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_Nodes</td><td class="type">CUtlVector<uint32></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeWorldCollisionParams_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flWorldFriction</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flGroundFriction</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>nListBegin</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+            <tr><td>nListEnd</td><td class="type">uint16</td><td class="value">0xA</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnNode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vMin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_nChildren</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>m_vMax</td><td class="type">Vector</td><td class="value">0x10</td></tr>
+            <tr><td>m_nTriangleOffset</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeFitMatrix_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>bone</td><td class="type">CTransform</td><td class="value">0x0</td></tr>
+            <tr><td>vCenter</td><td class="type">Vector</td><td class="value">0x20</td></tr>
+            <tr><td>nEnd</td><td class="type">uint16</td><td class="value">0x2C</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x2E</td></tr>
+            <tr><td>nBeginDynamic</td><td class="type">uint16</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdQuad_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][4]</td><td class="value">0x0</td></tr>
+            <tr><td>f4Slack</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+            <tr><td>vShape</td><td class="type">FourVectors[4]</td><td class="value">0x30</td></tr>
+            <tr><td>f4Weights</td><td class="type">fltx4[4]</td><td class="value">0xF0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdSpringIntegrator_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][2]</td><td class="value">0x0</td></tr>
+            <tr><td>flSpringRestLength</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+            <tr><td>flSpringConstant</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+            <tr><td>flSpringDamping</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
+            <tr><td>flNodeWeight0</td><td class="type">fltx4</td><td class="value">0x40</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdNodeBase_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4]</td><td class="value">0x0</td></tr>
+            <tr><td>nNodeX0</td><td class="type">uint16[4]</td><td class="value">0x8</td></tr>
+            <tr><td>nNodeX1</td><td class="type">uint16[4]</td><td class="value">0x10</td></tr>
+            <tr><td>nNodeY0</td><td class="type">uint16[4]</td><td class="value">0x18</td></tr>
+            <tr><td>nNodeY1</td><td class="type">uint16[4]</td><td class="value">0x20</td></tr>
+            <tr><td>nDummy</td><td class="type">uint16[4]</td><td class="value">0x28</td></tr>
+            <tr><td>qAdjust</td><td class="type">FourQuaternions</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeQuad_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4]</td><td class="value">0x0</td></tr>
+            <tr><td>flSlack</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>vShape</td><td class="type">Vector4D[4]</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeHingeLimit_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x0</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>flWeight4</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>flWeight5</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>flAngleCenter</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>flAngleExtents</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnWing_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nIndex</td><td class="type">int32[3]</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeWeightedNode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nWeight</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CollisionDetailLayerInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_sDescription</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_sFriendlyName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_bIsQueryOnly</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_sParentDetailLayer</td><td class="type">CUtlString</td><td class="value">0x18</td></tr>
+            <tr><td>m_vecSubtreeDetailLayers</td><td class="type">CUtlVector<CollisionDetailLayerInfo_t::Name_t></td><td class="value">0x20</td></tr>
+            <tr><td>m_bNotPickable</td><td class="type">bool</td><td class="value">0x38</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeEffectDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>sName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>nNameHash</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>nType</td><td class="type">int32</td><td class="value">0xC</td></tr>
+            <tr><td>m_Params</td><td class="type">KeyValues3</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSpringIntegrator_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>flSpringRestLength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flSpringConstant</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flSpringDamping</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>flNodeWeight0</td><td class="type">float32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FourVectors2D</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>x</td><td class="type">fltx4</td><td class="value">0x0</td></tr>
+            <tr><td>y</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeKelagerBend2_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flWeight</td><td class="type">float32[3]</td><td class="value">0x0</td></tr>
+            <tr><td>flHeight0</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>nNode</td><td class="type">uint16[3]</td><td class="value">0x10</td></tr>
+            <tr><td>nReserved</td><td class="type">uint16</td><td class="value">0x16</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CastSphereSATParams_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vRayStart</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vRayDelta</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>m_flRadius</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flMaxFraction</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flScale</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_pHull</td><td class="type">RnHull_t*</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeRigidColliderIndices_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nTaperedCapsuleRigidIndex</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>m_nSphereRigidIndex</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_nBoxRigidIndex</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>m_nSDFRigidIndex</td><td class="type">uint16</td><td class="value">0x6</td></tr>
+            <tr><td>m_nCollisionPlaneIndex</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeCollisionPlane_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nCtrlParent</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nChildNode</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_Plane</td><td class="type">RnPlane_t</td><td class="value">0x4</td></tr>
+            <tr><td>flStrength</td><td class="type">float32</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeStiffHingeBuild_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flMaxAngle</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>flStrength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flMotionBias</td><td class="type">float32[3]</td><td class="value">0x8</td></tr>
+            <tr><td>nNode</td><td class="type">uint16[3]</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBoxRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>tmFrame2</td><td class="type">CTransform</td><td class="value">0x0</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x20</td></tr>
+            <tr><td>nCollisionMask</td><td class="type">uint16</td><td class="value">0x22</td></tr>
+            <tr><td>vSize</td><td class="type">Vector</td><td class="value">0x24</td></tr>
+            <tr><td>nVertexMapIndex</td><td class="type">uint16</td><td class="value">0x30</td></tr>
+            <tr><td>nFlags</td><td class="type">uint16</td><td class="value">0x32</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeMorphLayerDepr_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nNameHash</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_Nodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x10</td></tr>
+            <tr><td>m_InitPos</td><td class="type">CUtlVector<Vector></td><td class="value">0x28</td></tr>
+            <tr><td>m_Gravity</td><td class="type">CUtlVector<float32></td><td class="value">0x40</td></tr>
+            <tr><td>m_GoalStrength</td><td class="type">CUtlVector<float32></td><td class="value">0x58</td></tr>
+            <tr><td>m_GoalDamping</td><td class="type">CUtlVector<float32></td><td class="value">0x70</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x88</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeCtrlOffset_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vOffset</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>nCtrlParent</td><td class="type">uint16</td><td class="value">0xC</td></tr>
+            <tr><td>nCtrlChild</td><td class="type">uint16</td><td class="value">0xE</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: IPhysicsPlayerController</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: FeNodeBase_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nDummy</td><td class="type">uint16[3]</td><td class="value">0x2</td></tr>
+            <tr><td>nNodeX0</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+            <tr><td>nNodeX1</td><td class="type">uint16</td><td class="value">0xA</td></tr>
+            <tr><td>nNodeY0</td><td class="type">uint16</td><td class="value">0xC</td></tr>
+            <tr><td>nNodeY1</td><td class="type">uint16</td><td class="value">0xE</td></tr>
+            <tr><td>qAdjust</td><td class="type">QuaternionStorage</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeVertexMapBuild_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_VertexMapName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nNameHash</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_Color</td><td class="type">Color</td><td class="value">0xC</td></tr>
+            <tr><td>m_flVolumetricSolveStrength</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_nScaleSourceNode</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_Weights</td><td class="type">CUtlVector<float32></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CFeVertexMapBuildArray</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Array</td><td class="type">CUtlVector<FeVertexMapBuild_t*></td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeTri_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[3]</td><td class="value">0x0</td></tr>
+            <tr><td>w1</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>w2</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>v1x</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>v2</td><td class="type">Vector2D</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnHull_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vCentroid</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_flMaxAngularRadius</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x10</td></tr>
+            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0x28</td></tr>
+            <tr><td>m_MassProperties</td><td class="type">matrix3x4_t</td><td class="value">0x34</td></tr>
+            <tr><td>m_flVolume</td><td class="type">float32</td><td class="value">0x64</td></tr>
+            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0x68</td></tr>
+            <tr><td>m_Vertices</td><td class="type">CUtlVector<RnVertex_t></td><td class="value">0x70</td></tr>
+            <tr><td>m_VertexPositions</td><td class="type">CUtlVector<Vector></td><td class="value">0x88</td></tr>
+            <tr><td>m_Edges</td><td class="type">CUtlVector<RnHalfEdge_t></td><td class="value">0xA0</td></tr>
+            <tr><td>m_Faces</td><td class="type">CUtlVector<RnFace_t></td><td class="value">0xB8</td></tr>
+            <tr><td>m_FacePlanes</td><td class="type">CUtlVector<RnPlane_t></td><td class="value">0xD0</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0xE8</td></tr>
+            <tr><td>m_pRegionSVM</td><td class="type">CRegionSVM*</td><td class="value">0xF0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeModelSelfCollisionLayer_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_Nodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x8</td></tr>
+            <tr><td>m_flParentReaction</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nEndIdx</td><td class="type">uint32[4]</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeAntiTunnelGroupBuild_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nVertexMapHash</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nCollisionMask</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CovMatrix3</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vDiag</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_flXY</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flXZ</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flYZ</td><td class="type">float32</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: PhysicsParticleId_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnVertex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nEdge</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: Dop26_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_flSupport</td><td class="type">float32[26]</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeDynKinLink_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nParent</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>m_nChild</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnFace_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nEdge</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeCtrlOsOffset_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nCtrlParent</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nCtrlChild</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeAntiTunnelProbe_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flWeight</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>nProbeNode</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+            <tr><td>nCount</td><td class="type">uint16</td><td class="value">0xA</td></tr>
+            <tr><td>nBegin</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>flActivationDistance</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>flCurvatureRadius</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>flBias</td><td class="type">float32</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSourceEdge_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeTwistConstraint_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNodeOrient</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nNodeEnd</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>flTwistRelax</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flSwingRelax</td><td class="type">float32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeNodeWindBase_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNodeX0</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>nNodeX1</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>nNodeY0</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>nNodeY1</td><td class="type">uint16</td><td class="value">0x6</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeAxialEdgeBend_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>te</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>tv</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flDist</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flWeight</td><td class="type">float32[4]</td><td class="value">0xC</td></tr>
+            <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x1C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FourCovMatrices3</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vDiag</td><td class="type">FourVectors</td><td class="value">0x0</td></tr>
+            <tr><td>m_flXY</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
+            <tr><td>m_flXZ</td><td class="type">fltx4</td><td class="value">0x40</td></tr>
+            <tr><td>m_flYZ</td><td class="type">fltx4</td><td class="value">0x50</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: constraint_breakableparams_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>strength</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>forceLimit</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>torqueLimit</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>bodyMassScale</td><td class="type">float32[2]</td><td class="value">0xC</td></tr>
+            <tr><td>isActive</td><td class="type">bool</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSphereRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>vSphere</td><td class="type">fltx4</td><td class="value">0x0</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x10</td></tr>
+            <tr><td>nCollisionMask</td><td class="type">uint16</td><td class="value">0x12</td></tr>
+            <tr><td>nVertexMapIndex</td><td class="type">uint16</td><td class="value">0x14</td></tr>
+            <tr><td>nFlags</td><td class="type">uint16</td><td class="value">0x16</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CollisionDetailLayerInfo_t::Name_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nNameToken</td><td class="type">CUtlStringToken</td><td class="value">0x0</td></tr>
+            <tr><td>m_sNameString</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeBuildTaperedCapsuleRigid_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x30</td></tr>
+            <tr><td>m_nVertexMapHash</td><td class="type">uint32</td><td class="value">0x34</td></tr>
+            <tr><td>m_nAntitunnelGroupBits</td><td class="type">uint32</td><td class="value">0x38</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSoftParent_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nParent</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>flAlpha</td><td class="type">float32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnShapeDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nCollisionAttributeIndex</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nSurfacePropertyIndex</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_UserFriendlyName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_bUserFriendlyNameSealed</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_bUserFriendlyNameLong</td><td class="type">bool</td><td class="value">0x11</td></tr>
+            <tr><td>m_nToolMaterialHash</td><td class="type">uint32</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeTreeChildren_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nChild</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeRodConstraint_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[2]</td><td class="value">0x0</td></tr>
+            <tr><td>flMaxDist</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>flMinDist</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>flWeight0</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>flRelaxationFactor</td><td class="type">float32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeFitWeight_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>flWeight</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>nNode</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>nDummy</td><td class="type">uint16</td><td class="value">0x6</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnHalfEdge_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nNext</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+            <tr><td>m_nTwin</td><td class="type">uint8</td><td class="value">0x1</td></tr>
+            <tr><td>m_nOrigin</td><td class="type">uint8</td><td class="value">0x2</td></tr>
+            <tr><td>m_nFace</td><td class="type">uint8</td><td class="value">0x3</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdTri_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint32[4][3]</td><td class="value">0x0</td></tr>
+            <tr><td>w1</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
+            <tr><td>w2</td><td class="type">fltx4</td><td class="value">0x40</td></tr>
+            <tr><td>v1x</td><td class="type">fltx4</td><td class="value">0x50</td></tr>
+            <tr><td>v2</td><td class="type">FourVectors2D</td><td class="value">0x60</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: VertexPositionColor_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vPosition</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeFitInfluence_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nVertexNode</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>flWeight</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>nMatrixNode</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeHingeLimitBuild_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x0</td></tr>
+            <tr><td>nFlags</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>flLimitCW</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>flLimitCCW</td><td class="type">float32</td><td class="value">0x14</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: scenesystem.dll</h2>
+    <h3>Enum: ESilhouetteType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>SILHOUETTE_NONE</td><td class="value">0</td></tr>
+            <tr><td>SILHOUETTE_LIGHT</td><td class="value">1</td></tr>
+            <tr><td>SILHOUETTE_ENVMAP</td><td class="value">2</td></tr>
+            <tr><td>SILHOUETTE_LPV</td><td class="value">4</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: DisableShadows_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>kDisableShadows_None</td><td class="value">0</td></tr>
+            <tr><td>kDisableShadows_All</td><td class="value">1</td></tr>
+            <tr><td>kDisableShadows_Baked</td><td class="value">2</td></tr>
+            <tr><td>kDisableShadows_Realtime</td><td class="value">3</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: DecalRtEncoding_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>kDecalInvalid</td><td class="value">255</td></tr>
+            <tr><td>kDecalMin</td><td class="value">0</td></tr>
+            <tr><td>kDecalBlood</td><td class="value">0</td></tr>
+            <tr><td>kDecalCloak</td><td class="value">1</td></tr>
+            <tr><td>kDecalMax</td><td class="value">2</td></tr>
+            <tr><td>kDecalDefault</td><td class="value">0</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: ESceneObjectVisualization</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>SCENEOBJECT_VIS_NONE</td><td class="value">0</td></tr>
+            <tr><td>SCENEOBJECT_VIS_OBJECT</td><td class="value">1</td></tr>
+            <tr><td>SCENEOBJECT_VIS_MATERIAL</td><td class="value">2</td></tr>
+            <tr><td>SCENEOBJECT_VIS_TEXTURE_SIZE</td><td class="value">3</td></tr>
+            <tr><td>SCENEOBJECT_VIS_LOD</td><td class="value">4</td></tr>
+            <tr><td>SCENEOBJECT_VIS_INSTANCING</td><td class="value">5</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_ViewTarget</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_TextureId</td><td class="type">uint64</td><td class="value">0x8</td></tr>
+            <tr><td>m_nWidth</td><td class="type">int32</td><td class="value">0x10</td></tr>
+            <tr><td>m_nHeight</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_nRequestedWidth</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nRequestedHeight</td><td class="type">int32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_nNumMipLevels</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nDepth</td><td class="type">int32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nMultisampleNumSamples</td><td class="type">int32</td><td class="value">0x28</td></tr>
+            <tr><td>m_nFormat</td><td class="type">int32</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: SceneViewId_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nViewId</td><td class="type">uint64</td><td class="value">0x0</td></tr>
+            <tr><td>m_nFrameCount</td><td class="type">uint64</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSEndFrameViewInfo</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nViewId</td><td class="type">uint64</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_PostLayer</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_LayerBase</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_nLayerId</td><td class="type">uint64</td><td class="value">0x18</td></tr>
+            <tr><td>m_LayerName</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_displayText</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_PreLayer</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_ViewTargetList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_Targets</td><td class="type">CUtlVector<CSSDSMsg_ViewTarget></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_ViewRender</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CSSDSMsg_EndFrame</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Views</td><td class="type">CUtlVector<CSSDSEndFrameViewInfo></td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

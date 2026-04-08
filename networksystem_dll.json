@@ -1,0 +1,28 @@
+{
+  "networksystem.dll": {
+    "classes": {
+      "ChangeAccessorFieldPathIndex_t": {
+        "fields": {
+          "m_Value": {
+            "offset": 0,
+            "type": "int32"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      }
+    },
+    "enums": {
+      "OutOfPVSUpdates_t": {
+        "alignment": 4,
+        "members": {
+          "OOPVSUpdates_Count": 3,
+          "OOPVSUpdates_Default": 2,
+          "OOPVSUpdates_OptIn": 1,
+          "OOPVSUpdates_OptOut": 0
+        },
+        "type": "uint32"
+      }
+    }
+  }
+}

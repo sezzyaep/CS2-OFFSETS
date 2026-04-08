@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: resourcesystem.dll</h2>
+    <h3>Enum: FuseVariableType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>INVALID</td><td class="value">0</td></tr>
+            <tr><td>BOOL</td><td class="value">1</td></tr>
+            <tr><td>INT8</td><td class="value">2</td></tr>
+            <tr><td>INT16</td><td class="value">3</td></tr>
+            <tr><td>INT32</td><td class="value">4</td></tr>
+            <tr><td>UINT8</td><td class="value">5</td></tr>
+            <tr><td>UINT16</td><td class="value">6</td></tr>
+            <tr><td>UINT32</td><td class="value">7</td></tr>
+            <tr><td>FLOAT32</td><td class="value">8</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: FuseVariableAccess_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>WRITABLE</td><td class="value">0</td></tr>
+            <tr><td>READ_ONLY</td><td class="value">1</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCNmIKRig</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCResponseRulesList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCDotaItemDefinitionResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCMorphSetData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVSoundStackScriptList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: PackedAABB_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPackedMin</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nPackedMax</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVPhysXSurfacePropertiesList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeManifestTestResource_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: ConstantInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x8</td></tr>
+            <tr><td>m_flValue</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FuseFunctionIndex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCGcExportableExternalData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIAnimGraphModelBinding</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCJavaScriptResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CFuseSymbolTable</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_constants</td><td class="type">CUtlVector<ConstantInfo_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_variables</td><td class="type">CUtlVector<VariableInfo_t></td><td class="value">0x18</td></tr>
+            <tr><td>m_functions</td><td class="type">CUtlVector<FunctionInfo_t></td><td class="value">0x30</td></tr>
+            <tr><td>m_constantMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x48</td></tr>
+            <tr><td>m_variableMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x68</td></tr>
+            <tr><td>m_functionMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x88</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCRenderMesh</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVoxelVisibility</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCPhysAggregateData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCNmClip</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeWorld_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeProceduralTestResource_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: AABB_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCPostProcessingResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: VariableInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x8</td></tr>
+            <tr><td>m_nIndex</td><td class="type">FuseVariableIndex_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_nNumComponents</td><td class="type">uint8</td><td class="value">0xE</td></tr>
+            <tr><td>m_eVarType</td><td class="type">FuseVariableType_t</td><td class="value">0xF</td></tr>
+            <tr><td>m_eAccess</td><td class="type">FuseVariableAccess_t</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIParticleSnapshot</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: FourQuaternions</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>x</td><td class="type">fltx4</td><td class="value">0x0</td></tr>
+            <tr><td>y</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
+            <tr><td>z</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
+            <tr><td>w</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCPanoramaLayout</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCTypeScriptResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCChoreoSceneResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCNmSkeleton</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCTestResourceData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCAnimationGroup</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVSoundEventScriptList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVoiceContainerBase</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCPanoramaStyle</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCWorldNode</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCSurfaceGraph</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCCSGOEconItem</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCNmGraphDefinition</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCSmartProp</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CFuseProgram</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_programBuffer</td><td class="type">CUtlVector<uint8></td><td class="value">0x0</td></tr>
+            <tr><td>m_variablesRead</td><td class="type">CUtlVector<FuseVariableIndex_t></td><td class="value">0x18</td></tr>
+            <tr><td>m_variablesWritten</td><td class="type">CUtlVector<FuseVariableIndex_t></td><td class="value">0x30</td></tr>
+            <tr><td>m_nMaxTempVarsUsed</td><td class="type">int32</td><td class="value">0x48</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCCompositeMaterialKit</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVMixListResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCAnimData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIMaterial2</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIVectorGraphic</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCPanoramaDynamicImages</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIPulseGraphDef</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: FunctionInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x10</td></tr>
+            <tr><td>m_nParamCount</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_nIndex</td><td class="type">FuseFunctionIndex_t</td><td class="value">0x18</td></tr>
+            <tr><td>m_bIsPure</td><td class="type">bool</td><td class="value">0x1A</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCVDataResource</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCModel</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCDOTANovelsList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCTextureBase</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: FuseVariableIndex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeIParticleSystemDefinition</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCSequenceGroupData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: ManifestTestResource_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_child</td><td class="type">CStrongHandle<InfoForResourceTypeManifestTestResource_t></td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCEntityLump</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: InfoForResourceTypeCDOTAPatchNotesList</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: engine2.dll</h2>
+    <h3>Enum: EntityDormancyType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>ENTITY_NOT_DORMANT</td><td class="value">0</td></tr>
+            <tr><td>ENTITY_DORMANT</td><td class="value">1</td></tr>
+            <tr><td>ENTITY_SUSPENDED</td><td class="value">2</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: EntityIOTargetType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>ENTITY_IO_TARGET_INVALID</td><td class="value">-1</td></tr>
+            <tr><td>ENTITY_IO_TARGET_ENTITYNAME</td><td class="value">2</td></tr>
+            <tr><td>ENTITY_IO_TARGET_EHANDLE</td><td class="value">6</td></tr>
+            <tr><td>ENTITY_IO_TARGET_ENTITYNAME_OR_CLASSNAME</td><td class="value">7</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityInstance</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_iszPrivateVScripts</td><td class="type">CUtlSymbolLarge</td><td class="value">0x8</td></tr>
+            <tr><td>m_pEntity</td><td class="type">CEntityIdentity*</td><td class="value">0x10</td></tr>
+            <tr><td>m_CScriptComponent</td><td class="type">CScriptComponent*</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityComponent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CScriptComponent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_scriptClassName</td><td class="type">CUtlSymbolLarge</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityIdentity</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nameStringableIndex</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlSymbolLarge</td><td class="value">0x18</td></tr>
+            <tr><td>m_designerName</td><td class="type">CUtlSymbolLarge</td><td class="value">0x20</td></tr>
+            <tr><td>m_flags</td><td class="type">uint32</td><td class="value">0x30</td></tr>
+            <tr><td>m_worldGroupId</td><td class="type">WorldGroupId_t</td><td class="value">0x38</td></tr>
+            <tr><td>m_fDataObjectTypes</td><td class="type">uint32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_PathIndex</td><td class="type">ChangeAccessorFieldPathIndex_t</td><td class="value">0x40</td></tr>
+            <tr><td>m_pAttributes</td><td class="type">CEntityAttributeTable*</td><td class="value">0x48</td></tr>
+            <tr><td>m_pPrev</td><td class="type">CEntityIdentity*</td><td class="value">0x50</td></tr>
+            <tr><td>m_pNext</td><td class="type">CEntityIdentity*</td><td class="value">0x58</td></tr>
+            <tr><td>m_pPrevByClass</td><td class="type">CEntityIdentity*</td><td class="value">0x60</td></tr>
+            <tr><td>m_pNextByClass</td><td class="type">CEntityIdentity*</td><td class="value">0x68</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPostSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventSimpleLoopFrameUpdate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flFrameTime</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventPostAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nCurrentTick</td><td class="type">int32</td><td class="value">0x30</td></tr>
+            <tr><td>m_nCurrentTickThisFrame</td><td class="type">int32</td><td class="value">0x34</td></tr>
+            <tr><td>m_nTotalTicksThisFrame</td><td class="type">int32</td><td class="value">0x38</td></tr>
+            <tr><td>m_nTotalTicks</td><td class="type">int32</td><td class="value">0x3C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityIOOutput</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientSceneSystemThreadStateChange_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bThreadsActive</td><td class="type">bool</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientOutput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRenderTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flRenderFrameTimeUnbounded</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_bRenderOnly</td><td class="type">bool</td><td class="value">0x34</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerPostSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bLastTickBeforeClientUpdate</td><td class="type">bool</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityComponentHelper</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_flags</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_pInfo</td><td class="type">EntComponentInfo_t*</td><td class="value">0x10</td></tr>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_pNext</td><td class="type">CEntityComponentHelper*</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: GameTime_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">float32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerBeginSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventServerEndAsyncPostTickWork_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EntInput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CNetworkVarChainer</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_PathIndex</td><td class="type">ChangeAccessorFieldPathIndex_t</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPostOutput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRenderTime</td><td class="type">float64</td><td class="value">0x28</td></tr>
+            <tr><td>m_flRenderFrameTime</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_flRenderFrameTimeUnbounded</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_bRenderOnly</td><td class="type">bool</td><td class="value">0x38</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: GameTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPollInput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventPreDataUpdate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientProcessGameInput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flFrameTime</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventFrameBoundary_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_flFrameTime</td><td class="type">float32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventAppShutdown_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nDummy0</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerPostAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bLastTickBeforeClientUpdate</td><td class="type">bool</td><td class="value">0x40</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventProfileStorageAvailable_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nSplitScreenSlot</td><td class="type">CSplitScreenSlot</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventPostDataUpdate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPreSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPauseSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientProcessNetworking_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nTickCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CEntityAttributeTable</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Attributes</td><td class="type">CUtlOrderedMap<CUtlStringToken,Attribute_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_Names</td><td class="type">CUtlOrderedMap<CUtlStringToken,CUtlString></td><td class="value">0x28</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPreOutputParallelWithServer_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nCurrentTick</td><td class="type">int32</td><td class="value">0x30</td></tr>
+            <tr><td>m_nCurrentTickThisFrame</td><td class="type">int32</td><td class="value">0x34</td></tr>
+            <tr><td>m_nTotalTicksThisFrame</td><td class="type">int32</td><td class="value">0x38</td></tr>
+            <tr><td>m_nTotalTicks</td><td class="type">int32</td><td class="value">0x3C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventSplitScreenStateChanged_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPostAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CVariantDefaultAllocator</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventModInitialized_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPreOutput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRenderTime</td><td class="type">float64</td><td class="value">0x28</td></tr>
+            <tr><td>m_flRenderFrameTime</td><td class="type">float64</td><td class="value">0x30</td></tr>
+            <tr><td>m_flRenderFrameTimeUnbounded</td><td class="type">float64</td><td class="value">0x38</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x40</td></tr>
+            <tr><td>m_bRenderOnly</td><td class="type">bool</td><td class="value">0x44</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientFrameSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flFrameTime</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_bScheduleSendTickPacket</td><td class="type">bool</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerAdvanceTick_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventSetTime_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_nClientOutputFrames</td><td class="type">int32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float64</td><td class="value">0x30</td></tr>
+            <tr><td>m_flRenderTime</td><td class="type">float64</td><td class="value">0x38</td></tr>
+            <tr><td>m_flRenderFrameTime</td><td class="type">float64</td><td class="value">0x40</td></tr>
+            <tr><td>m_flRenderFrameTimeUnbounded</td><td class="type">float64</td><td class="value">0x48</td></tr>
+            <tr><td>m_flRenderFrameTimeUnscaled</td><td class="type">float64</td><td class="value">0x50</td></tr>
+            <tr><td>m_flTickRemainder</td><td class="type">float64</td><td class="value">0x58</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EntOutput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_bFirstTick</td><td class="type">bool</td><td class="value">0x28</td></tr>
+            <tr><td>m_bLastTick</td><td class="type">bool</td><td class="value">0x29</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientAdvanceNonRenderedFrame_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventServerProcessNetworking_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CEmptyEntityInstance</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EntComponentInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_pName</td><td class="type">char*</td><td class="value">0x0</td></tr>
+            <tr><td>m_pCPPClassname</td><td class="type">char*</td><td class="value">0x8</td></tr>
+            <tr><td>m_pNetworkDataReferencedDescription</td><td class="type">char*</td><td class="value">0x10</td></tr>
+            <tr><td>m_pNetworkDataReferencedPtrPropDescription</td><td class="type">char*</td><td class="value">0x18</td></tr>
+            <tr><td>m_nRuntimeIndex</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x24</td></tr>
+            <tr><td>m_pBaseClassComponentHelper</td><td class="type">CEntityComponentHelper*</td><td class="value">0x60</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EngineLoopState_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPlatWindowWidth</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nPlatWindowHeight</td><td class="type">int32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_nRenderWidth</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nRenderHeight</td><td class="type">int32</td><td class="value">0x24</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientPollNetworking_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nTickCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerBeginAsyncPostTickWork_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bIsOncePerFrameAsyncWorkPhase</td><td class="type">bool</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventClientProcessInput_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_LoopState</td><td class="type">EngineLoopState_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRealTime</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flTickInterval</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flTickStartTime</td><td class="type">float64</td><td class="value">0x30</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerEndSimulate_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bLastTick</td><td class="type">bool</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: EventServerPollNetworking_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

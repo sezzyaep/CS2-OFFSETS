@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemas - ExitScam Dumper</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; margin: 0; padding: 20px; }
+        h1 { color: #58a6ff; text-align: center; }
+        h2 { color: #79c0ff; text-align: center; margin-top: 40px; }
+        h3 { color: #d2a8ff; max-width: 800px; margin: 20px auto 10px auto; }
+        table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto 30px auto; background-color: #161b22; box-shadow: 0 4px 6px rgba(0,0,0,0.3); border-radius: 8px; overflow: hidden; }
+        th, td { padding: 12px 15px; border-bottom: 1px solid #30363d; text-align: left; }
+        th { background-color: #21262d; color: #c9d1d9; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        tr:hover { background-color: #1f2428; }
+        .value { color: #79c0ff; font-family: 'Courier New', Courier, monospace; font-weight: bold; }
+        .type { color: #ff7b72; font-family: monospace; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>Schemas</h1>
+    <h2>Module: rendersystemdx11.dll</h2>
+    <h3>Enum: RenderPrimitiveType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RENDER_PRIM_POINTS</td><td class="value">0</td></tr>
+            <tr><td>RENDER_PRIM_LINES</td><td class="value">1</td></tr>
+            <tr><td>RENDER_PRIM_LINES_WITH_ADJACENCY</td><td class="value">2</td></tr>
+            <tr><td>RENDER_PRIM_LINE_STRIP</td><td class="value">3</td></tr>
+            <tr><td>RENDER_PRIM_LINE_STRIP_WITH_ADJACENCY</td><td class="value">4</td></tr>
+            <tr><td>RENDER_PRIM_TRIANGLES</td><td class="value">5</td></tr>
+            <tr><td>RENDER_PRIM_TRIANGLES_WITH_ADJACENCY</td><td class="value">6</td></tr>
+            <tr><td>RENDER_PRIM_TRIANGLE_STRIP</td><td class="value">7</td></tr>
+            <tr><td>RENDER_PRIM_TRIANGLE_STRIP_WITH_ADJACENCY</td><td class="value">8</td></tr>
+            <tr><td>RENDER_PRIM_INSTANCED_QUADS</td><td class="value">9</td></tr>
+            <tr><td>RENDER_PRIM_HETEROGENOUS</td><td class="value">10</td></tr>
+            <tr><td>RENDER_PRIM_COMPUTE_SHADER</td><td class="value">11</td></tr>
+            <tr><td>RENDER_PRIM_MESH_SHADER</td><td class="value">12</td></tr>
+            <tr><td>RENDER_PRIM_TYPE_COUNT</td><td class="value">13</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RenderBufferFlags_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RENDER_BUFFER_USAGE_NONE</td><td class="value">0</td></tr>
+            <tr><td>RENDER_BUFFER_USAGE_VERTEX_BUFFER</td><td class="value">1</td></tr>
+            <tr><td>RENDER_BUFFER_USAGE_INDEX_BUFFER</td><td class="value">2</td></tr>
+            <tr><td>RENDER_BUFFER_USAGE_SHADER_RESOURCE</td><td class="value">4</td></tr>
+            <tr><td>RENDER_BUFFER_USAGE_UNORDERED_ACCESS</td><td class="value">8</td></tr>
+            <tr><td>RENDER_BUFFER_BYTEADDRESS_BUFFER</td><td class="value">16</td></tr>
+            <tr><td>RENDER_BUFFER_STRUCTURED_BUFFER</td><td class="value">32</td></tr>
+            <tr><td>RENDER_BUFFER_UAV_DRAW_INDIRECT_ARGS</td><td class="value">256</td></tr>
+            <tr><td>RENDER_BUFFER_ACCELERATION_STRUCTURE</td><td class="value">512</td></tr>
+            <tr><td>RENDER_BUFFER_SHADER_BINDING_TABLE</td><td class="value">1024</td></tr>
+            <tr><td>RENDER_BUFFER_POOL_ALLOCATED</td><td class="value">2048</td></tr>
+            <tr><td>RENDER_BUFFER_USAGE_CONDITIONAL_RENDERING</td><td class="value">4096</td></tr>
+            <tr><td>RENDER_BUFFER_IMMOVABLE_ALLOCATION</td><td class="value">8192</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RsCullMode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RS_CULL_NONE</td><td class="value">0</td></tr>
+            <tr><td>RS_CULL_BACK</td><td class="value">1</td></tr>
+            <tr><td>RS_CULL_FRONT</td><td class="value">2</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RsComparison_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RS_CMP_NEVER</td><td class="value">0</td></tr>
+            <tr><td>RS_CMP_LESS</td><td class="value">1</td></tr>
+            <tr><td>RS_CMP_EQUAL</td><td class="value">2</td></tr>
+            <tr><td>RS_CMP_LESS_EQUAL</td><td class="value">3</td></tr>
+            <tr><td>RS_CMP_GREATER</td><td class="value">4</td></tr>
+            <tr><td>RS_CMP_NOT_EQUAL</td><td class="value">5</td></tr>
+            <tr><td>RS_CMP_GREATER_EQUAL</td><td class="value">6</td></tr>
+            <tr><td>RS_CMP_ALWAYS</td><td class="value">7</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RsFillMode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RS_FILL_SOLID</td><td class="value">0</td></tr>
+            <tr><td>RS_FILL_WIREFRAME</td><td class="value">1</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RenderMultisampleType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RENDER_MULTISAMPLE_INVALID</td><td class="value">-1</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_NONE</td><td class="value">0</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_2X</td><td class="value">1</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_4X</td><td class="value">2</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_6X</td><td class="value">3</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_8X</td><td class="value">4</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_16X</td><td class="value">5</td></tr>
+            <tr><td>RENDER_MULTISAMPLE_TYPE_COUNT</td><td class="value">6</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: InputLayoutVariation_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>INPUT_LAYOUT_VARIATION_DEFAULT</td><td class="value">0</td></tr>
+            <tr><td>INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID</td><td class="value">1</td></tr>
+            <tr><td>INPUT_LAYOUT_VARIATION_STREAM1_INSTANCEID_MORPH_VERT_ID</td><td class="value">2</td></tr>
+            <tr><td>INPUT_LAYOUT_VARIATION_MAX</td><td class="value">3</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: RenderSlotType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>RENDER_SLOT_INVALID</td><td class="value">-1</td></tr>
+            <tr><td>RENDER_SLOT_PER_VERTEX</td><td class="value">0</td></tr>
+            <tr><td>RENDER_SLOT_PER_INSTANCE</td><td class="value">1</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RsDepthStencilStateDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bDepthTestEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
+            <tr><td>m_bDepthWriteEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
+            <tr><td>m_depthFunc</td><td class="type">RsComparison_t</td><td class="value">0x1</td></tr>
+            <tr><td>m_stencilState</td><td class="type">RsStencilStateDesc_t</td><td class="value">0x2</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: SheetSequenceIntegerId_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RsBlendStateDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_srcBlendBits</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_destBlendBits</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_srcBlendAlphaBits</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_destBlendAlphaBits</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>m_renderTargetWriteMaskBits</td><td class="type">uint32</td><td class="value">0x10</td></tr>
+            <tr><td>m_blendOpBits</td><td class="type">bitfield:30</td><td class="value">0x0</td></tr>
+            <tr><td>m_bAlphaToCoverageEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
+            <tr><td>m_bIndependentBlendEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
+            <tr><td>m_blendOpAlphaBits</td><td class="type">uint32</td><td class="value">0x18</td></tr>
+            <tr><td>m_blendEnableBits</td><td class="type">uint8</td><td class="value">0x1C</td></tr>
+            <tr><td>m_srgbWriteEnableBits</td><td class="type">uint8</td><td class="value">0x1D</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: VsInputSignatureElement_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_pName</td><td class="type">char[64]</td><td class="value">0x0</td></tr>
+            <tr><td>m_pSemantic</td><td class="type">char[64]</td><td class="value">0x40</td></tr>
+            <tr><td>m_pD3DSemanticName</td><td class="type">char[64]</td><td class="value">0x80</td></tr>
+            <tr><td>m_nD3DSemanticIndex</td><td class="type">int32</td><td class="value">0xC0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RsRasterizerStateDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nFillMode</td><td class="type">RsFillMode_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_nCullMode</td><td class="type">RsCullMode_t</td><td class="value">0x1</td></tr>
+            <tr><td>m_bDepthClipEnable</td><td class="type">bool</td><td class="value">0x2</td></tr>
+            <tr><td>m_bMultisampleEnable</td><td class="type">bool</td><td class="value">0x3</td></tr>
+            <tr><td>m_nDepthBias</td><td class="type">int32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flDepthBiasClamp</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flSlopeScaledDepthBias</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RsStencilStateDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bStencilEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
+            <tr><td>m_frontStencilFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_frontStencilDepthFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_frontStencilPassOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_frontStencilFunc</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_backStencilFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_backStencilDepthFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_backStencilPassOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_backStencilFunc</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_nStencilReadMask</td><td class="type">uint8</td><td class="value">0x4</td></tr>
+            <tr><td>m_nStencilWriteMask</td><td class="type">uint8</td><td class="value">0x5</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: VsInputSignature_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_elems</td><td class="type">CUtlVector<VsInputSignatureElement_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_depth_elems</td><td class="type">CUtlVector<VsInputSignatureElement_t></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RenderInputLayoutField_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_pSemanticName</td><td class="type">char[32]</td><td class="value">0x0</td></tr>
+            <tr><td>m_nSemanticIndex</td><td class="type">int8</td><td class="value">0x20</td></tr>
+            <tr><td>m_nOffset</td><td class="type">int16</td><td class="value">0x28</td></tr>
+            <tr><td>m_nSlot</td><td class="type">int8</td><td class="value">0x2A</td></tr>
+            <tr><td>m_nSlotType</td><td class="type">RenderSlotType_t</td><td class="value">0x2B</td></tr>
+            <tr><td>m_szShaderSemantic</td><td class="type">char[32]</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
