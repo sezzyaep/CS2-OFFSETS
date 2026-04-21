@@ -3,46 +3,183 @@
     "classes": {
       "CExampleSchemaVData_Monomorphic": {
         "fields": {
-          "": {
+          "m_nExample1": {
             "offset": 0,
-            "type": ""
+            "type": "int32"
+          },
+          "m_nExample2": {
+            "offset": 4,
+            "type": "int32"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "CExampleSchemaVData_PolymorphicBase": {
         "fields": {
-          "": {
-            "offset": 0,
-            "type": ""
+          "m_nBase": {
+            "offset": 8,
+            "type": "int32"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "CExampleSchemaVData_PolymorphicDerivedA": {
-        "fields": {},
-        "metadata": [],
-        "parent": "resourcefile"
+        "fields": {
+          "m_nDerivedA": {
+            "offset": 16,
+            "type": "int32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
       },
       "CExampleSchemaVData_PolymorphicDerivedB": {
-        "fields": {},
-        "metadata": [],
-        "parent": "resourcefile"
+        "fields": {
+          "m_nDerivedB": {
+            "offset": 16,
+            "type": "int32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
       },
       "CSchemaSystemInternalRegistration": {
-        "fields": {},
+        "fields": {
+          "m_CTransform": {
+            "offset": 256,
+            "type": "CTransform"
+          },
+          "m_CUtlBinaryBlock": {
+            "offset": 296,
+            "type": "CUtlBinaryBlock"
+          },
+          "m_CUtlString": {
+            "offset": 312,
+            "type": "CUtlString"
+          },
+          "m_CUtlSymbol": {
+            "offset": 320,
+            "type": "CUtlSymbol"
+          },
+          "m_Color": {
+            "offset": 224,
+            "type": "Color"
+          },
+          "m_DegreeEuler": {
+            "offset": 100,
+            "type": "DegreeEuler"
+          },
+          "m_KV3": {
+            "offset": 360,
+            "type": "KeyValues3"
+          },
+          "m_QAngle": {
+            "offset": 64,
+            "type": "QAngle"
+          },
+          "m_Quaternion": {
+            "offset": 48,
+            "type": "Quaternion"
+          },
+          "m_QuaternionStorage": {
+            "offset": 112,
+            "type": "QuaternionStorage"
+          },
+          "m_RadianEuler": {
+            "offset": 88,
+            "type": "RadianEuler"
+          },
+          "m_ResourceTypes": {
+            "offset": 352,
+            "type": "CResourceArray<CResourcePointer<CResourceString>>"
+          },
+          "m_RotationVector": {
+            "offset": 76,
+            "type": "RotationVector"
+          },
+          "m_Vector": {
+            "offset": 8,
+            "type": "Vector"
+          },
+          "m_Vector2D": {
+            "offset": 0,
+            "type": "Vector2D"
+          },
+          "m_Vector4D": {
+            "offset": 228,
+            "type": "Vector4D"
+          },
+          "m_VectorAligned": {
+            "offset": 32,
+            "type": "VectorAligned"
+          },
+          "m_VectorWS": {
+            "offset": 20,
+            "type": "VectorWS"
+          },
+          "m_matrix3x4_t": {
+            "offset": 128,
+            "type": "matrix3x4_t"
+          },
+          "m_matrix3x4a_t": {
+            "offset": 176,
+            "type": "matrix3x4a_t"
+          },
+          "m_pKeyValues": {
+            "offset": 288,
+            "type": "KeyValues*"
+          },
+          "m_stringToken": {
+            "offset": 324,
+            "type": "CUtlStringToken"
+          },
+          "m_stringTokenWithStorage": {
+            "offset": 328,
+            "type": "CUtlStringTokenWithStorage"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCResourceManifestInternal": {
         "fields": {},
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MResourceTypeForInfoType",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "ResourceId_t": {
-        "fields": {},
+        "fields": {
+          "m_Value": {
+            "offset": 0,
+            "type": "uint64"
+          }
+        },
         "metadata": [],
         "parent": null
       }

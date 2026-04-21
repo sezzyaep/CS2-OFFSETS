@@ -2,42 +2,234 @@
   "rendersystemdx11.dll": {
     "classes": {
       "RenderInputLayoutField_t": {
-        "fields": {},
+        "fields": {
+          "m_nOffset": {
+            "offset": 40,
+            "type": "int16"
+          },
+          "m_nSemanticIndex": {
+            "offset": 32,
+            "type": "int8"
+          },
+          "m_nSlot": {
+            "offset": 42,
+            "type": "int8"
+          },
+          "m_nSlotType": {
+            "offset": 43,
+            "type": "RenderSlotType_t"
+          },
+          "m_pSemanticName": {
+            "offset": 0,
+            "type": "char[32]"
+          },
+          "m_szShaderSemantic": {
+            "offset": 44,
+            "type": "char[32]"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "RsBlendStateDesc_t": {
-        "fields": {},
+        "fields": {
+          "m_bAlphaToCoverageEnable": {
+            "offset": 0,
+            "type": "bitfield:1"
+          },
+          "m_bIndependentBlendEnable": {
+            "offset": 0,
+            "type": "bitfield:1"
+          },
+          "m_blendEnableBits": {
+            "offset": 28,
+            "type": "uint8"
+          },
+          "m_blendOpAlphaBits": {
+            "offset": 24,
+            "type": "uint32"
+          },
+          "m_blendOpBits": {
+            "offset": 0,
+            "type": "bitfield:30"
+          },
+          "m_destBlendAlphaBits": {
+            "offset": 12,
+            "type": "uint32"
+          },
+          "m_destBlendBits": {
+            "offset": 4,
+            "type": "uint32"
+          },
+          "m_renderTargetWriteMaskBits": {
+            "offset": 16,
+            "type": "uint32"
+          },
+          "m_srcBlendAlphaBits": {
+            "offset": 8,
+            "type": "uint32"
+          },
+          "m_srcBlendBits": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_srgbWriteEnableBits": {
+            "offset": 29,
+            "type": "uint8"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "RsDepthStencilStateDesc_t": {
-        "fields": {},
+        "fields": {
+          "m_bDepthTestEnable": {
+            "offset": 0,
+            "type": "bitfield:1"
+          },
+          "m_bDepthWriteEnable": {
+            "offset": 0,
+            "type": "bitfield:1"
+          },
+          "m_depthFunc": {
+            "offset": 1,
+            "type": "RsComparison_t"
+          },
+          "m_stencilState": {
+            "offset": 2,
+            "type": "RsStencilStateDesc_t"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "RsRasterizerStateDesc_t": {
-        "fields": {},
+        "fields": {
+          "m_bDepthClipEnable": {
+            "offset": 2,
+            "type": "bool"
+          },
+          "m_bMultisampleEnable": {
+            "offset": 3,
+            "type": "bool"
+          },
+          "m_flDepthBiasClamp": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flSlopeScaledDepthBias": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_nCullMode": {
+            "offset": 1,
+            "type": "RsCullMode_t"
+          },
+          "m_nDepthBias": {
+            "offset": 4,
+            "type": "int32"
+          },
+          "m_nFillMode": {
+            "offset": 0,
+            "type": "RsFillMode_t"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "RsStencilStateDesc_t": {
-        "fields": {},
+        "fields": {
+          "m_bStencilEnable": {
+            "offset": 0,
+            "type": "bitfield:1"
+          },
+          "m_backStencilDepthFailOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_backStencilFailOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_backStencilFunc": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_backStencilPassOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_frontStencilDepthFailOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_frontStencilFailOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_frontStencilFunc": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_frontStencilPassOp": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_nStencilReadMask": {
+            "offset": 4,
+            "type": "uint8"
+          },
+          "m_nStencilWriteMask": {
+            "offset": 5,
+            "type": "uint8"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "SheetSequenceIntegerId_t": {
-        "fields": {},
+        "fields": {
+          "m_Value": {
+            "offset": 0,
+            "type": "uint32"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "VsInputSignatureElement_t": {
-        "fields": {},
+        "fields": {
+          "m_nD3DSemanticIndex": {
+            "offset": 192,
+            "type": "int32"
+          },
+          "m_pD3DSemanticName": {
+            "offset": 128,
+            "type": "char[64]"
+          },
+          "m_pName": {
+            "offset": 0,
+            "type": "char[64]"
+          },
+          "m_pSemantic": {
+            "offset": 64,
+            "type": "char[64]"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "VsInputSignature_t": {
-        "fields": {},
+        "fields": {
+          "m_depth_elems": {
+            "offset": 24,
+            "type": "CUtlVector<VsInputSignatureElement_t>"
+          },
+          "m_elems": {
+            "offset": 0,
+            "type": "CUtlVector<VsInputSignatureElement_t>"
+          }
+        },
         "metadata": [],
         "parent": null
       }

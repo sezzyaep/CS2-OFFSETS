@@ -413,7 +413,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerBlender</h3>
@@ -422,6 +422,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_firstSound</td><td class="type">CSoundContainerReference</td><td class="value">0xA8</td></tr>
+            <tr><td>m_secondSound</td><td class="type">CSoundContainerReference</td><td class="value">0xC8</td></tr>
+            <tr><td>m_flBlendFactor</td><td class="type">float32</td><td class="value">0xE8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixPitchShiftProcessorDesc</h3>
@@ -430,6 +433,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixPitchShiftDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixFreeverbDesc_t</h3>
@@ -438,7 +442,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flRoomSize</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flDamp</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flWidth</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flLateReflections</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerStaticAdditiveSynth::CHarmonic</h3>
@@ -447,7 +454,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nWaveform</td><td class="type">EWaveform</td><td class="value">0x0</td></tr>
+            <tr><td>m_nFundamental</td><td class="type">EMidiNote</td><td class="value">0x1</td></tr>
+            <tr><td>m_nOctave</td><td class="type">int32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flCents</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flPhase</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x10</td></tr>
+            <tr><td>m_volumeScaling</td><td class="type">CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance</td><td class="value">0x50</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerStaticAdditiveSynth::CTone</h3>
@@ -456,7 +469,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_harmonics</td><td class="type">CUtlVector<CVoiceContainerStaticAdditiveSynth::CHarmonic></td><td class="value">0x0</td></tr>
+            <tr><td>m_curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x18</td></tr>
+            <tr><td>m_bSyncInstances</td><td class="type">bool</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionOcclusionSchema</h3>
@@ -465,6 +480,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flCalculationInterval</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flRadius</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flOcclusionScale</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flOcclusionMin</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flOcclusionMax</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flTestDepth</td><td class="type">float32</td><td class="value">0x1C</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerRandomSampler</h3>
@@ -473,6 +494,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flAmplitude</td><td class="type">float32</td><td class="value">0xB8</td></tr>
+            <tr><td>m_flAmplitudeJitter</td><td class="type">float32</td><td class="value">0xBC</td></tr>
+            <tr><td>m_flTimeJitter</td><td class="type">float32</td><td class="value">0xC0</td></tr>
+            <tr><td>m_flMaxLength</td><td class="type">float32</td><td class="value">0xC4</td></tr>
+            <tr><td>m_nNumDelayVariations</td><td class="type">int32</td><td class="value">0xC8</td></tr>
+            <tr><td>m_grainResources</td><td class="type">CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>></td><td class="value">0xD0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixSteamAudioDirectProcessorDesc</h3>
@@ -505,7 +532,17 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nRate</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nFormat</td><td class="type">CVSoundFormat_t</td><td class="value">0x4</td></tr>
+            <tr><td>m_nChannels</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nLoopStart</td><td class="type">int32</td><td class="value">0xC</td></tr>
+            <tr><td>m_nSampleCount</td><td class="type">uint32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flDuration</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_Sentences</td><td class="type">CUtlVector<CAudioSentence></td><td class="value">0x18</td></tr>
+            <tr><td>m_nStreamingSize</td><td class="type">uint32</td><td class="value">0x30</td></tr>
+            <tr><td>m_nSeekTable</td><td class="type">CUtlVector<int32></td><td class="value">0x38</td></tr>
+            <tr><td>m_nLoopEnd</td><td class="type">int32</td><td class="value">0x50</td></tr>
+            <tr><td>m_encodedHeader</td><td class="type">CUtlBinaryBlock</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CDSPPresetMixgroupModifierTable</h3>
@@ -514,7 +551,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_table</td><td class="type">CUtlVector<CDspPresetModifierList></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSoundeventClusterSchema</h3>
@@ -523,6 +560,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nMinNearby</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flClusterEpsilon</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_shouldPlayOpvar</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_shouldPlayClusterChild</td><td class="type">CUtlString</td><td class="value">0x18</td></tr>
+            <tr><td>m_clusterSizeOpvar</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_groupBoundingBoxMinsOpvar</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
+            <tr><td>m_groupBoundingBoxMaxsOpvar</td><td class="type">CUtlString</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSetSoundeventParameterSchema</h3>
@@ -531,6 +575,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nMaxCount</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flMinValue</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flMaxValue</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_opvarName</td><td class="type">CUtlString</td><td class="value">0x18</td></tr>
+            <tr><td>m_nSortType</td><td class="type">SosActionSetParamSortType_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CSoundContainerReference</h3>
@@ -539,7 +588,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_namespace</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_bUseReference</td><td class="type">bool</td><td class="value">0x8</td></tr>
+            <tr><td>m_sound</td><td class="type">CStrongHandle<InfoForResourceTypeCVoiceContainerBase></td><td class="value">0x10</td></tr>
+            <tr><td>m_pSound</td><td class="type">CVoiceContainerBase*</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerNull</h3>
@@ -556,7 +608,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_effectName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_subgraphs</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x10</td></tr>
+            <tr><td>m_interpolationMode</td><td class="type">VMixSubgraphSwitchInterpolationType_t</td><td class="value">0x28</td></tr>
+            <tr><td>m_bOnlyTailsOnFadeOut</td><td class="type">bool</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flInterpolationTime</td><td class="type">float32</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerAnalysisBase</h3>
@@ -565,7 +622,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_bRegenerateCurveOnCompile</td><td class="type">bool</td><td class="value">0x8</td></tr>
+            <tr><td>m_curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSoundeventMinMaxValuesSchema</h3>
@@ -574,6 +632,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_strQueryPublicFieldName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_strDelayPublicFieldName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_bExcludeStoppedSounds</td><td class="type">bool</td><td class="value">0x18</td></tr>
+            <tr><td>m_bExcludeDelayedSounds</td><td class="type">bool</td><td class="value">0x19</td></tr>
+            <tr><td>m_bExcludeSoundsBelowThreshold</td><td class="type">bool</td><td class="value">0x1A</td></tr>
+            <tr><td>m_flExcludeSoundsMinThresholdValue</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_bExcludSoundsAboveThreshold</td><td class="type">bool</td><td class="value">0x20</td></tr>
+            <tr><td>m_flExcludeSoundsMaxThresholdValue</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_strMinValueName</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
+            <tr><td>m_strMaxValueName</td><td class="type">CUtlString</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixEnvelopeProcessorDesc</h3>
@@ -582,6 +650,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixEnvelopeDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixCommand</h3>
@@ -590,7 +659,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nCommand</td><td class="type">VMixGraphCommandID_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_nParameterNameHash</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nOutputSubmix</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nInputSubmix0</td><td class="type">int32</td><td class="value">0xC</td></tr>
+            <tr><td>m_nInputSubmix1</td><td class="type">int32</td><td class="value">0x10</td></tr>
+            <tr><td>m_nProcessor</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_nInputValue0</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nInputValue1</td><td class="type">int32</td><td class="value">0x1C</td></tr>
         </tbody>
     </table>
     <h3>Class: SamplerVoice_t</h3>
@@ -599,6 +675,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>nNoteNum</td><td class="type">uint8</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixControlInput</h3>
@@ -607,6 +684,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flDefaultValue</td><td class="type">float32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixBoxverbProcessorDesc</h3>
@@ -615,6 +693,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixBoxverbDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixDynamicsCompressorProcessorDesc</h3>
@@ -623,6 +702,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDynamicsCompressorDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixPannerDesc_t</h3>
@@ -631,7 +711,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_type</td><td class="type">VMixPannerType_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flStrength</td><td class="type">float32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSoundeventPrioritySchema</h3>
@@ -640,6 +721,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_priorityValue</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_priorityVolumeScalar</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_priorityContributeButDontRead</td><td class="type">CUtlString</td><td class="value">0x18</td></tr>
+            <tr><td>m_bPriorityReadButDontContribute</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerRealtimeFMSineWave</h3>
@@ -648,6 +733,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flCarrierFrequency</td><td class="type">float32</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flModulatorFrequency</td><td class="type">float32</td><td class="value">0xAC</td></tr>
+            <tr><td>m_flModulatorAmount</td><td class="type">float32</td><td class="value">0xB0</td></tr>
         </tbody>
     </table>
     <h3>Class: SelectedEditItemInfo_t</h3>
@@ -656,7 +744,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_EditItems</td><td class="type">CUtlVector<SosEditItemInfo_t></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixModDelayDesc_t</h3>
@@ -665,7 +753,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_feedbackFilter</td><td class="type">VMixFilterDesc_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_bPhaseInvert</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_flGlideTime</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flDelay</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flOutputGain</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flFeedbackGain</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flModRate</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flModDepth</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_bApplyAntialiasing</td><td class="type">bool</td><td class="value">0x2C</td></tr>
         </tbody>
     </table>
     <h3>Class: CSndSeqInstSndEvtSchema</h3>
@@ -682,6 +778,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nValueIndex</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CSndSeqInstruments</h3>
@@ -698,6 +795,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDynamics3BandDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixBoxverbDesc_t</h3>
@@ -706,7 +804,23 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flSizeMax</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flSizeMin</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flComplexity</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flDiffusion</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flModDepth</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flModRate</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_bParallel</td><td class="type">bool</td><td class="value">0x18</td></tr>
+            <tr><td>m_filterType</td><td class="type">VMixFilterDesc_t</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flWidth</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flHeight</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_flDepth</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flFeedbackScale</td><td class="type">float32</td><td class="value">0x38</td></tr>
+            <tr><td>m_flFeedbackWidth</td><td class="type">float32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_flFeedbackHeight</td><td class="type">float32</td><td class="value">0x40</td></tr>
+            <tr><td>m_flFeedbackDepth</td><td class="type">float32</td><td class="value">0x44</td></tr>
+            <tr><td>m_flOutputGain</td><td class="type">float32</td><td class="value">0x48</td></tr>
+            <tr><td>m_flTaps</td><td class="type">float32</td><td class="value">0x4C</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSchema</h3>
@@ -723,7 +837,22 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nGroupType</td><td class="type">SosGroupType_t</td><td class="value">0x8</td></tr>
+            <tr><td>m_bBlocksEvents</td><td class="type">bool</td><td class="value">0xC</td></tr>
+            <tr><td>m_nBlockMaxCount</td><td class="type">int32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flMemberLifespanTime</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_bInvertMatch</td><td class="type">bool</td><td class="value">0x18</td></tr>
+            <tr><td>m_Behavior_EventName</td><td class="type">SosGroupFieldBehavior_t</td><td class="value">0x1C</td></tr>
+            <tr><td>m_matchSoundEventName</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_bMatchEventSubString</td><td class="type">bool</td><td class="value">0x28</td></tr>
+            <tr><td>m_matchSoundEventSubString</td><td class="type">CUtlString</td><td class="value">0x30</td></tr>
+            <tr><td>m_Behavior_EntIndex</td><td class="type">SosGroupFieldBehavior_t</td><td class="value">0x38</td></tr>
+            <tr><td>m_flEntIndex</td><td class="type">float32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_Behavior_Opvar</td><td class="type">SosGroupFieldBehavior_t</td><td class="value">0x40</td></tr>
+            <tr><td>m_flOpvar</td><td class="type">float32</td><td class="value">0x44</td></tr>
+            <tr><td>m_Behavior_String</td><td class="type">SosGroupFieldBehavior_t</td><td class="value">0x48</td></tr>
+            <tr><td>m_opvarString</td><td class="type">CUtlString</td><td class="value">0x50</td></tr>
+            <tr><td>m_vActions</td><td class="type">CUtlVector<CSosGroupActionSchema*></td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CSndSeqInstMidiSampler</h3>
@@ -732,6 +861,17 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_bIsSoundEvent</td><td class="type">bool</td><td class="value">0x20</td></tr>
+            <tr><td>m_bStopPrevious</td><td class="type">bool</td><td class="value">0x21</td></tr>
+            <tr><td>m_nMinNote</td><td class="type">uint8</td><td class="value">0x22</td></tr>
+            <tr><td>m_nMaxNote</td><td class="type">uint8</td><td class="value">0x23</td></tr>
+            <tr><td>m_flMinVelocityAtten</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flMaxVelocityAtten</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flAttack</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flRelease</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_bBeatEnvelopes</td><td class="type">bool</td><td class="value">0x34</td></tr>
+            <tr><td>m_nNextVoiceSlot</td><td class="type">uint8</td><td class="value">0xD4</td></tr>
+            <tr><td>m_hSoundEventHash</td><td class="type">uint32</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
     <h3>Class: CSndSeqInstBaseSchema</h3>
@@ -740,6 +880,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nType</td><td class="type">SndSeqInstrumentType_t</td><td class="value">0x8</td></tr>
+            <tr><td>m_nPlayerType</td><td class="type">SndSeqPlayerType_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_bStopCurrentEvents</td><td class="type">bool</td><td class="value">0x12</td></tr>
+            <tr><td>m_flBPM</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flBPMFactor</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flBPMInvFactor</td><td class="type">float32</td><td class="value">0x1C</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDynamics3BandDesc_t</h3>
@@ -748,7 +894,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbGainOutput</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flRMSTimeMS</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldbKneeWidth</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flDepth</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flTimeScale</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flLowCutoffFreq</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flHighCutoffFreq</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_bPeakMode</td><td class="type">bool</td><td class="value">0x20</td></tr>
+            <tr><td>m_bandDesc</td><td class="type">VMixDynamicsBand_t[3]</td><td class="value">0x24</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixEQ8ProcessorDesc</h3>
@@ -757,6 +912,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixEQ8Desc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CDSPMixgroupModifier</h3>
@@ -765,7 +921,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_mixgroup</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_flModifier</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flModifierMin</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flSourceModifier</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flSourceModifierMin</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flListenerReverbModifierWhenSourceReverbIsActive</td><td class="type">float32</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CAudioMorphData</h3>
@@ -774,7 +935,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_times</td><td class="type">CUtlVector<float32></td><td class="value">0x0</td></tr>
+            <tr><td>m_nameHashCodes</td><td class="type">CUtlVector<uint32></td><td class="value">0x18</td></tr>
+            <tr><td>m_nameStrings</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x30</td></tr>
+            <tr><td>m_samples</td><td class="type">CUtlVector<CUtlVector<float32>></td><td class="value">0x48</td></tr>
+            <tr><td>m_flEaseIn</td><td class="type">float32</td><td class="value">0x60</td></tr>
+            <tr><td>m_flEaseOut</td><td class="type">float32</td><td class="value">0x64</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDualCompressorDesc_t</h3>
@@ -783,7 +949,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flRMSTimeMS</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbKneeWidth</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_bPeakMode</td><td class="type">bool</td><td class="value">0xC</td></tr>
+            <tr><td>m_bandDesc</td><td class="type">VMixDynamicsBand_t</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerStaticAdditiveSynth</h3>
@@ -792,6 +962,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_tones</td><td class="type">CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone></td><td class="value">0xB8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerShapedNoise</h3>
@@ -800,6 +971,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_bUseCurveForFrequency</td><td class="type">bool</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flFrequency</td><td class="type">float32</td><td class="value">0xAC</td></tr>
+            <tr><td>m_frequencySweep</td><td class="type">CPiecewiseCurve</td><td class="value">0xB0</td></tr>
+            <tr><td>m_bUseCurveForResonance</td><td class="type">bool</td><td class="value">0xF0</td></tr>
+            <tr><td>m_flResonance</td><td class="type">float32</td><td class="value">0xF4</td></tr>
+            <tr><td>m_resonanceSweep</td><td class="type">CPiecewiseCurve</td><td class="value">0xF8</td></tr>
+            <tr><td>m_bUseCurveForAmplitude</td><td class="type">bool</td><td class="value">0x138</td></tr>
+            <tr><td>m_flGainInDecibels</td><td class="type">float32</td><td class="value">0x13C</td></tr>
+            <tr><td>m_gainSweep</td><td class="type">CPiecewiseCurve</td><td class="value">0x140</td></tr>
         </tbody>
     </table>
     <h3>Class: CDspPresetModifierList</h3>
@@ -808,7 +988,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_dspName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_modifiers</td><td class="type">CUtlVector<CDSPMixgroupModifier></td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerBase</h3>
@@ -817,6 +998,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_vSound</td><td class="type">CVSound</td><td class="value">0x28</td></tr>
+            <tr><td>m_pEnvelopeAnalyzer</td><td class="type">CVoiceContainerAnalysisBase*</td><td class="value">0xA0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixDiffusorProcessorDesc</h3>
@@ -825,6 +1008,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDiffusorDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixUtilityProcessorDesc</h3>
@@ -833,6 +1017,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixUtilityDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerGranulator</h3>
@@ -841,6 +1026,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flGrainLength</td><td class="type">float32</td><td class="value">0xB8</td></tr>
+            <tr><td>m_flGrainCrossfadeAmount</td><td class="type">float32</td><td class="value">0xBC</td></tr>
+            <tr><td>m_flStartJitter</td><td class="type">float32</td><td class="value">0xC0</td></tr>
+            <tr><td>m_flPlaybackJitter</td><td class="type">float32</td><td class="value">0xC4</td></tr>
+            <tr><td>m_bShouldWraparound</td><td class="type">bool</td><td class="value">0xC8</td></tr>
+            <tr><td>m_sourceAudio</td><td class="type">CStrongHandle<InfoForResourceTypeCVoiceContainerBase></td><td class="value">0xD0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixPresetDSPProcessorDesc</h3>
@@ -849,6 +1040,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixPresetDSPDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDelayDesc_t</h3>
@@ -857,7 +1049,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_feedbackFilter</td><td class="type">VMixFilterDesc_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_bEnableFilter</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_flDelay</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flDirectGain</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flDelayGain</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flFeedbackGain</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flWidth</td><td class="type">float32</td><td class="value">0x24</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixEQ8Desc_t</h3>
@@ -866,7 +1064,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_stages</td><td class="type">VMixFilterDesc_t[8]</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixDynamicsProcessorDesc</h3>
@@ -875,6 +1073,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDynamicsDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixGraphDescData</h3>
@@ -883,7 +1082,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nGraphOutputChannels</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_bIsMainGraph</td><td class="type">bool</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerLoopXFade</h3>
@@ -892,6 +1093,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_sound</td><td class="type">CSoundContainerReference</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flLoopEnd</td><td class="type">float32</td><td class="value">0xC8</td></tr>
+            <tr><td>m_flLoopStart</td><td class="type">float32</td><td class="value">0xCC</td></tr>
+            <tr><td>m_flFadeOut</td><td class="type">float32</td><td class="value">0xD0</td></tr>
+            <tr><td>m_flFadeIn</td><td class="type">float32</td><td class="value">0xD4</td></tr>
+            <tr><td>m_bPlayHead</td><td class="type">bool</td><td class="value">0xD8</td></tr>
+            <tr><td>m_bPlayTail</td><td class="type">bool</td><td class="value">0xD9</td></tr>
+            <tr><td>m_bEqualPow</td><td class="type">bool</td><td class="value">0xDA</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixPresetDSPDesc_t</h3>
@@ -900,7 +1109,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_effectName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CAudioPhonemeTag</h3>
@@ -909,7 +1118,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flStartTime</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flEndTime</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nPhonemeCode</td><td class="type">int32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixControlInputArray</h3>
@@ -918,6 +1129,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nArrayIndex</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixNameInput</h3>
@@ -926,6 +1138,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_defaultValue</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionSoundeventCountSchema</h3>
@@ -934,6 +1147,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_bExcludeStoppedSounds</td><td class="type">bool</td><td class="value">0x8</td></tr>
+            <tr><td>m_strCountKeyName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerEnvelopeAnalyzer</h3>
@@ -942,6 +1157,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_mode</td><td class="type">EMode_t</td><td class="value">0x50</td></tr>
+            <tr><td>m_fAnalysisWindowMs</td><td class="type">float32</td><td class="value">0x54</td></tr>
+            <tr><td>m_flThreshold</td><td class="type">float32</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixBaseProcessorDesc</h3>
@@ -950,6 +1168,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_nChannels</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flxfade</td><td class="type">float32</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixImpulseResponseInput</h3>
@@ -974,7 +1195,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_soundEventVMix</td><td class="type">CStrongHandle<InfoForResourceTypeCVMixListResource></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixPitchShiftDesc_t</h3>
@@ -983,7 +1204,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nGrainSampleCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flPitchShift</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nQuality</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nProcType</td><td class="type">int32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixControlOutput</h3>
@@ -992,6 +1216,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flDefaultValue</td><td class="type">float32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixModDelayProcessorDesc</h3>
@@ -1000,6 +1225,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixModDelayDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixShaperProcessorDesc</h3>
@@ -1008,6 +1234,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixShaperDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixAutomaticControlInput</h3>
@@ -1016,7 +1243,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_nControlInputIndex</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_bIsTrackSend</td><td class="type">bool</td><td class="value">0xC</td></tr>
+            <tr><td>m_bIsStackVar</td><td class="type">bool</td><td class="value">0xD</td></tr>
         </tbody>
     </table>
     <h3>Class: CAudioEmphasisSample</h3>
@@ -1025,7 +1255,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flTime</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flValue</td><td class="type">float32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixOscProcessorDesc</h3>
@@ -1034,6 +1265,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixOscDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixCurveHeader</h3>
@@ -1042,7 +1274,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nControlPointCount</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nControlPointStart</td><td class="type">uint32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerGenerator</h3>
@@ -1059,6 +1292,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_soundsToPlay</td><td class="type">CUtlVector<CVoiceContainerSetElement></td><td class="value">0xA8</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixConvolutionDesc_t</h3>
@@ -1067,7 +1301,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbGain</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flPreDelayMS</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fldbLow</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_fldbMid</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_fldbHigh</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flLowCutoffFreq</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flHighCutoffFreq</td><td class="type">float32</td><td class="value">0x1C</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerSetElement</h3>
@@ -1076,7 +1317,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_sound</td><td class="type">CSoundContainerReference</td><td class="value">0x0</td></tr>
+            <tr><td>m_flVolumeDB</td><td class="type">float32</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerAsyncGenerator</h3>
@@ -1101,7 +1343,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>itemType</td><td class="type">SosEditItemType_t</td><td class="value">0x0</td></tr>
+            <tr><td>itemName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>itemTypeName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>itemKVString</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>itemPos</td><td class="type">Vector2D</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixFlangerProcessorDesc</h3>
@@ -1110,6 +1356,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixFlangerDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixEffectChainProcessorDesc</h3>
@@ -1118,6 +1365,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixEffectChainDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: KeyGroup_t</h3>
@@ -1126,6 +1374,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>nCenterNote</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+            <tr><td>nMinNote</td><td class="type">uint8</td><td class="value">0x1</td></tr>
+            <tr><td>nMaxNote</td><td class="type">uint8</td><td class="value">0x2</td></tr>
+            <tr><td>nNumVelocityZones</td><td class="type">uint8</td><td class="value">0x3</td></tr>
+            <tr><td>pVelocityZones</td><td class="type">VelocityZone_t*</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixFreeverbProcessorDesc</h3>
@@ -1134,6 +1387,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixFreeverbDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixPlateverbDesc_t</h3>
@@ -1142,7 +1396,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flPrefilter</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flInputDiffusion1</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flInputDiffusion2</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flDecay</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flDamp</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flFeedbackDiffusion1</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flFeedbackDiffusion2</td><td class="type">float32</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixConvolutionProcessorDesc</h3>
@@ -1151,6 +1411,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixConvolutionDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CSoundContainerReferenceArray</h3>
@@ -1159,7 +1420,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_bUseReference</td><td class="type">bool</td><td class="value">0x0</td></tr>
+            <tr><td>m_sounds</td><td class="type">CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>></td><td class="value">0x8</td></tr>
+            <tr><td>m_pSounds</td><td class="type">CUtlVector<CVoiceContainerBase*></td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixFilterProcessorDesc</h3>
@@ -1168,6 +1431,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixFilterDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixAdditionalOutput</h3>
@@ -1176,7 +1440,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerTapePlayer</h3>
@@ -1185,6 +1449,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_bShouldWraparound</td><td class="type">bool</td><td class="value">0xB8</td></tr>
+            <tr><td>m_sourceAudio</td><td class="type">CStrongHandle<InfoForResourceTypeCVoiceContainerBase></td><td class="value">0xC0</td></tr>
+            <tr><td>m_flTapeSpeedAttackTime</td><td class="type">float32</td><td class="value">0xC8</td></tr>
+            <tr><td>m_flTapeSpeedReleaseTime</td><td class="type">float32</td><td class="value">0xCC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixSubgraphSwitchProcessorDesc</h3>
@@ -1193,6 +1461,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixSubgraphSwitchDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDiffusorDesc_t</h3>
@@ -1201,7 +1470,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flSize</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flComplexity</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flFeedback</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flOutputGain</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixSteamAudioPathingProcessorDesc</h3>
@@ -1218,6 +1490,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixPannerDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDynamicsCompressorDesc_t</h3>
@@ -1226,7 +1499,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbOutputGain</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbCompressionThreshold</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldbKneeWidth</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flCompressionRatio</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flRMSTimeMS</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_bPeakMode</td><td class="type">bool</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixStereoDelayProcessorDesc</h3>
@@ -1243,7 +1524,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nShape</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbDrive</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldbOutputGain</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_nOversampleFactor</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixEnvelopeDesc_t</h3>
@@ -1252,7 +1537,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flHoldTimeMS</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CAudioSentence</h3>
@@ -1261,7 +1548,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_bShouldVoiceDuck</td><td class="type">bool</td><td class="value">0x0</td></tr>
+            <tr><td>m_RunTimePhonemes</td><td class="type">CUtlVector<CAudioPhonemeTag></td><td class="value">0x8</td></tr>
+            <tr><td>m_EmphasisSamples</td><td class="type">CUtlVector<CAudioEmphasisSample></td><td class="value">0x20</td></tr>
+            <tr><td>m_morphData</td><td class="type">CAudioMorphData</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerParameterBlender</h3>
@@ -1270,6 +1560,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_firstSound</td><td class="type">CSoundContainerReference</td><td class="value">0xA8</td></tr>
+            <tr><td>m_secondSound</td><td class="type">CSoundContainerReference</td><td class="value">0xC8</td></tr>
+            <tr><td>m_bEnableOcclusionBlend</td><td class="type">bool</td><td class="value">0xE8</td></tr>
+            <tr><td>m_curve1</td><td class="type">CPiecewiseCurve</td><td class="value">0xF0</td></tr>
+            <tr><td>m_curve2</td><td class="type">CPiecewiseCurve</td><td class="value">0x130</td></tr>
+            <tr><td>m_bEnableDistanceBlend</td><td class="type">bool</td><td class="value">0x170</td></tr>
+            <tr><td>m_curve3</td><td class="type">CPiecewiseCurve</td><td class="value">0x178</td></tr>
+            <tr><td>m_curve4</td><td class="type">CPiecewiseCurve</td><td class="value">0x1B8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixAudioMeter</h3>
@@ -1278,7 +1576,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_displayName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixVocoderProcessorDesc</h3>
@@ -1287,6 +1586,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixVocoderDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionLimitSchema</h3>
@@ -1295,6 +1595,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nMaxCount</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nStopType</td><td class="type">SosActionStopType_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_nSortType</td><td class="type">SosActionLimitSortType_t</td><td class="value">0x10</td></tr>
+            <tr><td>m_bStopImmediate</td><td class="type">bool</td><td class="value">0x14</td></tr>
+            <tr><td>m_bCountStopped</td><td class="type">bool</td><td class="value">0x15</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerAmpedDecayingSineWave</h3>
@@ -1303,6 +1608,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flGainAmount</td><td class="type">float32</td><td class="value">0xB0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerEnvelope</h3>
@@ -1311,6 +1617,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_sound</td><td class="type">CStrongHandle<InfoForResourceTypeCVoiceContainerBase></td><td class="value">0xA8</td></tr>
+            <tr><td>m_analysisContainer</td><td class="type">CVoiceContainerAnalysisBase*</td><td class="value">0xB0</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixAutoFilterDesc_t</h3>
@@ -1319,7 +1627,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flEnvelopeAmount</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_filter</td><td class="type">VMixFilterDesc_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_flLFOAmount</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flLFORate</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flPhase</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nLFOShape</td><td class="type">VMixLFOShape_t</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDynamicsBand_t</h3>
@@ -1328,7 +1643,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbGainInput</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbGainOutput</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldbThresholdBelow</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fldbThresholdAbove</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flRatioBelow</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flRatioAbove</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_bEnable</td><td class="type">bool</td><td class="value">0x20</td></tr>
+            <tr><td>m_bSolo</td><td class="type">bool</td><td class="value">0x21</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixEffectChainDesc_t</h3>
@@ -1337,7 +1661,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_effectName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixPlateReverbProcessorDesc</h3>
@@ -1346,6 +1670,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixPlateverbDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerMultiBlender</h3>
@@ -1354,6 +1679,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_soundsToPlay</td><td class="type">CSoundContainerReferenceArray</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flBlendFactor</td><td class="type">float32</td><td class="value">0xE0</td></tr>
+            <tr><td>m_flCrossover</td><td class="type">float32</td><td class="value">0xE4</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixVsndInput</h3>
@@ -1362,6 +1690,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_defaultValue</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_nProcessor</td><td class="type">int32</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerStaticAdditiveSynth::CGainScalePerInstance</h3>
@@ -1370,7 +1700,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flMinVolume</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nInstancesAtMinVolume</td><td class="type">int32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flMaxVolume</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nInstancesAtMaxVolume</td><td class="type">int32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: VelocityZone_t</h3>
@@ -1379,6 +1712,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>nMaxVel</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+            <tr><td>nNextSelection</td><td class="type">uint8</td><td class="value">0x1</td></tr>
+            <tr><td>nNumSamples</td><td class="type">uint8</td><td class="value">0x2</td></tr>
+            <tr><td>pSamples</td><td class="type">uint32[4]</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerSelector</h3>
@@ -1387,6 +1724,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_mode</td><td class="type">PlayBackMode_t</td><td class="value">0xA8</td></tr>
+            <tr><td>m_soundsToPlay</td><td class="type">CSoundContainerReferenceArray</td><td class="value">0xB0</td></tr>
+            <tr><td>m_fProbabilityWeights</td><td class="type">CUtlVector<float32></td><td class="value">0xE8</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionTimeBlockLimitSchema</h3>
@@ -1395,6 +1735,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nMaxCount</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flMaxDuration</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionMemberCountEnvelopeSchema</h3>
@@ -1403,6 +1745,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nBaseCount</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nTargetCount</td><td class="type">int32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flBaseValue</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flTargetValue</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flAttack</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flDecay</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_resultVarName</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_bSaveToGroup</td><td class="type">bool</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixDualCompressorProcessorDesc</h3>
@@ -1411,6 +1761,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDualCompressorDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerSwitch</h3>
@@ -1419,6 +1770,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_soundsToPlay</td><td class="type">CUtlVector<CSoundContainerReference></td><td class="value">0xA8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixControlMeter</h3>
@@ -1427,6 +1779,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nValueIndex</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerEnum</h3>
@@ -1435,6 +1788,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_soundsToPlay</td><td class="type">CSoundContainerReferenceArray</td><td class="value">0xA8</td></tr>
+            <tr><td>m_iSelection</td><td class="type">int32</td><td class="value">0xE0</td></tr>
+            <tr><td>m_flCrossfadeTime</td><td class="type">float32</td><td class="value">0xE4</td></tr>
         </tbody>
     </table>
     <h3>Class: CSosGroupActionTimeLimitSchema</h3>
@@ -1443,6 +1799,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flMaxDuration</td><td class="type">float32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixVocoderDesc_t</h3>
@@ -1451,7 +1808,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nBandCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flBandwidth</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldBModGain</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flFreqRangeStart</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flFreqRangeEnd</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_fldBUnvoicedGain</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_nDebugBand</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_bPeakMode</td><td class="type">bool</td><td class="value">0x24</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixUtilityDesc_t</h3>
@@ -1460,7 +1826,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nOp</td><td class="type">VMixChannelOperation_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flInputPan</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flOutputBalance</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fldbOutputGain</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_bBassMono</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_flBassFreq</td><td class="type">float32</td><td class="value">0x14</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerLoopTrigger</h3>
@@ -1469,6 +1840,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_sound</td><td class="type">CSoundContainerReference</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flRetriggerTimeMin</td><td class="type">float32</td><td class="value">0xC8</td></tr>
+            <tr><td>m_flRetriggerTimeMax</td><td class="type">float32</td><td class="value">0xCC</td></tr>
+            <tr><td>m_flFadeTime</td><td class="type">float32</td><td class="value">0xD0</td></tr>
+            <tr><td>m_bCrossFade</td><td class="type">bool</td><td class="value">0xD4</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoiceContainerDecayingSineWave</h3>
@@ -1477,6 +1853,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flFrequency</td><td class="type">float32</td><td class="value">0xA8</td></tr>
+            <tr><td>m_flDecayTime</td><td class="type">float32</td><td class="value">0xAC</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixDelayProcessorDesc</h3>
@@ -1485,6 +1863,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixDelayDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixBoxverb2ProcessorDesc</h3>
@@ -1493,6 +1872,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixBoxverbDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixFilterDesc_t</h3>
@@ -1501,7 +1881,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nFilterType</td><td class="type">VMixFilterType_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_nFilterSlope</td><td class="type">VMixFilterSlope_t</td><td class="value">0x2</td></tr>
+            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0x3</td></tr>
+            <tr><td>m_fldbGain</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flCutoffFreq</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flQ</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixOscDesc_t</h3>
@@ -1510,7 +1895,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>oscType</td><td class="type">VMixLFOShape_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_freq</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flPhase</td><td class="type">float32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CVMixAutoFilterProcessorDesc</h3>
@@ -1519,6 +1906,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_desc</td><td class="type">VMixAutoFilterDesc_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: ISndSeqInstruments</h3>
@@ -1535,7 +1923,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_bPhaseInvert</td><td class="type">bool</td><td class="value">0x0</td></tr>
+            <tr><td>m_flGlideTime</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flDelay</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flOutputGain</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flFeedbackGain</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flFeedforwardGain</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flModRate</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flModDepth</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_bApplyAntialiasing</td><td class="type">bool</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: VMixDynamicsDesc_t</h3>
@@ -1544,7 +1940,18 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbGain</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fldbNoiseGateThreshold</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fldbCompressionThreshold</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fldbLimiterThreshold</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_fldbKneeWidth</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flRatio</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flLimiterRatio</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flAttackTimeMS</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flReleaseTimeMS</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flRMSTimeMS</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flWetMix</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_bPeakMode</td><td class="type">bool</td><td class="value">0x2C</td></tr>
         </tbody>
     </table>
 </body>

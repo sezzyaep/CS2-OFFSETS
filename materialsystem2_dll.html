@@ -83,7 +83,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamVector_t</h3>
@@ -92,6 +92,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_value</td><td class="type">Vector4D</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamString_t</h3>
@@ -100,6 +101,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_value</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingResource_t</h3>
@@ -108,7 +110,19 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_bHasTonemapParams</td><td class="type">bool</td><td class="value">0x0</td></tr>
+            <tr><td>m_toneMapParams</td><td class="type">PostProcessingTonemapParameters_t</td><td class="value">0x4</td></tr>
+            <tr><td>m_bHasBloomParams</td><td class="type">bool</td><td class="value">0x40</td></tr>
+            <tr><td>m_bloomParams</td><td class="type">PostProcessingBloomParameters_t</td><td class="value">0x44</td></tr>
+            <tr><td>m_bHasVignetteParams</td><td class="type">bool</td><td class="value">0xCC</td></tr>
+            <tr><td>m_vignetteParams</td><td class="type">PostProcessingVignetteParameters_t</td><td class="value">0xD0</td></tr>
+            <tr><td>m_bHasLocalContrastParams</td><td class="type">bool</td><td class="value">0xF4</td></tr>
+            <tr><td>m_localConstrastParams</td><td class="type">PostProcessingLocalContrastParameters_t</td><td class="value">0xF8</td></tr>
+            <tr><td>m_nColorCorrectionVolumeDim</td><td class="type">int32</td><td class="value">0x10C</td></tr>
+            <tr><td>m_colorCorrectionVolumeData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x110</td></tr>
+            <tr><td>m_bHasColorCorrection</td><td class="type">bool</td><td class="value">0x120</td></tr>
+            <tr><td>m_bHasFogScatteringParams</td><td class="type">bool</td><td class="value">0x121</td></tr>
+            <tr><td>m_fogScatteringParams</td><td class="type">PostProcessingFogScatteringParameters_t</td><td class="value">0x124</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamInt_t</h3>
@@ -117,6 +131,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nValue</td><td class="type">int32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingVignetteParameters_t</h3>
@@ -125,7 +140,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flVignetteStrength</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_vCenter</td><td class="type">Vector2D</td><td class="value">0x4</td></tr>
+            <tr><td>m_flRadius</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flRoundness</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flFeather</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_vColorTint</td><td class="type">Vector</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingLocalContrastParameters_t</h3>
@@ -134,7 +154,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flLocalContrastStrength</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flLocalContrastEdgeStrength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flLocalContrastVignetteStart</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flLocalContrastVignetteEnd</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flLocalContrastVignetteBlur</td><td class="type">float32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingTonemapParameters_t</h3>
@@ -143,7 +167,21 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flExposureBias</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_flShoulderStrength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flLinearStrength</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flLinearAngle</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flToeStrength</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flToeNum</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flToeDenom</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flWhitePoint</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flLuminanceSource</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flExposureBiasShadows</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flExposureBiasHighlights</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flMinShadowLum</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flMaxShadowLum</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_flMinHighlightLum</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flMaxHighlightLum</td><td class="type">float32</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingFogScatteringParameters_t</h3>
@@ -152,7 +190,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_fRadius</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fScale</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fCubemapScale</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fVolumetricScale</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_fGradientScale</td><td class="type">float32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamBuffer_t</h3>
@@ -161,6 +203,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_value</td><td class="type">CUtlBinaryBlock</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialResourceData_t</h3>
@@ -169,7 +212,20 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_materialName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_shaderName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_intParams</td><td class="type">CUtlVector<MaterialParamInt_t></td><td class="value">0x10</td></tr>
+            <tr><td>m_floatParams</td><td class="type">CUtlVector<MaterialParamFloat_t></td><td class="value">0x28</td></tr>
+            <tr><td>m_vectorParams</td><td class="type">CUtlVector<MaterialParamVector_t></td><td class="value">0x40</td></tr>
+            <tr><td>m_textureParams</td><td class="type">CUtlVector<MaterialParamTexture_t></td><td class="value">0x58</td></tr>
+            <tr><td>m_dynamicParams</td><td class="type">CUtlVector<MaterialParamBuffer_t></td><td class="value">0x70</td></tr>
+            <tr><td>m_dynamicTextureParams</td><td class="type">CUtlVector<MaterialParamBuffer_t></td><td class="value">0x88</td></tr>
+            <tr><td>m_intAttributes</td><td class="type">CUtlVector<MaterialParamInt_t></td><td class="value">0xA0</td></tr>
+            <tr><td>m_floatAttributes</td><td class="type">CUtlVector<MaterialParamFloat_t></td><td class="value">0xB8</td></tr>
+            <tr><td>m_vectorAttributes</td><td class="type">CUtlVector<MaterialParamVector_t></td><td class="value">0xD0</td></tr>
+            <tr><td>m_textureAttributes</td><td class="type">CUtlVector<MaterialParamTexture_t></td><td class="value">0xE8</td></tr>
+            <tr><td>m_stringAttributes</td><td class="type">CUtlVector<MaterialParamString_t></td><td class="value">0x100</td></tr>
+            <tr><td>m_renderAttributesUsed</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x118</td></tr>
         </tbody>
     </table>
     <h3>Class: PostProcessingBloomParameters_t</h3>
@@ -178,7 +234,22 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_blendMode</td><td class="type">BloomBlendMode_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flBloomStrength</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_flScreenBloomStrength</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_flBlurBloomStrength</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_flBloomThreshold</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_flBloomThresholdWidth</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_flSkyboxBloomStrength</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_flBloomStartValue</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flComputeBloomStrength</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flComputeBloomThreshold</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flComputeBloomRadius</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_flComputeBloomEffectsScale</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_flComputeBloomLensDirtStrength</td><td class="type">float32</td><td class="value">0x30</td></tr>
+            <tr><td>m_flComputeBloomLensDirtBlackLevel</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flBlurWeight</td><td class="type">float32[5]</td><td class="value">0x38</td></tr>
+            <tr><td>m_vBlurTint</td><td class="type">Vector[5]</td><td class="value">0x4C</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamFloat_t</h3>
@@ -187,6 +258,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_flValue</td><td class="type">float32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamTexture_t</h3>
@@ -195,6 +267,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_pValue</td><td class="type">CStrongHandle<InfoForResourceTypeCTextureBase></td><td class="value">0x8</td></tr>
         </tbody>
     </table>
 </body>

@@ -94,7 +94,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_Name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_TextureId</td><td class="type">uint64</td><td class="value">0x8</td></tr>
+            <tr><td>m_nWidth</td><td class="type">int32</td><td class="value">0x10</td></tr>
+            <tr><td>m_nHeight</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_nRequestedWidth</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nRequestedHeight</td><td class="type">int32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_nNumMipLevels</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nDepth</td><td class="type">int32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nMultisampleNumSamples</td><td class="type">int32</td><td class="value">0x28</td></tr>
+            <tr><td>m_nFormat</td><td class="type">int32</td><td class="value">0x2C</td></tr>
         </tbody>
     </table>
     <h3>Class: SceneViewId_t</h3>
@@ -103,7 +112,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nViewId</td><td class="type">uint64</td><td class="value">0x0</td></tr>
+            <tr><td>m_nFrameCount</td><td class="type">uint64</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CSSDSEndFrameViewInfo</h3>
@@ -112,7 +122,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nViewId</td><td class="type">uint64</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CSSDSMsg_PostLayer</h3>
@@ -129,7 +140,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_nLayerId</td><td class="type">uint64</td><td class="value">0x18</td></tr>
+            <tr><td>m_LayerName</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_displayText</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: CSSDSMsg_PreLayer</h3>
@@ -146,7 +161,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_Targets</td><td class="type">CUtlVector<CSSDSMsg_ViewTarget></td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CSSDSMsg_ViewRender</h3>
@@ -155,7 +172,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_viewId</td><td class="type">SceneViewId_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_ViewName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CSSDSMsg_EndFrame</h3>
@@ -164,7 +182,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_Views</td><td class="type">CUtlVector<CSSDSEndFrameViewInfo></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
 </body>

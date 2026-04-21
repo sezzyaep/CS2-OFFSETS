@@ -72,6 +72,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_iszPrivateVScripts</td><td class="type">CUtlSymbolLarge</td><td class="value">0x8</td></tr>
+            <tr><td>m_pEntity</td><td class="type">CEntityIdentity*</td><td class="value">0x10</td></tr>
+            <tr><td>m_CScriptComponent</td><td class="type">CScriptComponent*</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: CEntityComponent</h3>
@@ -88,6 +91,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_scriptClassName</td><td class="type">CUtlSymbolLarge</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CEntityIdentity</h3>
@@ -96,6 +100,18 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nameStringTableIndex</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlSymbolLarge</td><td class="value">0x18</td></tr>
+            <tr><td>m_designerName</td><td class="type">CUtlSymbolLarge</td><td class="value">0x20</td></tr>
+            <tr><td>m_flags</td><td class="type">uint32</td><td class="value">0x30</td></tr>
+            <tr><td>m_worldGroupId</td><td class="type">WorldGroupId_t</td><td class="value">0x38</td></tr>
+            <tr><td>m_fDataObjectTypes</td><td class="type">uint32</td><td class="value">0x3C</td></tr>
+            <tr><td>m_PathIndex</td><td class="type">ChangeAccessorFieldPathIndex_t</td><td class="value">0x40</td></tr>
+            <tr><td>m_pAttributes</td><td class="type">CEntityAttributeTable*</td><td class="value">0x48</td></tr>
+            <tr><td>m_pPrev</td><td class="type">CEntityIdentity*</td><td class="value">0x50</td></tr>
+            <tr><td>m_pNext</td><td class="type">CEntityIdentity*</td><td class="value">0x58</td></tr>
+            <tr><td>m_pPrevByClass</td><td class="type">CEntityIdentity*</td><td class="value">0x60</td></tr>
+            <tr><td>m_pNextByClass</td><td class="type">CEntityIdentity*</td><td class="value">0x68</td></tr>
         </tbody>
     </table>
     <h3>Class: RTProxyInstanceInfo_t</h3>
@@ -104,7 +120,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nFlags</td><td class="type">RTProxyInstanceFlags_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_albedoFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x1</td></tr>
+            <tr><td>m_nBLASCount</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_nBLASIndex</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nVertexAlbedoByteOffset</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateVertexAlbedoStreamOnDiskData_t</h3>
@@ -113,7 +134,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_BufferData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: SceneObject_t</h3>
@@ -122,7 +143,20 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nObjectID</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_vTransform</td><td class="type">Vector4D[3]</td><td class="value">0x4</td></tr>
+            <tr><td>m_flFadeStartDistance</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_flFadeEndDistance</td><td class="type">float32</td><td class="value">0x38</td></tr>
+            <tr><td>m_vTintColor</td><td class="type">Vector4D</td><td class="value">0x3C</td></tr>
+            <tr><td>m_skin</td><td class="type">CUtlString</td><td class="value">0x50</td></tr>
+            <tr><td>m_nObjectTypeFlags</td><td class="type">ObjectTypeFlags_t</td><td class="value">0x58</td></tr>
+            <tr><td>m_vLightingOrigin</td><td class="type">Vector</td><td class="value">0x5C</td></tr>
+            <tr><td>m_nOverlayRenderOrder</td><td class="type">int16</td><td class="value">0x68</td></tr>
+            <tr><td>m_nLODOverride</td><td class="type">int16</td><td class="value">0x6A</td></tr>
+            <tr><td>m_nCubeMapPrecomputedHandshake</td><td class="type">int32</td><td class="value">0x6C</td></tr>
+            <tr><td>m_nLightProbeVolumePrecomputedHandshake</td><td class="type">int32</td><td class="value">0x70</td></tr>
+            <tr><td>m_renderableModel</td><td class="type">CStrongHandle<InfoForResourceTypeCModel></td><td class="value">0x78</td></tr>
+            <tr><td>m_renderable</td><td class="type">CStrongHandle<InfoForResourceTypeCRenderMesh></td><td class="value">0x80</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateLODSetup_t</h3>
@@ -131,7 +165,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_vLODOrigin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_fMaxObjectScale</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td>m_fSwitchDistances</td><td class="type">CUtlVector<float32></td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: ExtraVertexStreamOverride_t</h3>
@@ -140,6 +176,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nSubSceneObject</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nDrawCallIndex</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nAdditionalMeshDrawPrimitiveFlags</td><td class="type">MeshDrawPrimitiveFlags_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_extraBufferBinding</td><td class="type">CRenderBufferBinding</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: ClutterTile_t</h3>
@@ -148,7 +188,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nFirstInstance</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nLastInstance</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_BoundsWs</td><td class="type">AABB_t</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateSceneObject_t</h3>
@@ -157,7 +199,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_allFlags</td><td class="type">ObjectTypeFlags_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_anyFlags</td><td class="type">ObjectTypeFlags_t</td><td class="value">0x4</td></tr>
+            <tr><td>m_nLayer</td><td class="type">int16</td><td class="value">0x8</td></tr>
+            <tr><td>m_instanceStream</td><td class="type">int16</td><td class="value">0xA</td></tr>
+            <tr><td>m_vertexAlbedoStream</td><td class="type">int16</td><td class="value">0xC</td></tr>
+            <tr><td>m_aggregateMeshes</td><td class="type">CUtlVector<AggregateMeshInfo_t></td><td class="value">0x10</td></tr>
+            <tr><td>m_lodSetups</td><td class="type">CUtlVector<AggregateLODSetup_t></td><td class="value">0x28</td></tr>
+            <tr><td>m_visClusterMembership</td><td class="type">CUtlVector<uint16></td><td class="value">0x40</td></tr>
+            <tr><td>m_fragmentTransforms</td><td class="type">CUtlVector<matrix3x4_t></td><td class="value">0x58</td></tr>
+            <tr><td>m_renderableModel</td><td class="type">CStrongHandle<InfoForResourceTypeCModel></td><td class="value">0x70</td></tr>
         </tbody>
     </table>
     <h3>Class: NodeData_t</h3>
@@ -166,7 +217,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nParent</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_vOrigin</td><td class="type">Vector</td><td class="value">0x4</td></tr>
+            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0x10</td></tr>
+            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flMinimumDistance</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_ChildNodeIndices</td><td class="type">CUtlVector<int32></td><td class="value">0x30</td></tr>
+            <tr><td>m_worldNodePrefix</td><td class="type">CUtlString</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
     <h3>Class: VMapResourceData_t</h3>
@@ -183,7 +240,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_DecodedSize</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_BufferData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: RTProxyBLAS_t</h3>
@@ -192,7 +250,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nFirstIndex</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nIndexCount</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nVBByteOffset</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nBaseVertex</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>m_nVertexCount</td><td class="type">uint16</td><td class="value">0x10</td></tr>
+            <tr><td>m_albedoFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x12</td></tr>
+            <tr><td>m_boundLs</td><td class="type">AABB_t</td><td class="value">0x14</td></tr>
+            <tr><td>m_vVertexOriginLs</td><td class="type">Vector</td><td class="value">0x2C</td></tr>
+            <tr><td>m_vVertexExtentLs</td><td class="type">Vector</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: ClutterSceneObject_t</h3>
@@ -201,7 +267,17 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_flags</td><td class="type">ObjectTypeFlags_t</td><td class="value">0x18</td></tr>
+            <tr><td>m_nLayer</td><td class="type">int16</td><td class="value">0x1C</td></tr>
+            <tr><td>m_instancePositions</td><td class="type">CUtlVector<Vector></td><td class="value">0x20</td></tr>
+            <tr><td>m_instanceScales</td><td class="type">CUtlVector<float32></td><td class="value">0x50</td></tr>
+            <tr><td>m_instanceTintSrgb</td><td class="type">CUtlVector<Color></td><td class="value">0x68</td></tr>
+            <tr><td>m_tiles</td><td class="type">CUtlVector<ClutterTile_t></td><td class="value">0x80</td></tr>
+            <tr><td>m_renderableModel</td><td class="type">CStrongHandle<InfoForResourceTypeCModel></td><td class="value">0x98</td></tr>
+            <tr><td>m_materialGroup</td><td class="type">CUtlStringToken</td><td class="value">0xA0</td></tr>
+            <tr><td>m_flBeginCullSize</td><td class="type">float32</td><td class="value">0xA4</td></tr>
+            <tr><td>m_flEndCullSize</td><td class="type">float32</td><td class="value">0xA8</td></tr>
         </tbody>
     </table>
     <h3>Class: WorldBuilderParams_t</h3>
@@ -210,7 +286,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_flMinDrawVolumeSize</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_bBuildBakedLighting</td><td class="type">bool</td><td class="value">0x4</td></tr>
+            <tr><td>m_bAggregateInstanceStreams</td><td class="type">bool</td><td class="value">0x5</td></tr>
+            <tr><td>m_bakedLightingInfo</td><td class="type">BakedLightingInfo_t</td><td class="value">0x8</td></tr>
+            <tr><td>m_nCompileTimestamp</td><td class="type">uint64</td><td class="value">0x50</td></tr>
+            <tr><td>m_nCompileFingerprint</td><td class="type">uint64</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: PermEntityLumpData_t</h3>
@@ -219,7 +300,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
+            <tr><td>m_childLumps</td><td class="type">CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>></td><td class="value">0x10</td></tr>
+            <tr><td>m_entityKeyValues</td><td class="type">CUtlLeanVector<EntityKeyValueData_t></td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: WorldNode_t</h3>
@@ -228,7 +311,21 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_sceneObjects</td><td class="type">CUtlVector<SceneObject_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_visClusterMembership</td><td class="type">CUtlVector<uint16></td><td class="value">0x18</td></tr>
+            <tr><td>m_aggregateSceneObjects</td><td class="type">CUtlVector<AggregateSceneObject_t></td><td class="value">0x30</td></tr>
+            <tr><td>m_clutterSceneObjects</td><td class="type">CUtlVector<ClutterSceneObject_t></td><td class="value">0x48</td></tr>
+            <tr><td>m_rtProxies</td><td class="type">CUtlVector<AggregateRTProxySceneObject_t></td><td class="value">0x60</td></tr>
+            <tr><td>m_extraVertexStreamOverrides</td><td class="type">CUtlVector<ExtraVertexStreamOverride_t></td><td class="value">0x78</td></tr>
+            <tr><td>m_materialOverrides</td><td class="type">CUtlVector<MaterialOverride_t></td><td class="value">0x90</td></tr>
+            <tr><td>m_extraVertexStreams</td><td class="type">CUtlVector<WorldNodeOnDiskBufferData_t></td><td class="value">0xA8</td></tr>
+            <tr><td>m_aggregateInstanceStreams</td><td class="type">CUtlVector<AggregateInstanceStreamOnDiskData_t></td><td class="value">0xC0</td></tr>
+            <tr><td>m_vertexAlbedoStreams</td><td class="type">CUtlVector<AggregateVertexAlbedoStreamOnDiskData_t></td><td class="value">0xD8</td></tr>
+            <tr><td>m_layerNames</td><td class="type">CUtlVector<CUtlString></td><td class="value">0xF0</td></tr>
+            <tr><td>m_sceneObjectLayerIndices</td><td class="type">CUtlVector<uint8></td><td class="value">0x108</td></tr>
+            <tr><td>m_grassFileName</td><td class="type">CUtlString</td><td class="value">0x120</td></tr>
+            <tr><td>m_nodeLightingInfo</td><td class="type">BakedLightingInfo_t</td><td class="value">0x128</td></tr>
+            <tr><td>m_bHasBakedGeometryFlag</td><td class="type">bool</td><td class="value">0x170</td></tr>
         </tbody>
     </table>
     <h3>Class: BaseSceneObjectOverride_t</h3>
@@ -237,7 +334,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nSceneObjectIndex</td><td class="type">uint32</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: EntityIOConnectionData_t</h3>
@@ -246,7 +343,14 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_outputName</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
+            <tr><td>m_targetType</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_targetName</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_inputName</td><td class="type">CUtlString</td><td class="value">0x18</td></tr>
+            <tr><td>m_overrideParam</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
+            <tr><td>m_flDelay</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_nTimesToFire</td><td class="type">int32</td><td class="value">0x2C</td></tr>
+            <tr><td>m_paramMap</td><td class="type">KeyValues3</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: BakedLightingInfo_t</h3>
@@ -255,7 +359,17 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nLightmapVersionNumber</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nLightmapGameVersionNumber</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_vLightmapUvScale</td><td class="type">Vector2D</td><td class="value">0x8</td></tr>
+            <tr><td>m_bHasLightmaps</td><td class="type">bool</td><td class="value">0x10</td></tr>
+            <tr><td>m_bBakedShadowsGamma20</td><td class="type">bool</td><td class="value">0x11</td></tr>
+            <tr><td>m_bCompressionEnabled</td><td class="type">bool</td><td class="value">0x12</td></tr>
+            <tr><td>m_bSHLightmaps</td><td class="type">bool</td><td class="value">0x13</td></tr>
+            <tr><td>m_nChartPackIterations</td><td class="type">uint8</td><td class="value">0x14</td></tr>
+            <tr><td>m_nVradQuality</td><td class="type">uint8</td><td class="value">0x15</td></tr>
+            <tr><td>m_lightMaps</td><td class="type">CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>></td><td class="value">0x18</td></tr>
+            <tr><td>m_bakedShadows</td><td class="type">CUtlVector<BakedLightingInfo_t::BakedShadowAssignment_t></td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: VoxelVisBlockOffset_t</h3>
@@ -264,7 +378,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nOffset</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nElementCount</td><td class="type">uint32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeVMapResourceData_t</h3>
@@ -281,7 +396,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nElementCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nElementSizeInBytes</td><td class="type">int32</td><td class="value">0x4</td></tr>
+            <tr><td>m_inputLayoutFields</td><td class="type">CUtlVector<RenderInputLayoutField_t></td><td class="value">0x8</td></tr>
+            <tr><td>m_pData</td><td class="type">CUtlVector<uint8></td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateMeshInfo_t</h3>
@@ -290,7 +408,18 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nVisClusterMemberOffset</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nVisClusterMemberCount</td><td class="type">uint8</td><td class="value">0x4</td></tr>
+            <tr><td>m_bHasTransform</td><td class="type">bool</td><td class="value">0x5</td></tr>
+            <tr><td>m_nLODGroupMask</td><td class="type">uint8</td><td class="value">0x6</td></tr>
+            <tr><td>m_nDrawCallIndex</td><td class="type">int16</td><td class="value">0x8</td></tr>
+            <tr><td>m_nLODSetupIndex</td><td class="type">int16</td><td class="value">0xA</td></tr>
+            <tr><td>m_vTintColor</td><td class="type">Color</td><td class="value">0xC</td></tr>
+            <tr><td>m_objectFlags</td><td class="type">ObjectTypeFlags_t</td><td class="value">0x10</td></tr>
+            <tr><td>m_nLightProbeVolumePrecomputedHandshake</td><td class="type">int32</td><td class="value">0x14</td></tr>
+            <tr><td>m_nInstanceStreamOffset</td><td class="type">uint32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nVertexAlbedoStreamOffset</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_instanceStreams</td><td class="type">AggregateInstanceStream_t</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: World_t</h3>
@@ -299,7 +428,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_builderParams</td><td class="type">WorldBuilderParams_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_worldNodes</td><td class="type">CUtlVector<NodeData_t></td><td class="value">0x60</td></tr>
+            <tr><td>m_worldLightingInfo</td><td class="type">BakedLightingInfo_t</td><td class="value">0x78</td></tr>
+            <tr><td>m_entityLumps</td><td class="type">CUtlVector<CStrongHandleCopyable<InfoForResourceTypeCEntityLump>></td><td class="value">0xC0</td></tr>
         </tbody>
     </table>
     <h3>Class: BakedLightingInfo_t::BakedShadowAssignment_t</h3>
@@ -308,7 +440,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nLightHash</td><td class="type">uint32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nMapHash</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nShadowChannel</td><td class="type">int8</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialOverride_t</h3>
@@ -317,6 +451,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nSubSceneObject</td><td class="type">uint32</td><td class="value">0x4</td></tr>
+            <tr><td>m_nDrawCallIndex</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_pMaterial</td><td class="type">CStrongHandle<InfoForResourceTypeIMaterial2></td><td class="value">0x10</td></tr>
+            <tr><td>m_vLinearTintColor</td><td class="type">Vector</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateRTProxySceneObject_t</h3>
@@ -325,7 +463,12 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nLayer</td><td class="type">int16</td><td class="value">0x0</td></tr>
+            <tr><td>m_BLASes</td><td class="type">CUtlVector<RTProxyBLAS_t></td><td class="value">0x8</td></tr>
+            <tr><td>m_Instances</td><td class="type">CUtlVector<RTProxyInstanceInfo_t></td><td class="value">0x20</td></tr>
+            <tr><td>m_VBData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x38</td></tr>
+            <tr><td>m_IBData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x48</td></tr>
+            <tr><td>m_InstanceAlbedoData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: EntityKeyValueData_t</h3>
@@ -334,7 +477,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_connections</td><td class="type">CUtlVector<EntityIOConnectionData_t></td><td class="value">0x8</td></tr>
+            <tr><td>m_keyValuesData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
     <h3>Class: CVoxelVisibility</h3>
@@ -343,7 +487,19 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nBaseClusterCount</td><td class="type">uint32</td><td class="value">0x40</td></tr>
+            <tr><td>m_nPVSBytesPerCluster</td><td class="type">uint32</td><td class="value">0x44</td></tr>
+            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0x48</td></tr>
+            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0x54</td></tr>
+            <tr><td>m_flGridSize</td><td class="type">float32</td><td class="value">0x60</td></tr>
+            <tr><td>m_nSkyVisibilityCluster</td><td class="type">uint32</td><td class="value">0x64</td></tr>
+            <tr><td>m_nSunVisibilityCluster</td><td class="type">uint32</td><td class="value">0x68</td></tr>
+            <tr><td>m_NodeBlock</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x6C</td></tr>
+            <tr><td>m_RegionBlock</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x74</td></tr>
+            <tr><td>m_EnclosedClusterListBlock</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x7C</td></tr>
+            <tr><td>m_EnclosedClustersBlock</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x84</td></tr>
+            <tr><td>m_MasksBlock</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x8C</td></tr>
+            <tr><td>m_nVisBlocks</td><td class="type">VoxelVisBlockOffset_t</td><td class="value">0x94</td></tr>
         </tbody>
     </table>
 </body>

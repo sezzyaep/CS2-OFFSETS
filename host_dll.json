@@ -2,14 +2,24 @@
   "host.dll": {
     "classes": {
       "CAnimScriptBase": {
-        "fields": {},
+        "fields": {
+          "m_bIsValid": {
+            "offset": 8,
+            "type": "bool"
+          }
+        },
         "metadata": [],
         "parent": null
       },
       "EmptyTestScript": {
-        "fields": {},
+        "fields": {
+          "m_hTest": {
+            "offset": 16,
+            "type": "CAnimScriptParam<float32>"
+          }
+        },
         "metadata": [],
-        "parent": "xL�z�"
+        "parent": null
       }
     },
     "enums": {}

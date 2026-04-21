@@ -135,6 +135,29 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_Vector2D</td><td class="type">Vector2D</td><td class="value">0x0</td></tr>
+            <tr><td>m_Vector</td><td class="type">Vector</td><td class="value">0x8</td></tr>
+            <tr><td>m_VectorWS</td><td class="type">VectorWS</td><td class="value">0x14</td></tr>
+            <tr><td>m_VectorAligned</td><td class="type">VectorAligned</td><td class="value">0x20</td></tr>
+            <tr><td>m_Quaternion</td><td class="type">Quaternion</td><td class="value">0x30</td></tr>
+            <tr><td>m_QAngle</td><td class="type">QAngle</td><td class="value">0x40</td></tr>
+            <tr><td>m_RotationVector</td><td class="type">RotationVector</td><td class="value">0x4C</td></tr>
+            <tr><td>m_RadianEuler</td><td class="type">RadianEuler</td><td class="value">0x58</td></tr>
+            <tr><td>m_DegreeEuler</td><td class="type">DegreeEuler</td><td class="value">0x64</td></tr>
+            <tr><td>m_QuaternionStorage</td><td class="type">QuaternionStorage</td><td class="value">0x70</td></tr>
+            <tr><td>m_matrix3x4_t</td><td class="type">matrix3x4_t</td><td class="value">0x80</td></tr>
+            <tr><td>m_matrix3x4a_t</td><td class="type">matrix3x4a_t</td><td class="value">0xB0</td></tr>
+            <tr><td>m_Color</td><td class="type">Color</td><td class="value">0xE0</td></tr>
+            <tr><td>m_Vector4D</td><td class="type">Vector4D</td><td class="value">0xE4</td></tr>
+            <tr><td>m_CTransform</td><td class="type">CTransform</td><td class="value">0x100</td></tr>
+            <tr><td>m_pKeyValues</td><td class="type">KeyValues*</td><td class="value">0x120</td></tr>
+            <tr><td>m_CUtlBinaryBlock</td><td class="type">CUtlBinaryBlock</td><td class="value">0x128</td></tr>
+            <tr><td>m_CUtlString</td><td class="type">CUtlString</td><td class="value">0x138</td></tr>
+            <tr><td>m_CUtlSymbol</td><td class="type">CUtlSymbol</td><td class="value">0x140</td></tr>
+            <tr><td>m_stringToken</td><td class="type">CUtlStringToken</td><td class="value">0x144</td></tr>
+            <tr><td>m_stringTokenWithStorage</td><td class="type">CUtlStringTokenWithStorage</td><td class="value">0x148</td></tr>
+            <tr><td>m_ResourceTypes</td><td class="type">CResourceArray<CResourcePointer<CResourceString>></td><td class="value">0x160</td></tr>
+            <tr><td>m_KV3</td><td class="type">KeyValues3</td><td class="value">0x168</td></tr>
         </tbody>
     </table>
     <h3>Class: CExampleSchemaVData_PolymorphicDerivedA</h3>
@@ -143,6 +166,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nDerivedA</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: CExampleSchemaVData_PolymorphicBase</h3>
@@ -151,7 +175,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nBase</td><td class="type">int32</td><td class="value">0x8</td></tr>
         </tbody>
     </table>
     <h3>Class: CExampleSchemaVData_PolymorphicDerivedB</h3>
@@ -160,6 +184,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_nDerivedB</td><td class="type">int32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: ResourceId_t</h3>
@@ -168,6 +193,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_Value</td><td class="type">uint64</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CExampleSchemaVData_Monomorphic</h3>
@@ -176,7 +202,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
+            <tr><td>m_nExample1</td><td class="type">int32</td><td class="value">0x0</td></tr>
+            <tr><td>m_nExample2</td><td class="type">int32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
 </body>
