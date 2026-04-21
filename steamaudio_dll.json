@@ -3,466 +3,172 @@
     "classes": {
       "CSteamAudioAmbisonicsField": {
         "fields": {
-          "m_field": {
+          "": {
             "offset": 0,
-            "type": "CUtlVector<float32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioBakedDimensionsData": {
         "fields": {
-          "m_movables": {
-            "offset": 128,
-            "type": "CSteamAudioMovableBakedData<CSteamAudioBakedDimensionsData>"
-          },
-          "m_probes": {
-            "offset": 24,
-            "type": "CSteamAudioProbeData"
-          },
-          "m_settings": {
+          "": {
             "offset": 0,
-            "type": "SteamAudioCustomDataDimensionsSettings_t"
-          },
-          "m_vecInOut": {
-            "offset": 32,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecInsideSmallSizeField": {
-            "offset": 104,
-            "type": "CUtlVector<CSteamAudioAmbisonicsField>"
-          },
-          "m_vecOutsideField": {
-            "offset": 80,
-            "type": "CUtlVector<CSteamAudioAmbisonicsField>"
-          },
-          "m_vecSize": {
-            "offset": 56,
-            "type": "CUtlVector<float32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioBakedMaterialsData": {
         "fields": {
-          "m_probes": {
+          "": {
             "offset": 0,
-            "type": "CSteamAudioProbeData"
-          },
-          "m_vecMaterialTokens": {
-            "offset": 8,
-            "type": "CUtlVector<uint32>"
-          },
-          "m_vecMaterialWeights": {
-            "offset": 32,
-            "type": "CUtlVector<float32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioBakedOcclusionData": {
         "fields": {
-          "m_probes": {
-            "offset": 16,
-            "type": "CSteamAudioProbeData"
-          },
-          "m_settings": {
+          "": {
             "offset": 0,
-            "type": "SteamAudioCustomDataOcclusionSettings_t"
-          },
-          "m_vecPathingDeviation": {
-            "offset": 48,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecPathingRatio": {
-            "offset": 24,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecReflectionRatio": {
-            "offset": 72,
-            "type": "CUtlVector<float32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioBakedPathingData": {
         "fields": {
-          "m_movables": {
-            "offset": 16,
-            "type": "CSteamAudioMovableBakedData<CSteamAudioBakedPathingData>"
-          },
-          "m_nBands": {
+          "": {
             "offset": 0,
-            "type": "int32"
-          },
-          "m_probes": {
-            "offset": 8,
-            "type": "CSteamAudioProbeData"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioBakedReverbData": {
         "fields": {
-          "m_clusteredProbes": {
-            "offset": 144,
-            "type": "CSteamAudioProbeData"
-          },
-          "m_compressedClusteredData": {
-            "offset": 272,
-            "type": "CSteamAudioCompressedReverb"
-          },
-          "m_compressedData": {
-            "offset": 176,
-            "type": "CSteamAudioCompressedReverb"
-          },
-          "m_grid": {
-            "offset": 16,
-            "type": "CSteamAudioProbeGrid"
-          },
-          "m_movables": {
-            "offset": 368,
-            "type": "CSteamAudioMovableBakedData<CSteamAudioBakedReverbData>"
-          },
-          "m_nBands": {
+          "": {
             "offset": 0,
-            "type": "int32"
-          },
-          "m_probes": {
-            "offset": 8,
-            "type": "CSteamAudioProbeData"
-          },
-          "m_reverbClusteringSettings": {
-            "offset": 120,
-            "type": "SteamAudioReverbClusteringSettings_t"
-          },
-          "m_reverbCompressionSettings": {
-            "offset": 132,
-            "type": "SteamAudioReverbCompressionSettings_t"
-          },
-          "m_reverbSettings": {
-            "offset": 104,
-            "type": "SteamAudioReverbSettings_t"
-          },
-          "m_vecClusterForProbe": {
-            "offset": 152,
-            "type": "CUtlVector<int16>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioCompressedReverb": {
         "fields": {
-          "m_nBands": {
-            "offset": 4,
-            "type": "int32"
-          },
-          "m_nBins": {
-            "offset": 8,
-            "type": "int32"
-          },
-          "m_nChannels": {
+          "": {
             "offset": 0,
-            "type": "int32"
-          },
-          "m_nProbes": {
-            "offset": 12,
-            "type": "int32"
-          },
-          "m_pCompressedData": {
-            "offset": 88,
-            "type": "IPLCompressedEnergyFields"
-          },
-          "m_vecCompressedData": {
-            "offset": 64,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecDictionary": {
-            "offset": 40,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecNumSingularValues": {
-            "offset": 16,
-            "type": "CUtlVector<int32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioProbeData": {
         "fields": {
-          "m_pProbeBatch": {
+          "": {
             "offset": 0,
-            "type": "IPLProbeBatch"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioProbeGrid": {
         "fields": {
-          "m_aabb": {
+          "": {
             "offset": 0,
-            "type": "AABB_t"
-          },
-          "m_flSpacing": {
-            "offset": 24,
-            "type": "float32"
-          },
-          "m_nx": {
-            "offset": 28,
-            "type": "int32"
-          },
-          "m_ny": {
-            "offset": 32,
-            "type": "int32"
-          },
-          "m_nz": {
-            "offset": 36,
-            "type": "int32"
-          },
-          "m_vecLineSegments": {
-            "offset": 40,
-            "type": "CUtlVector<CSteamAudioProbeLineSegment>"
-          },
-          "m_vecProbes": {
-            "offset": 64,
-            "type": "CUtlVector<Vector>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CSteamAudioProbeLineSegment": {
         "fields": {
-          "m_vEnd": {
-            "offset": 12,
-            "type": "Vector"
-          },
-          "m_vStart": {
+          "": {
             "offset": 0,
-            "type": "Vector"
-          },
-          "m_vecIntervals": {
-            "offset": 24,
-            "type": "CUtlVector<float32>"
-          },
-          "m_vecProbeIndices": {
-            "offset": 48,
-            "type": "CUtlVector<int32>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
+        "metadata": [],
+        "parent": null
+      },
+      "CSteamAudioSceneData": {
+        "fields": {
+          "": {
+            "offset": 0,
+            "type": ""
           }
-        ],
+        },
+        "metadata": [],
         "parent": null
       },
       "SteamAudioCustomDataDimensionsSettings_t": {
         "fields": {
-          "m_flInsideThreshold": {
-            "offset": 16,
-            "type": "float32"
-          },
-          "m_flOutsideThreshold": {
-            "offset": 8,
-            "type": "float32"
-          },
-          "m_flSizeThreshold": {
-            "offset": 12,
-            "type": "float32"
-          },
-          "m_nAmbisonicsOrderInsideSizeField": {
-            "offset": 4,
-            "type": "int32"
-          },
-          "m_nAmbisonicsOrderOutsideField": {
+          "": {
             "offset": 0,
-            "type": "int32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "SteamAudioCustomDataOcclusionSettings_t": {
         "fields": {
-          "m_bEnablePathing": {
+          "": {
             "offset": 0,
-            "type": "bool"
-          },
-          "m_bEnableReflections": {
-            "offset": 1,
-            "type": "bool"
-          },
-          "m_nReflectionBounces": {
-            "offset": 8,
-            "type": "int32"
-          },
-          "m_nReflectionRays": {
-            "offset": 4,
-            "type": "int32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "SteamAudioPathSettings_t": {
         "fields": {
-          "m_flProbePathRange": {
-            "offset": 12,
-            "type": "float32"
-          },
-          "m_flProbeVisRadius": {
-            "offset": 4,
-            "type": "float32"
-          },
-          "m_flProbeVisThreshold": {
-            "offset": 8,
-            "type": "float32"
-          },
-          "m_nNumVisSamples": {
+          "": {
             "offset": 0,
-            "type": "int32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "SteamAudioReverbClusteringSettings_t": {
         "fields": {
-          "m_bEnableClustering": {
+          "": {
             "offset": 0,
-            "type": "bool"
-          },
-          "m_flDepthThreshold": {
-            "offset": 8,
-            "type": "float32"
-          },
-          "m_nCubeMapResolution": {
-            "offset": 4,
-            "type": "int32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "SteamAudioReverbCompressionSettings_t": {
         "fields": {
-          "m_bEnableCompression": {
+          "": {
             "offset": 0,
-            "type": "bool"
-          },
-          "m_flQuality": {
-            "offset": 4,
-            "type": "float32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "SteamAudioReverbSettings_t": {
         "fields": {
-          "m_flIRDuration": {
-            "offset": 8,
-            "type": "float32"
-          },
-          "m_nAmbisonicsOrder": {
-            "offset": 12,
-            "type": "int32"
-          },
-          "m_nNumBounces": {
-            "offset": 4,
-            "type": "int32"
-          },
-          "m_nNumRays": {
+          "": {
             "offset": 0,
-            "type": "int32"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       }
     },

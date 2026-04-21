@@ -2,713 +2,323 @@
   "resourcesystem.dll": {
     "classes": {
       "AABB_t": {
-        "fields": {
-          "m_vMaxBounds": {
-            "offset": 12,
-            "type": "Vector"
-          },
-          "m_vMinBounds": {
-            "offset": 0,
-            "type": "Vector"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
       "CFuseProgram": {
         "fields": {
-          "m_nMaxTempVarsUsed": {
-            "offset": 72,
-            "type": "int32"
-          },
-          "m_programBuffer": {
+          "": {
             "offset": 0,
-            "type": "CUtlVector<uint8>"
-          },
-          "m_variablesRead": {
-            "offset": 24,
-            "type": "CUtlVector<FuseVariableIndex_t>"
-          },
-          "m_variablesWritten": {
-            "offset": 48,
-            "type": "CUtlVector<FuseVariableIndex_t>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CFuseSymbolTable": {
         "fields": {
-          "m_constantMap": {
-            "offset": 72,
-            "type": "CUtlHashtable<CUtlStringToken,int32>"
-          },
-          "m_constants": {
+          "": {
             "offset": 0,
-            "type": "CUtlVector<ConstantInfo_t>"
-          },
-          "m_functionMap": {
-            "offset": 136,
-            "type": "CUtlHashtable<CUtlStringToken,int32>"
-          },
-          "m_functions": {
-            "offset": 48,
-            "type": "CUtlVector<FunctionInfo_t>"
-          },
-          "m_variableMap": {
-            "offset": 104,
-            "type": "CUtlHashtable<CUtlStringToken,int32>"
-          },
-          "m_variables": {
-            "offset": 24,
-            "type": "CUtlVector<VariableInfo_t>"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "ConstantInfo_t": {
         "fields": {
-          "m_flValue": {
-            "offset": 12,
-            "type": "float32"
-          },
-          "m_name": {
+          "": {
             "offset": 0,
-            "type": "CUtlString"
-          },
-          "m_nameToken": {
-            "offset": 8,
-            "type": "CUtlStringToken"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "FourQuaternions": {
-        "fields": {
-          "w": {
-            "offset": 48,
-            "type": "fltx4"
-          },
-          "x": {
-            "offset": 0,
-            "type": "fltx4"
-          },
-          "y": {
-            "offset": 16,
-            "type": "fltx4"
-          },
-          "z": {
-            "offset": 32,
-            "type": "fltx4"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
       "FunctionInfo_t": {
         "fields": {
-          "m_bIsPure": {
-            "offset": 26,
-            "type": "bool"
-          },
-          "m_nIndex": {
-            "offset": 24,
-            "type": "FuseFunctionIndex_t"
-          },
-          "m_nParamCount": {
-            "offset": 20,
-            "type": "int32"
-          },
-          "m_name": {
-            "offset": 8,
-            "type": "CUtlString"
-          },
-          "m_nameToken": {
-            "offset": 16,
-            "type": "CUtlStringToken"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "FuseFunctionIndex_t": {
-        "fields": {
-          "m_Value": {
+          "": {
             "offset": 0,
-            "type": "uint16"
+            "type": ""
           }
         },
         "metadata": [],
         "parent": null
       },
+      "FuseFunctionIndex_t": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "FuseVariableIndex_t": {
-        "fields": {
-          "m_Value": {
-            "offset": 0,
-            "type": "uint16"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCAnimData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCAnimationGroup": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCCSGOEconItem": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCChoreoSceneResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCCompositeMaterialKit": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCDOTANovelsList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCDOTAPatchNotesList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCDotaItemDefinitionResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCEntityLump": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCGcExportableExternalData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCJavaScriptResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCModel": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCMorphSetData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCNmClip": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCNmGraphDefinition": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "InfoForResourceTypeCNmIKRig": {
-        "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCNmSkeleton": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCPanoramaDynamicImages": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCPanoramaLayout": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCPanoramaStyle": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCPhysAggregateData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCPostProcessingResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCRenderMesh": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCResponseRulesList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCSequenceGroupData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCSmartProp": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCSurfaceGraph": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCTestResourceData": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCTextureBase": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCTypeScriptResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
+        "parent": null
+      },
+      "InfoForResourceTypeCVDataItemDefs": {
+        "fields": {},
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVDataResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVMixListResource": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVPhysXSurfacePropertiesList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVSoundEventScriptList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVSoundStackScriptList": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVoiceContainerBase": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCVoxelVisibility": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeCWorldNode": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIAnimGraphModelBinding": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIMaterial2": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIParticleSnapshot": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIParticleSystemDefinition": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIPulseGraphDef": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeIVectorGraphic": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeManifestTestResource_t": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeProceduralTestResource_t": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "InfoForResourceTypeWorld_t": {
         "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "ManifestTestResource_t": {
         "fields": {
-          "m_child": {
-            "offset": 8,
-            "type": "CStrongHandle<InfoForResourceTypeManifestTestResource_t>"
-          },
-          "m_name": {
+          "": {
             "offset": 0,
-            "type": "CUtlString"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "PackedAABB_t": {
-        "fields": {
-          "m_nPackedMax": {
-            "offset": 4,
-            "type": "uint32"
-          },
-          "m_nPackedMin": {
-            "offset": 0,
-            "type": "uint32"
+            "type": ""
           }
         },
         "metadata": [],
         "parent": null
       },
+      "PackedAABB_t": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "VariableInfo_t": {
         "fields": {
-          "m_eAccess": {
-            "offset": 16,
-            "type": "FuseVariableAccess_t"
-          },
-          "m_eVarType": {
-            "offset": 15,
-            "type": "FuseVariableType_t"
-          },
-          "m_nIndex": {
-            "offset": 12,
-            "type": "FuseVariableIndex_t"
-          },
-          "m_nNumComponents": {
-            "offset": 14,
-            "type": "uint8"
-          },
-          "m_name": {
+          "": {
             "offset": 0,
-            "type": "CUtlString"
-          },
-          "m_nameToken": {
-            "offset": 8,
-            "type": "CUtlStringToken"
+            "type": ""
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       }
     },

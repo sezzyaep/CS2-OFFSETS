@@ -47,14 +47,6 @@
             <tr><td>READ_ONLY</td><td class="value">1</td></tr>
         </tbody>
     </table>
-    <h3>Class: InfoForResourceTypeCNmIKRig</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: InfoForResourceTypeCResponseRulesList</h3>
     <table>
         <thead>
@@ -93,8 +85,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_nPackedMin</td><td class="type">uint32</td><td class="value">0x0</td></tr>
-            <tr><td>m_nPackedMax</td><td class="type">uint32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCVPhysXSurfacePropertiesList</h3>
@@ -119,9 +109,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
-            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x8</td></tr>
-            <tr><td>m_flValue</td><td class="type">float32</td><td class="value">0xC</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: FuseFunctionIndex_t</h3>
@@ -130,7 +118,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Value</td><td class="type">uint16</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCGcExportableExternalData</h3>
@@ -163,12 +150,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_constants</td><td class="type">CUtlVector<ConstantInfo_t></td><td class="value">0x0</td></tr>
-            <tr><td>m_variables</td><td class="type">CUtlVector<VariableInfo_t></td><td class="value">0x18</td></tr>
-            <tr><td>m_functions</td><td class="type">CUtlVector<FunctionInfo_t></td><td class="value">0x30</td></tr>
-            <tr><td>m_constantMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x48</td></tr>
-            <tr><td>m_variableMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x68</td></tr>
-            <tr><td>m_functionMap</td><td class="type">CUtlHashtable<CUtlStringToken,int32></td><td class="value">0x88</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCRenderMesh</h3>
@@ -225,8 +207,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0x0</td></tr>
-            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCPostProcessingResource</h3>
@@ -243,12 +223,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
-            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x8</td></tr>
-            <tr><td>m_nIndex</td><td class="type">FuseVariableIndex_t</td><td class="value">0xC</td></tr>
-            <tr><td>m_nNumComponents</td><td class="type">uint8</td><td class="value">0xE</td></tr>
-            <tr><td>m_eVarType</td><td class="type">FuseVariableType_t</td><td class="value">0xF</td></tr>
-            <tr><td>m_eAccess</td><td class="type">FuseVariableAccess_t</td><td class="value">0x10</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeIParticleSnapshot</h3>
@@ -265,10 +240,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>x</td><td class="type">fltx4</td><td class="value">0x0</td></tr>
-            <tr><td>y</td><td class="type">fltx4</td><td class="value">0x10</td></tr>
-            <tr><td>z</td><td class="type">fltx4</td><td class="value">0x20</td></tr>
-            <tr><td>w</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCPanoramaLayout</h3>
@@ -389,10 +360,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_programBuffer</td><td class="type">CUtlVector<uint8></td><td class="value">0x0</td></tr>
-            <tr><td>m_variablesRead</td><td class="type">CUtlVector<FuseVariableIndex_t></td><td class="value">0x18</td></tr>
-            <tr><td>m_variablesWritten</td><td class="type">CUtlVector<FuseVariableIndex_t></td><td class="value">0x30</td></tr>
-            <tr><td>m_nMaxTempVarsUsed</td><td class="type">int32</td><td class="value">0x48</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCCompositeMaterialKit</h3>
@@ -451,17 +419,21 @@
         <tbody>
         </tbody>
     </table>
+    <h3>Class: InfoForResourceTypeCVDataItemDefs</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <h3>Class: FunctionInfo_t</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x8</td></tr>
-            <tr><td>m_nameToken</td><td class="type">CUtlStringToken</td><td class="value">0x10</td></tr>
-            <tr><td>m_nParamCount</td><td class="type">int32</td><td class="value">0x14</td></tr>
-            <tr><td>m_nIndex</td><td class="type">FuseFunctionIndex_t</td><td class="value">0x18</td></tr>
-            <tr><td>m_bIsPure</td><td class="type">bool</td><td class="value">0x1A</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCVDataResource</h3>
@@ -502,7 +474,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Value</td><td class="type">uint16</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeIParticleSystemDefinition</h3>
@@ -527,8 +498,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_name</td><td class="type">CUtlString</td><td class="value">0x0</td></tr>
-            <tr><td>m_child</td><td class="type">CStrongHandle<InfoForResourceTypeManifestTestResource_t></td><td class="value">0x8</td></tr>
+            <tr><td></td><td class="type"></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: InfoForResourceTypeCEntityLump</h3>
