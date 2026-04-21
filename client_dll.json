@@ -1616,6 +1616,36 @@
         "metadata": [],
         "parent": "CPlayerPawnComponent"
       },
+      "CCSPlayer_AimPunchServices": {
+        "fields": {
+          "m_predictableBaseAngle": {
+            "offset": 80,
+            "type": "QAngle"
+          },
+          "m_predictableBaseAngleVel": {
+            "offset": 92,
+            "type": "QAngle"
+          },
+          "m_predictableBaseTick": {
+            "offset": 72,
+            "type": "GameTick_t"
+          },
+          "m_predictableBaseTickInterpAmount": {
+            "offset": 76,
+            "type": "float32"
+          },
+          "m_unpredictableBaseAngle": {
+            "offset": 164,
+            "type": "QAngle"
+          },
+          "m_unpredictableBaseTick": {
+            "offset": 160,
+            "type": "GameTick_t"
+          }
+        },
+        "metadata": [],
+        "parent": "CPlayerPawnComponent"
+      },
       "CCSPlayer_BulletServices": {
         "fields": {
           "m_totalHitsOnServer": {
@@ -1976,7 +2006,7 @@
             "type": "CSWeaponType"
           },
           "m_bAllowBurstHolster": {
-            "offset": 2000,
+            "offset": 2008,
             "type": "bool"
           },
           "m_bCannotShootUnderwater": {
@@ -1988,7 +2018,7 @@
             "type": "bool"
           },
           "m_bHideViewModelWhenZoomed": {
-            "offset": 2033,
+            "offset": 2041,
             "type": "bool"
           },
           "m_bIsFullAuto": {
@@ -2008,7 +2038,7 @@
             "type": "bool"
           },
           "m_bUnzoomsAfterShot": {
-            "offset": 2032,
+            "offset": 2040,
             "type": "bool"
           },
           "m_eSilencerType": {
@@ -2016,175 +2046,183 @@
             "type": "CSWeaponSilencerType"
           },
           "m_flArmorRatio": {
-            "offset": 2088,
+            "offset": 2096,
             "type": "float32"
           },
           "m_flAttackMovespeedFactor": {
-            "offset": 2012,
+            "offset": 2020,
             "type": "float32"
           },
           "m_flCycleTime": {
             "offset": 1856,
             "type": "CFiringModeFloat"
           },
+          "m_flCycleTimeWhenInBurstMode": {
+            "offset": 1864,
+            "type": "float32"
+          },
           "m_flDeployDuration": {
-            "offset": 1988,
+            "offset": 1996,
             "type": "float32"
           },
           "m_flDisallowAttackAfterReloadStartDuration": {
-            "offset": 1992,
+            "offset": 2000,
             "type": "float32"
           },
           "m_flFlinchVelocityModifierLarge": {
-            "offset": 2104,
-            "type": "float32"
-          },
-          "m_flFlinchVelocityModifierSmall": {
-            "offset": 2108,
-            "type": "float32"
-          },
-          "m_flHeadshotMultiplier": {
-            "offset": 2084,
-            "type": "float32"
-          },
-          "m_flInaccuracyAltSoundThreshold": {
-            "offset": 2020,
-            "type": "float32"
-          },
-          "m_flInaccuracyCrouch": {
-            "offset": 1880,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyFire": {
-            "offset": 1920,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyJump": {
-            "offset": 1896,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyJumpApex": {
-            "offset": 1980,
-            "type": "float32"
-          },
-          "m_flInaccuracyJumpInitial": {
-            "offset": 1976,
-            "type": "float32"
-          },
-          "m_flInaccuracyLadder": {
-            "offset": 1912,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyLand": {
-            "offset": 1904,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyMove": {
-            "offset": 1928,
-            "type": "CFiringModeFloat"
-          },
-          "m_flInaccuracyPitchShift": {
-            "offset": 2016,
-            "type": "float32"
-          },
-          "m_flInaccuracyReload": {
-            "offset": 1984,
-            "type": "float32"
-          },
-          "m_flInaccuracyStand": {
-            "offset": 1888,
-            "type": "CFiringModeFloat"
-          },
-          "m_flIronSightFOV": {
-            "offset": 2068,
-            "type": "float32"
-          },
-          "m_flIronSightLooseness": {
-            "offset": 2076,
-            "type": "float32"
-          },
-          "m_flIronSightPivotForward": {
-            "offset": 2072,
-            "type": "float32"
-          },
-          "m_flIronSightPullUpSpeed": {
-            "offset": 2060,
-            "type": "float32"
-          },
-          "m_flIronSightPutDownSpeed": {
-            "offset": 2064,
-            "type": "float32"
-          },
-          "m_flMaxSpeed": {
-            "offset": 1864,
-            "type": "CFiringModeFloat"
-          },
-          "m_flPenetration": {
-            "offset": 2092,
-            "type": "float32"
-          },
-          "m_flRange": {
-            "offset": 2096,
-            "type": "float32"
-          },
-          "m_flRangeModifier": {
-            "offset": 2100,
-            "type": "float32"
-          },
-          "m_flRecoilAngle": {
-            "offset": 1936,
-            "type": "CFiringModeFloat"
-          },
-          "m_flRecoilAngleVariance": {
-            "offset": 1944,
-            "type": "CFiringModeFloat"
-          },
-          "m_flRecoilMagnitude": {
-            "offset": 1952,
-            "type": "CFiringModeFloat"
-          },
-          "m_flRecoilMagnitudeVariance": {
-            "offset": 1960,
-            "type": "CFiringModeFloat"
-          },
-          "m_flRecoveryTimeCrouch": {
             "offset": 2112,
             "type": "float32"
           },
-          "m_flRecoveryTimeCrouchFinal": {
-            "offset": 2120,
-            "type": "float32"
-          },
-          "m_flRecoveryTimeStand": {
+          "m_flFlinchVelocityModifierSmall": {
             "offset": 2116,
             "type": "float32"
           },
-          "m_flRecoveryTimeStandFinal": {
-            "offset": 2124,
+          "m_flHeadshotMultiplier": {
+            "offset": 2092,
             "type": "float32"
           },
-          "m_flSpread": {
+          "m_flInaccuracyAltSoundThreshold": {
+            "offset": 2028,
+            "type": "float32"
+          },
+          "m_flInaccuracyCrouch": {
+            "offset": 1888,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyFire": {
+            "offset": 1928,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyJump": {
+            "offset": 1904,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyJumpApex": {
+            "offset": 1988,
+            "type": "float32"
+          },
+          "m_flInaccuracyJumpInitial": {
+            "offset": 1984,
+            "type": "float32"
+          },
+          "m_flInaccuracyLadder": {
+            "offset": 1920,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyLand": {
+            "offset": 1912,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyMove": {
+            "offset": 1936,
+            "type": "CFiringModeFloat"
+          },
+          "m_flInaccuracyPitchShift": {
+            "offset": 2024,
+            "type": "float32"
+          },
+          "m_flInaccuracyReload": {
+            "offset": 1992,
+            "type": "float32"
+          },
+          "m_flInaccuracyStand": {
+            "offset": 1896,
+            "type": "CFiringModeFloat"
+          },
+          "m_flIronSightFOV": {
+            "offset": 2076,
+            "type": "float32"
+          },
+          "m_flIronSightLooseness": {
+            "offset": 2084,
+            "type": "float32"
+          },
+          "m_flIronSightPivotForward": {
+            "offset": 2080,
+            "type": "float32"
+          },
+          "m_flIronSightPullUpSpeed": {
+            "offset": 2068,
+            "type": "float32"
+          },
+          "m_flIronSightPutDownSpeed": {
+            "offset": 2072,
+            "type": "float32"
+          },
+          "m_flMaxSpeed": {
             "offset": 1872,
             "type": "CFiringModeFloat"
           },
+          "m_flPenetration": {
+            "offset": 2100,
+            "type": "float32"
+          },
+          "m_flRange": {
+            "offset": 2104,
+            "type": "float32"
+          },
+          "m_flRangeModifier": {
+            "offset": 2108,
+            "type": "float32"
+          },
+          "m_flRecoilAngle": {
+            "offset": 1944,
+            "type": "CFiringModeFloat"
+          },
+          "m_flRecoilAngleVariance": {
+            "offset": 1952,
+            "type": "CFiringModeFloat"
+          },
+          "m_flRecoilMagnitude": {
+            "offset": 1960,
+            "type": "CFiringModeFloat"
+          },
+          "m_flRecoilMagnitudeVariance": {
+            "offset": 1968,
+            "type": "CFiringModeFloat"
+          },
+          "m_flRecoveryTimeCrouch": {
+            "offset": 2120,
+            "type": "float32"
+          },
+          "m_flRecoveryTimeCrouchFinal": {
+            "offset": 2128,
+            "type": "float32"
+          },
+          "m_flRecoveryTimeStand": {
+            "offset": 2124,
+            "type": "float32"
+          },
+          "m_flRecoveryTimeStandFinal": {
+            "offset": 2132,
+            "type": "float32"
+          },
+          "m_flSpread": {
+            "offset": 1880,
+            "type": "CFiringModeFloat"
+          },
           "m_flThrowVelocity": {
-            "offset": 2136,
+            "offset": 2144,
+            "type": "float32"
+          },
+          "m_flTimeBetweenBurstShots": {
+            "offset": 1868,
             "type": "float32"
           },
           "m_flZoomTime0": {
-            "offset": 2048,
-            "type": "float32"
-          },
-          "m_flZoomTime1": {
-            "offset": 2052,
-            "type": "float32"
-          },
-          "m_flZoomTime2": {
             "offset": 2056,
             "type": "float32"
           },
+          "m_flZoomTime1": {
+            "offset": 2060,
+            "type": "float32"
+          },
+          "m_flZoomTime2": {
+            "offset": 2064,
+            "type": "float32"
+          },
           "m_nBurstShotCount": {
-            "offset": 1996,
+            "offset": 2004,
             "type": "int32"
           },
           "m_nCrosshairDeltaDistance": {
@@ -2196,7 +2234,7 @@
             "type": "int32"
           },
           "m_nDamage": {
-            "offset": 2080,
+            "offset": 2088,
             "type": "int32"
           },
           "m_nKillAward": {
@@ -2216,15 +2254,15 @@
             "type": "int32"
           },
           "m_nRecoilSeed": {
-            "offset": 2004,
+            "offset": 2012,
             "type": "int32"
           },
           "m_nRecoveryTransitionEndBullet": {
-            "offset": 2132,
+            "offset": 2140,
             "type": "int32"
           },
           "m_nRecoveryTransitionStartBullet": {
-            "offset": 2128,
+            "offset": 2136,
             "type": "int32"
           },
           "m_nSecondaryReserveAmmoMax": {
@@ -2232,27 +2270,27 @@
             "type": "int32"
           },
           "m_nSpreadSeed": {
-            "offset": 2008,
+            "offset": 2016,
             "type": "int32"
           },
           "m_nTracerFrequency": {
-            "offset": 1968,
+            "offset": 1976,
             "type": "CFiringModeInt"
           },
           "m_nZoomFOV1": {
-            "offset": 2040,
+            "offset": 2048,
             "type": "int32"
           },
           "m_nZoomFOV2": {
-            "offset": 2044,
+            "offset": 2052,
             "type": "int32"
           },
           "m_nZoomLevels": {
-            "offset": 2036,
+            "offset": 2044,
             "type": "int32"
           },
           "m_szAnimClass": {
-            "offset": 2152,
+            "offset": 2160,
             "type": "CGlobalSymbol"
           },
           "m_szAnimSkeleton": {
@@ -2268,11 +2306,11 @@
             "type": "CResourceNameTyped<CWeakHandle<InfoForResourceTypeIParticleSystemDefinition>>"
           },
           "m_szUseRadioSubtitle": {
-            "offset": 2024,
+            "offset": 2032,
             "type": "CUtlString"
           },
           "m_vSmokeColor": {
-            "offset": 2140,
+            "offset": 2148,
             "type": "Vector"
           },
           "m_vecMuzzlePos0": {
@@ -8377,11 +8415,11 @@
       "C_CSGO_PreviewPlayer": {
         "fields": {
           "m_animgraphCharacterModeString": {
-            "offset": 13408,
+            "offset": 13344,
             "type": "CGlobalSymbol"
           },
           "m_flInitialModelScale": {
-            "offset": 13416,
+            "offset": 13352,
             "type": "float32"
           }
         },
@@ -8922,348 +8960,336 @@
       "C_CSPlayerPawn": {
         "fields": {
           "m_ArmorValue": {
-            "offset": 7348,
+            "offset": 7284,
             "type": "int32"
           },
           "m_EconGloves": {
-            "offset": 5784,
+            "offset": 5720,
             "type": "C_EconItemView"
           },
           "m_GunGameImmunityColor": {
-            "offset": 7168,
+            "offset": 7104,
             "type": "Color"
           },
           "m_RetakesMVPBoostExtraUtility": {
-            "offset": 5776,
+            "offset": 5712,
             "type": "loadout_slot_t"
           },
-          "m_aimPunchAngle": {
-            "offset": 5332,
-            "type": "QAngle"
-          },
-          "m_aimPunchAngleVel": {
-            "offset": 5344,
-            "type": "QAngle"
-          },
-          "m_aimPunchTickBase": {
-            "offset": 5356,
-            "type": "GameTick_t"
-          },
-          "m_aimPunchTickFraction": {
-            "offset": 5360,
-            "type": "float32"
-          },
           "m_angEyeAngles": {
-            "offset": 13120,
+            "offset": 13056,
             "type": "QAngle"
           },
           "m_angEyeAnglesVelocity": {
-            "offset": 13328,
+            "offset": 13264,
             "type": "QAngle"
           },
           "m_angShootAngleHistory": {
-            "offset": 7476,
+            "offset": 7412,
             "type": "QAngle[2]"
           },
           "m_angStashedShootAngles": {
-            "offset": 7440,
+            "offset": 7376,
             "type": "QAngle"
           },
           "m_arrOldEyeAngles": {
-            "offset": 13280,
+            "offset": 13216,
             "type": "QAngle[4]"
           },
           "m_arrOldEyeAnglesTimes": {
-            "offset": 13264,
+            "offset": 13200,
             "type": "GameTime_t[4]"
           },
           "m_bGrenadeParametersStashed": {
-            "offset": 7436,
+            "offset": 7372,
             "type": "bool"
           },
           "m_bGunGameImmunity": {
-            "offset": 12984,
+            "offset": 12920,
             "type": "bool"
           },
           "m_bHasDeathInfo": {
-            "offset": 7365,
+            "offset": 7301,
             "type": "bool"
           },
           "m_bHasFemaleVoice": {
-            "offset": 5280,
+            "offset": 5288,
             "type": "bool"
           },
           "m_bInBombZone": {
-            "offset": 5409,
+            "offset": 5345,
             "type": "bool"
           },
           "m_bInBuyZone": {
-            "offset": 5328,
+            "offset": 5336,
             "type": "bool"
           },
           "m_bInHostageRescueZone": {
-            "offset": 5408,
+            "offset": 5344,
             "type": "bool"
           },
           "m_bInLanding": {
-            "offset": 5400,
+            "offset": 5338,
             "type": "bool"
           },
           "m_bInNoDefuseArea": {
-            "offset": 7316,
+            "offset": 7252,
             "type": "bool"
           },
           "m_bIsBuyMenuOpen": {
-            "offset": 5410,
+            "offset": 5346,
             "type": "bool"
           },
           "m_bIsDefusing": {
-            "offset": 7306,
+            "offset": 7242,
             "type": "bool"
           },
           "m_bIsGrabbingHostage": {
-            "offset": 7307,
+            "offset": 7243,
             "type": "bool"
           },
           "m_bIsScoped": {
-            "offset": 7304,
+            "offset": 7240,
             "type": "bool"
           },
           "m_bIsWalking": {
-            "offset": 7272,
+            "offset": 7208,
             "type": "bool"
           },
           "m_bKilledByHeadshot": {
-            "offset": 7345,
+            "offset": 7281,
             "type": "bool"
           },
           "m_bLeftHanded": {
-            "offset": 7080,
-            "type": "bool"
-          },
-          "m_bMustSyncRagdollState": {
-            "offset": 6921,
-            "type": "bool"
-          },
-          "m_bNeedToReApplyGloves": {
-            "offset": 5781,
-            "type": "bool"
-          },
-          "m_bOldIsScoped": {
-            "offset": 7364,
-            "type": "bool"
-          },
-          "m_bOnGroundLastTick": {
-            "offset": 7036,
-            "type": "bool"
-          },
-          "m_bPrevDefuser": {
-            "offset": 5310,
-            "type": "bool"
-          },
-          "m_bPrevHelmet": {
-            "offset": 5311,
-            "type": "bool"
-          },
-          "m_bPreviouslyInBuyZone": {
-            "offset": 5329,
-            "type": "bool"
-          },
-          "m_bRagdollDamageHeadshot": {
             "offset": 7016,
             "type": "bool"
           },
+          "m_bMustSyncRagdollState": {
+            "offset": 6857,
+            "type": "bool"
+          },
+          "m_bNeedToReApplyGloves": {
+            "offset": 5717,
+            "type": "bool"
+          },
+          "m_bOldIsScoped": {
+            "offset": 7300,
+            "type": "bool"
+          },
+          "m_bOnGroundLastTick": {
+            "offset": 6972,
+            "type": "bool"
+          },
+          "m_bPrevDefuser": {
+            "offset": 5318,
+            "type": "bool"
+          },
+          "m_bPrevHelmet": {
+            "offset": 5319,
+            "type": "bool"
+          },
+          "m_bPreviouslyInBuyZone": {
+            "offset": 5337,
+            "type": "bool"
+          },
+          "m_bRagdollDamageHeadshot": {
+            "offset": 6952,
+            "type": "bool"
+          },
           "m_bResumeZoom": {
-            "offset": 7305,
+            "offset": 7241,
             "type": "bool"
           },
           "m_bRetakesHasDefuseKit": {
-            "offset": 5768,
+            "offset": 5704,
             "type": "bool"
           },
           "m_bRetakesMVPLastRound": {
-            "offset": 5769,
+            "offset": 5705,
             "type": "bool"
           },
           "m_bShouldAutobuyDMWeapons": {
-            "offset": 12976,
+            "offset": 12912,
             "type": "bool"
           },
           "m_bThirdpersonActiveWeaponCanSafelyOcclude": {
-            "offset": 13000,
+            "offset": 12936,
             "type": "bool"
           },
           "m_bWaitForNoAttack": {
-            "offset": 7336,
+            "offset": 7272,
             "type": "bool"
           },
           "m_delayTargetIDTimer": {
-            "offset": 13344,
+            "offset": 13280,
             "type": "CountdownTimer"
           },
           "m_entitySpottedState": {
-            "offset": 7280,
+            "offset": 7216,
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
-            "offset": 12980,
+            "offset": 12916,
             "type": "GameTime_t"
           },
           "m_fImmuneToGunGameDamageTimeLast": {
-            "offset": 12988,
+            "offset": 12924,
             "type": "GameTime_t"
           },
           "m_fMolotovDamageTime": {
-            "offset": 12992,
+            "offset": 12928,
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
-            "offset": 7084,
+            "offset": 7020,
             "type": "GameTime_t"
           },
           "m_flDeathInfoTime": {
-            "offset": 7368,
+            "offset": 7304,
             "type": "float32"
           },
           "m_flEmitSoundTime": {
-            "offset": 7312,
+            "offset": 7248,
             "type": "GameTime_t"
           },
           "m_flFlinchStack": {
-            "offset": 7328,
+            "offset": 7264,
             "type": "float32"
           },
           "m_flHealthShotBoostExpirationTime": {
-            "offset": 5272,
+            "offset": 5280,
             "type": "GameTime_t"
           },
           "m_flLandingStartTime": {
-            "offset": 5404,
+            "offset": 5340,
             "type": "float32"
           },
           "m_flLandingTimeSeconds": {
-            "offset": 5284,
+            "offset": 5292,
             "type": "float32"
           },
           "m_flLastFiredWeaponTime": {
-            "offset": 5276,
+            "offset": 5284,
             "type": "GameTime_t"
           },
           "m_flNextSprayDecalTime": {
-            "offset": 5416,
+            "offset": 5352,
             "type": "GameTime_t"
           },
           "m_flOldFallVelocity": {
-            "offset": 5288,
+            "offset": 5296,
             "type": "float32"
           },
           "m_flTimeOfLastInjury": {
-            "offset": 5412,
+            "offset": 5348,
             "type": "GameTime_t"
           },
           "m_flVelocityModifier": {
-            "offset": 7332,
+            "offset": 7268,
             "type": "float32"
           },
           "m_flViewmodelFOV": {
-            "offset": 7100,
+            "offset": 7036,
             "type": "float32"
           },
           "m_flViewmodelOffsetX": {
-            "offset": 7088,
+            "offset": 7024,
             "type": "float32"
           },
           "m_flViewmodelOffsetY": {
-            "offset": 7092,
+            "offset": 7028,
             "type": "float32"
           },
           "m_flViewmodelOffsetZ": {
-            "offset": 7096,
+            "offset": 7032,
             "type": "float32"
           },
           "m_grenadeParameterStashTime": {
-            "offset": 7432,
+            "offset": 7368,
             "type": "GameTime_t"
           },
           "m_hHudModelArms": {
-            "offset": 7064,
+            "offset": 7000,
             "type": "CHandle<C_CS2HudModelArms>"
           },
           "m_holdTargetIDTimer": {
-            "offset": 13376,
+            "offset": 13312,
             "type": "CountdownTimer"
           },
           "m_iBlockingUseActionInProgress": {
-            "offset": 7308,
+            "offset": 7244,
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iIDEntIndex": {
-            "offset": 13340,
+            "offset": 13276,
             "type": "CEntityIndex"
           },
           "m_iOldIDEntIndex": {
-            "offset": 13372,
+            "offset": 13308,
             "type": "CEntityIndex"
           },
           "m_iRetakesMVPBoostItem": {
-            "offset": 5772,
+            "offset": 5708,
             "type": "int32"
           },
           "m_iRetakesOffering": {
-            "offset": 5760,
+            "offset": 5696,
             "type": "int32"
           },
           "m_iRetakesOfferingCard": {
-            "offset": 5764,
+            "offset": 5700,
             "type": "int32"
           },
           "m_iShotsFired": {
-            "offset": 7324,
+            "offset": 7260,
             "type": "int32"
           },
           "m_iTargetItemEntIdx": {
-            "offset": 13368,
+            "offset": 13304,
             "type": "CEntityIndex"
           },
           "m_ignoreLadderJumpTime": {
-            "offset": 7340,
+            "offset": 7276,
             "type": "float32"
           },
           "m_lastLandTime": {
-            "offset": 7032,
+            "offset": 6968,
             "type": "GameTime_t"
           },
           "m_nEconGlovesChanged": {
-            "offset": 6920,
+            "offset": 6856,
             "type": "uint8"
           },
           "m_nLastKillerIndex": {
-            "offset": 7360,
+            "offset": 7296,
             "type": "CEntityIndex"
           },
           "m_nPlayerInfernoBodyFx": {
-            "offset": 13004,
+            "offset": 12940,
             "type": "ParticleIndex_t"
           },
           "m_nPrevArmorVal": {
-            "offset": 5312,
+            "offset": 5320,
             "type": "int32"
           },
           "m_nPrevGrenadeAmmoCount": {
-            "offset": 5316,
+            "offset": 5324,
             "type": "int32"
           },
           "m_nRagdollDamageBone": {
-            "offset": 6924,
+            "offset": 6860,
             "type": "int32"
           },
           "m_nWhichBombZone": {
-            "offset": 7320,
+            "offset": 7256,
             "type": "int32"
           },
           "m_pActionTrackingServices": {
             "offset": 5256,
             "type": "CCSPlayer_ActionTrackingServices*"
+          },
+          "m_pAimPunchServices": {
+            "offset": 5264,
+            "type": "CCSPlayer_AimPunchServices*"
           },
           "m_pBulletServices": {
             "offset": 5224,
@@ -9274,7 +9300,7 @@
             "type": "CCSPlayer_BuyServices*"
           },
           "m_pDamageReactServices": {
-            "offset": 5264,
+            "offset": 5272,
             "type": "CCSPlayer_DamageReactServices*"
           },
           "m_pGlowServices": {
@@ -9286,75 +9312,75 @@
             "type": "CCSPlayer_HostageServices*"
           },
           "m_qDeathEyeAngles": {
-            "offset": 7068,
+            "offset": 7004,
             "type": "QAngle"
           },
           "m_szLastPlaceName": {
-            "offset": 5292,
+            "offset": 5300,
             "type": "char[18]"
           },
           "m_szRagdollDamageWeaponName": {
-            "offset": 6952,
+            "offset": 6888,
             "type": "char[64]"
           },
           "m_unCurrentEquipmentValue": {
-            "offset": 7352,
+            "offset": 7288,
             "type": "uint16"
           },
           "m_unFreezetimeEndEquipmentValue": {
-            "offset": 7356,
+            "offset": 7292,
             "type": "uint16"
           },
           "m_unPreviousWeaponHash": {
-            "offset": 5320,
+            "offset": 5328,
             "type": "uint32"
           },
           "m_unRoundStartEquipmentValue": {
-            "offset": 7354,
+            "offset": 7290,
             "type": "uint16"
           },
           "m_unWeaponHash": {
-            "offset": 5324,
+            "offset": 5332,
             "type": "uint32"
           },
           "m_vRagdollDamageForce": {
-            "offset": 6928,
+            "offset": 6864,
             "type": "Vector"
           },
           "m_vRagdollDamagePosition": {
-            "offset": 6940,
+            "offset": 6876,
             "type": "Vector"
           },
           "m_vRagdollServerOrigin": {
-            "offset": 7020,
+            "offset": 6956,
             "type": "Vector"
           },
           "m_vecBulletHitModels": {
-            "offset": 7248,
+            "offset": 7184,
             "type": "CUtlVector<C_BulletHitModel*>"
           },
           "m_vecDeathInfoOrigin": {
-            "offset": 7372,
+            "offset": 7308,
             "type": "Vector"
           },
           "m_vecPlayerPatchEconIndices": {
-            "offset": 7104,
+            "offset": 7040,
             "type": "uint32[5]"
           },
           "m_vecStashedGrenadeThrowPosition": {
-            "offset": 7452,
+            "offset": 7388,
             "type": "Vector"
           },
           "m_vecStashedVelocity": {
-            "offset": 7464,
+            "offset": 7400,
             "type": "Vector"
           },
           "m_vecThrowPositionHistory": {
-            "offset": 7500,
+            "offset": 7436,
             "type": "Vector[2]"
           },
           "m_vecVelocityHistory": {
-            "offset": 7524,
+            "offset": 7460,
             "type": "Vector[2]"
           }
         },
