@@ -96,7 +96,7 @@
     "SerializedEntitiesVersion001": 2649920
   },
   "panorama.dll": {
-    "PanoramaUIEngine001": 5266736
+    "PanoramaUIEngine001": 5270832
   },
   "panorama_text_pango.dll": {
     "PanoramaTextServices001": 2853440
@@ -143,10 +143,10 @@
     "customnavsystem001": 28816936
   },
   "soundsystem.dll": {
-    "SoundOpSystem001": 5319088,
-    "SoundOpSystemEdit001": 5318768,
+    "SoundOpSystem001": 5319104,
+    "SoundOpSystemEdit001": 5318784,
     "SoundSystem001": 5317472,
-    "VMixEditTool001": 93620127
+    "VMixEditTool001": 93620159
   },
   "steamaudio.dll": {
     "SteamAudio001": 2483744
