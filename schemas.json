@@ -20932,15 +20932,11 @@
       "CCS2PawnGraphController": {
         "fields": {
           "m_airAction": {
-            "offset": 1080,
+            "offset": 1056,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_bIsDefusing": {
             "offset": 672,
-            "type": "CAnimGraph2ParamOptionalRef<bool>"
-          },
-          "m_bIsStutterStep": {
-            "offset": 888,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_bIsWalking": {
@@ -20948,15 +20944,15 @@
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flAimPitchAngle": {
-            "offset": 1200,
+            "offset": 1176,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flAimYawAngle": {
-            "offset": 1224,
+            "offset": 1200,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flAirHeightAboveGround": {
-            "offset": 1104,
+            "offset": 1080,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flCrouchAmount": {
@@ -20964,23 +20960,23 @@
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flFlashedAmount": {
-            "offset": 1176,
+            "offset": 1152,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flGroundTurnAngleOrVelocity": {
-            "offset": 984,
+            "offset": 960,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderCycle": {
-            "offset": 1008,
+            "offset": 984,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderYaw": {
-            "offset": 1032,
+            "offset": 1008,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderYawBackwards": {
-            "offset": 1056,
+            "offset": 1032,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flMoveSpeedHorizontal": {
@@ -21000,39 +20996,39 @@
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flWeaponDropAmount": {
-            "offset": 912,
+            "offset": 888,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flinchBody": {
-            "offset": 1296,
+            "offset": 1272,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_flinchBodyRestart": {
-            "offset": 1320,
+            "offset": 1296,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flinchHead": {
-            "offset": 1248,
+            "offset": 1224,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_flinchHeadRestart": {
-            "offset": 1272,
+            "offset": 1248,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flinchIsOnFire": {
-            "offset": 1344,
+            "offset": 1320,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_groundAction": {
-            "offset": 936,
+            "offset": 912,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_groundActionDirectionID": {
-            "offset": 960,
+            "offset": 936,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_leftFootTarget": {
-            "offset": 1128,
+            "offset": 1104,
             "type": "CAnimGraph2ParamOptionalRef<CNmTarget>"
           },
           "m_moveDirectionID": {
@@ -21044,7 +21040,7 @@
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_rightFootTarget": {
-            "offset": 1152,
+            "offset": 1128,
             "type": "CAnimGraph2ParamOptionalRef<CNmTarget>"
           }
         },
@@ -21915,199 +21911,199 @@
             "type": "CCSPlayerAnimationState"
           },
           "m_LegacyJump": {
-            "offset": 1680,
+            "offset": 1664,
             "type": "CCSPlayerLegacyJump"
           },
           "m_ModernJump": {
-            "offset": 1704,
+            "offset": 1688,
             "type": "CCSPlayerModernJump"
           },
           "m_StuckLast": {
-            "offset": 1572,
+            "offset": 1556,
             "type": "int32"
           },
           "m_bDesiresDuck": {
-            "offset": 1005,
+            "offset": 989,
             "type": "bool"
           },
           "m_bDuckOverride": {
-            "offset": 1004,
+            "offset": 988,
             "type": "bool"
           },
           "m_bDucked": {
-            "offset": 992,
+            "offset": 976,
             "type": "bool"
           },
           "m_bDucking": {
-            "offset": 1006,
+            "offset": 990,
             "type": "bool"
           },
           "m_bHasEverProcessedCommand": {
-            "offset": 4024,
+            "offset": 4008,
             "type": "bool"
           },
           "m_bHasWalkMovedSinceLastJump": {
-            "offset": 1041,
+            "offset": 1025,
             "type": "bool"
           },
           "m_bInStuckTest": {
-            "offset": 1042,
+            "offset": 1026,
             "type": "bool"
           },
           "m_bJumpApexPending": {
-            "offset": 1772,
+            "offset": 1756,
             "type": "bool"
           },
           "m_bSpeedCropped": {
-            "offset": 1576,
+            "offset": 1560,
             "type": "bool"
           },
           "m_bUseFrictionStashedSpeed": {
-            "offset": 1640,
+            "offset": 1624,
             "type": "bool"
           },
           "m_bWasSurfing": {
-            "offset": 1780,
+            "offset": 1764,
             "type": "bool"
           },
           "m_duckUntilOnGround": {
-            "offset": 1040,
+            "offset": 1024,
             "type": "bool"
           },
           "m_fStashGrenadeParameterWhen": {
-            "offset": 1628,
+            "offset": 1612,
             "type": "GameTime_t"
           },
           "m_flAccumulatedJumpError": {
-            "offset": 1676,
-            "type": "float32"
-          },
-          "m_flBombPlantViewOffset": {
-            "offset": 1020,
-            "type": "float32"
-          },
-          "m_flDuckAmount": {
-            "offset": 996,
-            "type": "float32"
-          },
-          "m_flDuckRootOffset": {
-            "offset": 1008,
-            "type": "float32"
-          },
-          "m_flDuckSpeed": {
-            "offset": 1000,
-            "type": "float32"
-          },
-          "m_flDuckViewOffset": {
-            "offset": 1012,
-            "type": "float32"
-          },
-          "m_flFrictionStashedSpeed": {
-            "offset": 1648,
-            "type": "float32"
-          },
-          "m_flHeightAtJumpStart": {
-            "offset": 1656,
-            "type": "float32"
-          },
-          "m_flLastDuckTime": {
-            "offset": 1016,
-            "type": "float32"
-          },
-          "m_flLastJumpFrac": {
-            "offset": 1764,
-            "type": "float32"
-          },
-          "m_flLastJumpVelocityZ": {
-            "offset": 1768,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightLastJump": {
-            "offset": 1664,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightThisJump": {
             "offset": 1660,
             "type": "float32"
           },
-          "m_flStamina": {
-            "offset": 1652,
+          "m_flBombPlantViewOffset": {
+            "offset": 1004,
             "type": "float32"
           },
-          "m_flStaminaAtJumpStart": {
-            "offset": 1668,
+          "m_flDuckAmount": {
+            "offset": 980,
             "type": "float32"
           },
-          "m_flTicksSinceLastSurfingDetected": {
-            "offset": 1776,
+          "m_flDuckRootOffset": {
+            "offset": 992,
             "type": "float32"
           },
-          "m_flUseFrictionStashedSpeedUntilFrac": {
+          "m_flDuckSpeed": {
+            "offset": 984,
+            "type": "float32"
+          },
+          "m_flDuckViewOffset": {
+            "offset": 996,
+            "type": "float32"
+          },
+          "m_flFrictionStashedSpeed": {
+            "offset": 1632,
+            "type": "float32"
+          },
+          "m_flHeightAtJumpStart": {
+            "offset": 1640,
+            "type": "float32"
+          },
+          "m_flLastDuckTime": {
+            "offset": 1000,
+            "type": "float32"
+          },
+          "m_flLastJumpFrac": {
+            "offset": 1748,
+            "type": "float32"
+          },
+          "m_flLastJumpVelocityZ": {
+            "offset": 1752,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightLastJump": {
+            "offset": 1648,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightThisJump": {
             "offset": 1644,
             "type": "float32"
           },
+          "m_flStamina": {
+            "offset": 1636,
+            "type": "float32"
+          },
+          "m_flStaminaAtJumpStart": {
+            "offset": 1652,
+            "type": "float32"
+          },
+          "m_flTicksSinceLastSurfingDetected": {
+            "offset": 1760,
+            "type": "float32"
+          },
+          "m_flUseFrictionStashedSpeedUntilFrac": {
+            "offset": 1628,
+            "type": "float32"
+          },
           "m_flVelMulAtJumpStart": {
-            "offset": 1672,
+            "offset": 1656,
             "type": "float32"
           },
           "m_flWaterEntryTime": {
-            "offset": 1584,
+            "offset": 1568,
             "type": "float32"
           },
           "m_gtLastTimeInAir": {
-            "offset": 4020,
+            "offset": 4004,
             "type": "GameTime_t"
           },
           "m_gtLastTimeOnStaticWorldGround": {
-            "offset": 4016,
+            "offset": 4000,
             "type": "GameTime_t"
           },
           "m_nButtonDownMaskPrev": {
-            "offset": 1632,
+            "offset": 1616,
             "type": "uint64"
           },
           "m_nGameCodeHasMovedPlayerAfterCommand": {
-            "offset": 1624,
+            "offset": 1608,
             "type": "int32"
           },
           "m_nLadderSurfacePropIndex": {
-            "offset": 988,
+            "offset": 972,
             "type": "int32"
           },
           "m_nLastJumpTick": {
-            "offset": 1760,
+            "offset": 1744,
             "type": "GameTick_t"
           },
           "m_nOldWaterLevel": {
-            "offset": 1580,
+            "offset": 1564,
             "type": "int32"
           },
           "m_nTraceCount": {
-            "offset": 1568,
+            "offset": 1552,
             "type": "int32"
           },
           "m_vecForward": {
-            "offset": 1588,
+            "offset": 1572,
             "type": "Vector"
           },
           "m_vecLadderNormal": {
-            "offset": 976,
+            "offset": 960,
             "type": "Vector"
           },
           "m_vecLastPositionAtFullCrouchSpeed": {
-            "offset": 1032,
+            "offset": 1016,
             "type": "Vector2D"
           },
           "m_vecLeft": {
-            "offset": 1600,
+            "offset": 1584,
             "type": "Vector"
           },
           "m_vecUp": {
-            "offset": 1612,
+            "offset": 1596,
             "type": "Vector"
           },
           "m_vecWalkWishVel": {
-            "offset": 1924,
+            "offset": 1908,
             "type": "Vector2D"
           }
         },
@@ -24397,6 +24393,10 @@
           },
           "m_bFadePlayerVisibilityFarZ": {
             "offset": 1560,
+            "type": "bool"
+          },
+          "m_bGPUCullSkybox": {
+            "offset": 1562,
             "type": "bool"
           },
           "m_bRainTraceToSkyEnabled": {
@@ -63773,15 +63773,11 @@
       "CCS2PawnGraphController": {
         "fields": {
           "m_airAction": {
-            "offset": 1824,
+            "offset": 1800,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_bIsDefusing": {
             "offset": 1416,
-            "type": "CAnimGraph2ParamOptionalRef<bool>"
-          },
-          "m_bIsStutterStep": {
-            "offset": 1632,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_bIsWalking": {
@@ -63789,15 +63785,15 @@
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flAimPitchAngle": {
-            "offset": 1944,
+            "offset": 1920,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flAimYawAngle": {
-            "offset": 1968,
+            "offset": 1944,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flAirHeightAboveGround": {
-            "offset": 1848,
+            "offset": 1824,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flCrouchAmount": {
@@ -63805,23 +63801,23 @@
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flFlashedAmount": {
-            "offset": 1920,
+            "offset": 1896,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flGroundTurnAngleOrVelocity": {
-            "offset": 1728,
+            "offset": 1704,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderCycle": {
-            "offset": 1752,
+            "offset": 1728,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderYaw": {
-            "offset": 1776,
+            "offset": 1752,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flLadderYawBackwards": {
-            "offset": 1800,
+            "offset": 1776,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flMoveSpeedHorizontal": {
@@ -63841,39 +63837,39 @@
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flWeaponDropAmount": {
-            "offset": 1656,
+            "offset": 1632,
             "type": "CAnimGraph2ParamOptionalRef<float32>"
           },
           "m_flinchBody": {
-            "offset": 2040,
+            "offset": 2016,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_flinchBodyRestart": {
-            "offset": 2064,
+            "offset": 2040,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flinchHead": {
-            "offset": 1992,
+            "offset": 1968,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_flinchHeadRestart": {
-            "offset": 2016,
+            "offset": 1992,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_flinchIsOnFire": {
-            "offset": 2088,
+            "offset": 2064,
             "type": "CAnimGraph2ParamOptionalRef<bool>"
           },
           "m_groundAction": {
-            "offset": 1680,
+            "offset": 1656,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_groundActionDirectionID": {
-            "offset": 1704,
+            "offset": 1680,
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_leftFootTarget": {
-            "offset": 1872,
+            "offset": 1848,
             "type": "CAnimGraph2ParamOptionalRef<CNmTarget>"
           },
           "m_moveDirectionID": {
@@ -63885,7 +63881,7 @@
             "type": "CAnimGraph2ParamOptionalRef<CGlobalSymbol>"
           },
           "m_rightFootTarget": {
-            "offset": 1896,
+            "offset": 1872,
             "type": "CAnimGraph2ParamOptionalRef<CNmTarget>"
           }
         },
@@ -65522,10 +65518,6 @@
             "offset": 27,
             "type": "CCSPlayerAnimationState::AirAction_t"
           },
-          "m_bIsStutterStep": {
-            "offset": 48,
-            "type": "bool"
-          },
           "m_bWasOnGroundLastUpdate": {
             "offset": 28,
             "type": "bool"
@@ -65539,31 +65531,31 @@
             "type": "CCSPlayerAnimationState::MoveType_t"
           },
           "m_flFootIKOffsetLeft": {
-            "offset": 64,
-            "type": "float32"
-          },
-          "m_flFootIKOffsetRight": {
-            "offset": 68,
-            "type": "float32"
-          },
-          "m_flPreviousAimYaw": {
             "offset": 56,
             "type": "float32"
           },
-          "m_flPreviousHorizontalSpeed": {
+          "m_flFootIKOffsetRight": {
             "offset": 60,
             "type": "float32"
           },
-          "m_flTurnOnSpotAngle": {
+          "m_flPreviousAimYaw": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_flPreviousHorizontalSpeed": {
             "offset": 52,
             "type": "float32"
           },
+          "m_flTurnOnSpotAngle": {
+            "offset": 44,
+            "type": "float32"
+          },
           "m_flWeaponDropPercentageDueToMovement": {
-            "offset": 72,
+            "offset": 64,
             "type": "float32"
           },
           "m_flWeaponDropSmoothDampVelocity": {
-            "offset": 76,
+            "offset": 68,
             "type": "float32"
           },
           "m_groundActionDirection": {
@@ -65575,15 +65567,11 @@
             "type": "CCSPlayerAnimationState::GroundMoveState_t"
           },
           "m_plantAndTurnStartTick": {
-            "offset": 44,
+            "offset": 40,
             "type": "GameTick_t"
           },
           "m_staticAimTimerStartTick": {
             "offset": 36,
-            "type": "GameTick_t"
-          },
-          "m_stutterStepStartTick": {
-            "offset": 40,
             "type": "GameTick_t"
           }
         },
@@ -66855,207 +66843,207 @@
             "type": "CCSPlayerAnimationState"
           },
           "m_LegacyJump": {
-            "offset": 1688,
+            "offset": 1672,
             "type": "CCSPlayerLegacyJump"
           },
           "m_ModernJump": {
-            "offset": 1712,
+            "offset": 1696,
             "type": "CCSPlayerModernJump"
           },
           "m_StuckLast": {
-            "offset": 1572,
+            "offset": 1556,
             "type": "int32"
           },
           "m_bDesiresDuck": {
-            "offset": 1005,
+            "offset": 989,
             "type": "bool"
           },
           "m_bDuckOverride": {
-            "offset": 1004,
+            "offset": 988,
             "type": "bool"
           },
           "m_bDucked": {
-            "offset": 992,
+            "offset": 976,
             "type": "bool"
           },
           "m_bDucking": {
-            "offset": 1006,
+            "offset": 990,
             "type": "bool"
           },
           "m_bHasEverProcessedCommand": {
-            "offset": 4032,
+            "offset": 4016,
             "type": "bool"
           },
           "m_bHasWalkMovedSinceLastJump": {
-            "offset": 1041,
+            "offset": 1025,
             "type": "bool"
           },
           "m_bInStuckTest": {
-            "offset": 1042,
+            "offset": 1026,
             "type": "bool"
           },
           "m_bJumpApexPending": {
-            "offset": 1780,
+            "offset": 1764,
             "type": "bool"
           },
           "m_bMadeFootstepNoise": {
-            "offset": 1628,
+            "offset": 1612,
             "type": "bool"
           },
           "m_bSpeedCropped": {
-            "offset": 1576,
+            "offset": 1560,
             "type": "bool"
           },
           "m_bUseFrictionStashedSpeed": {
-            "offset": 1648,
+            "offset": 1632,
             "type": "bool"
           },
           "m_bWasSurfing": {
-            "offset": 1788,
+            "offset": 1772,
             "type": "bool"
           },
           "m_duckUntilOnGround": {
-            "offset": 1040,
+            "offset": 1024,
             "type": "bool"
           },
           "m_fStashGrenadeParameterWhen": {
-            "offset": 1636,
+            "offset": 1620,
             "type": "GameTime_t"
           },
           "m_flAccumulatedJumpError": {
-            "offset": 1684,
-            "type": "float32"
-          },
-          "m_flBombPlantViewOffset": {
-            "offset": 1020,
-            "type": "float32"
-          },
-          "m_flDuckAmount": {
-            "offset": 996,
-            "type": "float32"
-          },
-          "m_flDuckRootOffset": {
-            "offset": 1008,
-            "type": "float32"
-          },
-          "m_flDuckSpeed": {
-            "offset": 1000,
-            "type": "float32"
-          },
-          "m_flDuckViewOffset": {
-            "offset": 1012,
-            "type": "float32"
-          },
-          "m_flFrictionStashedSpeed": {
-            "offset": 1656,
-            "type": "float32"
-          },
-          "m_flHeightAtJumpStart": {
-            "offset": 1664,
-            "type": "float32"
-          },
-          "m_flLastDuckTime": {
-            "offset": 1016,
-            "type": "float32"
-          },
-          "m_flLastJumpFrac": {
-            "offset": 1772,
-            "type": "float32"
-          },
-          "m_flLastJumpVelocityZ": {
-            "offset": 1776,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightLastJump": {
-            "offset": 1672,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightThisJump": {
             "offset": 1668,
             "type": "float32"
           },
-          "m_flStamina": {
-            "offset": 1660,
+          "m_flBombPlantViewOffset": {
+            "offset": 1004,
             "type": "float32"
           },
-          "m_flStaminaAtJumpStart": {
-            "offset": 1676,
+          "m_flDuckAmount": {
+            "offset": 980,
             "type": "float32"
           },
-          "m_flTicksSinceLastSurfingDetected": {
-            "offset": 1784,
+          "m_flDuckRootOffset": {
+            "offset": 992,
             "type": "float32"
           },
-          "m_flUseFrictionStashedSpeedUntilFrac": {
+          "m_flDuckSpeed": {
+            "offset": 984,
+            "type": "float32"
+          },
+          "m_flDuckViewOffset": {
+            "offset": 996,
+            "type": "float32"
+          },
+          "m_flFrictionStashedSpeed": {
+            "offset": 1640,
+            "type": "float32"
+          },
+          "m_flHeightAtJumpStart": {
+            "offset": 1648,
+            "type": "float32"
+          },
+          "m_flLastDuckTime": {
+            "offset": 1000,
+            "type": "float32"
+          },
+          "m_flLastJumpFrac": {
+            "offset": 1756,
+            "type": "float32"
+          },
+          "m_flLastJumpVelocityZ": {
+            "offset": 1760,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightLastJump": {
+            "offset": 1656,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightThisJump": {
             "offset": 1652,
             "type": "float32"
           },
+          "m_flStamina": {
+            "offset": 1644,
+            "type": "float32"
+          },
+          "m_flStaminaAtJumpStart": {
+            "offset": 1660,
+            "type": "float32"
+          },
+          "m_flTicksSinceLastSurfingDetected": {
+            "offset": 1768,
+            "type": "float32"
+          },
+          "m_flUseFrictionStashedSpeedUntilFrac": {
+            "offset": 1636,
+            "type": "float32"
+          },
           "m_flVelMulAtJumpStart": {
-            "offset": 1680,
+            "offset": 1664,
             "type": "float32"
           },
           "m_flWaterEntryTime": {
-            "offset": 1584,
+            "offset": 1568,
             "type": "float32"
           },
           "m_gtLastTimeInAir": {
-            "offset": 4028,
+            "offset": 4012,
             "type": "GameTime_t"
           },
           "m_gtLastTimeOnStaticWorldGround": {
-            "offset": 4024,
+            "offset": 4008,
             "type": "GameTime_t"
           },
           "m_iFootsteps": {
-            "offset": 1632,
+            "offset": 1616,
             "type": "int32"
           },
           "m_nButtonDownMaskPrev": {
-            "offset": 1640,
+            "offset": 1624,
             "type": "uint64"
           },
           "m_nGameCodeHasMovedPlayerAfterCommand": {
-            "offset": 1624,
+            "offset": 1608,
             "type": "int32"
           },
           "m_nLadderSurfacePropIndex": {
-            "offset": 988,
+            "offset": 972,
             "type": "int32"
           },
           "m_nLastJumpTick": {
-            "offset": 1768,
+            "offset": 1752,
             "type": "GameTick_t"
           },
           "m_nOldWaterLevel": {
-            "offset": 1580,
+            "offset": 1564,
             "type": "int32"
           },
           "m_nTraceCount": {
-            "offset": 1568,
+            "offset": 1552,
             "type": "int32"
           },
           "m_vecForward": {
-            "offset": 1588,
+            "offset": 1572,
             "type": "Vector"
           },
           "m_vecLadderNormal": {
-            "offset": 976,
+            "offset": 960,
             "type": "Vector"
           },
           "m_vecLastPositionAtFullCrouchSpeed": {
-            "offset": 1032,
+            "offset": 1016,
             "type": "Vector2D"
           },
           "m_vecLeft": {
-            "offset": 1600,
+            "offset": 1584,
             "type": "Vector"
           },
           "m_vecUp": {
-            "offset": 1612,
+            "offset": 1596,
             "type": "Vector"
           },
           "m_vecWalkWishVel": {
-            "offset": 1932,
+            "offset": 1916,
             "type": "Vector2D"
           }
         },
@@ -76072,6 +76060,10 @@
           },
           "m_bFadePlayerVisibilityFarZ": {
             "offset": 1216,
+            "type": "bool"
+          },
+          "m_bGPUCullSkybox": {
+            "offset": 1218,
             "type": "bool"
           },
           "m_bRainTraceToSkyEnabled": {
