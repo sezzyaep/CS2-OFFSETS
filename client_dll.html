@@ -1322,7 +1322,7 @@
         <tbody>
         </tbody>
     </table>
-    <h3>Class: C_DEagle</h3>
+    <h3>Class: C_CS2HudModelAddon</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
@@ -1330,7 +1330,7 @@
         <tbody>
         </tbody>
     </table>
-    <h3>Class: C_CS2HudModelAddon</h3>
+    <h3>Class: C_DEagle</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
@@ -2361,16 +2361,16 @@
             <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3288</td></tr>
             <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x328C</td></tr>
             <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3290</td></tr>
-            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32E4</td></tr>
-            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3360</td></tr>
-            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x33F0</td></tr>
-            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x3400</td></tr>
-            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x3430</td></tr>
-            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x343C</td></tr>
-            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3440</td></tr>
-            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3458</td></tr>
-            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x345C</td></tr>
-            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3460</td></tr>
+            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32FC</td></tr>
+            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3370</td></tr>
+            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x3400</td></tr>
+            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x3410</td></tr>
+            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x3440</td></tr>
+            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x344C</td></tr>
+            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3450</td></tr>
+            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3468</td></tr>
+            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x346C</td></tr>
+            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3470</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_TeamIntroTerroristPosition</h3>
@@ -3830,74 +3830,74 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_pInGameMoneyServices</td><td class="type">CCSPlayerController_InGameMoneyServices*</td><td class="value">0x800</td></tr>
-            <tr><td>m_pInventoryServices</td><td class="type">CCSPlayerController_InventoryServices*</td><td class="value">0x808</td></tr>
-            <tr><td>m_pActionTrackingServices</td><td class="type">CCSPlayerController_ActionTrackingServices*</td><td class="value">0x810</td></tr>
-            <tr><td>m_pDamageServices</td><td class="type">CCSPlayerController_DamageServices*</td><td class="value">0x818</td></tr>
-            <tr><td>m_iPing</td><td class="type">uint32</td><td class="value">0x820</td></tr>
-            <tr><td>m_bHasCommunicationAbuseMute</td><td class="type">bool</td><td class="value">0x824</td></tr>
-            <tr><td>m_uiCommunicationMuteFlags</td><td class="type">uint32</td><td class="value">0x828</td></tr>
-            <tr><td>m_szCrosshairCodes</td><td class="type">CUtlSymbolLarge</td><td class="value">0x830</td></tr>
-            <tr><td>m_iPendingTeamNum</td><td class="type">uint8</td><td class="value">0x838</td></tr>
-            <tr><td>m_flForceTeamTime</td><td class="type">GameTime_t</td><td class="value">0x83C</td></tr>
-            <tr><td>m_iCompTeammateColor</td><td class="type">int32</td><td class="value">0x840</td></tr>
-            <tr><td>m_bEverPlayedOnTeam</td><td class="type">bool</td><td class="value">0x844</td></tr>
-            <tr><td>m_flPreviousForceJoinTeamTime</td><td class="type">GameTime_t</td><td class="value">0x848</td></tr>
-            <tr><td>m_szClan</td><td class="type">CUtlSymbolLarge</td><td class="value">0x850</td></tr>
-            <tr><td>m_sSanitizedPlayerName</td><td class="type">CUtlString</td><td class="value">0x858</td></tr>
-            <tr><td>m_iCoachingTeam</td><td class="type">int32</td><td class="value">0x860</td></tr>
-            <tr><td>m_nPlayerDominated</td><td class="type">uint64</td><td class="value">0x868</td></tr>
-            <tr><td>m_nPlayerDominatingMe</td><td class="type">uint64</td><td class="value">0x870</td></tr>
-            <tr><td>m_iCompetitiveRanking</td><td class="type">int32</td><td class="value">0x878</td></tr>
-            <tr><td>m_iCompetitiveWins</td><td class="type">int32</td><td class="value">0x87C</td></tr>
-            <tr><td>m_iCompetitiveRankType</td><td class="type">int8</td><td class="value">0x880</td></tr>
-            <tr><td>m_iCompetitiveRankingPredicted_Win</td><td class="type">int32</td><td class="value">0x884</td></tr>
-            <tr><td>m_iCompetitiveRankingPredicted_Loss</td><td class="type">int32</td><td class="value">0x888</td></tr>
-            <tr><td>m_iCompetitiveRankingPredicted_Tie</td><td class="type">int32</td><td class="value">0x88C</td></tr>
-            <tr><td>m_nEndMatchNextMapVote</td><td class="type">int32</td><td class="value">0x890</td></tr>
-            <tr><td>m_unActiveQuestId</td><td class="type">uint16</td><td class="value">0x894</td></tr>
-            <tr><td>m_rtActiveMissionPeriod</td><td class="type">uint32</td><td class="value">0x898</td></tr>
-            <tr><td>m_nQuestProgressReason</td><td class="type">QuestProgress::Reason</td><td class="value">0x89C</td></tr>
-            <tr><td>m_unPlayerTvControlFlags</td><td class="type">uint32</td><td class="value">0x8A0</td></tr>
-            <tr><td>m_iDraftIndex</td><td class="type">int32</td><td class="value">0x8D0</td></tr>
-            <tr><td>m_msQueuedModeDisconnectionTimestamp</td><td class="type">uint32</td><td class="value">0x8D4</td></tr>
-            <tr><td>m_uiAbandonRecordedReason</td><td class="type">uint32</td><td class="value">0x8D8</td></tr>
-            <tr><td>m_eNetworkDisconnectionReason</td><td class="type">uint32</td><td class="value">0x8DC</td></tr>
-            <tr><td>m_bCannotBeKicked</td><td class="type">bool</td><td class="value">0x8E0</td></tr>
-            <tr><td>m_bEverFullyConnected</td><td class="type">bool</td><td class="value">0x8E1</td></tr>
-            <tr><td>m_bAbandonAllowsSurrender</td><td class="type">bool</td><td class="value">0x8E2</td></tr>
-            <tr><td>m_bAbandonOffersInstantSurrender</td><td class="type">bool</td><td class="value">0x8E3</td></tr>
-            <tr><td>m_bDisconnection1MinWarningPrinted</td><td class="type">bool</td><td class="value">0x8E4</td></tr>
-            <tr><td>m_bScoreReported</td><td class="type">bool</td><td class="value">0x8E5</td></tr>
-            <tr><td>m_nDisconnectionTick</td><td class="type">int32</td><td class="value">0x8E8</td></tr>
-            <tr><td>m_bControllingBot</td><td class="type">bool</td><td class="value">0x8F8</td></tr>
-            <tr><td>m_bHasControlledBotThisRound</td><td class="type">bool</td><td class="value">0x8F9</td></tr>
-            <tr><td>m_bHasBeenControlledByPlayerThisRound</td><td class="type">bool</td><td class="value">0x8FA</td></tr>
-            <tr><td>m_nBotsControlledThisRound</td><td class="type">int32</td><td class="value">0x8FC</td></tr>
-            <tr><td>m_bCanControlObservedBot</td><td class="type">bool</td><td class="value">0x900</td></tr>
-            <tr><td>m_hPlayerPawn</td><td class="type">CHandle<C_CSPlayerPawn></td><td class="value">0x904</td></tr>
-            <tr><td>m_hObserverPawn</td><td class="type">CHandle<C_CSObserverPawn></td><td class="value">0x908</td></tr>
-            <tr><td>m_bPawnIsAlive</td><td class="type">bool</td><td class="value">0x90C</td></tr>
-            <tr><td>m_iPawnHealth</td><td class="type">uint32</td><td class="value">0x910</td></tr>
-            <tr><td>m_iPawnArmor</td><td class="type">int32</td><td class="value">0x914</td></tr>
-            <tr><td>m_bPawnHasDefuser</td><td class="type">bool</td><td class="value">0x918</td></tr>
-            <tr><td>m_bPawnHasHelmet</td><td class="type">bool</td><td class="value">0x919</td></tr>
-            <tr><td>m_nPawnCharacterDefIndex</td><td class="type">uint16</td><td class="value">0x91A</td></tr>
-            <tr><td>m_iPawnLifetimeStart</td><td class="type">int32</td><td class="value">0x91C</td></tr>
-            <tr><td>m_iPawnLifetimeEnd</td><td class="type">int32</td><td class="value">0x920</td></tr>
-            <tr><td>m_iPawnBotDifficulty</td><td class="type">int32</td><td class="value">0x924</td></tr>
-            <tr><td>m_hOriginalControllerOfCurrentPawn</td><td class="type">CHandle<CCSPlayerController></td><td class="value">0x928</td></tr>
-            <tr><td>m_iScore</td><td class="type">int32</td><td class="value">0x92C</td></tr>
-            <tr><td>m_recentKillQueue</td><td class="type">uint8[8]</td><td class="value">0x930</td></tr>
-            <tr><td>m_nFirstKill</td><td class="type">uint8</td><td class="value">0x938</td></tr>
-            <tr><td>m_nKillCount</td><td class="type">uint8</td><td class="value">0x939</td></tr>
-            <tr><td>m_bMvpNoMusic</td><td class="type">bool</td><td class="value">0x93A</td></tr>
-            <tr><td>m_eMvpReason</td><td class="type">int32</td><td class="value">0x93C</td></tr>
-            <tr><td>m_iMusicKitID</td><td class="type">int32</td><td class="value">0x940</td></tr>
-            <tr><td>m_iMusicKitMVPs</td><td class="type">int32</td><td class="value">0x944</td></tr>
-            <tr><td>m_iMVPs</td><td class="type">int32</td><td class="value">0x948</td></tr>
-            <tr><td>m_bIsPlayerNameDirty</td><td class="type">bool</td><td class="value">0x94C</td></tr>
-            <tr><td>m_bFireBulletsSeedSynchronized</td><td class="type">bool</td><td class="value">0x94D</td></tr>
+            <tr><td>m_pInGameMoneyServices</td><td class="type">CCSPlayerController_InGameMoneyServices*</td><td class="value">0x808</td></tr>
+            <tr><td>m_pInventoryServices</td><td class="type">CCSPlayerController_InventoryServices*</td><td class="value">0x810</td></tr>
+            <tr><td>m_pActionTrackingServices</td><td class="type">CCSPlayerController_ActionTrackingServices*</td><td class="value">0x818</td></tr>
+            <tr><td>m_pDamageServices</td><td class="type">CCSPlayerController_DamageServices*</td><td class="value">0x820</td></tr>
+            <tr><td>m_iPing</td><td class="type">uint32</td><td class="value">0x828</td></tr>
+            <tr><td>m_bHasCommunicationAbuseMute</td><td class="type">bool</td><td class="value">0x82C</td></tr>
+            <tr><td>m_uiCommunicationMuteFlags</td><td class="type">uint32</td><td class="value">0x830</td></tr>
+            <tr><td>m_szCrosshairCodes</td><td class="type">CUtlSymbolLarge</td><td class="value">0x838</td></tr>
+            <tr><td>m_iPendingTeamNum</td><td class="type">uint8</td><td class="value">0x840</td></tr>
+            <tr><td>m_flForceTeamTime</td><td class="type">GameTime_t</td><td class="value">0x844</td></tr>
+            <tr><td>m_iCompTeammateColor</td><td class="type">int32</td><td class="value">0x848</td></tr>
+            <tr><td>m_bEverPlayedOnTeam</td><td class="type">bool</td><td class="value">0x84C</td></tr>
+            <tr><td>m_flPreviousForceJoinTeamTime</td><td class="type">GameTime_t</td><td class="value">0x850</td></tr>
+            <tr><td>m_szClan</td><td class="type">CUtlSymbolLarge</td><td class="value">0x858</td></tr>
+            <tr><td>m_sSanitizedPlayerName</td><td class="type">CUtlString</td><td class="value">0x860</td></tr>
+            <tr><td>m_iCoachingTeam</td><td class="type">int32</td><td class="value">0x868</td></tr>
+            <tr><td>m_nPlayerDominated</td><td class="type">uint64</td><td class="value">0x870</td></tr>
+            <tr><td>m_nPlayerDominatingMe</td><td class="type">uint64</td><td class="value">0x878</td></tr>
+            <tr><td>m_iCompetitiveRanking</td><td class="type">int32</td><td class="value">0x880</td></tr>
+            <tr><td>m_iCompetitiveWins</td><td class="type">int32</td><td class="value">0x884</td></tr>
+            <tr><td>m_iCompetitiveRankType</td><td class="type">int8</td><td class="value">0x888</td></tr>
+            <tr><td>m_iCompetitiveRankingPredicted_Win</td><td class="type">int32</td><td class="value">0x88C</td></tr>
+            <tr><td>m_iCompetitiveRankingPredicted_Loss</td><td class="type">int32</td><td class="value">0x890</td></tr>
+            <tr><td>m_iCompetitiveRankingPredicted_Tie</td><td class="type">int32</td><td class="value">0x894</td></tr>
+            <tr><td>m_nEndMatchNextMapVote</td><td class="type">int32</td><td class="value">0x898</td></tr>
+            <tr><td>m_unActiveQuestId</td><td class="type">uint16</td><td class="value">0x89C</td></tr>
+            <tr><td>m_rtActiveMissionPeriod</td><td class="type">uint32</td><td class="value">0x8A0</td></tr>
+            <tr><td>m_nQuestProgressReason</td><td class="type">QuestProgress::Reason</td><td class="value">0x8A4</td></tr>
+            <tr><td>m_unPlayerTvControlFlags</td><td class="type">uint32</td><td class="value">0x8A8</td></tr>
+            <tr><td>m_iDraftIndex</td><td class="type">int32</td><td class="value">0x8D8</td></tr>
+            <tr><td>m_msQueuedModeDisconnectionTimestamp</td><td class="type">uint32</td><td class="value">0x8DC</td></tr>
+            <tr><td>m_uiAbandonRecordedReason</td><td class="type">uint32</td><td class="value">0x8E0</td></tr>
+            <tr><td>m_eNetworkDisconnectionReason</td><td class="type">uint32</td><td class="value">0x8E4</td></tr>
+            <tr><td>m_bCannotBeKicked</td><td class="type">bool</td><td class="value">0x8E8</td></tr>
+            <tr><td>m_bEverFullyConnected</td><td class="type">bool</td><td class="value">0x8E9</td></tr>
+            <tr><td>m_bAbandonAllowsSurrender</td><td class="type">bool</td><td class="value">0x8EA</td></tr>
+            <tr><td>m_bAbandonOffersInstantSurrender</td><td class="type">bool</td><td class="value">0x8EB</td></tr>
+            <tr><td>m_bDisconnection1MinWarningPrinted</td><td class="type">bool</td><td class="value">0x8EC</td></tr>
+            <tr><td>m_bScoreReported</td><td class="type">bool</td><td class="value">0x8ED</td></tr>
+            <tr><td>m_nDisconnectionTick</td><td class="type">int32</td><td class="value">0x8F0</td></tr>
+            <tr><td>m_bControllingBot</td><td class="type">bool</td><td class="value">0x900</td></tr>
+            <tr><td>m_bHasControlledBotThisRound</td><td class="type">bool</td><td class="value">0x901</td></tr>
+            <tr><td>m_bHasBeenControlledByPlayerThisRound</td><td class="type">bool</td><td class="value">0x902</td></tr>
+            <tr><td>m_nBotsControlledThisRound</td><td class="type">int32</td><td class="value">0x904</td></tr>
+            <tr><td>m_bCanControlObservedBot</td><td class="type">bool</td><td class="value">0x908</td></tr>
+            <tr><td>m_hPlayerPawn</td><td class="type">CHandle<C_CSPlayerPawn></td><td class="value">0x90C</td></tr>
+            <tr><td>m_hObserverPawn</td><td class="type">CHandle<C_CSObserverPawn></td><td class="value">0x910</td></tr>
+            <tr><td>m_bPawnIsAlive</td><td class="type">bool</td><td class="value">0x914</td></tr>
+            <tr><td>m_iPawnHealth</td><td class="type">uint32</td><td class="value">0x918</td></tr>
+            <tr><td>m_iPawnArmor</td><td class="type">int32</td><td class="value">0x91C</td></tr>
+            <tr><td>m_bPawnHasDefuser</td><td class="type">bool</td><td class="value">0x920</td></tr>
+            <tr><td>m_bPawnHasHelmet</td><td class="type">bool</td><td class="value">0x921</td></tr>
+            <tr><td>m_nPawnCharacterDefIndex</td><td class="type">uint16</td><td class="value">0x922</td></tr>
+            <tr><td>m_iPawnLifetimeStart</td><td class="type">int32</td><td class="value">0x924</td></tr>
+            <tr><td>m_iPawnLifetimeEnd</td><td class="type">int32</td><td class="value">0x928</td></tr>
+            <tr><td>m_iPawnBotDifficulty</td><td class="type">int32</td><td class="value">0x92C</td></tr>
+            <tr><td>m_hOriginalControllerOfCurrentPawn</td><td class="type">CHandle<CCSPlayerController></td><td class="value">0x930</td></tr>
+            <tr><td>m_iScore</td><td class="type">int32</td><td class="value">0x934</td></tr>
+            <tr><td>m_recentKillQueue</td><td class="type">uint8[8]</td><td class="value">0x938</td></tr>
+            <tr><td>m_nFirstKill</td><td class="type">uint8</td><td class="value">0x940</td></tr>
+            <tr><td>m_nKillCount</td><td class="type">uint8</td><td class="value">0x941</td></tr>
+            <tr><td>m_bMvpNoMusic</td><td class="type">bool</td><td class="value">0x942</td></tr>
+            <tr><td>m_eMvpReason</td><td class="type">int32</td><td class="value">0x944</td></tr>
+            <tr><td>m_iMusicKitID</td><td class="type">int32</td><td class="value">0x948</td></tr>
+            <tr><td>m_iMusicKitMVPs</td><td class="type">int32</td><td class="value">0x94C</td></tr>
+            <tr><td>m_iMVPs</td><td class="type">int32</td><td class="value">0x950</td></tr>
+            <tr><td>m_bIsPlayerNameDirty</td><td class="type">bool</td><td class="value">0x954</td></tr>
+            <tr><td>m_bFireBulletsSeedSynchronized</td><td class="type">bool</td><td class="value">0x955</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_TeamIntroCounterTerroristPosition</h3>
@@ -3955,55 +3955,54 @@
         <tbody>
             <tr><td>m_AnimationState</td><td class="type">CCSPlayerAnimationState</td><td class="value">0x310</td></tr>
             <tr><td>m_bUsingGroundTopologyOffset</td><td class="type">bool</td><td class="value">0x3F0</td></tr>
-            <tr><td>m_flAltitudeAtLastUsingGroundTopologyOffsetTransition</td><td class="type">float32</td><td class="value">0x3F4</td></tr>
-            <tr><td>m_flUsingGroundTopologyOffsetTransitionSmoothing</td><td class="type">float32</td><td class="value">0x3F8</td></tr>
-            <tr><td>m_vecLadderNormal</td><td class="type">Vector</td><td class="value">0x3FC</td></tr>
-            <tr><td>m_nLadderSurfacePropIndex</td><td class="type">int32</td><td class="value">0x408</td></tr>
-            <tr><td>m_bDucked</td><td class="type">bool</td><td class="value">0x40C</td></tr>
-            <tr><td>m_flDuckAmount</td><td class="type">float32</td><td class="value">0x410</td></tr>
-            <tr><td>m_flDuckSpeed</td><td class="type">float32</td><td class="value">0x414</td></tr>
-            <tr><td>m_bDuckOverride</td><td class="type">bool</td><td class="value">0x418</td></tr>
-            <tr><td>m_bDesiresDuck</td><td class="type">bool</td><td class="value">0x419</td></tr>
-            <tr><td>m_bDucking</td><td class="type">bool</td><td class="value">0x41A</td></tr>
-            <tr><td>m_flDuckRootOffset</td><td class="type">float32</td><td class="value">0x41C</td></tr>
-            <tr><td>m_flDuckViewOffset</td><td class="type">float32</td><td class="value">0x420</td></tr>
-            <tr><td>m_flLastDuckTime</td><td class="type">float32</td><td class="value">0x424</td></tr>
-            <tr><td>m_flBombPlantViewOffset</td><td class="type">float32</td><td class="value">0x428</td></tr>
-            <tr><td>m_vecLastPositionAtFullCrouchSpeed</td><td class="type">Vector2D</td><td class="value">0x438</td></tr>
-            <tr><td>m_duckUntilOnGround</td><td class="type">bool</td><td class="value">0x440</td></tr>
-            <tr><td>m_bHasWalkMovedSinceLastJump</td><td class="type">bool</td><td class="value">0x441</td></tr>
-            <tr><td>m_bInStuckTest</td><td class="type">bool</td><td class="value">0x442</td></tr>
-            <tr><td>m_nTraceCount</td><td class="type">int32</td><td class="value">0x650</td></tr>
-            <tr><td>m_StuckLast</td><td class="type">int32</td><td class="value">0x654</td></tr>
-            <tr><td>m_bSpeedCropped</td><td class="type">bool</td><td class="value">0x658</td></tr>
-            <tr><td>m_nOldWaterLevel</td><td class="type">int32</td><td class="value">0x65C</td></tr>
-            <tr><td>m_flWaterEntryTime</td><td class="type">float32</td><td class="value">0x660</td></tr>
-            <tr><td>m_vecForward</td><td class="type">Vector</td><td class="value">0x664</td></tr>
-            <tr><td>m_vecLeft</td><td class="type">Vector</td><td class="value">0x670</td></tr>
-            <tr><td>m_vecUp</td><td class="type">Vector</td><td class="value">0x67C</td></tr>
-            <tr><td>m_nGameCodeHasMovedPlayerAfterCommand</td><td class="type">int32</td><td class="value">0x688</td></tr>
-            <tr><td>m_fStashGrenadeParameterWhen</td><td class="type">GameTime_t</td><td class="value">0x68C</td></tr>
-            <tr><td>m_nButtonDownMaskPrev</td><td class="type">uint64</td><td class="value">0x690</td></tr>
-            <tr><td>m_bUseFrictionStashedSpeed</td><td class="type">bool</td><td class="value">0x698</td></tr>
-            <tr><td>m_flUseFrictionStashedSpeedUntilFrac</td><td class="type">float32</td><td class="value">0x69C</td></tr>
-            <tr><td>m_flFrictionStashedSpeed</td><td class="type">float32</td><td class="value">0x6A0</td></tr>
-            <tr><td>m_flStamina</td><td class="type">float32</td><td class="value">0x6A4</td></tr>
-            <tr><td>m_flHeightAtJumpStart</td><td class="type">float32</td><td class="value">0x6A8</td></tr>
-            <tr><td>m_flMaxJumpHeightThisJump</td><td class="type">float32</td><td class="value">0x6AC</td></tr>
-            <tr><td>m_flMaxJumpHeightLastJump</td><td class="type">float32</td><td class="value">0x6B0</td></tr>
-            <tr><td>m_flStaminaAtJumpStart</td><td class="type">float32</td><td class="value">0x6B4</td></tr>
-            <tr><td>m_flVelMulAtJumpStart</td><td class="type">float32</td><td class="value">0x6B8</td></tr>
-            <tr><td>m_flAccumulatedJumpError</td><td class="type">float32</td><td class="value">0x6BC</td></tr>
-            <tr><td>m_LegacyJump</td><td class="type">CCSPlayerLegacyJump</td><td class="value">0x6C0</td></tr>
-            <tr><td>m_ModernJump</td><td class="type">CCSPlayerModernJump</td><td class="value">0x6D8</td></tr>
-            <tr><td>m_nLastJumpTick</td><td class="type">GameTick_t</td><td class="value">0x710</td></tr>
-            <tr><td>m_flLastJumpFrac</td><td class="type">float32</td><td class="value">0x714</td></tr>
-            <tr><td>m_flLastJumpVelocityZ</td><td class="type">float32</td><td class="value">0x718</td></tr>
-            <tr><td>m_bJumpApexPending</td><td class="type">bool</td><td class="value">0x71C</td></tr>
-            <tr><td>m_flTicksSinceLastSurfingDetected</td><td class="type">float32</td><td class="value">0x720</td></tr>
-            <tr><td>m_bWasSurfing</td><td class="type">bool</td><td class="value">0x724</td></tr>
-            <tr><td>m_vecWalkWishVel</td><td class="type">Vector2D</td><td class="value">0x7B4</td></tr>
-            <tr><td>m_bHasEverProcessedCommand</td><td class="type">bool</td><td class="value">0xFE0</td></tr>
+            <tr><td>m_flUsingGroundTopologyOffsetTransitionSmoothing</td><td class="type">float32</td><td class="value">0x3F4</td></tr>
+            <tr><td>m_vecLadderNormal</td><td class="type">Vector</td><td class="value">0x3F8</td></tr>
+            <tr><td>m_nLadderSurfacePropIndex</td><td class="type">int32</td><td class="value">0x404</td></tr>
+            <tr><td>m_bDucked</td><td class="type">bool</td><td class="value">0x408</td></tr>
+            <tr><td>m_flDuckAmount</td><td class="type">float32</td><td class="value">0x40C</td></tr>
+            <tr><td>m_flDuckSpeed</td><td class="type">float32</td><td class="value">0x410</td></tr>
+            <tr><td>m_bDuckOverride</td><td class="type">bool</td><td class="value">0x414</td></tr>
+            <tr><td>m_bDesiresDuck</td><td class="type">bool</td><td class="value">0x415</td></tr>
+            <tr><td>m_bDucking</td><td class="type">bool</td><td class="value">0x416</td></tr>
+            <tr><td>m_flDuckRootOffset</td><td class="type">float32</td><td class="value">0x418</td></tr>
+            <tr><td>m_flDuckViewOffset</td><td class="type">float32</td><td class="value">0x41C</td></tr>
+            <tr><td>m_flLastDuckTime</td><td class="type">float32</td><td class="value">0x420</td></tr>
+            <tr><td>m_flBombPlantViewOffset</td><td class="type">float32</td><td class="value">0x424</td></tr>
+            <tr><td>m_vecLastPositionAtFullCrouchSpeed</td><td class="type">Vector2D</td><td class="value">0x430</td></tr>
+            <tr><td>m_duckUntilOnGround</td><td class="type">bool</td><td class="value">0x438</td></tr>
+            <tr><td>m_bHasWalkMovedSinceLastJump</td><td class="type">bool</td><td class="value">0x439</td></tr>
+            <tr><td>m_bInStuckTest</td><td class="type">bool</td><td class="value">0x43A</td></tr>
+            <tr><td>m_nTraceCount</td><td class="type">int32</td><td class="value">0x648</td></tr>
+            <tr><td>m_StuckLast</td><td class="type">int32</td><td class="value">0x64C</td></tr>
+            <tr><td>m_bSpeedCropped</td><td class="type">bool</td><td class="value">0x650</td></tr>
+            <tr><td>m_nOldWaterLevel</td><td class="type">int32</td><td class="value">0x654</td></tr>
+            <tr><td>m_flWaterEntryTime</td><td class="type">float32</td><td class="value">0x658</td></tr>
+            <tr><td>m_vecForward</td><td class="type">Vector</td><td class="value">0x65C</td></tr>
+            <tr><td>m_vecLeft</td><td class="type">Vector</td><td class="value">0x668</td></tr>
+            <tr><td>m_vecUp</td><td class="type">Vector</td><td class="value">0x674</td></tr>
+            <tr><td>m_nGameCodeHasMovedPlayerAfterCommand</td><td class="type">int32</td><td class="value">0x680</td></tr>
+            <tr><td>m_fStashGrenadeParameterWhen</td><td class="type">GameTime_t</td><td class="value">0x684</td></tr>
+            <tr><td>m_nButtonDownMaskPrev</td><td class="type">uint64</td><td class="value">0x688</td></tr>
+            <tr><td>m_bUseFrictionStashedSpeed</td><td class="type">bool</td><td class="value">0x690</td></tr>
+            <tr><td>m_flUseFrictionStashedSpeedUntilFrac</td><td class="type">float32</td><td class="value">0x694</td></tr>
+            <tr><td>m_flFrictionStashedSpeed</td><td class="type">float32</td><td class="value">0x698</td></tr>
+            <tr><td>m_flStamina</td><td class="type">float32</td><td class="value">0x69C</td></tr>
+            <tr><td>m_flHeightAtJumpStart</td><td class="type">float32</td><td class="value">0x6A0</td></tr>
+            <tr><td>m_flMaxJumpHeightThisJump</td><td class="type">float32</td><td class="value">0x6A4</td></tr>
+            <tr><td>m_flMaxJumpHeightLastJump</td><td class="type">float32</td><td class="value">0x6A8</td></tr>
+            <tr><td>m_flStaminaAtJumpStart</td><td class="type">float32</td><td class="value">0x6AC</td></tr>
+            <tr><td>m_flVelMulAtJumpStart</td><td class="type">float32</td><td class="value">0x6B0</td></tr>
+            <tr><td>m_flAccumulatedJumpError</td><td class="type">float32</td><td class="value">0x6B4</td></tr>
+            <tr><td>m_LegacyJump</td><td class="type">CCSPlayerLegacyJump</td><td class="value">0x6B8</td></tr>
+            <tr><td>m_ModernJump</td><td class="type">CCSPlayerModernJump</td><td class="value">0x6D0</td></tr>
+            <tr><td>m_nLastJumpTick</td><td class="type">GameTick_t</td><td class="value">0x708</td></tr>
+            <tr><td>m_flLastJumpFrac</td><td class="type">float32</td><td class="value">0x70C</td></tr>
+            <tr><td>m_flLastJumpVelocityZ</td><td class="type">float32</td><td class="value">0x710</td></tr>
+            <tr><td>m_bJumpApexPending</td><td class="type">bool</td><td class="value">0x714</td></tr>
+            <tr><td>m_flTicksSinceLastSurfingDetected</td><td class="type">float32</td><td class="value">0x718</td></tr>
+            <tr><td>m_bWasSurfing</td><td class="type">bool</td><td class="value">0x71C</td></tr>
+            <tr><td>m_vecWalkWishVel</td><td class="type">Vector2D</td><td class="value">0x7AC</td></tr>
+            <tr><td>m_bHasEverProcessedCommand</td><td class="type">bool</td><td class="value">0xFD8</td></tr>
         </tbody>
     </table>
     <h3>Class: SellbackPurchaseEntry_t</h3>
@@ -6001,8 +6000,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3480</td></tr>
-            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3488</td></tr>
+            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3490</td></tr>
+            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3498</td></tr>
         </tbody>
     </table>
     <h3>Class: C_RectLight</h3>
@@ -7161,11 +7160,12 @@
             <tr><td>m_hSplitScreenPlayers</td><td class="type">CUtlVector<CHandle<CBasePlayerController>></td><td class="value">0x6D0</td></tr>
             <tr><td>m_bIsHLTV</td><td class="type">bool</td><td class="value">0x6E8</td></tr>
             <tr><td>m_iConnected</td><td class="type">PlayerConnectedState</td><td class="value">0x6EC</td></tr>
-            <tr><td>m_iszPlayerName</td><td class="type">char[128]</td><td class="value">0x6F0</td></tr>
-            <tr><td>m_steamID</td><td class="type">uint64</td><td class="value">0x778</td></tr>
-            <tr><td>m_bIsLocalPlayerController</td><td class="type">bool</td><td class="value">0x780</td></tr>
-            <tr><td>m_bNoClipEnabled</td><td class="type">bool</td><td class="value">0x781</td></tr>
-            <tr><td>m_iDesiredFOV</td><td class="type">uint32</td><td class="value">0x784</td></tr>
+            <tr><td>m_iMostConnected</td><td class="type">PlayerConnectedState</td><td class="value">0x6F0</td></tr>
+            <tr><td>m_iszPlayerName</td><td class="type">char[128]</td><td class="value">0x6F4</td></tr>
+            <tr><td>m_steamID</td><td class="type">uint64</td><td class="value">0x780</td></tr>
+            <tr><td>m_bIsLocalPlayerController</td><td class="type">bool</td><td class="value">0x788</td></tr>
+            <tr><td>m_bNoClipEnabled</td><td class="type">bool</td><td class="value">0x789</td></tr>
+            <tr><td>m_iDesiredFOV</td><td class="type">uint32</td><td class="value">0x78C</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_EndOfMatchLineupEndpoint</h3>

@@ -2373,11 +2373,11 @@
       "CBasePlayerController": {
         "fields": {
           "m_bGamePaused": {
-            "offset": 1445,
+            "offset": 1453,
             "type": "bool"
           },
           "m_bHasAnySteadyStateEnts": {
-            "offset": 1776,
+            "offset": 1784,
             "type": "bool"
           },
           "m_bIsHLTV": {
@@ -2385,7 +2385,7 @@
             "type": "bool"
           },
           "m_bIsLowViolence": {
-            "offset": 1444,
+            "offset": 1452,
             "type": "bool"
           },
           "m_bKnownTeamMismatch": {
@@ -2393,27 +2393,27 @@
             "type": "bool"
           },
           "m_bLagCompensation": {
-            "offset": 1436,
+            "offset": 1444,
             "type": "bool"
           },
           "m_bNoClipEnabled": {
-            "offset": 1800,
+            "offset": 1808,
             "type": "bool"
           },
           "m_bPredict": {
-            "offset": 1437,
+            "offset": 1445,
             "type": "bool"
           },
           "m_fLerpTime": {
-            "offset": 1432,
+            "offset": 1440,
             "type": "float32"
           },
           "m_flLastEntitySteadyState": {
-            "offset": 1768,
+            "offset": 1776,
             "type": "float32"
           },
           "m_flLastPlayerTalkTime": {
-            "offset": 1764,
+            "offset": 1772,
             "type": "float32"
           },
           "m_hPawn": {
@@ -2433,19 +2433,23 @@
             "type": "PlayerConnectedState"
           },
           "m_iDesiredFOV": {
-            "offset": 1804,
+            "offset": 1812,
             "type": "uint32"
           },
           "m_iIgnoreGlobalChat": {
-            "offset": 1760,
+            "offset": 1768,
             "type": "ChatIgnoreType_t"
           },
-          "m_iszPlayerName": {
+          "m_iMostConnected": {
             "offset": 1296,
+            "type": "PlayerConnectedState"
+          },
+          "m_iszPlayerName": {
+            "offset": 1300,
             "type": "char[128]"
           },
           "m_nAvailableEntitySteadyState": {
-            "offset": 1772,
+            "offset": 1780,
             "type": "int32"
           },
           "m_nInButtonsWhichAreToggles": {
@@ -2461,11 +2465,11 @@
             "type": "uint32"
           },
           "m_steamID": {
-            "offset": 1792,
+            "offset": 1800,
             "type": "uint64"
           },
           "m_szNetworkIDString": {
-            "offset": 1424,
+            "offset": 1432,
             "type": "CUtlString"
           }
         },
@@ -5837,371 +5841,371 @@
       "CCSPlayerController": {
         "fields": {
           "m_DesiredObserverMode": {
-            "offset": 2276,
+            "offset": 2284,
             "type": "int32"
           },
           "m_LastTeamDamageWarningTime": {
-            "offset": 2416,
+            "offset": 2424,
             "type": "GameTime_t"
           },
           "m_LastTimePlayerWasDisconnectedForPawnsRemove": {
-            "offset": 2420,
+            "offset": 2428,
             "type": "GameTime_t"
           },
           "m_bAbandonAllowsSurrender": {
-            "offset": 2234,
+            "offset": 2242,
             "type": "bool"
           },
           "m_bAbandonOffersInstantSurrender": {
-            "offset": 2235,
+            "offset": 2243,
             "type": "bool"
           },
           "m_bAttemptedToGetColor": {
-            "offset": 2077,
-            "type": "bool"
-          },
-          "m_bCanControlObservedBot": {
-            "offset": 2264,
-            "type": "bool"
-          },
-          "m_bCannotBeKicked": {
-            "offset": 2232,
-            "type": "bool"
-          },
-          "m_bControllingBot": {
-            "offset": 2256,
-            "type": "bool"
-          },
-          "m_bDisconnection1MinWarningPrinted": {
-            "offset": 2236,
-            "type": "bool"
-          },
-          "m_bEverFullyConnected": {
-            "offset": 2233,
-            "type": "bool"
-          },
-          "m_bEverPlayedOnTeam": {
-            "offset": 2076,
-            "type": "bool"
-          },
-          "m_bFireBulletsSeedSynchronized": {
-            "offset": 2593,
-            "type": "bool"
-          },
-          "m_bGaveTeamDamageWarning": {
-            "offset": 2402,
-            "type": "bool"
-          },
-          "m_bGaveTeamDamageWarningThisRound": {
-            "offset": 2403,
-            "type": "bool"
-          },
-          "m_bHasBeenControlledByPlayerThisRound": {
-            "offset": 2258,
-            "type": "bool"
-          },
-          "m_bHasCommunicationAbuseMute": {
-            "offset": 2044,
-            "type": "bool"
-          },
-          "m_bHasControlledBotThisRound": {
-            "offset": 2257,
-            "type": "bool"
-          },
-          "m_bHasSeenJoinGame": {
-            "offset": 2086,
-            "type": "bool"
-          },
-          "m_bInSwitchTeam": {
             "offset": 2085,
             "type": "bool"
           },
-          "m_bJustBecameSpectator": {
-            "offset": 2087,
+          "m_bCanControlObservedBot": {
+            "offset": 2272,
             "type": "bool"
           },
-          "m_bJustDidTeamKill": {
-            "offset": 2400,
+          "m_bCannotBeKicked": {
+            "offset": 2240,
             "type": "bool"
           },
-          "m_bMvpNoMusic": {
-            "offset": 2338,
+          "m_bControllingBot": {
+            "offset": 2264,
             "type": "bool"
           },
-          "m_bPawnHasDefuser": {
-            "offset": 2296,
+          "m_bDisconnection1MinWarningPrinted": {
+            "offset": 2244,
             "type": "bool"
           },
-          "m_bPawnHasHelmet": {
-            "offset": 2297,
+          "m_bEverFullyConnected": {
+            "offset": 2241,
             "type": "bool"
           },
-          "m_bPawnIsAlive": {
-            "offset": 2284,
-            "type": "bool"
-          },
-          "m_bPunishForTeamKill": {
-            "offset": 2401,
-            "type": "bool"
-          },
-          "m_bRemoveAllItemsOnNextRoundReset": {
-            "offset": 2089,
-            "type": "bool"
-          },
-          "m_bScoreReported": {
-            "offset": 2237,
-            "type": "bool"
-          },
-          "m_bShowHints": {
-            "offset": 2392,
-            "type": "bool"
-          },
-          "m_bSwitchTeamsOnNextRoundReset": {
-            "offset": 2088,
-            "type": "bool"
-          },
-          "m_bTeamChanged": {
+          "m_bEverPlayedOnTeam": {
             "offset": 2084,
             "type": "bool"
           },
-          "m_dblLastReceivedPacketPlatFloatTime": {
+          "m_bFireBulletsSeedSynchronized": {
+            "offset": 2601,
+            "type": "bool"
+          },
+          "m_bGaveTeamDamageWarning": {
+            "offset": 2410,
+            "type": "bool"
+          },
+          "m_bGaveTeamDamageWarningThisRound": {
+            "offset": 2411,
+            "type": "bool"
+          },
+          "m_bHasBeenControlledByPlayerThisRound": {
+            "offset": 2266,
+            "type": "bool"
+          },
+          "m_bHasCommunicationAbuseMute": {
+            "offset": 2052,
+            "type": "bool"
+          },
+          "m_bHasControlledBotThisRound": {
+            "offset": 2265,
+            "type": "bool"
+          },
+          "m_bHasSeenJoinGame": {
+            "offset": 2094,
+            "type": "bool"
+          },
+          "m_bInSwitchTeam": {
+            "offset": 2093,
+            "type": "bool"
+          },
+          "m_bJustBecameSpectator": {
+            "offset": 2095,
+            "type": "bool"
+          },
+          "m_bJustDidTeamKill": {
             "offset": 2408,
+            "type": "bool"
+          },
+          "m_bMvpNoMusic": {
+            "offset": 2346,
+            "type": "bool"
+          },
+          "m_bPawnHasDefuser": {
+            "offset": 2304,
+            "type": "bool"
+          },
+          "m_bPawnHasHelmet": {
+            "offset": 2305,
+            "type": "bool"
+          },
+          "m_bPawnIsAlive": {
+            "offset": 2292,
+            "type": "bool"
+          },
+          "m_bPunishForTeamKill": {
+            "offset": 2409,
+            "type": "bool"
+          },
+          "m_bRemoveAllItemsOnNextRoundReset": {
+            "offset": 2097,
+            "type": "bool"
+          },
+          "m_bScoreReported": {
+            "offset": 2245,
+            "type": "bool"
+          },
+          "m_bShowHints": {
+            "offset": 2400,
+            "type": "bool"
+          },
+          "m_bSwitchTeamsOnNextRoundReset": {
+            "offset": 2096,
+            "type": "bool"
+          },
+          "m_bTeamChanged": {
+            "offset": 2092,
+            "type": "bool"
+          },
+          "m_dblLastReceivedPacketPlatFloatTime": {
+            "offset": 2416,
             "type": "float64"
           },
           "m_eMvpReason": {
-            "offset": 2340,
-            "type": "int32"
-          },
-          "m_eNetworkDisconnectionReason": {
-            "offset": 2228,
-            "type": "uint32"
-          },
-          "m_flForceTeamTime": {
-            "offset": 2068,
-            "type": "GameTime_t"
-          },
-          "m_flLastJoinTeamTime": {
-            "offset": 2092,
-            "type": "GameTime_t"
-          },
-          "m_flSmoothedPing": {
-            "offset": 2360,
-            "type": "float32"
-          },
-          "m_hDesiredObserverTarget": {
-            "offset": 2280,
-            "type": "CEntityHandle"
-          },
-          "m_hObserverPawn": {
-            "offset": 2272,
-            "type": "CHandle<CCSObserverPawn>"
-          },
-          "m_hOriginalControllerOfCurrentPawn": {
-            "offset": 2312,
-            "type": "CHandle<CCSPlayerController>"
-          },
-          "m_hPlayerPawn": {
-            "offset": 2268,
-            "type": "CHandle<CCSPlayerPawn>"
-          },
-          "m_iCoachingTeam": {
-            "offset": 2104,
-            "type": "int32"
-          },
-          "m_iCompTeammateColor": {
-            "offset": 2072,
-            "type": "int32"
-          },
-          "m_iCompetitiveRankType": {
-            "offset": 2136,
-            "type": "int8"
-          },
-          "m_iCompetitiveRanking": {
-            "offset": 2128,
-            "type": "int32"
-          },
-          "m_iCompetitiveRankingPredicted_Loss": {
-            "offset": 2144,
-            "type": "int32"
-          },
-          "m_iCompetitiveRankingPredicted_Tie": {
-            "offset": 2148,
-            "type": "int32"
-          },
-          "m_iCompetitiveRankingPredicted_Win": {
-            "offset": 2140,
-            "type": "int32"
-          },
-          "m_iCompetitiveWins": {
-            "offset": 2132,
-            "type": "int32"
-          },
-          "m_iDraftIndex": {
-            "offset": 2216,
-            "type": "int32"
-          },
-          "m_iMVPs": {
-            "offset": 2352,
-            "type": "int32"
-          },
-          "m_iMusicKitID": {
-            "offset": 2344,
-            "type": "int32"
-          },
-          "m_iMusicKitMVPs": {
             "offset": 2348,
             "type": "int32"
           },
-          "m_iNextTimeCheck": {
-            "offset": 2396,
-            "type": "int32"
+          "m_eNetworkDisconnectionReason": {
+            "offset": 2236,
+            "type": "uint32"
           },
-          "m_iPawnArmor": {
-            "offset": 2292,
-            "type": "int32"
+          "m_flForceTeamTime": {
+            "offset": 2076,
+            "type": "GameTime_t"
           },
-          "m_iPawnBotDifficulty": {
-            "offset": 2308,
-            "type": "int32"
+          "m_flLastJoinTeamTime": {
+            "offset": 2100,
+            "type": "GameTime_t"
           },
-          "m_iPawnHealth": {
+          "m_flSmoothedPing": {
+            "offset": 2368,
+            "type": "float32"
+          },
+          "m_hDesiredObserverTarget": {
             "offset": 2288,
-            "type": "uint32"
+            "type": "CEntityHandle"
           },
-          "m_iPawnLifetimeEnd": {
-            "offset": 2304,
-            "type": "int32"
+          "m_hObserverPawn": {
+            "offset": 2280,
+            "type": "CHandle<CCSObserverPawn>"
           },
-          "m_iPawnLifetimeStart": {
-            "offset": 2300,
-            "type": "int32"
-          },
-          "m_iPendingTeamNum": {
-            "offset": 2064,
-            "type": "uint8"
-          },
-          "m_iPing": {
-            "offset": 2040,
-            "type": "uint32"
-          },
-          "m_iRoundScore": {
+          "m_hOriginalControllerOfCurrentPawn": {
             "offset": 2320,
+            "type": "CHandle<CCSPlayerController>"
+          },
+          "m_hPlayerPawn": {
+            "offset": 2276,
+            "type": "CHandle<CCSPlayerPawn>"
+          },
+          "m_iCoachingTeam": {
+            "offset": 2112,
             "type": "int32"
           },
-          "m_iRoundsWon": {
-            "offset": 2324,
-            "type": "int32"
-          },
-          "m_iScore": {
-            "offset": 2316,
-            "type": "int32"
-          },
-          "m_iTeammatePreferredColor": {
+          "m_iCompTeammateColor": {
             "offset": 2080,
             "type": "int32"
           },
-          "m_lastHeldVoteTimer": {
-            "offset": 2368,
-            "type": "IntervalTimer"
+          "m_iCompetitiveRankType": {
+            "offset": 2144,
+            "type": "int8"
           },
-          "m_msQueuedModeDisconnectionTimestamp": {
-            "offset": 2220,
-            "type": "uint32"
-          },
-          "m_nBotsControlledThisRound": {
-            "offset": 2260,
+          "m_iCompetitiveRanking": {
+            "offset": 2136,
             "type": "int32"
           },
-          "m_nDisconnectionTick": {
-            "offset": 2240,
-            "type": "int32"
-          },
-          "m_nEndMatchNextMapVote": {
+          "m_iCompetitiveRankingPredicted_Loss": {
             "offset": 2152,
             "type": "int32"
           },
-          "m_nFirstKill": {
-            "offset": 2336,
-            "type": "uint8"
+          "m_iCompetitiveRankingPredicted_Tie": {
+            "offset": 2156,
+            "type": "int32"
           },
-          "m_nKillCount": {
-            "offset": 2337,
-            "type": "uint8"
+          "m_iCompetitiveRankingPredicted_Win": {
+            "offset": 2148,
+            "type": "int32"
           },
-          "m_nNonSuspiciousHitStreak": {
-            "offset": 2428,
-            "type": "uint32"
+          "m_iCompetitiveWins": {
+            "offset": 2140,
+            "type": "int32"
           },
-          "m_nPawnCharacterDefIndex": {
-            "offset": 2298,
-            "type": "uint16"
+          "m_iDraftIndex": {
+            "offset": 2224,
+            "type": "int32"
           },
-          "m_nPlayerDominated": {
-            "offset": 2112,
-            "type": "uint64"
+          "m_iMVPs": {
+            "offset": 2360,
+            "type": "int32"
           },
-          "m_nPlayerDominatingMe": {
-            "offset": 2120,
-            "type": "uint64"
+          "m_iMusicKitID": {
+            "offset": 2352,
+            "type": "int32"
           },
-          "m_nQuestProgressReason": {
-            "offset": 2164,
-            "type": "QuestProgress::Reason"
-          },
-          "m_nSuspiciousHitCount": {
-            "offset": 2424,
-            "type": "uint32"
-          },
-          "m_nUpdateCounter": {
+          "m_iMusicKitMVPs": {
             "offset": 2356,
             "type": "int32"
           },
-          "m_pActionTrackingServices": {
-            "offset": 2024,
-            "type": "CCSPlayerController_ActionTrackingServices*"
+          "m_iNextTimeCheck": {
+            "offset": 2404,
+            "type": "int32"
           },
-          "m_pDamageServices": {
-            "offset": 2032,
-            "type": "CCSPlayerController_DamageServices*"
+          "m_iPawnArmor": {
+            "offset": 2300,
+            "type": "int32"
           },
-          "m_pInGameMoneyServices": {
-            "offset": 2008,
-            "type": "CCSPlayerController_InGameMoneyServices*"
+          "m_iPawnBotDifficulty": {
+            "offset": 2316,
+            "type": "int32"
           },
-          "m_pInventoryServices": {
-            "offset": 2016,
-            "type": "CCSPlayerController_InventoryServices*"
-          },
-          "m_recentKillQueue": {
-            "offset": 2328,
-            "type": "uint8[8]"
-          },
-          "m_rtActiveMissionPeriod": {
-            "offset": 2160,
+          "m_iPawnHealth": {
+            "offset": 2296,
             "type": "uint32"
           },
-          "m_szClan": {
-            "offset": 2096,
-            "type": "CUtlSymbolLarge"
+          "m_iPawnLifetimeEnd": {
+            "offset": 2312,
+            "type": "int32"
           },
-          "m_szCrosshairCodes": {
-            "offset": 2056,
-            "type": "CUtlSymbolLarge"
+          "m_iPawnLifetimeStart": {
+            "offset": 2308,
+            "type": "int32"
           },
-          "m_uiAbandonRecordedReason": {
-            "offset": 2224,
-            "type": "uint32"
+          "m_iPendingTeamNum": {
+            "offset": 2072,
+            "type": "uint8"
           },
-          "m_uiCommunicationMuteFlags": {
+          "m_iPing": {
             "offset": 2048,
             "type": "uint32"
           },
+          "m_iRoundScore": {
+            "offset": 2328,
+            "type": "int32"
+          },
+          "m_iRoundsWon": {
+            "offset": 2332,
+            "type": "int32"
+          },
+          "m_iScore": {
+            "offset": 2324,
+            "type": "int32"
+          },
+          "m_iTeammatePreferredColor": {
+            "offset": 2088,
+            "type": "int32"
+          },
+          "m_lastHeldVoteTimer": {
+            "offset": 2376,
+            "type": "IntervalTimer"
+          },
+          "m_msQueuedModeDisconnectionTimestamp": {
+            "offset": 2228,
+            "type": "uint32"
+          },
+          "m_nBotsControlledThisRound": {
+            "offset": 2268,
+            "type": "int32"
+          },
+          "m_nDisconnectionTick": {
+            "offset": 2248,
+            "type": "int32"
+          },
+          "m_nEndMatchNextMapVote": {
+            "offset": 2160,
+            "type": "int32"
+          },
+          "m_nFirstKill": {
+            "offset": 2344,
+            "type": "uint8"
+          },
+          "m_nKillCount": {
+            "offset": 2345,
+            "type": "uint8"
+          },
+          "m_nNonSuspiciousHitStreak": {
+            "offset": 2436,
+            "type": "uint32"
+          },
+          "m_nPawnCharacterDefIndex": {
+            "offset": 2306,
+            "type": "uint16"
+          },
+          "m_nPlayerDominated": {
+            "offset": 2120,
+            "type": "uint64"
+          },
+          "m_nPlayerDominatingMe": {
+            "offset": 2128,
+            "type": "uint64"
+          },
+          "m_nQuestProgressReason": {
+            "offset": 2172,
+            "type": "QuestProgress::Reason"
+          },
+          "m_nSuspiciousHitCount": {
+            "offset": 2432,
+            "type": "uint32"
+          },
+          "m_nUpdateCounter": {
+            "offset": 2364,
+            "type": "int32"
+          },
+          "m_pActionTrackingServices": {
+            "offset": 2032,
+            "type": "CCSPlayerController_ActionTrackingServices*"
+          },
+          "m_pDamageServices": {
+            "offset": 2040,
+            "type": "CCSPlayerController_DamageServices*"
+          },
+          "m_pInGameMoneyServices": {
+            "offset": 2016,
+            "type": "CCSPlayerController_InGameMoneyServices*"
+          },
+          "m_pInventoryServices": {
+            "offset": 2024,
+            "type": "CCSPlayerController_InventoryServices*"
+          },
+          "m_recentKillQueue": {
+            "offset": 2336,
+            "type": "uint8[8]"
+          },
+          "m_rtActiveMissionPeriod": {
+            "offset": 2168,
+            "type": "uint32"
+          },
+          "m_szClan": {
+            "offset": 2104,
+            "type": "CUtlSymbolLarge"
+          },
+          "m_szCrosshairCodes": {
+            "offset": 2064,
+            "type": "CUtlSymbolLarge"
+          },
+          "m_uiAbandonRecordedReason": {
+            "offset": 2232,
+            "type": "uint32"
+          },
+          "m_uiCommunicationMuteFlags": {
+            "offset": 2056,
+            "type": "uint32"
+          },
           "m_unActiveQuestId": {
-            "offset": 2156,
+            "offset": 2164,
             "type": "uint16"
           },
           "m_unPlayerTvControlFlags": {
-            "offset": 2168,
+            "offset": 2176,
             "type": "uint32"
           }
         },
@@ -7065,59 +7069,59 @@
             "type": "CCSPlayerAnimationState"
           },
           "m_LegacyJump": {
-            "offset": 1736,
+            "offset": 1728,
             "type": "CCSPlayerLegacyJump"
           },
           "m_ModernJump": {
-            "offset": 1760,
+            "offset": 1752,
             "type": "CCSPlayerModernJump"
           },
           "m_StuckLast": {
-            "offset": 1620,
+            "offset": 1612,
             "type": "int32"
           },
           "m_bDesiresDuck": {
-            "offset": 1049,
+            "offset": 1045,
             "type": "bool"
           },
           "m_bDuckOverride": {
-            "offset": 1048,
+            "offset": 1044,
             "type": "bool"
           },
           "m_bDucked": {
-            "offset": 1036,
+            "offset": 1032,
             "type": "bool"
           },
           "m_bDucking": {
-            "offset": 1050,
+            "offset": 1046,
             "type": "bool"
           },
           "m_bHasEverProcessedCommand": {
-            "offset": 4072,
+            "offset": 4064,
             "type": "bool"
           },
           "m_bHasWalkMovedSinceLastJump": {
-            "offset": 1089,
+            "offset": 1081,
             "type": "bool"
           },
           "m_bInStuckTest": {
-            "offset": 1090,
+            "offset": 1082,
             "type": "bool"
           },
           "m_bJumpApexPending": {
-            "offset": 1828,
+            "offset": 1820,
             "type": "bool"
           },
           "m_bMadeFootstepNoise": {
-            "offset": 1676,
+            "offset": 1668,
             "type": "bool"
           },
           "m_bSpeedCropped": {
-            "offset": 1624,
+            "offset": 1616,
             "type": "bool"
           },
           "m_bUseFrictionStashedSpeed": {
-            "offset": 1696,
+            "offset": 1688,
             "type": "bool"
           },
           "m_bUsingGroundTopologyOffset": {
@@ -7125,151 +7129,147 @@
             "type": "bool"
           },
           "m_bWasSurfing": {
-            "offset": 1836,
+            "offset": 1828,
             "type": "bool"
           },
           "m_duckUntilOnGround": {
-            "offset": 1088,
+            "offset": 1080,
             "type": "bool"
           },
           "m_fStashGrenadeParameterWhen": {
-            "offset": 1684,
+            "offset": 1676,
             "type": "GameTime_t"
           },
           "m_flAccumulatedJumpError": {
-            "offset": 1732,
-            "type": "float32"
-          },
-          "m_flAltitudeAtLastUsingGroundTopologyOffsetTransition": {
-            "offset": 1012,
-            "type": "float32"
-          },
-          "m_flBombPlantViewOffset": {
-            "offset": 1064,
-            "type": "float32"
-          },
-          "m_flDuckAmount": {
-            "offset": 1040,
-            "type": "float32"
-          },
-          "m_flDuckRootOffset": {
-            "offset": 1052,
-            "type": "float32"
-          },
-          "m_flDuckSpeed": {
-            "offset": 1044,
-            "type": "float32"
-          },
-          "m_flDuckViewOffset": {
-            "offset": 1056,
-            "type": "float32"
-          },
-          "m_flFrictionStashedSpeed": {
-            "offset": 1704,
-            "type": "float32"
-          },
-          "m_flHeightAtJumpStart": {
-            "offset": 1712,
-            "type": "float32"
-          },
-          "m_flLastDuckTime": {
-            "offset": 1060,
-            "type": "float32"
-          },
-          "m_flLastJumpFrac": {
-            "offset": 1820,
-            "type": "float32"
-          },
-          "m_flLastJumpVelocityZ": {
-            "offset": 1824,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightLastJump": {
-            "offset": 1720,
-            "type": "float32"
-          },
-          "m_flMaxJumpHeightThisJump": {
-            "offset": 1716,
-            "type": "float32"
-          },
-          "m_flStamina": {
-            "offset": 1708,
-            "type": "float32"
-          },
-          "m_flStaminaAtJumpStart": {
             "offset": 1724,
             "type": "float32"
           },
-          "m_flTicksSinceLastSurfingDetected": {
-            "offset": 1832,
+          "m_flBombPlantViewOffset": {
+            "offset": 1060,
             "type": "float32"
           },
-          "m_flUseFrictionStashedSpeedUntilFrac": {
+          "m_flDuckAmount": {
+            "offset": 1036,
+            "type": "float32"
+          },
+          "m_flDuckRootOffset": {
+            "offset": 1048,
+            "type": "float32"
+          },
+          "m_flDuckSpeed": {
+            "offset": 1040,
+            "type": "float32"
+          },
+          "m_flDuckViewOffset": {
+            "offset": 1052,
+            "type": "float32"
+          },
+          "m_flFrictionStashedSpeed": {
+            "offset": 1696,
+            "type": "float32"
+          },
+          "m_flHeightAtJumpStart": {
+            "offset": 1704,
+            "type": "float32"
+          },
+          "m_flLastDuckTime": {
+            "offset": 1056,
+            "type": "float32"
+          },
+          "m_flLastJumpFrac": {
+            "offset": 1812,
+            "type": "float32"
+          },
+          "m_flLastJumpVelocityZ": {
+            "offset": 1816,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightLastJump": {
+            "offset": 1712,
+            "type": "float32"
+          },
+          "m_flMaxJumpHeightThisJump": {
+            "offset": 1708,
+            "type": "float32"
+          },
+          "m_flStamina": {
             "offset": 1700,
             "type": "float32"
           },
+          "m_flStaminaAtJumpStart": {
+            "offset": 1716,
+            "type": "float32"
+          },
+          "m_flTicksSinceLastSurfingDetected": {
+            "offset": 1824,
+            "type": "float32"
+          },
+          "m_flUseFrictionStashedSpeedUntilFrac": {
+            "offset": 1692,
+            "type": "float32"
+          },
           "m_flUsingGroundTopologyOffsetTransitionSmoothing": {
-            "offset": 1016,
+            "offset": 1012,
             "type": "float32"
           },
           "m_flVelMulAtJumpStart": {
-            "offset": 1728,
+            "offset": 1720,
             "type": "float32"
           },
           "m_flWaterEntryTime": {
-            "offset": 1632,
+            "offset": 1624,
             "type": "float32"
           },
           "m_iFootsteps": {
-            "offset": 1680,
-            "type": "int32"
-          },
-          "m_nButtonDownMaskPrev": {
-            "offset": 1688,
-            "type": "uint64"
-          },
-          "m_nGameCodeHasMovedPlayerAfterCommand": {
             "offset": 1672,
             "type": "int32"
           },
+          "m_nButtonDownMaskPrev": {
+            "offset": 1680,
+            "type": "uint64"
+          },
+          "m_nGameCodeHasMovedPlayerAfterCommand": {
+            "offset": 1664,
+            "type": "int32"
+          },
           "m_nLadderSurfacePropIndex": {
-            "offset": 1032,
+            "offset": 1028,
             "type": "int32"
           },
           "m_nLastJumpTick": {
-            "offset": 1816,
+            "offset": 1808,
             "type": "GameTick_t"
           },
           "m_nOldWaterLevel": {
-            "offset": 1628,
+            "offset": 1620,
             "type": "int32"
           },
           "m_nTraceCount": {
-            "offset": 1616,
+            "offset": 1608,
             "type": "int32"
           },
           "m_vecForward": {
-            "offset": 1636,
+            "offset": 1628,
             "type": "Vector"
           },
           "m_vecLadderNormal": {
-            "offset": 1020,
+            "offset": 1016,
             "type": "Vector"
           },
           "m_vecLastPositionAtFullCrouchSpeed": {
-            "offset": 1080,
+            "offset": 1072,
             "type": "Vector2D"
           },
           "m_vecLeft": {
-            "offset": 1648,
+            "offset": 1640,
             "type": "Vector"
           },
           "m_vecUp": {
-            "offset": 1660,
+            "offset": 1652,
             "type": "Vector"
           },
           "m_vecWalkWishVel": {
-            "offset": 1980,
+            "offset": 1972,
             "type": "Vector2D"
           }
         },
