@@ -1084,7 +1084,12 @@
         "parent": null
       },
       "CCSObserver_CameraServices": {
-        "fields": {},
+        "fields": {
+          "m_hPrevPostProcessingVolume": {
+            "offset": 680,
+            "type": "CHandle<C_PostProcessingVolume>"
+          }
+        },
         "metadata": [],
         "parent": "CCSPlayerBase_CameraServices"
       },
@@ -1096,7 +1101,7 @@
       "CCSObserver_ObserverServices": {
         "fields": {
           "m_obsInterpState": {
-            "offset": 100,
+            "offset": 104,
             "type": "ObserverInterpState_t"
           }
         },
@@ -8419,11 +8424,11 @@
       "C_CSGO_PreviewPlayer": {
         "fields": {
           "m_animgraphCharacterModeString": {
-            "offset": 13456,
+            "offset": 13376,
             "type": "CGlobalSymbol"
           },
           "m_flInitialModelScale": {
-            "offset": 13464,
+            "offset": 13384,
             "type": "float32"
           }
         },
@@ -8980,27 +8985,23 @@
             "type": "loadout_slot_t"
           },
           "m_angEyeAngles": {
-            "offset": 13168,
+            "offset": 13088,
             "type": "QAngle"
           },
           "m_angEyeAnglesVelocity": {
-            "offset": 13376,
+            "offset": 13296,
             "type": "QAngle"
-          },
-          "m_angShootAngleHistory": {
-            "offset": 7420,
-            "type": "QAngle[2]"
           },
           "m_angStashedShootAngles": {
             "offset": 7384,
             "type": "QAngle"
           },
           "m_arrOldEyeAngles": {
-            "offset": 13328,
+            "offset": 13248,
             "type": "QAngle[4]"
           },
           "m_arrOldEyeAnglesTimes": {
-            "offset": 13312,
+            "offset": 13232,
             "type": "GameTime_t[4]"
           },
           "m_bGrenadeParametersStashed": {
@@ -9008,7 +9009,7 @@
             "type": "bool"
           },
           "m_bGunGameImmunity": {
-            "offset": 12936,
+            "offset": 12856,
             "type": "bool"
           },
           "m_bHasDeathInfo": {
@@ -9112,7 +9113,7 @@
             "type": "bool"
           },
           "m_bShouldAutobuyDMWeapons": {
-            "offset": 12928,
+            "offset": 12848,
             "type": "bool"
           },
           "m_bWaitForNoAttack": {
@@ -9120,7 +9121,7 @@
             "type": "bool"
           },
           "m_delayTargetIDTimer": {
-            "offset": 13392,
+            "offset": 13312,
             "type": "CountdownTimer"
           },
           "m_entitySpottedState": {
@@ -9128,15 +9129,15 @@
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
-            "offset": 12932,
+            "offset": 12852,
             "type": "GameTime_t"
           },
           "m_fImmuneToGunGameDamageTimeLast": {
-            "offset": 12940,
+            "offset": 12860,
             "type": "GameTime_t"
           },
           "m_fMolotovDamageTime": {
-            "offset": 12944,
+            "offset": 12864,
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
@@ -9212,7 +9213,7 @@
             "type": "CHandle<C_CS2HudModelArms>"
           },
           "m_holdTargetIDTimer": {
-            "offset": 13424,
+            "offset": 13344,
             "type": "CountdownTimer"
           },
           "m_iBlockingUseActionInProgress": {
@@ -9220,11 +9221,11 @@
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iIDEntIndex": {
-            "offset": 13388,
+            "offset": 13308,
             "type": "CEntityIndex"
           },
           "m_iOldIDEntIndex": {
-            "offset": 13420,
+            "offset": 13340,
             "type": "CEntityIndex"
           },
           "m_iRetakesMVPBoostItem": {
@@ -9244,7 +9245,7 @@
             "type": "int32"
           },
           "m_iTargetItemEntIdx": {
-            "offset": 13416,
+            "offset": 13336,
             "type": "CEntityIndex"
           },
           "m_ignoreLadderJumpTime": {
@@ -9264,7 +9265,7 @@
             "type": "CEntityIndex"
           },
           "m_nPlayerInfernoBodyFx": {
-            "offset": 13052,
+            "offset": 12972,
             "type": "ParticleIndex_t"
           },
           "m_nPrevArmorVal": {
@@ -9374,14 +9375,6 @@
           "m_vecStashedVelocity": {
             "offset": 7408,
             "type": "Vector"
-          },
-          "m_vecThrowPositionHistory": {
-            "offset": 7444,
-            "type": "Vector[2]"
-          },
-          "m_vecVelocityHistory": {
-            "offset": 7468,
-            "type": "Vector[2]"
           }
         },
         "metadata": [],

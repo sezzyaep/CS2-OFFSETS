@@ -958,7 +958,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_obsInterpState</td><td class="type">ObserverInterpState_t</td><td class="value">0x64</td></tr>
+            <tr><td>m_obsInterpState</td><td class="type">ObserverInterpState_t</td><td class="value">0x68</td></tr>
         </tbody>
     </table>
     <h3>Class: CHitboxComponent</h3>
@@ -2353,24 +2353,21 @@
             <tr><td>m_angStashedShootAngles</td><td class="type">QAngle</td><td class="value">0x1CD8</td></tr>
             <tr><td>m_vecStashedGrenadeThrowPosition</td><td class="type">Vector</td><td class="value">0x1CE4</td></tr>
             <tr><td>m_vecStashedVelocity</td><td class="type">Vector</td><td class="value">0x1CF0</td></tr>
-            <tr><td>m_angShootAngleHistory</td><td class="type">QAngle[2]</td><td class="value">0x1CFC</td></tr>
-            <tr><td>m_vecThrowPositionHistory</td><td class="type">Vector[2]</td><td class="value">0x1D14</td></tr>
-            <tr><td>m_vecVelocityHistory</td><td class="type">Vector[2]</td><td class="value">0x1D2C</td></tr>
-            <tr><td>m_bShouldAutobuyDMWeapons</td><td class="type">bool</td><td class="value">0x3280</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x3284</td></tr>
-            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3288</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x328C</td></tr>
-            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3290</td></tr>
-            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32FC</td></tr>
-            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3370</td></tr>
-            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x3400</td></tr>
-            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x3410</td></tr>
-            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x3440</td></tr>
-            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x344C</td></tr>
-            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3450</td></tr>
-            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3468</td></tr>
-            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x346C</td></tr>
-            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3470</td></tr>
+            <tr><td>m_bShouldAutobuyDMWeapons</td><td class="type">bool</td><td class="value">0x3230</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x3234</td></tr>
+            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3238</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x323C</td></tr>
+            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3240</td></tr>
+            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32AC</td></tr>
+            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3320</td></tr>
+            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x33B0</td></tr>
+            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x33C0</td></tr>
+            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x33F0</td></tr>
+            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x33FC</td></tr>
+            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3400</td></tr>
+            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3418</td></tr>
+            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x341C</td></tr>
+            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3420</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_TeamIntroTerroristPosition</h3>
@@ -3308,6 +3305,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_hPrevPostProcessingVolume</td><td class="type">CHandle<C_PostProcessingVolume></td><td class="value">0x2A8</td></tr>
         </tbody>
     </table>
     <h3>Class: CEnvSoundscapeProxy</h3>
@@ -6000,8 +5998,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3490</td></tr>
-            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3498</td></tr>
+            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3440</td></tr>
+            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3448</td></tr>
         </tbody>
     </table>
     <h3>Class: C_RectLight</h3>

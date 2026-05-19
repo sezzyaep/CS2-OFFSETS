@@ -11372,7 +11372,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_obsInterpState</td><td class="type">ObserverInterpState_t</td><td class="value">0x64</td></tr>
+            <tr><td>m_obsInterpState</td><td class="type">ObserverInterpState_t</td><td class="value">0x68</td></tr>
         </tbody>
     </table>
     <h3>Class: CHitboxComponent</h3>
@@ -12767,24 +12767,21 @@
             <tr><td>m_angStashedShootAngles</td><td class="type">QAngle</td><td class="value">0x1CD8</td></tr>
             <tr><td>m_vecStashedGrenadeThrowPosition</td><td class="type">Vector</td><td class="value">0x1CE4</td></tr>
             <tr><td>m_vecStashedVelocity</td><td class="type">Vector</td><td class="value">0x1CF0</td></tr>
-            <tr><td>m_angShootAngleHistory</td><td class="type">QAngle[2]</td><td class="value">0x1CFC</td></tr>
-            <tr><td>m_vecThrowPositionHistory</td><td class="type">Vector[2]</td><td class="value">0x1D14</td></tr>
-            <tr><td>m_vecVelocityHistory</td><td class="type">Vector[2]</td><td class="value">0x1D2C</td></tr>
-            <tr><td>m_bShouldAutobuyDMWeapons</td><td class="type">bool</td><td class="value">0x3280</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x3284</td></tr>
-            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3288</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x328C</td></tr>
-            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3290</td></tr>
-            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32FC</td></tr>
-            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3370</td></tr>
-            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x3400</td></tr>
-            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x3410</td></tr>
-            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x3440</td></tr>
-            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x344C</td></tr>
-            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3450</td></tr>
-            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3468</td></tr>
-            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x346C</td></tr>
-            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3470</td></tr>
+            <tr><td>m_bShouldAutobuyDMWeapons</td><td class="type">bool</td><td class="value">0x3230</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x3234</td></tr>
+            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3238</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x323C</td></tr>
+            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3240</td></tr>
+            <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x32AC</td></tr>
+            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3320</td></tr>
+            <tr><td>m_arrOldEyeAnglesTimes</td><td class="type">GameTime_t[4]</td><td class="value">0x33B0</td></tr>
+            <tr><td>m_arrOldEyeAngles</td><td class="type">QAngle[4]</td><td class="value">0x33C0</td></tr>
+            <tr><td>m_angEyeAnglesVelocity</td><td class="type">QAngle</td><td class="value">0x33F0</td></tr>
+            <tr><td>m_iIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x33FC</td></tr>
+            <tr><td>m_delayTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3400</td></tr>
+            <tr><td>m_iTargetItemEntIdx</td><td class="type">CEntityIndex</td><td class="value">0x3418</td></tr>
+            <tr><td>m_iOldIDEntIndex</td><td class="type">CEntityIndex</td><td class="value">0x341C</td></tr>
+            <tr><td>m_holdTargetIDTimer</td><td class="type">CountdownTimer</td><td class="value">0x3420</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_TeamIntroTerroristPosition</h3>
@@ -13722,6 +13719,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_hPrevPostProcessingVolume</td><td class="type">CHandle<C_PostProcessingVolume></td><td class="value">0x2A8</td></tr>
         </tbody>
     </table>
     <h3>Class: CEnvSoundscapeProxy</h3>
@@ -16414,8 +16412,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3490</td></tr>
-            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3498</td></tr>
+            <tr><td>m_animgraphCharacterModeString</td><td class="type">CGlobalSymbol</td><td class="value">0x3440</td></tr>
+            <tr><td>m_flInitialModelScale</td><td class="type">float32</td><td class="value">0x3448</td></tr>
         </tbody>
     </table>
     <h3>Class: C_RectLight</h3>
@@ -32584,127 +32582,127 @@
             <tr><td>m_alertTimer</td><td class="type">CountdownTimer</td><td class="value">0x1D0</td></tr>
             <tr><td>m_sneakTimer</td><td class="type">CountdownTimer</td><td class="value">0x1E8</td></tr>
             <tr><td>m_panicTimer</td><td class="type">CountdownTimer</td><td class="value">0x200</td></tr>
-            <tr><td>m_stateTimestamp</td><td class="type">float32</td><td class="value">0x5A8</td></tr>
-            <tr><td>m_isAttacking</td><td class="type">bool</td><td class="value">0x5AC</td></tr>
-            <tr><td>m_isOpeningDoor</td><td class="type">bool</td><td class="value">0x5AD</td></tr>
-            <tr><td>m_taskEntity</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5B4</td></tr>
-            <tr><td>m_goalPosition</td><td class="type">VectorWS</td><td class="value">0x5C4</td></tr>
-            <tr><td>m_goalEntity</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5D0</td></tr>
-            <tr><td>m_avoid</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5D4</td></tr>
-            <tr><td>m_avoidTimestamp</td><td class="type">float32</td><td class="value">0x5D8</td></tr>
-            <tr><td>m_isStopping</td><td class="type">bool</td><td class="value">0x5DC</td></tr>
-            <tr><td>m_hasVisitedEnemySpawn</td><td class="type">bool</td><td class="value">0x5DD</td></tr>
-            <tr><td>m_stillTimer</td><td class="type">IntervalTimer</td><td class="value">0x5E0</td></tr>
-            <tr><td>m_bEyeAnglesUnderPathFinderControl</td><td class="type">bool</td><td class="value">0x5F0</td></tr>
-            <tr><td>m_pathIndex</td><td class="type">int32</td><td class="value">0x4EF0</td></tr>
-            <tr><td>m_areaEnteredTimestamp</td><td class="type">GameTime_t</td><td class="value">0x4EF4</td></tr>
-            <tr><td>m_repathTimer</td><td class="type">CountdownTimer</td><td class="value">0x4EF8</td></tr>
-            <tr><td>m_avoidFriendTimer</td><td class="type">CountdownTimer</td><td class="value">0x4F10</td></tr>
-            <tr><td>m_isFriendInTheWay</td><td class="type">bool</td><td class="value">0x4F28</td></tr>
-            <tr><td>m_politeTimer</td><td class="type">CountdownTimer</td><td class="value">0x4F30</td></tr>
-            <tr><td>m_isWaitingBehindFriend</td><td class="type">bool</td><td class="value">0x4F48</td></tr>
-            <tr><td>m_pathLadderEnd</td><td class="type">float32</td><td class="value">0x4F74</td></tr>
-            <tr><td>m_mustRunTimer</td><td class="type">CountdownTimer</td><td class="value">0x4FC0</td></tr>
-            <tr><td>m_waitTimer</td><td class="type">CountdownTimer</td><td class="value">0x4FD8</td></tr>
-            <tr><td>m_updateTravelDistanceTimer</td><td class="type">CountdownTimer</td><td class="value">0x4FF0</td></tr>
-            <tr><td>m_playerTravelDistance</td><td class="type">float32[64]</td><td class="value">0x5008</td></tr>
-            <tr><td>m_travelDistancePhase</td><td class="type">uint8</td><td class="value">0x5108</td></tr>
-            <tr><td>m_hostageEscortCount</td><td class="type">uint8</td><td class="value">0x52A0</td></tr>
-            <tr><td>m_hostageEscortCountTimestamp</td><td class="type">float32</td><td class="value">0x52A4</td></tr>
-            <tr><td>m_desiredTeam</td><td class="type">int32</td><td class="value">0x52A8</td></tr>
-            <tr><td>m_hasJoined</td><td class="type">bool</td><td class="value">0x52AC</td></tr>
-            <tr><td>m_isWaitingForHostage</td><td class="type">bool</td><td class="value">0x52AD</td></tr>
-            <tr><td>m_inhibitWaitingForHostageTimer</td><td class="type">CountdownTimer</td><td class="value">0x52B0</td></tr>
-            <tr><td>m_waitForHostageTimer</td><td class="type">CountdownTimer</td><td class="value">0x52C8</td></tr>
-            <tr><td>m_noisePosition</td><td class="type">Vector</td><td class="value">0x52E0</td></tr>
-            <tr><td>m_noiseTravelDistance</td><td class="type">float32</td><td class="value">0x52EC</td></tr>
-            <tr><td>m_noiseTimestamp</td><td class="type">float32</td><td class="value">0x52F0</td></tr>
-            <tr><td>m_noiseSource</td><td class="type">CCSPlayerPawn*</td><td class="value">0x52F8</td></tr>
-            <tr><td>m_noiseBendTimer</td><td class="type">CountdownTimer</td><td class="value">0x5310</td></tr>
-            <tr><td>m_bentNoisePosition</td><td class="type">Vector</td><td class="value">0x5328</td></tr>
-            <tr><td>m_bendNoisePositionValid</td><td class="type">bool</td><td class="value">0x5334</td></tr>
-            <tr><td>m_lookAroundStateTimestamp</td><td class="type">float32</td><td class="value">0x5338</td></tr>
-            <tr><td>m_lookAheadAngle</td><td class="type">float32</td><td class="value">0x533C</td></tr>
-            <tr><td>m_lookUpAngle</td><td class="type">float32</td><td class="value">0x5340</td></tr>
-            <tr><td>m_forwardAngle</td><td class="type">float32</td><td class="value">0x5344</td></tr>
-            <tr><td>m_inhibitLookAroundTimestamp</td><td class="type">float32</td><td class="value">0x5348</td></tr>
-            <tr><td>m_lookAtSpot</td><td class="type">Vector</td><td class="value">0x5350</td></tr>
-            <tr><td>m_lookAtSpotDuration</td><td class="type">float32</td><td class="value">0x5360</td></tr>
-            <tr><td>m_lookAtSpotTimestamp</td><td class="type">float32</td><td class="value">0x5364</td></tr>
-            <tr><td>m_lookAtSpotAngleTolerance</td><td class="type">float32</td><td class="value">0x5368</td></tr>
-            <tr><td>m_lookAtSpotClearIfClose</td><td class="type">bool</td><td class="value">0x536C</td></tr>
-            <tr><td>m_lookAtSpotAttack</td><td class="type">bool</td><td class="value">0x536D</td></tr>
-            <tr><td>m_lookAtDesc</td><td class="type">char*</td><td class="value">0x5370</td></tr>
-            <tr><td>m_peripheralTimestamp</td><td class="type">float32</td><td class="value">0x5378</td></tr>
-            <tr><td>m_approachPointCount</td><td class="type">uint8</td><td class="value">0x5500</td></tr>
-            <tr><td>m_approachPointViewPosition</td><td class="type">Vector</td><td class="value">0x5504</td></tr>
-            <tr><td>m_viewSteadyTimer</td><td class="type">IntervalTimer</td><td class="value">0x5510</td></tr>
-            <tr><td>m_tossGrenadeTimer</td><td class="type">CountdownTimer</td><td class="value">0x5528</td></tr>
-            <tr><td>m_isAvoidingGrenade</td><td class="type">CountdownTimer</td><td class="value">0x5548</td></tr>
-            <tr><td>m_spotCheckTimestamp</td><td class="type">float32</td><td class="value">0x5568</td></tr>
-            <tr><td>m_checkedHidingSpotCount</td><td class="type">int32</td><td class="value">0x5970</td></tr>
-            <tr><td>m_lookPitch</td><td class="type">float32</td><td class="value">0x5974</td></tr>
-            <tr><td>m_lookPitchVel</td><td class="type">float32</td><td class="value">0x5978</td></tr>
-            <tr><td>m_lookYaw</td><td class="type">float32</td><td class="value">0x597C</td></tr>
-            <tr><td>m_lookYawVel</td><td class="type">float32</td><td class="value">0x5980</td></tr>
-            <tr><td>m_targetSpot</td><td class="type">Vector</td><td class="value">0x5984</td></tr>
-            <tr><td>m_targetSpotVelocity</td><td class="type">Vector</td><td class="value">0x5990</td></tr>
-            <tr><td>m_targetSpotPredicted</td><td class="type">Vector</td><td class="value">0x599C</td></tr>
-            <tr><td>m_aimError</td><td class="type">QAngle</td><td class="value">0x59A8</td></tr>
-            <tr><td>m_aimGoal</td><td class="type">QAngle</td><td class="value">0x59B4</td></tr>
-            <tr><td>m_targetSpotTime</td><td class="type">GameTime_t</td><td class="value">0x59C0</td></tr>
-            <tr><td>m_aimFocus</td><td class="type">float32</td><td class="value">0x59C4</td></tr>
-            <tr><td>m_aimFocusInterval</td><td class="type">float32</td><td class="value">0x59C8</td></tr>
-            <tr><td>m_aimFocusNextUpdate</td><td class="type">GameTime_t</td><td class="value">0x59CC</td></tr>
-            <tr><td>m_ignoreEnemiesTimer</td><td class="type">CountdownTimer</td><td class="value">0x59D8</td></tr>
-            <tr><td>m_enemy</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x59F0</td></tr>
-            <tr><td>m_isEnemyVisible</td><td class="type">bool</td><td class="value">0x59F4</td></tr>
-            <tr><td>m_visibleEnemyParts</td><td class="type">uint8</td><td class="value">0x59F5</td></tr>
-            <tr><td>m_lastEnemyPosition</td><td class="type">Vector</td><td class="value">0x59F8</td></tr>
-            <tr><td>m_lastSawEnemyTimestamp</td><td class="type">float32</td><td class="value">0x5A04</td></tr>
-            <tr><td>m_firstSawEnemyTimestamp</td><td class="type">float32</td><td class="value">0x5A08</td></tr>
-            <tr><td>m_currentEnemyAcquireTimestamp</td><td class="type">float32</td><td class="value">0x5A0C</td></tr>
-            <tr><td>m_enemyDeathTimestamp</td><td class="type">float32</td><td class="value">0x5A10</td></tr>
-            <tr><td>m_friendDeathTimestamp</td><td class="type">float32</td><td class="value">0x5A14</td></tr>
-            <tr><td>m_isLastEnemyDead</td><td class="type">bool</td><td class="value">0x5A18</td></tr>
-            <tr><td>m_nearbyEnemyCount</td><td class="type">int32</td><td class="value">0x5A1C</td></tr>
-            <tr><td>m_bomber</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C28</td></tr>
-            <tr><td>m_nearbyFriendCount</td><td class="type">int32</td><td class="value">0x5C2C</td></tr>
-            <tr><td>m_closestVisibleFriend</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C30</td></tr>
-            <tr><td>m_closestVisibleHumanFriend</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C34</td></tr>
-            <tr><td>m_attentionInterval</td><td class="type">IntervalTimer</td><td class="value">0x5C38</td></tr>
-            <tr><td>m_attacker</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C48</td></tr>
-            <tr><td>m_attackedTimestamp</td><td class="type">float32</td><td class="value">0x5C4C</td></tr>
-            <tr><td>m_burnedByFlamesTimer</td><td class="type">IntervalTimer</td><td class="value">0x5C50</td></tr>
-            <tr><td>m_lastVictimID</td><td class="type">int32</td><td class="value">0x5C60</td></tr>
-            <tr><td>m_isAimingAtEnemy</td><td class="type">bool</td><td class="value">0x5C64</td></tr>
-            <tr><td>m_isRapidFiring</td><td class="type">bool</td><td class="value">0x5C65</td></tr>
-            <tr><td>m_equipTimer</td><td class="type">IntervalTimer</td><td class="value">0x5C68</td></tr>
-            <tr><td>m_zoomTimer</td><td class="type">CountdownTimer</td><td class="value">0x5C78</td></tr>
-            <tr><td>m_fireWeaponTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5C90</td></tr>
-            <tr><td>m_lookForWeaponsOnGroundTimer</td><td class="type">CountdownTimer</td><td class="value">0x5C98</td></tr>
-            <tr><td>m_bIsSleeping</td><td class="type">bool</td><td class="value">0x5CB0</td></tr>
-            <tr><td>m_isEnemySniperVisible</td><td class="type">bool</td><td class="value">0x5CB1</td></tr>
-            <tr><td>m_sawEnemySniperTimer</td><td class="type">CountdownTimer</td><td class="value">0x5CB8</td></tr>
-            <tr><td>m_enemyQueueIndex</td><td class="type">uint8</td><td class="value">0x5D70</td></tr>
-            <tr><td>m_enemyQueueCount</td><td class="type">uint8</td><td class="value">0x5D71</td></tr>
-            <tr><td>m_enemyQueueAttendIndex</td><td class="type">uint8</td><td class="value">0x5D72</td></tr>
-            <tr><td>m_isStuck</td><td class="type">bool</td><td class="value">0x5D73</td></tr>
-            <tr><td>m_stuckTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5D74</td></tr>
-            <tr><td>m_stuckSpot</td><td class="type">Vector</td><td class="value">0x5D78</td></tr>
-            <tr><td>m_wiggleTimer</td><td class="type">CountdownTimer</td><td class="value">0x5D88</td></tr>
-            <tr><td>m_stuckJumpTimer</td><td class="type">CountdownTimer</td><td class="value">0x5DA0</td></tr>
-            <tr><td>m_nextCleanupCheckTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5DB8</td></tr>
-            <tr><td>m_avgVel</td><td class="type">float32[10]</td><td class="value">0x5DBC</td></tr>
-            <tr><td>m_avgVelIndex</td><td class="type">int32</td><td class="value">0x5DE4</td></tr>
-            <tr><td>m_avgVelCount</td><td class="type">int32</td><td class="value">0x5DE8</td></tr>
-            <tr><td>m_lastOrigin</td><td class="type">Vector</td><td class="value">0x5DEC</td></tr>
-            <tr><td>m_lastRadioRecievedTimestamp</td><td class="type">float32</td><td class="value">0x5DFC</td></tr>
-            <tr><td>m_lastRadioSentTimestamp</td><td class="type">float32</td><td class="value">0x5E00</td></tr>
-            <tr><td>m_radioSubject</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5E04</td></tr>
-            <tr><td>m_radioPosition</td><td class="type">Vector</td><td class="value">0x5E08</td></tr>
-            <tr><td>m_voiceEndTimestamp</td><td class="type">float32</td><td class="value">0x5E14</td></tr>
-            <tr><td>m_lastValidReactionQueueFrame</td><td class="type">int32</td><td class="value">0x5E20</td></tr>
+            <tr><td>m_stateTimestamp</td><td class="type">float32</td><td class="value">0x5C8</td></tr>
+            <tr><td>m_isAttacking</td><td class="type">bool</td><td class="value">0x5CC</td></tr>
+            <tr><td>m_isOpeningDoor</td><td class="type">bool</td><td class="value">0x5CD</td></tr>
+            <tr><td>m_taskEntity</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5D4</td></tr>
+            <tr><td>m_goalPosition</td><td class="type">VectorWS</td><td class="value">0x5E4</td></tr>
+            <tr><td>m_goalEntity</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5F0</td></tr>
+            <tr><td>m_avoid</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x5F4</td></tr>
+            <tr><td>m_avoidTimestamp</td><td class="type">float32</td><td class="value">0x5F8</td></tr>
+            <tr><td>m_isStopping</td><td class="type">bool</td><td class="value">0x5FC</td></tr>
+            <tr><td>m_hasVisitedEnemySpawn</td><td class="type">bool</td><td class="value">0x5FD</td></tr>
+            <tr><td>m_stillTimer</td><td class="type">IntervalTimer</td><td class="value">0x600</td></tr>
+            <tr><td>m_bEyeAnglesUnderPathFinderControl</td><td class="type">bool</td><td class="value">0x610</td></tr>
+            <tr><td>m_pathIndex</td><td class="type">int32</td><td class="value">0x4F10</td></tr>
+            <tr><td>m_areaEnteredTimestamp</td><td class="type">GameTime_t</td><td class="value">0x4F14</td></tr>
+            <tr><td>m_repathTimer</td><td class="type">CountdownTimer</td><td class="value">0x4F18</td></tr>
+            <tr><td>m_avoidFriendTimer</td><td class="type">CountdownTimer</td><td class="value">0x4F30</td></tr>
+            <tr><td>m_isFriendInTheWay</td><td class="type">bool</td><td class="value">0x4F48</td></tr>
+            <tr><td>m_politeTimer</td><td class="type">CountdownTimer</td><td class="value">0x4F50</td></tr>
+            <tr><td>m_isWaitingBehindFriend</td><td class="type">bool</td><td class="value">0x4F68</td></tr>
+            <tr><td>m_pathLadderEnd</td><td class="type">float32</td><td class="value">0x4F94</td></tr>
+            <tr><td>m_mustRunTimer</td><td class="type">CountdownTimer</td><td class="value">0x4FE0</td></tr>
+            <tr><td>m_waitTimer</td><td class="type">CountdownTimer</td><td class="value">0x4FF8</td></tr>
+            <tr><td>m_updateTravelDistanceTimer</td><td class="type">CountdownTimer</td><td class="value">0x5010</td></tr>
+            <tr><td>m_playerTravelDistance</td><td class="type">float32[64]</td><td class="value">0x5028</td></tr>
+            <tr><td>m_travelDistancePhase</td><td class="type">uint8</td><td class="value">0x5128</td></tr>
+            <tr><td>m_hostageEscortCount</td><td class="type">uint8</td><td class="value">0x52C0</td></tr>
+            <tr><td>m_hostageEscortCountTimestamp</td><td class="type">float32</td><td class="value">0x52C4</td></tr>
+            <tr><td>m_desiredTeam</td><td class="type">int32</td><td class="value">0x52C8</td></tr>
+            <tr><td>m_hasJoined</td><td class="type">bool</td><td class="value">0x52CC</td></tr>
+            <tr><td>m_isWaitingForHostage</td><td class="type">bool</td><td class="value">0x52CD</td></tr>
+            <tr><td>m_inhibitWaitingForHostageTimer</td><td class="type">CountdownTimer</td><td class="value">0x52D0</td></tr>
+            <tr><td>m_waitForHostageTimer</td><td class="type">CountdownTimer</td><td class="value">0x52E8</td></tr>
+            <tr><td>m_noisePosition</td><td class="type">Vector</td><td class="value">0x5300</td></tr>
+            <tr><td>m_noiseTravelDistance</td><td class="type">float32</td><td class="value">0x530C</td></tr>
+            <tr><td>m_noiseTimestamp</td><td class="type">float32</td><td class="value">0x5310</td></tr>
+            <tr><td>m_noiseSource</td><td class="type">CCSPlayerPawn*</td><td class="value">0x5318</td></tr>
+            <tr><td>m_noiseBendTimer</td><td class="type">CountdownTimer</td><td class="value">0x5330</td></tr>
+            <tr><td>m_bentNoisePosition</td><td class="type">Vector</td><td class="value">0x5348</td></tr>
+            <tr><td>m_bendNoisePositionValid</td><td class="type">bool</td><td class="value">0x5354</td></tr>
+            <tr><td>m_lookAroundStateTimestamp</td><td class="type">float32</td><td class="value">0x5358</td></tr>
+            <tr><td>m_lookAheadAngle</td><td class="type">float32</td><td class="value">0x535C</td></tr>
+            <tr><td>m_lookUpAngle</td><td class="type">float32</td><td class="value">0x5360</td></tr>
+            <tr><td>m_forwardAngle</td><td class="type">float32</td><td class="value">0x5364</td></tr>
+            <tr><td>m_inhibitLookAroundTimestamp</td><td class="type">float32</td><td class="value">0x5368</td></tr>
+            <tr><td>m_lookAtSpot</td><td class="type">Vector</td><td class="value">0x5370</td></tr>
+            <tr><td>m_lookAtSpotDuration</td><td class="type">float32</td><td class="value">0x5380</td></tr>
+            <tr><td>m_lookAtSpotTimestamp</td><td class="type">float32</td><td class="value">0x5384</td></tr>
+            <tr><td>m_lookAtSpotAngleTolerance</td><td class="type">float32</td><td class="value">0x5388</td></tr>
+            <tr><td>m_lookAtSpotClearIfClose</td><td class="type">bool</td><td class="value">0x538C</td></tr>
+            <tr><td>m_lookAtSpotAttack</td><td class="type">bool</td><td class="value">0x538D</td></tr>
+            <tr><td>m_lookAtDesc</td><td class="type">char*</td><td class="value">0x5390</td></tr>
+            <tr><td>m_peripheralTimestamp</td><td class="type">float32</td><td class="value">0x5398</td></tr>
+            <tr><td>m_approachPointCount</td><td class="type">uint8</td><td class="value">0x5520</td></tr>
+            <tr><td>m_approachPointViewPosition</td><td class="type">Vector</td><td class="value">0x5524</td></tr>
+            <tr><td>m_viewSteadyTimer</td><td class="type">IntervalTimer</td><td class="value">0x5530</td></tr>
+            <tr><td>m_tossGrenadeTimer</td><td class="type">CountdownTimer</td><td class="value">0x5548</td></tr>
+            <tr><td>m_isAvoidingGrenade</td><td class="type">CountdownTimer</td><td class="value">0x5568</td></tr>
+            <tr><td>m_spotCheckTimestamp</td><td class="type">float32</td><td class="value">0x5588</td></tr>
+            <tr><td>m_checkedHidingSpotCount</td><td class="type">int32</td><td class="value">0x5990</td></tr>
+            <tr><td>m_lookPitch</td><td class="type">float32</td><td class="value">0x5994</td></tr>
+            <tr><td>m_lookPitchVel</td><td class="type">float32</td><td class="value">0x5998</td></tr>
+            <tr><td>m_lookYaw</td><td class="type">float32</td><td class="value">0x599C</td></tr>
+            <tr><td>m_lookYawVel</td><td class="type">float32</td><td class="value">0x59A0</td></tr>
+            <tr><td>m_targetSpot</td><td class="type">Vector</td><td class="value">0x59A4</td></tr>
+            <tr><td>m_targetSpotVelocity</td><td class="type">Vector</td><td class="value">0x59B0</td></tr>
+            <tr><td>m_targetSpotPredicted</td><td class="type">Vector</td><td class="value">0x59BC</td></tr>
+            <tr><td>m_aimError</td><td class="type">QAngle</td><td class="value">0x59C8</td></tr>
+            <tr><td>m_aimGoal</td><td class="type">QAngle</td><td class="value">0x59D4</td></tr>
+            <tr><td>m_targetSpotTime</td><td class="type">GameTime_t</td><td class="value">0x59E0</td></tr>
+            <tr><td>m_aimFocus</td><td class="type">float32</td><td class="value">0x59E4</td></tr>
+            <tr><td>m_aimFocusInterval</td><td class="type">float32</td><td class="value">0x59E8</td></tr>
+            <tr><td>m_aimFocusNextUpdate</td><td class="type">GameTime_t</td><td class="value">0x59EC</td></tr>
+            <tr><td>m_ignoreEnemiesTimer</td><td class="type">CountdownTimer</td><td class="value">0x59F8</td></tr>
+            <tr><td>m_enemy</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5A10</td></tr>
+            <tr><td>m_isEnemyVisible</td><td class="type">bool</td><td class="value">0x5A14</td></tr>
+            <tr><td>m_visibleEnemyParts</td><td class="type">uint8</td><td class="value">0x5A15</td></tr>
+            <tr><td>m_lastEnemyPosition</td><td class="type">Vector</td><td class="value">0x5A18</td></tr>
+            <tr><td>m_lastSawEnemyTimestamp</td><td class="type">float32</td><td class="value">0x5A24</td></tr>
+            <tr><td>m_firstSawEnemyTimestamp</td><td class="type">float32</td><td class="value">0x5A28</td></tr>
+            <tr><td>m_currentEnemyAcquireTimestamp</td><td class="type">float32</td><td class="value">0x5A2C</td></tr>
+            <tr><td>m_enemyDeathTimestamp</td><td class="type">float32</td><td class="value">0x5A30</td></tr>
+            <tr><td>m_friendDeathTimestamp</td><td class="type">float32</td><td class="value">0x5A34</td></tr>
+            <tr><td>m_isLastEnemyDead</td><td class="type">bool</td><td class="value">0x5A38</td></tr>
+            <tr><td>m_nearbyEnemyCount</td><td class="type">int32</td><td class="value">0x5A3C</td></tr>
+            <tr><td>m_bomber</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C48</td></tr>
+            <tr><td>m_nearbyFriendCount</td><td class="type">int32</td><td class="value">0x5C4C</td></tr>
+            <tr><td>m_closestVisibleFriend</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C50</td></tr>
+            <tr><td>m_closestVisibleHumanFriend</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C54</td></tr>
+            <tr><td>m_attentionInterval</td><td class="type">IntervalTimer</td><td class="value">0x5C58</td></tr>
+            <tr><td>m_attacker</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5C68</td></tr>
+            <tr><td>m_attackedTimestamp</td><td class="type">float32</td><td class="value">0x5C6C</td></tr>
+            <tr><td>m_burnedByFlamesTimer</td><td class="type">IntervalTimer</td><td class="value">0x5C70</td></tr>
+            <tr><td>m_lastVictimID</td><td class="type">int32</td><td class="value">0x5C80</td></tr>
+            <tr><td>m_isAimingAtEnemy</td><td class="type">bool</td><td class="value">0x5C84</td></tr>
+            <tr><td>m_isRapidFiring</td><td class="type">bool</td><td class="value">0x5C85</td></tr>
+            <tr><td>m_equipTimer</td><td class="type">IntervalTimer</td><td class="value">0x5C88</td></tr>
+            <tr><td>m_zoomTimer</td><td class="type">CountdownTimer</td><td class="value">0x5C98</td></tr>
+            <tr><td>m_fireWeaponTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5CB0</td></tr>
+            <tr><td>m_lookForWeaponsOnGroundTimer</td><td class="type">CountdownTimer</td><td class="value">0x5CB8</td></tr>
+            <tr><td>m_bIsSleeping</td><td class="type">bool</td><td class="value">0x5CD0</td></tr>
+            <tr><td>m_isEnemySniperVisible</td><td class="type">bool</td><td class="value">0x5CD1</td></tr>
+            <tr><td>m_sawEnemySniperTimer</td><td class="type">CountdownTimer</td><td class="value">0x5CD8</td></tr>
+            <tr><td>m_enemyQueueIndex</td><td class="type">uint8</td><td class="value">0x5D90</td></tr>
+            <tr><td>m_enemyQueueCount</td><td class="type">uint8</td><td class="value">0x5D91</td></tr>
+            <tr><td>m_enemyQueueAttendIndex</td><td class="type">uint8</td><td class="value">0x5D92</td></tr>
+            <tr><td>m_isStuck</td><td class="type">bool</td><td class="value">0x5D93</td></tr>
+            <tr><td>m_stuckTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5D94</td></tr>
+            <tr><td>m_stuckSpot</td><td class="type">Vector</td><td class="value">0x5D98</td></tr>
+            <tr><td>m_wiggleTimer</td><td class="type">CountdownTimer</td><td class="value">0x5DA8</td></tr>
+            <tr><td>m_stuckJumpTimer</td><td class="type">CountdownTimer</td><td class="value">0x5DC0</td></tr>
+            <tr><td>m_nextCleanupCheckTimestamp</td><td class="type">GameTime_t</td><td class="value">0x5DD8</td></tr>
+            <tr><td>m_avgVel</td><td class="type">float32[10]</td><td class="value">0x5DDC</td></tr>
+            <tr><td>m_avgVelIndex</td><td class="type">int32</td><td class="value">0x5E04</td></tr>
+            <tr><td>m_avgVelCount</td><td class="type">int32</td><td class="value">0x5E08</td></tr>
+            <tr><td>m_lastOrigin</td><td class="type">Vector</td><td class="value">0x5E0C</td></tr>
+            <tr><td>m_lastRadioRecievedTimestamp</td><td class="type">float32</td><td class="value">0x5E1C</td></tr>
+            <tr><td>m_lastRadioSentTimestamp</td><td class="type">float32</td><td class="value">0x5E20</td></tr>
+            <tr><td>m_radioSubject</td><td class="type">CHandle<CCSPlayerPawn></td><td class="value">0x5E24</td></tr>
+            <tr><td>m_radioPosition</td><td class="type">Vector</td><td class="value">0x5E28</td></tr>
+            <tr><td>m_voiceEndTimestamp</td><td class="type">float32</td><td class="value">0x5E34</td></tr>
+            <tr><td>m_lastValidReactionQueueFrame</td><td class="type">int32</td><td class="value">0x5E40</td></tr>
         </tbody>
     </table>
     <h3>Class: CHandleTest</h3>
@@ -34860,15 +34858,12 @@
             <tr><td>m_angStashedShootAngles</td><td class="type">QAngle</td><td class="value">0x1300</td></tr>
             <tr><td>m_vecStashedGrenadeThrowPosition</td><td class="type">Vector</td><td class="value">0x130C</td></tr>
             <tr><td>m_vecStashedVelocity</td><td class="type">Vector</td><td class="value">0x1318</td></tr>
-            <tr><td>m_angShootAngleHistory</td><td class="type">QAngle[2]</td><td class="value">0x1324</td></tr>
-            <tr><td>m_vecThrowPositionHistory</td><td class="type">Vector[2]</td><td class="value">0x133C</td></tr>
-            <tr><td>m_vecVelocityHistory</td><td class="type">Vector[2]</td><td class="value">0x1354</td></tr>
-            <tr><td>m_bCommittingSuicideOnTeamChange</td><td class="type">bool</td><td class="value">0x1378</td></tr>
-            <tr><td>m_wasNotKilledNaturally</td><td class="type">bool</td><td class="value">0x1379</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x137C</td></tr>
-            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x1380</td></tr>
-            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x1384</td></tr>
-            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x1388</td></tr>
+            <tr><td>m_bCommittingSuicideOnTeamChange</td><td class="type">bool</td><td class="value">0x1330</td></tr>
+            <tr><td>m_wasNotKilledNaturally</td><td class="type">bool</td><td class="value">0x1331</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x1334</td></tr>
+            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x1338</td></tr>
+            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x133C</td></tr>
+            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x1340</td></tr>
         </tbody>
     </table>
     <h3>Class: CEnvLightProbeVolume</h3>
