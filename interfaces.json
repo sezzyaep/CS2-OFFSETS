@@ -9,7 +9,7 @@
     "GameClientExports001": 34103264,
     "LegacyGameUI001": 34215632,
     "Source2Client002": 37099312,
-    "Source2ClientConfig001": 36517744,
+    "Source2ClientConfig001": 36517328,
     "Source2ClientPrediction001": 34146192,
     "Source2ClientUI001": 34208816
   },
@@ -131,15 +131,15 @@
     "SchemaSystem_001": 485376
   },
   "server.dll": {
-    "EmptyWorldService001_Server": 29543952,
+    "EmptyWorldService001_Server": 29543936,
     "EntitySubclassUtilsV001": 29193104,
-    "NavGameTest001": 30249808,
+    "NavGameTest001": 30249824,
     "ServerToolsInfo_001": 29909816,
     "Source2GameClients001": 29904272,
     "Source2GameDirector001": 31586928,
     "Source2GameEntities001": 29907520,
     "Source2Server001": 29907088,
-    "Source2ServerConfig001": 32756296,
+    "Source2ServerConfig001": 32756312,
     "customnavsystem001": 29066872
   },
   "soundsystem.dll": {
