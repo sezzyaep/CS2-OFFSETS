@@ -29786,6 +29786,10 @@
             "offset": 6116,
             "type": "bool"
           },
+          "m_bCanBePickedUp": {
+            "offset": 6344,
+            "type": "bool"
+          },
           "m_bClearWeaponIdentifyingUGC": {
             "offset": 6328,
             "type": "bool"
@@ -29827,19 +29831,19 @@
             "type": "bool"
           },
           "m_bWasActiveWeaponWhenDropped": {
-            "offset": 6356,
+            "offset": 6360,
             "type": "bool"
           },
           "m_bWasOwnedByCT": {
-            "offset": 6396,
+            "offset": 6404,
             "type": "bool"
           },
           "m_bWasOwnedByTerrorist": {
-            "offset": 6397,
+            "offset": 6405,
             "type": "bool"
           },
           "m_donated": {
-            "offset": 6388,
+            "offset": 6396,
             "type": "bool"
           },
           "m_fAccuracyPenalty": {
@@ -29851,7 +29855,7 @@
             "type": "float32"
           },
           "m_fLastShotTime": {
-            "offset": 6392,
+            "offset": 6400,
             "type": "GameTime_t"
           },
           "m_flCrosshairDistance": {
@@ -29887,11 +29891,11 @@
             "type": "float32"
           },
           "m_flNextClientFireBulletTime": {
-            "offset": 6400,
+            "offset": 6408,
             "type": "float32"
           },
           "m_flNextClientFireBulletTime_Repredict": {
-            "offset": 6404,
+            "offset": 6412,
             "type": "float32"
           },
           "m_flPostponeFireReadyFrac": {
@@ -29927,7 +29931,7 @@
             "type": "GameTime_t"
           },
           "m_hPrevOwner": {
-            "offset": 6348,
+            "offset": 6352,
             "type": "CHandle<C_CSPlayerPawn>"
           },
           "m_iAmmoLastCheck": {
@@ -29963,7 +29967,7 @@
             "type": "GameTick_t"
           },
           "m_nDropTick": {
-            "offset": 6352,
+            "offset": 6356,
             "type": "GameTick_t"
           },
           "m_nLastEmptySoundCmdNum": {
@@ -29975,7 +29979,7 @@
             "type": "GameTick_t"
           },
           "m_nextPrevOwnerUseTime": {
-            "offset": 6344,
+            "offset": 6348,
             "type": "GameTime_t"
           },
           "m_vecTurningInaccuracyEyeDirLast": {
