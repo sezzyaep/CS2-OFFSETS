@@ -47404,19 +47404,11 @@
         "fields": {
           "m_flMaxVelocity": {
             "offset": 472,
-            "type": "float32"
+            "type": "CPerParticleFloatInput"
           },
           "m_flMinVelocity": {
-            "offset": 476,
-            "type": "float32"
-          },
-          "m_nOverrideCP": {
-            "offset": 480,
-            "type": "int32"
-          },
-          "m_nOverrideCPField": {
-            "offset": 484,
-            "type": "int32"
+            "offset": 840,
+            "type": "CPerParticleFloatInput"
           }
         },
         "metadata": [
