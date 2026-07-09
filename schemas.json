@@ -37218,12 +37218,22 @@
         },
         "type": "uint32"
       },
+      "_P____": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
       "______": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
       },
       "_h____": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "_u____": {
         "alignment": 0,
         "members": {},
         "type": "unknown"
