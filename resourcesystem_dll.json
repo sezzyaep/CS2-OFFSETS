@@ -1,6 +1,20 @@
 {
   "resourcesystem.dll": {
     "classes": {
+      "AABBWS_t": {
+        "fields": {
+          "m_vMaxBounds": {
+            "offset": 12,
+            "type": "VectorWS"
+          },
+          "m_vMinBounds": {
+            "offset": 0,
+            "type": "VectorWS"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
       "AABB_t": {
         "fields": {
           "m_vMaxBounds": {

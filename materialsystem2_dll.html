@@ -123,6 +123,8 @@
             <tr><td>m_bHasColorCorrection</td><td class="type">bool</td><td class="value">0x120</td></tr>
             <tr><td>m_bHasFogScatteringParams</td><td class="type">bool</td><td class="value">0x121</td></tr>
             <tr><td>m_fogScatteringParams</td><td class="type">PostProcessingFogScatteringParameters_t</td><td class="value">0x124</td></tr>
+            <tr><td>m_bHasLocalExposureParams</td><td class="type">bool</td><td class="value">0x144</td></tr>
+            <tr><td>m_localExposureParams</td><td class="type">PostProcessingLocalExposureParameters_t</td><td class="value">0x148</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamInt_t</h3>
@@ -195,6 +197,9 @@
             <tr><td>m_fCubemapScale</td><td class="type">float32</td><td class="value">0x8</td></tr>
             <tr><td>m_fVolumetricScale</td><td class="type">float32</td><td class="value">0xC</td></tr>
             <tr><td>m_fGradientScale</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_fWaterScale</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_fWaterDensity</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_fWaterDepthBlurRadius</td><td class="type">float32</td><td class="value">0x1C</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamBuffer_t</h3>
@@ -259,6 +264,18 @@
         </thead>
         <tbody>
             <tr><td>m_flValue</td><td class="type">float32</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: PostProcessingLocalExposureParameters_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_fShadowOffsetEV</td><td class="type">float32</td><td class="value">0x0</td></tr>
+            <tr><td>m_fHighlightOffsetEV</td><td class="type">float32</td><td class="value">0x4</td></tr>
+            <tr><td>m_fSigma</td><td class="type">float32</td><td class="value">0x8</td></tr>
+            <tr><td>m_fBoostLocalContrast</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
     <h3>Class: MaterialParamTexture_t</h3>

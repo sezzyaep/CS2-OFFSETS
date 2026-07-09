@@ -61,6 +61,7 @@
             <tr><td>RENDER_BUFFER_POOL_ALLOCATED</td><td class="value">2048</td></tr>
             <tr><td>RENDER_BUFFER_USAGE_CONDITIONAL_RENDERING</td><td class="value">4096</td></tr>
             <tr><td>RENDER_BUFFER_IMMOVABLE_ALLOCATION</td><td class="value">8192</td></tr>
+            <tr><td>RENDER_BUFFER_DYNAMIC_ZERO_COPY</td><td class="value">16384</td></tr>
         </tbody>
     </table>
     <h3>Enum: RsCullMode_t</h3>
@@ -88,6 +89,12 @@
             <tr><td>RS_CMP_NOT_EQUAL</td><td class="value">5</td></tr>
             <tr><td>RS_CMP_GREATER_EQUAL</td><td class="value">6</td></tr>
             <tr><td>RS_CMP_ALWAYS</td><td class="value">7</td></tr>
+            <tr><td>RS_CMP_FUNC_MASK</td><td class="value">7</td></tr>
+            <tr><td>RS_CMP_CLOSER_FARTHER_FLAG</td><td class="value">8</td></tr>
+            <tr><td>RS_CMP_CLOSER</td><td class="value">9</td></tr>
+            <tr><td>RS_CMP_CLOSER_EQUAL</td><td class="value">11</td></tr>
+            <tr><td>RS_CMP_FARTHER</td><td class="value">12</td></tr>
+            <tr><td>RS_CMP_FARTHER_EQUAL</td><td class="value">14</td></tr>
         </tbody>
     </table>
     <h3>Enum: RsFillMode_t</h3>
@@ -128,6 +135,20 @@
             <tr><td>INPUT_LAYOUT_VARIATION_MAX</td><td class="value">3</td></tr>
         </tbody>
     </table>
+    <h3>Enum: UpscalerType_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>UPSCALER_NONE</td><td class="value">0</td></tr>
+            <tr><td>UPSCALER_AMD_FSR2</td><td class="value">1</td></tr>
+            <tr><td>UPSCALER_AMD_FSR3</td><td class="value">2</td></tr>
+            <tr><td>UPSCALER_NVIDIA_DLSS</td><td class="value">3</td></tr>
+            <tr><td>UPSCALER_INTEL_XESS</td><td class="value">4</td></tr>
+            <tr><td>UPSCALER_COUNT</td><td class="value">5</td></tr>
+        </tbody>
+    </table>
     <h3>Enum: RenderSlotType_t</h3>
     <table>
         <thead>
@@ -147,7 +168,7 @@
         <tbody>
             <tr><td>m_bDepthTestEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
             <tr><td>m_bDepthWriteEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
-            <tr><td>m_depthFunc</td><td class="type">RsComparison_t</td><td class="value">0x1</td></tr>
+            <tr><td>m_depthFunc</td><td class="type">bitfield:4</td><td class="value">0x0</td></tr>
             <tr><td>m_stencilState</td><td class="type">RsStencilStateDesc_t</td><td class="value">0x2</td></tr>
         </tbody>
     </table>
@@ -212,15 +233,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_frontStencilFunc</td><td class="type">bitfield:4</td><td class="value">0x0</td></tr>
+            <tr><td>m_backStencilFunc</td><td class="type">bitfield:4</td><td class="value">0x0</td></tr>
             <tr><td>m_bStencilEnable</td><td class="type">bitfield:1</td><td class="value">0x0</td></tr>
             <tr><td>m_frontStencilFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_frontStencilDepthFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_frontStencilPassOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
-            <tr><td>m_frontStencilFunc</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_backStencilFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_backStencilDepthFailOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_backStencilPassOp</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
-            <tr><td>m_backStencilFunc</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
             <tr><td>m_nStencilReadMask</td><td class="type">uint8</td><td class="value">0x4</td></tr>
             <tr><td>m_nStencilWriteMask</td><td class="type">uint8</td><td class="value">0x5</td></tr>
         </tbody>

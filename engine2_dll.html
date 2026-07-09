@@ -202,8 +202,7 @@
             <tr><td>m_pTargetInput</td><td class="type">CUtlSymbolLarge</td><td class="value">0x18</td></tr>
             <tr><td>m_hActivator</td><td class="type">CEntityHandle</td><td class="value">0x20</td></tr>
             <tr><td>m_hCaller</td><td class="type">CEntityHandle</td><td class="value">0x24</td></tr>
-            <tr><td>m_nOutputID</td><td class="type">int32</td><td class="value">0x28</td></tr>
-            <tr><td>m_hEntTarget</td><td class="type">CEntityHandle</td><td class="value">0x2C</td></tr>
+            <tr><td>m_hEntTarget</td><td class="type">CEntityHandle</td><td class="value">0x28</td></tr>
             <tr><td>m_variantValue</td><td class="type">CVariantBase<CVariantDefaultAllocator></td><td class="value">0x30</td></tr>
         </tbody>
     </table>
@@ -376,8 +375,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Attributes</td><td class="type">CUtlOrderedMap<CUtlStringToken,Attribute_t></td><td class="value">0x0</td></tr>
-            <tr><td>m_Names</td><td class="type">CUtlOrderedMap<CUtlStringToken,CUtlString></td><td class="value">0x28</td></tr>
+            <tr><td>m_Attributes</td><td class="type">CUtlOrderedMap<CUtlStringTokenNoRegistration,Attribute_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_Names</td><td class="type">CUtlOrderedMap<CUtlStringTokenNoRegistration,CUtlString></td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: EventClientPreOutputParallelWithServer_t</h3>
@@ -416,12 +415,29 @@
         <tbody>
         </tbody>
     </table>
+    <h3>Class: EventBugBug_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <h3>Class: CVariantDefaultAllocator</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: EventBugBugComplete_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_pPayload</td><td class="type">EventBugBug_t*</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: EventModInitialized_t</h3>

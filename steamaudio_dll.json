@@ -96,7 +96,7 @@
             "offset": 24,
             "type": "CUtlVector<float32>"
           },
-          "m_vecReflectionRatio": {
+          "m_vecReflectionEnergy": {
             "offset": 72,
             "type": "CUtlVector<float32>"
           }

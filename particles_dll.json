@@ -280,7 +280,7 @@
       "CBaseTrailRenderer": {
         "fields": {
           "m_bClampV": {
-            "offset": 12512,
+            "offset": 12880,
             "type": "bool"
           },
           "m_flEndFadeSize": {
@@ -297,6 +297,10 @@
           },
           "m_flStartFadeSize": {
             "offset": 11776,
+            "type": "CParticleCollectionRendererFloatInput"
+          },
+          "m_flSubPixelAAScale": {
+            "offset": 12512,
             "type": "CParticleCollectionRendererFloatInput"
           },
           "m_nOrientationControlPoint": {
@@ -1054,7 +1058,7 @@
       "CPulseCell_BaseLerp": {
         "fields": {
           "m_WakeResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -1120,10 +1124,23 @@
         "parent": null
       },
       "CPulseCell_BaseYieldingInflow": {
-        "fields": {},
+        "fields": {
+          "m_BaseFlow_OnAfterCancel": {
+            "offset": 72,
+            "type": "CPulse_ResumePoint"
+          },
+          "m_BaseFlow_WhileActive": {
+            "offset": 144,
+            "type": "CPulse_ResumePoint"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MCustomFGDMetadata",
             "type": "Unknown"
           }
         ],
@@ -1131,20 +1148,16 @@
       },
       "CPulseCell_BooleanSwitchState": {
         "fields": {
-          "m_Always": {
-            "offset": 192,
-            "type": "CPulse_OutflowConnection"
-          },
           "m_Condition": {
-            "offset": 72,
-            "type": "PulseObservableBoolExpression_t"
+            "offset": 216,
+            "type": "CPulseObservableExpression<bool>"
           },
           "m_WhenFalse": {
-            "offset": 336,
+            "offset": 408,
             "type": "CPulse_OutflowConnection"
           },
           "m_WhenTrue": {
-            "offset": 264,
+            "offset": 336,
             "type": "CPulse_OutflowConnection"
           }
         },
@@ -1171,7 +1184,7 @@
       "CPulseCell_CursorQueue": {
         "fields": {
           "m_nCursorsAllowedToRunParallel": {
-            "offset": 152,
+            "offset": 296,
             "type": "int32"
           }
         },
@@ -1197,20 +1210,16 @@
       },
       "CPulseCell_FireCursors": {
         "fields": {
-          "m_OnCanceled": {
-            "offset": 176,
-            "type": "CPulse_ResumePoint"
-          },
           "m_OnFinished": {
-            "offset": 104,
+            "offset": 248,
             "type": "CPulse_ResumePoint"
           },
           "m_Outflows": {
-            "offset": 72,
+            "offset": 216,
             "type": "CUtlVector<CPulse_OutflowConnection>"
           },
           "m_bWaitForChildOutflows": {
-            "offset": 96,
+            "offset": 240,
             "type": "bool"
           }
         },
@@ -1347,7 +1356,7 @@
       "CPulseCell_Inflow_Wait": {
         "fields": {
           "m_WakeResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -1378,7 +1387,7 @@
       "CPulseCell_Inflow_Yield": {
         "fields": {
           "m_UnyieldResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -1420,11 +1429,11 @@
       "CPulseCell_IntervalTimer": {
         "fields": {
           "m_Completed": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           },
           "m_OnInterval": {
-            "offset": 144,
+            "offset": 288,
             "type": "SignatureOutflow_Continue"
           }
         },
@@ -1443,6 +1452,10 @@
           },
           {
             "name": "MPulseEditorHeaderIcon",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPulseEditorCanvasItemSpecKV3",
             "type": "Unknown"
           }
         ],
@@ -1664,23 +1677,23 @@
       "CPulseCell_Step_CallExternalMethod": {
         "fields": {
           "m_ExpectedArgs": {
-            "offset": 96,
+            "offset": 240,
             "type": "CUtlLeanVector<CPulseRuntimeMethodArg>"
           },
           "m_MethodName": {
-            "offset": 72,
+            "offset": 216,
             "type": "PulseSymbol_t"
           },
           "m_OnFinished": {
-            "offset": 120,
+            "offset": 264,
             "type": "CPulse_ResumePoint"
           },
           "m_nAsyncCallMode": {
-            "offset": 112,
+            "offset": 256,
             "type": "PulseMethodCallMode_t"
           },
           "m_nBlackboardIndex": {
-            "offset": 88,
+            "offset": 232,
             "type": "PulseRuntimeBlackboardReferenceIndex_t"
           }
         },
@@ -1719,20 +1732,16 @@
       },
       "CPulseCell_Timeline": {
         "fields": {
-          "m_OnCanceled": {
-            "offset": 176,
-            "type": "CPulse_ResumePoint"
-          },
           "m_OnFinished": {
-            "offset": 104,
+            "offset": 248,
             "type": "CPulse_ResumePoint"
           },
           "m_TimelineEvents": {
-            "offset": 72,
+            "offset": 216,
             "type": "CUtlVector<CPulseCell_Timeline::TimelineEvent_t>"
           },
           "m_bWaitForChildOutflows": {
-            "offset": 96,
+            "offset": 240,
             "type": "bool"
           }
         },
@@ -1858,11 +1867,11 @@
       "CPulseCell_WaitForCursorsWithTag": {
         "fields": {
           "m_bTagSelfWhenComplete": {
-            "offset": 152,
+            "offset": 296,
             "type": "bool"
           },
           "m_nDesiredKillPriority": {
-            "offset": 156,
+            "offset": 300,
             "type": "PulseCursorCancelPriority_t"
           }
         },
@@ -1889,11 +1898,11 @@
       "CPulseCell_WaitForCursorsWithTagBase": {
         "fields": {
           "m_WaitComplete": {
-            "offset": 80,
+            "offset": 224,
             "type": "CPulse_ResumePoint"
           },
           "m_nCursorsAllowedToWait": {
-            "offset": 72,
+            "offset": 216,
             "type": "int32"
           }
         },
@@ -1909,24 +1918,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_WaitForCursorsWithTagBase__CursorState_t": {
-        "fields": {
-          "m_TagName": {
-            "offset": 0,
-            "type": "PulseSymbol_t"
-          }
-        },
-        "metadata": [],
-        "parent": null
-      },
       "CPulseCell_WaitForObservable": {
         "fields": {
           "m_Condition": {
-            "offset": 72,
-            "type": "PulseObservableBoolExpression_t"
+            "offset": 216,
+            "type": "CPulseObservableExpression<bool>"
           },
           "m_OnTrue": {
-            "offset": 192,
+            "offset": 336,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -1951,6 +1950,16 @@
         "parent": null
       },
       "CPulseCursorFuncs": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MPropertyDescription",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CPulseEnumlib": {
         "fields": {},
         "metadata": [
           {
@@ -2033,6 +2042,16 @@
         "parent": null
       },
       "CPulseMathlib": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MPropertyDescription",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CPulseStringlib": {
         "fields": {},
         "metadata": [
           {
@@ -5716,6 +5735,29 @@
         ],
         "parent": null
       },
+      "C_INIT_SkyVisCull": {
+        "fields": {
+          "m_bCullOnSky": {
+            "offset": 2204,
+            "type": "bool"
+          },
+          "m_nTraceSet": {
+            "offset": 2200,
+            "type": "ParticleTraceSet_t"
+          },
+          "m_vecTestDir": {
+            "offset": 480,
+            "type": "CParticleCollectionVecInput"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "C_INIT_StatusEffect": {
         "fields": {
           "m_flAmbientScale": {
@@ -6036,15 +6078,15 @@
       "C_OP_AttractToControlPoint": {
         "fields": {
           "m_TransformInput": {
-            "offset": 880,
+            "offset": 1248,
             "type": "CParticleTransformInput"
           },
           "m_bApplyMinForce": {
-            "offset": 1352,
+            "offset": 1720,
             "type": "bool"
           },
           "m_fFalloffPower": {
-            "offset": 872,
+            "offset": 1240,
             "type": "float32"
           },
           "m_fForceAmount": {
@@ -6052,7 +6094,11 @@
             "type": "CPerParticleFloatInput"
           },
           "m_fForceAmountMin": {
-            "offset": 984,
+            "offset": 1352,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_fMinimumDistance": {
+            "offset": 872,
             "type": "CPerParticleFloatInput"
           },
           "m_vecComponentScale": {
@@ -6434,6 +6480,14 @@
           "m_nMaxParticleCount": {
             "offset": 1308,
             "type": "int32"
+          },
+          "m_nNoCollisionAttribute": {
+            "offset": 1332,
+            "type": "ParticleAttributeIndex_t"
+          },
+          "m_nZeroGravityAttribute": {
+            "offset": 1336,
+            "type": "ParticleAttributeIndex_t"
           },
           "m_strPhysicsType": {
             "offset": 552,
@@ -8220,6 +8274,10 @@
       },
       "C_OP_GameLiquidSpill": {
         "fields": {
+          "m_bCheckExposedToSky": {
+            "offset": 1656,
+            "type": "bool"
+          },
           "m_flExpirationTime": {
             "offset": 920,
             "type": "CParticleCollectionFloatInput"
@@ -8228,8 +8286,12 @@
             "offset": 552,
             "type": "CParticleCollectionFloatInput"
           },
-          "m_nAmountAttribute": {
+          "m_flRadius": {
             "offset": 1288,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_nAmountAttribute": {
+            "offset": 1660,
             "type": "ParticleAttributeIndex_t"
           }
         },
@@ -8731,12 +8793,28 @@
       },
       "C_OP_LightningSnapshotGenerator": {
         "fields": {
+          "m_bScaleBranchDistance": {
+            "offset": 3440,
+            "type": "bool"
+          },
+          "m_bScaleBranchOffset": {
+            "offset": 3816,
+            "type": "bool"
+          },
+          "m_flBranchDistanceScale": {
+            "offset": 3448,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_flBranchOffsetScale": {
+            "offset": 3824,
+            "type": "CParticleCollectionFloatInput"
+          },
           "m_flBranchTwist": {
-            "offset": 3072,
+            "offset": 4192,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flDedicatedPool": {
-            "offset": 4184,
+            "offset": 5304,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flOffset": {
@@ -8748,15 +8826,19 @@
             "type": "CParticleCollectionFloatInput"
           },
           "m_flRadiusEnd": {
-            "offset": 3816,
+            "offset": 4936,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flRadiusStart": {
-            "offset": 3448,
+            "offset": 4568,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flRecalcRate": {
             "offset": 1600,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_flRecursionSplitScale": {
+            "offset": 3072,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flSegments": {
@@ -8776,7 +8858,7 @@
             "type": "CParticleCollectionFloatInput"
           },
           "m_nBranchBehavior": {
-            "offset": 3440,
+            "offset": 4560,
             "type": "ParticleLightnintBranchBehavior_t"
           },
           "m_nCPEndPnt": {
@@ -9591,31 +9673,35 @@
       "C_OP_MultiSegmentDisplaySnapshotGenerator": {
         "fields": {
           "m_SpecialCharList": {
-            "offset": 872,
+            "offset": 1240,
             "type": "CUtlVector<ParticleMultiSegmentSpecialCharacter_t>"
           },
           "m_bPrependEmpty": {
-            "offset": 5808,
+            "offset": 6176,
             "type": "bool"
           },
           "m_flDigitsAfterDecimal": {
-            "offset": 5816,
+            "offset": 6184,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flMaxCount": {
-            "offset": 5440,
+            "offset": 5808,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flMinCount": {
-            "offset": 5072,
+            "offset": 5440,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flRadius": {
-            "offset": 4336,
+            "offset": 4704,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_flScollOffset": {
+            "offset": 872,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flSpacing": {
-            "offset": 4704,
+            "offset": 5072,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flValue": {
@@ -9639,11 +9725,11 @@
             "type": "CUtlString"
           },
           "m_vecColorLit": {
-            "offset": 2616,
+            "offset": 2984,
             "type": "CParticleCollectionVecInput"
           },
           "m_vecColorUnlit": {
-            "offset": 896,
+            "offset": 1264,
             "type": "CParticleCollectionVecInput"
           }
         },
@@ -9825,16 +9911,20 @@
       "C_OP_OrientTo2dDirection": {
         "fields": {
           "m_flRotOffset": {
-            "offset": 472,
+            "offset": 2192,
             "type": "float32"
           },
           "m_flSpinStrength": {
-            "offset": 476,
+            "offset": 2196,
             "type": "float32"
           },
           "m_nFieldOutput": {
-            "offset": 480,
+            "offset": 2200,
             "type": "ParticleAttributeIndex_t"
+          },
+          "m_vecInput": {
+            "offset": 472,
+            "type": "CPerParticleVecInput"
           }
         },
         "metadata": [
@@ -10433,6 +10523,10 @@
       },
       "C_OP_PointVectorAtNextParticle": {
         "fields": {
+          "m_bPrevious": {
+            "offset": 848,
+            "type": "bool"
+          },
           "m_flInterpolation": {
             "offset": 480,
             "type": "CPerParticleFloatInput"
@@ -12422,6 +12516,10 @@
             "offset": 5240,
             "type": "bool"
           },
+          "m_bOnlyRenderInEffectsBloomPass": {
+            "offset": 5269,
+            "type": "bool"
+          },
           "m_flAlphaScale": {
             "offset": 920,
             "type": "CParticleCollectionFloatInput"
@@ -12684,43 +12782,83 @@
       "C_OP_RenderLightBeam": {
         "fields": {
           "m_bCastShadows": {
-            "offset": 2656,
+            "offset": 3400,
+            "type": "bool"
+          },
+          "m_bDebugOrientation": {
+            "offset": 8080,
             "type": "bool"
           },
           "m_bDynamicBounce": {
-            "offset": 2657,
+            "offset": 3401,
             "type": "bool"
           },
           "m_flBounceScale": {
-            "offset": 2664,
+            "offset": 3408,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flBrightnessLumensPerMeter": {
-            "offset": 2288,
+            "offset": 2664,
             "type": "CParticleCollectionFloatInput"
           },
-          "m_flRange": {
-            "offset": 3400,
+          "m_flFogContribution": {
+            "offset": 7344,
+            "type": "CParticleCollectionRendererFloatInput"
+          },
+          "m_flInnerConeAngle": {
+            "offset": 4880,
             "type": "CParticleCollectionFloatInput"
           },
-          "m_flSkirt": {
+          "m_flLightStyleTime": {
+            "offset": 2296,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flNumberOfLightsToCreate": {
             "offset": 3032,
             "type": "CParticleCollectionFloatInput"
           },
+          "m_flOuterConeAngle": {
+            "offset": 5248,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_flRange": {
+            "offset": 4144,
+            "type": "CParticleCollectionFloatInput"
+          },
+          "m_flRenderFilter": {
+            "offset": 7712,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flSkirt": {
+            "offset": 3776,
+            "type": "CParticleCollectionFloatInput"
+          },
           "m_flThickness": {
-            "offset": 3768,
+            "offset": 4512,
             "type": "CParticleCollectionFloatInput"
           },
           "m_nColorBlendType": {
             "offset": 2280,
             "type": "ParticleColorBlendType_t"
           },
+          "m_nFogLightingMode": {
+            "offset": 7336,
+            "type": "ParticleLightFogLightingMode_t"
+          },
           "m_nMaxAllowed": {
             "offset": 552,
             "type": "uint16"
           },
+          "m_strLightStyle": {
+            "offset": 2288,
+            "type": "CUtlString"
+          },
           "m_vColorBlend": {
             "offset": 560,
+            "type": "CParticleCollectionVecInput"
+          },
+          "m_vecConeRotationOffset": {
+            "offset": 5616,
             "type": "CParticleCollectionVecInput"
           }
         },
@@ -12948,6 +13086,10 @@
             "offset": 5784,
             "type": "CPerParticleFloatInput"
           },
+          "m_flLightStyleTime": {
+            "offset": 11376,
+            "type": "CPerParticleFloatInput"
+          },
           "m_flManualModelSelection": {
             "offset": 7528,
             "type": "CPerParticleFloatInput"
@@ -13020,6 +13162,10 @@
             "offset": 8256,
             "type": "RenderModelSubModelFieldType_t"
           },
+          "m_strLightStyle": {
+            "offset": 11368,
+            "type": "CUtlString"
+          },
           "m_szRenderAttribute": {
             "offset": 8266,
             "type": "char[260]"
@@ -13052,63 +13198,67 @@
       "C_OP_RenderOmni2Light": {
         "fields": {
           "m_bCastShadows": {
-            "offset": 3024,
+            "offset": 3408,
             "type": "bool"
           },
           "m_bDynamicBounce": {
-            "offset": 3025,
+            "offset": 3409,
             "type": "bool"
           },
           "m_bFog": {
-            "offset": 3400,
+            "offset": 3784,
             "type": "bool"
           },
           "m_bSphericalCookie": {
-            "offset": 5624,
+            "offset": 6008,
             "type": "bool"
           },
           "m_flBounceScale": {
-            "offset": 3032,
+            "offset": 3416,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flBrightnessCandelas": {
-            "offset": 2656,
+            "offset": 3040,
             "type": "CPerParticleFloatInput"
           },
           "m_flBrightnessLumens": {
-            "offset": 2288,
+            "offset": 2672,
             "type": "CPerParticleFloatInput"
           },
           "m_flFogScale": {
-            "offset": 3408,
+            "offset": 3792,
             "type": "CPerParticleFloatInput"
           },
           "m_flInnerConeAngle": {
-            "offset": 4880,
+            "offset": 5264,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flLightStyleTime": {
+            "offset": 2296,
             "type": "CPerParticleFloatInput"
           },
           "m_flLuminaireRadius": {
-            "offset": 3776,
+            "offset": 4160,
             "type": "CPerParticleFloatInput"
           },
           "m_flOuterConeAngle": {
-            "offset": 5248,
+            "offset": 5632,
             "type": "CPerParticleFloatInput"
           },
           "m_flRange": {
-            "offset": 4512,
+            "offset": 4896,
             "type": "CPerParticleFloatInput"
           },
           "m_flSkirt": {
-            "offset": 4144,
+            "offset": 4528,
             "type": "CPerParticleFloatInput"
           },
           "m_hLightCookie": {
-            "offset": 5616,
+            "offset": 6000,
             "type": "CStrongHandle<InfoForResourceTypeCTextureBase>"
           },
           "m_nBrightnessUnit": {
-            "offset": 2284,
+            "offset": 2664,
             "type": "ParticleLightUnitChoiceList_t"
           },
           "m_nColorBlendType": {
@@ -13122,6 +13272,10 @@
           "m_nMaxAllowed": {
             "offset": 556,
             "type": "uint16"
+          },
+          "m_strLightStyle": {
+            "offset": 2288,
+            "type": "CUtlString"
           },
           "m_vColorBlend": {
             "offset": 560,
@@ -13260,15 +13414,15 @@
       "C_OP_RenderRopes": {
         "fields": {
           "m_bClampV": {
-            "offset": 12916,
+            "offset": 13284,
             "type": "bool"
           },
           "m_bClosedLoop": {
-            "offset": 12953,
+            "offset": 13321,
             "type": "bool"
           },
           "m_bDrawAsOpaque": {
-            "offset": 12972,
+            "offset": 13340,
             "type": "bool"
           },
           "m_bEnableFadingAndClamping": {
@@ -13276,19 +13430,19 @@
             "type": "bool"
           },
           "m_bGenerateNormals": {
-            "offset": 12973,
+            "offset": 13341,
             "type": "bool"
           },
           "m_bReverseOrder": {
-            "offset": 12952,
+            "offset": 13320,
             "type": "bool"
           },
           "m_bSortBySegmentID": {
-            "offset": 12960,
+            "offset": 13328,
             "type": "bool"
           },
           "m_bUseScalarForTextureCoordinate": {
-            "offset": 12941,
+            "offset": 13309,
             "type": "bool"
           },
           "m_flEndFadeDot": {
@@ -13308,23 +13462,23 @@
             "type": "float32"
           },
           "m_flRadiusTaper": {
-            "offset": 11788,
+            "offset": 12160,
             "type": "float32"
           },
           "m_flScalarAttributeTextureCoordScale": {
-            "offset": 12948,
+            "offset": 13316,
             "type": "float32"
           },
           "m_flScaleVOffsetByControlPointDistance": {
-            "offset": 12936,
+            "offset": 13304,
             "type": "float32"
           },
           "m_flScaleVScrollByControlPointDistance": {
-            "offset": 12932,
+            "offset": 13300,
             "type": "float32"
           },
           "m_flScaleVSizeByControlPointDistance": {
-            "offset": 12928,
+            "offset": 13296,
             "type": "float32"
           },
           "m_flStartFadeDot": {
@@ -13335,56 +13489,60 @@
             "offset": 11772,
             "type": "float32"
           },
+          "m_flSubPixelAAScale": {
+            "offset": 11792,
+            "type": "CParticleCollectionRendererFloatInput"
+          },
           "m_flTessScale": {
-            "offset": 11800,
+            "offset": 12172,
             "type": "float32"
           },
           "m_flTextureVOffset": {
-            "offset": 12544,
+            "offset": 12912,
             "type": "CParticleCollectionRendererFloatInput"
           },
           "m_flTextureVScrollRate": {
-            "offset": 12176,
+            "offset": 12544,
             "type": "CParticleCollectionRendererFloatInput"
           },
           "m_flTextureVWorldSize": {
-            "offset": 11808,
+            "offset": 12176,
             "type": "CParticleCollectionRendererFloatInput"
           },
           "m_nMaxTesselation": {
-            "offset": 11796,
+            "offset": 12168,
             "type": "int32"
           },
           "m_nMinTesselation": {
-            "offset": 11792,
+            "offset": 12164,
             "type": "int32"
           },
           "m_nOrientationType": {
-            "offset": 12964,
+            "offset": 13332,
             "type": "ParticleOrientationChoiceList_t"
           },
           "m_nScalarFieldForTextureCoordinate": {
-            "offset": 12944,
+            "offset": 13312,
             "type": "ParticleAttributeIndex_t"
           },
           "m_nScaleCP1": {
-            "offset": 12920,
+            "offset": 13288,
             "type": "int32"
           },
           "m_nScaleCP2": {
-            "offset": 12924,
+            "offset": 13292,
             "type": "int32"
           },
           "m_nSplitField": {
-            "offset": 12956,
+            "offset": 13324,
             "type": "ParticleAttributeIndex_t"
           },
           "m_nTextureVParamsCP": {
-            "offset": 12912,
+            "offset": 13280,
             "type": "int32"
           },
           "m_nVectorFieldForOrientation": {
-            "offset": 12968,
+            "offset": 13336,
             "type": "ParticleAttributeIndex_t"
           }
         },
@@ -13598,10 +13756,6 @@
             "offset": 12140,
             "type": "bool"
           },
-          "m_flAlphaAdjustWithSizeAdjust": {
-            "offset": 12880,
-            "type": "CParticleCollectionRendererFloatInput"
-          },
           "m_flEdgeSoftnessEnd": {
             "offset": 14000,
             "type": "float32"
@@ -13662,6 +13816,10 @@
             "offset": 13248,
             "type": "CParticleCollectionRendererFloatInput"
           },
+          "m_flSubPixelAAScale": {
+            "offset": 12880,
+            "type": "CParticleCollectionRendererFloatInput"
+          },
           "m_nLightingMode": {
             "offset": 14032,
             "type": "ParticleLightingQuality_t"
@@ -13702,103 +13860,107 @@
       "C_OP_RenderStandardLight": {
         "fields": {
           "m_bCastShadows": {
-            "offset": 2656,
+            "offset": 3032,
             "type": "bool"
           },
           "m_bClosedLoop": {
-            "offset": 5649,
+            "offset": 6025,
             "type": "bool"
           },
           "m_bDynamicBounce": {
-            "offset": 2657,
+            "offset": 3033,
             "type": "bool"
           },
           "m_bIgnoreDT": {
-            "offset": 5664,
+            "offset": 6040,
             "type": "bool"
           },
           "m_bRenderDiffuse": {
-            "offset": 5248,
+            "offset": 5624,
             "type": "bool"
           },
           "m_bRenderSpecular": {
-            "offset": 5249,
+            "offset": 5625,
             "type": "bool"
           },
           "m_bReverseOrder": {
-            "offset": 5648,
+            "offset": 6024,
             "type": "bool"
           },
           "m_flBounceScale": {
-            "offset": 2664,
+            "offset": 3040,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flCapsuleLength": {
-            "offset": 5644,
+            "offset": 6020,
             "type": "float32"
           },
           "m_flConstrainRadiusToLengthRatio": {
-            "offset": 5668,
+            "offset": 6044,
             "type": "float32"
           },
           "m_flFalloffLinearity": {
-            "offset": 4144,
+            "offset": 4520,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flFiftyPercentFalloff": {
-            "offset": 4512,
+            "offset": 4888,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flFogContribution": {
-            "offset": 5272,
+            "offset": 5648,
             "type": "CParticleCollectionRendererFloatInput"
           },
           "m_flIntensity": {
-            "offset": 2288,
+            "offset": 2664,
             "type": "CPerParticleFloatInput"
           },
           "m_flLengthFadeInTime": {
-            "offset": 5676,
+            "offset": 6052,
             "type": "float32"
           },
           "m_flLengthScale": {
-            "offset": 5672,
+            "offset": 6048,
             "type": "float32"
           },
+          "m_flLightStyleTime": {
+            "offset": 2296,
+            "type": "CPerParticleFloatInput"
+          },
           "m_flMaxLength": {
-            "offset": 5656,
+            "offset": 6032,
             "type": "float32"
           },
           "m_flMinLength": {
-            "offset": 5660,
+            "offset": 6036,
             "type": "float32"
           },
           "m_flPhi": {
-            "offset": 3400,
+            "offset": 3776,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flRadiusMultiplier": {
-            "offset": 3768,
+            "offset": 4144,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flTheta": {
-            "offset": 3032,
+            "offset": 3408,
             "type": "CParticleCollectionFloatInput"
           },
           "m_flZeroPercentFalloff": {
-            "offset": 4880,
+            "offset": 5256,
             "type": "CParticleCollectionFloatInput"
           },
           "m_lightCookie": {
-            "offset": 5256,
+            "offset": 5632,
             "type": "CUtlString"
           },
           "m_nAttenuationStyle": {
-            "offset": 4136,
+            "offset": 4512,
             "type": "StandardLightingAttenuationStyle_t"
           },
           "m_nCapsuleLightBehavior": {
-            "offset": 5640,
+            "offset": 6016,
             "type": "ParticleLightBehaviorChoiceList_t"
           },
           "m_nColorBlendType": {
@@ -13806,7 +13968,7 @@
             "type": "ParticleColorBlendType_t"
           },
           "m_nFogLightingMode": {
-            "offset": 5268,
+            "offset": 5644,
             "type": "ParticleLightFogLightingMode_t"
           },
           "m_nLightType": {
@@ -13818,12 +13980,16 @@
             "type": "uint16"
           },
           "m_nPrevPntSource": {
-            "offset": 5652,
+            "offset": 6028,
             "type": "ParticleAttributeIndex_t"
           },
           "m_nPriority": {
-            "offset": 5264,
+            "offset": 5640,
             "type": "int32"
+          },
+          "m_strLightStyle": {
+            "offset": 2288,
+            "type": "CUtlString"
           },
           "m_vecColorScale": {
             "offset": 560,
@@ -13934,83 +14100,83 @@
       "C_OP_RenderTrails": {
         "fields": {
           "m_bEnableFadingAndClamping": {
-            "offset": 12520,
+            "offset": 12888,
             "type": "bool"
           },
           "m_bFlipUVBasedOnPitchYaw": {
-            "offset": 17484,
+            "offset": 17852,
             "type": "bool"
           },
           "m_bIgnoreDT": {
-            "offset": 12544,
+            "offset": 12912,
             "type": "bool"
           },
           "m_flConstrainRadiusToLengthRatio": {
-            "offset": 12548,
+            "offset": 12916,
             "type": "float32"
           },
           "m_flEndFadeDot": {
-            "offset": 12528,
+            "offset": 12896,
             "type": "float32"
           },
           "m_flForwardShift": {
-            "offset": 17480,
+            "offset": 17848,
             "type": "float32"
           },
           "m_flHeadAlphaScale": {
-            "offset": 14648,
-            "type": "CPerParticleFloatInput"
-          },
-          "m_flLengthFadeInTime": {
-            "offset": 12556,
-            "type": "float32"
-          },
-          "m_flLengthScale": {
-            "offset": 12552,
-            "type": "float32"
-          },
-          "m_flMaxLength": {
-            "offset": 12536,
-            "type": "float32"
-          },
-          "m_flMinLength": {
-            "offset": 12540,
-            "type": "float32"
-          },
-          "m_flRadiusHeadTaper": {
-            "offset": 12560,
-            "type": "CPerParticleFloatInput"
-          },
-          "m_flRadiusTaper": {
             "offset": 15016,
             "type": "CPerParticleFloatInput"
           },
+          "m_flLengthFadeInTime": {
+            "offset": 12924,
+            "type": "float32"
+          },
+          "m_flLengthScale": {
+            "offset": 12920,
+            "type": "float32"
+          },
+          "m_flMaxLength": {
+            "offset": 12904,
+            "type": "float32"
+          },
+          "m_flMinLength": {
+            "offset": 12908,
+            "type": "float32"
+          },
+          "m_flRadiusHeadTaper": {
+            "offset": 12928,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flRadiusTaper": {
+            "offset": 15384,
+            "type": "CPerParticleFloatInput"
+          },
           "m_flStartFadeDot": {
-            "offset": 12524,
+            "offset": 12892,
             "type": "float32"
           },
           "m_flTailAlphaScale": {
-            "offset": 17104,
+            "offset": 17472,
             "type": "CPerParticleFloatInput"
           },
           "m_nHorizCropField": {
-            "offset": 17472,
+            "offset": 17840,
             "type": "ParticleAttributeIndex_t"
           },
           "m_nPrevPntSource": {
-            "offset": 12532,
+            "offset": 12900,
             "type": "ParticleAttributeIndex_t"
           },
           "m_nVertCropField": {
-            "offset": 17476,
+            "offset": 17844,
             "type": "ParticleAttributeIndex_t"
           },
           "m_vecHeadColorScale": {
-            "offset": 12928,
+            "offset": 13296,
             "type": "CParticleCollectionVecInput"
           },
           "m_vecTailColorScale": {
-            "offset": 15384,
+            "offset": 15752,
             "type": "CParticleCollectionVecInput"
           }
         },
@@ -14103,27 +14269,35 @@
       "C_OP_RenderVolumetricEmitter": {
         "fields": {
           "m_flDensity": {
-            "offset": 4384,
+            "offset": 6472,
             "type": "CPerParticleFloatInput"
           },
           "m_flFalloff": {
-            "offset": 5856,
+            "offset": 8312,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flKillDensityScale": {
+            "offset": 7944,
             "type": "CPerParticleFloatInput"
           },
           "m_flKillRadius": {
-            "offset": 5488,
+            "offset": 7576,
             "type": "CPerParticleFloatInput"
           },
           "m_flMagnitude": {
-            "offset": 5120,
+            "offset": 7208,
             "type": "CPerParticleFloatInput"
           },
           "m_flRadius": {
-            "offset": 4016,
+            "offset": 6104,
+            "type": "CPerParticleFloatInput"
+          },
+          "m_flSpeed": {
+            "offset": 5736,
             "type": "CPerParticleFloatInput"
           },
           "m_flTemperature": {
-            "offset": 4752,
+            "offset": 6840,
             "type": "CPerParticleFloatInput"
           },
           "m_nCreationType": {
@@ -14141,6 +14315,10 @@
           "m_strChannelType": {
             "offset": 552,
             "type": "CUtlString"
+          },
+          "m_vPrevPosition": {
+            "offset": 4016,
+            "type": "CPerParticleVecInput"
           },
           "m_vecPos": {
             "offset": 576,
@@ -15189,6 +15367,14 @@
           "m_nPosition": {
             "offset": 500,
             "type": "ParticleEntityPos_t"
+          },
+          "m_nRadiusCP": {
+            "offset": 504,
+            "type": "int32"
+          },
+          "m_nRadiusCPField": {
+            "offset": 508,
+            "type": "int32"
           },
           "m_vecCP1Pos": {
             "offset": 484,
@@ -16906,6 +17092,10 @@
           "m_vecPreviewGravity": {
             "offset": 88,
             "type": "Vector"
+          },
+          "m_vecPreviewWind": {
+            "offset": 100,
+            "type": "Vector"
           }
         },
         "metadata": [
@@ -16978,29 +17168,6 @@
           "m_OutflowID": {
             "offset": 0,
             "type": "CGlobalSymbol"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "PulseObservableBoolExpression_t": {
-        "fields": {
-          "m_DependentObservableBlackboardReferences": {
-            "offset": 96,
-            "type": "CUtlVector<PulseRuntimeBlackboardReferenceIndex_t>"
-          },
-          "m_DependentObservableVars": {
-            "offset": 72,
-            "type": "CUtlVector<PulseRuntimeVarIndex_t>"
-          },
-          "m_EvaluateConnection": {
-            "offset": 0,
-            "type": "CPulse_OutflowConnection"
           }
         },
         "metadata": [
@@ -17271,6 +17438,7 @@
           "PARTICLE_EVENT_TYPE_MASK_FIRST_COLLISION": 8,
           "PARTICLE_EVENT_TYPE_MASK_KILLED": 2,
           "PARTICLE_EVENT_TYPE_MASK_KILLED_ON_COLLISION": 32,
+          "PARTICLE_EVENT_TYPE_MASK_KILLED_ON_CULL": 1024,
           "PARTICLE_EVENT_TYPE_MASK_NONE": 0,
           "PARTICLE_EVENT_TYPE_MASK_SPAWNED": 1,
           "PARTICLE_EVENT_TYPE_MASK_USER_1": 64,
@@ -17352,12 +17520,16 @@
         "alignment": 4,
         "members": {
           "PARTICLE_ATTR_BOX_FLAGS_ASLEEP": 8,
+          "PARTICLE_ATTR_BOX_FLAGS_DISABLE_NONSTATIC_COLLISION": 64,
           "PARTICLE_ATTR_BOX_FLAGS_ELECTRIFIED": 4,
           "PARTICLE_ATTR_BOX_FLAGS_FROZEN": 16,
+          "PARTICLE_ATTR_BOX_FLAGS_MOTION_DISABLED": 256,
           "PARTICLE_ATTR_BOX_FLAGS_NONE": 0,
           "PARTICLE_ATTR_BOX_FLAGS_ON_FIRE": 2,
           "PARTICLE_ATTR_BOX_FLAGS_TIMED_DECAY": 32,
-          "PARTICLE_ATTR_BOX_FLAGS_WATER": 1
+          "PARTICLE_ATTR_BOX_FLAGS_WAKE_DECAY": 128,
+          "PARTICLE_ATTR_BOX_FLAGS_WATER": 1,
+          "PARTICLE_ATTR_BOX_FLAGS_ZERO_GRAVITY": 512
         },
         "type": "uint32"
       },
@@ -17446,6 +17618,7 @@
         "members": {
           "PARTICLE_ABS_ORIGIN": 0,
           "PARTICLE_EYES": 2,
+          "PARTICLE_FLASHLIGHT": 3,
           "PARTICLE_WORLDSPACE_CENTER": 1
         },
         "type": "uint32"
@@ -17815,7 +17988,8 @@
         "members": {
           "PARTICLE_VOLUMETRIC_SMOKE_TYPE_EMISSION": 0,
           "PARTICLE_VOLUMETRIC_SMOKE_TYPE_REPEL": 2,
-          "PARTICLE_VOLUMETRIC_SMOKE_TYPE_SINK": 1
+          "PARTICLE_VOLUMETRIC_SMOKE_TYPE_SINK": 1,
+          "PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE": 3
         },
         "type": "uint32"
       },
@@ -17843,6 +18017,14 @@
           "HardCancel": 3,
           "None": 0,
           "SoftCancel": 2
+        },
+        "type": "uint32"
+      },
+      "PulseCursorWakePriority_t": {
+        "alignment": 4,
+        "members": {
+          "WakeElegantly": 0,
+          "WakeImmediate": 1
         },
         "type": "uint32"
       },

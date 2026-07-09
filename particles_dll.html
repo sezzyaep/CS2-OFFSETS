@@ -52,6 +52,16 @@
             <tr><td>ASYNC_FIRE_AND_FORGET</td><td class="value">1</td></tr>
         </tbody>
     </table>
+    <h3>Enum: PulseCursorWakePriority_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>WakeElegantly</td><td class="value">0</td></tr>
+            <tr><td>WakeImmediate</td><td class="value">1</td></tr>
+        </tbody>
+    </table>
     <h3>Enum: Detail2Combo_t</h3>
     <table>
         <thead>
@@ -136,6 +146,7 @@
             <tr><td>PARTICLE_ABS_ORIGIN</td><td class="value">0</td></tr>
             <tr><td>PARTICLE_WORLDSPACE_CENTER</td><td class="value">1</td></tr>
             <tr><td>PARTICLE_EYES</td><td class="value">2</td></tr>
+            <tr><td>PARTICLE_FLASHLIGHT</td><td class="value">3</td></tr>
         </tbody>
     </table>
     <h3>Enum: ParticleFanType_t</h3>
@@ -338,6 +349,7 @@
             <tr><td>PARTICLE_EVENT_TYPE_MASK_FIRST_COLLISION</td><td class="value">8</td></tr>
             <tr><td>PARTICLE_EVENT_TYPE_MASK_COLLISION_STOPPED</td><td class="value">16</td></tr>
             <tr><td>PARTICLE_EVENT_TYPE_MASK_KILLED_ON_COLLISION</td><td class="value">32</td></tr>
+            <tr><td>PARTICLE_EVENT_TYPE_MASK_KILLED_ON_CULL</td><td class="value">1024</td></tr>
             <tr><td>PARTICLE_EVENT_TYPE_MASK_USER_1</td><td class="value">64</td></tr>
             <tr><td>PARTICLE_EVENT_TYPE_MASK_USER_2</td><td class="value">128</td></tr>
             <tr><td>PARTICLE_EVENT_TYPE_MASK_USER_3</td><td class="value">256</td></tr>
@@ -486,6 +498,10 @@
             <tr><td>PARTICLE_ATTR_BOX_FLAGS_ASLEEP</td><td class="value">8</td></tr>
             <tr><td>PARTICLE_ATTR_BOX_FLAGS_FROZEN</td><td class="value">16</td></tr>
             <tr><td>PARTICLE_ATTR_BOX_FLAGS_TIMED_DECAY</td><td class="value">32</td></tr>
+            <tr><td>PARTICLE_ATTR_BOX_FLAGS_DISABLE_NONSTATIC_COLLISION</td><td class="value">64</td></tr>
+            <tr><td>PARTICLE_ATTR_BOX_FLAGS_WAKE_DECAY</td><td class="value">128</td></tr>
+            <tr><td>PARTICLE_ATTR_BOX_FLAGS_MOTION_DISABLED</td><td class="value">256</td></tr>
+            <tr><td>PARTICLE_ATTR_BOX_FLAGS_ZERO_GRAVITY</td><td class="value">512</td></tr>
         </tbody>
     </table>
     <h3>Enum: ParticleTopology_t</h3>
@@ -784,6 +800,7 @@
             <tr><td>PARTICLE_VOLUMETRIC_SMOKE_TYPE_EMISSION</td><td class="value">0</td></tr>
             <tr><td>PARTICLE_VOLUMETRIC_SMOKE_TYPE_SINK</td><td class="value">1</td></tr>
             <tr><td>PARTICLE_VOLUMETRIC_SMOKE_TYPE_REPEL</td><td class="value">2</td></tr>
+            <tr><td>PARTICLE_VOLUMETRIC_SMOKE_TYPE_TRACE</td><td class="value">3</td></tr>
         </tbody>
     </table>
     <h3>Enum: RenderModelSubModelFieldType_t</h3>
@@ -981,8 +998,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bTagSelfWhenComplete</td><td class="type">bool</td><td class="value">0x98</td></tr>
-            <tr><td>m_nDesiredKillPriority</td><td class="type">PulseCursorCancelPriority_t</td><td class="value">0x9C</td></tr>
+            <tr><td>m_bTagSelfWhenComplete</td><td class="type">bool</td><td class="value">0x128</td></tr>
+            <tr><td>m_nDesiredKillPriority</td><td class="type">PulseCursorCancelPriority_t</td><td class="value">0x12C</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Base</h3>
@@ -1026,8 +1043,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Condition</td><td class="type">PulseObservableBoolExpression_t</td><td class="value">0x48</td></tr>
-            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0xC0</td></tr>
+            <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
+            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0x150</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulse_OutflowConnection</h3>
@@ -1070,10 +1087,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Outflows</td><td class="type">CUtlVector<CPulse_OutflowConnection></td><td class="value">0x48</td></tr>
-            <tr><td>m_bWaitForChildOutflows</td><td class="type">bool</td><td class="value">0x60</td></tr>
-            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0x68</td></tr>
-            <tr><td>m_OnCanceled</td><td class="type">CPulse_ResumePoint</td><td class="value">0xB0</td></tr>
+            <tr><td>m_Outflows</td><td class="type">CUtlVector<CPulse_OutflowConnection></td><td class="value">0xD8</td></tr>
+            <tr><td>m_bWaitForChildOutflows</td><td class="type">bool</td><td class="value">0xF0</td></tr>
+            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0xF8</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Timeline::TimelineEvent_t</h3>
@@ -1203,8 +1219,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_nCursorsAllowedToWait</td><td class="type">int32</td><td class="value">0x48</td></tr>
-            <tr><td>m_WaitComplete</td><td class="type">CPulse_ResumePoint</td><td class="value">0x50</td></tr>
+            <tr><td>m_nCursorsAllowedToWait</td><td class="type">int32</td><td class="value">0xD8</td></tr>
+            <tr><td>m_WaitComplete</td><td class="type">CPulse_ResumePoint</td><td class="value">0xE0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulse_InvokeBinding</h3>
@@ -1226,8 +1242,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Completed</td><td class="type">CPulse_ResumePoint</td><td class="value">0x48</td></tr>
-            <tr><td>m_OnInterval</td><td class="type">SignatureOutflow_Continue</td><td class="value">0x90</td></tr>
+            <tr><td>m_Completed</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
+            <tr><td>m_OnInterval</td><td class="type">SignatureOutflow_Continue</td><td class="value">0x120</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseTestScriptLib</h3>
@@ -1244,7 +1260,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0x48</td></tr>
+            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Value_Curve</h3>
@@ -1293,15 +1309,6 @@
             <tr><td>m_EndTime</td><td class="type">GameTime_t</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseCell_WaitForCursorsWithTagBase::CursorState_t</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>m_TagName</td><td class="type">PulseSymbol_t</td><td class="value">0x0</td></tr>
-        </tbody>
-    </table>
     <h3>Class: CPulseArraylib</h3>
     <table>
         <thead>
@@ -1324,10 +1331,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_TimelineEvents</td><td class="type">CUtlVector<CPulseCell_Timeline::TimelineEvent_t></td><td class="value">0x48</td></tr>
-            <tr><td>m_bWaitForChildOutflows</td><td class="type">bool</td><td class="value">0x60</td></tr>
-            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0x68</td></tr>
-            <tr><td>m_OnCanceled</td><td class="type">CPulse_ResumePoint</td><td class="value">0xB0</td></tr>
+            <tr><td>m_TimelineEvents</td><td class="type">CUtlVector<CPulseCell_Timeline::TimelineEvent_t></td><td class="value">0xD8</td></tr>
+            <tr><td>m_bWaitForChildOutflows</td><td class="type">bool</td><td class="value">0xF0</td></tr>
+            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0xF8</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Inflow_EntOutputHandler</h3>
@@ -1381,6 +1387,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+            <tr><td>m_BaseFlow_OnAfterCancel</td><td class="type">CPulse_ResumePoint</td><td class="value">0x48</td></tr>
+            <tr><td>m_BaseFlow_WhileActive</td><td class="type">CPulse_ResumePoint</td><td class="value">0x90</td></tr>
         </tbody>
     </table>
     <h3>Class: PulseNodeDynamicOutflows_t</h3>
@@ -1435,7 +1443,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0x48</td></tr>
+            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Outflow_CycleShuffled</h3>
@@ -1474,10 +1482,9 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Condition</td><td class="type">PulseObservableBoolExpression_t</td><td class="value">0x48</td></tr>
-            <tr><td>m_Always</td><td class="type">CPulse_OutflowConnection</td><td class="value">0xC0</td></tr>
-            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x108</td></tr>
-            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x150</td></tr>
+            <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
+            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x150</td></tr>
+            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x198</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Inflow_Yield</h3>
@@ -1486,7 +1493,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_UnyieldResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0x48</td></tr>
+            <tr><td>m_UnyieldResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseMathlib</h3>
@@ -1504,6 +1511,14 @@
         </thead>
         <tbody>
             <tr><td>m_UnknownKeys</td><td class="type">KeyValues3</td><td class="value">0x48</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CPulseStringlib</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Outflow_CycleRandom</h3>
@@ -1537,6 +1552,14 @@
         </tbody>
     </table>
     <h3>Class: CPulseCell_Value_RandomInt</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CPulseEnumlib</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
@@ -1585,22 +1608,11 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_MethodName</td><td class="type">PulseSymbol_t</td><td class="value">0x48</td></tr>
-            <tr><td>m_nBlackboardIndex</td><td class="type">PulseRuntimeBlackboardReferenceIndex_t</td><td class="value">0x58</td></tr>
-            <tr><td>m_ExpectedArgs</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0x60</td></tr>
-            <tr><td>m_nAsyncCallMode</td><td class="type">PulseMethodCallMode_t</td><td class="value">0x70</td></tr>
-            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0x78</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: PulseObservableBoolExpression_t</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>m_EvaluateConnection</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x0</td></tr>
-            <tr><td>m_DependentObservableVars</td><td class="type">CUtlVector<PulseRuntimeVarIndex_t></td><td class="value">0x48</td></tr>
-            <tr><td>m_DependentObservableBlackboardReferences</td><td class="type">CUtlVector<PulseRuntimeBlackboardReferenceIndex_t></td><td class="value">0x60</td></tr>
+            <tr><td>m_MethodName</td><td class="type">PulseSymbol_t</td><td class="value">0xD8</td></tr>
+            <tr><td>m_nBlackboardIndex</td><td class="type">PulseRuntimeBlackboardReferenceIndex_t</td><td class="value">0xE8</td></tr>
+            <tr><td>m_ExpectedArgs</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xF0</td></tr>
+            <tr><td>m_nAsyncCallMode</td><td class="type">PulseMethodCallMode_t</td><td class="value">0x100</td></tr>
+            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0x108</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_LimitCount::Criteria_t</h3>
@@ -1618,7 +1630,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_nCursorsAllowedToRunParallel</td><td class="type">int32</td><td class="value">0x98</td></tr>
+            <tr><td>m_nCursorsAllowedToRunParallel</td><td class="type">int32</td><td class="value">0x128</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Value_RandomFloat</h3>
@@ -1779,31 +1791,32 @@
             <tr><td>m_flEndFadeSize</td><td class="type">float32</td><td class="value">0x2E00</td></tr>
             <tr><td>m_flStartFadeDot</td><td class="type">float32</td><td class="value">0x2E04</td></tr>
             <tr><td>m_flEndFadeDot</td><td class="type">float32</td><td class="value">0x2E08</td></tr>
-            <tr><td>m_flRadiusTaper</td><td class="type">float32</td><td class="value">0x2E0C</td></tr>
-            <tr><td>m_nMinTesselation</td><td class="type">int32</td><td class="value">0x2E10</td></tr>
-            <tr><td>m_nMaxTesselation</td><td class="type">int32</td><td class="value">0x2E14</td></tr>
-            <tr><td>m_flTessScale</td><td class="type">float32</td><td class="value">0x2E18</td></tr>
-            <tr><td>m_flTextureVWorldSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2E20</td></tr>
-            <tr><td>m_flTextureVScrollRate</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2F90</td></tr>
-            <tr><td>m_flTextureVOffset</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3100</td></tr>
-            <tr><td>m_nTextureVParamsCP</td><td class="type">int32</td><td class="value">0x3270</td></tr>
-            <tr><td>m_bClampV</td><td class="type">bool</td><td class="value">0x3274</td></tr>
-            <tr><td>m_nScaleCP1</td><td class="type">int32</td><td class="value">0x3278</td></tr>
-            <tr><td>m_nScaleCP2</td><td class="type">int32</td><td class="value">0x327C</td></tr>
-            <tr><td>m_flScaleVSizeByControlPointDistance</td><td class="type">float32</td><td class="value">0x3280</td></tr>
-            <tr><td>m_flScaleVScrollByControlPointDistance</td><td class="type">float32</td><td class="value">0x3284</td></tr>
-            <tr><td>m_flScaleVOffsetByControlPointDistance</td><td class="type">float32</td><td class="value">0x3288</td></tr>
-            <tr><td>m_bUseScalarForTextureCoordinate</td><td class="type">bool</td><td class="value">0x328D</td></tr>
-            <tr><td>m_nScalarFieldForTextureCoordinate</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x3290</td></tr>
-            <tr><td>m_flScalarAttributeTextureCoordScale</td><td class="type">float32</td><td class="value">0x3294</td></tr>
-            <tr><td>m_bReverseOrder</td><td class="type">bool</td><td class="value">0x3298</td></tr>
-            <tr><td>m_bClosedLoop</td><td class="type">bool</td><td class="value">0x3299</td></tr>
-            <tr><td>m_nSplitField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x329C</td></tr>
-            <tr><td>m_bSortBySegmentID</td><td class="type">bool</td><td class="value">0x32A0</td></tr>
-            <tr><td>m_nOrientationType</td><td class="type">ParticleOrientationChoiceList_t</td><td class="value">0x32A4</td></tr>
-            <tr><td>m_nVectorFieldForOrientation</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x32A8</td></tr>
-            <tr><td>m_bDrawAsOpaque</td><td class="type">bool</td><td class="value">0x32AC</td></tr>
-            <tr><td>m_bGenerateNormals</td><td class="type">bool</td><td class="value">0x32AD</td></tr>
+            <tr><td>m_flSubPixelAAScale</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2E10</td></tr>
+            <tr><td>m_flRadiusTaper</td><td class="type">float32</td><td class="value">0x2F80</td></tr>
+            <tr><td>m_nMinTesselation</td><td class="type">int32</td><td class="value">0x2F84</td></tr>
+            <tr><td>m_nMaxTesselation</td><td class="type">int32</td><td class="value">0x2F88</td></tr>
+            <tr><td>m_flTessScale</td><td class="type">float32</td><td class="value">0x2F8C</td></tr>
+            <tr><td>m_flTextureVWorldSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2F90</td></tr>
+            <tr><td>m_flTextureVScrollRate</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3100</td></tr>
+            <tr><td>m_flTextureVOffset</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3270</td></tr>
+            <tr><td>m_nTextureVParamsCP</td><td class="type">int32</td><td class="value">0x33E0</td></tr>
+            <tr><td>m_bClampV</td><td class="type">bool</td><td class="value">0x33E4</td></tr>
+            <tr><td>m_nScaleCP1</td><td class="type">int32</td><td class="value">0x33E8</td></tr>
+            <tr><td>m_nScaleCP2</td><td class="type">int32</td><td class="value">0x33EC</td></tr>
+            <tr><td>m_flScaleVSizeByControlPointDistance</td><td class="type">float32</td><td class="value">0x33F0</td></tr>
+            <tr><td>m_flScaleVScrollByControlPointDistance</td><td class="type">float32</td><td class="value">0x33F4</td></tr>
+            <tr><td>m_flScaleVOffsetByControlPointDistance</td><td class="type">float32</td><td class="value">0x33F8</td></tr>
+            <tr><td>m_bUseScalarForTextureCoordinate</td><td class="type">bool</td><td class="value">0x33FD</td></tr>
+            <tr><td>m_nScalarFieldForTextureCoordinate</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x3400</td></tr>
+            <tr><td>m_flScalarAttributeTextureCoordScale</td><td class="type">float32</td><td class="value">0x3404</td></tr>
+            <tr><td>m_bReverseOrder</td><td class="type">bool</td><td class="value">0x3408</td></tr>
+            <tr><td>m_bClosedLoop</td><td class="type">bool</td><td class="value">0x3409</td></tr>
+            <tr><td>m_nSplitField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x340C</td></tr>
+            <tr><td>m_bSortBySegmentID</td><td class="type">bool</td><td class="value">0x3410</td></tr>
+            <tr><td>m_nOrientationType</td><td class="type">ParticleOrientationChoiceList_t</td><td class="value">0x3414</td></tr>
+            <tr><td>m_nVectorFieldForOrientation</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x3418</td></tr>
+            <tr><td>m_bDrawAsOpaque</td><td class="type">bool</td><td class="value">0x341C</td></tr>
+            <tr><td>m_bGenerateNormals</td><td class="type">bool</td><td class="value">0x341D</td></tr>
         </tbody>
     </table>
     <h3>Class: C_INIT_StatusEffectCitadel</h3>
@@ -1916,6 +1929,7 @@
         <tbody>
             <tr><td>m_nFieldOutput</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x1D8</td></tr>
             <tr><td>m_flInterpolation</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1E0</td></tr>
+            <tr><td>m_bPrevious</td><td class="type">bool</td><td class="value">0x350</td></tr>
         </tbody>
     </table>
     <h3>Class: ParticlePreviewBodyGroup_t</h3>
@@ -2236,9 +2250,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_flRotOffset</td><td class="type">float32</td><td class="value">0x1D8</td></tr>
-            <tr><td>m_flSpinStrength</td><td class="type">float32</td><td class="value">0x1DC</td></tr>
-            <tr><td>m_nFieldOutput</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x1E0</td></tr>
+            <tr><td>m_vecInput</td><td class="type">CPerParticleVecInput</td><td class="value">0x1D8</td></tr>
+            <tr><td>m_flRotOffset</td><td class="type">float32</td><td class="value">0x890</td></tr>
+            <tr><td>m_flSpinStrength</td><td class="type">float32</td><td class="value">0x894</td></tr>
+            <tr><td>m_nFieldOutput</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x898</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_RemapDotProductToCP</h3>
@@ -2275,26 +2290,26 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bEnableFadingAndClamping</td><td class="type">bool</td><td class="value">0x30E8</td></tr>
-            <tr><td>m_flStartFadeDot</td><td class="type">float32</td><td class="value">0x30EC</td></tr>
-            <tr><td>m_flEndFadeDot</td><td class="type">float32</td><td class="value">0x30F0</td></tr>
-            <tr><td>m_nPrevPntSource</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x30F4</td></tr>
-            <tr><td>m_flMaxLength</td><td class="type">float32</td><td class="value">0x30F8</td></tr>
-            <tr><td>m_flMinLength</td><td class="type">float32</td><td class="value">0x30FC</td></tr>
-            <tr><td>m_bIgnoreDT</td><td class="type">bool</td><td class="value">0x3100</td></tr>
-            <tr><td>m_flConstrainRadiusToLengthRatio</td><td class="type">float32</td><td class="value">0x3104</td></tr>
-            <tr><td>m_flLengthScale</td><td class="type">float32</td><td class="value">0x3108</td></tr>
-            <tr><td>m_flLengthFadeInTime</td><td class="type">float32</td><td class="value">0x310C</td></tr>
-            <tr><td>m_flRadiusHeadTaper</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3110</td></tr>
-            <tr><td>m_vecHeadColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x3280</td></tr>
-            <tr><td>m_flHeadAlphaScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3938</td></tr>
-            <tr><td>m_flRadiusTaper</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3AA8</td></tr>
-            <tr><td>m_vecTailColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x3C18</td></tr>
-            <tr><td>m_flTailAlphaScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0x42D0</td></tr>
-            <tr><td>m_nHorizCropField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x4440</td></tr>
-            <tr><td>m_nVertCropField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x4444</td></tr>
-            <tr><td>m_flForwardShift</td><td class="type">float32</td><td class="value">0x4448</td></tr>
-            <tr><td>m_bFlipUVBasedOnPitchYaw</td><td class="type">bool</td><td class="value">0x444C</td></tr>
+            <tr><td>m_bEnableFadingAndClamping</td><td class="type">bool</td><td class="value">0x3258</td></tr>
+            <tr><td>m_flStartFadeDot</td><td class="type">float32</td><td class="value">0x325C</td></tr>
+            <tr><td>m_flEndFadeDot</td><td class="type">float32</td><td class="value">0x3260</td></tr>
+            <tr><td>m_nPrevPntSource</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x3264</td></tr>
+            <tr><td>m_flMaxLength</td><td class="type">float32</td><td class="value">0x3268</td></tr>
+            <tr><td>m_flMinLength</td><td class="type">float32</td><td class="value">0x326C</td></tr>
+            <tr><td>m_bIgnoreDT</td><td class="type">bool</td><td class="value">0x3270</td></tr>
+            <tr><td>m_flConstrainRadiusToLengthRatio</td><td class="type">float32</td><td class="value">0x3274</td></tr>
+            <tr><td>m_flLengthScale</td><td class="type">float32</td><td class="value">0x3278</td></tr>
+            <tr><td>m_flLengthFadeInTime</td><td class="type">float32</td><td class="value">0x327C</td></tr>
+            <tr><td>m_flRadiusHeadTaper</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3280</td></tr>
+            <tr><td>m_vecHeadColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x33F0</td></tr>
+            <tr><td>m_flHeadAlphaScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3AA8</td></tr>
+            <tr><td>m_flRadiusTaper</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3C18</td></tr>
+            <tr><td>m_vecTailColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x3D88</td></tr>
+            <tr><td>m_flTailAlphaScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0x4440</td></tr>
+            <tr><td>m_nHorizCropField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x45B0</td></tr>
+            <tr><td>m_nVertCropField</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x45B4</td></tr>
+            <tr><td>m_flForwardShift</td><td class="type">float32</td><td class="value">0x45B8</td></tr>
+            <tr><td>m_bFlipUVBasedOnPitchYaw</td><td class="type">bool</td><td class="value">0x45BC</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_SetControlPointPositionToTimeOfDayValue</h3>
@@ -2797,10 +2812,11 @@
         <tbody>
             <tr><td>m_vecComponentScale</td><td class="type">Vector</td><td class="value">0x1E8</td></tr>
             <tr><td>m_fForceAmount</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1F8</td></tr>
-            <tr><td>m_fFalloffPower</td><td class="type">float32</td><td class="value">0x368</td></tr>
-            <tr><td>m_TransformInput</td><td class="type">CParticleTransformInput</td><td class="value">0x370</td></tr>
-            <tr><td>m_fForceAmountMin</td><td class="type">CPerParticleFloatInput</td><td class="value">0x3D8</td></tr>
-            <tr><td>m_bApplyMinForce</td><td class="type">bool</td><td class="value">0x548</td></tr>
+            <tr><td>m_fMinimumDistance</td><td class="type">CPerParticleFloatInput</td><td class="value">0x368</td></tr>
+            <tr><td>m_fFalloffPower</td><td class="type">float32</td><td class="value">0x4D8</td></tr>
+            <tr><td>m_TransformInput</td><td class="type">CParticleTransformInput</td><td class="value">0x4E0</td></tr>
+            <tr><td>m_fForceAmountMin</td><td class="type">CPerParticleFloatInput</td><td class="value">0x548</td></tr>
+            <tr><td>m_bApplyMinForce</td><td class="type">bool</td><td class="value">0x6B8</td></tr>
         </tbody>
     </table>
     <h3>Class: C_INIT_RandomLifeTime</h3>
@@ -2926,11 +2942,16 @@
             <tr><td>m_flUVScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x7B0</td></tr>
             <tr><td>m_flUVOffset</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x920</td></tr>
             <tr><td>m_flSplitRate</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xA90</td></tr>
-            <tr><td>m_flBranchTwist</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xC00</td></tr>
-            <tr><td>m_nBranchBehavior</td><td class="type">ParticleLightnintBranchBehavior_t</td><td class="value">0xD70</td></tr>
-            <tr><td>m_flRadiusStart</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD78</td></tr>
-            <tr><td>m_flRadiusEnd</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEE8</td></tr>
-            <tr><td>m_flDedicatedPool</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1058</td></tr>
+            <tr><td>m_flRecursionSplitScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xC00</td></tr>
+            <tr><td>m_bScaleBranchDistance</td><td class="type">bool</td><td class="value">0xD70</td></tr>
+            <tr><td>m_flBranchDistanceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD78</td></tr>
+            <tr><td>m_bScaleBranchOffset</td><td class="type">bool</td><td class="value">0xEE8</td></tr>
+            <tr><td>m_flBranchOffsetScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEF0</td></tr>
+            <tr><td>m_flBranchTwist</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1060</td></tr>
+            <tr><td>m_nBranchBehavior</td><td class="type">ParticleLightnintBranchBehavior_t</td><td class="value">0x11D0</td></tr>
+            <tr><td>m_flRadiusStart</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x11D8</td></tr>
+            <tr><td>m_flRadiusEnd</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1348</td></tr>
+            <tr><td>m_flDedicatedPool</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x14B8</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_RemapNamedModelMeshGroupOnceTimed</h3>
@@ -3278,7 +3299,9 @@
         <tbody>
             <tr><td>m_flLiquidContentsField</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x228</td></tr>
             <tr><td>m_flExpirationTime</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x398</td></tr>
-            <tr><td>m_nAmountAttribute</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x508</td></tr>
+            <tr><td>m_flRadius</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x508</td></tr>
+            <tr><td>m_bCheckExposedToSky</td><td class="type">bool</td><td class="value">0x678</td></tr>
+            <tr><td>m_nAmountAttribute</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x67C</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_InstantaneousEmitter</h3>
@@ -3335,7 +3358,8 @@
             <tr><td>m_flMaxSize</td><td class="type">float32</td><td class="value">0x2DFC</td></tr>
             <tr><td>m_flStartFadeSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2E00</td></tr>
             <tr><td>m_flEndFadeSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2F70</td></tr>
-            <tr><td>m_bClampV</td><td class="type">bool</td><td class="value">0x30E0</td></tr>
+            <tr><td>m_flSubPixelAAScale</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x30E0</td></tr>
+            <tr><td>m_bClampV</td><td class="type">bool</td><td class="value">0x3250</td></tr>
         </tbody>
     </table>
     <h3>Class: C_INIT_VelocityFromCP</h3>
@@ -3397,15 +3421,16 @@
             <tr><td>m_nInputType</td><td class="type">ParticleMultiSegmentInputSelection_t</td><td class="value">0x1E8</td></tr>
             <tr><td>m_strDefaultString</td><td class="type">CUtlString</td><td class="value">0x1F0</td></tr>
             <tr><td>m_flValue</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1F8</td></tr>
-            <tr><td>m_SpecialCharList</td><td class="type">CUtlVector<ParticleMultiSegmentSpecialCharacter_t></td><td class="value">0x368</td></tr>
-            <tr><td>m_vecColorUnlit</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x380</td></tr>
-            <tr><td>m_vecColorLit</td><td class="type">CParticleCollectionVecInput</td><td class="value">0xA38</td></tr>
-            <tr><td>m_flRadius</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x10F0</td></tr>
-            <tr><td>m_flSpacing</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1260</td></tr>
-            <tr><td>m_flMinCount</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x13D0</td></tr>
-            <tr><td>m_flMaxCount</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1540</td></tr>
-            <tr><td>m_bPrependEmpty</td><td class="type">bool</td><td class="value">0x16B0</td></tr>
-            <tr><td>m_flDigitsAfterDecimal</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x16B8</td></tr>
+            <tr><td>m_flScollOffset</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x368</td></tr>
+            <tr><td>m_SpecialCharList</td><td class="type">CUtlVector<ParticleMultiSegmentSpecialCharacter_t></td><td class="value">0x4D8</td></tr>
+            <tr><td>m_vecColorUnlit</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x4F0</td></tr>
+            <tr><td>m_vecColorLit</td><td class="type">CParticleCollectionVecInput</td><td class="value">0xBA8</td></tr>
+            <tr><td>m_flRadius</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1260</td></tr>
+            <tr><td>m_flSpacing</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x13D0</td></tr>
+            <tr><td>m_flMinCount</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1540</td></tr>
+            <tr><td>m_flMaxCount</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x16B0</td></tr>
+            <tr><td>m_bPrependEmpty</td><td class="type">bool</td><td class="value">0x1820</td></tr>
+            <tr><td>m_flDigitsAfterDecimal</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1828</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_OscillateVector</h3>
@@ -3554,6 +3579,8 @@
             <tr><td>m_vecCP1Pos</td><td class="type">Vector</td><td class="value">0x1E4</td></tr>
             <tr><td>m_bOrientToEyes</td><td class="type">bool</td><td class="value">0x1F0</td></tr>
             <tr><td>m_nPosition</td><td class="type">ParticleEntityPos_t</td><td class="value">0x1F4</td></tr>
+            <tr><td>m_nRadiusCP</td><td class="type">int32</td><td class="value">0x1F8</td></tr>
+            <tr><td>m_nRadiusCPField</td><td class="type">int32</td><td class="value">0x1FC</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_EndCapTimedFreeze</h3>
@@ -3609,12 +3636,15 @@
             <tr><td>m_nEventType</td><td class="type">EventTypeSelection_t</td><td class="value">0x238</td></tr>
             <tr><td>m_vecPos</td><td class="type">CPerParticleVecInput</td><td class="value">0x240</td></tr>
             <tr><td>m_vecVelocity</td><td class="type">CPerParticleVecInput</td><td class="value">0x8F8</td></tr>
-            <tr><td>m_flRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0xFB0</td></tr>
-            <tr><td>m_flDensity</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1120</td></tr>
-            <tr><td>m_flTemperature</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1290</td></tr>
-            <tr><td>m_flMagnitude</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1400</td></tr>
-            <tr><td>m_flKillRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1570</td></tr>
-            <tr><td>m_flFalloff</td><td class="type">CPerParticleFloatInput</td><td class="value">0x16E0</td></tr>
+            <tr><td>m_vPrevPosition</td><td class="type">CPerParticleVecInput</td><td class="value">0xFB0</td></tr>
+            <tr><td>m_flSpeed</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1668</td></tr>
+            <tr><td>m_flRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0x17D8</td></tr>
+            <tr><td>m_flDensity</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1948</td></tr>
+            <tr><td>m_flTemperature</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1AB8</td></tr>
+            <tr><td>m_flMagnitude</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1C28</td></tr>
+            <tr><td>m_flKillRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1D98</td></tr>
+            <tr><td>m_flKillDensityScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1F08</td></tr>
+            <tr><td>m_flFalloff</td><td class="type">CPerParticleFloatInput</td><td class="value">0x2078</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_RemapTransformVisibilityToScalar</h3>
@@ -4314,6 +4344,7 @@
             <tr><td>m_bAnimationNonLooping</td><td class="type">bool</td><td class="value">0x54</td></tr>
             <tr><td>m_bSequenceNameIsAnimClipPath</td><td class="type">bool</td><td class="value">0x55</td></tr>
             <tr><td>m_vecPreviewGravity</td><td class="type">Vector</td><td class="value">0x58</td></tr>
+            <tr><td>m_vecPreviewWind</td><td class="type">Vector</td><td class="value">0x64</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_LocalAccelerationForce</h3>
@@ -5320,21 +5351,23 @@
             <tr><td>m_nMaxAllowed</td><td class="type">uint16</td><td class="value">0x22C</td></tr>
             <tr><td>m_vColorBlend</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x230</td></tr>
             <tr><td>m_nColorBlendType</td><td class="type">ParticleColorBlendType_t</td><td class="value">0x8E8</td></tr>
-            <tr><td>m_nBrightnessUnit</td><td class="type">ParticleLightUnitChoiceList_t</td><td class="value">0x8EC</td></tr>
-            <tr><td>m_flBrightnessLumens</td><td class="type">CPerParticleFloatInput</td><td class="value">0x8F0</td></tr>
-            <tr><td>m_flBrightnessCandelas</td><td class="type">CPerParticleFloatInput</td><td class="value">0xA60</td></tr>
-            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xBD0</td></tr>
-            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xBD1</td></tr>
-            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xBD8</td></tr>
-            <tr><td>m_bFog</td><td class="type">bool</td><td class="value">0xD48</td></tr>
-            <tr><td>m_flFogScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0xD50</td></tr>
-            <tr><td>m_flLuminaireRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0xEC0</td></tr>
-            <tr><td>m_flSkirt</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1030</td></tr>
-            <tr><td>m_flRange</td><td class="type">CPerParticleFloatInput</td><td class="value">0x11A0</td></tr>
-            <tr><td>m_flInnerConeAngle</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1310</td></tr>
-            <tr><td>m_flOuterConeAngle</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1480</td></tr>
-            <tr><td>m_hLightCookie</td><td class="type">CStrongHandle<InfoForResourceTypeCTextureBase></td><td class="value">0x15F0</td></tr>
-            <tr><td>m_bSphericalCookie</td><td class="type">bool</td><td class="value">0x15F8</td></tr>
+            <tr><td>m_strLightStyle</td><td class="type">CUtlString</td><td class="value">0x8F0</td></tr>
+            <tr><td>m_flLightStyleTime</td><td class="type">CPerParticleFloatInput</td><td class="value">0x8F8</td></tr>
+            <tr><td>m_nBrightnessUnit</td><td class="type">ParticleLightUnitChoiceList_t</td><td class="value">0xA68</td></tr>
+            <tr><td>m_flBrightnessLumens</td><td class="type">CPerParticleFloatInput</td><td class="value">0xA70</td></tr>
+            <tr><td>m_flBrightnessCandelas</td><td class="type">CPerParticleFloatInput</td><td class="value">0xBE0</td></tr>
+            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xD50</td></tr>
+            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xD51</td></tr>
+            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD58</td></tr>
+            <tr><td>m_bFog</td><td class="type">bool</td><td class="value">0xEC8</td></tr>
+            <tr><td>m_flFogScale</td><td class="type">CPerParticleFloatInput</td><td class="value">0xED0</td></tr>
+            <tr><td>m_flLuminaireRadius</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1040</td></tr>
+            <tr><td>m_flSkirt</td><td class="type">CPerParticleFloatInput</td><td class="value">0x11B0</td></tr>
+            <tr><td>m_flRange</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1320</td></tr>
+            <tr><td>m_flInnerConeAngle</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1490</td></tr>
+            <tr><td>m_flOuterConeAngle</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1600</td></tr>
+            <tr><td>m_hLightCookie</td><td class="type">CStrongHandle<InfoForResourceTypeCTextureBase></td><td class="value">0x1770</td></tr>
+            <tr><td>m_bSphericalCookie</td><td class="type">bool</td><td class="value">0x1778</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_ConnectParentParticleToNearest</h3>
@@ -5718,6 +5751,7 @@
             <tr><td>m_nMaxTesselation</td><td class="type">int32</td><td class="value">0x148C</td></tr>
             <tr><td>m_nRoundness</td><td class="type">int32</td><td class="value">0x1490</td></tr>
             <tr><td>m_nForceRoundnessFixed</td><td class="type">bool</td><td class="value">0x1494</td></tr>
+            <tr><td>m_bOnlyRenderInEffectsBloomPass</td><td class="type">bool</td><td class="value">0x1495</td></tr>
             <tr><td>m_LightingTransform</td><td class="type">CParticleTransformInput</td><td class="value">0x1498</td></tr>
             <tr><td>m_MaterialFloatVars</td><td class="type">CUtlLeanVector<FloatInputMaterialVariable_t></td><td class="value">0x1500</td></tr>
             <tr><td>m_MaterialVecVars</td><td class="type">CUtlLeanVector<VecInputMaterialVariable_t></td><td class="value">0x1520</td></tr>
@@ -6388,34 +6422,36 @@
             <tr><td>m_nMaxAllowed</td><td class="type">uint16</td><td class="value">0x22C</td></tr>
             <tr><td>m_vecColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x230</td></tr>
             <tr><td>m_nColorBlendType</td><td class="type">ParticleColorBlendType_t</td><td class="value">0x8E8</td></tr>
-            <tr><td>m_flIntensity</td><td class="type">CPerParticleFloatInput</td><td class="value">0x8F0</td></tr>
-            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xA60</td></tr>
-            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xA61</td></tr>
-            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xA68</td></tr>
-            <tr><td>m_flTheta</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xBD8</td></tr>
-            <tr><td>m_flPhi</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD48</td></tr>
-            <tr><td>m_flRadiusMultiplier</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEB8</td></tr>
-            <tr><td>m_nAttenuationStyle</td><td class="type">StandardLightingAttenuationStyle_t</td><td class="value">0x1028</td></tr>
-            <tr><td>m_flFalloffLinearity</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1030</td></tr>
-            <tr><td>m_flFiftyPercentFalloff</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x11A0</td></tr>
-            <tr><td>m_flZeroPercentFalloff</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1310</td></tr>
-            <tr><td>m_bRenderDiffuse</td><td class="type">bool</td><td class="value">0x1480</td></tr>
-            <tr><td>m_bRenderSpecular</td><td class="type">bool</td><td class="value">0x1481</td></tr>
-            <tr><td>m_lightCookie</td><td class="type">CUtlString</td><td class="value">0x1488</td></tr>
-            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x1490</td></tr>
-            <tr><td>m_nFogLightingMode</td><td class="type">ParticleLightFogLightingMode_t</td><td class="value">0x1494</td></tr>
-            <tr><td>m_flFogContribution</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x1498</td></tr>
-            <tr><td>m_nCapsuleLightBehavior</td><td class="type">ParticleLightBehaviorChoiceList_t</td><td class="value">0x1608</td></tr>
-            <tr><td>m_flCapsuleLength</td><td class="type">float32</td><td class="value">0x160C</td></tr>
-            <tr><td>m_bReverseOrder</td><td class="type">bool</td><td class="value">0x1610</td></tr>
-            <tr><td>m_bClosedLoop</td><td class="type">bool</td><td class="value">0x1611</td></tr>
-            <tr><td>m_nPrevPntSource</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x1614</td></tr>
-            <tr><td>m_flMaxLength</td><td class="type">float32</td><td class="value">0x1618</td></tr>
-            <tr><td>m_flMinLength</td><td class="type">float32</td><td class="value">0x161C</td></tr>
-            <tr><td>m_bIgnoreDT</td><td class="type">bool</td><td class="value">0x1620</td></tr>
-            <tr><td>m_flConstrainRadiusToLengthRatio</td><td class="type">float32</td><td class="value">0x1624</td></tr>
-            <tr><td>m_flLengthScale</td><td class="type">float32</td><td class="value">0x1628</td></tr>
-            <tr><td>m_flLengthFadeInTime</td><td class="type">float32</td><td class="value">0x162C</td></tr>
+            <tr><td>m_strLightStyle</td><td class="type">CUtlString</td><td class="value">0x8F0</td></tr>
+            <tr><td>m_flLightStyleTime</td><td class="type">CPerParticleFloatInput</td><td class="value">0x8F8</td></tr>
+            <tr><td>m_flIntensity</td><td class="type">CPerParticleFloatInput</td><td class="value">0xA68</td></tr>
+            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xBD8</td></tr>
+            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xBD9</td></tr>
+            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xBE0</td></tr>
+            <tr><td>m_flTheta</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD50</td></tr>
+            <tr><td>m_flPhi</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEC0</td></tr>
+            <tr><td>m_flRadiusMultiplier</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1030</td></tr>
+            <tr><td>m_nAttenuationStyle</td><td class="type">StandardLightingAttenuationStyle_t</td><td class="value">0x11A0</td></tr>
+            <tr><td>m_flFalloffLinearity</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x11A8</td></tr>
+            <tr><td>m_flFiftyPercentFalloff</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1318</td></tr>
+            <tr><td>m_flZeroPercentFalloff</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1488</td></tr>
+            <tr><td>m_bRenderDiffuse</td><td class="type">bool</td><td class="value">0x15F8</td></tr>
+            <tr><td>m_bRenderSpecular</td><td class="type">bool</td><td class="value">0x15F9</td></tr>
+            <tr><td>m_lightCookie</td><td class="type">CUtlString</td><td class="value">0x1600</td></tr>
+            <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x1608</td></tr>
+            <tr><td>m_nFogLightingMode</td><td class="type">ParticleLightFogLightingMode_t</td><td class="value">0x160C</td></tr>
+            <tr><td>m_flFogContribution</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x1610</td></tr>
+            <tr><td>m_nCapsuleLightBehavior</td><td class="type">ParticleLightBehaviorChoiceList_t</td><td class="value">0x1780</td></tr>
+            <tr><td>m_flCapsuleLength</td><td class="type">float32</td><td class="value">0x1784</td></tr>
+            <tr><td>m_bReverseOrder</td><td class="type">bool</td><td class="value">0x1788</td></tr>
+            <tr><td>m_bClosedLoop</td><td class="type">bool</td><td class="value">0x1789</td></tr>
+            <tr><td>m_nPrevPntSource</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x178C</td></tr>
+            <tr><td>m_flMaxLength</td><td class="type">float32</td><td class="value">0x1790</td></tr>
+            <tr><td>m_flMinLength</td><td class="type">float32</td><td class="value">0x1794</td></tr>
+            <tr><td>m_bIgnoreDT</td><td class="type">bool</td><td class="value">0x1798</td></tr>
+            <tr><td>m_flConstrainRadiusToLengthRatio</td><td class="type">float32</td><td class="value">0x179C</td></tr>
+            <tr><td>m_flLengthScale</td><td class="type">float32</td><td class="value">0x17A0</td></tr>
+            <tr><td>m_flLengthFadeInTime</td><td class="type">float32</td><td class="value">0x17A4</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_DistanceToTransform</h3>
@@ -7148,13 +7184,34 @@
             <tr><td>m_nMaxAllowed</td><td class="type">uint16</td><td class="value">0x228</td></tr>
             <tr><td>m_vColorBlend</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x230</td></tr>
             <tr><td>m_nColorBlendType</td><td class="type">ParticleColorBlendType_t</td><td class="value">0x8E8</td></tr>
-            <tr><td>m_flBrightnessLumensPerMeter</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x8F0</td></tr>
-            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xA60</td></tr>
-            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xA61</td></tr>
-            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xA68</td></tr>
-            <tr><td>m_flSkirt</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xBD8</td></tr>
-            <tr><td>m_flRange</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD48</td></tr>
-            <tr><td>m_flThickness</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEB8</td></tr>
+            <tr><td>m_strLightStyle</td><td class="type">CUtlString</td><td class="value">0x8F0</td></tr>
+            <tr><td>m_flLightStyleTime</td><td class="type">CPerParticleFloatInput</td><td class="value">0x8F8</td></tr>
+            <tr><td>m_flBrightnessLumensPerMeter</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xA68</td></tr>
+            <tr><td>m_flNumberOfLightsToCreate</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xBD8</td></tr>
+            <tr><td>m_bCastShadows</td><td class="type">bool</td><td class="value">0xD48</td></tr>
+            <tr><td>m_bDynamicBounce</td><td class="type">bool</td><td class="value">0xD49</td></tr>
+            <tr><td>m_flBounceScale</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xD50</td></tr>
+            <tr><td>m_flSkirt</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0xEC0</td></tr>
+            <tr><td>m_flRange</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1030</td></tr>
+            <tr><td>m_flThickness</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x11A0</td></tr>
+            <tr><td>m_flInnerConeAngle</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1310</td></tr>
+            <tr><td>m_flOuterConeAngle</td><td class="type">CParticleCollectionFloatInput</td><td class="value">0x1480</td></tr>
+            <tr><td>m_vecConeRotationOffset</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x15F0</td></tr>
+            <tr><td>m_nFogLightingMode</td><td class="type">ParticleLightFogLightingMode_t</td><td class="value">0x1CA8</td></tr>
+            <tr><td>m_flFogContribution</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x1CB0</td></tr>
+            <tr><td>m_flRenderFilter</td><td class="type">CPerParticleFloatInput</td><td class="value">0x1E20</td></tr>
+            <tr><td>m_bDebugOrientation</td><td class="type">bool</td><td class="value">0x1F90</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: C_INIT_SkyVisCull</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vecTestDir</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x1E0</td></tr>
+            <tr><td>m_nTraceSet</td><td class="type">ParticleTraceSet_t</td><td class="value">0x898</td></tr>
+            <tr><td>m_bCullOnSky</td><td class="type">bool</td><td class="value">0x89C</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_EnableChildrenFromParentParticleCount</h3>
@@ -7367,6 +7424,8 @@
             <tr><td>m_nAlpha2Field</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x25A0</td></tr>
             <tr><td>m_vecColorScale</td><td class="type">CParticleCollectionVecInput</td><td class="value">0x25A8</td></tr>
             <tr><td>m_nColorBlendType</td><td class="type">ParticleColorBlendType_t</td><td class="value">0x2C60</td></tr>
+            <tr><td>m_strLightStyle</td><td class="type">CUtlString</td><td class="value">0x2C68</td></tr>
+            <tr><td>m_flLightStyleTime</td><td class="type">CPerParticleFloatInput</td><td class="value">0x2C70</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_RenderClientPhysicsImpulse</h3>
@@ -7571,6 +7630,8 @@
             <tr><td>m_nForcedSimId</td><td class="type">int32</td><td class="value">0x528</td></tr>
             <tr><td>m_nColorBlendType</td><td class="type">ParticleColorBlendType_t</td><td class="value">0x52C</td></tr>
             <tr><td>m_nForcedStatusEffects</td><td class="type">ParticleAttrBoxFlags_t</td><td class="value">0x530</td></tr>
+            <tr><td>m_nNoCollisionAttribute</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x534</td></tr>
+            <tr><td>m_nZeroGravityAttribute</td><td class="type">ParticleAttributeIndex_t</td><td class="value">0x538</td></tr>
         </tbody>
     </table>
     <h3>Class: C_OP_SpinYaw</h3>
@@ -7658,7 +7719,7 @@
             <tr><td>m_bUseYawWithNormalAligned</td><td class="type">bool</td><td class="value">0x2F6C</td></tr>
             <tr><td>m_flMinSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x2F70</td></tr>
             <tr><td>m_flMaxSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x30E0</td></tr>
-            <tr><td>m_flAlphaAdjustWithSizeAdjust</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3250</td></tr>
+            <tr><td>m_flSubPixelAAScale</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3250</td></tr>
             <tr><td>m_flStartFadeSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x33C0</td></tr>
             <tr><td>m_flEndFadeSize</td><td class="type">CParticleCollectionRendererFloatInput</td><td class="value">0x3530</td></tr>
             <tr><td>m_flStartFadeDot</td><td class="type">float32</td><td class="value">0x36A0</td></tr>

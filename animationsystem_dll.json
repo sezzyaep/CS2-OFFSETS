@@ -3009,80 +3009,6 @@
         ],
         "parent": null
       },
-      "CCompressorGroup": {
-        "fields": {
-          "m_boolCompressor": {
-            "offset": 320,
-            "type": "CUtlVector<CCompressor<bool>*>"
-          },
-          "m_colorCompressor": {
-            "offset": 344,
-            "type": "CUtlVector<CCompressor<Color>*>"
-          },
-          "m_intCompressor": {
-            "offset": 296,
-            "type": "CUtlVector<CCompressor<int32>*>"
-          },
-          "m_nCompressorIndex": {
-            "offset": 128,
-            "type": "CUtlVector<int32>"
-          },
-          "m_nElementMask": {
-            "offset": 200,
-            "type": "CUtlVector<uint32>"
-          },
-          "m_nElementUniqueID": {
-            "offset": 176,
-            "type": "CUtlVector<CUtlVector<int32>>"
-          },
-          "m_nFlags": {
-            "offset": 80,
-            "type": "CUtlVector<int32>"
-          },
-          "m_nTotalElementCount": {
-            "offset": 0,
-            "type": "int32"
-          },
-          "m_nType": {
-            "offset": 56,
-            "type": "CUtlVector<fieldtype_t>"
-          },
-          "m_quaternionCompressor": {
-            "offset": 272,
-            "type": "CUtlVector<CCompressor<QuaternionStorage>*>"
-          },
-          "m_szChannelClass": {
-            "offset": 8,
-            "type": "CUtlVector<char*>"
-          },
-          "m_szElementNames": {
-            "offset": 152,
-            "type": "CUtlVector<CUtlVector<char*>>"
-          },
-          "m_szGrouping": {
-            "offset": 104,
-            "type": "CUtlVector<CUtlString>"
-          },
-          "m_szVariableName": {
-            "offset": 32,
-            "type": "CUtlVector<char*>"
-          },
-          "m_vector2DCompressor": {
-            "offset": 368,
-            "type": "CUtlVector<CCompressor<Vector2D>*>"
-          },
-          "m_vector4DCompressor": {
-            "offset": 392,
-            "type": "CUtlVector<CCompressor<Vector4D>*>"
-          },
-          "m_vectorCompressor": {
-            "offset": 248,
-            "type": "CUtlVector<CCompressor<Vector>*>"
-          }
-        },
-        "metadata": [],
-        "parent": null
-      },
       "CConcreteAnimParameter": {
         "fields": {
           "m_bAutoReset": {
@@ -4953,15 +4879,15 @@
             "type": "float32"
           },
           "m_indexBuffer": {
-            "offset": 176,
+            "offset": 192,
             "type": "CRenderBufferBinding"
           },
           "m_material": {
-            "offset": 256,
+            "offset": 272,
             "type": "CStrongHandle<InfoForResourceTypeIMaterial2>"
           },
           "m_meshletPackedIVB": {
-            "offset": 208,
+            "offset": 224,
             "type": "CRenderBufferBinding"
           },
           "m_nAppliedIndexOffset": {
@@ -4969,7 +4895,7 @@
             "type": "uint32"
           },
           "m_nBaseVertex": {
-            "offset": 60,
+            "offset": 76,
             "type": "int32"
           },
           "m_nDepthVertexBufferIndex": {
@@ -4981,7 +4907,7 @@
             "type": "uint32"
           },
           "m_nIndexCount": {
-            "offset": 72,
+            "offset": 88,
             "type": "int32"
           },
           "m_nMeshletPackedIVBIndex": {
@@ -4993,20 +4919,24 @@
             "type": "uint16"
           },
           "m_nPrimitiveType": {
-            "offset": 56,
+            "offset": 72,
             "type": "RenderPrimitiveType_t"
           },
           "m_nStartIndex": {
-            "offset": 68,
+            "offset": 84,
             "type": "int32"
           },
           "m_nVertexCount": {
-            "offset": 64,
+            "offset": 80,
             "type": "int32"
           },
           "m_rigidMeshParts": {
             "offset": 40,
             "type": "CUtlLeanVector<CMaterialDrawDescriptor::RigidMeshPart_t>"
+          },
+          "m_rootBvhNodes": {
+            "offset": 56,
+            "type": "CUtlLeanVector<uint16>"
           },
           "m_vTintColor": {
             "offset": 4,
@@ -6681,31 +6611,39 @@
       "CNmChainLookatNode__CDefinition": {
         "fields": {
           "m_bIsTargetInWorldSpace": {
-            "offset": 41,
+            "offset": 113,
             "type": "bool"
           },
-          "m_chainEndBoneID": {
+          "m_chainWeights": {
+            "offset": 64,
+            "type": "CUtlVectorFixedGrowable<float32,5>"
+          },
+          "m_endEffectorBoneID": {
             "offset": 24,
             "type": "CGlobalSymbol"
           },
-          "m_chainForwardDir": {
+          "m_endEffectorForwardAxis": {
+            "offset": 32,
+            "type": "Vector"
+          },
+          "m_endEffectorOffset": {
             "offset": 44,
             "type": "Vector"
           },
           "m_flBlendTimeSeconds": {
-            "offset": 36,
+            "offset": 60,
             "type": "float32"
           },
           "m_nChainLength": {
-            "offset": 40,
+            "offset": 112,
             "type": "uint8"
           },
           "m_nEnabledNodeIdx": {
-            "offset": 34,
+            "offset": 58,
             "type": "int16"
           },
           "m_nLookatTargetNodeIdx": {
-            "offset": 32,
+            "offset": 56,
             "type": "int16"
           }
         },
@@ -6718,68 +6656,15 @@
         "parent": null
       },
       "CNmChainLookatTask": {
-        "fields": {
-          "m_bIsRunningFromDeserializedData": {
-            "offset": 117,
-            "type": "bool"
-          },
-          "m_bIsTargetInWorldSpace": {
-            "offset": 116,
-            "type": "bool"
-          },
-          "m_chainForwardDir": {
-            "offset": 80,
-            "type": "Vector"
-          },
-          "m_flBlendWeight": {
-            "offset": 92,
-            "type": "float32"
-          },
-          "m_flHorizontalAngleDegrees": {
-            "offset": 120,
-            "type": "float32"
-          },
-          "m_flHorizontalAngleLimitDegrees": {
-            "offset": 96,
-            "type": "float32"
-          },
-          "m_flVerticalAngleDegrees": {
-            "offset": 124,
-            "type": "float32"
-          },
-          "m_flVerticalAngleLimitDegrees": {
-            "offset": 100,
-            "type": "float32"
-          },
-          "m_lookatTarget": {
-            "offset": 104,
-            "type": "Vector"
-          },
-          "m_nChainEndBoneIdx": {
-            "offset": 72,
-            "type": "int32"
-          },
-          "m_nNumBonesInChain": {
-            "offset": 76,
-            "type": "int32"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
       "CNmClip": {
         "fields": {
           "m_bIsAdditive": {
-            "offset": 512,
+            "offset": 448,
             "type": "bool"
-          },
-          "m_compressedFloatCurveData": {
-            "offset": 128,
-            "type": "CUtlVector<uint16>"
-          },
-          "m_compressedFloatCurveOffsets": {
-            "offset": 152,
-            "type": "CUtlVector<uint32>"
           },
           "m_compressedPoseData": {
             "offset": 16,
@@ -6793,20 +6678,16 @@
             "offset": 12,
             "type": "float32"
           },
-          "m_floatCurveDefs": {
-            "offset": 104,
-            "type": "CUtlVector<NmFloatCurveCompressionSettings_t>"
-          },
-          "m_floatCurveIDs": {
-            "offset": 80,
-            "type": "CUtlVector<CGlobalSymbol>"
+          "m_floatChannelData": {
+            "offset": 152,
+            "type": "CUtlVectorFixedGrowable<CNmFloatChannelData*,2>"
           },
           "m_modelSpaceBoneSamplingIndices": {
-            "offset": 544,
+            "offset": 480,
             "type": "CUtlVector<int32>"
           },
           "m_modelSpaceSamplingChain": {
-            "offset": 520,
+            "offset": 456,
             "type": "CUtlVector<CNmClip::ModelSpaceSamplingChainLink_t>"
           },
           "m_nNumFrames": {
@@ -6814,11 +6695,11 @@
             "type": "uint32"
           },
           "m_rootMotion": {
-            "offset": 432,
+            "offset": 368,
             "type": "CNmRootMotionData"
           },
           "m_secondaryAnimations": {
-            "offset": 216,
+            "offset": 120,
             "type": "CUtlVectorFixedGrowable<CNmClip*,1>"
           },
           "m_skeleton": {
@@ -6826,7 +6707,7 @@
             "type": "CStrongHandle<InfoForResourceTypeCNmSkeleton>"
           },
           "m_syncTrack": {
-            "offset": 248,
+            "offset": 192,
             "type": "CNmSyncTrack"
           },
           "m_trackCompressionSettings": {
@@ -7217,6 +7098,75 @@
           "m_operation": {
             "offset": 18,
             "type": "CNmFloatAngleMathNode::Operation_t"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CNmFloatChannelData": {
+        "fields": {
+          "m_channelSettings": {
+            "offset": 16,
+            "type": "CUtlVector<CNmFloatChannelData::ChannelSettings_t>"
+          },
+          "m_compressedData": {
+            "offset": 40,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_compressedOffsets": {
+            "offset": 64,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_setID": {
+            "offset": 8,
+            "type": "CGlobalSymbol"
+          },
+          "m_skeleton": {
+            "offset": 0,
+            "type": "CStrongHandle<InfoForResourceTypeCNmSkeleton>"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CNmFloatChannelData__ChannelSettings_t": {
+        "fields": {
+          "m_bIsStatic": {
+            "offset": 8,
+            "type": "bool"
+          },
+          "m_range": {
+            "offset": 0,
+            "type": "NmCompressionSettings_t::QuantizationRange_t"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CNmFloatChannelSet_t": {
+        "fields": {
+          "m_ID": {
+            "offset": 0,
+            "type": "CGlobalSymbol"
+          },
+          "m_channelIDs": {
+            "offset": 8,
+            "type": "CUtlLeanVector<CGlobalSymbol>"
           }
         },
         "metadata": [
@@ -7687,51 +7637,51 @@
       "CNmFootIKTask": {
         "fields": {
           "m_bIsRunningFromDeserializedData": {
-            "offset": 265,
+            "offset": 313,
             "type": "bool"
           },
           "m_bIsTargetInWorldSpace": {
-            "offset": 264,
+            "offset": 312,
             "type": "bool"
           },
           "m_blendMode": {
-            "offset": 256,
+            "offset": 304,
             "type": "NmIKBlendMode_t"
           },
           "m_flBlendWeight": {
-            "offset": 260,
+            "offset": 308,
             "type": "float32"
           },
           "m_leftTarget": {
-            "offset": 160,
-            "type": "CNmTarget"
-          },
-          "m_leftTargetTransform": {
-            "offset": 80,
-            "type": "CTransform"
-          },
-          "m_nLeftEffectorBoneIdx": {
-            "offset": 72,
-            "type": "int32"
-          },
-          "m_nLeftTargetBoneIdx": {
-            "offset": 144,
-            "type": "int32"
-          },
-          "m_nRightEffectorBoneIdx": {
-            "offset": 76,
-            "type": "int32"
-          },
-          "m_nRightTargetBoneIdx": {
-            "offset": 148,
-            "type": "int32"
-          },
-          "m_rightTarget": {
             "offset": 208,
             "type": "CNmTarget"
           },
-          "m_rightTargetTransform": {
+          "m_leftTargetTransform": {
+            "offset": 128,
+            "type": "CTransform"
+          },
+          "m_nLeftEffectorBoneIdx": {
             "offset": 112,
+            "type": "int32"
+          },
+          "m_nLeftTargetBoneIdx": {
+            "offset": 192,
+            "type": "int32"
+          },
+          "m_nRightEffectorBoneIdx": {
+            "offset": 116,
+            "type": "int32"
+          },
+          "m_nRightTargetBoneIdx": {
+            "offset": 196,
+            "type": "int32"
+          },
+          "m_rightTarget": {
+            "offset": 256,
+            "type": "CNmTarget"
+          },
+          "m_rightTargetTransform": {
+            "offset": 160,
             "type": "CTransform"
           }
         },
@@ -8827,20 +8777,24 @@
             "offset": 24,
             "type": "int16"
           },
+          "m_enabledNodeIdx": {
+            "offset": 32,
+            "type": "int16"
+          },
           "m_linearVelocityLimitNodeIdx": {
             "offset": 28,
             "type": "int16"
           },
           "m_maxAngularVelocityRadians": {
-            "offset": 36,
+            "offset": 40,
             "type": "float32"
           },
           "m_maxLinearVelocity": {
-            "offset": 32,
+            "offset": 36,
             "type": "float32"
           },
           "m_overrideFlags": {
-            "offset": 40,
+            "offset": 44,
             "type": "CNmBitFlags"
           }
         },
@@ -8907,12 +8861,16 @@
             "type": "CGlobalSymbol"
           },
           "m_bIsPropSkeleton": {
-            "offset": 184,
+            "offset": 200,
             "type": "bool"
           },
           "m_boneIDs": {
             "offset": 8,
             "type": "CUtlLeanVector<CGlobalSymbol>"
+          },
+          "m_floatChannelSets": {
+            "offset": 184,
+            "type": "CUtlLeanVector<CNmFloatChannelSet_t>"
           },
           "m_maskDefinitions": {
             "offset": 136,
@@ -9680,43 +9638,43 @@
       "CNmTwoBoneIKTask": {
         "fields": {
           "m_bIsRunningFromDeserializedData": {
-            "offset": 169,
+            "offset": 217,
             "type": "bool"
           },
           "m_bIsTargetInWorldSpace": {
-            "offset": 168,
+            "offset": 216,
             "type": "bool"
           },
           "m_blendMode": {
-            "offset": 160,
+            "offset": 208,
             "type": "NmIKBlendMode_t"
           },
           "m_debugEffectorBoneID": {
-            "offset": 176,
+            "offset": 224,
             "type": "CGlobalSymbol"
           },
           "m_effectorTarget": {
-            "offset": 112,
+            "offset": 160,
             "type": "CNmTarget"
           },
           "m_flBlendWeight": {
-            "offset": 164,
+            "offset": 212,
             "type": "float32"
           },
           "m_flChainRotationWeight": {
-            "offset": 172,
+            "offset": 220,
             "type": "float32"
           },
           "m_nEffectorBoneIdx": {
-            "offset": 72,
+            "offset": 112,
             "type": "int32"
           },
           "m_nEffectorTargetBoneIdx": {
-            "offset": 76,
+            "offset": 116,
             "type": "int32"
           },
           "m_targetTransform": {
-            "offset": 80,
+            "offset": 128,
             "type": "CTransform"
           }
         },
@@ -10421,7 +10379,12 @@
       },
       "CParticleProperty": {
         "fields": {},
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "CParticleRemapFloatInput": {
@@ -11014,6 +10977,29 @@
         ],
         "parent": null
       },
+      "CPulseBreakpointLocation": {
+        "fields": {
+          "m_NodeID": {
+            "offset": 0,
+            "type": "PulseDocNodeID_t"
+          },
+          "m_PortName": {
+            "offset": 24,
+            "type": "PulseSymbol_t"
+          },
+          "m_SequencePoint": {
+            "offset": 8,
+            "type": "PulseSymbol_t"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "CPulseCell_Base": {
         "fields": {
           "m_nEditorNodeID": {
@@ -11042,7 +11028,7 @@
       "CPulseCell_BaseLerp": {
         "fields": {
           "m_WakeResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -11108,10 +11094,23 @@
         "parent": null
       },
       "CPulseCell_BaseYieldingInflow": {
-        "fields": {},
+        "fields": {
+          "m_BaseFlow_OnAfterCancel": {
+            "offset": 72,
+            "type": "CPulse_ResumePoint"
+          },
+          "m_BaseFlow_WhileActive": {
+            "offset": 144,
+            "type": "CPulse_ResumePoint"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          },
+          {
+            "name": "MCustomFGDMetadata",
             "type": "Unknown"
           }
         ],
@@ -11119,20 +11118,16 @@
       },
       "CPulseCell_BooleanSwitchState": {
         "fields": {
-          "m_Always": {
-            "offset": 192,
-            "type": "CPulse_OutflowConnection"
-          },
           "m_Condition": {
-            "offset": 72,
-            "type": "PulseObservableBoolExpression_t"
+            "offset": 216,
+            "type": "CPulseObservableExpression<bool>"
           },
           "m_WhenFalse": {
-            "offset": 336,
+            "offset": 408,
             "type": "CPulse_OutflowConnection"
           },
           "m_WhenTrue": {
-            "offset": 264,
+            "offset": 336,
             "type": "CPulse_OutflowConnection"
           }
         },
@@ -11159,7 +11154,7 @@
       "CPulseCell_CursorQueue": {
         "fields": {
           "m_nCursorsAllowedToRunParallel": {
-            "offset": 152,
+            "offset": 296,
             "type": "int32"
           }
         },
@@ -11185,20 +11180,16 @@
       },
       "CPulseCell_FireCursors": {
         "fields": {
-          "m_OnCanceled": {
-            "offset": 176,
-            "type": "CPulse_ResumePoint"
-          },
           "m_OnFinished": {
-            "offset": 104,
+            "offset": 248,
             "type": "CPulse_ResumePoint"
           },
           "m_Outflows": {
-            "offset": 72,
+            "offset": 216,
             "type": "CUtlVector<CPulse_OutflowConnection>"
           },
           "m_bWaitForChildOutflows": {
-            "offset": 96,
+            "offset": 240,
             "type": "bool"
           }
         },
@@ -11335,7 +11326,7 @@
       "CPulseCell_Inflow_Wait": {
         "fields": {
           "m_WakeResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -11366,7 +11357,7 @@
       "CPulseCell_Inflow_Yield": {
         "fields": {
           "m_UnyieldResume": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -11408,11 +11399,11 @@
       "CPulseCell_IntervalTimer": {
         "fields": {
           "m_Completed": {
-            "offset": 72,
+            "offset": 216,
             "type": "CPulse_ResumePoint"
           },
           "m_OnInterval": {
-            "offset": 144,
+            "offset": 288,
             "type": "SignatureOutflow_Continue"
           }
         },
@@ -11431,6 +11422,10 @@
           },
           {
             "name": "MPulseEditorHeaderIcon",
+            "type": "Unknown"
+          },
+          {
+            "name": "MPulseEditorCanvasItemSpecKV3",
             "type": "Unknown"
           }
         ],
@@ -11652,23 +11647,23 @@
       "CPulseCell_Step_CallExternalMethod": {
         "fields": {
           "m_ExpectedArgs": {
-            "offset": 96,
+            "offset": 240,
             "type": "CUtlLeanVector<CPulseRuntimeMethodArg>"
           },
           "m_MethodName": {
-            "offset": 72,
+            "offset": 216,
             "type": "PulseSymbol_t"
           },
           "m_OnFinished": {
-            "offset": 120,
+            "offset": 264,
             "type": "CPulse_ResumePoint"
           },
           "m_nAsyncCallMode": {
-            "offset": 112,
+            "offset": 256,
             "type": "PulseMethodCallMode_t"
           },
           "m_nBlackboardIndex": {
-            "offset": 88,
+            "offset": 232,
             "type": "PulseRuntimeBlackboardReferenceIndex_t"
           }
         },
@@ -11707,20 +11702,16 @@
       },
       "CPulseCell_Timeline": {
         "fields": {
-          "m_OnCanceled": {
-            "offset": 176,
-            "type": "CPulse_ResumePoint"
-          },
           "m_OnFinished": {
-            "offset": 104,
+            "offset": 248,
             "type": "CPulse_ResumePoint"
           },
           "m_TimelineEvents": {
-            "offset": 72,
+            "offset": 216,
             "type": "CUtlVector<CPulseCell_Timeline::TimelineEvent_t>"
           },
           "m_bWaitForChildOutflows": {
-            "offset": 96,
+            "offset": 240,
             "type": "bool"
           }
         },
@@ -11846,11 +11837,11 @@
       "CPulseCell_WaitForCursorsWithTag": {
         "fields": {
           "m_bTagSelfWhenComplete": {
-            "offset": 152,
+            "offset": 296,
             "type": "bool"
           },
           "m_nDesiredKillPriority": {
-            "offset": 156,
+            "offset": 300,
             "type": "PulseCursorCancelPriority_t"
           }
         },
@@ -11877,11 +11868,11 @@
       "CPulseCell_WaitForCursorsWithTagBase": {
         "fields": {
           "m_WaitComplete": {
-            "offset": 80,
+            "offset": 224,
             "type": "CPulse_ResumePoint"
           },
           "m_nCursorsAllowedToWait": {
-            "offset": 72,
+            "offset": 216,
             "type": "int32"
           }
         },
@@ -11897,24 +11888,14 @@
         ],
         "parent": null
       },
-      "CPulseCell_WaitForCursorsWithTagBase__CursorState_t": {
-        "fields": {
-          "m_TagName": {
-            "offset": 0,
-            "type": "PulseSymbol_t"
-          }
-        },
-        "metadata": [],
-        "parent": null
-      },
       "CPulseCell_WaitForObservable": {
         "fields": {
           "m_Condition": {
-            "offset": 72,
-            "type": "PulseObservableBoolExpression_t"
+            "offset": 216,
+            "type": "CPulseObservableExpression<bool>"
           },
           "m_OnTrue": {
-            "offset": 192,
+            "offset": 336,
             "type": "CPulse_ResumePoint"
           }
         },
@@ -11939,6 +11920,16 @@
         "parent": null
       },
       "CPulseCursorFuncs": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MPropertyDescription",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CPulseEnumlib": {
         "fields": {},
         "metadata": [
           {
@@ -12079,6 +12070,16 @@
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CPulseStringlib": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MPropertyDescription",
             "type": "Unknown"
           }
         ],
@@ -12225,7 +12226,7 @@
         "fields": {
           "m_SequencePointName": {
             "offset": 8,
-            "type": "CGlobalSymbol"
+            "type": "PulseSymbol_t"
           },
           "m_nFlowNodeID": {
             "offset": 0,
@@ -12392,6 +12393,10 @@
           "m_Description": {
             "offset": 16,
             "type": "CUtlString"
+          },
+          "m_Metadata": {
+            "offset": 80,
+            "type": "KeyValues3"
           },
           "m_Name": {
             "offset": 0,
@@ -12677,23 +12682,23 @@
       "CRenderMesh": {
         "fields": {
           "m_bEmbeddedMapMesh": {
-            "offset": 469,
+            "offset": 493,
             "type": "bool"
           },
           "m_bUseUV2ForCharting": {
-            "offset": 468,
+            "offset": 492,
             "type": "bool"
           },
           "m_constraints": {
-            "offset": 184,
+            "offset": 208,
             "type": "CUtlLeanVector<CBaseConstraint*>"
           },
           "m_meshDeformParams": {
-            "offset": 504,
+            "offset": 528,
             "type": "DynamicMeshDeformParams_t"
           },
           "m_pGroomData": {
-            "offset": 520,
+            "offset": 544,
             "type": "CRenderGroom*"
           },
           "m_sceneObjects": {
@@ -12701,7 +12706,7 @@
             "type": "CUtlLeanVectorFixedGrowable<CSceneObjectData,1>"
           },
           "m_skeleton": {
-            "offset": 200,
+            "offset": 224,
             "type": "CRenderSkeleton"
           }
         },
@@ -12811,27 +12816,55 @@
       "CSceneObjectData__RTProxyDrawDescriptor_t": {
         "fields": {
           "m_drawDesc": {
-            "offset": 0,
+            "offset": 8,
             "type": "CMaterialDrawDescriptor"
           },
+          "m_fEmissiveFactor": {
+            "offset": 348,
+            "type": "float32"
+          },
           "m_mWorldFromLocal": {
-            "offset": 264,
+            "offset": 288,
             "type": "matrix3x4_t"
           },
+          "m_materialGroupToken": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_nSrcDrawIndex": {
+            "offset": 4,
+            "type": "int32"
+          },
           "m_nVertexAlbedoFormat": {
-            "offset": 312,
+            "offset": 336,
             "type": "VertexAlbedoFormat_t"
           },
           "m_nVertexAlbedoOffset": {
-            "offset": 314,
+            "offset": 338,
             "type": "uint16"
           },
           "m_nVertexAlbedoStride": {
-            "offset": 316,
+            "offset": 340,
             "type": "uint16"
           },
           "m_nVertexAlbedoVB": {
-            "offset": 313,
+            "offset": 337,
+            "type": "int8"
+          },
+          "m_nVertexEmissiveFormat": {
+            "offset": 342,
+            "type": "VertexAlbedoFormat_t"
+          },
+          "m_nVertexEmissiveOffset": {
+            "offset": 344,
+            "type": "uint16"
+          },
+          "m_nVertexEmissiveStride": {
+            "offset": 346,
+            "type": "uint16"
+          },
+          "m_nVertexEmissiveVB": {
+            "offset": 343,
             "type": "int8"
           }
         },
@@ -16959,29 +16992,6 @@
         ],
         "parent": null
       },
-      "PulseObservableBoolExpression_t": {
-        "fields": {
-          "m_DependentObservableBlackboardReferences": {
-            "offset": 96,
-            "type": "CUtlVector<PulseRuntimeBlackboardReferenceIndex_t>"
-          },
-          "m_DependentObservableVars": {
-            "offset": 72,
-            "type": "CUtlVector<PulseRuntimeVarIndex_t>"
-          },
-          "m_EvaluateConnection": {
-            "offset": 0,
-            "type": "CPulse_OutflowConnection"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
       "PulseRegisterMap_t": {
         "fields": {
           "m_Inparams": {
@@ -17594,6 +17604,25 @@
           "m_tagIndex": {
             "offset": 0,
             "type": "int32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "TagStatus": {
+        "fields": {
+          "m_TagStatus": {
+            "offset": 0,
+            "type": "TagActionStatus"
+          },
+          "m_flTagStartAnimTime": {
+            "offset": 4,
+            "type": "float32"
           }
         },
         "metadata": [
@@ -19108,7 +19137,8 @@
           "MESH_BUFFER_USAGE_NONE": 0,
           "MESH_BUFFER_USAGE_RT_PROXY": 16,
           "MESH_BUFFER_USAGE_VB": 1,
-          "MESH_BUFFER_USAGE_VERTEX_ALBEDO": 32
+          "MESH_BUFFER_USAGE_VERTEX_ALBEDO": 32,
+          "MESH_BUFFER_USAGE_VERTEX_EMISSIVE": 64
         },
         "type": "uint8"
       },
@@ -19188,9 +19218,11 @@
         "alignment": 4,
         "members": {
           "eCenteredCapsule": 2,
+          "eCenteredCylinder": 6,
           "eGenericCapsule": 3,
           "eGroundBox": 4,
           "eGroundCapsule": 1,
+          "eGroundCylinder": 5,
           "eInvalid": 0
         },
         "type": "uint32"
@@ -19593,31 +19625,32 @@
           "PF_TYPE_CONCURRENT_DEF_COUNT": 10,
           "PF_TYPE_CONTROL_POINT_CHANGE_AGE": 7,
           "PF_TYPE_CONTROL_POINT_COMPONENT": 6,
+          "PF_TYPE_CONTROL_POINT_IS_SET": 14,
           "PF_TYPE_CONTROL_POINT_SPEED": 8,
-          "PF_TYPE_COUNT": 30,
+          "PF_TYPE_COUNT": 31,
           "PF_TYPE_ENDCAP_AGE": 5,
           "PF_TYPE_INVALID": -1,
           "PF_TYPE_LITERAL": 0,
           "PF_TYPE_NAMED_VALUE": 1,
-          "PF_TYPE_PARTICLE_AGE": 17,
-          "PF_TYPE_PARTICLE_AGE_NORMALIZED": 18,
+          "PF_TYPE_PARTICLE_AGE": 18,
+          "PF_TYPE_PARTICLE_AGE_NORMALIZED": 19,
           "PF_TYPE_PARTICLE_DETAIL_LEVEL": 9,
-          "PF_TYPE_PARTICLE_FLOAT": 19,
-          "PF_TYPE_PARTICLE_INITIAL_FLOAT": 20,
-          "PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT": 22,
-          "PF_TYPE_PARTICLE_NOISE": 16,
-          "PF_TYPE_PARTICLE_NUMBER": 24,
-          "PF_TYPE_PARTICLE_NUMBER_NORMALIZED": 25,
-          "PF_TYPE_PARTICLE_ROPE_SEGMENT": 26,
-          "PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED": 27,
-          "PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE": 28,
-          "PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT": 29,
-          "PF_TYPE_PARTICLE_SPEED": 23,
-          "PF_TYPE_PARTICLE_VECTOR_COMPONENT": 21,
+          "PF_TYPE_PARTICLE_FLOAT": 20,
+          "PF_TYPE_PARTICLE_INITIAL_FLOAT": 21,
+          "PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT": 23,
+          "PF_TYPE_PARTICLE_NOISE": 17,
+          "PF_TYPE_PARTICLE_NUMBER": 25,
+          "PF_TYPE_PARTICLE_NUMBER_NORMALIZED": 26,
+          "PF_TYPE_PARTICLE_ROPE_SEGMENT": 27,
+          "PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED": 28,
+          "PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE": 29,
+          "PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT": 30,
+          "PF_TYPE_PARTICLE_SPEED": 24,
+          "PF_TYPE_PARTICLE_VECTOR_COMPONENT": 22,
           "PF_TYPE_RANDOM_BIASED": 3,
           "PF_TYPE_RANDOM_UNIFORM": 2,
-          "PF_TYPE_RENDERER_CAMERA_DISTANCE": 14,
-          "PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT": 15,
+          "PF_TYPE_RENDERER_CAMERA_DISTANCE": 15,
+          "PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT": 16,
           "PF_TYPE_SNAPSHOT_CHANGED": 13,
           "PF_TYPE_SNAPSHOT_COUNT": 12
         },
@@ -19744,13 +19777,11 @@
         },
         "type": "uint32"
       },
-      "PulseCursorExecResult_t": {
+      "PulseCursorWakePriority_t": {
         "alignment": 4,
         "members": {
-          "Canceled": 1,
-          "Failed": 2,
-          "OngoingNotify": 3,
-          "Succeeded": 0
+          "WakeElegantly": 0,
+          "WakeImmediate": 1
         },
         "type": "uint32"
       },
@@ -19764,134 +19795,142 @@
         },
         "type": "uint32"
       },
+      "PulseDurationStringFormat_t": {
+        "alignment": 4,
+        "members": {
+          "MM_SS_LEADING_ZERO": 0
+        },
+        "type": "uint32"
+      },
       "PulseInstructionCode_t": {
         "alignment": 2,
         "members": {
-          "ADD": 25,
-          "ADD_FLOAT": 50,
-          "ADD_FLOAT_GAMETIME": 58,
-          "ADD_GAMETIME_FLOAT": 57,
-          "ADD_INT": 49,
-          "ADD_STRING": 51,
-          "ADD_VEC2": 52,
-          "ADD_VEC3": 53,
-          "ADD_VEC3WS_VEC3": 54,
-          "ADD_VEC3_VEC3WS": 55,
-          "ADD_VEC4": 56,
-          "AND": 34,
-          "CELL_INVOKE": 11,
+          "ADD": 26,
+          "ADD_FLOAT": 51,
+          "ADD_FLOAT_GAMETIME": 59,
+          "ADD_GAMETIME_FLOAT": 58,
+          "ADD_INT": 50,
+          "ADD_STRING": 52,
+          "ADD_VEC2": 53,
+          "ADD_VEC3": 54,
+          "ADD_VEC3WS_VEC3": 55,
+          "ADD_VEC3_VEC3WS": 56,
+          "ADD_VEC4": 57,
+          "AND": 35,
+          "CELL_INVOKE": 12,
           "CHUNK_LEAP": 7,
           "CHUNK_LEAP_COND": 8,
-          "CONVERT_VALUE": 39,
-          "COPY": 22,
-          "DETACH_REGISTER": 16,
-          "DIV": 28,
-          "DIV_FLOAT": 70,
-          "ELEMENT_ACCESS": 38,
-          "ELEMENT_ACCESS_COLOR_RGB": 123,
-          "ELEMENT_ACCESS_VEC2": 119,
-          "ELEMENT_ACCESS_VEC3": 120,
-          "ELEMENT_ACCESS_VEC3WS": 121,
-          "ELEMENT_ACCESS_VEC4": 122,
-          "EQ": 32,
-          "EQ_ARRAY": 94,
-          "EQ_BOOL": 79,
-          "EQ_COLOR_RGB": 93,
-          "EQ_EHANDLE": 89,
-          "EQ_ENTITY_NAME": 87,
-          "EQ_FLOAT": 81,
-          "EQ_GAMETIME": 95,
-          "EQ_INT": 80,
-          "EQ_OPAQUE_HANDLE": 91,
-          "EQ_PANEL_HANDLE": 90,
-          "EQ_SCHEMA_ENUM": 88,
-          "EQ_STRING": 86,
-          "EQ_TEST_HANDLE": 92,
-          "EQ_VEC2": 82,
-          "EQ_VEC3": 83,
-          "EQ_VEC3WS": 84,
-          "EQ_VEC4": 85,
-          "GET_ARRAY_ELEMENT": 20,
-          "GET_BLACKBOARD_REFERENCE": 41,
-          "GET_CONST": 19,
-          "GET_CONST_INLINE_STORAGE": 124,
-          "GET_DOMAIN_VALUE": 21,
-          "GET_VAR": 14,
-          "GET_VAR_DETACH": 15,
+          "CONVERT_VALUE": 40,
+          "COPY": 23,
+          "CREATE_CHILD_CURSOR_OUTFLOW": 11,
+          "DETACH_REGISTER": 17,
+          "DIV": 29,
+          "DIV_FLOAT": 71,
+          "ELEMENT_ACCESS": 39,
+          "ELEMENT_ACCESS_COLOR_RGB": 124,
+          "ELEMENT_ACCESS_VEC2": 120,
+          "ELEMENT_ACCESS_VEC3": 121,
+          "ELEMENT_ACCESS_VEC3WS": 122,
+          "ELEMENT_ACCESS_VEC4": 123,
+          "EQ": 33,
+          "EQ_ARRAY": 95,
+          "EQ_BOOL": 80,
+          "EQ_COLOR_RGB": 94,
+          "EQ_EHANDLE": 90,
+          "EQ_ENTITY_NAME": 88,
+          "EQ_FLOAT": 82,
+          "EQ_GAMETIME": 96,
+          "EQ_INT": 81,
+          "EQ_OPAQUE_HANDLE": 92,
+          "EQ_PANEL_HANDLE": 91,
+          "EQ_SCHEMA_ENUM": 89,
+          "EQ_STRING": 87,
+          "EQ_TEST_HANDLE": 93,
+          "EQ_VEC2": 83,
+          "EQ_VEC3": 84,
+          "EQ_VEC3WS": 85,
+          "EQ_VEC4": 86,
+          "GET_ARRAY_ELEMENT": 21,
+          "GET_BLACKBOARD_REFERENCE": 42,
+          "GET_CONST": 20,
+          "GET_CONST_INLINE_STORAGE": 125,
+          "GET_DOMAIN_VALUE": 22,
+          "GET_VAR": 15,
+          "GET_VAR_DETACH": 16,
           "IMMEDIATE_HALT": 1,
           "INVALID": 0,
           "JUMP": 5,
           "JUMP_COND": 6,
-          "LAST_SERIALIZED_CODE": 43,
-          "LIBRARY_INVOKE": 12,
-          "LT": 30,
-          "LTE": 31,
-          "LTE_FLOAT": 77,
-          "LTE_GAMETIME": 78,
-          "LTE_INT": 76,
-          "LT_FLOAT": 74,
-          "LT_GAMETIME": 75,
-          "LT_INT": 73,
-          "MOD": 29,
-          "MOD_FLOAT": 72,
-          "MOD_INT": 71,
-          "MUL": 27,
-          "MUL_FLOAT": 69,
-          "MUL_INT": 68,
-          "NE": 33,
-          "NEGATE": 24,
-          "NEGATE_FLOAT": 45,
-          "NEGATE_INT": 44,
-          "NEGATE_VEC2": 46,
-          "NEGATE_VEC3": 47,
-          "NEGATE_VEC4": 48,
-          "NE_ARRAY": 111,
-          "NE_BOOL": 96,
-          "NE_COLOR_RGB": 110,
-          "NE_EHANDLE": 106,
-          "NE_ENTITY_NAME": 104,
-          "NE_FLOAT": 98,
-          "NE_GAMETIME": 112,
-          "NE_INT": 97,
-          "NE_OPAQUE_HANDLE": 108,
-          "NE_PANEL_HANDLE": 107,
-          "NE_SCHEMA_ENUM": 105,
-          "NE_STRING": 103,
-          "NE_TEST_HANDLE": 109,
-          "NE_VEC2": 99,
-          "NE_VEC3": 100,
-          "NE_VEC3WS": 101,
-          "NE_VEC4": 102,
+          "LAST_SERIALIZED_CODE": 44,
+          "LIBRARY_INVOKE": 13,
+          "LT": 31,
+          "LTE": 32,
+          "LTE_FLOAT": 78,
+          "LTE_GAMETIME": 79,
+          "LTE_INT": 77,
+          "LT_FLOAT": 75,
+          "LT_GAMETIME": 76,
+          "LT_INT": 74,
+          "MOD": 30,
+          "MOD_FLOAT": 73,
+          "MOD_INT": 72,
+          "MUL": 28,
+          "MUL_FLOAT": 70,
+          "MUL_INT": 69,
+          "NE": 34,
+          "NEGATE": 25,
+          "NEGATE_FLOAT": 46,
+          "NEGATE_INT": 45,
+          "NEGATE_VEC2": 47,
+          "NEGATE_VEC3": 48,
+          "NEGATE_VEC4": 49,
+          "NE_ARRAY": 112,
+          "NE_BOOL": 97,
+          "NE_COLOR_RGB": 111,
+          "NE_EHANDLE": 107,
+          "NE_ENTITY_NAME": 105,
+          "NE_FLOAT": 99,
+          "NE_GAMETIME": 113,
+          "NE_INT": 98,
+          "NE_OPAQUE_HANDLE": 109,
+          "NE_PANEL_HANDLE": 108,
+          "NE_SCHEMA_ENUM": 106,
+          "NE_STRING": 104,
+          "NE_TEST_HANDLE": 110,
+          "NE_VEC2": 100,
+          "NE_VEC3": 101,
+          "NE_VEC3WS": 102,
+          "NE_VEC4": 103,
           "NOP": 4,
-          "NOT": 23,
-          "OR": 35,
+          "NOT": 24,
+          "OR": 36,
           "PULSE_CALL_ASYNC_FIRE": 10,
           "PULSE_CALL_SYNC": 9,
-          "REINTERPRET_INSTANCE": 40,
+          "REINTERPRET_INSTANCE": 41,
           "RETURN_VALUE": 3,
           "RETURN_VOID": 2,
-          "SCALE": 36,
-          "SCALE_INV": 37,
-          "SCALE_INV_VEC2": 117,
-          "SCALE_INV_VEC3": 116,
-          "SCALE_INV_VEC4": 118,
-          "SCALE_VEC2": 114,
-          "SCALE_VEC3": 113,
-          "SCALE_VEC4": 115,
-          "SET_BLACKBOARD_REFERENCE": 42,
-          "SET_VAR": 13,
-          "SET_VAR_ARRAY_ELEMENT_1D": 17,
-          "SET_VAR_OBSERVABLE": 18,
-          "SUB": 26,
-          "SUB_FLOAT": 60,
-          "SUB_GAMETIME": 67,
-          "SUB_GAMETIME_FLOAT": 66,
-          "SUB_INT": 59,
-          "SUB_VEC2": 61,
-          "SUB_VEC3": 62,
-          "SUB_VEC3WS_VEC3": 63,
-          "SUB_VEC3WS_VEC3WS": 64,
-          "SUB_VEC4": 65
+          "SCALE": 37,
+          "SCALE_INV": 38,
+          "SCALE_INV_VEC2": 118,
+          "SCALE_INV_VEC3": 117,
+          "SCALE_INV_VEC4": 119,
+          "SCALE_VEC2": 115,
+          "SCALE_VEC3": 114,
+          "SCALE_VEC4": 116,
+          "SET_BLACKBOARD_REFERENCE": 43,
+          "SET_VAR": 14,
+          "SET_VAR_ARRAY_ELEMENT_1D": 18,
+          "SET_VAR_OBSERVABLE": 19,
+          "SUB": 27,
+          "SUB_FLOAT": 61,
+          "SUB_GAMETIME": 68,
+          "SUB_GAMETIME_FLOAT": 67,
+          "SUB_INT": 60,
+          "SUB_VEC2": 62,
+          "SUB_VEC3": 63,
+          "SUB_VEC3WS_VEC3": 64,
+          "SUB_VEC3WS_VEC3WS": 65,
+          "SUB_VEC4": 66
         },
         "type": "uint16"
       },
@@ -19906,10 +19945,11 @@
       "PulseValueType_t": {
         "alignment": 4,
         "members": {
+          "PVAL_ANIM_SEQUENCE": 31,
           "PVAL_ARRAY": 28,
           "PVAL_BOOL": 0,
           "PVAL_COLOR_RGB": 11,
-          "PVAL_COUNT": 31,
+          "PVAL_COUNT": 33,
           "PVAL_CURSOR_FLOW": 22,
           "PVAL_EHANDLE": 13,
           "PVAL_ENTITY_NAME": 18,
@@ -19934,6 +19974,7 @@
           "PVAL_TYPESAFE_INT64": 29,
           "PVAL_UNKNOWN": 24,
           "PVAL_VARIANT": 23,
+          "PVAL_VDATA_CHOICE": 32,
           "PVAL_VEC2": 4,
           "PVAL_VEC3": 5,
           "PVAL_VEC3_WORLDSPACE": 7,
@@ -19945,9 +19986,10 @@
       "PulseVariableKeysSource_t": {
         "alignment": 4,
         "members": {
-          "COUNT": 5,
+          "COUNT": 6,
           "CPP": 1,
           "PRIVATE": 0,
+          "VDATA": 5,
           "VMAP": 2,
           "VMDL": 3,
           "XML": 4
@@ -20096,6 +20138,15 @@
           "StepPhase_OnGround": 0
         },
         "type": "uint32"
+      },
+      "TagActionStatus": {
+        "alignment": 1,
+        "members": {
+          "Active": 1,
+          "Fired": 2,
+          "Inactive": 0
+        },
+        "type": "uint8"
       },
       "TargetSelectorAngleMode_t": {
         "alignment": 4,

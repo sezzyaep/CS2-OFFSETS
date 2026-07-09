@@ -269,6 +269,18 @@
           "m_fVolumetricScale": {
             "offset": 12,
             "type": "float32"
+          },
+          "m_fWaterDensity": {
+            "offset": 24,
+            "type": "float32"
+          },
+          "m_fWaterDepthBlurRadius": {
+            "offset": 28,
+            "type": "float32"
+          },
+          "m_fWaterScale": {
+            "offset": 20,
+            "type": "float32"
           }
         },
         "metadata": [
@@ -310,6 +322,33 @@
         ],
         "parent": null
       },
+      "PostProcessingLocalExposureParameters_t": {
+        "fields": {
+          "m_fBoostLocalContrast": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_fHighlightOffsetEV": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_fShadowOffsetEV": {
+            "offset": 0,
+            "type": "float32"
+          },
+          "m_fSigma": {
+            "offset": 8,
+            "type": "float32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "PostProcessingResource_t": {
         "fields": {
           "m_bHasBloomParams": {
@@ -326,6 +365,10 @@
           },
           "m_bHasLocalContrastParams": {
             "offset": 244,
+            "type": "bool"
+          },
+          "m_bHasLocalExposureParams": {
+            "offset": 324,
             "type": "bool"
           },
           "m_bHasTonemapParams": {
@@ -351,6 +394,10 @@
           "m_localConstrastParams": {
             "offset": 248,
             "type": "PostProcessingLocalContrastParameters_t"
+          },
+          "m_localExposureParams": {
+            "offset": 328,
+            "type": "PostProcessingLocalExposureParameters_t"
           },
           "m_nColorCorrectionVolumeDim": {
             "offset": 268,

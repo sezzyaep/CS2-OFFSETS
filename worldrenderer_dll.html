@@ -122,10 +122,13 @@
         <tbody>
             <tr><td>m_nFlags</td><td class="type">RTProxyInstanceFlags_t</td><td class="value">0x0</td></tr>
             <tr><td>m_albedoFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x1</td></tr>
-            <tr><td>m_nBLASCount</td><td class="type">uint16</td><td class="value">0x2</td></tr>
-            <tr><td>m_nBLASIndex</td><td class="type">uint32</td><td class="value">0x4</td></tr>
-            <tr><td>m_nVertexAlbedoByteOffset</td><td class="type">uint32</td><td class="value">0x8</td></tr>
-            <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0xC</td></tr>
+            <tr><td>m_emissiveFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x2</td></tr>
+            <tr><td>m_nBLASCount</td><td class="type">uint16</td><td class="value">0x4</td></tr>
+            <tr><td>m_nBLASIndex</td><td class="type">uint32</td><td class="value">0x8</td></tr>
+            <tr><td>m_nVertexAlbedoByteOffset</td><td class="type">uint32</td><td class="value">0xC</td></tr>
+            <tr><td>m_nVertexEmissiveByteOffset</td><td class="type">uint32</td><td class="value">0x10</td></tr>
+            <tr><td>m_fEmissiveFactor</td><td class="type">float32</td><td class="value">0x14</td></tr>
+            <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateVertexAlbedoStreamOnDiskData_t</h3>
@@ -204,6 +207,7 @@
             <tr><td>m_nLayer</td><td class="type">int16</td><td class="value">0x8</td></tr>
             <tr><td>m_instanceStream</td><td class="type">int16</td><td class="value">0xA</td></tr>
             <tr><td>m_vertexAlbedoStream</td><td class="type">int16</td><td class="value">0xC</td></tr>
+            <tr><td>m_vertexEmissiveStream</td><td class="type">int16</td><td class="value">0xE</td></tr>
             <tr><td>m_aggregateMeshes</td><td class="type">CUtlVector<AggregateMeshInfo_t></td><td class="value">0x10</td></tr>
             <tr><td>m_lodSetups</td><td class="type">CUtlVector<AggregateLODSetup_t></td><td class="value">0x28</td></tr>
             <tr><td>m_visClusterMembership</td><td class="type">CUtlVector<uint16></td><td class="value">0x40</td></tr>
@@ -259,6 +263,15 @@
             <tr><td>m_boundLs</td><td class="type">AABB_t</td><td class="value">0x14</td></tr>
             <tr><td>m_vVertexOriginLs</td><td class="type">Vector</td><td class="value">0x2C</td></tr>
             <tr><td>m_vVertexExtentLs</td><td class="type">Vector</td><td class="value">0x38</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: AggregateVertexEmissiveStreamOnDiskData_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_BufferData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: ClutterSceneObject_t</h3>
@@ -321,11 +334,12 @@
             <tr><td>m_extraVertexStreams</td><td class="type">CUtlVector<WorldNodeOnDiskBufferData_t></td><td class="value">0xA8</td></tr>
             <tr><td>m_aggregateInstanceStreams</td><td class="type">CUtlVector<AggregateInstanceStreamOnDiskData_t></td><td class="value">0xC0</td></tr>
             <tr><td>m_vertexAlbedoStreams</td><td class="type">CUtlVector<AggregateVertexAlbedoStreamOnDiskData_t></td><td class="value">0xD8</td></tr>
-            <tr><td>m_layerNames</td><td class="type">CUtlVector<CUtlString></td><td class="value">0xF0</td></tr>
-            <tr><td>m_sceneObjectLayerIndices</td><td class="type">CUtlVector<uint8></td><td class="value">0x108</td></tr>
-            <tr><td>m_grassFileName</td><td class="type">CUtlString</td><td class="value">0x120</td></tr>
-            <tr><td>m_nodeLightingInfo</td><td class="type">BakedLightingInfo_t</td><td class="value">0x128</td></tr>
-            <tr><td>m_bHasBakedGeometryFlag</td><td class="type">bool</td><td class="value">0x170</td></tr>
+            <tr><td>m_vertexEmissiveStreams</td><td class="type">CUtlVector<AggregateVertexEmissiveStreamOnDiskData_t></td><td class="value">0xF0</td></tr>
+            <tr><td>m_layerNames</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x108</td></tr>
+            <tr><td>m_sceneObjectLayerIndices</td><td class="type">CUtlVector<uint8></td><td class="value">0x120</td></tr>
+            <tr><td>m_grassFileName</td><td class="type">CUtlString</td><td class="value">0x138</td></tr>
+            <tr><td>m_nodeLightingInfo</td><td class="type">BakedLightingInfo_t</td><td class="value">0x140</td></tr>
+            <tr><td>m_bHasBakedGeometryFlag</td><td class="type">bool</td><td class="value">0x188</td></tr>
         </tbody>
     </table>
     <h3>Class: BaseSceneObjectOverride_t</h3>
@@ -419,7 +433,9 @@
             <tr><td>m_nLightProbeVolumePrecomputedHandshake</td><td class="type">int32</td><td class="value">0x14</td></tr>
             <tr><td>m_nInstanceStreamOffset</td><td class="type">uint32</td><td class="value">0x18</td></tr>
             <tr><td>m_nVertexAlbedoStreamOffset</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
-            <tr><td>m_instanceStreams</td><td class="type">AggregateInstanceStream_t</td><td class="value">0x20</td></tr>
+            <tr><td>m_nVertexEmissiveStreamOffset</td><td class="type">uint32</td><td class="value">0x20</td></tr>
+            <tr><td>m_instanceStreams</td><td class="type">AggregateInstanceStream_t</td><td class="value">0x24</td></tr>
+            <tr><td>m_fEmissiveFactor</td><td class="type">float32</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: World_t</h3>
@@ -469,6 +485,7 @@
             <tr><td>m_VBData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x38</td></tr>
             <tr><td>m_IBData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x48</td></tr>
             <tr><td>m_InstanceAlbedoData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x58</td></tr>
+            <tr><td>m_InstanceEmissiveData</td><td class="type">CUtlBinaryBlock</td><td class="value">0x68</td></tr>
         </tbody>
     </table>
     <h3>Class: EntityKeyValueData_t</h3>

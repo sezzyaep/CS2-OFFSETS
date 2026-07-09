@@ -49,8 +49,12 @@
             "offset": 5,
             "type": "bool"
           },
+          "m_fEmissiveFactor": {
+            "offset": 40,
+            "type": "float32"
+          },
           "m_instanceStreams": {
-            "offset": 32,
+            "offset": 36,
             "type": "AggregateInstanceStream_t"
           },
           "m_nDrawCallIndex": {
@@ -75,6 +79,10 @@
           },
           "m_nVertexAlbedoStreamOffset": {
             "offset": 28,
+            "type": "uint32"
+          },
+          "m_nVertexEmissiveStreamOffset": {
+            "offset": 32,
             "type": "uint32"
           },
           "m_nVisClusterMemberCount": {
@@ -114,6 +122,10 @@
           },
           "m_InstanceAlbedoData": {
             "offset": 88,
+            "type": "CUtlBinaryBlock"
+          },
+          "m_InstanceEmissiveData": {
+            "offset": 104,
             "type": "CUtlBinaryBlock"
           },
           "m_Instances": {
@@ -175,6 +187,10 @@
             "offset": 12,
             "type": "int16"
           },
+          "m_vertexEmissiveStream": {
+            "offset": 14,
+            "type": "int16"
+          },
           "m_visClusterMembership": {
             "offset": 64,
             "type": "CUtlVector<uint16>"
@@ -189,6 +205,21 @@
         "parent": null
       },
       "AggregateVertexAlbedoStreamOnDiskData_t": {
+        "fields": {
+          "m_BufferData": {
+            "offset": 0,
+            "type": "CUtlBinaryBlock"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "AggregateVertexEmissiveStreamOnDiskData_t": {
         "fields": {
           "m_BufferData": {
             "offset": 0,
@@ -352,7 +383,12 @@
             "type": "WorldGroupId_t"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "CEntityInstance": {
@@ -380,7 +416,12 @@
             "type": "CUtlSymbolLarge"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": "CEntityComponent"
       },
       "CVoxelVisibility": {
@@ -765,16 +806,24 @@
             "offset": 1,
             "type": "VertexAlbedoFormat_t"
           },
+          "m_emissiveFormat": {
+            "offset": 2,
+            "type": "VertexAlbedoFormat_t"
+          },
+          "m_fEmissiveFactor": {
+            "offset": 20,
+            "type": "float32"
+          },
           "m_mWorldFromLocal": {
-            "offset": 12,
+            "offset": 24,
             "type": "matrix3x4_t"
           },
           "m_nBLASCount": {
-            "offset": 2,
+            "offset": 4,
             "type": "uint16"
           },
           "m_nBLASIndex": {
-            "offset": 4,
+            "offset": 8,
             "type": "uint32"
           },
           "m_nFlags": {
@@ -782,7 +831,11 @@
             "type": "RTProxyInstanceFlags_t"
           },
           "m_nVertexAlbedoByteOffset": {
-            "offset": 8,
+            "offset": 12,
+            "type": "uint32"
+          },
+          "m_nVertexEmissiveByteOffset": {
+            "offset": 16,
             "type": "uint32"
           }
         },
@@ -958,7 +1011,7 @@
             "type": "CUtlVector<AggregateSceneObject_t>"
           },
           "m_bHasBakedGeometryFlag": {
-            "offset": 368,
+            "offset": 392,
             "type": "bool"
           },
           "m_clutterSceneObjects": {
@@ -974,11 +1027,11 @@
             "type": "CUtlVector<WorldNodeOnDiskBufferData_t>"
           },
           "m_grassFileName": {
-            "offset": 288,
+            "offset": 312,
             "type": "CUtlString"
           },
           "m_layerNames": {
-            "offset": 240,
+            "offset": 264,
             "type": "CUtlVector<CUtlString>"
           },
           "m_materialOverrides": {
@@ -986,7 +1039,7 @@
             "type": "CUtlVector<MaterialOverride_t>"
           },
           "m_nodeLightingInfo": {
-            "offset": 296,
+            "offset": 320,
             "type": "BakedLightingInfo_t"
           },
           "m_rtProxies": {
@@ -994,7 +1047,7 @@
             "type": "CUtlVector<AggregateRTProxySceneObject_t>"
           },
           "m_sceneObjectLayerIndices": {
-            "offset": 264,
+            "offset": 288,
             "type": "CUtlVector<uint8>"
           },
           "m_sceneObjects": {
@@ -1004,6 +1057,10 @@
           "m_vertexAlbedoStreams": {
             "offset": 216,
             "type": "CUtlVector<AggregateVertexAlbedoStreamOnDiskData_t>"
+          },
+          "m_vertexEmissiveStreams": {
+            "offset": 240,
+            "type": "CUtlVector<AggregateVertexEmissiveStreamOnDiskData_t>"
           },
           "m_visClusterMembership": {
             "offset": 24,

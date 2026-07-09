@@ -10,11 +10,11 @@
         "fields": {
           "m_Attributes": {
             "offset": 0,
-            "type": "CUtlOrderedMap<CUtlStringToken,Attribute_t>"
+            "type": "CUtlOrderedMap<CUtlStringTokenNoRegistration,Attribute_t>"
           },
           "m_Names": {
             "offset": 40,
-            "type": "CUtlOrderedMap<CUtlStringToken,CUtlString>"
+            "type": "CUtlOrderedMap<CUtlStringTokenNoRegistration,CUtlString>"
           }
         },
         "metadata": [],
@@ -103,7 +103,12 @@
             "type": "WorldGroupId_t"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": null
       },
       "CEntityInstance": {
@@ -146,7 +151,12 @@
             "type": "CUtlSymbolLarge"
           }
         },
-        "metadata": [],
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
         "parent": "CEntityComponent"
       },
       "CVariantDefaultAllocator": {
@@ -230,12 +240,8 @@
             "type": "CEntityHandle"
           },
           "m_hEntTarget": {
-            "offset": 44,
-            "type": "CEntityHandle"
-          },
-          "m_nOutputID": {
             "offset": 40,
-            "type": "int32"
+            "type": "CEntityHandle"
           },
           "m_pTarget": {
             "offset": 16,
@@ -291,6 +297,21 @@
             "type": "int32"
           }
         },
+        "metadata": [],
+        "parent": null
+      },
+      "EventBugBugComplete_t": {
+        "fields": {
+          "m_pPayload": {
+            "offset": 0,
+            "type": "EventBugBug_t*"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "EventBugBug_t": {
+        "fields": {},
         "metadata": [],
         "parent": null
       },

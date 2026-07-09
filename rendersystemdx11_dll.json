@@ -92,8 +92,8 @@
             "type": "bitfield:1"
           },
           "m_depthFunc": {
-            "offset": 1,
-            "type": "RsComparison_t"
+            "offset": 0,
+            "type": "bitfield:4"
           },
           "m_stencilState": {
             "offset": 2,
@@ -153,7 +153,7 @@
           },
           "m_backStencilFunc": {
             "offset": 0,
-            "type": "bitfield:3"
+            "type": "bitfield:4"
           },
           "m_backStencilPassOp": {
             "offset": 0,
@@ -169,7 +169,7 @@
           },
           "m_frontStencilFunc": {
             "offset": 0,
-            "type": "bitfield:3"
+            "type": "bitfield:4"
           },
           "m_frontStencilPassOp": {
             "offset": 0,
@@ -250,6 +250,7 @@
         "members": {
           "RENDER_BUFFER_ACCELERATION_STRUCTURE": 512,
           "RENDER_BUFFER_BYTEADDRESS_BUFFER": 16,
+          "RENDER_BUFFER_DYNAMIC_ZERO_COPY": 16384,
           "RENDER_BUFFER_IMMOVABLE_ALLOCATION": 8192,
           "RENDER_BUFFER_POOL_ALLOCATED": 2048,
           "RENDER_BUFFER_SHADER_BINDING_TABLE": 1024,
@@ -311,7 +312,13 @@
         "alignment": 1,
         "members": {
           "RS_CMP_ALWAYS": 7,
+          "RS_CMP_CLOSER": 9,
+          "RS_CMP_CLOSER_EQUAL": 11,
+          "RS_CMP_CLOSER_FARTHER_FLAG": 8,
           "RS_CMP_EQUAL": 2,
+          "RS_CMP_FARTHER": 12,
+          "RS_CMP_FARTHER_EQUAL": 14,
+          "RS_CMP_FUNC_MASK": 7,
           "RS_CMP_GREATER": 4,
           "RS_CMP_GREATER_EQUAL": 6,
           "RS_CMP_LESS": 1,
@@ -337,6 +344,18 @@
           "RS_FILL_WIREFRAME": 1
         },
         "type": "uint8"
+      },
+      "UpscalerType_t": {
+        "alignment": 4,
+        "members": {
+          "UPSCALER_AMD_FSR2": 1,
+          "UPSCALER_AMD_FSR3": 2,
+          "UPSCALER_COUNT": 5,
+          "UPSCALER_INTEL_XESS": 4,
+          "UPSCALER_NONE": 0,
+          "UPSCALER_NVIDIA_DLSS": 3
+        },
+        "type": "uint32"
       }
     }
   }
