@@ -6742,7 +6742,7 @@
             "type": "GameTime_t"
           },
           "m_angEyeAngles": {
-            "offset": 4968,
+            "offset": 4976,
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
@@ -6754,7 +6754,7 @@
             "type": "bool"
           },
           "m_bCommittingSuicideOnTeamChange": {
-            "offset": 4952,
+            "offset": 4960,
             "type": "bool"
           },
           "m_bGrenadeParametersStashed": {
@@ -6762,7 +6762,7 @@
             "type": "bool"
           },
           "m_bGunGameImmunity": {
-            "offset": 4960,
+            "offset": 4968,
             "type": "bool"
           },
           "m_bHasDeathInfo": {
@@ -6878,7 +6878,7 @@
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
-            "offset": 4956,
+            "offset": 4964,
             "type": "GameTime_t"
           },
           "m_fLastGivenBombTime": {
@@ -6890,7 +6890,7 @@
             "type": "float32"
           },
           "m_fMolotovDamageTime": {
-            "offset": 4964,
+            "offset": 4972,
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
@@ -7113,12 +7113,16 @@
             "offset": 4872,
             "type": "uint32[5]"
           },
+          "m_vecStashedGrenadeThrowPawnCenter": {
+            "offset": 4928,
+            "type": "VectorWS"
+          },
           "m_vecStashedGrenadeThrowPosition": {
             "offset": 4916,
             "type": "VectorWS"
           },
           "m_vecStashedVelocity": {
-            "offset": 4928,
+            "offset": 4940,
             "type": "Vector"
           },
           "m_vecTotalBulletForce": {
@@ -7126,7 +7130,7 @@
             "type": "Vector"
           },
           "m_wasNotKilledNaturally": {
-            "offset": 4953,
+            "offset": 4961,
             "type": "bool"
           }
         },
