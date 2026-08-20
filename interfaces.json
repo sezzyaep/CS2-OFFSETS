@@ -1,18 +1,18 @@
 {
   "animationsystem.dll": {
-    "AnimationSystemUtils_001": 8617680,
-    "AnimationSystem_001": 8584688
+    "AnimationSystemUtils_001": 8617744,
+    "AnimationSystem_001": 8584752
   },
   "client.dll": {
-    "ClientBugBugServic001_Client": 34179088,
-    "ClientToolsInfo_001": 34179040,
-    "EmptyWorldService001_Client": 34030816,
-    "GameClientExports001": 34165888,
-    "LegacyGameUI001": 34245984,
-    "Source2Client002": 37370064,
-    "Source2ClientConfig001": 36768816,
-    "Source2ClientPrediction001": 37392416,
-    "Source2ClientUI001": 34239104
+    "ClientBugBugServic001_Client": 34183184,
+    "ClientToolsInfo_001": 34183136,
+    "EmptyWorldService001_Client": 34034928,
+    "GameClientExports001": 34169984,
+    "LegacyGameUI001": 34250080,
+    "Source2Client002": 37374160,
+    "Source2ClientConfig001": 36772928,
+    "Source2ClientPrediction001": 37396512,
+    "Source2ClientUI001": 34243200
   },
   "engine2.dll": {
     "BenchmarkService001": 6378272,
@@ -51,8 +51,8 @@
     "VProfService_001": 6380368
   },
   "filesystem_stdio.dll": {
-    "VAsyncFileSystem2_001": 2168320,
-    "VFileSystem017": 2167744
+    "VAsyncFileSystem2_001": 2176512,
+    "VFileSystem017": 2175936
   },
   "host.dll": {
     "DebugDrawQueueManager001": 1302688,
@@ -76,7 +76,7 @@
   },
   "matchmaking.dll": {
     "GameTypes001": 1761152,
-    "MATCHFRAMEWORK_001": 1793792
+    "MATCHFRAMEWORK_001": 1794080
   },
   "materialsystem2.dll": {
     "FontManager_001": 1428400,
@@ -107,10 +107,10 @@
     "PanoramaUIClient001": 2707984
   },
   "particles.dll": {
-    "ParticleSystemMgr003": 6286032
+    "ParticleSystemMgr003": 6286016
   },
   "pulse_system.dll": {
-    "IPulseSystem_001": 2201360
+    "IPulseSystem_001": 2201424
   },
   "rendersystemdx11.dll": {
     "RenderDeviceMgr001": 4375888,
@@ -133,8 +133,8 @@
     "SchemaSystem_001": 481072
   },
   "server.dll": {
-    "EmptyWorldService001_Server": 29613984,
-    "EntitySubclassUtilsV001": 29285120,
+    "EmptyWorldService001_Server": 29614000,
+    "EntitySubclassUtilsV001": 29285136,
     "NavGameTest001": 30085344,
     "ServerToolsInfo_001": 29850024,
     "Source2GameClients001": 29846416,
@@ -142,7 +142,7 @@
     "Source2GameEntities001": 29847888,
     "Source2Server001": 29847456,
     "Source2ServerConfig001": 32904488,
-    "customnavsystem001": 29171528
+    "customnavsystem001": 29171544
   },
   "soundsystem.dll": {
     "SoundBugBugService001_Client": 5553536,
