@@ -3083,6 +3083,20 @@
         <tbody>
         </tbody>
     </table>
+    <h3>Class: CCSCustomHudLayout</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_strLayout</td><td class="type">CUtlSymbolLarge</td><td class="value">0x608</td></tr>
+            <tr><td>m_vecPlayerLayoutStates</td><td class="type">C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x610</td></tr>
+            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x678</td></tr>
+            <tr><td>m_vecPanelIds</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x788</td></tr>
+            <tr><td>m_vecClassNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x7A0</td></tr>
+            <tr><td>m_vecDialogVariableNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x7B8</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CEntityInstance</h3>
     <table>
         <thead>
@@ -3793,6 +3807,14 @@
             <tr><td>m_flThrowVelocity</td><td class="type">float32</td><td class="value">0x860</td></tr>
             <tr><td>m_vSmokeColor</td><td class="type">Vector</td><td class="value">0x864</td></tr>
             <tr><td>m_szAnimClass</td><td class="type">CGlobalSymbol</td><td class="value">0x870</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CCSCustomHudLayout_API</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
         </tbody>
     </table>
     <h3>Class: CAttributeManager</h3>
@@ -6516,6 +6538,18 @@
         <tbody>
         </tbody>
     </table>
+    <h3>Class: CCSCustomHudLayoutState</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bInputCaptureEnabled</td><td class="type">bool</td><td class="value">0x30</td></tr>
+            <tr><td>m_vecHasClasses</td><td class="type">C_NetworkUtlVectorBase<HUDPanelHasClass_t></td><td class="value">0x38</td></tr>
+            <tr><td>m_vecDialogVariableStrings</td><td class="type">C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t></td><td class="value">0x50</td></tr>
+            <tr><td>m_playerSlot</td><td class="type">CPlayerSlot</td><td class="value">0x108</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CCSGO_WingmanIntroCharacterPosition</h3>
     <table>
         <thead>
@@ -6775,6 +6809,17 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CCSPlayerCamera</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_hPawn</td><td class="type">CHandle<C_CSPlayerPawnBase></td><td class="value">0x600</td></tr>
+            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0x604</td></tr>
+            <tr><td>m_bIsControllingAngles</td><td class="type">bool</td><td class="value">0x605</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_LimitCount</h3>

@@ -21338,6 +21338,63 @@
         ],
         "parent": null
       },
+      "CCSCustomHudLayout": {
+        "fields": {
+          "m_globalLayoutState": {
+            "offset": 1656,
+            "type": "CCSCustomHudLayoutState"
+          },
+          "m_strLayout": {
+            "offset": 1544,
+            "type": "CUtlSymbolLarge"
+          },
+          "m_vecClassNames": {
+            "offset": 1952,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecDialogVariableNames": {
+            "offset": 1976,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPanelIds": {
+            "offset": 1928,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPlayerLayoutStates": {
+            "offset": 1552,
+            "type": "C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>"
+          }
+        },
+        "metadata": [],
+        "parent": "C_BaseEntity"
+      },
+      "CCSCustomHudLayoutState": {
+        "fields": {
+          "m_bInputCaptureEnabled": {
+            "offset": 48,
+            "type": "bool"
+          },
+          "m_playerSlot": {
+            "offset": 264,
+            "type": "CPlayerSlot"
+          },
+          "m_vecDialogVariableStrings": {
+            "offset": 80,
+            "type": "C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>"
+          },
+          "m_vecHasClasses": {
+            "offset": 56,
+            "type": "C_NetworkUtlVectorBase<HUDPanelHasClass_t>"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomHudLayout_API": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "CCSGO_EndOfMatchLineupEnd": {
         "fields": {},
         "metadata": [],
@@ -21465,6 +21522,24 @@
         },
         "metadata": [],
         "parent": "CPlayer_CameraServices"
+      },
+      "CCSPlayerCamera": {
+        "fields": {
+          "m_bEnabled": {
+            "offset": 1540,
+            "type": "bool"
+          },
+          "m_bIsControllingAngles": {
+            "offset": 1541,
+            "type": "bool"
+          },
+          "m_hPawn": {
+            "offset": 1536,
+            "type": "CHandle<C_CSPlayerPawnBase>"
+          }
+        },
+        "metadata": [],
+        "parent": null
       },
       "CCSPlayerController": {
         "fields": {
@@ -65586,6 +65661,63 @@
         "metadata": [],
         "parent": "CBot"
       },
+      "CCSCustomHudLayout": {
+        "fields": {
+          "m_globalLayoutState": {
+            "offset": 1304,
+            "type": "CCSCustomHudLayoutState"
+          },
+          "m_strLayout": {
+            "offset": 1192,
+            "type": "CUtlSymbolLarge"
+          },
+          "m_vecClassNames": {
+            "offset": 1744,
+            "type": "CNetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecDialogVariableNames": {
+            "offset": 1768,
+            "type": "CNetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPanelIds": {
+            "offset": 1720,
+            "type": "CNetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPlayerLayoutStates": {
+            "offset": 1200,
+            "type": "CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>"
+          }
+        },
+        "metadata": [],
+        "parent": "CBaseEntity"
+      },
+      "CCSCustomHudLayoutState": {
+        "fields": {
+          "m_bInputCaptureEnabled": {
+            "offset": 48,
+            "type": "bool"
+          },
+          "m_playerSlot": {
+            "offset": 408,
+            "type": "CPlayerSlot"
+          },
+          "m_vecDialogVariableStrings": {
+            "offset": 152,
+            "type": "CNetworkUtlVectorBase<HUDPanelDialogVariableString_t>"
+          },
+          "m_vecHasClasses": {
+            "offset": 56,
+            "type": "CNetworkUtlVectorBase<HUDPanelHasClass_t>"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomHudLayout_API": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "CCSGO_EndOfMatchLineupEnd": {
         "fields": {},
         "metadata": [],
@@ -66662,6 +66794,24 @@
         },
         "metadata": [],
         "parent": "CPlayer_CameraServices"
+      },
+      "CCSPlayerCamera": {
+        "fields": {
+          "m_bEnabled": {
+            "offset": 1196,
+            "type": "bool"
+          },
+          "m_bIsControllingAngles": {
+            "offset": 1197,
+            "type": "bool"
+          },
+          "m_hPawn": {
+            "offset": 1192,
+            "type": "CHandle<CCSPlayerPawnBase>"
+          }
+        },
+        "metadata": [],
+        "parent": null
       },
       "CCSPlayerController": {
         "fields": {
@@ -89283,6 +89433,51 @@
         ],
         "parent": null
       },
+      "HUDPanelDialogVariableString_t": {
+        "fields": {
+          "m_bIsSet": {
+            "offset": 24,
+            "type": "bool"
+          },
+          "m_nDialogVariableIndex": {
+            "offset": 10,
+            "type": "uint16"
+          },
+          "m_nPanelIdIndex": {
+            "offset": 8,
+            "type": "uint16"
+          },
+          "m_sValue": {
+            "offset": 16,
+            "type": "CUtlString"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "HUDPanelHasClass_t": {
+        "fields": {
+          "m_eClassStatus": {
+            "offset": 4,
+            "type": "EHudPanelClassStatus_t"
+          },
+          "m_nClassNameIndex": {
+            "offset": 2,
+            "type": "uint16"
+          },
+          "m_nPanelIdIndex": {
+            "offset": 0,
+            "type": "uint16"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "HullFlags_t": {
         "fields": {
           "m_bHull_Human": {
@@ -92381,6 +92576,7 @@
           "CS_UM_CounterStrafe": 385,
           "CS_UM_CurrentRoundOdds": 380,
           "CS_UM_CurrentTimescale": 332,
+          "CS_UM_CustomHudClicked": 390,
           "CS_UM_Damage": 321,
           "CS_UM_DamagePrediction": 386,
           "CS_UM_DeepStats": 381,
@@ -92882,6 +93078,15 @@
           "EHG_RightArm": 5,
           "EHG_RightLeg": 7,
           "EHG_Stomach": 3
+        },
+        "type": "uint32"
+      },
+      "EHudPanelClassStatus_t": {
+        "alignment": 4,
+        "members": {
+          "k_eHudPanelClassStatus_DoesNotHaveClass": 0,
+          "k_eHudPanelClassStatus_HasClass": 1,
+          "k_eHudPanelClassStatus_Undefined": -1
         },
         "type": "uint32"
       },

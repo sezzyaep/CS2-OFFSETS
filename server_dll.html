@@ -2830,6 +2830,7 @@
             <tr><td>CS_UM_RecurringMissionSchema</td><td class="value">387</td></tr>
             <tr><td>CS_UM_SendPlayerLoadout</td><td class="value">388</td></tr>
             <tr><td>CS_UM_WeaponMagDrop</td><td class="value">389</td></tr>
+            <tr><td>CS_UM_CustomHudClicked</td><td class="value">390</td></tr>
         </tbody>
     </table>
     <h3>Enum: HierarchyType_t</h3>
@@ -3020,6 +3021,17 @@
             <tr><td>MOVE_MOUNT_LOW</td><td class="value">1</td></tr>
             <tr><td>MOVE_MOUNT_HIGH</td><td class="value">2</td></tr>
             <tr><td>MOVE_MOUNT_MAXCOUNT</td><td class="value">3</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: EHudPanelClassStatus_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>k_eHudPanelClassStatus_Undefined</td><td class="value">-1</td></tr>
+            <tr><td>k_eHudPanelClassStatus_DoesNotHaveClass</td><td class="value">0</td></tr>
+            <tr><td>k_eHudPanelClassStatus_HasClass</td><td class="value">1</td></tr>
         </tbody>
     </table>
     <h3>Enum: GCClientLauncherType</h3>
@@ -8334,6 +8346,20 @@
             <tr><td>m_iMaxObjectsAttached</td><td class="type">int32</td><td class="value">0x9C8</td></tr>
         </tbody>
     </table>
+    <h3>Class: CCSCustomHudLayout</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_strLayout</td><td class="type">CUtlSymbolLarge</td><td class="value">0x4A8</td></tr>
+            <tr><td>m_vecPlayerLayoutStates</td><td class="type">CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x4B0</td></tr>
+            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x518</td></tr>
+            <tr><td>m_vecPanelIds</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6B8</td></tr>
+            <tr><td>m_vecClassNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6D0</td></tr>
+            <tr><td>m_vecDialogVariableNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6E8</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CEntityInstance</h3>
     <table>
         <thead>
@@ -9223,6 +9249,14 @@
             <tr><td>m_attachedObject</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x4C0</td></tr>
             <tr><td>m_wasRestored</td><td class="type">bool</td><td class="value">0x4C4</td></tr>
             <tr><td>m_integrator</td><td class="type">CConstantForceController</td><td class="value">0x4C8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CCSCustomHudLayout_API</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
         </tbody>
     </table>
     <h3>Class: CAttributeManager</h3>
@@ -13885,6 +13919,18 @@
             <tr><td>m_vExtent</td><td class="type">Vector</td><td class="value">0x970</td></tr>
         </tbody>
     </table>
+    <h3>Class: CCSCustomHudLayoutState</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_bInputCaptureEnabled</td><td class="type">bool</td><td class="value">0x30</td></tr>
+            <tr><td>m_vecHasClasses</td><td class="type">CNetworkUtlVectorBase<HUDPanelHasClass_t></td><td class="value">0x38</td></tr>
+            <tr><td>m_vecDialogVariableStrings</td><td class="type">CNetworkUtlVectorBase<HUDPanelDialogVariableString_t></td><td class="value">0x98</td></tr>
+            <tr><td>m_playerSlot</td><td class="type">CPlayerSlot</td><td class="value">0x198</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CCSGO_WingmanIntroCharacterPosition</h3>
     <table>
         <thead>
@@ -14387,6 +14433,17 @@
             <tr><td>m_operatorNameChar</td><td class="type">char[256]</td><td class="value">0xB31</td></tr>
             <tr><td>m_VecNormPos</td><td class="type">Vector</td><td class="value">0xC34</td></tr>
             <tr><td>m_flNormCenterSize</td><td class="type">float32</td><td class="value">0xC40</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CCSPlayerCamera</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_hPawn</td><td class="type">CHandle<CCSPlayerPawnBase></td><td class="value">0x4A8</td></tr>
+            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0x4AC</td></tr>
+            <tr><td>m_bIsControllingAngles</td><td class="type">bool</td><td class="value">0x4AD</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_LimitCount</h3>
@@ -16387,6 +16444,17 @@
             <tr><td>m_flFarBlurryDistance</td><td class="type">float32</td><td class="value">0xC</td></tr>
         </tbody>
     </table>
+    <h3>Class: HUDPanelHasClass_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPanelIdIndex</td><td class="type">uint16</td><td class="value">0x0</td></tr>
+            <tr><td>m_nClassNameIndex</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_eClassStatus</td><td class="type">EHudPanelClassStatus_t</td><td class="value">0x4</td></tr>
+        </tbody>
+    </table>
     <h3>Class: DebugDrawBoneTransforms_t</h3>
     <table>
         <thead>
@@ -16411,6 +16479,18 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: HUDPanelDialogVariableString_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPanelIdIndex</td><td class="type">uint16</td><td class="value">0x8</td></tr>
+            <tr><td>m_nDialogVariableIndex</td><td class="type">uint16</td><td class="value">0xA</td></tr>
+            <tr><td>m_sValue</td><td class="type">CUtlString</td><td class="value">0x10</td></tr>
+            <tr><td>m_bIsSet</td><td class="type">bool</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: CSoundEnvelope</h3>

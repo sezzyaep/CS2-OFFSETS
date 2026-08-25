@@ -1097,6 +1097,63 @@
         ],
         "parent": null
       },
+      "CCSCustomHudLayout": {
+        "fields": {
+          "m_globalLayoutState": {
+            "offset": 1656,
+            "type": "CCSCustomHudLayoutState"
+          },
+          "m_strLayout": {
+            "offset": 1544,
+            "type": "CUtlSymbolLarge"
+          },
+          "m_vecClassNames": {
+            "offset": 1952,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecDialogVariableNames": {
+            "offset": 1976,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPanelIds": {
+            "offset": 1928,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
+          "m_vecPlayerLayoutStates": {
+            "offset": 1552,
+            "type": "C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>"
+          }
+        },
+        "metadata": [],
+        "parent": "C_BaseEntity"
+      },
+      "CCSCustomHudLayoutState": {
+        "fields": {
+          "m_bInputCaptureEnabled": {
+            "offset": 48,
+            "type": "bool"
+          },
+          "m_playerSlot": {
+            "offset": 264,
+            "type": "CPlayerSlot"
+          },
+          "m_vecDialogVariableStrings": {
+            "offset": 80,
+            "type": "C_NetworkUtlVectorBase<HUDPanelDialogVariableString_t>"
+          },
+          "m_vecHasClasses": {
+            "offset": 56,
+            "type": "C_NetworkUtlVectorBase<HUDPanelHasClass_t>"
+          }
+        },
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomHudLayout_API": {
+        "fields": {},
+        "metadata": [],
+        "parent": null
+      },
       "CCSGO_EndOfMatchLineupEnd": {
         "fields": {},
         "metadata": [],
@@ -1224,6 +1281,24 @@
         },
         "metadata": [],
         "parent": "CPlayer_CameraServices"
+      },
+      "CCSPlayerCamera": {
+        "fields": {
+          "m_bEnabled": {
+            "offset": 1540,
+            "type": "bool"
+          },
+          "m_bIsControllingAngles": {
+            "offset": 1541,
+            "type": "bool"
+          },
+          "m_hPawn": {
+            "offset": 1536,
+            "type": "CHandle<C_CSPlayerPawnBase>"
+          }
+        },
+        "metadata": [],
+        "parent": null
       },
       "CCSPlayerController": {
         "fields": {
