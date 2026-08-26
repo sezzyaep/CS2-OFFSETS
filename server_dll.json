@@ -5076,15 +5076,15 @@
             "type": "CUtlSymbolLarge"
           },
           "m_vecClassNames": {
-            "offset": 1744,
+            "offset": 1736,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecDialogVariableNames": {
-            "offset": 1768,
+            "offset": 1760,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecPanelIds": {
-            "offset": 1720,
+            "offset": 1712,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecPlayerLayoutStates": {
@@ -5098,11 +5098,11 @@
       "CCSCustomHudLayoutState": {
         "fields": {
           "m_bInputCaptureEnabled": {
-            "offset": 48,
+            "offset": 52,
             "type": "bool"
           },
           "m_playerSlot": {
-            "offset": 408,
+            "offset": 48,
             "type": "CPlayerSlot"
           },
           "m_vecDialogVariableStrings": {
