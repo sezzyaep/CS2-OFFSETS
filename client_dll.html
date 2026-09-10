@@ -213,6 +213,38 @@
             <tr><td>COMP_MAT_MUTATOR_CONDITION_INPUT_CONTAINER_VALUE_EQUALS</td><td class="value">2</td></tr>
         </tbody>
     </table>
+    <h3>Enum: �a%&Q</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Enum: `o%&Q</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Enum: �C*&Q</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Enum: �J%&Q</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <h3>Class: C_CSGO_TeamIntroCharacterPosition</h3>
     <table>
         <thead>
@@ -3089,12 +3121,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_strLayout</td><td class="type">CUtlSymbolLarge</td><td class="value">0x608</td></tr>
-            <tr><td>m_vecPlayerLayoutStates</td><td class="type">C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x610</td></tr>
-            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x678</td></tr>
-            <tr><td>m_vecPanelIds</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x780</td></tr>
-            <tr><td>m_vecClassNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x798</td></tr>
-            <tr><td>m_vecDialogVariableNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x7B0</td></tr>
+            <tr><td>m_strLayout</td><td class="type">CUtlSymbolLarge</td><td class="value">0x618</td></tr>
+            <tr><td>m_bObservable</td><td class="type">bool</td><td class="value">0x620</td></tr>
+            <tr><td>m_vecPlayerLayoutStates</td><td class="type">C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x628</td></tr>
+            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x690</td></tr>
+            <tr><td>m_vecPanelIds</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x798</td></tr>
+            <tr><td>m_vecClassNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x7B0</td></tr>
+            <tr><td>m_vecDialogVariableNames</td><td class="type">C_NetworkUtlVectorBase<CUtlString></td><td class="value">0x7C8</td></tr>
         </tbody>
     </table>
     <h3>Class: CEntityInstance</h3>
@@ -4817,6 +4850,22 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CCSCustomPlayerCamera</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_hPawn</td><td class="type">CHandle<C_CSPlayerPawnBase></td><td class="value">0x600</td></tr>
+            <tr><td>m_nCameraMode</td><td class="type">CustomCameraMode_t</td><td class="value">0x604</td></tr>
+            <tr><td>m_hFollowEntity</td><td class="type">CHandle<C_BaseEntity></td><td class="value">0x608</td></tr>
+            <tr><td>m_bFollowEyes</td><td class="type">bool</td><td class="value">0x60C</td></tr>
+            <tr><td>m_vecFollowOffset</td><td class="type">Vector</td><td class="value">0x610</td></tr>
+            <tr><td>m_vecCameraOffset</td><td class="type">Vector</td><td class="value">0x61C</td></tr>
+            <tr><td>m_bClipCameraOffset</td><td class="type">bool</td><td class="value">0x628</td></tr>
+            <tr><td>m_flCameraOffsetReturnStrength</td><td class="type">float32</td><td class="value">0x62C</td></tr>
         </tbody>
     </table>
     <h3>Class: CCSGameModeRules_ArmsRace</h3>
@@ -6817,9 +6866,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_hPawn</td><td class="type">CHandle<C_CSPlayerPawnBase></td><td class="value">0x600</td></tr>
-            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0x604</td></tr>
-            <tr><td>m_bIsControllingAngles</td><td class="type">bool</td><td class="value">0x605</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_LimitCount</h3>

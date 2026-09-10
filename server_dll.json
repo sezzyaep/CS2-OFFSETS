@@ -5067,8 +5067,12 @@
       },
       "CCSCustomHudLayout": {
         "fields": {
+          "m_bObservable": {
+            "offset": 1200,
+            "type": "bool"
+          },
           "m_globalLayoutState": {
-            "offset": 1304,
+            "offset": 1312,
             "type": "CCSCustomHudLayoutState"
           },
           "m_strLayout": {
@@ -5076,19 +5080,19 @@
             "type": "CUtlSymbolLarge"
           },
           "m_vecClassNames": {
-            "offset": 1736,
+            "offset": 1744,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecDialogVariableNames": {
-            "offset": 1760,
+            "offset": 1768,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecPanelIds": {
-            "offset": 1712,
+            "offset": 1720,
             "type": "CNetworkUtlVectorBase<CUtlString>"
           },
           "m_vecPlayerLayoutStates": {
-            "offset": 1200,
+            "offset": 1208,
             "type": "CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>"
           }
         },
@@ -5119,6 +5123,44 @@
       },
       "CCSCustomHudLayout_API": {
         "fields": {},
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomPlayerCamera": {
+        "fields": {
+          "m_bClipCameraOffset": {
+            "offset": 1232,
+            "type": "bool"
+          },
+          "m_bFollowEyes": {
+            "offset": 1204,
+            "type": "bool"
+          },
+          "m_flCameraOffsetReturnStrength": {
+            "offset": 1236,
+            "type": "float32"
+          },
+          "m_hFollowEntity": {
+            "offset": 1200,
+            "type": "CHandle<CBaseEntity>"
+          },
+          "m_hPawn": {
+            "offset": 1192,
+            "type": "CHandle<CCSPlayerPawnBase>"
+          },
+          "m_nCameraMode": {
+            "offset": 1196,
+            "type": "CustomCameraMode_t"
+          },
+          "m_vecCameraOffset": {
+            "offset": 1220,
+            "type": "Vector"
+          },
+          "m_vecFollowOffset": {
+            "offset": 1208,
+            "type": "Vector"
+          }
+        },
         "metadata": [],
         "parent": null
       },
@@ -6200,20 +6242,7 @@
         "parent": "CPlayer_CameraServices"
       },
       "CCSPlayerCamera": {
-        "fields": {
-          "m_bEnabled": {
-            "offset": 1196,
-            "type": "bool"
-          },
-          "m_bIsControllingAngles": {
-            "offset": 1197,
-            "type": "bool"
-          },
-          "m_hPawn": {
-            "offset": 1192,
-            "type": "CHandle<CCSPlayerPawnBase>"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
@@ -31496,6 +31525,16 @@
         },
         "type": "uint32"
       },
+      "CustomCameraMode_t": {
+        "alignment": 1,
+        "members": {
+          "CUSTOM_CAMERA_MODE_CONTROLLED": 1,
+          "CUSTOM_CAMERA_MODE_CONTROLLED_POSITION": 2,
+          "CUSTOM_CAMERA_MODE_DISABLED": 0,
+          "CUSTOM_CAMERA_MODE_FOLLOW_POSITION": 3
+        },
+        "type": "uint8"
+      },
       "DIALOG_TYPE": {
         "alignment": 4,
         "members": {
@@ -32018,8 +32057,8 @@
           "CS_UM_RoundEndReportData": 379,
           "CS_UM_Rumble": 314,
           "CS_UM_SSUI": 372,
-          "CS_UM_SayText": 305,
-          "CS_UM_SayText2": 306,
+          "CS_UM_SayText2_CSGOLegacy": 306,
+          "CS_UM_SayText_CSGOLegacy": 305,
           "CS_UM_ScoreLeaderboardData": 367,
           "CS_UM_SendAudio": 317,
           "CS_UM_SendLastKillerDamageToClient": 351,
@@ -32033,10 +32072,10 @@
           "CS_UM_ShowMenu": 354,
           "CS_UM_StopSpectatorMode": 329,
           "CS_UM_SurvivalStats": 373,
-          "CS_UM_TextMsg": 307,
+          "CS_UM_TextMsg_CSGOLegacy": 307,
           "CS_UM_Train": 303,
           "CS_UM_UpdateScreenHealthBar": 370,
-          "CS_UM_UpdateTeamMoney": 328,
+          "CS_UM_UpdateTeamMoney_CSGOLegacy": 328,
           "CS_UM_VGUIMenu": 301,
           "CS_UM_VoiceMask": 319,
           "CS_UM_VoteFailed": 348,
@@ -33965,6 +34004,7 @@
           "svc_ClearAllStringTables": 51,
           "svc_CmdKeyValues": 52,
           "svc_CreateStringTable": 44,
+          "svc_EncryptedData": 78,
           "svc_FlattenedSerializer": 41,
           "svc_FullFrameSplit": 70,
           "svc_GetCvarValue": 58,

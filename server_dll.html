@@ -239,6 +239,18 @@
             <tr><td>TIMELINE_COMPRESSION_TOTAL</td><td class="value">4</td></tr>
         </tbody>
     </table>
+    <h3>Enum: CustomCameraMode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>CUSTOM_CAMERA_MODE_DISABLED</td><td class="value">0</td></tr>
+            <tr><td>CUSTOM_CAMERA_MODE_CONTROLLED</td><td class="value">1</td></tr>
+            <tr><td>CUSTOM_CAMERA_MODE_CONTROLLED_POSITION</td><td class="value">2</td></tr>
+            <tr><td>CUSTOM_CAMERA_MODE_FOLLOW_POSITION</td><td class="value">3</td></tr>
+        </tbody>
+    </table>
     <h3>Enum: SubclassVDataChangeType_t</h3>
     <table>
         <thead>
@@ -818,6 +830,7 @@
             <tr><td>svc_HltvFixupOperatorStatus</td><td class="value">75</td></tr>
             <tr><td>svc_UserCmds</td><td class="value">76</td></tr>
             <tr><td>svc_NextMsgPredicted</td><td class="value">77</td></tr>
+            <tr><td>svc_EncryptedData</td><td class="value">78</td></tr>
         </tbody>
     </table>
     <h3>Enum: QuestType</h3>
@@ -2756,9 +2769,9 @@
             <tr><td>CS_UM_Geiger</td><td class="value">302</td></tr>
             <tr><td>CS_UM_Train</td><td class="value">303</td></tr>
             <tr><td>CS_UM_HudText</td><td class="value">304</td></tr>
-            <tr><td>CS_UM_SayText</td><td class="value">305</td></tr>
-            <tr><td>CS_UM_SayText2</td><td class="value">306</td></tr>
-            <tr><td>CS_UM_TextMsg</td><td class="value">307</td></tr>
+            <tr><td>CS_UM_SayText_CSGOLegacy</td><td class="value">305</td></tr>
+            <tr><td>CS_UM_SayText2_CSGOLegacy</td><td class="value">306</td></tr>
+            <tr><td>CS_UM_TextMsg_CSGOLegacy</td><td class="value">307</td></tr>
             <tr><td>CS_UM_HudMsg</td><td class="value">308</td></tr>
             <tr><td>CS_UM_ResetHud</td><td class="value">309</td></tr>
             <tr><td>CS_UM_GameTitle</td><td class="value">310</td></tr>
@@ -2778,7 +2791,7 @@
             <tr><td>CS_UM_ProcessSpottedEntityUpdate</td><td class="value">325</td></tr>
             <tr><td>CS_UM_ReloadEffect</td><td class="value">326</td></tr>
             <tr><td>CS_UM_AdjustMoney</td><td class="value">327</td></tr>
-            <tr><td>CS_UM_UpdateTeamMoney</td><td class="value">328</td></tr>
+            <tr><td>CS_UM_UpdateTeamMoney_CSGOLegacy</td><td class="value">328</td></tr>
             <tr><td>CS_UM_StopSpectatorMode</td><td class="value">329</td></tr>
             <tr><td>CS_UM_KillCam</td><td class="value">330</td></tr>
             <tr><td>CS_UM_DesiredTimescale</td><td class="value">331</td></tr>
@@ -8353,11 +8366,12 @@
         </thead>
         <tbody>
             <tr><td>m_strLayout</td><td class="type">CUtlSymbolLarge</td><td class="value">0x4A8</td></tr>
-            <tr><td>m_vecPlayerLayoutStates</td><td class="type">CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x4B0</td></tr>
-            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x518</td></tr>
-            <tr><td>m_vecPanelIds</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6B0</td></tr>
-            <tr><td>m_vecClassNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6C8</td></tr>
-            <tr><td>m_vecDialogVariableNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6E0</td></tr>
+            <tr><td>m_bObservable</td><td class="type">bool</td><td class="value">0x4B0</td></tr>
+            <tr><td>m_vecPlayerLayoutStates</td><td class="type">CUtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState></td><td class="value">0x4B8</td></tr>
+            <tr><td>m_globalLayoutState</td><td class="type">CCSCustomHudLayoutState</td><td class="value">0x520</td></tr>
+            <tr><td>m_vecPanelIds</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6B8</td></tr>
+            <tr><td>m_vecClassNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6D0</td></tr>
+            <tr><td>m_vecDialogVariableNames</td><td class="type">CNetworkUtlVectorBase<CUtlString></td><td class="value">0x6E8</td></tr>
         </tbody>
     </table>
     <h3>Class: CEntityInstance</h3>
@@ -11056,6 +11070,22 @@
             <tr><td>m_OnHitMax</td><td class="type">CEntityIOOutput</td><td class="value">0x510</td></tr>
             <tr><td>m_OnChangedFromMin</td><td class="type">CEntityIOOutput</td><td class="value">0x528</td></tr>
             <tr><td>m_OnChangedFromMax</td><td class="type">CEntityIOOutput</td><td class="value">0x540</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CCSCustomPlayerCamera</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_hPawn</td><td class="type">CHandle<CCSPlayerPawnBase></td><td class="value">0x4A8</td></tr>
+            <tr><td>m_nCameraMode</td><td class="type">CustomCameraMode_t</td><td class="value">0x4AC</td></tr>
+            <tr><td>m_hFollowEntity</td><td class="type">CHandle<CBaseEntity></td><td class="value">0x4B0</td></tr>
+            <tr><td>m_bFollowEyes</td><td class="type">bool</td><td class="value">0x4B4</td></tr>
+            <tr><td>m_vecFollowOffset</td><td class="type">Vector</td><td class="value">0x4B8</td></tr>
+            <tr><td>m_vecCameraOffset</td><td class="type">Vector</td><td class="value">0x4C4</td></tr>
+            <tr><td>m_bClipCameraOffset</td><td class="type">bool</td><td class="value">0x4D0</td></tr>
+            <tr><td>m_flCameraOffsetReturnStrength</td><td class="type">float32</td><td class="value">0x4D4</td></tr>
         </tbody>
     </table>
     <h3>Class: CCSGameModeRules_ArmsRace</h3>
@@ -14441,9 +14471,6 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_hPawn</td><td class="type">CHandle<CCSPlayerPawnBase></td><td class="value">0x4A8</td></tr>
-            <tr><td>m_bEnabled</td><td class="type">bool</td><td class="value">0x4AC</td></tr>
-            <tr><td>m_bIsControllingAngles</td><td class="type">bool</td><td class="value">0x4AD</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_LimitCount</h3>

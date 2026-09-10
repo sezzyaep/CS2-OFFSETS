@@ -1099,28 +1099,32 @@
       },
       "CCSCustomHudLayout": {
         "fields": {
+          "m_bObservable": {
+            "offset": 1568,
+            "type": "bool"
+          },
           "m_globalLayoutState": {
-            "offset": 1656,
+            "offset": 1680,
             "type": "CCSCustomHudLayoutState"
           },
           "m_strLayout": {
-            "offset": 1544,
+            "offset": 1560,
             "type": "CUtlSymbolLarge"
           },
           "m_vecClassNames": {
-            "offset": 1944,
-            "type": "C_NetworkUtlVectorBase<CUtlString>"
-          },
-          "m_vecDialogVariableNames": {
             "offset": 1968,
             "type": "C_NetworkUtlVectorBase<CUtlString>"
           },
+          "m_vecDialogVariableNames": {
+            "offset": 1992,
+            "type": "C_NetworkUtlVectorBase<CUtlString>"
+          },
           "m_vecPanelIds": {
-            "offset": 1920,
+            "offset": 1944,
             "type": "C_NetworkUtlVectorBase<CUtlString>"
           },
           "m_vecPlayerLayoutStates": {
-            "offset": 1552,
+            "offset": 1576,
             "type": "C_UtlVectorEmbeddedNetworkVar<CCSCustomHudLayoutState>"
           }
         },
@@ -1151,6 +1155,44 @@
       },
       "CCSCustomHudLayout_API": {
         "fields": {},
+        "metadata": [],
+        "parent": null
+      },
+      "CCSCustomPlayerCamera": {
+        "fields": {
+          "m_bClipCameraOffset": {
+            "offset": 1576,
+            "type": "bool"
+          },
+          "m_bFollowEyes": {
+            "offset": 1548,
+            "type": "bool"
+          },
+          "m_flCameraOffsetReturnStrength": {
+            "offset": 1580,
+            "type": "float32"
+          },
+          "m_hFollowEntity": {
+            "offset": 1544,
+            "type": "CHandle<C_BaseEntity>"
+          },
+          "m_hPawn": {
+            "offset": 1536,
+            "type": "CHandle<C_CSPlayerPawnBase>"
+          },
+          "m_nCameraMode": {
+            "offset": 1540,
+            "type": "CustomCameraMode_t"
+          },
+          "m_vecCameraOffset": {
+            "offset": 1564,
+            "type": "Vector"
+          },
+          "m_vecFollowOffset": {
+            "offset": 1552,
+            "type": "Vector"
+          }
+        },
         "metadata": [],
         "parent": null
       },
@@ -1283,20 +1325,7 @@
         "parent": "CPlayer_CameraServices"
       },
       "CCSPlayerCamera": {
-        "fields": {
-          "m_bEnabled": {
-            "offset": 1540,
-            "type": "bool"
-          },
-          "m_bIsControllingAngles": {
-            "offset": 1541,
-            "type": "bool"
-          },
-          "m_hPawn": {
-            "offset": 1536,
-            "type": "CHandle<C_CSPlayerPawnBase>"
-          }
-        },
+        "fields": {},
         "metadata": [],
         "parent": null
       },
@@ -17055,6 +17084,26 @@
           "SYNC_WAIT_FOR_COMPLETION": 0
         },
         "type": "uint32"
+      },
+      "_C__Q_": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "_J__Q_": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "_a__Q_": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
+      },
+      "_o__Q_": {
+        "alignment": 0,
+        "members": {},
+        "type": "unknown"
       }
     }
   }
