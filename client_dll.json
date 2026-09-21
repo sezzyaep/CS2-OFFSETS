@@ -17084,26 +17084,6 @@
           "SYNC_WAIT_FOR_COMPLETION": 0
         },
         "type": "uint32"
-      },
-      "_C__Q_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "_J__Q_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "_a__Q_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
-      },
-      "_o__Q_": {
-        "alignment": 0,
-        "members": {},
-        "type": "unknown"
       }
     }
   }
