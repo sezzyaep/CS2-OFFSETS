@@ -427,16 +427,6 @@
         ],
         "parent": null
       },
-      "InfoForResourceTypeCSmartProp": {
-        "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
       "InfoForResourceTypeCSurfaceGraph": {
         "fields": {},
         "metadata": [
@@ -468,6 +458,16 @@
         "parent": null
       },
       "InfoForResourceTypeCTypeScriptResource": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MResourceTypeForInfoType",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "InfoForResourceTypeCVDSPResource": {
         "fields": {},
         "metadata": [
           {
@@ -617,6 +617,16 @@
         ],
         "parent": null
       },
+      "InfoForResourceTypeISmartProp": {
+        "fields": {},
+        "metadata": [
+          {
+            "name": "MResourceTypeForInfoType",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "InfoForResourceTypeIVectorGraphic": {
         "fields": {},
         "metadata": [
@@ -666,6 +676,88 @@
           "m_name": {
             "offset": 0,
             "type": "CUtlString"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "NoiseOscillatorDef_t": {
+        "fields": {
+          "m_flAmplitude": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_flFrequency": {
+            "offset": 4,
+            "type": "float32"
+          },
+          "m_flPhase": {
+            "offset": 0,
+            "type": "float32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "NoiseStreamDef_t": {
+        "fields": {
+          "m_Oscillators": {
+            "offset": 56,
+            "type": "CUtlVector<NoiseOscillatorDef_t>"
+          },
+          "m_flOffset": {
+            "offset": 36,
+            "type": "float32"
+          },
+          "m_flOutputMax": {
+            "offset": 16,
+            "type": "float32"
+          },
+          "m_flOutputMin": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "m_flScale": {
+            "offset": 20,
+            "type": "float32"
+          },
+          "m_flTurbulenceMix": {
+            "offset": 48,
+            "type": "float32"
+          },
+          "m_flTurbulenceScale": {
+            "offset": 44,
+            "type": "float32"
+          },
+          "m_nModifier": {
+            "offset": 4,
+            "type": "NoiseStreamModifier_t"
+          },
+          "m_nOctaves": {
+            "offset": 40,
+            "type": "int32"
+          },
+          "m_nTurbulence": {
+            "offset": 8,
+            "type": "NoiseStreamTurbulence_t"
+          },
+          "m_nType": {
+            "offset": 0,
+            "type": "NoiseStreamType_t"
+          },
+          "m_vOffsetRate": {
+            "offset": 24,
+            "type": "Vector"
           }
         },
         "metadata": [
@@ -749,6 +841,39 @@
           "UINT8": 5
         },
         "type": "uint8"
+      },
+      "NoiseStreamModifier_t": {
+        "alignment": 4,
+        "members": {
+          "NOISE_STREAM_MODIFIER_CLUMPS": 2,
+          "NOISE_STREAM_MODIFIER_LINES": 1,
+          "NOISE_STREAM_MODIFIER_NONE": 0,
+          "NOISE_STREAM_MODIFIER_RINGS": 3
+        },
+        "type": "uint32"
+      },
+      "NoiseStreamTurbulence_t": {
+        "alignment": 4,
+        "members": {
+          "NOISE_STREAM_TURB_ALTERNATE": 5,
+          "NOISE_STREAM_TURB_CONTRAST": 4,
+          "NOISE_STREAM_TURB_FEEDBACK": 2,
+          "NOISE_STREAM_TURB_HIGHLIGHT": 1,
+          "NOISE_STREAM_TURB_LOOPY": 3,
+          "NOISE_STREAM_TURB_NONE": 0
+        },
+        "type": "uint32"
+      },
+      "NoiseStreamType_t": {
+        "alignment": 4,
+        "members": {
+          "NOISE_STREAM_TYPE_CURL": 3,
+          "NOISE_STREAM_TYPE_NONE": 4,
+          "NOISE_STREAM_TYPE_PERLIN": 0,
+          "NOISE_STREAM_TYPE_SIMPLEX": 1,
+          "NOISE_STREAM_TYPE_WORLEY": 2
+        },
+        "type": "uint32"
       }
     }
   }

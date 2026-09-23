@@ -157,7 +157,7 @@
             "type": "Unknown"
           }
         ],
-        "parent": "CEntityComponent"
+        "parent": null
       },
       "CVariantDefaultAllocator": {
         "fields": {},
@@ -197,7 +197,7 @@
             "type": "int32"
           },
           "m_pBaseClassComponentHelper": {
-            "offset": 96,
+            "offset": 88,
             "type": "CEntityComponentHelper*"
           },
           "m_pCPPClassname": {
@@ -220,13 +220,12 @@
         "metadata": [],
         "parent": null
       },
-      "EntInput_t": {
-        "fields": {},
-        "metadata": [],
-        "parent": null
-      },
       "EntityIOQueuePrioritizedEvent_t": {
         "fields": {
+          "m_PulseArguments": {
+            "offset": 64,
+            "type": "CPulseArgumentPack"
+          },
           "m_flFireTime": {
             "offset": 4,
             "type": "GameTime_t"
@@ -250,6 +249,10 @@
           "m_pTargetInput": {
             "offset": 24,
             "type": "CUtlSymbolLarge"
+          },
+          "m_paramMap": {
+            "offset": 208,
+            "type": "CPulseInputParamMap"
           },
           "m_targetType": {
             "offset": 8,

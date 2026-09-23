@@ -126,6 +126,16 @@
             <tr><td>m_nDesiredKillPriority</td><td class="type">PulseCursorCancelPriority_t</td><td class="value">0x12C</td></tr>
         </tbody>
     </table>
+    <h3>Class: CPulseCell_RaceCursors</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Outflows</td><td class="type">CUtlVector<CPulse_OutflowConnection></td><td class="value">0xD8</td></tr>
+            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0xF0</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CPulseCell_Test_NoInflow</h3>
     <table>
         <thead>
@@ -179,14 +189,6 @@
             <tr><td>m_OutflowList</td><td class="type">PulseSelectorOutflowList_t</td><td class="value">0x50</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseTestFuncs_LibraryA</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_WaitForObservable</h3>
     <table>
         <thead>
@@ -194,7 +196,7 @@
         </thead>
         <tbody>
             <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
-            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0x150</td></tr>
+            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0x168</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulse_OutflowConnection</h3>
@@ -222,13 +224,14 @@
             <tr><td>m_Chunks</td><td class="type">CUtlVector<CPulse_Chunk*></td><td class="value">0x50</td></tr>
             <tr><td>m_Cells</td><td class="type">CUtlVector<CPulseCell_Base*></td><td class="value">0x68</td></tr>
             <tr><td>m_Vars</td><td class="type">CUtlVector<CPulse_Variable></td><td class="value">0x80</td></tr>
-            <tr><td>m_PublicOutputs</td><td class="type">CUtlVector<CPulse_PublicOutput></td><td class="value">0x98</td></tr>
-            <tr><td>m_InvokeBindings</td><td class="type">CUtlVector<CPulse_InvokeBinding*></td><td class="value">0xB0</td></tr>
-            <tr><td>m_CallInfos</td><td class="type">CUtlVector<CPulse_CallInfo*></td><td class="value">0xC8</td></tr>
-            <tr><td>m_Constants</td><td class="type">CUtlVector<CPulse_Constant></td><td class="value">0xE0</td></tr>
-            <tr><td>m_DomainValues</td><td class="type">CUtlVector<CPulse_DomainValue></td><td class="value">0xF8</td></tr>
-            <tr><td>m_BlackboardReferences</td><td class="type">CUtlVector<CPulse_BlackboardReference></td><td class="value">0x110</td></tr>
-            <tr><td>m_OutputConnections</td><td class="type">CUtlVector<CPulse_OutputConnection*></td><td class="value">0x128</td></tr>
+            <tr><td>m_TempVarBanks</td><td class="type">CUtlVector<CPulse_TempVarBankDefinition*></td><td class="value">0x98</td></tr>
+            <tr><td>m_PublicOutputs</td><td class="type">CUtlVector<CPulse_PublicOutput></td><td class="value">0xB0</td></tr>
+            <tr><td>m_InvokeBindings</td><td class="type">CUtlVector<CPulse_InvokeBinding*></td><td class="value">0xC8</td></tr>
+            <tr><td>m_CallInfos</td><td class="type">CUtlVector<CPulse_CallInfo*></td><td class="value">0xE0</td></tr>
+            <tr><td>m_Constants</td><td class="type">CUtlVector<CPulse_Constant></td><td class="value">0xF8</td></tr>
+            <tr><td>m_DomainValues</td><td class="type">CUtlVector<CPulse_DomainValue></td><td class="value">0x110</td></tr>
+            <tr><td>m_BlackboardReferences</td><td class="type">CUtlVector<CPulse_BlackboardReference></td><td class="value">0x128</td></tr>
+            <tr><td>m_OutputConnections</td><td class="type">CUtlVector<CPulse_OutputConnection*></td><td class="value">0x140</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_TestYieldForever</h3>
@@ -343,14 +346,6 @@
         <tbody>
             <tr><td>m_TracePrefix</td><td class="type">CUtlString</td><td class="value">0xD8</td></tr>
             <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xE0</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: CPulseCursorFuncs</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: PulseNodeDynamicOutflows_t::DynamicOutflow_t</h3>
@@ -483,14 +478,6 @@
             <tr><td>m_OnInterval</td><td class="type">SignatureOutflow_Continue</td><td class="value">0x120</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseTestScriptLib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_BaseLerp</h3>
     <table>
         <thead>
@@ -519,14 +506,6 @@
             <tr><td>m_AsyncChild2</td><td class="type">SignatureOutflow_Continue</td><td class="value">0x168</td></tr>
             <tr><td>m_YieldResume1</td><td class="type">SignatureOutflow_Resume</td><td class="value">0x1B0</td></tr>
             <tr><td>m_YieldResume2</td><td class="type">SignatureOutflow_Resume</td><td class="value">0x1F8</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: TestComponent_tAPI</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Value_Curve</h3>
@@ -589,15 +568,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_nInstanceValueX</td><td class="type">int32</td><td class="value">0x158</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: CPulseArraylib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
+            <tr><td>m_nInstanceValueX</td><td class="type">int32</td><td class="value">0xD0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseGraphInstance_TestDomain</h3>
@@ -606,15 +577,15 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bIsRunningUnitTests</td><td class="type">bool</td><td class="value">0x128</td></tr>
-            <tr><td>m_bExplicitTimeStepping</td><td class="type">bool</td><td class="value">0x129</td></tr>
-            <tr><td>m_bExpectingToDestroyWithYieldedCursors</td><td class="type">bool</td><td class="value">0x12A</td></tr>
-            <tr><td>m_bQuietTracepoints</td><td class="type">bool</td><td class="value">0x12B</td></tr>
-            <tr><td>m_bExpectingCursorTerminatedDueToMaxInstructions</td><td class="type">bool</td><td class="value">0x12C</td></tr>
-            <tr><td>m_nCursorsTerminatedDueToMaxInstructions</td><td class="type">int32</td><td class="value">0x130</td></tr>
-            <tr><td>m_nNextValidateIndex</td><td class="type">int32</td><td class="value">0x134</td></tr>
-            <tr><td>m_Tracepoints</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x138</td></tr>
-            <tr><td>m_bTestYesOrNoPath</td><td class="type">bool</td><td class="value">0x150</td></tr>
+            <tr><td>m_bIsRunningUnitTests</td><td class="type">bool</td><td class="value">0xA0</td></tr>
+            <tr><td>m_bExplicitTimeStepping</td><td class="type">bool</td><td class="value">0xA1</td></tr>
+            <tr><td>m_bExpectingToDestroyWithYieldedCursors</td><td class="type">bool</td><td class="value">0xA2</td></tr>
+            <tr><td>m_bQuietTracepoints</td><td class="type">bool</td><td class="value">0xA3</td></tr>
+            <tr><td>m_bExpectingCursorTerminatedDueToMaxInstructions</td><td class="type">bool</td><td class="value">0xA4</td></tr>
+            <tr><td>m_nCursorsTerminatedDueToMaxInstructions</td><td class="type">int32</td><td class="value">0xA8</td></tr>
+            <tr><td>m_nNextValidateIndex</td><td class="type">int32</td><td class="value">0xAC</td></tr>
+            <tr><td>m_Tracepoints</td><td class="type">CUtlVector<CUtlString></td><td class="value">0xB0</td></tr>
+            <tr><td>m_bTestYesOrNoPath</td><td class="type">bool</td><td class="value">0xC8</td></tr>
         </tbody>
     </table>
     <h3>Class: SignatureOutflow_Continue</h3>
@@ -683,14 +654,6 @@
         </thead>
         <tbody>
             <tr><td>m_nCurrentCount</td><td class="type">int32</td><td class="value">0x0</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: FakeEntity_tAPI</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Test_MultiInflow_WithDefault</h3>
@@ -818,8 +781,8 @@
             <tr><td>m_MethodName</td><td class="type">PulseSymbol_t</td><td class="value">0x80</td></tr>
             <tr><td>m_Description</td><td class="type">CUtlString</td><td class="value">0x90</td></tr>
             <tr><td>m_bIsPublic</td><td class="type">bool</td><td class="value">0x98</td></tr>
-            <tr><td>m_ReturnType</td><td class="type">CPulseValueFullType</td><td class="value">0xA0</td></tr>
-            <tr><td>m_Args</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xB8</td></tr>
+            <tr><td>m_Args</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xA0</td></tr>
+            <tr><td>m_ReturnValues</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xB0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_BaseValue</h3>
@@ -837,16 +800,8 @@
         </thead>
         <tbody>
             <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
-            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x150</td></tr>
-            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x198</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: FakeEntityDerivedB_tAPI</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
+            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x168</td></tr>
+            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x1B0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Inflow_Yield</h3>
@@ -858,14 +813,6 @@
             <tr><td>m_UnyieldResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseMathlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_Unknown</h3>
     <table>
         <thead>
@@ -873,14 +820,6 @@
         </thead>
         <tbody>
             <tr><td>m_UnknownKeys</td><td class="type">KeyValues3</td><td class="value">0x48</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: CPulseStringlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Outflow_CycleRandom</h3>
@@ -921,6 +860,14 @@
             <tr><td>m_NodeName</td><td class="type">CGlobalSymbol</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
+    <h3>Class: CPulseCell_ReturnValues</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <h3>Class: CPulseCell_Value_RandomInt</h3>
     <table>
         <thead>
@@ -948,22 +895,6 @@
             <tr><td>m_Input</td><td class="type">CUtlString</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseEnumlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-    <h3>Class: FakeEntityDerivedA_tAPI</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_ExampleSelector</h3>
     <table>
         <thead>
@@ -985,6 +916,8 @@
             <tr><td>m_CallMethodID</td><td class="type">PulseDocNodeID_t</td><td class="value">0x48</td></tr>
             <tr><td>m_nSrcChunk</td><td class="type">PulseRuntimeChunkIndex_t</td><td class="value">0x4C</td></tr>
             <tr><td>m_nSrcInstruction</td><td class="type">int32</td><td class="value">0x50</td></tr>
+            <tr><td>m_nBreakDestChunk</td><td class="type">PulseRuntimeChunkIndex_t</td><td class="value">0x54</td></tr>
+            <tr><td>m_nBreakDestInstruction</td><td class="type">int32</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_InlineNodeSkipSelector</h3>
@@ -1065,9 +998,9 @@
         <tbody>
             <tr><td>m_flWatchForFloatValue</td><td class="type">float32</td><td class="value">0xD8</td></tr>
             <tr><td>m_LiveFloatValue</td><td class="type">CPulseObservableExpression<float32></td><td class="value">0xE0</td></tr>
-            <tr><td>m_WatchForStringValue</td><td class="type">CUtlString</td><td class="value">0x158</td></tr>
-            <tr><td>m_LiveStringValue</td><td class="type">CPulseObservableExpression<CUtlString></td><td class="value">0x160</td></tr>
-            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0x1D8</td></tr>
+            <tr><td>m_WatchForStringValue</td><td class="type">CUtlString</td><td class="value">0x170</td></tr>
+            <tr><td>m_LiveStringValue</td><td class="type">CPulseObservableExpression<CUtlString></td><td class="value">0x178</td></tr>
+            <tr><td>m_WakeResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0x208</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_CursorQueue</h3>

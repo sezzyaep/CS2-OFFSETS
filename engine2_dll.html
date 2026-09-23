@@ -204,6 +204,8 @@
             <tr><td>m_hCaller</td><td class="type">CEntityHandle</td><td class="value">0x24</td></tr>
             <tr><td>m_hEntTarget</td><td class="type">CEntityHandle</td><td class="value">0x28</td></tr>
             <tr><td>m_variantValue</td><td class="type">CVariantBase<CVariantDefaultAllocator></td><td class="value">0x30</td></tr>
+            <tr><td>m_PulseArguments</td><td class="type">CPulseArgumentPack</td><td class="value">0x40</td></tr>
+            <tr><td>m_paramMap</td><td class="type">CPulseInputParamMap</td><td class="value">0xD0</td></tr>
         </tbody>
     </table>
     <h3>Class: EventServerEndAsyncPostTickWork_t</h3>
@@ -215,14 +217,6 @@
         </tbody>
     </table>
     <h3>Class: EventClientAdvanceTick_t</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
-    <h3>Class: EntInput_t</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
@@ -553,7 +547,7 @@
             <tr><td>m_pNetworkDataReferencedPtrPropDescription</td><td class="type">char*</td><td class="value">0x18</td></tr>
             <tr><td>m_nRuntimeIndex</td><td class="type">int32</td><td class="value">0x20</td></tr>
             <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x24</td></tr>
-            <tr><td>m_pBaseClassComponentHelper</td><td class="type">CEntityComponentHelper*</td><td class="value">0x60</td></tr>
+            <tr><td>m_pBaseClassComponentHelper</td><td class="type">CEntityComponentHelper*</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: EngineLoopState_t</h3>

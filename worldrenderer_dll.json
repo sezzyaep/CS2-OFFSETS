@@ -248,10 +248,6 @@
             "offset": 16,
             "type": "bool"
           },
-          "m_bSHLightmaps": {
-            "offset": 19,
-            "type": "bool"
-          },
           "m_bakedShadows": {
             "offset": 48,
             "type": "CUtlVector<BakedLightingInfo_t::BakedShadowAssignment_t>"
@@ -261,8 +257,16 @@
             "type": "CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>>"
           },
           "m_nChartPackIterations": {
-            "offset": 20,
+            "offset": 21,
             "type": "uint8"
+          },
+          "m_nLPVEncoding": {
+            "offset": 19,
+            "type": "int8"
+          },
+          "m_nLightmapEncoding": {
+            "offset": 20,
+            "type": "int8"
           },
           "m_nLightmapGameVersionNumber": {
             "offset": 4,
@@ -273,7 +277,7 @@
             "type": "uint32"
           },
           "m_nVradQuality": {
-            "offset": 21,
+            "offset": 22,
             "type": "uint8"
           },
           "m_vLightmapUvScale": {
@@ -422,7 +426,7 @@
             "type": "Unknown"
           }
         ],
-        "parent": "CEntityComponent"
+        "parent": null
       },
       "CVoxelVisibility": {
         "fields": {
@@ -693,32 +697,20 @@
       },
       "NodeData_t": {
         "fields": {
-          "m_ChildNodeIndices": {
-            "offset": 48,
-            "type": "CUtlVector<int32>"
-          },
-          "m_flMinimumDistance": {
-            "offset": 40,
-            "type": "float32"
-          },
-          "m_nParent": {
-            "offset": 0,
-            "type": "int32"
-          },
           "m_vMaxBounds": {
-            "offset": 28,
+            "offset": 24,
             "type": "Vector"
           },
           "m_vMinBounds": {
-            "offset": 16,
+            "offset": 12,
             "type": "Vector"
           },
           "m_vOrigin": {
-            "offset": 4,
+            "offset": 0,
             "type": "Vector"
           },
           "m_worldNodePrefix": {
-            "offset": 72,
+            "offset": 40,
             "type": "CUtlString"
           }
         },
@@ -837,6 +829,10 @@
           "m_nVertexEmissiveByteOffset": {
             "offset": 16,
             "type": "uint32"
+          },
+          "m_vTintColorSRGB": {
+            "offset": 72,
+            "type": "Color"
           }
         },
         "metadata": [
@@ -849,6 +845,10 @@
       },
       "SceneObject_t": {
         "fields": {
+          "m_flEmissiveLightingBoost": {
+            "offset": 116,
+            "type": "float32"
+          },
           "m_flFadeEndDistance": {
             "offset": 56,
             "type": "float32"
@@ -882,11 +882,11 @@
             "type": "int16"
           },
           "m_renderable": {
-            "offset": 128,
+            "offset": 136,
             "type": "CStrongHandle<InfoForResourceTypeCRenderMesh>"
           },
           "m_renderableModel": {
-            "offset": 120,
+            "offset": 128,
             "type": "CStrongHandle<InfoForResourceTypeCModel>"
           },
           "m_skin": {
@@ -1122,6 +1122,7 @@
           "OBJECT_TYPE_DISABLED_IN_LOW_QUALITY": 128,
           "OBJECT_TYPE_DISABLE_VIS_CULLING": 65536,
           "OBJECT_TYPE_HAS_AGGREGATE_RTPROXY": 524288,
+          "OBJECT_TYPE_HAS_EMISSIVE_GI": 1048576,
           "OBJECT_TYPE_MODEL": 8,
           "OBJECT_TYPE_MODEL_HAS_LODS": 2048,
           "OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS": 262144,

@@ -92,6 +92,15 @@
             <tr><td>m_Sphere</td><td class="type">RnSphere_t</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
+    <h3>Class: RnCompoundDesc_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Compound</td><td class="type">RnCompound_t</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
     <h3>Class: RnSoftbodyParticle_t</h3>
     <table>
         <thead>
@@ -150,92 +159,94 @@
             <tr><td>m_Quads</td><td class="type">CUtlVector<FeQuad_t></td><td class="value">0xA8</td></tr>
             <tr><td>m_SimdQuads</td><td class="type">CUtlVector<FeSimdQuad_t></td><td class="value">0xC0</td></tr>
             <tr><td>m_SimdTris</td><td class="type">CUtlVector<FeSimdTri_t></td><td class="value">0xD8</td></tr>
-            <tr><td>m_SimdRods</td><td class="type">CUtlVector<FeSimdRodConstraint_t></td><td class="value">0xF0</td></tr>
-            <tr><td>m_SimdRodsAnim</td><td class="type">CUtlVector<FeSimdRodConstraintAnim_t></td><td class="value">0x108</td></tr>
-            <tr><td>m_InitPose</td><td class="type">CUtlVector<CTransform></td><td class="value">0x120</td></tr>
-            <tr><td>m_Rods</td><td class="type">CUtlVector<FeRodConstraint_t></td><td class="value">0x138</td></tr>
-            <tr><td>m_Twists</td><td class="type">CUtlVector<FeTwistConstraint_t></td><td class="value">0x150</td></tr>
-            <tr><td>m_HingeLimits</td><td class="type">CUtlVector<FeHingeLimit_t></td><td class="value">0x168</td></tr>
-            <tr><td>m_AntiTunnelBytecode</td><td class="type">CUtlVector<uint32></td><td class="value">0x180</td></tr>
-            <tr><td>m_DynKinLinks</td><td class="type">CUtlVector<FeDynKinLink_t></td><td class="value">0x198</td></tr>
-            <tr><td>m_BoneMergeLinks</td><td class="type">CUtlVector<FeBoneMergeLink_t></td><td class="value">0x1B0</td></tr>
-            <tr><td>m_AntiTunnelProbes</td><td class="type">CUtlVector<FeAntiTunnelProbe_t></td><td class="value">0x1C8</td></tr>
-            <tr><td>m_AntiTunnelTargetNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x1E0</td></tr>
-            <tr><td>m_NodeStrayBoxes</td><td class="type">CUtlVector<FeNodeStrayBox_t></td><td class="value">0x1F8</td></tr>
-            <tr><td>m_AxialEdges</td><td class="type">CUtlVector<FeAxialEdgeBend_t></td><td class="value">0x210</td></tr>
-            <tr><td>m_NodeInvMasses</td><td class="type">CUtlVector<float32></td><td class="value">0x228</td></tr>
-            <tr><td>m_CtrlOffsets</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x240</td></tr>
-            <tr><td>m_CtrlOsOffsets</td><td class="type">CUtlVector<FeCtrlOsOffset_t></td><td class="value">0x258</td></tr>
-            <tr><td>m_FollowNodes</td><td class="type">CUtlVector<FeFollowNode_t></td><td class="value">0x270</td></tr>
-            <tr><td>m_CollisionPlanes</td><td class="type">CUtlVector<FeCollisionPlane_t></td><td class="value">0x288</td></tr>
-            <tr><td>m_NodeIntegrator</td><td class="type">CUtlVector<FeNodeIntegrator_t></td><td class="value">0x2A0</td></tr>
-            <tr><td>m_SpringIntegrator</td><td class="type">CUtlVector<FeSpringIntegrator_t></td><td class="value">0x2B8</td></tr>
-            <tr><td>m_SimdSpringIntegrator</td><td class="type">CUtlVector<FeSimdSpringIntegrator_t></td><td class="value">0x2D0</td></tr>
-            <tr><td>m_WorldCollisionParams</td><td class="type">CUtlVector<FeWorldCollisionParams_t></td><td class="value">0x2E8</td></tr>
-            <tr><td>m_LegacyStretchForce</td><td class="type">CUtlVector<float32></td><td class="value">0x300</td></tr>
-            <tr><td>m_NodeCollisionRadii</td><td class="type">CUtlVector<float32></td><td class="value">0x318</td></tr>
-            <tr><td>m_DynNodeFriction</td><td class="type">CUtlVector<float32></td><td class="value">0x330</td></tr>
-            <tr><td>m_LocalRotation</td><td class="type">CUtlVector<float32></td><td class="value">0x348</td></tr>
-            <tr><td>m_LocalForce</td><td class="type">CUtlVector<float32></td><td class="value">0x360</td></tr>
-            <tr><td>m_TaperedCapsuleStretches</td><td class="type">CUtlVector<FeTaperedCapsuleStretch_t></td><td class="value">0x378</td></tr>
-            <tr><td>m_TaperedCapsuleRigids</td><td class="type">CUtlVector<FeTaperedCapsuleRigid_t></td><td class="value">0x390</td></tr>
-            <tr><td>m_SphereRigids</td><td class="type">CUtlVector<FeSphereRigid_t></td><td class="value">0x3A8</td></tr>
-            <tr><td>m_WorldCollisionNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x3C0</td></tr>
-            <tr><td>m_TreeParents</td><td class="type">CUtlVector<uint16></td><td class="value">0x3D8</td></tr>
-            <tr><td>m_TreeCollisionMasks</td><td class="type">CUtlVector<uint16></td><td class="value">0x3F0</td></tr>
-            <tr><td>m_TreeChildren</td><td class="type">CUtlVector<FeTreeChildren_t></td><td class="value">0x408</td></tr>
-            <tr><td>m_FreeNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x420</td></tr>
-            <tr><td>m_FitMatrices</td><td class="type">CUtlVector<FeFitMatrix_t></td><td class="value">0x438</td></tr>
-            <tr><td>m_FitWeights</td><td class="type">CUtlVector<FeFitWeight_t></td><td class="value">0x450</td></tr>
-            <tr><td>m_ReverseOffsets</td><td class="type">CUtlVector<FeNodeReverseOffset_t></td><td class="value">0x468</td></tr>
-            <tr><td>m_AnimStrayRadii</td><td class="type">CUtlVector<FeAnimStrayRadius_t></td><td class="value">0x480</td></tr>
-            <tr><td>m_SimdAnimStrayRadii</td><td class="type">CUtlVector<FeSimdAnimStrayRadius_t></td><td class="value">0x498</td></tr>
-            <tr><td>m_KelagerBends</td><td class="type">CUtlVector<FeKelagerBend2_t></td><td class="value">0x4B0</td></tr>
-            <tr><td>m_CtrlSoftOffsets</td><td class="type">CUtlVector<FeCtrlSoftOffset_t></td><td class="value">0x4C8</td></tr>
-            <tr><td>m_JiggleBones</td><td class="type">CUtlVector<CFeIndexedJiggleBone></td><td class="value">0x4E0</td></tr>
-            <tr><td>m_SourceElems</td><td class="type">CUtlVector<uint16></td><td class="value">0x4F8</td></tr>
-            <tr><td>m_GoalDampedSpringIntegrators</td><td class="type">CUtlVector<uint32></td><td class="value">0x510</td></tr>
-            <tr><td>m_Tris</td><td class="type">CUtlVector<FeTri_t></td><td class="value">0x528</td></tr>
-            <tr><td>m_nTriCount1</td><td class="type">uint16</td><td class="value">0x540</td></tr>
-            <tr><td>m_nTriCount2</td><td class="type">uint16</td><td class="value">0x542</td></tr>
-            <tr><td>m_nReservedUint8</td><td class="type">uint8</td><td class="value">0x544</td></tr>
-            <tr><td>m_nExtraPressureIterations</td><td class="type">uint8</td><td class="value">0x545</td></tr>
-            <tr><td>m_nExtraGoalIterations</td><td class="type">uint8</td><td class="value">0x546</td></tr>
-            <tr><td>m_nExtraIterations</td><td class="type">uint8</td><td class="value">0x547</td></tr>
-            <tr><td>m_SDFRigids</td><td class="type">CUtlVector<FeSDFRigid_t></td><td class="value">0x548</td></tr>
-            <tr><td>m_BoxRigids</td><td class="type">CUtlVector<FeBoxRigid_t></td><td class="value">0x560</td></tr>
-            <tr><td>m_DynNodeVertexSet</td><td class="type">CUtlVector<uint8></td><td class="value">0x578</td></tr>
-            <tr><td>m_VertexSetNames</td><td class="type">CUtlVector<uint32></td><td class="value">0x590</td></tr>
-            <tr><td>m_RigidColliderPriorities</td><td class="type">CUtlVector<FeRigidColliderIndices_t></td><td class="value">0x5A8</td></tr>
-            <tr><td>m_MorphLayers</td><td class="type">CUtlVector<FeMorphLayerDepr_t></td><td class="value">0x5C0</td></tr>
-            <tr><td>m_MorphSetData</td><td class="type">CUtlVector<uint8></td><td class="value">0x5D8</td></tr>
-            <tr><td>m_VertexMaps</td><td class="type">CUtlVector<FeVertexMapDesc_t></td><td class="value">0x5F0</td></tr>
-            <tr><td>m_VertexMapValues</td><td class="type">CUtlVector<uint8></td><td class="value">0x608</td></tr>
-            <tr><td>m_Effects</td><td class="type">CUtlVector<FeEffectDesc_t></td><td class="value">0x620</td></tr>
-            <tr><td>m_LockToParent</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x638</td></tr>
-            <tr><td>m_LockToGoal</td><td class="type">CUtlVector<uint16></td><td class="value">0x650</td></tr>
-            <tr><td>m_SkelParents</td><td class="type">CUtlVector<int16></td><td class="value">0x668</td></tr>
-            <tr><td>m_DynNodeWindBases</td><td class="type">CUtlVector<FeNodeWindBase_t></td><td class="value">0x680</td></tr>
-            <tr><td>m_SelfCollisionLayers</td><td class="type">CUtlVector<FeModelSelfCollisionLayer_t></td><td class="value">0x698</td></tr>
-            <tr><td>m_flInternalPressure</td><td class="type">float32</td><td class="value">0x6B0</td></tr>
-            <tr><td>m_flDefaultTimeDilation</td><td class="type">float32</td><td class="value">0x6B4</td></tr>
-            <tr><td>m_flWindage</td><td class="type">float32</td><td class="value">0x6B8</td></tr>
-            <tr><td>m_flWindDrag</td><td class="type">float32</td><td class="value">0x6BC</td></tr>
-            <tr><td>m_flDefaultSurfaceStretch</td><td class="type">float32</td><td class="value">0x6C0</td></tr>
-            <tr><td>m_flDefaultThreadStretch</td><td class="type">float32</td><td class="value">0x6C4</td></tr>
-            <tr><td>m_flDefaultGravityScale</td><td class="type">float32</td><td class="value">0x6C8</td></tr>
-            <tr><td>m_flDefaultVelAirDrag</td><td class="type">float32</td><td class="value">0x6CC</td></tr>
-            <tr><td>m_flDefaultExpAirDrag</td><td class="type">float32</td><td class="value">0x6D0</td></tr>
-            <tr><td>m_flDefaultVelQuadAirDrag</td><td class="type">float32</td><td class="value">0x6D4</td></tr>
-            <tr><td>m_flDefaultExpQuadAirDrag</td><td class="type">float32</td><td class="value">0x6D8</td></tr>
-            <tr><td>m_flRodVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x6DC</td></tr>
-            <tr><td>m_flQuadVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x6E0</td></tr>
-            <tr><td>m_flAddWorldCollisionRadius</td><td class="type">float32</td><td class="value">0x6E4</td></tr>
-            <tr><td>m_flDefaultVolumetricSolveAmount</td><td class="type">float32</td><td class="value">0x6E8</td></tr>
-            <tr><td>m_flMotionSmoothCDT</td><td class="type">float32</td><td class="value">0x6EC</td></tr>
-            <tr><td>m_flLocalDrag1</td><td class="type">float32</td><td class="value">0x6F0</td></tr>
-            <tr><td>m_nRodVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x6F4</td></tr>
-            <tr><td>m_nQuadVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x6F6</td></tr>
+            <tr><td>m_Prisms</td><td class="type">CUtlVector<FePrism_t></td><td class="value">0xF0</td></tr>
+            <tr><td>m_SimdPrisms</td><td class="type">CUtlVector<FeSimdPrism_t></td><td class="value">0x108</td></tr>
+            <tr><td>m_SimdRods</td><td class="type">CUtlVector<FeSimdRodConstraint_t></td><td class="value">0x120</td></tr>
+            <tr><td>m_SimdRodsAnim</td><td class="type">CUtlVector<FeSimdRodConstraintAnim_t></td><td class="value">0x138</td></tr>
+            <tr><td>m_InitPose</td><td class="type">CUtlVector<CTransform></td><td class="value">0x150</td></tr>
+            <tr><td>m_Rods</td><td class="type">CUtlVector<FeRodConstraint_t></td><td class="value">0x168</td></tr>
+            <tr><td>m_Twists</td><td class="type">CUtlVector<FeTwistConstraint_t></td><td class="value">0x180</td></tr>
+            <tr><td>m_HingeLimits</td><td class="type">CUtlVector<FeHingeLimit_t></td><td class="value">0x198</td></tr>
+            <tr><td>m_AntiTunnelBytecode</td><td class="type">CUtlVector<uint32></td><td class="value">0x1B0</td></tr>
+            <tr><td>m_DynKinLinks</td><td class="type">CUtlVector<FeDynKinLink_t></td><td class="value">0x1C8</td></tr>
+            <tr><td>m_BoneMergeLinks</td><td class="type">CUtlVector<FeBoneMergeLink_t></td><td class="value">0x1E0</td></tr>
+            <tr><td>m_AntiTunnelProbes</td><td class="type">CUtlVector<FeAntiTunnelProbe_t></td><td class="value">0x1F8</td></tr>
+            <tr><td>m_AntiTunnelTargetNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x210</td></tr>
+            <tr><td>m_NodeStrayBoxes</td><td class="type">CUtlVector<FeNodeStrayBox_t></td><td class="value">0x228</td></tr>
+            <tr><td>m_AxialEdges</td><td class="type">CUtlVector<FeAxialEdgeBend_t></td><td class="value">0x240</td></tr>
+            <tr><td>m_NodeInvMasses</td><td class="type">CUtlVector<float32></td><td class="value">0x258</td></tr>
+            <tr><td>m_CtrlOffsets</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x270</td></tr>
+            <tr><td>m_CtrlOsOffsets</td><td class="type">CUtlVector<FeCtrlOsOffset_t></td><td class="value">0x288</td></tr>
+            <tr><td>m_FollowNodes</td><td class="type">CUtlVector<FeFollowNode_t></td><td class="value">0x2A0</td></tr>
+            <tr><td>m_CollisionPlanes</td><td class="type">CUtlVector<FeCollisionPlane_t></td><td class="value">0x2B8</td></tr>
+            <tr><td>m_NodeIntegrator</td><td class="type">CUtlVector<FeNodeIntegrator_t></td><td class="value">0x2D0</td></tr>
+            <tr><td>m_SpringIntegrator</td><td class="type">CUtlVector<FeSpringIntegrator_t></td><td class="value">0x2E8</td></tr>
+            <tr><td>m_SimdSpringIntegrator</td><td class="type">CUtlVector<FeSimdSpringIntegrator_t></td><td class="value">0x300</td></tr>
+            <tr><td>m_WorldCollisionParams</td><td class="type">CUtlVector<FeWorldCollisionParams_t></td><td class="value">0x318</td></tr>
+            <tr><td>m_LegacyStretchForce</td><td class="type">CUtlVector<float32></td><td class="value">0x330</td></tr>
+            <tr><td>m_NodeCollisionRadii</td><td class="type">CUtlVector<float32></td><td class="value">0x348</td></tr>
+            <tr><td>m_DynNodeFriction</td><td class="type">CUtlVector<float32></td><td class="value">0x360</td></tr>
+            <tr><td>m_LocalRotation</td><td class="type">CUtlVector<float32></td><td class="value">0x378</td></tr>
+            <tr><td>m_LocalForce</td><td class="type">CUtlVector<float32></td><td class="value">0x390</td></tr>
+            <tr><td>m_TaperedCapsuleStretches</td><td class="type">CUtlVector<FeTaperedCapsuleStretch_t></td><td class="value">0x3A8</td></tr>
+            <tr><td>m_TaperedCapsuleRigids</td><td class="type">CUtlVector<FeTaperedCapsuleRigid_t></td><td class="value">0x3C0</td></tr>
+            <tr><td>m_SphereRigids</td><td class="type">CUtlVector<FeSphereRigid_t></td><td class="value">0x3D8</td></tr>
+            <tr><td>m_WorldCollisionNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x3F0</td></tr>
+            <tr><td>m_TreeParents</td><td class="type">CUtlVector<uint16></td><td class="value">0x408</td></tr>
+            <tr><td>m_TreeCollisionMasks</td><td class="type">CUtlVector<uint16></td><td class="value">0x420</td></tr>
+            <tr><td>m_TreeChildren</td><td class="type">CUtlVector<FeTreeChildren_t></td><td class="value">0x438</td></tr>
+            <tr><td>m_FreeNodes</td><td class="type">CUtlVector<uint16></td><td class="value">0x450</td></tr>
+            <tr><td>m_FitMatrices</td><td class="type">CUtlVector<FeFitMatrix_t></td><td class="value">0x468</td></tr>
+            <tr><td>m_FitWeights</td><td class="type">CUtlVector<FeFitWeight_t></td><td class="value">0x480</td></tr>
+            <tr><td>m_ReverseOffsets</td><td class="type">CUtlVector<FeNodeReverseOffset_t></td><td class="value">0x498</td></tr>
+            <tr><td>m_AnimStrayRadii</td><td class="type">CUtlVector<FeAnimStrayRadius_t></td><td class="value">0x4B0</td></tr>
+            <tr><td>m_SimdAnimStrayRadii</td><td class="type">CUtlVector<FeSimdAnimStrayRadius_t></td><td class="value">0x4C8</td></tr>
+            <tr><td>m_KelagerBends</td><td class="type">CUtlVector<FeKelagerBend2_t></td><td class="value">0x4E0</td></tr>
+            <tr><td>m_CtrlSoftOffsets</td><td class="type">CUtlVector<FeCtrlSoftOffset_t></td><td class="value">0x4F8</td></tr>
+            <tr><td>m_JiggleBones</td><td class="type">CUtlVector<CFeIndexedJiggleBone></td><td class="value">0x510</td></tr>
+            <tr><td>m_SourceElems</td><td class="type">CUtlVector<uint16></td><td class="value">0x528</td></tr>
+            <tr><td>m_GoalDampedSpringIntegrators</td><td class="type">CUtlVector<uint32></td><td class="value">0x540</td></tr>
+            <tr><td>m_Tris</td><td class="type">CUtlVector<FeTri_t></td><td class="value">0x558</td></tr>
+            <tr><td>m_nTriCount1</td><td class="type">uint16</td><td class="value">0x570</td></tr>
+            <tr><td>m_nTriCount2</td><td class="type">uint16</td><td class="value">0x572</td></tr>
+            <tr><td>m_nReservedUint8</td><td class="type">uint8</td><td class="value">0x574</td></tr>
+            <tr><td>m_nExtraPressureIterations</td><td class="type">uint8</td><td class="value">0x575</td></tr>
+            <tr><td>m_nExtraGoalIterations</td><td class="type">uint8</td><td class="value">0x576</td></tr>
+            <tr><td>m_nExtraIterations</td><td class="type">uint8</td><td class="value">0x577</td></tr>
+            <tr><td>m_SDFRigids</td><td class="type">CUtlVector<FeSDFRigid_t></td><td class="value">0x578</td></tr>
+            <tr><td>m_BoxRigids</td><td class="type">CUtlVector<FeBoxRigid_t></td><td class="value">0x590</td></tr>
+            <tr><td>m_DynNodeVertexSet</td><td class="type">CUtlVector<uint8></td><td class="value">0x5A8</td></tr>
+            <tr><td>m_VertexSetNames</td><td class="type">CUtlVector<uint32></td><td class="value">0x5C0</td></tr>
+            <tr><td>m_RigidColliderPriorities</td><td class="type">CUtlVector<FeRigidColliderIndices_t></td><td class="value">0x5D8</td></tr>
+            <tr><td>m_MorphLayers</td><td class="type">CUtlVector<FeMorphLayerDepr_t></td><td class="value">0x5F0</td></tr>
+            <tr><td>m_MorphSetData</td><td class="type">CUtlVector<uint8></td><td class="value">0x608</td></tr>
+            <tr><td>m_VertexMaps</td><td class="type">CUtlVector<FeVertexMapDesc_t></td><td class="value">0x620</td></tr>
+            <tr><td>m_VertexMapValues</td><td class="type">CUtlVector<uint8></td><td class="value">0x638</td></tr>
+            <tr><td>m_Effects</td><td class="type">CUtlVector<FeEffectDesc_t></td><td class="value">0x650</td></tr>
+            <tr><td>m_LockToParent</td><td class="type">CUtlVector<FeCtrlOffset_t></td><td class="value">0x668</td></tr>
+            <tr><td>m_LockToGoal</td><td class="type">CUtlVector<uint16></td><td class="value">0x680</td></tr>
+            <tr><td>m_SkelParents</td><td class="type">CUtlVector<int16></td><td class="value">0x698</td></tr>
+            <tr><td>m_DynNodeWindBases</td><td class="type">CUtlVector<FeNodeWindBase_t></td><td class="value">0x6B0</td></tr>
+            <tr><td>m_SelfCollisionLayers</td><td class="type">CUtlVector<FeModelSelfCollisionLayer_t></td><td class="value">0x6C8</td></tr>
+            <tr><td>m_flInternalPressure</td><td class="type">float32</td><td class="value">0x6E0</td></tr>
+            <tr><td>m_flDefaultTimeDilation</td><td class="type">float32</td><td class="value">0x6E4</td></tr>
+            <tr><td>m_flWindage</td><td class="type">float32</td><td class="value">0x6E8</td></tr>
+            <tr><td>m_flWindDrag</td><td class="type">float32</td><td class="value">0x6EC</td></tr>
+            <tr><td>m_flDefaultSurfaceStretch</td><td class="type">float32</td><td class="value">0x6F0</td></tr>
+            <tr><td>m_flDefaultThreadStretch</td><td class="type">float32</td><td class="value">0x6F4</td></tr>
+            <tr><td>m_flDefaultGravityScale</td><td class="type">float32</td><td class="value">0x6F8</td></tr>
+            <tr><td>m_flDefaultVelAirDrag</td><td class="type">float32</td><td class="value">0x6FC</td></tr>
+            <tr><td>m_flDefaultExpAirDrag</td><td class="type">float32</td><td class="value">0x700</td></tr>
+            <tr><td>m_flDefaultVelQuadAirDrag</td><td class="type">float32</td><td class="value">0x704</td></tr>
+            <tr><td>m_flDefaultExpQuadAirDrag</td><td class="type">float32</td><td class="value">0x708</td></tr>
+            <tr><td>m_flRodVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x70C</td></tr>
+            <tr><td>m_flQuadVelocitySmoothRate</td><td class="type">float32</td><td class="value">0x710</td></tr>
+            <tr><td>m_flAddWorldCollisionRadius</td><td class="type">float32</td><td class="value">0x714</td></tr>
+            <tr><td>m_flDefaultVolumetricSolveAmount</td><td class="type">float32</td><td class="value">0x718</td></tr>
+            <tr><td>m_flMotionSmoothCDT</td><td class="type">float32</td><td class="value">0x71C</td></tr>
+            <tr><td>m_flLocalDrag1</td><td class="type">float32</td><td class="value">0x720</td></tr>
+            <tr><td>m_nRodVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x724</td></tr>
+            <tr><td>m_nQuadVelocitySmoothIterations</td><td class="type">uint16</td><td class="value">0x726</td></tr>
         </tbody>
     </table>
     <h3>Class: RnMeshDesc_t</h3>
@@ -288,15 +299,6 @@
             <tr><td>m_nAntitunnelGroupBits</td><td class="type">uint32</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
-    <h3>Class: RnCompoundDesc_t</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>m_Compound</td><td class="type">RnCompound_t</td><td class="value">0x18</td></tr>
-        </tbody>
-    </table>
     <h3>Class: CFeIndexedJiggleBone</h3>
     <table>
         <thead>
@@ -337,6 +339,16 @@
             <tr><td>flDistMin</td><td class="type">float32</td><td class="value">0x0</td></tr>
             <tr><td>flDistMax</td><td class="type">float32</td><td class="value">0x4</td></tr>
             <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x8</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: RnCompoundTree_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Nodes</td><td class="type">CUtlLeanVector<RnCompoundTreeNode_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_nStartIterationIndex</td><td class="type">uint32</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: FeTaperedCapsuleStretch_t</h3>
@@ -490,6 +502,16 @@
             <tr><td>m_jiggleBone</td><td class="type">CFeJiggleBone</td><td class="value">0x34</td></tr>
         </tbody>
     </table>
+    <h3>Class: FePrism_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[6]</td><td class="value">0x0</td></tr>
+            <tr><td>flVolume</td><td class="type">float32</td><td class="value">0xC</td></tr>
+        </tbody>
+    </table>
     <h3>Class: FeAntiTunnelProbeBuild_t</h3>
     <table>
         <thead>
@@ -597,6 +619,7 @@
             <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0xA8</td></tr>
             <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0xB4</td></tr>
             <tr><td>m_nDebugFlags</td><td class="type">uint32</td><td class="value">0xB8</td></tr>
+            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0xBC</td></tr>
         </tbody>
     </table>
     <h3>Class: VertexPositionNormal_t</h3>
@@ -615,6 +638,18 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: RnCompoundTreeNode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_vMin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vMax</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>m_nType</td><td class="type">bitfield:3</td><td class="value">0x0</td></tr>
+            <tr><td>m_nSubtreeEndOrCompoundId</td><td class="type">bitfield:29</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: FeBuildSDFRigid_t</h3>
@@ -686,14 +721,19 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_Spheres</td><td class="type">CUtlVector<RnSphere_t></td><td class="value">0x0</td></tr>
-            <tr><td>m_Capsules</td><td class="type">CUtlVector<RnCapsule_t></td><td class="value">0x18</td></tr>
-            <tr><td>m_Hulls</td><td class="type">CUtlVector<RnHull_t></td><td class="value">0x30</td></tr>
-            <tr><td>m_Meshes</td><td class="type">CUtlVector<RnMesh_t></td><td class="value">0x48</td></tr>
-            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x60</td></tr>
-            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0x78</td></tr>
-            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0x84</td></tr>
-            <tr><td>m_flVolume</td><td class="type">float32</td><td class="value">0x88</td></tr>
+            <tr><td>m_Tree</td><td class="type">RnCompoundTree_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_nHullBaseIndex</td><td class="type">int32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nMeshBaseIndex</td><td class="type">int32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_nShapeCount</td><td class="type">int32</td><td class="value">0x20</td></tr>
+            <tr><td>m_Meshes</td><td class="type">CUtlLeanVectorFixedGrowable<RnMesh_t,1></td><td class="value">0x28</td></tr>
+            <tr><td>m_Hulls</td><td class="type">CUtlLeanVector<RnHull_t></td><td class="value">0xF0</td></tr>
+            <tr><td>m_Capsules</td><td class="type">CUtlLeanVector<RnCapsule_t></td><td class="value">0x100</td></tr>
+            <tr><td>m_Spheres</td><td class="type">CUtlLeanVector<RnSphere_t></td><td class="value">0x110</td></tr>
+            <tr><td>m_CompoundMaterialIndices</td><td class="type">CUtlLeanVector<uint8></td><td class="value">0x120</td></tr>
+            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x130</td></tr>
+            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0x148</td></tr>
+            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0x154</td></tr>
+            <tr><td>m_flVolume</td><td class="type">float32</td><td class="value">0x158</td></tr>
         </tbody>
     </table>
     <h3>Class: FeVertexMapDesc_t</h3>
@@ -1218,11 +1258,12 @@
         <tbody>
             <tr><td>m_vCentroid</td><td class="type">Vector</td><td class="value">0x0</td></tr>
             <tr><td>m_flMaxAngularRadius</td><td class="type">float32</td><td class="value">0xC</td></tr>
-            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x10</td></tr>
-            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0x28</td></tr>
-            <tr><td>m_MassProperties</td><td class="type">matrix3x4_t</td><td class="value">0x34</td></tr>
-            <tr><td>m_flVolume</td><td class="type">float32</td><td class="value">0x64</td></tr>
-            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0x68</td></tr>
+            <tr><td>m_flMinCentroidRadius</td><td class="type">float32</td><td class="value">0x10</td></tr>
+            <tr><td>m_Bounds</td><td class="type">AABB_t</td><td class="value">0x14</td></tr>
+            <tr><td>m_vOrthographicAreas</td><td class="type">Vector</td><td class="value">0x2C</td></tr>
+            <tr><td>m_MassProperties</td><td class="type">matrix3x4_t</td><td class="value">0x38</td></tr>
+            <tr><td>m_flVolume</td><td class="type">float32</td><td class="value">0x68</td></tr>
+            <tr><td>m_flSurfaceArea</td><td class="type">float32</td><td class="value">0x6C</td></tr>
             <tr><td>m_VertexPositions</td><td class="type">CUtlVector<Vector></td><td class="value">0x70</td></tr>
             <tr><td>m_FacePlanes</td><td class="type">CUtlVector<RnPlane_t></td><td class="value">0x88</td></tr>
             <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0xA0</td></tr>
@@ -1319,6 +1360,16 @@
         </thead>
         <tbody>
             <tr><td>m_nEdge</td><td class="type">uint8</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: FeSimdPrism_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>nNode</td><td class="type">uint16[4][6]</td><td class="value">0x0</td></tr>
+            <tr><td>flVolume</td><td class="type">fltx4</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: FeCtrlOsOffset_t</h3>

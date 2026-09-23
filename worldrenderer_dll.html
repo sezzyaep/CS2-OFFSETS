@@ -52,6 +52,7 @@
             <tr><td>OBJECT_TYPE_BAKED_GEOMETRY</td><td class="value">131072</td></tr>
             <tr><td>OBJECT_TYPE_NEEDS_DYNAMIC_SHADOWS</td><td class="value">262144</td></tr>
             <tr><td>OBJECT_TYPE_HAS_AGGREGATE_RTPROXY</td><td class="value">524288</td></tr>
+            <tr><td>OBJECT_TYPE_HAS_EMISSIVE_GI</td><td class="value">1048576</td></tr>
         </tbody>
     </table>
     <h3>Enum: AggregateInstanceStream_t</h3>
@@ -129,6 +130,7 @@
             <tr><td>m_nVertexEmissiveByteOffset</td><td class="type">uint32</td><td class="value">0x10</td></tr>
             <tr><td>m_fEmissiveFactor</td><td class="type">float32</td><td class="value">0x14</td></tr>
             <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0x18</td></tr>
+            <tr><td>m_vTintColorSRGB</td><td class="type">Color</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateVertexAlbedoStreamOnDiskData_t</h3>
@@ -158,8 +160,9 @@
             <tr><td>m_nLODOverride</td><td class="type">int16</td><td class="value">0x6A</td></tr>
             <tr><td>m_nCubeMapPrecomputedHandshake</td><td class="type">int32</td><td class="value">0x6C</td></tr>
             <tr><td>m_nLightProbeVolumePrecomputedHandshake</td><td class="type">int32</td><td class="value">0x70</td></tr>
-            <tr><td>m_renderableModel</td><td class="type">CStrongHandle<InfoForResourceTypeCModel></td><td class="value">0x78</td></tr>
-            <tr><td>m_renderable</td><td class="type">CStrongHandle<InfoForResourceTypeCRenderMesh></td><td class="value">0x80</td></tr>
+            <tr><td>m_flEmissiveLightingBoost</td><td class="type">float32</td><td class="value">0x74</td></tr>
+            <tr><td>m_renderableModel</td><td class="type">CStrongHandle<InfoForResourceTypeCModel></td><td class="value">0x80</td></tr>
+            <tr><td>m_renderable</td><td class="type">CStrongHandle<InfoForResourceTypeCRenderMesh></td><td class="value">0x88</td></tr>
         </tbody>
     </table>
     <h3>Class: AggregateLODSetup_t</h3>
@@ -221,13 +224,10 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_nParent</td><td class="type">int32</td><td class="value">0x0</td></tr>
-            <tr><td>m_vOrigin</td><td class="type">Vector</td><td class="value">0x4</td></tr>
-            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0x10</td></tr>
-            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0x1C</td></tr>
-            <tr><td>m_flMinimumDistance</td><td class="type">float32</td><td class="value">0x28</td></tr>
-            <tr><td>m_ChildNodeIndices</td><td class="type">CUtlVector<int32></td><td class="value">0x30</td></tr>
-            <tr><td>m_worldNodePrefix</td><td class="type">CUtlString</td><td class="value">0x48</td></tr>
+            <tr><td>m_vOrigin</td><td class="type">Vector</td><td class="value">0x0</td></tr>
+            <tr><td>m_vMinBounds</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>m_vMaxBounds</td><td class="type">Vector</td><td class="value">0x18</td></tr>
+            <tr><td>m_worldNodePrefix</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: VMapResourceData_t</h3>
@@ -379,9 +379,10 @@
             <tr><td>m_bHasLightmaps</td><td class="type">bool</td><td class="value">0x10</td></tr>
             <tr><td>m_bBakedShadowsGamma20</td><td class="type">bool</td><td class="value">0x11</td></tr>
             <tr><td>m_bCompressionEnabled</td><td class="type">bool</td><td class="value">0x12</td></tr>
-            <tr><td>m_bSHLightmaps</td><td class="type">bool</td><td class="value">0x13</td></tr>
-            <tr><td>m_nChartPackIterations</td><td class="type">uint8</td><td class="value">0x14</td></tr>
-            <tr><td>m_nVradQuality</td><td class="type">uint8</td><td class="value">0x15</td></tr>
+            <tr><td>m_nLPVEncoding</td><td class="type">int8</td><td class="value">0x13</td></tr>
+            <tr><td>m_nLightmapEncoding</td><td class="type">int8</td><td class="value">0x14</td></tr>
+            <tr><td>m_nChartPackIterations</td><td class="type">uint8</td><td class="value">0x15</td></tr>
+            <tr><td>m_nVradQuality</td><td class="type">uint8</td><td class="value">0x16</td></tr>
             <tr><td>m_lightMaps</td><td class="type">CUtlVector<CStrongHandle<InfoForResourceTypeCTextureBase>></td><td class="value">0x18</td></tr>
             <tr><td>m_bakedShadows</td><td class="type">CUtlVector<BakedLightingInfo_t::BakedShadowAssignment_t></td><td class="value">0x30</td></tr>
         </tbody>

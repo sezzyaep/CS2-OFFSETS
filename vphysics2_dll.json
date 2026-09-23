@@ -1280,6 +1280,25 @@
         ],
         "parent": null
       },
+      "FePrism_t": {
+        "fields": {
+          "flVolume": {
+            "offset": 12,
+            "type": "float32"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[6]"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "FeProxyVertexMap_t": {
         "fields": {
           "m_Name": {
@@ -1491,6 +1510,25 @@
           "qAdjust": {
             "offset": 48,
             "type": "FourQuaternions"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "FeSimdPrism_t": {
+        "fields": {
+          "flVolume": {
+            "offset": 48,
+            "type": "fltx4"
+          },
+          "nNode": {
+            "offset": 0,
+            "type": "uint16[4][6]"
           }
         },
         "metadata": [
@@ -2195,35 +2233,35 @@
       "PhysFeModelDesc_t": {
         "fields": {
           "m_AnimStrayRadii": {
-            "offset": 1152,
+            "offset": 1200,
             "type": "CUtlVector<FeAnimStrayRadius_t>"
           },
           "m_AntiTunnelBytecode": {
-            "offset": 384,
+            "offset": 432,
             "type": "CUtlVector<uint32>"
           },
           "m_AntiTunnelProbes": {
-            "offset": 456,
+            "offset": 504,
             "type": "CUtlVector<FeAntiTunnelProbe_t>"
           },
           "m_AntiTunnelTargetNodes": {
-            "offset": 480,
+            "offset": 528,
             "type": "CUtlVector<uint16>"
           },
           "m_AxialEdges": {
-            "offset": 528,
+            "offset": 576,
             "type": "CUtlVector<FeAxialEdgeBend_t>"
           },
           "m_BoneMergeLinks": {
-            "offset": 432,
+            "offset": 480,
             "type": "CUtlVector<FeBoneMergeLink_t>"
           },
           "m_BoxRigids": {
-            "offset": 1376,
+            "offset": 1424,
             "type": "CUtlVector<FeBoxRigid_t>"
           },
           "m_CollisionPlanes": {
-            "offset": 648,
+            "offset": 696,
             "type": "CUtlVector<FeCollisionPlane_t>"
           },
           "m_CtrlHash": {
@@ -2235,99 +2273,99 @@
             "type": "CUtlVector<CUtlString>"
           },
           "m_CtrlOffsets": {
-            "offset": 576,
+            "offset": 624,
             "type": "CUtlVector<FeCtrlOffset_t>"
           },
           "m_CtrlOsOffsets": {
-            "offset": 600,
+            "offset": 648,
             "type": "CUtlVector<FeCtrlOsOffset_t>"
           },
           "m_CtrlSoftOffsets": {
-            "offset": 1224,
+            "offset": 1272,
             "type": "CUtlVector<FeCtrlSoftOffset_t>"
           },
           "m_DynKinLinks": {
-            "offset": 408,
+            "offset": 456,
             "type": "CUtlVector<FeDynKinLink_t>"
           },
           "m_DynNodeFriction": {
-            "offset": 816,
-            "type": "CUtlVector<float32>"
-          },
-          "m_DynNodeVertexSet": {
-            "offset": 1400,
-            "type": "CUtlVector<uint8>"
-          },
-          "m_DynNodeWindBases": {
-            "offset": 1664,
-            "type": "CUtlVector<FeNodeWindBase_t>"
-          },
-          "m_Effects": {
-            "offset": 1568,
-            "type": "CUtlVector<FeEffectDesc_t>"
-          },
-          "m_FitMatrices": {
-            "offset": 1080,
-            "type": "CUtlVector<FeFitMatrix_t>"
-          },
-          "m_FitWeights": {
-            "offset": 1104,
-            "type": "CUtlVector<FeFitWeight_t>"
-          },
-          "m_FollowNodes": {
-            "offset": 624,
-            "type": "CUtlVector<FeFollowNode_t>"
-          },
-          "m_FreeNodes": {
-            "offset": 1056,
-            "type": "CUtlVector<uint16>"
-          },
-          "m_GoalDampedSpringIntegrators": {
-            "offset": 1296,
-            "type": "CUtlVector<uint32>"
-          },
-          "m_HingeLimits": {
-            "offset": 360,
-            "type": "CUtlVector<FeHingeLimit_t>"
-          },
-          "m_InitPose": {
-            "offset": 288,
-            "type": "CUtlVector<CTransform>"
-          },
-          "m_JiggleBones": {
-            "offset": 1248,
-            "type": "CUtlVector<CFeIndexedJiggleBone>"
-          },
-          "m_KelagerBends": {
-            "offset": 1200,
-            "type": "CUtlVector<FeKelagerBend2_t>"
-          },
-          "m_LegacyStretchForce": {
-            "offset": 768,
-            "type": "CUtlVector<float32>"
-          },
-          "m_LocalForce": {
             "offset": 864,
             "type": "CUtlVector<float32>"
           },
+          "m_DynNodeVertexSet": {
+            "offset": 1448,
+            "type": "CUtlVector<uint8>"
+          },
+          "m_DynNodeWindBases": {
+            "offset": 1712,
+            "type": "CUtlVector<FeNodeWindBase_t>"
+          },
+          "m_Effects": {
+            "offset": 1616,
+            "type": "CUtlVector<FeEffectDesc_t>"
+          },
+          "m_FitMatrices": {
+            "offset": 1128,
+            "type": "CUtlVector<FeFitMatrix_t>"
+          },
+          "m_FitWeights": {
+            "offset": 1152,
+            "type": "CUtlVector<FeFitWeight_t>"
+          },
+          "m_FollowNodes": {
+            "offset": 672,
+            "type": "CUtlVector<FeFollowNode_t>"
+          },
+          "m_FreeNodes": {
+            "offset": 1104,
+            "type": "CUtlVector<uint16>"
+          },
+          "m_GoalDampedSpringIntegrators": {
+            "offset": 1344,
+            "type": "CUtlVector<uint32>"
+          },
+          "m_HingeLimits": {
+            "offset": 408,
+            "type": "CUtlVector<FeHingeLimit_t>"
+          },
+          "m_InitPose": {
+            "offset": 336,
+            "type": "CUtlVector<CTransform>"
+          },
+          "m_JiggleBones": {
+            "offset": 1296,
+            "type": "CUtlVector<CFeIndexedJiggleBone>"
+          },
+          "m_KelagerBends": {
+            "offset": 1248,
+            "type": "CUtlVector<FeKelagerBend2_t>"
+          },
+          "m_LegacyStretchForce": {
+            "offset": 816,
+            "type": "CUtlVector<float32>"
+          },
+          "m_LocalForce": {
+            "offset": 912,
+            "type": "CUtlVector<float32>"
+          },
           "m_LocalRotation": {
-            "offset": 840,
+            "offset": 888,
             "type": "CUtlVector<float32>"
           },
           "m_LockToGoal": {
-            "offset": 1616,
+            "offset": 1664,
             "type": "CUtlVector<uint16>"
           },
           "m_LockToParent": {
-            "offset": 1592,
+            "offset": 1640,
             "type": "CUtlVector<FeCtrlOffset_t>"
           },
           "m_MorphLayers": {
-            "offset": 1472,
+            "offset": 1520,
             "type": "CUtlVector<FeMorphLayerDepr_t>"
           },
           "m_MorphSetData": {
-            "offset": 1496,
+            "offset": 1544,
             "type": "CUtlVector<uint8>"
           },
           "m_NodeBases": {
@@ -2335,35 +2373,39 @@
             "type": "CUtlVector<FeNodeBase_t>"
           },
           "m_NodeCollisionRadii": {
-            "offset": 792,
+            "offset": 840,
             "type": "CUtlVector<float32>"
           },
           "m_NodeIntegrator": {
-            "offset": 672,
+            "offset": 720,
             "type": "CUtlVector<FeNodeIntegrator_t>"
           },
           "m_NodeInvMasses": {
-            "offset": 552,
+            "offset": 600,
             "type": "CUtlVector<float32>"
           },
           "m_NodeStrayBoxes": {
-            "offset": 504,
+            "offset": 552,
             "type": "CUtlVector<FeNodeStrayBox_t>"
+          },
+          "m_Prisms": {
+            "offset": 240,
+            "type": "CUtlVector<FePrism_t>"
           },
           "m_Quads": {
             "offset": 168,
             "type": "CUtlVector<FeQuad_t>"
           },
           "m_ReverseOffsets": {
-            "offset": 1128,
+            "offset": 1176,
             "type": "CUtlVector<FeNodeReverseOffset_t>"
           },
           "m_RigidColliderPriorities": {
-            "offset": 1448,
+            "offset": 1496,
             "type": "CUtlVector<FeRigidColliderIndices_t>"
           },
           "m_Rods": {
-            "offset": 312,
+            "offset": 360,
             "type": "CUtlVector<FeRodConstraint_t>"
           },
           "m_Ropes": {
@@ -2371,35 +2413,39 @@
             "type": "CUtlVector<uint16>"
           },
           "m_SDFRigids": {
-            "offset": 1352,
+            "offset": 1400,
             "type": "CUtlVector<FeSDFRigid_t>"
           },
           "m_SelfCollisionLayers": {
-            "offset": 1688,
+            "offset": 1736,
             "type": "CUtlVector<FeModelSelfCollisionLayer_t>"
           },
           "m_SimdAnimStrayRadii": {
-            "offset": 1176,
+            "offset": 1224,
             "type": "CUtlVector<FeSimdAnimStrayRadius_t>"
           },
           "m_SimdNodeBases": {
             "offset": 144,
             "type": "CUtlVector<FeSimdNodeBase_t>"
           },
+          "m_SimdPrisms": {
+            "offset": 264,
+            "type": "CUtlVector<FeSimdPrism_t>"
+          },
           "m_SimdQuads": {
             "offset": 192,
             "type": "CUtlVector<FeSimdQuad_t>"
           },
           "m_SimdRods": {
-            "offset": 240,
+            "offset": 288,
             "type": "CUtlVector<FeSimdRodConstraint_t>"
           },
           "m_SimdRodsAnim": {
-            "offset": 264,
+            "offset": 312,
             "type": "CUtlVector<FeSimdRodConstraintAnim_t>"
           },
           "m_SimdSpringIntegrator": {
-            "offset": 720,
+            "offset": 768,
             "type": "CUtlVector<FeSimdSpringIntegrator_t>"
           },
           "m_SimdTris": {
@@ -2407,115 +2453,115 @@
             "type": "CUtlVector<FeSimdTri_t>"
           },
           "m_SkelParents": {
-            "offset": 1640,
+            "offset": 1688,
             "type": "CUtlVector<int16>"
           },
           "m_SourceElems": {
-            "offset": 1272,
+            "offset": 1320,
             "type": "CUtlVector<uint16>"
           },
           "m_SphereRigids": {
-            "offset": 936,
+            "offset": 984,
             "type": "CUtlVector<FeSphereRigid_t>"
           },
           "m_SpringIntegrator": {
-            "offset": 696,
+            "offset": 744,
             "type": "CUtlVector<FeSpringIntegrator_t>"
           },
           "m_TaperedCapsuleRigids": {
-            "offset": 912,
+            "offset": 960,
             "type": "CUtlVector<FeTaperedCapsuleRigid_t>"
           },
           "m_TaperedCapsuleStretches": {
-            "offset": 888,
+            "offset": 936,
             "type": "CUtlVector<FeTaperedCapsuleStretch_t>"
           },
           "m_TreeChildren": {
-            "offset": 1032,
+            "offset": 1080,
             "type": "CUtlVector<FeTreeChildren_t>"
           },
           "m_TreeCollisionMasks": {
-            "offset": 1008,
+            "offset": 1056,
             "type": "CUtlVector<uint16>"
           },
           "m_TreeParents": {
-            "offset": 984,
+            "offset": 1032,
             "type": "CUtlVector<uint16>"
           },
           "m_Tris": {
-            "offset": 1320,
+            "offset": 1368,
             "type": "CUtlVector<FeTri_t>"
           },
           "m_Twists": {
-            "offset": 336,
+            "offset": 384,
             "type": "CUtlVector<FeTwistConstraint_t>"
           },
           "m_VertexMapValues": {
-            "offset": 1544,
+            "offset": 1592,
             "type": "CUtlVector<uint8>"
           },
           "m_VertexMaps": {
-            "offset": 1520,
+            "offset": 1568,
             "type": "CUtlVector<FeVertexMapDesc_t>"
           },
           "m_VertexSetNames": {
-            "offset": 1424,
+            "offset": 1472,
             "type": "CUtlVector<uint32>"
           },
           "m_WorldCollisionNodes": {
-            "offset": 960,
+            "offset": 1008,
             "type": "CUtlVector<uint16>"
           },
           "m_WorldCollisionParams": {
-            "offset": 744,
+            "offset": 792,
             "type": "CUtlVector<FeWorldCollisionParams_t>"
           },
           "m_flAddWorldCollisionRadius": {
-            "offset": 1764,
+            "offset": 1812,
             "type": "float32"
           },
           "m_flDefaultExpAirDrag": {
-            "offset": 1744,
+            "offset": 1792,
             "type": "float32"
           },
           "m_flDefaultExpQuadAirDrag": {
-            "offset": 1752,
+            "offset": 1800,
             "type": "float32"
           },
           "m_flDefaultGravityScale": {
-            "offset": 1736,
+            "offset": 1784,
             "type": "float32"
           },
           "m_flDefaultSurfaceStretch": {
-            "offset": 1728,
+            "offset": 1776,
             "type": "float32"
           },
           "m_flDefaultThreadStretch": {
-            "offset": 1732,
+            "offset": 1780,
             "type": "float32"
           },
           "m_flDefaultTimeDilation": {
-            "offset": 1716,
+            "offset": 1764,
             "type": "float32"
           },
           "m_flDefaultVelAirDrag": {
-            "offset": 1740,
+            "offset": 1788,
             "type": "float32"
           },
           "m_flDefaultVelQuadAirDrag": {
-            "offset": 1748,
+            "offset": 1796,
             "type": "float32"
           },
           "m_flDefaultVolumetricSolveAmount": {
-            "offset": 1768,
+            "offset": 1816,
             "type": "float32"
           },
           "m_flInternalPressure": {
-            "offset": 1712,
+            "offset": 1760,
             "type": "float32"
           },
           "m_flLocalDrag1": {
-            "offset": 1776,
+            "offset": 1824,
             "type": "float32"
           },
           "m_flLocalForce": {
@@ -2527,23 +2573,23 @@
             "type": "float32"
           },
           "m_flMotionSmoothCDT": {
-            "offset": 1772,
+            "offset": 1820,
             "type": "float32"
           },
           "m_flQuadVelocitySmoothRate": {
-            "offset": 1760,
+            "offset": 1808,
             "type": "float32"
           },
           "m_flRodVelocitySmoothRate": {
-            "offset": 1756,
+            "offset": 1804,
             "type": "float32"
           },
           "m_flWindDrag": {
-            "offset": 1724,
+            "offset": 1772,
             "type": "float32"
           },
           "m_flWindage": {
-            "offset": 1720,
+            "offset": 1768,
             "type": "float32"
           },
           "m_nDynamicNodeFlags": {
@@ -2551,15 +2597,15 @@
             "type": "uint32"
           },
           "m_nExtraGoalIterations": {
-            "offset": 1350,
+            "offset": 1398,
             "type": "uint8"
           },
           "m_nExtraIterations": {
-            "offset": 1351,
+            "offset": 1399,
             "type": "uint8"
           },
           "m_nExtraPressureIterations": {
-            "offset": 1349,
+            "offset": 1397,
             "type": "uint8"
           },
           "m_nFirstPositionDrivenNode": {
@@ -2583,15 +2629,15 @@
             "type": "uint16"
           },
           "m_nQuadVelocitySmoothIterations": {
-            "offset": 1782,
+            "offset": 1830,
             "type": "uint16"
           },
           "m_nReservedUint8": {
-            "offset": 1348,
+            "offset": 1396,
             "type": "uint8"
           },
           "m_nRodVelocitySmoothIterations": {
-            "offset": 1780,
+            "offset": 1828,
             "type": "uint16"
           },
           "m_nRopeCount": {
@@ -2631,11 +2677,11 @@
             "type": "uint16"
           },
           "m_nTriCount1": {
-            "offset": 1344,
+            "offset": 1392,
             "type": "uint16"
           },
           "m_nTriCount2": {
-            "offset": 1346,
+            "offset": 1394,
             "type": "uint16"
           }
         },
@@ -2904,38 +2950,104 @@
         ],
         "parent": null
       },
+      "RnCompoundTreeNode_t": {
+        "fields": {
+          "m_nSubtreeEndOrCompoundId": {
+            "offset": 0,
+            "type": "bitfield:29"
+          },
+          "m_nType": {
+            "offset": 0,
+            "type": "bitfield:3"
+          },
+          "m_vMax": {
+            "offset": 12,
+            "type": "Vector"
+          },
+          "m_vMin": {
+            "offset": 0,
+            "type": "Vector"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "RnCompoundTree_t": {
+        "fields": {
+          "m_Nodes": {
+            "offset": 0,
+            "type": "CUtlLeanVector<RnCompoundTreeNode_t>"
+          },
+          "m_nStartIterationIndex": {
+            "offset": 16,
+            "type": "uint32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "RnCompound_t": {
         "fields": {
           "m_Bounds": {
-            "offset": 96,
+            "offset": 304,
             "type": "AABB_t"
           },
           "m_Capsules": {
-            "offset": 24,
-            "type": "CUtlVector<RnCapsule_t>"
+            "offset": 256,
+            "type": "CUtlLeanVector<RnCapsule_t>"
+          },
+          "m_CompoundMaterialIndices": {
+            "offset": 288,
+            "type": "CUtlLeanVector<uint8>"
           },
           "m_Hulls": {
-            "offset": 48,
-            "type": "CUtlVector<RnHull_t>"
+            "offset": 240,
+            "type": "CUtlLeanVector<RnHull_t>"
           },
           "m_Meshes": {
-            "offset": 72,
-            "type": "CUtlVector<RnMesh_t>"
+            "offset": 40,
+            "type": "CUtlLeanVectorFixedGrowable<RnMesh_t,1>"
           },
           "m_Spheres": {
+            "offset": 272,
+            "type": "CUtlLeanVector<RnSphere_t>"
+          },
+          "m_Tree": {
             "offset": 0,
-            "type": "CUtlVector<RnSphere_t>"
+            "type": "RnCompoundTree_t"
           },
           "m_flSurfaceArea": {
-            "offset": 132,
+            "offset": 340,
             "type": "float32"
           },
           "m_flVolume": {
-            "offset": 136,
+            "offset": 344,
             "type": "float32"
           },
+          "m_nHullBaseIndex": {
+            "offset": 24,
+            "type": "int32"
+          },
+          "m_nMeshBaseIndex": {
+            "offset": 28,
+            "type": "int32"
+          },
+          "m_nShapeCount": {
+            "offset": 32,
+            "type": "int32"
+          },
           "m_vOrthographicAreas": {
-            "offset": 120,
+            "offset": 328,
             "type": "Vector"
           }
         },
@@ -3007,7 +3119,7 @@
       "RnHull_t": {
         "fields": {
           "m_Bounds": {
-            "offset": 16,
+            "offset": 20,
             "type": "AABB_t"
           },
           "m_Edges": {
@@ -3023,7 +3135,7 @@
             "type": "CUtlVector<RnFace_t>"
           },
           "m_MassProperties": {
-            "offset": 52,
+            "offset": 56,
             "type": "matrix3x4_t"
           },
           "m_VertexPositions": {
@@ -3038,12 +3150,16 @@
             "offset": 12,
             "type": "float32"
           },
+          "m_flMinCentroidRadius": {
+            "offset": 16,
+            "type": "float32"
+          },
           "m_flSurfaceArea": {
-            "offset": 104,
+            "offset": 108,
             "type": "float32"
           },
           "m_flVolume": {
-            "offset": 100,
+            "offset": 104,
             "type": "float32"
           },
           "m_nFlags": {
@@ -3059,7 +3175,7 @@
             "type": "Vector"
           },
           "m_vOrthographicAreas": {
-            "offset": 40,
+            "offset": 44,
             "type": "Vector"
           }
         },
@@ -3111,6 +3227,10 @@
           "m_Wings": {
             "offset": 96,
             "type": "CUtlVector<RnWing_t>"
+          },
+          "m_flSurfaceArea": {
+            "offset": 188,
+            "type": "float32"
           },
           "m_nDebugFlags": {
             "offset": 184,

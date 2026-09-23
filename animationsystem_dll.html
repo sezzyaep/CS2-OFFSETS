@@ -287,29 +287,30 @@
             <tr><td>PF_TYPE_CONTROL_POINT_COMPONENT</td><td class="value">6</td></tr>
             <tr><td>PF_TYPE_CONTROL_POINT_CHANGE_AGE</td><td class="value">7</td></tr>
             <tr><td>PF_TYPE_CONTROL_POINT_SPEED</td><td class="value">8</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_DETAIL_LEVEL</td><td class="value">9</td></tr>
-            <tr><td>PF_TYPE_CONCURRENT_DEF_COUNT</td><td class="value">10</td></tr>
-            <tr><td>PF_TYPE_CLOSEST_CAMERA_DISTANCE</td><td class="value">11</td></tr>
-            <tr><td>PF_TYPE_SNAPSHOT_COUNT</td><td class="value">12</td></tr>
-            <tr><td>PF_TYPE_SNAPSHOT_CHANGED</td><td class="value">13</td></tr>
-            <tr><td>PF_TYPE_CONTROL_POINT_IS_SET</td><td class="value">14</td></tr>
-            <tr><td>PF_TYPE_RENDERER_CAMERA_DISTANCE</td><td class="value">15</td></tr>
-            <tr><td>PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT</td><td class="value">16</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_NOISE</td><td class="value">17</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_AGE</td><td class="value">18</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_AGE_NORMALIZED</td><td class="value">19</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_FLOAT</td><td class="value">20</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_INITIAL_FLOAT</td><td class="value">21</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_VECTOR_COMPONENT</td><td class="value">22</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT</td><td class="value">23</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_SPEED</td><td class="value">24</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_NUMBER</td><td class="value">25</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_NUMBER_NORMALIZED</td><td class="value">26</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_ROPE_SEGMENT</td><td class="value">27</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED</td><td class="value">28</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE</td><td class="value">29</td></tr>
-            <tr><td>PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT</td><td class="value">30</td></tr>
-            <tr><td>PF_TYPE_COUNT</td><td class="value">31</td></tr>
+            <tr><td>PF_TYPE_CONTROL_POINT_DISTANCE</td><td class="value">9</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_DETAIL_LEVEL</td><td class="value">10</td></tr>
+            <tr><td>PF_TYPE_CONCURRENT_DEF_COUNT</td><td class="value">11</td></tr>
+            <tr><td>PF_TYPE_CLOSEST_CAMERA_DISTANCE</td><td class="value">12</td></tr>
+            <tr><td>PF_TYPE_SNAPSHOT_COUNT</td><td class="value">13</td></tr>
+            <tr><td>PF_TYPE_SNAPSHOT_CHANGED</td><td class="value">14</td></tr>
+            <tr><td>PF_TYPE_CONTROL_POINT_IS_SET</td><td class="value">15</td></tr>
+            <tr><td>PF_TYPE_RENDERER_CAMERA_DISTANCE</td><td class="value">16</td></tr>
+            <tr><td>PF_TYPE_RENDERER_CAMERA_DOT_PRODUCT</td><td class="value">17</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_NOISE</td><td class="value">18</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_AGE</td><td class="value">19</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_AGE_NORMALIZED</td><td class="value">20</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_FLOAT</td><td class="value">21</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_INITIAL_FLOAT</td><td class="value">22</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_VECTOR_COMPONENT</td><td class="value">23</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_INITIAL_VECTOR_COMPONENT</td><td class="value">24</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_SPEED</td><td class="value">25</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_NUMBER</td><td class="value">26</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_NUMBER_NORMALIZED</td><td class="value">27</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_ROPE_SEGMENT</td><td class="value">28</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_ROPE_SEGMENT_NORMALIZED</td><td class="value">29</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DISTANCE</td><td class="value">30</td></tr>
+            <tr><td>PF_TYPE_PARTICLE_SCREENSPACE_CAMERA_DOT_PRODUCT</td><td class="value">31</td></tr>
+            <tr><td>PF_TYPE_COUNT</td><td class="value">32</td></tr>
         </tbody>
     </table>
     <h3>Enum: CNmFloatAngleMathNode::Operation_t</h3>
@@ -488,6 +489,8 @@
             <tr><td>MESH_BUFFER_USAGE_RT_PROXY</td><td class="value">16</td></tr>
             <tr><td>MESH_BUFFER_USAGE_VERTEX_ALBEDO</td><td class="value">32</td></tr>
             <tr><td>MESH_BUFFER_USAGE_VERTEX_EMISSIVE</td><td class="value">64</td></tr>
+            <tr><td>MESH_BUFFER_USAGE_MESHLETS</td><td class="value">128</td></tr>
+            <tr><td>MESH_BUFFER_USAGE_ALIAS_TABLE</td><td class="value">256</td></tr>
         </tbody>
     </table>
     <h3>Enum: NmGraphDebugMode_t</h3>
@@ -553,8 +556,11 @@
             <tr><td>CURSOR_ADD_TAG</td><td class="value">1</td></tr>
             <tr><td>CURSOR_REMOVE_TAG</td><td class="value">2</td></tr>
             <tr><td>CURSOR_RETIRED</td><td class="value">4</td></tr>
-            <tr><td>REQUIREMENT_PASS</td><td class="value">8</td></tr>
-            <tr><td>REQUIREMENT_FAIL</td><td class="value">16</td></tr>
+            <tr><td>CURSOR_CREATE_CHILD</td><td class="value">8</td></tr>
+            <tr><td>REQUIREMENT_PASS</td><td class="value">16</td></tr>
+            <tr><td>REQUIREMENT_FAIL</td><td class="value">32</td></tr>
+            <tr><td>CALL_TO_PULSE</td><td class="value">64</td></tr>
+            <tr><td>RETURN</td><td class="value">128</td></tr>
         </tbody>
     </table>
     <h3>Enum: StepPhase</h3>
@@ -874,6 +880,16 @@
             <tr><td>POSETYPE_INVALID</td><td class="value">255</td></tr>
         </tbody>
     </table>
+    <h3>Enum: CNmClothEvent::Type_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Stiffen</td><td class="value">0</td></tr>
+            <tr><td>Effect</td><td class="value">1</td></tr>
+        </tbody>
+    </table>
     <h3>Enum: CNmRootMotionData::SamplingMode_t</h3>
     <table>
         <thead>
@@ -1091,7 +1107,10 @@
             <tr><td>PF_MAP_TYPE_CURVE</td><td class="value">4</td></tr>
             <tr><td>PF_MAP_TYPE_NOTCHED</td><td class="value">5</td></tr>
             <tr><td>PF_MAP_TYPE_ROUND</td><td class="value">6</td></tr>
-            <tr><td>PF_MAP_TYPE_COUNT</td><td class="value">7</td></tr>
+            <tr><td>PF_MAP_TYPE_MIN</td><td class="value">7</td></tr>
+            <tr><td>PF_MAP_TYPE_MAX</td><td class="value">8</td></tr>
+            <tr><td>PF_MAP_TYPE_MOD</td><td class="value">9</td></tr>
+            <tr><td>PF_MAP_TYPE_COUNT</td><td class="value">10</td></tr>
         </tbody>
     </table>
     <h3>Enum: AnimParamVectorType_t</h3>
@@ -1198,6 +1217,16 @@
             <tr><td>BLEND_PREALIGNED</td><td class="value">1048576</td></tr>
             <tr><td>FLAG_RIGIDLENGTH</td><td class="value">2097152</td></tr>
             <tr><td>FLAG_PROCEDURAL</td><td class="value">4194304</td></tr>
+        </tbody>
+    </table>
+    <h3>Enum: CNmOrientationWarpNode::AlignmentMode_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>MovementDirection</td><td class="value">0</td></tr>
+            <tr><td>AnimationEndFacing</td><td class="value">1</td></tr>
         </tbody>
     </table>
     <h3>Enum: GPUParticleCollisionMode_t</h3>
@@ -1697,128 +1726,132 @@
             <tr><td>IMMEDIATE_HALT</td><td class="value">1</td></tr>
             <tr><td>RETURN_VOID</td><td class="value">2</td></tr>
             <tr><td>RETURN_VALUE</td><td class="value">3</td></tr>
-            <tr><td>NOP</td><td class="value">4</td></tr>
-            <tr><td>JUMP</td><td class="value">5</td></tr>
-            <tr><td>JUMP_COND</td><td class="value">6</td></tr>
-            <tr><td>CHUNK_LEAP</td><td class="value">7</td></tr>
-            <tr><td>CHUNK_LEAP_COND</td><td class="value">8</td></tr>
-            <tr><td>PULSE_CALL_SYNC</td><td class="value">9</td></tr>
-            <tr><td>PULSE_CALL_ASYNC_FIRE</td><td class="value">10</td></tr>
-            <tr><td>CREATE_CHILD_CURSOR_OUTFLOW</td><td class="value">11</td></tr>
-            <tr><td>CELL_INVOKE</td><td class="value">12</td></tr>
-            <tr><td>LIBRARY_INVOKE</td><td class="value">13</td></tr>
-            <tr><td>SET_VAR</td><td class="value">14</td></tr>
-            <tr><td>GET_VAR</td><td class="value">15</td></tr>
-            <tr><td>GET_VAR_DETACH</td><td class="value">16</td></tr>
-            <tr><td>DETACH_REGISTER</td><td class="value">17</td></tr>
-            <tr><td>SET_VAR_ARRAY_ELEMENT_1D</td><td class="value">18</td></tr>
-            <tr><td>SET_VAR_OBSERVABLE</td><td class="value">19</td></tr>
-            <tr><td>GET_CONST</td><td class="value">20</td></tr>
-            <tr><td>GET_ARRAY_ELEMENT</td><td class="value">21</td></tr>
-            <tr><td>GET_DOMAIN_VALUE</td><td class="value">22</td></tr>
-            <tr><td>COPY</td><td class="value">23</td></tr>
-            <tr><td>NOT</td><td class="value">24</td></tr>
-            <tr><td>NEGATE</td><td class="value">25</td></tr>
-            <tr><td>ADD</td><td class="value">26</td></tr>
-            <tr><td>SUB</td><td class="value">27</td></tr>
-            <tr><td>MUL</td><td class="value">28</td></tr>
-            <tr><td>DIV</td><td class="value">29</td></tr>
-            <tr><td>MOD</td><td class="value">30</td></tr>
-            <tr><td>LT</td><td class="value">31</td></tr>
-            <tr><td>LTE</td><td class="value">32</td></tr>
-            <tr><td>EQ</td><td class="value">33</td></tr>
-            <tr><td>NE</td><td class="value">34</td></tr>
-            <tr><td>AND</td><td class="value">35</td></tr>
-            <tr><td>OR</td><td class="value">36</td></tr>
-            <tr><td>SCALE</td><td class="value">37</td></tr>
-            <tr><td>SCALE_INV</td><td class="value">38</td></tr>
-            <tr><td>ELEMENT_ACCESS</td><td class="value">39</td></tr>
-            <tr><td>CONVERT_VALUE</td><td class="value">40</td></tr>
-            <tr><td>REINTERPRET_INSTANCE</td><td class="value">41</td></tr>
-            <tr><td>GET_BLACKBOARD_REFERENCE</td><td class="value">42</td></tr>
-            <tr><td>SET_BLACKBOARD_REFERENCE</td><td class="value">43</td></tr>
-            <tr><td>LAST_SERIALIZED_CODE</td><td class="value">44</td></tr>
-            <tr><td>NEGATE_INT</td><td class="value">45</td></tr>
-            <tr><td>NEGATE_FLOAT</td><td class="value">46</td></tr>
-            <tr><td>NEGATE_VEC2</td><td class="value">47</td></tr>
-            <tr><td>NEGATE_VEC3</td><td class="value">48</td></tr>
-            <tr><td>NEGATE_VEC4</td><td class="value">49</td></tr>
-            <tr><td>ADD_INT</td><td class="value">50</td></tr>
-            <tr><td>ADD_FLOAT</td><td class="value">51</td></tr>
-            <tr><td>ADD_STRING</td><td class="value">52</td></tr>
-            <tr><td>ADD_VEC2</td><td class="value">53</td></tr>
-            <tr><td>ADD_VEC3</td><td class="value">54</td></tr>
-            <tr><td>ADD_VEC3WS_VEC3</td><td class="value">55</td></tr>
-            <tr><td>ADD_VEC3_VEC3WS</td><td class="value">56</td></tr>
-            <tr><td>ADD_VEC4</td><td class="value">57</td></tr>
-            <tr><td>ADD_GAMETIME_FLOAT</td><td class="value">58</td></tr>
-            <tr><td>ADD_FLOAT_GAMETIME</td><td class="value">59</td></tr>
-            <tr><td>SUB_INT</td><td class="value">60</td></tr>
-            <tr><td>SUB_FLOAT</td><td class="value">61</td></tr>
-            <tr><td>SUB_VEC2</td><td class="value">62</td></tr>
-            <tr><td>SUB_VEC3</td><td class="value">63</td></tr>
-            <tr><td>SUB_VEC3WS_VEC3</td><td class="value">64</td></tr>
-            <tr><td>SUB_VEC3WS_VEC3WS</td><td class="value">65</td></tr>
-            <tr><td>SUB_VEC4</td><td class="value">66</td></tr>
-            <tr><td>SUB_GAMETIME_FLOAT</td><td class="value">67</td></tr>
-            <tr><td>SUB_GAMETIME</td><td class="value">68</td></tr>
-            <tr><td>MUL_INT</td><td class="value">69</td></tr>
-            <tr><td>MUL_FLOAT</td><td class="value">70</td></tr>
-            <tr><td>DIV_FLOAT</td><td class="value">71</td></tr>
-            <tr><td>MOD_INT</td><td class="value">72</td></tr>
-            <tr><td>MOD_FLOAT</td><td class="value">73</td></tr>
-            <tr><td>LT_INT</td><td class="value">74</td></tr>
-            <tr><td>LT_FLOAT</td><td class="value">75</td></tr>
-            <tr><td>LT_GAMETIME</td><td class="value">76</td></tr>
-            <tr><td>LTE_INT</td><td class="value">77</td></tr>
-            <tr><td>LTE_FLOAT</td><td class="value">78</td></tr>
-            <tr><td>LTE_GAMETIME</td><td class="value">79</td></tr>
-            <tr><td>EQ_BOOL</td><td class="value">80</td></tr>
-            <tr><td>EQ_INT</td><td class="value">81</td></tr>
-            <tr><td>EQ_FLOAT</td><td class="value">82</td></tr>
-            <tr><td>EQ_VEC2</td><td class="value">83</td></tr>
-            <tr><td>EQ_VEC3</td><td class="value">84</td></tr>
-            <tr><td>EQ_VEC3WS</td><td class="value">85</td></tr>
-            <tr><td>EQ_VEC4</td><td class="value">86</td></tr>
-            <tr><td>EQ_STRING</td><td class="value">87</td></tr>
-            <tr><td>EQ_ENTITY_NAME</td><td class="value">88</td></tr>
-            <tr><td>EQ_SCHEMA_ENUM</td><td class="value">89</td></tr>
-            <tr><td>EQ_EHANDLE</td><td class="value">90</td></tr>
-            <tr><td>EQ_PANEL_HANDLE</td><td class="value">91</td></tr>
-            <tr><td>EQ_OPAQUE_HANDLE</td><td class="value">92</td></tr>
-            <tr><td>EQ_TEST_HANDLE</td><td class="value">93</td></tr>
-            <tr><td>EQ_COLOR_RGB</td><td class="value">94</td></tr>
-            <tr><td>EQ_ARRAY</td><td class="value">95</td></tr>
-            <tr><td>EQ_GAMETIME</td><td class="value">96</td></tr>
-            <tr><td>NE_BOOL</td><td class="value">97</td></tr>
-            <tr><td>NE_INT</td><td class="value">98</td></tr>
-            <tr><td>NE_FLOAT</td><td class="value">99</td></tr>
-            <tr><td>NE_VEC2</td><td class="value">100</td></tr>
-            <tr><td>NE_VEC3</td><td class="value">101</td></tr>
-            <tr><td>NE_VEC3WS</td><td class="value">102</td></tr>
-            <tr><td>NE_VEC4</td><td class="value">103</td></tr>
-            <tr><td>NE_STRING</td><td class="value">104</td></tr>
-            <tr><td>NE_ENTITY_NAME</td><td class="value">105</td></tr>
-            <tr><td>NE_SCHEMA_ENUM</td><td class="value">106</td></tr>
-            <tr><td>NE_EHANDLE</td><td class="value">107</td></tr>
-            <tr><td>NE_PANEL_HANDLE</td><td class="value">108</td></tr>
-            <tr><td>NE_OPAQUE_HANDLE</td><td class="value">109</td></tr>
-            <tr><td>NE_TEST_HANDLE</td><td class="value">110</td></tr>
-            <tr><td>NE_COLOR_RGB</td><td class="value">111</td></tr>
-            <tr><td>NE_ARRAY</td><td class="value">112</td></tr>
-            <tr><td>NE_GAMETIME</td><td class="value">113</td></tr>
-            <tr><td>SCALE_VEC3</td><td class="value">114</td></tr>
-            <tr><td>SCALE_VEC2</td><td class="value">115</td></tr>
-            <tr><td>SCALE_VEC4</td><td class="value">116</td></tr>
-            <tr><td>SCALE_INV_VEC3</td><td class="value">117</td></tr>
-            <tr><td>SCALE_INV_VEC2</td><td class="value">118</td></tr>
-            <tr><td>SCALE_INV_VEC4</td><td class="value">119</td></tr>
-            <tr><td>ELEMENT_ACCESS_VEC2</td><td class="value">120</td></tr>
-            <tr><td>ELEMENT_ACCESS_VEC3</td><td class="value">121</td></tr>
-            <tr><td>ELEMENT_ACCESS_VEC3WS</td><td class="value">122</td></tr>
-            <tr><td>ELEMENT_ACCESS_VEC4</td><td class="value">123</td></tr>
-            <tr><td>ELEMENT_ACCESS_COLOR_RGB</td><td class="value">124</td></tr>
-            <tr><td>GET_CONST_INLINE_STORAGE</td><td class="value">125</td></tr>
+            <tr><td>LOOP_BREAK</td><td class="value">4</td></tr>
+            <tr><td>NOP</td><td class="value">5</td></tr>
+            <tr><td>JUMP</td><td class="value">6</td></tr>
+            <tr><td>JUMP_COND</td><td class="value">7</td></tr>
+            <tr><td>CHUNK_LEAP</td><td class="value">8</td></tr>
+            <tr><td>CHUNK_LEAP_COND</td><td class="value">9</td></tr>
+            <tr><td>PULSE_CALL_SYNC</td><td class="value">10</td></tr>
+            <tr><td>PULSE_CALL_ASYNC_FIRE</td><td class="value">11</td></tr>
+            <tr><td>CREATE_CHILD_CURSOR_OUTFLOW</td><td class="value">12</td></tr>
+            <tr><td>CELL_INVOKE</td><td class="value">13</td></tr>
+            <tr><td>LIBRARY_INVOKE</td><td class="value">14</td></tr>
+            <tr><td>SET_VAR</td><td class="value">15</td></tr>
+            <tr><td>GET_VAR</td><td class="value">16</td></tr>
+            <tr><td>GET_VAR_DETACH</td><td class="value">17</td></tr>
+            <tr><td>DETACH_REGISTER</td><td class="value">18</td></tr>
+            <tr><td>SET_VAR_ARRAY_ELEMENT_1D</td><td class="value">19</td></tr>
+            <tr><td>SET_VAR_OBSERVABLE</td><td class="value">20</td></tr>
+            <tr><td>GET_CONST</td><td class="value">21</td></tr>
+            <tr><td>GET_ARRAY_ELEMENT</td><td class="value">22</td></tr>
+            <tr><td>GET_DOMAIN_VALUE</td><td class="value">23</td></tr>
+            <tr><td>COPY</td><td class="value">24</td></tr>
+            <tr><td>NOT</td><td class="value">25</td></tr>
+            <tr><td>NEGATE</td><td class="value">26</td></tr>
+            <tr><td>ADD</td><td class="value">27</td></tr>
+            <tr><td>SUB</td><td class="value">28</td></tr>
+            <tr><td>MUL</td><td class="value">29</td></tr>
+            <tr><td>DIV</td><td class="value">30</td></tr>
+            <tr><td>MOD</td><td class="value">31</td></tr>
+            <tr><td>LT</td><td class="value">32</td></tr>
+            <tr><td>LTE</td><td class="value">33</td></tr>
+            <tr><td>EQ</td><td class="value">34</td></tr>
+            <tr><td>NE</td><td class="value">35</td></tr>
+            <tr><td>AND</td><td class="value">36</td></tr>
+            <tr><td>OR</td><td class="value">37</td></tr>
+            <tr><td>SCALE</td><td class="value">38</td></tr>
+            <tr><td>SCALE_INV</td><td class="value">39</td></tr>
+            <tr><td>ELEMENT_ACCESS</td><td class="value">40</td></tr>
+            <tr><td>CONVERT_VALUE</td><td class="value">41</td></tr>
+            <tr><td>REINTERPRET_INSTANCE</td><td class="value">42</td></tr>
+            <tr><td>GET_BLACKBOARD_REFERENCE</td><td class="value">43</td></tr>
+            <tr><td>SET_BLACKBOARD_REFERENCE</td><td class="value">44</td></tr>
+            <tr><td>GET_TEMPVAR</td><td class="value">45</td></tr>
+            <tr><td>SET_TEMPVAR</td><td class="value">46</td></tr>
+            <tr><td>SET_TEMPVAR_OBSERVABLE</td><td class="value">47</td></tr>
+            <tr><td>LAST_SERIALIZED_CODE</td><td class="value">48</td></tr>
+            <tr><td>NEGATE_INT</td><td class="value">49</td></tr>
+            <tr><td>NEGATE_FLOAT</td><td class="value">50</td></tr>
+            <tr><td>NEGATE_VEC2</td><td class="value">51</td></tr>
+            <tr><td>NEGATE_VEC3</td><td class="value">52</td></tr>
+            <tr><td>NEGATE_VEC4</td><td class="value">53</td></tr>
+            <tr><td>ADD_INT</td><td class="value">54</td></tr>
+            <tr><td>ADD_FLOAT</td><td class="value">55</td></tr>
+            <tr><td>ADD_STRING</td><td class="value">56</td></tr>
+            <tr><td>ADD_VEC2</td><td class="value">57</td></tr>
+            <tr><td>ADD_VEC3</td><td class="value">58</td></tr>
+            <tr><td>ADD_VEC3WS_VEC3</td><td class="value">59</td></tr>
+            <tr><td>ADD_VEC3_VEC3WS</td><td class="value">60</td></tr>
+            <tr><td>ADD_VEC4</td><td class="value">61</td></tr>
+            <tr><td>ADD_GAMETIME_FLOAT</td><td class="value">62</td></tr>
+            <tr><td>ADD_FLOAT_GAMETIME</td><td class="value">63</td></tr>
+            <tr><td>SUB_INT</td><td class="value">64</td></tr>
+            <tr><td>SUB_FLOAT</td><td class="value">65</td></tr>
+            <tr><td>SUB_VEC2</td><td class="value">66</td></tr>
+            <tr><td>SUB_VEC3</td><td class="value">67</td></tr>
+            <tr><td>SUB_VEC3WS_VEC3</td><td class="value">68</td></tr>
+            <tr><td>SUB_VEC3WS_VEC3WS</td><td class="value">69</td></tr>
+            <tr><td>SUB_VEC4</td><td class="value">70</td></tr>
+            <tr><td>SUB_GAMETIME_FLOAT</td><td class="value">71</td></tr>
+            <tr><td>SUB_GAMETIME</td><td class="value">72</td></tr>
+            <tr><td>MUL_INT</td><td class="value">73</td></tr>
+            <tr><td>MUL_FLOAT</td><td class="value">74</td></tr>
+            <tr><td>DIV_FLOAT</td><td class="value">75</td></tr>
+            <tr><td>MOD_INT</td><td class="value">76</td></tr>
+            <tr><td>MOD_FLOAT</td><td class="value">77</td></tr>
+            <tr><td>LT_INT</td><td class="value">78</td></tr>
+            <tr><td>LT_FLOAT</td><td class="value">79</td></tr>
+            <tr><td>LT_GAMETIME</td><td class="value">80</td></tr>
+            <tr><td>LTE_INT</td><td class="value">81</td></tr>
+            <tr><td>LTE_FLOAT</td><td class="value">82</td></tr>
+            <tr><td>LTE_GAMETIME</td><td class="value">83</td></tr>
+            <tr><td>EQ_BOOL</td><td class="value">84</td></tr>
+            <tr><td>EQ_INT</td><td class="value">85</td></tr>
+            <tr><td>EQ_FLOAT</td><td class="value">86</td></tr>
+            <tr><td>EQ_VEC2</td><td class="value">87</td></tr>
+            <tr><td>EQ_VEC3</td><td class="value">88</td></tr>
+            <tr><td>EQ_VEC3WS</td><td class="value">89</td></tr>
+            <tr><td>EQ_VEC4</td><td class="value">90</td></tr>
+            <tr><td>EQ_STRING</td><td class="value">91</td></tr>
+            <tr><td>EQ_ENTITY_NAME</td><td class="value">92</td></tr>
+            <tr><td>EQ_SCHEMA_ENUM</td><td class="value">93</td></tr>
+            <tr><td>EQ_EHANDLE</td><td class="value">94</td></tr>
+            <tr><td>EQ_PANEL_HANDLE</td><td class="value">95</td></tr>
+            <tr><td>EQ_OPAQUE_HANDLE</td><td class="value">96</td></tr>
+            <tr><td>EQ_TEST_HANDLE</td><td class="value">97</td></tr>
+            <tr><td>EQ_COLOR_RGB</td><td class="value">98</td></tr>
+            <tr><td>EQ_ARRAY</td><td class="value">99</td></tr>
+            <tr><td>EQ_GAMETIME</td><td class="value">100</td></tr>
+            <tr><td>NE_BOOL</td><td class="value">101</td></tr>
+            <tr><td>NE_INT</td><td class="value">102</td></tr>
+            <tr><td>NE_FLOAT</td><td class="value">103</td></tr>
+            <tr><td>NE_VEC2</td><td class="value">104</td></tr>
+            <tr><td>NE_VEC3</td><td class="value">105</td></tr>
+            <tr><td>NE_VEC3WS</td><td class="value">106</td></tr>
+            <tr><td>NE_VEC4</td><td class="value">107</td></tr>
+            <tr><td>NE_STRING</td><td class="value">108</td></tr>
+            <tr><td>NE_ENTITY_NAME</td><td class="value">109</td></tr>
+            <tr><td>NE_SCHEMA_ENUM</td><td class="value">110</td></tr>
+            <tr><td>NE_EHANDLE</td><td class="value">111</td></tr>
+            <tr><td>NE_PANEL_HANDLE</td><td class="value">112</td></tr>
+            <tr><td>NE_OPAQUE_HANDLE</td><td class="value">113</td></tr>
+            <tr><td>NE_TEST_HANDLE</td><td class="value">114</td></tr>
+            <tr><td>NE_COLOR_RGB</td><td class="value">115</td></tr>
+            <tr><td>NE_ARRAY</td><td class="value">116</td></tr>
+            <tr><td>NE_GAMETIME</td><td class="value">117</td></tr>
+            <tr><td>SCALE_VEC3</td><td class="value">118</td></tr>
+            <tr><td>SCALE_VEC2</td><td class="value">119</td></tr>
+            <tr><td>SCALE_VEC4</td><td class="value">120</td></tr>
+            <tr><td>SCALE_INV_VEC3</td><td class="value">121</td></tr>
+            <tr><td>SCALE_INV_VEC2</td><td class="value">122</td></tr>
+            <tr><td>SCALE_INV_VEC4</td><td class="value">123</td></tr>
+            <tr><td>ELEMENT_ACCESS_VEC2</td><td class="value">124</td></tr>
+            <tr><td>ELEMENT_ACCESS_VEC3</td><td class="value">125</td></tr>
+            <tr><td>ELEMENT_ACCESS_VEC3WS</td><td class="value">126</td></tr>
+            <tr><td>ELEMENT_ACCESS_VEC4</td><td class="value">127</td></tr>
+            <tr><td>ELEMENT_ACCESS_COLOR_RGB</td><td class="value">128</td></tr>
+            <tr><td>GET_CONST_INLINE_STORAGE</td><td class="value">129</td></tr>
         </tbody>
     </table>
     <h3>Enum: ParticleTransformType_t</h3>
@@ -2126,7 +2159,8 @@
             <tr><td>ePlantedTurn</td><td class="value">6</td></tr>
             <tr><td>eUseStartAsPlantedTurn</td><td class="value">7</td></tr>
             <tr><td>eLean</td><td class="value">8</td></tr>
-            <tr><td>eCount</td><td class="value">9</td></tr>
+            <tr><td>eForwardStartOnly</td><td class="value">9</td></tr>
+            <tr><td>eCount</td><td class="value">10</td></tr>
         </tbody>
     </table>
     <h3>Enum: ModelConfigAttachmentType_t</h3>
@@ -2209,6 +2243,16 @@
             <tr><td>m_nDesiredKillPriority</td><td class="type">PulseCursorCancelPriority_t</td><td class="value">0x12C</td></tr>
         </tbody>
     </table>
+    <h3>Class: CPulseCell_RaceCursors</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Outflows</td><td class="type">CUtlVector<CPulse_OutflowConnection></td><td class="value">0xD8</td></tr>
+            <tr><td>m_OnFinished</td><td class="type">CPulse_ResumePoint</td><td class="value">0xF0</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CPulseCell_Base</h3>
     <table>
         <thead>
@@ -2251,7 +2295,7 @@
         </thead>
         <tbody>
             <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
-            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0x150</td></tr>
+            <tr><td>m_OnTrue</td><td class="type">CPulse_ResumePoint</td><td class="value">0x168</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulse_OutflowConnection</h3>
@@ -2279,13 +2323,14 @@
             <tr><td>m_Chunks</td><td class="type">CUtlVector<CPulse_Chunk*></td><td class="value">0x50</td></tr>
             <tr><td>m_Cells</td><td class="type">CUtlVector<CPulseCell_Base*></td><td class="value">0x68</td></tr>
             <tr><td>m_Vars</td><td class="type">CUtlVector<CPulse_Variable></td><td class="value">0x80</td></tr>
-            <tr><td>m_PublicOutputs</td><td class="type">CUtlVector<CPulse_PublicOutput></td><td class="value">0x98</td></tr>
-            <tr><td>m_InvokeBindings</td><td class="type">CUtlVector<CPulse_InvokeBinding*></td><td class="value">0xB0</td></tr>
-            <tr><td>m_CallInfos</td><td class="type">CUtlVector<CPulse_CallInfo*></td><td class="value">0xC8</td></tr>
-            <tr><td>m_Constants</td><td class="type">CUtlVector<CPulse_Constant></td><td class="value">0xE0</td></tr>
-            <tr><td>m_DomainValues</td><td class="type">CUtlVector<CPulse_DomainValue></td><td class="value">0xF8</td></tr>
-            <tr><td>m_BlackboardReferences</td><td class="type">CUtlVector<CPulse_BlackboardReference></td><td class="value">0x110</td></tr>
-            <tr><td>m_OutputConnections</td><td class="type">CUtlVector<CPulse_OutputConnection*></td><td class="value">0x128</td></tr>
+            <tr><td>m_TempVarBanks</td><td class="type">CUtlVector<CPulse_TempVarBankDefinition*></td><td class="value">0x98</td></tr>
+            <tr><td>m_PublicOutputs</td><td class="type">CUtlVector<CPulse_PublicOutput></td><td class="value">0xB0</td></tr>
+            <tr><td>m_InvokeBindings</td><td class="type">CUtlVector<CPulse_InvokeBinding*></td><td class="value">0xC8</td></tr>
+            <tr><td>m_CallInfos</td><td class="type">CUtlVector<CPulse_CallInfo*></td><td class="value">0xE0</td></tr>
+            <tr><td>m_Constants</td><td class="type">CUtlVector<CPulse_Constant></td><td class="value">0xF8</td></tr>
+            <tr><td>m_DomainValues</td><td class="type">CUtlVector<CPulse_DomainValue></td><td class="value">0x110</td></tr>
+            <tr><td>m_BlackboardReferences</td><td class="type">CUtlVector<CPulse_BlackboardReference></td><td class="value">0x128</td></tr>
+            <tr><td>m_OutputConnections</td><td class="type">CUtlVector<CPulse_OutputConnection*></td><td class="value">0x140</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_FireCursors</h3>
@@ -2367,14 +2412,6 @@
             <tr><td>m_Gradient</td><td class="type">CColorGradient</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseCursorFuncs</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: PulseNodeDynamicOutflows_t::DynamicOutflow_t</h3>
     <table>
         <thead>
@@ -2453,14 +2490,6 @@
             <tr><td>m_OnInterval</td><td class="type">SignatureOutflow_Continue</td><td class="value">0x120</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseTestScriptLib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_BaseLerp</h3>
     <table>
         <thead>
@@ -2514,14 +2543,6 @@
         <tbody>
             <tr><td>m_StartTime</td><td class="type">GameTime_t</td><td class="value">0x0</td></tr>
             <tr><td>m_EndTime</td><td class="type">GameTime_t</td><td class="value">0x4</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: CPulseArraylib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: SignatureOutflow_Continue</h3>
@@ -2671,8 +2692,8 @@
             <tr><td>m_MethodName</td><td class="type">PulseSymbol_t</td><td class="value">0x80</td></tr>
             <tr><td>m_Description</td><td class="type">CUtlString</td><td class="value">0x90</td></tr>
             <tr><td>m_bIsPublic</td><td class="type">bool</td><td class="value">0x98</td></tr>
-            <tr><td>m_ReturnType</td><td class="type">CPulseValueFullType</td><td class="value">0xA0</td></tr>
-            <tr><td>m_Args</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xB8</td></tr>
+            <tr><td>m_Args</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xA0</td></tr>
+            <tr><td>m_ReturnValues</td><td class="type">CUtlLeanVector<CPulseRuntimeMethodArg></td><td class="value">0xB0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_BaseValue</h3>
@@ -2690,8 +2711,8 @@
         </thead>
         <tbody>
             <tr><td>m_Condition</td><td class="type">CPulseObservableExpression<bool></td><td class="value">0xD8</td></tr>
-            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x150</td></tr>
-            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x198</td></tr>
+            <tr><td>m_WhenTrue</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x168</td></tr>
+            <tr><td>m_WhenFalse</td><td class="type">CPulse_OutflowConnection</td><td class="value">0x1B0</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Inflow_Yield</h3>
@@ -2703,14 +2724,6 @@
             <tr><td>m_UnyieldResume</td><td class="type">CPulse_ResumePoint</td><td class="value">0xD8</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseMathlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulseCell_Unknown</h3>
     <table>
         <thead>
@@ -2718,14 +2731,6 @@
         </thead>
         <tbody>
             <tr><td>m_UnknownKeys</td><td class="type">KeyValues3</td><td class="value">0x48</td></tr>
-        </tbody>
-    </table>
-    <h3>Class: CPulseStringlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
         </tbody>
     </table>
     <h3>Class: CPulseCell_Outflow_CycleRandom</h3>
@@ -2758,6 +2763,14 @@
             <tr><td>m_NodeName</td><td class="type">CGlobalSymbol</td><td class="value">0x20</td></tr>
         </tbody>
     </table>
+    <h3>Class: CPulseCell_ReturnValues</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
     <h3>Class: CPulseCell_Value_RandomInt</h3>
     <table>
         <thead>
@@ -2785,14 +2798,6 @@
             <tr><td>m_nPriority</td><td class="type">int32</td><td class="value">0x48</td></tr>
         </tbody>
     </table>
-    <h3>Class: CPulseEnumlib</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
     <h3>Class: CPulse_CallInfo</h3>
     <table>
         <thead>
@@ -2805,6 +2810,8 @@
             <tr><td>m_CallMethodID</td><td class="type">PulseDocNodeID_t</td><td class="value">0x48</td></tr>
             <tr><td>m_nSrcChunk</td><td class="type">PulseRuntimeChunkIndex_t</td><td class="value">0x4C</td></tr>
             <tr><td>m_nSrcInstruction</td><td class="type">int32</td><td class="value">0x50</td></tr>
+            <tr><td>m_nBreakDestChunk</td><td class="type">PulseRuntimeChunkIndex_t</td><td class="value">0x54</td></tr>
+            <tr><td>m_nBreakDestInstruction</td><td class="type">int32</td><td class="value">0x58</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulseCell_InlineNodeSkipSelector</h3>
@@ -3444,6 +3451,7 @@
             <tr><td>m_Instructions</td><td class="type">CUtlLeanVector<PGDInstruction_t></td><td class="value">0x0</td></tr>
             <tr><td>m_Registers</td><td class="type">CUtlLeanVector<CPulse_RegisterInfo></td><td class="value">0x10</td></tr>
             <tr><td>m_InstructionDebugInfos</td><td class="type">CUtlLeanVector<CPulse_InstructionDebug></td><td class="value">0x20</td></tr>
+            <tr><td>m_nTempVarBank</td><td class="type">PulseRuntimeTempVarBankIndex_t</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CStanceScaleUpdateNode</h3>
@@ -3464,6 +3472,7 @@
             <tr><td>m_NodeID</td><td class="type">PulseDocNodeID_t</td><td class="value">0x0</td></tr>
             <tr><td>m_SequencePoint</td><td class="type">PulseSymbol_t</td><td class="value">0x8</td></tr>
             <tr><td>m_PortName</td><td class="type">PulseSymbol_t</td><td class="value">0x18</td></tr>
+            <tr><td>m_bDeferBreak</td><td class="type">bool</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: PulseRuntimeInvokeIndex_t</h3>
@@ -4294,6 +4303,15 @@
         <tbody>
         </tbody>
     </table>
+    <h3>Class: PulseRuntimeTempVarIndex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">int16</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CModelConfigElement</h3>
     <table>
         <thead>
@@ -4372,6 +4390,7 @@
         <tbody>
             <tr><td>m_nFlags</td><td class="type">uint16</td><td class="value">0x0</td></tr>
             <tr><td>m_nRefCounter</td><td class="type">uint16</td><td class="value">0x2</td></tr>
+            <tr><td>m_bCompoundsPacked</td><td class="type">bool</td><td class="value">0x4</td></tr>
             <tr><td>m_bonesHash</td><td class="type">CUtlVector<uint32></td><td class="value">0x8</td></tr>
             <tr><td>m_boneNames</td><td class="type">CUtlVector<CUtlString></td><td class="value">0x20</td></tr>
             <tr><td>m_indexNames</td><td class="type">CUtlVector<uint16></td><td class="value">0x38</td></tr>
@@ -4776,21 +4795,22 @@
             <tr><td>m_flUvDensity</td><td class="type">float32</td><td class="value">0x0</td></tr>
             <tr><td>m_vTintColor</td><td class="type">Vector</td><td class="value">0x4</td></tr>
             <tr><td>m_flAlpha</td><td class="type">float32</td><td class="value">0x10</td></tr>
-            <tr><td>m_nNumMeshlets</td><td class="type">uint16</td><td class="value">0x16</td></tr>
-            <tr><td>m_nFirstMeshlet</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
-            <tr><td>m_nAppliedIndexOffset</td><td class="type">uint32</td><td class="value">0x20</td></tr>
-            <tr><td>m_nDepthVertexBufferIndex</td><td class="type">uint8</td><td class="value">0x24</td></tr>
-            <tr><td>m_nMeshletPackedIVBIndex</td><td class="type">uint8</td><td class="value">0x25</td></tr>
-            <tr><td>m_rigidMeshParts</td><td class="type">CUtlLeanVector<CMaterialDrawDescriptor::RigidMeshPart_t></td><td class="value">0x28</td></tr>
-            <tr><td>m_rootBvhNodes</td><td class="type">CUtlLeanVector<uint16></td><td class="value">0x38</td></tr>
-            <tr><td>m_nPrimitiveType</td><td class="type">RenderPrimitiveType_t</td><td class="value">0x48</td></tr>
-            <tr><td>m_nBaseVertex</td><td class="type">int32</td><td class="value">0x4C</td></tr>
-            <tr><td>m_nVertexCount</td><td class="type">int32</td><td class="value">0x50</td></tr>
-            <tr><td>m_nStartIndex</td><td class="type">int32</td><td class="value">0x54</td></tr>
-            <tr><td>m_nIndexCount</td><td class="type">int32</td><td class="value">0x58</td></tr>
-            <tr><td>m_indexBuffer</td><td class="type">CRenderBufferBinding</td><td class="value">0xC0</td></tr>
-            <tr><td>m_meshletPackedIVB</td><td class="type">CRenderBufferBinding</td><td class="value">0xE0</td></tr>
-            <tr><td>m_material</td><td class="type">CStrongHandle<InfoForResourceTypeIMaterial2></td><td class="value">0x110</td></tr>
+            <tr><td>m_nNumMeshlets</td><td class="type">uint32</td><td class="value">0x18</td></tr>
+            <tr><td>m_nFirstMeshlet</td><td class="type">uint32</td><td class="value">0x20</td></tr>
+            <tr><td>m_nAppliedIndexOffset</td><td class="type">uint32</td><td class="value">0x24</td></tr>
+            <tr><td>m_nEmissivePrimitiveCount</td><td class="type">int32</td><td class="value">0x28</td></tr>
+            <tr><td>m_nDepthVertexBufferIndex</td><td class="type">uint8</td><td class="value">0x2C</td></tr>
+            <tr><td>m_nMeshletPackedIVBIndex</td><td class="type">uint8</td><td class="value">0x2D</td></tr>
+            <tr><td>m_rigidMeshParts</td><td class="type">CUtlLeanVector<CMaterialDrawDescriptor::RigidMeshPart_t></td><td class="value">0x30</td></tr>
+            <tr><td>m_rootBvhNodes</td><td class="type">CUtlLeanVector<uint16></td><td class="value">0x40</td></tr>
+            <tr><td>m_nPrimitiveType</td><td class="type">RenderPrimitiveType_t</td><td class="value">0x50</td></tr>
+            <tr><td>m_nBaseVertex</td><td class="type">int32</td><td class="value">0x54</td></tr>
+            <tr><td>m_nVertexCount</td><td class="type">int32</td><td class="value">0x58</td></tr>
+            <tr><td>m_nStartIndex</td><td class="type">int32</td><td class="value">0x5C</td></tr>
+            <tr><td>m_nIndexCount</td><td class="type">int32</td><td class="value">0x60</td></tr>
+            <tr><td>m_indexBuffer</td><td class="type">CRenderBufferBinding</td><td class="value">0xC8</td></tr>
+            <tr><td>m_meshletPackedIVB</td><td class="type">CRenderBufferBinding</td><td class="value">0xE8</td></tr>
+            <tr><td>m_material</td><td class="type">CStrongHandle<InfoForResourceTypeIMaterial2></td><td class="value">0x118</td></tr>
         </tbody>
     </table>
     <h3>Class: CNmSkeleton</h3>
@@ -4805,10 +4825,13 @@
             <tr><td>m_parentSpaceReferencePose</td><td class="type">CUtlVector<CTransform></td><td class="value">0x30</td></tr>
             <tr><td>m_modelSpaceReferencePose</td><td class="type">CUtlVector<CTransform></td><td class="value">0x48</td></tr>
             <tr><td>m_numBonesToSampleAtLowLOD</td><td class="type">int32</td><td class="value">0x60</td></tr>
+            <tr><td>m_bIsPropSkeleton</td><td class="type">bool</td><td class="value">0x64</td></tr>
             <tr><td>m_maskDefinitions</td><td class="type">CUtlLeanVector<NmBoneMaskSetDefinition_t></td><td class="value">0x88</td></tr>
             <tr><td>m_secondarySkeletons</td><td class="type">CUtlLeanVector<CNmSkeleton::SecondarySkeleton_t></td><td class="value">0xA8</td></tr>
             <tr><td>m_floatChannelSets</td><td class="type">CUtlLeanVector<CNmFloatChannelSet_t></td><td class="value">0xB8</td></tr>
-            <tr><td>m_bIsPropSkeleton</td><td class="type">bool</td><td class="value">0xC8</td></tr>
+            <tr><td>m_contactConfigs</td><td class="type">CUtlVector<CNmSkeleton::ContactConfig_t></td><td class="value">0xC8</td></tr>
+            <tr><td>m_gameplayRelevantBoneIndices</td><td class="type">CUtlVector<int32></td><td class="value">0xE0</td></tr>
+            <tr><td>m_nSpecialDependencyHash</td><td class="type">int64</td><td class="value">0xF8</td></tr>
         </tbody>
     </table>
     <h3>Class: CStepsRemainingMetricEvaluator</h3>
@@ -4835,6 +4858,21 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CNmClothEvent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_type</td><td class="type">CNmClothEvent::Type_t</td><td class="value">0x18</td></tr>
+            <tr><td>m_flStiffness</td><td class="type">float32</td><td class="value">0x1C</td></tr>
+            <tr><td>m_flSpeedIn</td><td class="type">float32</td><td class="value">0x20</td></tr>
+            <tr><td>m_flSpeedOut</td><td class="type">float32</td><td class="value">0x24</td></tr>
+            <tr><td>m_flLengthSeconds</td><td class="type">float32</td><td class="value">0x28</td></tr>
+            <tr><td>m_vertexSetName</td><td class="type">CUtlString</td><td class="value">0x30</td></tr>
+            <tr><td>m_effectName</td><td class="type">CUtlString</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: CBodyGroupSetting</h3>
@@ -4903,16 +4941,16 @@
             <tr><td>m_vCPRelativePosition</td><td class="type">Vector</td><td class="value">0x90</td></tr>
             <tr><td>m_vCPRelativeDir</td><td class="type">Vector</td><td class="value">0x9C</td></tr>
             <tr><td>m_FloatComponentX</td><td class="type">CParticleFloatInput</td><td class="value">0xA8</td></tr>
-            <tr><td>m_FloatComponentY</td><td class="type">CParticleFloatInput</td><td class="value">0x218</td></tr>
-            <tr><td>m_FloatComponentZ</td><td class="type">CParticleFloatInput</td><td class="value">0x388</td></tr>
-            <tr><td>m_FloatInterp</td><td class="type">CParticleFloatInput</td><td class="value">0x4F8</td></tr>
-            <tr><td>m_flInterpInput0</td><td class="type">float32</td><td class="value">0x668</td></tr>
-            <tr><td>m_flInterpInput1</td><td class="type">float32</td><td class="value">0x66C</td></tr>
-            <tr><td>m_vInterpOutput0</td><td class="type">Vector</td><td class="value">0x670</td></tr>
-            <tr><td>m_vInterpOutput1</td><td class="type">Vector</td><td class="value">0x67C</td></tr>
-            <tr><td>m_Gradient</td><td class="type">CColorGradient</td><td class="value">0x688</td></tr>
-            <tr><td>m_vRandomMin</td><td class="type">Vector</td><td class="value">0x6A0</td></tr>
-            <tr><td>m_vRandomMax</td><td class="type">Vector</td><td class="value">0x6AC</td></tr>
+            <tr><td>m_FloatComponentY</td><td class="type">CParticleFloatInput</td><td class="value">0x220</td></tr>
+            <tr><td>m_FloatComponentZ</td><td class="type">CParticleFloatInput</td><td class="value">0x398</td></tr>
+            <tr><td>m_FloatInterp</td><td class="type">CParticleFloatInput</td><td class="value">0x510</td></tr>
+            <tr><td>m_flInterpInput0</td><td class="type">float32</td><td class="value">0x688</td></tr>
+            <tr><td>m_flInterpInput1</td><td class="type">float32</td><td class="value">0x68C</td></tr>
+            <tr><td>m_vInterpOutput0</td><td class="type">Vector</td><td class="value">0x690</td></tr>
+            <tr><td>m_vInterpOutput1</td><td class="type">Vector</td><td class="value">0x69C</td></tr>
+            <tr><td>m_Gradient</td><td class="type">CColorGradient</td><td class="value">0x6A8</td></tr>
+            <tr><td>m_vRandomMin</td><td class="type">Vector</td><td class="value">0x6C0</td></tr>
+            <tr><td>m_vRandomMax</td><td class="type">Vector</td><td class="value">0x6CC</td></tr>
         </tbody>
     </table>
     <h3>Class: CNmStateNode::CDefinition</h3>
@@ -5105,6 +5143,15 @@
         <tbody>
             <tr><td>m_groups</td><td class="type">CUtlVector<CMotionGraphGroup></td><td class="value">0x0</td></tr>
             <tr><td>m_nDimensionCount</td><td class="type">int32</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: ParticleAttributeIndex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">int32</td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CProductQuantizer</h3>
@@ -5315,10 +5362,10 @@
         </thead>
         <tbody>
             <tr><td>m_nPlayInReverseValueNodeIdx</td><td class="type">int16</td><td class="value">0x10</td></tr>
-            <tr><td>m_nResetTimeValueNodeIdx</td><td class="type">int16</td><td class="value">0x12</td></tr>
-            <tr><td>m_bSampleRootMotion</td><td class="type">bool</td><td class="value">0x14</td></tr>
-            <tr><td>m_bAllowLooping</td><td class="type">bool</td><td class="value">0x15</td></tr>
-            <tr><td>m_nDataSlotIdx</td><td class="type">int16</td><td class="value">0x16</td></tr>
+            <tr><td>m_bSampleRootMotion</td><td class="type">bool</td><td class="value">0x12</td></tr>
+            <tr><td>m_bAllowLooping</td><td class="type">bool</td><td class="value">0x13</td></tr>
+            <tr><td>m_nDataSlotIdx</td><td class="type">int16</td><td class="value">0x14</td></tr>
+            <tr><td>m_nResetTimeValueNodeIdx</td><td class="type">int16</td><td class="value">0x16</td></tr>
             <tr><td>m_graphEvents</td><td class="type">CUtlVectorFixedGrowable<CGlobalSymbol,2></td><td class="value">0x18</td></tr>
             <tr><td>m_flSpeedMultiplier</td><td class="type">float32</td><td class="value">0x40</td></tr>
             <tr><td>m_nStartSyncEventOffset</td><td class="type">int32</td><td class="value">0x44</td></tr>
@@ -5472,6 +5519,15 @@
         <tbody>
             <tr><td>m_name</td><td class="type">CBufferString</td><td class="value">0x0</td></tr>
             <tr><td>m_nType</td><td class="type">int32</td><td class="value">0x10</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CPulse_TempVarBankDefinition</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_TempVars</td><td class="type">CUtlVector<CPulse_TempVarInfo></td><td class="value">0x0</td></tr>
         </tbody>
     </table>
     <h3>Class: CRagdollComponentUpdater</h3>
@@ -5815,6 +5871,15 @@
             <tr><td>m_flTransitionDurationSeconds</td><td class="type">float32</td><td class="value">0x14</td></tr>
         </tbody>
     </table>
+    <h3>Class: CNmCameraFOVEvent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CNmTargetWarpEvent</h3>
     <table>
         <thead>
@@ -5926,6 +5991,23 @@
             <tr><td>m_previousChoice</td><td class="type">int32</td><td class="value">0x1C</td></tr>
             <tr><td>m_flClipStartTime</td><td class="type">CAnimNetVar<float32></td><td class="value">0x20</td></tr>
             <tr><td>m_choicePreviousCycle</td><td class="type">float32</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CNmContactAudioTypeVData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <h3>Class: CNmCameraDOFEvent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: AnimationSnapshotBase_t</h3>
@@ -6651,9 +6733,11 @@
         <tbody>
             <tr><td>nCursorID</td><td class="type">PulseCursorID_t</td><td class="value">0x0</td></tr>
             <tr><td>nEditorID</td><td class="type">PulseDocNodeID_t</td><td class="value">0x4</td></tr>
-            <tr><td>flExecTime</td><td class="type">float32</td><td class="value">0x8</td></tr>
-            <tr><td>unFlags</td><td class="type">uint32</td><td class="value">0xC</td></tr>
-            <tr><td>tagName</td><td class="type">PulseSymbol_t</td><td class="value">0x10</td></tr>
+            <tr><td>seqPoint</td><td class="type">PulseSymbol_t</td><td class="value">0x8</td></tr>
+            <tr><td>flExecTime</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>unFlags</td><td class="type">uint32</td><td class="value">0x1C</td></tr>
+            <tr><td>tagName</td><td class="type">PulseSymbol_t</td><td class="value">0x20</td></tr>
+            <tr><td>childID</td><td class="type">PulseCursorID_t</td><td class="value">0x30</td></tr>
         </tbody>
     </table>
     <h3>Class: CQuaternionAnimParameter</h3>
@@ -6754,7 +6838,7 @@
             <tr><td>m_bCreateBufferUAV</td><td class="type">bool</td><td class="value">0x11</td></tr>
             <tr><td>m_bCreateRawBuffer</td><td class="type">bool</td><td class="value">0x12</td></tr>
             <tr><td>m_bCreatePooledBuffer</td><td class="type">bool</td><td class="value">0x13</td></tr>
-            <tr><td>m_nBufferUsage</td><td class="type">uint8</td><td class="value">0x14</td></tr>
+            <tr><td>m_nBufferUsage</td><td class="type">uint16</td><td class="value">0x14</td></tr>
             <tr><td>m_inputLayoutFields</td><td class="type">CUtlVector<RenderInputLayoutField_t></td><td class="value">0x18</td></tr>
         </tbody>
     </table>
@@ -7152,6 +7236,7 @@
             <tr><td>m_nConstIdx</td><td class="type">PulseRuntimeConstantIndex_t</td><td class="value">0x20</td></tr>
             <tr><td>m_nDomainValueIdx</td><td class="type">PulseRuntimeDomainValueIndex_t</td><td class="value">0x22</td></tr>
             <tr><td>m_nBlackboardReferenceIdx</td><td class="type">PulseRuntimeBlackboardReferenceIndex_t</td><td class="value">0x24</td></tr>
+            <tr><td>m_nTempVarIdx</td><td class="type">PulseRuntimeTempVarIndex_t</td><td class="value">0x26</td></tr>
         </tbody>
     </table>
     <h3>Class: CNmFootstepEventPercentageThroughNode::CDefinition</h3>
@@ -7416,16 +7501,16 @@
             <tr><td>m_materialGroupToken</td><td class="type">uint32</td><td class="value">0x0</td></tr>
             <tr><td>m_nSrcDrawIndex</td><td class="type">int32</td><td class="value">0x4</td></tr>
             <tr><td>m_drawDesc</td><td class="type">CMaterialDrawDescriptor</td><td class="value">0x8</td></tr>
-            <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0x120</td></tr>
-            <tr><td>m_nVertexAlbedoFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x150</td></tr>
-            <tr><td>m_nVertexAlbedoVB</td><td class="type">int8</td><td class="value">0x151</td></tr>
-            <tr><td>m_nVertexAlbedoOffset</td><td class="type">uint16</td><td class="value">0x152</td></tr>
-            <tr><td>m_nVertexAlbedoStride</td><td class="type">uint16</td><td class="value">0x154</td></tr>
-            <tr><td>m_nVertexEmissiveFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x156</td></tr>
-            <tr><td>m_nVertexEmissiveVB</td><td class="type">int8</td><td class="value">0x157</td></tr>
-            <tr><td>m_nVertexEmissiveOffset</td><td class="type">uint16</td><td class="value">0x158</td></tr>
-            <tr><td>m_nVertexEmissiveStride</td><td class="type">uint16</td><td class="value">0x15A</td></tr>
-            <tr><td>m_fEmissiveFactor</td><td class="type">float32</td><td class="value">0x15C</td></tr>
+            <tr><td>m_mWorldFromLocal</td><td class="type">matrix3x4_t</td><td class="value">0x128</td></tr>
+            <tr><td>m_nVertexAlbedoFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x158</td></tr>
+            <tr><td>m_nVertexAlbedoVB</td><td class="type">int8</td><td class="value">0x159</td></tr>
+            <tr><td>m_nVertexAlbedoOffset</td><td class="type">uint16</td><td class="value">0x15A</td></tr>
+            <tr><td>m_nVertexAlbedoStride</td><td class="type">uint16</td><td class="value">0x15C</td></tr>
+            <tr><td>m_nVertexEmissiveFormat</td><td class="type">VertexAlbedoFormat_t</td><td class="value">0x15E</td></tr>
+            <tr><td>m_nVertexEmissiveVB</td><td class="type">int8</td><td class="value">0x15F</td></tr>
+            <tr><td>m_nVertexEmissiveOffset</td><td class="type">uint16</td><td class="value">0x160</td></tr>
+            <tr><td>m_nVertexEmissiveStride</td><td class="type">uint16</td><td class="value">0x162</td></tr>
+            <tr><td>m_fEmissiveFactor</td><td class="type">float32</td><td class="value">0x164</td></tr>
         </tbody>
     </table>
     <h3>Class: CNmLegacyEvent</h3>
@@ -7774,6 +7859,7 @@
             <tr><td>m_nTriangleOffset</td><td class="type">uint32</td><td class="value">0x10</td></tr>
             <tr><td>m_nVertexCount</td><td class="type">uint8</td><td class="value">0x14</td></tr>
             <tr><td>m_nTriangleCount</td><td class="type">uint8</td><td class="value">0x15</td></tr>
+            <tr><td>m_nBoneIndex</td><td class="type">uint16</td><td class="value">0x16</td></tr>
         </tbody>
     </table>
     <h3>Class: CMorphSetData</h3>
@@ -7876,6 +7962,19 @@
             <tr><td>m_flControlPoint2</td><td class="type">float32</td><td class="value">0x4</td></tr>
         </tbody>
     </table>
+    <h3>Class: CNmSkeleton::ContactConfig_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_ID</td><td class="type">CGlobalSymbol</td><td class="value">0x0</td></tr>
+            <tr><td>m_nBoneIdx</td><td class="type">int32</td><td class="value">0x8</td></tr>
+            <tr><td>m_vBoneLocalProbeDir</td><td class="type">Vector</td><td class="value">0xC</td></tr>
+            <tr><td>m_flProbeMaxDist</td><td class="type">float32</td><td class="value">0x18</td></tr>
+            <tr><td>m_audioInfo</td><td class="type">NmContactAudioInfo_t</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CNmGraphNode::CDefinition</h3>
     <table>
         <thead>
@@ -7944,6 +8043,19 @@
         </thead>
         <tbody>
             <tr><td>m_Value</td><td class="type">int16</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CNmContactEvent</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_configID</td><td class="type">CGlobalSymbol</td><td class="value">0x18</td></tr>
+            <tr><td>m_probeBoneID</td><td class="type">CGlobalSymbol</td><td class="value">0x20</td></tr>
+            <tr><td>m_vBoneLocalProbeDir</td><td class="type">Vector</td><td class="value">0x28</td></tr>
+            <tr><td>m_flProbeMaxDist</td><td class="type">float32</td><td class="value">0x34</td></tr>
+            <tr><td>m_audioInfo</td><td class="type">NmContactAudioInfo_t</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: CMovementHandshakeAnimTag</h3>
@@ -8056,6 +8168,29 @@
             <tr><td>m_decodeKey</td><td class="type">CAnimKeyData</td><td class="value">0x98</td></tr>
             <tr><td>m_szScripts</td><td class="type">CUtlVector<CBufferString></td><td class="value">0x110</td></tr>
             <tr><td>m_AdditionalExtRefs</td><td class="type">CUtlVector<CStrongHandleVoid></td><td class="value">0x128</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CPulse_TempVarInfo</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Name</td><td class="type">PulseSymbol_t</td><td class="value">0x0</td></tr>
+            <tr><td>m_Type</td><td class="type">CPulseValueFullType</td><td class="value">0x10</td></tr>
+            <tr><td>m_nEditorNodeID</td><td class="type">PulseDocNodeID_t</td><td class="value">0x28</td></tr>
+            <tr><td>m_bIsObservable</td><td class="type">bool</td><td class="value">0x2C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: NmContactAudioInfo_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_audioActionID</td><td class="type">CGlobalSymbol</td><td class="value">0x0</td></tr>
+            <tr><td>m_audioTypeID</td><td class="type">CGlobalSymbol</td><td class="value">0x8</td></tr>
+            <tr><td>m_soundeventOverrideID</td><td class="type">CGlobalSymbol</td><td class="value">0x10</td></tr>
         </tbody>
     </table>
     <h3>Class: NmSyncTrackTime_t</h3>
@@ -8320,10 +8455,10 @@
             <tr><td>m_sceneObjects</td><td class="type">CUtlLeanVectorFixedGrowable<CSceneObjectData,1></td><td class="value">0x10</td></tr>
             <tr><td>m_constraints</td><td class="type">CUtlLeanVector<CBaseConstraint*></td><td class="value">0xD0</td></tr>
             <tr><td>m_skeleton</td><td class="type">CRenderSkeleton</td><td class="value">0xE0</td></tr>
-            <tr><td>m_bUseUV2ForCharting</td><td class="type">bool</td><td class="value">0x1EC</td></tr>
-            <tr><td>m_bEmbeddedMapMesh</td><td class="type">bool</td><td class="value">0x1ED</td></tr>
-            <tr><td>m_meshDeformParams</td><td class="type">DynamicMeshDeformParams_t</td><td class="value">0x210</td></tr>
-            <tr><td>m_pGroomData</td><td class="type">CRenderGroom*</td><td class="value">0x220</td></tr>
+            <tr><td>m_bUseUV2ForCharting</td><td class="type">bool</td><td class="value">0x1F8</td></tr>
+            <tr><td>m_bEmbeddedMapMesh</td><td class="type">bool</td><td class="value">0x1F9</td></tr>
+            <tr><td>m_meshDeformParams</td><td class="type">DynamicMeshDeformParams_t</td><td class="value">0x220</td></tr>
+            <tr><td>m_pGroomData</td><td class="type">CRenderGroom*</td><td class="value">0x230</td></tr>
         </tbody>
     </table>
     <h3>Class: CAnimSkeleton</h3>
@@ -8362,17 +8497,41 @@
             <tr><td>m_flStartHeadingWS</td><td class="type">float32</td><td class="value">0x3C</td></tr>
         </tbody>
     </table>
+    <h3>Class: CNmBodyGroupNode::CDefinition</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nEnabledNodeIdx</td><td class="type">int16</td><td class="value">0x18</td></tr>
+            <tr><td>m_event</td><td class="type">CNmBodyGroupEvent</td><td class="value">0x20</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CNmTimeControlledClipNode::CDefinition</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_nPlayInReverseValueNodeIdx</td><td class="type">int16</td><td class="value">0x10</td></tr>
+            <tr><td>m_bSampleRootMotion</td><td class="type">bool</td><td class="value">0x12</td></tr>
+            <tr><td>m_nDataSlotIdx</td><td class="type">int16</td><td class="value">0x14</td></tr>
+            <tr><td>m_nTimeValueNodeIdx</td><td class="type">int16</td><td class="value">0x16</td></tr>
+            <tr><td>m_graphEvents</td><td class="type">CUtlVectorFixedGrowable<CGlobalSymbol,2></td><td class="value">0x18</td></tr>
+        </tbody>
+    </table>
     <h3>Class: VPhysics2ShapeDef_t</h3>
     <table>
         <thead>
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_spheres</td><td class="type">CUtlVector<RnSphereDesc_t></td><td class="value">0x0</td></tr>
-            <tr><td>m_capsules</td><td class="type">CUtlVector<RnCapsuleDesc_t></td><td class="value">0x18</td></tr>
-            <tr><td>m_hulls</td><td class="type">CUtlVector<RnHullDesc_t></td><td class="value">0x30</td></tr>
-            <tr><td>m_meshes</td><td class="type">CUtlVector<RnMeshDesc_t></td><td class="value">0x48</td></tr>
-            <tr><td>m_CollisionAttributeIndices</td><td class="type">CUtlVector<uint16></td><td class="value">0x60</td></tr>
+            <tr><td>m_spheres</td><td class="type">CUtlLeanVector<RnSphereDesc_t></td><td class="value">0x0</td></tr>
+            <tr><td>m_capsules</td><td class="type">CUtlLeanVector<RnCapsuleDesc_t></td><td class="value">0x10</td></tr>
+            <tr><td>m_hulls</td><td class="type">CUtlLeanVector<RnHullDesc_t></td><td class="value">0x20</td></tr>
+            <tr><td>m_meshes</td><td class="type">CUtlLeanVector<RnMeshDesc_t></td><td class="value">0x30</td></tr>
+            <tr><td>m_compounds</td><td class="type">CUtlLeanVector<RnCompoundDesc_t></td><td class="value">0x40</td></tr>
+            <tr><td>m_CollisionAttributeIndices</td><td class="type">CUtlVector<uint16></td><td class="value">0x50</td></tr>
         </tbody>
     </table>
     <h3>Class: CNmFloatCurveNode::CDefinition</h3>
@@ -8704,6 +8863,7 @@
             <tr><td>m_parameterNodeIdx</td><td class="type">int16</td><td class="value">0x30</td></tr>
             <tr><td>m_bIgnoreInvalidOptions</td><td class="type">bool</td><td class="value">0x32</td></tr>
             <tr><td>m_bIsWorldSpaceTarget</td><td class="type">bool</td><td class="value">0x33</td></tr>
+            <tr><td>m_alignmentBoneID</td><td class="type">CGlobalSymbol</td><td class="value">0x38</td></tr>
         </tbody>
     </table>
     <h3>Class: CPulse_RegisterInfo</h3>
@@ -8821,13 +8981,6 @@
             <tr><td>m_nEffectorBoneIdx</td><td class="type">int32</td><td class="value">0x70</td></tr>
             <tr><td>m_nEffectorTargetBoneIdx</td><td class="type">int32</td><td class="value">0x74</td></tr>
             <tr><td>m_targetTransform</td><td class="type">CTransform</td><td class="value">0x80</td></tr>
-            <tr><td>m_effectorTarget</td><td class="type">CNmTarget</td><td class="value">0xA0</td></tr>
-            <tr><td>m_blendMode</td><td class="type">NmIKBlendMode_t</td><td class="value">0xD0</td></tr>
-            <tr><td>m_flBlendWeight</td><td class="type">float32</td><td class="value">0xD4</td></tr>
-            <tr><td>m_bIsTargetInWorldSpace</td><td class="type">bool</td><td class="value">0xD8</td></tr>
-            <tr><td>m_bIsRunningFromDeserializedData</td><td class="type">bool</td><td class="value">0xD9</td></tr>
-            <tr><td>m_flChainRotationWeight</td><td class="type">float32</td><td class="value">0xDC</td></tr>
-            <tr><td>m_debugEffectorBoneID</td><td class="type">CGlobalSymbol</td><td class="value">0xE0</td></tr>
         </tbody>
     </table>
     <h3>Class: MotionBlendItem</h3>
@@ -8863,6 +9016,14 @@
             <tr><td>m_fMinValue</td><td class="type">float32</td><td class="value">0x84</td></tr>
             <tr><td>m_fMaxValue</td><td class="type">float32</td><td class="value">0x88</td></tr>
             <tr><td>m_bInterpolate</td><td class="type">bool</td><td class="value">0x8C</td></tr>
+        </tbody>
+    </table>
+    <h3>Class: CNmContactAudioActionVData</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
         </tbody>
     </table>
     <h3>Class: CStateActionUpdater</h3>
@@ -9221,6 +9382,15 @@
             <tr><td>m_flPrevCycle</td><td class="type">CAnimNetVar<float32></td><td class="value">0xC</td></tr>
         </tbody>
     </table>
+    <h3>Class: PulseRuntimeTempVarBankIndex_t</h3>
+    <table>
+        <thead>
+            <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>m_Value</td><td class="type">int16</td><td class="value">0x0</td></tr>
+        </tbody>
+    </table>
     <h3>Class: CMoverUpdateNode</h3>
     <table>
         <thead>
@@ -9466,6 +9636,7 @@
             <tr><td>m_nBiasType</td><td class="type">ParticleFloatBiasType_t</td><td class="value">0x124</td></tr>
             <tr><td>m_flBiasParameter</td><td class="type">float32</td><td class="value">0x128</td></tr>
             <tr><td>m_Curve</td><td class="type">CPiecewiseCurve</td><td class="value">0x130</td></tr>
+            <tr><td>m_flCompareValue</td><td class="type">float32</td><td class="value">0x170</td></tr>
         </tbody>
     </table>
     <h3>Class: SolveIKChainPoseOpFixedSettings_t</h3>
@@ -9690,7 +9861,8 @@
             <tr><td>m_bIsOffsetNode</td><td class="type">bool</td><td class="value">0x14</td></tr>
             <tr><td>m_bIsOffsetRelativeToCharacter</td><td class="type">bool</td><td class="value">0x15</td></tr>
             <tr><td>m_bWarpTranslation</td><td class="type">bool</td><td class="value">0x16</td></tr>
-            <tr><td>m_samplingMode</td><td class="type">CNmRootMotionData::SamplingMode_t</td><td class="value">0x17</td></tr>
+            <tr><td>m_alignmentMode</td><td class="type">CNmOrientationWarpNode::AlignmentMode_t</td><td class="value">0x17</td></tr>
+            <tr><td>m_samplingMode</td><td class="type">CNmRootMotionData::SamplingMode_t</td><td class="value">0x18</td></tr>
         </tbody>
     </table>
     <h3>Class: AnimParamID</h3>
@@ -9921,15 +10093,15 @@
             <tr><td>m_nFlags</td><td class="type">uint32</td><td class="value">0x0</td></tr>
             <tr><td>m_flMass</td><td class="type">float32</td><td class="value">0x4</td></tr>
             <tr><td>m_rnShape</td><td class="type">VPhysics2ShapeDef_t</td><td class="value">0x8</td></tr>
-            <tr><td>m_nCollisionAttributeIndex</td><td class="type">uint16</td><td class="value">0x80</td></tr>
-            <tr><td>m_nReserved</td><td class="type">uint16</td><td class="value">0x82</td></tr>
-            <tr><td>m_flInertiaScale</td><td class="type">float32</td><td class="value">0x84</td></tr>
-            <tr><td>m_flLinearDamping</td><td class="type">float32</td><td class="value">0x88</td></tr>
-            <tr><td>m_flAngularDamping</td><td class="type">float32</td><td class="value">0x8C</td></tr>
-            <tr><td>m_flLinearDrag</td><td class="type">float32</td><td class="value">0x90</td></tr>
-            <tr><td>m_flAngularDrag</td><td class="type">float32</td><td class="value">0x94</td></tr>
-            <tr><td>m_bOverrideMassCenter</td><td class="type">bool</td><td class="value">0x98</td></tr>
-            <tr><td>m_vMassCenterOverride</td><td class="type">Vector</td><td class="value">0x9C</td></tr>
+            <tr><td>m_nCollisionAttributeIndex</td><td class="type">uint16</td><td class="value">0x70</td></tr>
+            <tr><td>m_nReserved</td><td class="type">uint16</td><td class="value">0x72</td></tr>
+            <tr><td>m_flInertiaScale</td><td class="type">float32</td><td class="value">0x74</td></tr>
+            <tr><td>m_flLinearDamping</td><td class="type">float32</td><td class="value">0x78</td></tr>
+            <tr><td>m_flAngularDamping</td><td class="type">float32</td><td class="value">0x7C</td></tr>
+            <tr><td>m_flLinearDrag</td><td class="type">float32</td><td class="value">0x80</td></tr>
+            <tr><td>m_flAngularDrag</td><td class="type">float32</td><td class="value">0x84</td></tr>
+            <tr><td>m_bOverrideMassCenter</td><td class="type">bool</td><td class="value">0x88</td></tr>
+            <tr><td>m_vMassCenterOverride</td><td class="type">Vector</td><td class="value">0x8C</td></tr>
         </tbody>
     </table>
     <h3>Class: PulseRuntimeChunkIndex_t</h3>
@@ -10417,7 +10589,7 @@
         <tbody>
             <tr><td>m_target</td><td class="type">CNmEventTargetEntity_t</td><td class="value">0x18</td></tr>
             <tr><td>m_groupName</td><td class="type">CUtlString</td><td class="value">0x20</td></tr>
-            <tr><td>m_nGroupValue</td><td class="type">int32</td><td class="value">0x28</td></tr>
+            <tr><td>m_choiceName</td><td class="type">CUtlString</td><td class="value">0x28</td></tr>
         </tbody>
     </table>
     <h3>Class: CWayPointHelperUpdateNode</h3>
@@ -10463,6 +10635,8 @@
             <tr><td>m_bUserSpecifiedMaterialGroup</td><td class="type">bool</td><td class="value">0x8E</td></tr>
             <tr><td>m_BodygroupOnOtherModels</td><td class="type">CUtlString</td><td class="value">0x90</td></tr>
             <tr><td>m_MaterialGroupOnOtherModels</td><td class="type">CUtlString</td><td class="value">0x98</td></tr>
+            <tr><td>m_bCollideWithHierarchy</td><td class="type">bool</td><td class="value">0xA0</td></tr>
+            <tr><td>m_bCollideOutsideHierarchy</td><td class="type">bool</td><td class="value">0xA1</td></tr>
         </tbody>
     </table>
     <h3>Class: CAnimTagManagerUpdater</h3>

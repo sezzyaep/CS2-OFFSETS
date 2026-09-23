@@ -220,47 +220,51 @@
       "CSndBeatPattern": {
         "fields": {
           "m_bLooping": {
-            "offset": 32,
+            "offset": 36,
             "type": "bool"
           },
           "m_flLength": {
-            "offset": 28,
+            "offset": 32,
             "type": "float32"
           },
           "m_flPlayBeatMult": {
-            "offset": 48,
+            "offset": 44,
             "type": "float32"
           },
           "m_flSyncBeatMult": {
-            "offset": 40,
+            "offset": 156,
             "type": "float32"
           },
           "m_flSyncPriority": {
-            "offset": 16,
-            "type": "float32"
-          },
-          "m_keyType": {
-            "offset": 52,
-            "type": "SndBeatKeyType_t"
-          },
-          "m_launchSyncEventType": {
-            "offset": 36,
-            "type": "SndBeatEventType_t"
-          },
-          "m_launchSyncType": {
             "offset": 12,
-            "type": "SndBeatLaunchSyncType_t"
+            "type": "float32"
           },
           "m_name": {
             "offset": 0,
             "type": "CUtlString"
           },
           "m_playEventType": {
-            "offset": 44,
+            "offset": 40,
             "type": "SndBeatEventType_t"
           },
-          "m_timeSignature": {
+          "m_playKeyType": {
+            "offset": 48,
+            "type": "SndBeatKeyType_t"
+          },
+          "m_syncEventType": {
+            "offset": 152,
+            "type": "SndBeatEventType_t"
+          },
+          "m_syncStartType": {
+            "offset": 16,
+            "type": "SndBeatSyncStartType_t"
+          },
+          "m_syncType": {
             "offset": 20,
+            "type": "SndBeatSyncType_t"
+          },
+          "m_timeSignature": {
+            "offset": 24,
             "type": "SndBeatTimeSignature_t"
           },
           "m_vecPatternFloats": {
@@ -278,6 +282,10 @@
           "m_vecPatternSndEvts": {
             "offset": 104,
             "type": "CUtlVector<SndBeatEventKeyedSndEvts_t>"
+          },
+          "m_vecSyncPatternKeys": {
+            "offset": 160,
+            "type": "CUtlVector<SndBeatEventKeys_t>"
           }
         },
         "metadata": [
@@ -968,13 +976,8 @@
         ],
         "parent": null
       },
-      "CSoundEventMetaData": {
-        "fields": {
-          "m_soundEventVMix": {
-            "offset": 0,
-            "type": "CStrongHandle<InfoForResourceTypeCVMixListResource>"
-          }
-        },
+      "CSoundInfoHeader": {
+        "fields": {},
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -983,7 +986,7 @@
         ],
         "parent": null
       },
-      "CSoundInfoHeader": {
+      "CSubmix": {
         "fields": {},
         "metadata": [
           {
@@ -1014,6 +1017,10 @@
             "offset": 8,
             "type": "CUtlString"
           },
+          "m_nDebugId": {
+            "offset": 16,
+            "type": "uint32"
+          },
           "m_name": {
             "offset": 0,
             "type": "CUtlString"
@@ -1030,7 +1037,7 @@
       "CVMixAutoFilterProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixAutoFilterDesc_t"
           }
         },
@@ -1044,16 +1051,12 @@
       },
       "CVMixAutomaticControlInput": {
         "fields": {
-          "m_bIsStackVar": {
-            "offset": 13,
-            "type": "bool"
+          "m_nControlType": {
+            "offset": 16,
+            "type": "VMixAutoControlType_t"
           },
-          "m_bIsTrackSend": {
+          "m_nGraphInputIndex": {
             "offset": 12,
-            "type": "bool"
-          },
-          "m_nControlInputIndex": {
-            "offset": 8,
             "type": "int32"
           },
           "m_name": {
@@ -1069,19 +1072,106 @@
         ],
         "parent": null
       },
+      "CVMixBaseGraphDescription": {
+        "fields": {
+          "m_additionalOutputs": {
+            "offset": 176,
+            "type": "CUtlLeanVector<CVMixAdditionalOutput>"
+          },
+          "m_audioMeters": {
+            "offset": 128,
+            "type": "CUtlLeanVector<CVMixAudioMeter>"
+          },
+          "m_automaticControlInputs": {
+            "offset": 192,
+            "type": "CUtlLeanVector<CVMixAutomaticControlInput>"
+          },
+          "m_bIsMainGraph": {
+            "offset": 12,
+            "type": "bool"
+          },
+          "m_controlMeters": {
+            "offset": 144,
+            "type": "CUtlLeanVector<CVMixControlMeter>"
+          },
+          "m_controlOutputs": {
+            "offset": 64,
+            "type": "CUtlLeanVector<CVMixControlOutput>"
+          },
+          "m_controlTransientInputs": {
+            "offset": 48,
+            "type": "CUtlLeanVector<CVMixControlInput>"
+          },
+          "m_graphInputs": {
+            "offset": 32,
+            "type": "CUtlLeanVector<CVMixGraphInput>"
+          },
+          "m_heap": {
+            "offset": 112,
+            "type": "CVMixHeap"
+          },
+          "m_impulseResponseInputs": {
+            "offset": 80,
+            "type": "CUtlLeanVector<CVMixImpulseResponseInput>"
+          },
+          "m_mixCommands": {
+            "offset": 96,
+            "type": "CUtlLeanVector<CVMixCommand>"
+          },
+          "m_nGraphOutputChannels": {
+            "offset": 8,
+            "type": "int32"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
+          },
+          "m_nameInputMeters": {
+            "offset": 160,
+            "type": "CUtlLeanVector<CVMixNameInputMeter>"
+          },
+          "m_processorNodes": {
+            "offset": 16,
+            "type": "CUtlLeanVector<std::unique_ptr<CVMixBaseProcessorDesc>>"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
       "CVMixBaseProcessorDesc": {
         "fields": {
+          "m_bDebugBypass": {
+            "offset": 28,
+            "type": "bool"
+          },
           "m_flxfade": {
-            "offset": 24,
+            "offset": 20,
             "type": "float32"
           },
           "m_nChannels": {
-            "offset": 20,
+            "offset": 24,
             "type": "int32"
+          },
+          "m_nDebugId": {
+            "offset": 16,
+            "type": "uint32"
           },
           "m_name": {
             "offset": 8,
             "type": "CUtlString"
+          },
+          "m_paramEnable": {
+            "offset": 32,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramMix": {
+            "offset": 36,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1095,7 +1185,7 @@
       "CVMixBoxverb2ProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixBoxverbDesc_t"
           }
         },
@@ -1110,7 +1200,7 @@
       "CVMixBoxverbProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixBoxverbDesc_t"
           }
         },
@@ -1130,23 +1220,23 @@
           },
           "m_nInputSubmix0": {
             "offset": 12,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           },
           "m_nInputSubmix1": {
             "offset": 16,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           },
           "m_nInputValue0": {
             "offset": 24,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           },
           "m_nInputValue1": {
             "offset": 28,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           },
           "m_nOutputSubmix": {
             "offset": 8,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           },
           "m_nParameterNameHash": {
             "offset": 4,
@@ -1180,26 +1270,11 @@
         ],
         "parent": null
       },
-      "CVMixControlInputArray": {
-        "fields": {
-          "m_nArrayIndex": {
-            "offset": 16,
-            "type": "int32"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
       "CVMixControlMeter": {
         "fields": {
           "m_nValueIndex": {
             "offset": 16,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           }
         },
         "metadata": [
@@ -1228,8 +1303,12 @@
       "CVMixConvolutionProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixConvolutionDesc_t"
+          },
+          "m_paramImpulseResponse": {
+            "offset": 72,
+            "type": "CVMixDataOffset"
           }
         },
         "metadata": [
@@ -1240,30 +1319,56 @@
         ],
         "parent": null
       },
-      "CVMixCurveHeader": {
+      "CVMixDataOffset": {
         "fields": {
-          "m_nControlPointCount": {
+          "m_nOffset": {
             "offset": 0,
-            "type": "uint32"
-          },
-          "m_nControlPointStart": {
-            "offset": 4,
             "type": "uint32"
           }
         },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
+        "metadata": [],
         "parent": null
       },
       "CVMixDelayProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDelayDesc_t"
+          },
+          "m_paramCutoffFrequency": {
+            "offset": 80,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDelay": {
+            "offset": 84,
+            "type": "CVMixParameterFloat"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixDescription": {
+        "fields": {
+          "m_impulseResponseValues": {
+            "offset": 240,
+            "type": "CUtlLeanVector<uint64>"
+          },
+          "m_nNameHashCode": {
+            "offset": 256,
+            "type": "uint32"
+          },
+          "m_sources": {
+            "offset": 224,
+            "type": "CUtlLeanVector<std::unique_ptr<CVoiceContainerBase>>"
+          },
+          "m_submixList": {
+            "offset": 208,
+            "type": "CUtlLeanVector<CSubmix>"
           }
         },
         "metadata": [
@@ -1277,7 +1382,7 @@
       "CVMixDiffusorProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDiffusorDesc_t"
           }
         },
@@ -1292,8 +1397,20 @@
       "CVMixDualCompressorProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDualCompressorDesc_t"
+          },
+          "m_outParamLevel": {
+            "offset": 92,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamReduction": {
+            "offset": 100,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamdBLevel": {
+            "offset": 96,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1307,7 +1424,7 @@
       "CVMixDynamics3BandProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDynamics3BandDesc_t"
           }
         },
@@ -1322,8 +1439,20 @@
       "CVMixDynamicsCompressorProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDynamicsCompressorDesc_t"
+          },
+          "m_outParamLevel": {
+            "offset": 80,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamReduction": {
+            "offset": 88,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamdBLevel": {
+            "offset": 84,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1337,8 +1466,16 @@
       "CVMixDynamicsProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixDynamicsDesc_t"
+          },
+          "m_outParamLevel": {
+            "offset": 88,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamdBLevel": {
+            "offset": 92,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1352,8 +1489,12 @@
       "CVMixEQ8ProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixEQ8Desc_t"
+          },
+          "m_paramEQScale": {
+            "offset": 200,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1367,8 +1508,12 @@
       "CVMixEffectChainProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixEffectChainDesc_t"
+          },
+          "m_paramEffectName": {
+            "offset": 48,
+            "type": "CVMixParameterEffectName"
           }
         },
         "metadata": [
@@ -1382,8 +1527,16 @@
       "CVMixEnvelopeProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixEnvelopeDesc_t"
+          },
+          "m_outParamLevel": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_outParamdBLevel": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1397,8 +1550,16 @@
       "CVMixFilterProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixFilterDesc_t"
+          },
+          "m_paramCutoffFreq": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramQ": {
+            "offset": 60,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1412,8 +1573,20 @@
       "CVMixFlangerProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixFlangerDesc_t"
+          },
+          "m_paramDelay": {
+            "offset": 76,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramModDepth": {
+            "offset": 84,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramModRate": {
+            "offset": 80,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1427,7 +1600,7 @@
       "CVMixFreeverbProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixFreeverbDesc_t"
           }
         },
@@ -1439,19 +1612,26 @@
         ],
         "parent": null
       },
-      "CVMixGraphDescData": {
+      "CVMixGraphInput": {
         "fields": {
-          "m_bIsMainGraph": {
-            "offset": 12,
-            "type": "bool"
-          },
-          "m_nGraphOutputChannels": {
-            "offset": 8,
-            "type": "int32"
-          },
-          "m_name": {
+          "m_nOffset": {
+            "offset": 16,
+            "type": "CVMixDataOffset"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixHeap": {
+        "fields": {
+          "m_storage": {
             "offset": 0,
-            "type": "CUtlString"
+            "type": "CUtlLeanVector<uint32>"
           }
         },
         "metadata": [
@@ -1490,23 +1670,24 @@
       "CVMixModDelayProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixModDelayDesc_t"
-          }
-        },
-        "metadata": [
-          {
-            "name": "MGetKV3ClassDefaults",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
-      "CVMixNameInput": {
-        "fields": {
-          "m_defaultValue": {
-            "offset": 16,
-            "type": "CUtlString"
+          },
+          "m_paramCutoffFrequency": {
+            "offset": 88,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDelay": {
+            "offset": 92,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramModDepth": {
+            "offset": 100,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramModRate": {
+            "offset": 96,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1521,7 +1702,7 @@
         "fields": {
           "m_nValueIndex": {
             "offset": 16,
-            "type": "int32"
+            "type": "CVMixDataOffset"
           }
         },
         "metadata": [
@@ -1535,8 +1716,16 @@
       "CVMixOscProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixOscDesc_t"
+          },
+          "m_paramFrequency": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPhase": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1550,8 +1739,57 @@
       "CVMixPannerProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixPannerDesc_t"
+          },
+          "m_paramPan": {
+            "offset": 48,
+            "type": "CVMixParameterFloat"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixParameterBool": {
+        "fields": {
+          "m_offset": {
+            "offset": 0,
+            "type": "CVMixDataOffset"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixParameterEffectName": {
+        "fields": {
+          "m_offset": {
+            "offset": 0,
+            "type": "CVMixDataOffset"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixParameterFloat": {
+        "fields": {
+          "m_offset": {
+            "offset": 0,
+            "type": "CVMixDataOffset"
           }
         },
         "metadata": [
@@ -1565,8 +1803,12 @@
       "CVMixPitchShiftProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixPitchShiftDesc_t"
+          },
+          "m_paramPitchScale": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1580,7 +1822,7 @@
       "CVMixPlateReverbProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixPlateverbDesc_t"
           }
         },
@@ -1595,8 +1837,43 @@
       "CVMixPresetDSPProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixPresetDSPDesc_t"
+          },
+          "m_paramEffectName": {
+            "offset": 56,
+            "type": "CVMixParameterEffectName"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixRuntimeGraph": {
+        "fields": {
+          "m_fixups": {
+            "offset": 272,
+            "type": "CUtlVector<VMixPointerFixupEntry_t>"
+          },
+          "m_impulseResponseValues": {
+            "offset": 224,
+            "type": "CUtlLeanVector<uint64>"
+          },
+          "m_inputDefaultValues": {
+            "offset": 240,
+            "type": "KeyValues3"
+          },
+          "m_sources": {
+            "offset": 256,
+            "type": "KeyValues3"
+          },
+          "m_submixes": {
+            "offset": 208,
+            "type": "CUtlLeanVector<CVMixSubmix>"
           }
         },
         "metadata": [
@@ -1610,8 +1887,12 @@
       "CVMixShaperProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixShaperDesc_t"
+          },
+          "m_paramDrive": {
+            "offset": 60,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1623,7 +1904,108 @@
         "parent": null
       },
       "CVMixSteamAudioDirectProcessorDesc": {
-        "fields": {},
+        "fields": {
+          "m_paramAheadX": {
+            "offset": 76,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramAheadY": {
+            "offset": 80,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramAheadZ": {
+            "offset": 84,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramApplyAirAbsorption": {
+            "offset": 92,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramApplyDirectivity": {
+            "offset": 96,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramApplyDistanceAttenuation": {
+            "offset": 88,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramApplyOcclusion": {
+            "offset": 100,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramApplyTransmission": {
+            "offset": 104,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramBand": {
+            "offset": 132,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDipolePower": {
+            "offset": 112,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDipoleWeight": {
+            "offset": 108,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramOcclusion": {
+            "offset": 116,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionX": {
+            "offset": 40,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionY": {
+            "offset": 44,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionZ": {
+            "offset": 48,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramRightX": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramRightY": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramRightZ": {
+            "offset": 60,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramTransmission": {
+            "offset": 136,
+            "type": "CVMixDataOffset"
+          },
+          "m_paramTransmissionHigh": {
+            "offset": 128,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramTransmissionLow": {
+            "offset": 120,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramTransmissionMid": {
+            "offset": 124,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramUpX": {
+            "offset": 64,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramUpY": {
+            "offset": 68,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramUpZ": {
+            "offset": 72,
+            "type": "CVMixParameterFloat"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -1633,7 +2015,44 @@
         "parent": null
       },
       "CVMixSteamAudioHRTFProcessorDesc": {
-        "fields": {},
+        "fields": {
+          "m_paramDelayLeft": {
+            "offset": 68,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDelayRight": {
+            "offset": 72,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDirectMixLevel": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramInterpolation": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPerspectiveCorrection": {
+            "offset": 60,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionX": {
+            "offset": 40,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionY": {
+            "offset": 44,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionZ": {
+            "offset": 48,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramRelativePosition": {
+            "offset": 64,
+            "type": "CVMixParameterFloat"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -1643,7 +2062,28 @@
         "parent": null
       },
       "CVMixSteamAudioHybridReverbProcessorDesc": {
-        "fields": {},
+        "fields": {
+          "m_paramBand": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramReverbTime": {
+            "offset": 56,
+            "type": "CVMixDataOffset"
+          },
+          "m_paramReverbTimeHigh": {
+            "offset": 48,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramReverbTimeLow": {
+            "offset": 40,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramReverbTimeMid": {
+            "offset": 44,
+            "type": "CVMixParameterFloat"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -1653,7 +2093,36 @@
         "parent": null
       },
       "CVMixSteamAudioPathingProcessorDesc": {
-        "fields": {},
+        "fields": {
+          "m_paramArrayPathingCoefficients": {
+            "offset": 64,
+            "type": "CVMixDataOffset"
+          },
+          "m_paramArrayPathingEQ": {
+            "offset": 60,
+            "type": "CVMixDataOffset"
+          },
+          "m_paramBand": {
+            "offset": 56,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPathingMixLevel": {
+            "offset": 52,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionX": {
+            "offset": 40,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionY": {
+            "offset": 44,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramPositionZ": {
+            "offset": 48,
+            "type": "CVMixParameterFloat"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -1663,7 +2132,16 @@
         "parent": null
       },
       "CVMixStereoDelayProcessorDesc": {
-        "fields": {},
+        "fields": {
+          "m_paramDelayLeft": {
+            "offset": 40,
+            "type": "CVMixParameterFloat"
+          },
+          "m_paramDelayRight": {
+            "offset": 44,
+            "type": "CVMixParameterFloat"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -1675,8 +2153,51 @@
       "CVMixSubgraphSwitchProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixSubgraphSwitchDesc_t"
+          },
+          "m_paramEffectName": {
+            "offset": 96,
+            "type": "CVMixParameterEffectName"
+          },
+          "m_paramSelectionIndex": {
+            "offset": 100,
+            "type": "CVMixParameterFloat"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "CVMixSubmix": {
+        "fields": {
+          "m_SendNames": {
+            "offset": 8,
+            "type": "CUtlString[4]"
+          },
+          "m_nChannels": {
+            "offset": 48,
+            "type": "int32"
+          },
+          "m_nMixDownRule": {
+            "offset": 54,
+            "type": "VMixMixDownRule_t"
+          },
+          "m_nSendOperator": {
+            "offset": 52,
+            "type": "VMixSendOperator_t"
+          },
+          "m_nSoloNameHash": {
+            "offset": 44,
+            "type": "uint32"
+          },
+          "m_name": {
+            "offset": 0,
+            "type": "CUtlString"
           }
         },
         "metadata": [
@@ -1690,7 +2211,7 @@
       "CVMixUtilityProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixUtilityDesc_t"
           }
         },
@@ -1705,8 +2226,12 @@
       "CVMixVocoderProcessorDesc": {
         "fields": {
           "m_desc": {
-            "offset": 32,
+            "offset": 40,
             "type": "VMixVocoderDesc_t"
+          },
+          "m_paramBandwidth": {
+            "offset": 80,
+            "type": "CVMixParameterFloat"
           }
         },
         "metadata": [
@@ -1720,12 +2245,8 @@
       "CVMixVsndInput": {
         "fields": {
           "m_defaultValue": {
-            "offset": 16,
+            "offset": 0,
             "type": "CUtlString"
-          },
-          "m_nProcessor": {
-            "offset": 24,
-            "type": "int32"
           }
         },
         "metadata": [
@@ -2028,6 +2549,10 @@
       },
       "CVoiceContainerGranulator": {
         "fields": {
+          "m_bDoubleBufferSourceAudio": {
+            "offset": 160,
+            "type": "bool"
+          },
           "m_bShouldWraparound": {
             "offset": 144,
             "type": "bool"
@@ -2038,6 +2563,10 @@
           },
           "m_flGrainLength": {
             "offset": 128,
+            "type": "float32"
+          },
+          "m_flMaxSourceLength": {
+            "offset": 164,
             "type": "float32"
           },
           "m_flPlaybackJitter": {
@@ -3480,8 +4009,12 @@
       },
       "VMixDynamicsCompressorDesc_t": {
         "fields": {
+          "m_bAutoMakeupGain": {
+            "offset": 37,
+            "type": "bool"
+          },
           "m_bPeakMode": {
-            "offset": 32,
+            "offset": 36,
             "type": "bool"
           },
           "m_flAttackTimeMS": {
@@ -3498,6 +4031,10 @@
           },
           "m_flReleaseTimeMS": {
             "offset": 20,
+            "type": "float32"
+          },
+          "m_flSCHighPassFreq": {
+            "offset": 32,
             "type": "float32"
           },
           "m_flWetMix": {
@@ -3588,7 +4125,22 @@
         "fields": {
           "m_stages": {
             "offset": 0,
-            "type": "VMixFilterDesc_t[8]"
+            "type": "VMixEQFilterDesc_t[8]"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "VMixEQFilterDesc_t": {
+        "fields": {
+          "m_nChannelSet": {
+            "offset": 16,
+            "type": "VMixFilterChannelSet_t"
           }
         },
         "metadata": [
@@ -3640,27 +4192,27 @@
       "VMixFilterDesc_t": {
         "fields": {
           "m_bEnabled": {
-            "offset": 3,
+            "offset": 14,
             "type": "bool"
           },
           "m_flCutoffFreq": {
-            "offset": 8,
-            "type": "float32"
-          },
-          "m_flQ": {
-            "offset": 12,
-            "type": "float32"
-          },
-          "m_fldbGain": {
             "offset": 4,
             "type": "float32"
           },
+          "m_flQ": {
+            "offset": 8,
+            "type": "float32"
+          },
+          "m_fldbGain": {
+            "offset": 0,
+            "type": "float32"
+          },
           "m_nFilterSlope": {
-            "offset": 2,
+            "offset": 13,
             "type": "VMixFilterSlope_t"
           },
           "m_nFilterType": {
-            "offset": 0,
+            "offset": 12,
             "type": "VMixFilterType_t"
           }
         },
@@ -3891,6 +4443,25 @@
           "m_flPrefilter": {
             "offset": 0,
             "type": "float32"
+          }
+        },
+        "metadata": [
+          {
+            "name": "MGetKV3ClassDefaults",
+            "type": "Unknown"
+          }
+        ],
+        "parent": null
+      },
+      "VMixPointerFixupEntry_t": {
+        "fields": {
+          "m_nIndex": {
+            "offset": 0,
+            "type": "uint32"
+          },
+          "m_offset": {
+            "offset": 4,
+            "type": "CVMixDataOffset"
           }
         },
         "metadata": [
@@ -4190,16 +4761,6 @@
         },
         "type": "uint32"
       },
-      "SndBeatLaunchSyncType_t": {
-        "alignment": 4,
-        "members": {
-          "eSndBeatLaunchSyncTypeInvalid": 0,
-          "eSndBeatLaunchSyncTypeQueue": 1,
-          "eSndBeatLaunchSyncTypeReset": 3,
-          "eSndBeatLaunchSyncTypeSeek": 2
-        },
-        "type": "uint32"
-      },
       "SndBeatMidiStatusType_t": {
         "alignment": 4,
         "members": {
@@ -4210,6 +4771,24 @@
           "SndSeqMidiStatusNoteOn": 9,
           "SndSeqMidiStatusPitchBend": 14,
           "SndSeqMidiStatusProgramChange": 12
+        },
+        "type": "uint32"
+      },
+      "SndBeatSyncStartType_t": {
+        "alignment": 4,
+        "members": {
+          "eSndBeatSyncStartTypeImmediate": 1,
+          "eSndBeatSyncStartTypeInvalid": 0,
+          "eSndBeatSyncStartTypeQueue": 2
+        },
+        "type": "uint32"
+      },
+      "SndBeatSyncType_t": {
+        "alignment": 4,
+        "members": {
+          "eSndBeatSyncTypeInvalid": 0,
+          "eSndBeatSyncTypeReset": 1,
+          "eSndBeatSyncTypeSeekImmediate": 2
         },
         "type": "uint32"
       },
@@ -4284,6 +4863,26 @@
         },
         "type": "uint32"
       },
+      "VMixAutoControlType_t": {
+        "alignment": 1,
+        "members": {
+          "VMIX_AUTO_DISTANCE": 3,
+          "VMIX_AUTO_LISTENER_PITCH_COS": 11,
+          "VMIX_AUTO_LISTENER_PITCH_SIN": 10,
+          "VMIX_AUTO_LISTENER_ROLL_COS": 13,
+          "VMIX_AUTO_LISTENER_ROLL_SIN": 12,
+          "VMIX_AUTO_LISTENER_YAW_COS": 9,
+          "VMIX_AUTO_LISTENER_YAW_SIN": 8,
+          "VMIX_AUTO_PLAYTIME": 2,
+          "VMIX_AUTO_POSITION_VECTOR": 7,
+          "VMIX_AUTO_POSITION_X": 4,
+          "VMIX_AUTO_POSITION_Y": 5,
+          "VMIX_AUTO_POSITION_Z": 6,
+          "VMIX_AUTO_SEND_LEVEL": 0,
+          "VMIX_AUTO_STACK_VAR": 1
+        },
+        "type": "uint8"
+      },
       "VMixChannelOperation_t": {
         "alignment": 4,
         "members": {
@@ -4295,6 +4894,18 @@
           "VMIX_CHAN_SWAP": 3
         },
         "type": "uint32"
+      },
+      "VMixFilterChannelSet_t": {
+        "alignment": 1,
+        "members": {
+          "FILTER_ALL_CHANNELS": 0,
+          "FILTER_CHANNEL_SET_MAX": 5,
+          "FILTER_LEFT_ONLY": 1,
+          "FILTER_MID_ONLY": 3,
+          "FILTER_RIGHT_ONLY": 2,
+          "FILTER_SIDE_ONLY": 4
+        },
+        "type": "uint8"
       },
       "VMixFilterSlope_t": {
         "alignment": 1,
@@ -4312,7 +4923,7 @@
         "type": "uint8"
       },
       "VMixFilterType_t": {
-        "alignment": 2,
+        "alignment": 1,
         "members": {
           "FILTER_ALLPASS": 7,
           "FILTER_BANDPASS": 2,
@@ -4325,51 +4936,45 @@
           "FILTER_PEAKING_EQ": 4,
           "FILTER_UNKNOWN": -1
         },
-        "type": "uint16"
+        "type": "uint8"
       },
       "VMixGraphCommandID_t": {
         "alignment": 4,
         "members": {
-          "CMD_BLEND_VSNDS_TO_IMPULSERESPONSE": 38,
-          "CMD_CONTROL_COND_COPY_IF_NEGATIVE": 8,
-          "CMD_CONTROL_COPY": 7,
-          "CMD_CONTROL_EVALUATE_CURVE": 6,
-          "CMD_CONTROL_EVAL_ENVELOPE": 15,
-          "CMD_CONTROL_INCREMENT_TIMER": 14,
-          "CMD_CONTROL_INPUT_STORE": 1,
-          "CMD_CONTROL_INPUT_STORE_DB": 2,
-          "CMD_CONTROL_MAX": 12,
-          "CMD_CONTROL_OUTPUT_STORE": 5,
-          "CMD_CONTROL_REMAP_LINEAR": 9,
-          "CMD_CONTROL_REMAP_LOGLINEAR": 11,
-          "CMD_CONTROL_REMAP_SINE": 10,
-          "CMD_CONTROL_RESET_TIMER": 13,
-          "CMD_CONTROL_SINE_BLEND": 16,
-          "CMD_CONTROL_TRANSIENT_INPUT_RESET": 4,
-          "CMD_CONTROL_TRANSIENT_INPUT_STORE": 3,
-          "CMD_IMPULSERESPONSE_DELAY": 39,
-          "CMD_IMPULSERESPONSE_INPUT_STORE": 34,
-          "CMD_IMPULSERESPONSE_RESET": 37,
+          "CMD_BLEND_VSNDS_TO_IMPULSERESPONSE": 32,
+          "CMD_CONTROL_COND_COPY_IF_NEGATIVE": 7,
+          "CMD_CONTROL_CONVERT_DB_TO_GAIN": 1,
+          "CMD_CONTROL_COPY": 6,
+          "CMD_CONTROL_EVALUATE_CURVE": 5,
+          "CMD_CONTROL_EVAL_ENVELOPE": 14,
+          "CMD_CONTROL_INCREMENT_TIMER": 13,
+          "CMD_CONTROL_MAX": 11,
+          "CMD_CONTROL_OUTPUT_STORE": 4,
+          "CMD_CONTROL_REMAP_LINEAR": 8,
+          "CMD_CONTROL_REMAP_LOGLINEAR": 10,
+          "CMD_CONTROL_REMAP_SINE": 9,
+          "CMD_CONTROL_RESET_TIMER": 12,
+          "CMD_CONTROL_SINE_BLEND": 15,
+          "CMD_CONTROL_TRANSIENT_INPUT_RESET": 3,
+          "CMD_CONTROL_TRANSIENT_INPUT_STORE": 2,
+          "CMD_IMPULSERESPONSE_DELAY": 33,
+          "CMD_IMPULSERESPONSE_INPUT_STORE": 28,
+          "CMD_IMPULSERESPONSE_RESET": 31,
           "CMD_INVALID": -1,
-          "CMD_PROCESSOR_SET_CONTROL_ARRAYVALUE": 19,
-          "CMD_PROCESSOR_SET_CONTROL_VALUE": 17,
-          "CMD_PROCESSOR_SET_IMPULSERESPONSE_VALUE": 35,
-          "CMD_PROCESSOR_SET_NAME_INPUT": 18,
-          "CMD_PROCESSOR_SET_VSND_VALUE": 21,
-          "CMD_PROCESSOR_STORE_CONTROL_VALUE": 20,
-          "CMD_REMAP_VSND_TO_IMPULSERESPONSE": 36,
-          "CMD_SUBMIX_ACCUMULATE": 31,
-          "CMD_SUBMIX_COPY": 30,
-          "CMD_SUBMIX_DEBUG": 26,
-          "CMD_SUBMIX_EXTRACTCONTAINER": 25,
-          "CMD_SUBMIX_GENERATE": 23,
-          "CMD_SUBMIX_GENERATE_SIDECHAIN": 24,
-          "CMD_SUBMIX_METER": 32,
-          "CMD_SUBMIX_METER_SPECTRUM": 33,
-          "CMD_SUBMIX_MIX2x1": 27,
-          "CMD_SUBMIX_OUTPUT": 28,
-          "CMD_SUBMIX_OUTPUTx2": 29,
-          "CMD_SUBMIX_PROCESS": 22
+          "CMD_PROCESSOR_SET_IMPULSERESPONSE_VALUE": 29,
+          "CMD_REMAP_VSND_TO_IMPULSERESPONSE": 30,
+          "CMD_SUBMIX_ACCUMULATE": 25,
+          "CMD_SUBMIX_COPY": 24,
+          "CMD_SUBMIX_DEBUG": 20,
+          "CMD_SUBMIX_EXTRACTCONTAINER": 19,
+          "CMD_SUBMIX_GENERATE": 17,
+          "CMD_SUBMIX_GENERATE_SIDECHAIN": 18,
+          "CMD_SUBMIX_METER": 26,
+          "CMD_SUBMIX_METER_SPECTRUM": 27,
+          "CMD_SUBMIX_MIX2x1": 21,
+          "CMD_SUBMIX_OUTPUT": 22,
+          "CMD_SUBMIX_OUTPUTx2": 23,
+          "CMD_SUBMIX_PROCESS": 16
         },
         "type": "uint32"
       },
@@ -4384,6 +4989,46 @@
         },
         "type": "uint32"
       },
+      "VMixMixDownRule_t": {
+        "alignment": 1,
+        "members": {
+          "LEFT": 1,
+          "MID": 3,
+          "RIGHT": 2,
+          "SIDE": 4,
+          "SUM": 0
+        },
+        "type": "uint8"
+      },
+      "VMixOffsetCategory_t": {
+        "alignment": 4,
+        "members": {
+          "HEAP_OFFSET": 1,
+          "INPUT_INDEX": 2,
+          "NULL_POINTER": 0,
+          "SUBMIX_INDEX": 3
+        },
+        "type": "uint32"
+      },
+      "VMixOffsetType_t": {
+        "alignment": 4,
+        "members": {
+          "VO_ARRAY": 1,
+          "VO_BOOL": 2,
+          "VO_CHAR": 0,
+          "VO_CUBIC_SPLINE": 8,
+          "VO_FLOAT": 3,
+          "VO_FLOAT_UTLVECTOR": 10,
+          "VO_INT32": 5,
+          "VO_QUATERNION": 7,
+          "VO_SHAREDPTR_IR": 11,
+          "VO_TYPE_COUNT": 12,
+          "VO_UINT32": 4,
+          "VO_VECTOR": 6,
+          "VO_VSND_INPUT": 9
+        },
+        "type": "uint32"
+      },
       "VMixPannerType_t": {
         "alignment": 4,
         "members": {
@@ -4391,6 +5036,22 @@
           "PANNER_TYPE_LINEAR": 0
         },
         "type": "uint32"
+      },
+      "VMixSendOperator_t": {
+        "alignment": 2,
+        "members": {
+          "ALL_MAX_SEND": 7,
+          "ALL_VOICES": 0,
+          "FACING_VOICES": 2,
+          "INVERSE_NAMED_SENDS": 5,
+          "INVERSE_TOTAL_SEND": 6,
+          "MIXGROUP_VOICES": 3,
+          "NAMED_SEND": 4,
+          "NO_VOICES": -1,
+          "ROOM_VOICES": 1,
+          "TRACK": 8
+        },
+        "type": "uint16"
       },
       "VMixSubgraphSwitchInterpolationType_t": {
         "alignment": 4,
