@@ -810,16 +810,16 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_activeLightParticleIndex</td><td class="type">ParticleIndex_t</td><td class="value">0x1F10</td></tr>
-            <tr><td>m_eActiveLightEffect</td><td class="type">C4LightEffect_t</td><td class="value">0x1F14</td></tr>
-            <tr><td>m_bStartedArming</td><td class="type">bool</td><td class="value">0x1F18</td></tr>
-            <tr><td>m_fArmedTime</td><td class="type">GameTime_t</td><td class="value">0x1F1C</td></tr>
-            <tr><td>m_bBombPlacedAnimation</td><td class="type">bool</td><td class="value">0x1F20</td></tr>
-            <tr><td>m_bIsPlantingViaUse</td><td class="type">bool</td><td class="value">0x1F21</td></tr>
-            <tr><td>m_entitySpottedState</td><td class="type">EntitySpottedState_t</td><td class="value">0x1F28</td></tr>
-            <tr><td>m_nSpotRules</td><td class="type">int32</td><td class="value">0x1F40</td></tr>
-            <tr><td>m_bPlayedArmingBeeps</td><td class="type">bool[7]</td><td class="value">0x1F44</td></tr>
-            <tr><td>m_bBombPlanted</td><td class="type">bool</td><td class="value">0x1F4B</td></tr>
+            <tr><td>m_activeLightParticleIndex</td><td class="type">ParticleIndex_t</td><td class="value">0x1F20</td></tr>
+            <tr><td>m_eActiveLightEffect</td><td class="type">C4LightEffect_t</td><td class="value">0x1F24</td></tr>
+            <tr><td>m_bStartedArming</td><td class="type">bool</td><td class="value">0x1F28</td></tr>
+            <tr><td>m_fArmedTime</td><td class="type">GameTime_t</td><td class="value">0x1F2C</td></tr>
+            <tr><td>m_bBombPlacedAnimation</td><td class="type">bool</td><td class="value">0x1F30</td></tr>
+            <tr><td>m_bIsPlantingViaUse</td><td class="type">bool</td><td class="value">0x1F31</td></tr>
+            <tr><td>m_entitySpottedState</td><td class="type">EntitySpottedState_t</td><td class="value">0x1F38</td></tr>
+            <tr><td>m_nSpotRules</td><td class="type">int32</td><td class="value">0x1F50</td></tr>
+            <tr><td>m_bPlayedArmingBeeps</td><td class="type">bool[7]</td><td class="value">0x1F54</td></tr>
+            <tr><td>m_bBombPlanted</td><td class="type">bool</td><td class="value">0x1F5B</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSPlayerPawnBase</h3>
@@ -1924,31 +1924,32 @@
             <tr><td>m_bStealthy</td><td class="type">bool</td><td class="value">0x1A54</td></tr>
             <tr><td>m_bInSilentReloadSection</td><td class="type">bool</td><td class="value">0x1A55</td></tr>
             <tr><td>m_flStealthHoldStartTime</td><td class="type">GameTime_t</td><td class="value">0x1A58</td></tr>
-            <tr><td>m_flWeaponActionPlaybackRate</td><td class="type">float32</td><td class="value">0x1A5C</td></tr>
-            <tr><td>m_iOriginalTeamNumber</td><td class="type">int32</td><td class="value">0x1A60</td></tr>
-            <tr><td>m_iMostRecentTeamNumber</td><td class="type">int32</td><td class="value">0x1A64</td></tr>
-            <tr><td>m_bDroppedNearBuyZone</td><td class="type">bool</td><td class="value">0x1A68</td></tr>
-            <tr><td>m_flNextAttackRenderTimeOffset</td><td class="type">float32</td><td class="value">0x1A6C</td></tr>
-            <tr><td>m_bClearWeaponIdentifyingUGC</td><td class="type">bool</td><td class="value">0x1B18</td></tr>
-            <tr><td>m_bVisualsDataSet</td><td class="type">bool</td><td class="value">0x1B19</td></tr>
-            <tr><td>m_bUIWeapon</td><td class="type">bool</td><td class="value">0x1B1A</td></tr>
-            <tr><td>m_nCustomEconReloadEventId</td><td class="type">int32</td><td class="value">0x1B1C</td></tr>
-            <tr><td>m_bCanBePickedUp</td><td class="type">bool</td><td class="value">0x1B28</td></tr>
-            <tr><td>m_nextPrevOwnerUseTime</td><td class="type">GameTime_t</td><td class="value">0x1B2C</td></tr>
-            <tr><td>m_hPrevOwner</td><td class="type">CHandle<C_CSPlayerPawn></td><td class="value">0x1B30</td></tr>
-            <tr><td>m_nDropTick</td><td class="type">GameTick_t</td><td class="value">0x1B34</td></tr>
-            <tr><td>m_bWasActiveWeaponWhenDropped</td><td class="type">bool</td><td class="value">0x1B38</td></tr>
-            <tr><td>m_donated</td><td class="type">bool</td><td class="value">0x1B5C</td></tr>
-            <tr><td>m_fLastShotTime</td><td class="type">GameTime_t</td><td class="value">0x1B60</td></tr>
-            <tr><td>m_bWasOwnedByCT</td><td class="type">bool</td><td class="value">0x1B64</td></tr>
-            <tr><td>m_bWasOwnedByTerrorist</td><td class="type">bool</td><td class="value">0x1B65</td></tr>
-            <tr><td>m_flNextClientFireBulletTime</td><td class="type">float32</td><td class="value">0x1B68</td></tr>
-            <tr><td>m_flNextClientFireBulletTime_Repredict</td><td class="type">float32</td><td class="value">0x1B6C</td></tr>
-            <tr><td>m_IronSightController</td><td class="type">C_IronSightController</td><td class="value">0x1BC0</td></tr>
-            <tr><td>m_iIronSightMode</td><td class="type">int32</td><td class="value">0x1C70</td></tr>
-            <tr><td>m_flLastLOSTraceFailureTime</td><td class="type">GameTime_t</td><td class="value">0x1CE8</td></tr>
-            <tr><td>m_flWatTickOffset</td><td class="type">float32</td><td class="value">0x1D48</td></tr>
-            <tr><td>m_flLastShakeTime</td><td class="type">GameTime_t</td><td class="value">0x1D5C</td></tr>
+            <tr><td>m_bReloadHeldSinceStart</td><td class="type">bool</td><td class="value">0x1A5C</td></tr>
+            <tr><td>m_flWeaponActionPlaybackRate</td><td class="type">float32</td><td class="value">0x1A60</td></tr>
+            <tr><td>m_iOriginalTeamNumber</td><td class="type">int32</td><td class="value">0x1A64</td></tr>
+            <tr><td>m_iMostRecentTeamNumber</td><td class="type">int32</td><td class="value">0x1A68</td></tr>
+            <tr><td>m_bDroppedNearBuyZone</td><td class="type">bool</td><td class="value">0x1A6C</td></tr>
+            <tr><td>m_flNextAttackRenderTimeOffset</td><td class="type">float32</td><td class="value">0x1A70</td></tr>
+            <tr><td>m_bClearWeaponIdentifyingUGC</td><td class="type">bool</td><td class="value">0x1B20</td></tr>
+            <tr><td>m_bVisualsDataSet</td><td class="type">bool</td><td class="value">0x1B21</td></tr>
+            <tr><td>m_bUIWeapon</td><td class="type">bool</td><td class="value">0x1B22</td></tr>
+            <tr><td>m_nCustomEconReloadEventId</td><td class="type">int32</td><td class="value">0x1B24</td></tr>
+            <tr><td>m_bCanBePickedUp</td><td class="type">bool</td><td class="value">0x1B30</td></tr>
+            <tr><td>m_nextPrevOwnerUseTime</td><td class="type">GameTime_t</td><td class="value">0x1B34</td></tr>
+            <tr><td>m_hPrevOwner</td><td class="type">CHandle<C_CSPlayerPawn></td><td class="value">0x1B38</td></tr>
+            <tr><td>m_nDropTick</td><td class="type">GameTick_t</td><td class="value">0x1B3C</td></tr>
+            <tr><td>m_bWasActiveWeaponWhenDropped</td><td class="type">bool</td><td class="value">0x1B40</td></tr>
+            <tr><td>m_donated</td><td class="type">bool</td><td class="value">0x1B64</td></tr>
+            <tr><td>m_fLastShotTime</td><td class="type">GameTime_t</td><td class="value">0x1B68</td></tr>
+            <tr><td>m_bWasOwnedByCT</td><td class="type">bool</td><td class="value">0x1B6C</td></tr>
+            <tr><td>m_bWasOwnedByTerrorist</td><td class="type">bool</td><td class="value">0x1B6D</td></tr>
+            <tr><td>m_flNextClientFireBulletTime</td><td class="type">float32</td><td class="value">0x1B70</td></tr>
+            <tr><td>m_flNextClientFireBulletTime_Repredict</td><td class="type">float32</td><td class="value">0x1B74</td></tr>
+            <tr><td>m_IronSightController</td><td class="type">C_IronSightController</td><td class="value">0x1BD0</td></tr>
+            <tr><td>m_iIronSightMode</td><td class="type">int32</td><td class="value">0x1C80</td></tr>
+            <tr><td>m_flLastLOSTraceFailureTime</td><td class="type">GameTime_t</td><td class="value">0x1CF8</td></tr>
+            <tr><td>m_flWatTickOffset</td><td class="type">float32</td><td class="value">0x1D58</td></tr>
+            <tr><td>m_flLastShakeTime</td><td class="type">GameTime_t</td><td class="value">0x1D6C</td></tr>
         </tbody>
     </table>
     <h3>Class: CTimeline</h3>
@@ -3440,7 +3441,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bFirstAttack</td><td class="type">bool</td><td class="value">0x1F10</td></tr>
+            <tr><td>m_bFirstAttack</td><td class="type">bool</td><td class="value">0x1F20</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGO_TerroristWingmanIntroCamera</h3>
@@ -3791,20 +3792,20 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bClientPredictDelete</td><td class="type">bool</td><td class="value">0x1F10</td></tr>
-            <tr><td>m_bRedraw</td><td class="type">bool</td><td class="value">0x1F11</td></tr>
-            <tr><td>m_bIsHeldByPlayer</td><td class="type">bool</td><td class="value">0x1F12</td></tr>
-            <tr><td>m_bPinPulled</td><td class="type">bool</td><td class="value">0x1F13</td></tr>
-            <tr><td>m_bJumpThrow</td><td class="type">bool</td><td class="value">0x1F14</td></tr>
-            <tr><td>m_bThrowAnimating</td><td class="type">bool</td><td class="value">0x1F15</td></tr>
-            <tr><td>m_fThrowTime</td><td class="type">GameTime_t</td><td class="value">0x1F18</td></tr>
-            <tr><td>m_flThrowStrength</td><td class="type">float32</td><td class="value">0x1F20</td></tr>
-            <tr><td>m_fDropTime</td><td class="type">GameTime_t</td><td class="value">0x1F98</td></tr>
-            <tr><td>m_fPinPullTime</td><td class="type">GameTime_t</td><td class="value">0x1F9C</td></tr>
-            <tr><td>m_bJustPulledPin</td><td class="type">bool</td><td class="value">0x1FA0</td></tr>
-            <tr><td>m_nNextHoldTick</td><td class="type">GameTick_t</td><td class="value">0x1FA4</td></tr>
-            <tr><td>m_flNextHoldFrac</td><td class="type">float32</td><td class="value">0x1FA8</td></tr>
-            <tr><td>m_hSwitchToWeaponAfterThrow</td><td class="type">CHandle<C_CSWeaponBase></td><td class="value">0x1FAC</td></tr>
+            <tr><td>m_bClientPredictDelete</td><td class="type">bool</td><td class="value">0x1F20</td></tr>
+            <tr><td>m_bRedraw</td><td class="type">bool</td><td class="value">0x1F21</td></tr>
+            <tr><td>m_bIsHeldByPlayer</td><td class="type">bool</td><td class="value">0x1F22</td></tr>
+            <tr><td>m_bPinPulled</td><td class="type">bool</td><td class="value">0x1F23</td></tr>
+            <tr><td>m_bJumpThrow</td><td class="type">bool</td><td class="value">0x1F24</td></tr>
+            <tr><td>m_bThrowAnimating</td><td class="type">bool</td><td class="value">0x1F25</td></tr>
+            <tr><td>m_fThrowTime</td><td class="type">GameTime_t</td><td class="value">0x1F28</td></tr>
+            <tr><td>m_flThrowStrength</td><td class="type">float32</td><td class="value">0x1F30</td></tr>
+            <tr><td>m_fDropTime</td><td class="type">GameTime_t</td><td class="value">0x1FA8</td></tr>
+            <tr><td>m_fPinPullTime</td><td class="type">GameTime_t</td><td class="value">0x1FAC</td></tr>
+            <tr><td>m_bJustPulledPin</td><td class="type">bool</td><td class="value">0x1FB0</td></tr>
+            <tr><td>m_nNextHoldTick</td><td class="type">GameTick_t</td><td class="value">0x1FB4</td></tr>
+            <tr><td>m_flNextHoldFrac</td><td class="type">float32</td><td class="value">0x1FB8</td></tr>
+            <tr><td>m_hSwitchToWeaponAfterThrow</td><td class="type">CHandle<C_CSWeaponBase></td><td class="value">0x1FBC</td></tr>
         </tbody>
     </table>
     <h3>Class: CFilterAttributeInt</h3>
@@ -4073,8 +4074,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bSequenceInProgress</td><td class="type">bool</td><td class="value">0x1F10</td></tr>
-            <tr><td>m_bRedraw</td><td class="type">bool</td><td class="value">0x1F11</td></tr>
+            <tr><td>m_bSequenceInProgress</td><td class="type">bool</td><td class="value">0x1F20</td></tr>
+            <tr><td>m_bRedraw</td><td class="type">bool</td><td class="value">0x1F21</td></tr>
         </tbody>
     </table>
     <h3>Class: CWaterSplasher</h3>
@@ -4137,7 +4138,7 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_bMagazineRemoved</td><td class="type">bool</td><td class="value">0x1F40</td></tr>
+            <tr><td>m_bMagazineRemoved</td><td class="type">bool</td><td class="value">0x1F50</td></tr>
         </tbody>
     </table>
     <h3>Class: C_DynamicLight</h3>
@@ -4618,13 +4619,13 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_zoomLevel</td><td class="type">int32</td><td class="value">0x1F10</td></tr>
-            <tr><td>m_iBurstShotsRemaining</td><td class="type">int32</td><td class="value">0x1F14</td></tr>
-            <tr><td>m_iSilencerBodygroup</td><td class="type">int32</td><td class="value">0x1F18</td></tr>
-            <tr><td>m_silencedModelIndex</td><td class="type">int32</td><td class="value">0x1F28</td></tr>
-            <tr><td>m_inPrecache</td><td class="type">bool</td><td class="value">0x1F2C</td></tr>
-            <tr><td>m_bNeedsBoltAction</td><td class="type">bool</td><td class="value">0x1F2D</td></tr>
-            <tr><td>m_nRevolverCylinderIdx</td><td class="type">int32</td><td class="value">0x1F30</td></tr>
+            <tr><td>m_zoomLevel</td><td class="type">int32</td><td class="value">0x1F20</td></tr>
+            <tr><td>m_iBurstShotsRemaining</td><td class="type">int32</td><td class="value">0x1F24</td></tr>
+            <tr><td>m_iSilencerBodygroup</td><td class="type">int32</td><td class="value">0x1F28</td></tr>
+            <tr><td>m_silencedModelIndex</td><td class="type">int32</td><td class="value">0x1F38</td></tr>
+            <tr><td>m_inPrecache</td><td class="type">bool</td><td class="value">0x1F3C</td></tr>
+            <tr><td>m_bNeedsBoltAction</td><td class="type">bool</td><td class="value">0x1F3D</td></tr>
+            <tr><td>m_nRevolverCylinderIdx</td><td class="type">int32</td><td class="value">0x1F40</td></tr>
         </tbody>
     </table>
     <h3>Class: C_CSGameRulesProxy</h3>
@@ -6595,8 +6596,8 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_fFireTime</td><td class="type">GameTime_t</td><td class="value">0x1F40</td></tr>
-            <tr><td>m_nLastAttackTick</td><td class="type">int32</td><td class="value">0x1F44</td></tr>
+            <tr><td>m_fFireTime</td><td class="type">GameTime_t</td><td class="value">0x1F50</td></tr>
+            <tr><td>m_nLastAttackTick</td><td class="type">int32</td><td class="value">0x1F54</td></tr>
         </tbody>
     </table>
     <h3>Class: C_PointEntity</h3>

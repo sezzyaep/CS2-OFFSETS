@@ -7995,7 +7995,7 @@
             "type": "bool"
           },
           "m_bDroppedNearBuyZone": {
-            "offset": 4052,
+            "offset": 4056,
             "type": "bool"
           },
           "m_bFireOnEmpty": {
@@ -8024,6 +8024,10 @@
           },
           "m_bPlayerAmmoStockOnPickup": {
             "offset": 3833,
+            "type": "bool"
+          },
+          "m_bReloadHeldSinceStart": {
+            "offset": 4040,
             "type": "bool"
           },
           "m_bRemoveable": {
@@ -8099,7 +8103,7 @@
             "type": "GameTime_t"
           },
           "m_flNextAttackRenderTimeOffset": {
-            "offset": 4056,
+            "offset": 4060,
             "type": "float32"
           },
           "m_flPostponeFireReadyFrac": {
@@ -8131,7 +8135,7 @@
             "type": "float32"
           },
           "m_flWeaponActionPlaybackRate": {
-            "offset": 4040,
+            "offset": 4044,
             "type": "float32"
           },
           "m_flWeaponGameplayAnimStateTimestamp": {
@@ -8147,11 +8151,11 @@
             "type": "int32"
           },
           "m_iMostRecentTeamNumber": {
-            "offset": 4048,
+            "offset": 4052,
             "type": "int32"
           },
           "m_iOriginalTeamNumber": {
-            "offset": 4044,
+            "offset": 4048,
             "type": "int32"
           },
           "m_iRecoilIndex": {
