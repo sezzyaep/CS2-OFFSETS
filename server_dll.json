@@ -8046,6 +8046,10 @@
             "offset": 4034,
             "type": "bool"
           },
+          "m_bSilentReloadStatPending": {
+            "offset": 4035,
+            "type": "bool"
+          },
           "m_bStealthy": {
             "offset": 4032,
             "type": "bool"
@@ -25976,7 +25980,7 @@
             "type": "CNetworkUtlVectorBase<uint8>"
           },
           "m_bDidGroundScorch": {
-            "offset": 11833,
+            "offset": 11841,
             "type": "bool"
           },
           "m_bDidSmokeEffect": {
@@ -25984,15 +25988,15 @@
             "type": "bool"
           },
           "m_bExplodeFromInferno": {
-            "offset": 11832,
+            "offset": 11840,
             "type": "bool"
           },
           "m_flLastBounce": {
-            "offset": 2992,
+            "offset": 2996,
             "type": "GameTime_t"
           },
           "m_fllastSimulationTime": {
-            "offset": 2996,
+            "offset": 3000,
             "type": "GameTime_t"
           },
           "m_nRandomSeed": {
@@ -26002,6 +26006,10 @@
           "m_nSmokeEffectTickBegin": {
             "offset": 2920,
             "type": "int32"
+          },
+          "m_nSmokeLightProbeRegen": {
+            "offset": 2992,
+            "type": "uint8"
           },
           "m_nVoxelFrameDataSize": {
             "offset": 2984,

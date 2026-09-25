@@ -14614,11 +14614,11 @@
             "type": "bool"
           },
           "m_bSmokeEffectSpawned": {
-            "offset": 5033,
+            "offset": 5034,
             "type": "bool"
           },
           "m_bSmokeVolumeDataReceived": {
-            "offset": 5032,
+            "offset": 5033,
             "type": "bool"
           },
           "m_nRandomSeed": {
@@ -14628,6 +14628,10 @@
           "m_nSmokeEffectTickBegin": {
             "offset": 4960,
             "type": "int32"
+          },
+          "m_nSmokeLightProbeRegen": {
+            "offset": 5032,
+            "type": "uint8"
           },
           "m_nVoxelFrameDataSize": {
             "offset": 5024,

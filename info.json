@@ -1,13 +1,13 @@
 {
-  "build_number": 14183,
+  "build_number": 14185,
   "generator": "exitscam-dumper",
   "stats": {
     "buttons": {
       "total": 16
     },
     "interfaces": {
-      "modules": 32,
-      "total": 112
+      "modules": 31,
+      "total": 111
     },
     "offsets": {
       "modules": 5,
@@ -19,5 +19,5 @@
       "modules": 18
     }
   },
-  "timestamp": "2026-09-24T22:07:56.824204400+00:00"
+  "timestamp": "2026-09-25T22:41:41.301835200+00:00"
 }

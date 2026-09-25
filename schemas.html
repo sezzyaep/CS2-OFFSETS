@@ -15497,8 +15497,9 @@
             <tr><td>m_VoxelFrameData</td><td class="type">C_NetworkUtlVectorBase<uint8></td><td class="value">0x1388</td></tr>
             <tr><td>m_nVoxelFrameDataSize</td><td class="type">int32</td><td class="value">0x13A0</td></tr>
             <tr><td>m_nVoxelUpdate</td><td class="type">int32</td><td class="value">0x13A4</td></tr>
-            <tr><td>m_bSmokeVolumeDataReceived</td><td class="type">bool</td><td class="value">0x13A8</td></tr>
-            <tr><td>m_bSmokeEffectSpawned</td><td class="type">bool</td><td class="value">0x13A9</td></tr>
+            <tr><td>m_nSmokeLightProbeRegen</td><td class="type">uint8</td><td class="value">0x13A8</td></tr>
+            <tr><td>m_bSmokeVolumeDataReceived</td><td class="type">bool</td><td class="value">0x13A9</td></tr>
+            <tr><td>m_bSmokeEffectSpawned</td><td class="type">bool</td><td class="value">0x13AA</td></tr>
         </tbody>
     </table>
     <h3>Class: CScriptComponent</h3>
@@ -41624,6 +41625,7 @@
             <tr><td>m_bStealthy</td><td class="type">bool</td><td class="value">0xFC0</td></tr>
             <tr><td>m_bInSilentReloadSection</td><td class="type">bool</td><td class="value">0xFC1</td></tr>
             <tr><td>m_bSilentReloadStatCounted</td><td class="type">bool</td><td class="value">0xFC2</td></tr>
+            <tr><td>m_bSilentReloadStatPending</td><td class="type">bool</td><td class="value">0xFC3</td></tr>
             <tr><td>m_flStealthHoldStartTime</td><td class="type">GameTime_t</td><td class="value">0xFC4</td></tr>
             <tr><td>m_bReloadHeldSinceStart</td><td class="type">bool</td><td class="value">0xFC8</td></tr>
             <tr><td>m_flWeaponActionPlaybackRate</td><td class="type">float32</td><td class="value">0xFCC</td></tr>
@@ -43507,10 +43509,11 @@
             <tr><td>m_VoxelFrameData</td><td class="type">CNetworkUtlVectorBase<uint8></td><td class="value">0xB90</td></tr>
             <tr><td>m_nVoxelFrameDataSize</td><td class="type">int32</td><td class="value">0xBA8</td></tr>
             <tr><td>m_nVoxelUpdate</td><td class="type">int32</td><td class="value">0xBAC</td></tr>
-            <tr><td>m_flLastBounce</td><td class="type">GameTime_t</td><td class="value">0xBB0</td></tr>
-            <tr><td>m_fllastSimulationTime</td><td class="type">GameTime_t</td><td class="value">0xBB4</td></tr>
-            <tr><td>m_bExplodeFromInferno</td><td class="type">bool</td><td class="value">0x2E38</td></tr>
-            <tr><td>m_bDidGroundScorch</td><td class="type">bool</td><td class="value">0x2E39</td></tr>
+            <tr><td>m_nSmokeLightProbeRegen</td><td class="type">uint8</td><td class="value">0xBB0</td></tr>
+            <tr><td>m_flLastBounce</td><td class="type">GameTime_t</td><td class="value">0xBB4</td></tr>
+            <tr><td>m_fllastSimulationTime</td><td class="type">GameTime_t</td><td class="value">0xBB8</td></tr>
+            <tr><td>m_bExplodeFromInferno</td><td class="type">bool</td><td class="value">0x2E40</td></tr>
+            <tr><td>m_bDidGroundScorch</td><td class="type">bool</td><td class="value">0x2E41</td></tr>
         </tbody>
     </table>
     <h3>Class: CBlood</h3>
