@@ -9972,7 +9972,7 @@
             "type": "bool"
           },
           "m_bDroppedNearBuyZone": {
-            "offset": 6764,
+            "offset": 6768,
             "type": "bool"
           },
           "m_bFireOnEmpty": {
@@ -9984,7 +9984,7 @@
             "type": "bool"
           },
           "m_bInSilentReloadSection": {
-            "offset": 6741,
+            "offset": 6745,
             "type": "bool"
           },
           "m_bInspectPending": {
@@ -9996,19 +9996,19 @@
             "type": "bool"
           },
           "m_bIsHauledBack": {
-            "offset": 6732,
+            "offset": 6736,
             "type": "bool"
           },
           "m_bReloadHeldSinceStart": {
-            "offset": 6748,
+            "offset": 6752,
             "type": "bool"
           },
           "m_bSilencerOn": {
-            "offset": 6733,
+            "offset": 6737,
             "type": "bool"
           },
           "m_bStealthy": {
-            "offset": 6740,
+            "offset": 6744,
             "type": "bool"
           },
           "m_bUIWeapon": {
@@ -10047,8 +10047,12 @@
             "offset": 7016,
             "type": "GameTime_t"
           },
-          "m_flDroppedAtTime": {
+          "m_flAttackHoldStartTime": {
             "offset": 6724,
+            "type": "GameTime_t"
+          },
+          "m_flDroppedAtTime": {
+            "offset": 6728,
             "type": "GameTime_t"
           },
           "m_flInspectCancelCompleteTime": {
@@ -10072,7 +10076,7 @@
             "type": "GameTime_t"
           },
           "m_flNextAttackRenderTimeOffset": {
-            "offset": 6768,
+            "offset": 6772,
             "type": "float32"
           },
           "m_flNextClientFireBulletTime": {
@@ -10092,11 +10096,11 @@
             "type": "float32"
           },
           "m_flStealthHoldStartTime": {
-            "offset": 6744,
+            "offset": 6748,
             "type": "GameTime_t"
           },
           "m_flTimeSilencerSwitchComplete": {
-            "offset": 6736,
+            "offset": 6740,
             "type": "GameTime_t"
           },
           "m_flTurningInaccuracy": {
@@ -10112,7 +10116,7 @@
             "type": "float32"
           },
           "m_flWeaponActionPlaybackRate": {
-            "offset": 6752,
+            "offset": 6756,
             "type": "float32"
           },
           "m_flWeaponGameplayAnimStateTimestamp": {
@@ -10128,11 +10132,11 @@
             "type": "int32"
           },
           "m_iMostRecentTeamNumber": {
-            "offset": 6760,
+            "offset": 6764,
             "type": "int32"
           },
           "m_iOriginalTeamNumber": {
-            "offset": 6756,
+            "offset": 6760,
             "type": "int32"
           },
           "m_iRecoilIndex": {

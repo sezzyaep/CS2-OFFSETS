@@ -30580,7 +30580,7 @@
             "type": "bool"
           },
           "m_bDroppedNearBuyZone": {
-            "offset": 6764,
+            "offset": 6768,
             "type": "bool"
           },
           "m_bFireOnEmpty": {
@@ -30592,7 +30592,7 @@
             "type": "bool"
           },
           "m_bInSilentReloadSection": {
-            "offset": 6741,
+            "offset": 6745,
             "type": "bool"
           },
           "m_bInspectPending": {
@@ -30604,19 +30604,19 @@
             "type": "bool"
           },
           "m_bIsHauledBack": {
-            "offset": 6732,
+            "offset": 6736,
             "type": "bool"
           },
           "m_bReloadHeldSinceStart": {
-            "offset": 6748,
+            "offset": 6752,
             "type": "bool"
           },
           "m_bSilencerOn": {
-            "offset": 6733,
+            "offset": 6737,
             "type": "bool"
           },
           "m_bStealthy": {
-            "offset": 6740,
+            "offset": 6744,
             "type": "bool"
           },
           "m_bUIWeapon": {
@@ -30655,8 +30655,12 @@
             "offset": 7016,
             "type": "GameTime_t"
           },
-          "m_flDroppedAtTime": {
+          "m_flAttackHoldStartTime": {
             "offset": 6724,
+            "type": "GameTime_t"
+          },
+          "m_flDroppedAtTime": {
+            "offset": 6728,
             "type": "GameTime_t"
           },
           "m_flInspectCancelCompleteTime": {
@@ -30680,7 +30684,7 @@
             "type": "GameTime_t"
           },
           "m_flNextAttackRenderTimeOffset": {
-            "offset": 6768,
+            "offset": 6772,
             "type": "float32"
           },
           "m_flNextClientFireBulletTime": {
@@ -30700,11 +30704,11 @@
             "type": "float32"
           },
           "m_flStealthHoldStartTime": {
-            "offset": 6744,
+            "offset": 6748,
             "type": "GameTime_t"
           },
           "m_flTimeSilencerSwitchComplete": {
-            "offset": 6736,
+            "offset": 6740,
             "type": "GameTime_t"
           },
           "m_flTurningInaccuracy": {
@@ -30720,7 +30724,7 @@
             "type": "float32"
           },
           "m_flWeaponActionPlaybackRate": {
-            "offset": 6752,
+            "offset": 6756,
             "type": "float32"
           },
           "m_flWeaponGameplayAnimStateTimestamp": {
@@ -30736,11 +30740,11 @@
             "type": "int32"
           },
           "m_iMostRecentTeamNumber": {
-            "offset": 6760,
+            "offset": 6764,
             "type": "int32"
           },
           "m_iOriginalTeamNumber": {
-            "offset": 6756,
+            "offset": 6760,
             "type": "int32"
           },
           "m_iRecoilIndex": {
@@ -62930,55 +62934,55 @@
       "CBaseCSGrenade": {
         "fields": {
           "m_bIsHeldByPlayer": {
-            "offset": 4721,
+            "offset": 4737,
             "type": "bool"
           },
           "m_bJumpThrow": {
-            "offset": 4723,
+            "offset": 4739,
             "type": "bool"
           },
           "m_bJustPulledPin": {
-            "offset": 4744,
+            "offset": 4760,
             "type": "bool"
           },
           "m_bPinPulled": {
-            "offset": 4722,
+            "offset": 4738,
             "type": "bool"
           },
           "m_bRedraw": {
-            "offset": 4720,
+            "offset": 4736,
             "type": "bool"
           },
           "m_bThrowAnimating": {
-            "offset": 4724,
+            "offset": 4740,
             "type": "bool"
           },
           "m_fDropTime": {
-            "offset": 4736,
+            "offset": 4752,
             "type": "GameTime_t"
           },
           "m_fPinPullTime": {
-            "offset": 4740,
+            "offset": 4756,
             "type": "GameTime_t"
           },
           "m_fThrowTime": {
-            "offset": 4728,
+            "offset": 4744,
             "type": "GameTime_t"
           },
           "m_flNextHoldFrac": {
-            "offset": 4752,
+            "offset": 4768,
             "type": "float32"
           },
           "m_flThrowStrength": {
-            "offset": 4732,
+            "offset": 4748,
             "type": "float32"
           },
           "m_hSwitchToWeaponAfterThrow": {
-            "offset": 4756,
+            "offset": 4772,
             "type": "CHandle<CCSWeaponBase>"
           },
           "m_nNextHoldTick": {
-            "offset": 4748,
+            "offset": 4764,
             "type": "GameTick_t"
           }
         },
@@ -65582,47 +65586,47 @@
       "CC4": {
         "fields": {
           "m_bBombPlacedAnimation": {
-            "offset": 4800,
+            "offset": 4816,
             "type": "bool"
           },
           "m_bBombPlanted": {
-            "offset": 4843,
+            "offset": 4859,
             "type": "bool"
           },
           "m_bDoValidDroppedPositionCheck": {
-            "offset": 4792,
+            "offset": 4808,
             "type": "bool"
           },
           "m_bIsPlantingViaUse": {
-            "offset": 4801,
+            "offset": 4817,
             "type": "bool"
           },
           "m_bPlayedArmingBeeps": {
-            "offset": 4836,
+            "offset": 4852,
             "type": "bool[7]"
           },
           "m_bStartedArming": {
-            "offset": 4793,
+            "offset": 4809,
             "type": "bool"
           },
           "m_entitySpottedState": {
-            "offset": 4808,
+            "offset": 4824,
             "type": "EntitySpottedState_t"
           },
           "m_fArmedTime": {
-            "offset": 4796,
+            "offset": 4812,
             "type": "GameTime_t"
           },
           "m_nSpotRules": {
-            "offset": 4832,
+            "offset": 4848,
             "type": "int32"
           },
           "m_vecLastValidDroppedPosition": {
-            "offset": 4780,
+            "offset": 4796,
             "type": "VectorWS"
           },
           "m_vecLastValidPlayerHeldPosition": {
-            "offset": 4768,
+            "offset": 4784,
             "type": "VectorWS"
           }
         },
@@ -69352,7 +69356,7 @@
       "CCSWeaponBase": {
         "fields": {
           "m_IronSightController": {
-            "offset": 4240,
+            "offset": 4256,
             "type": "CIronSightController"
           },
           "m_OnPlayerPickup": {
@@ -69364,11 +69368,11 @@
             "type": "bool"
           },
           "m_bCanBePickedUp": {
-            "offset": 4080,
+            "offset": 4088,
             "type": "bool"
           },
           "m_bDroppedNearBuyZone": {
-            "offset": 4056,
+            "offset": 4060,
             "type": "bool"
           },
           "m_bFireOnEmpty": {
@@ -69380,7 +69384,7 @@
             "type": "bool"
           },
           "m_bInSilentReloadSection": {
-            "offset": 4033,
+            "offset": 4037,
             "type": "bool"
           },
           "m_bInspectPending": {
@@ -69392,7 +69396,7 @@
             "type": "bool"
           },
           "m_bIsHauledBack": {
-            "offset": 4024,
+            "offset": 4028,
             "type": "bool"
           },
           "m_bPlayerAmmoStockOnPickup": {
@@ -69400,7 +69404,7 @@
             "type": "bool"
           },
           "m_bReloadHeldSinceStart": {
-            "offset": 4040,
+            "offset": 4044,
             "type": "bool"
           },
           "m_bRemoveable": {
@@ -69412,39 +69416,39 @@
             "type": "bool"
           },
           "m_bSilencerOn": {
-            "offset": 4025,
+            "offset": 4029,
             "type": "bool"
           },
           "m_bSilentReloadStatCounted": {
-            "offset": 4034,
+            "offset": 4038,
             "type": "bool"
           },
           "m_bSilentReloadStatPending": {
-            "offset": 4035,
+            "offset": 4039,
             "type": "bool"
           },
           "m_bStealthy": {
-            "offset": 4032,
+            "offset": 4036,
             "type": "bool"
           },
           "m_bUseCanOverrideNextOwnerTouchTime": {
-            "offset": 4081,
+            "offset": 4089,
             "type": "bool"
           },
           "m_bWasActiveWeaponWhenDropped": {
-            "offset": 4108,
+            "offset": 4116,
             "type": "bool"
           },
           "m_bWasOwnedByCT": {
-            "offset": 4148,
+            "offset": 4156,
             "type": "bool"
           },
           "m_bWasOwnedByTerrorist": {
-            "offset": 4149,
+            "offset": 4157,
             "type": "bool"
           },
           "m_donated": {
-            "offset": 4140,
+            "offset": 4148,
             "type": "bool"
           },
           "m_fAccuracyPenalty": {
@@ -69456,11 +69460,15 @@
             "type": "float32"
           },
           "m_fLastShotTime": {
-            "offset": 4144,
+            "offset": 4152,
+            "type": "GameTime_t"
+          },
+          "m_flAttackHoldStartTime": {
+            "offset": 4016,
             "type": "GameTime_t"
           },
           "m_flDroppedAtTime": {
-            "offset": 4016,
+            "offset": 4020,
             "type": "GameTime_t"
           },
           "m_flInspectCancelCompleteTime": {
@@ -69472,15 +69480,15 @@
             "type": "GameTime_t"
           },
           "m_flLastLOSTraceFailureTime": {
-            "offset": 4268,
+            "offset": 4284,
             "type": "GameTime_t"
           },
           "m_flLastShakeTime": {
-            "offset": 4288,
+            "offset": 4304,
             "type": "GameTime_t"
           },
           "m_flNextAttackRenderTimeOffset": {
-            "offset": 4060,
+            "offset": 4064,
             "type": "float32"
           },
           "m_flPostponeFireReadyFrac": {
@@ -69492,11 +69500,11 @@
             "type": "float32"
           },
           "m_flStealthHoldStartTime": {
-            "offset": 4036,
+            "offset": 4040,
             "type": "GameTime_t"
           },
           "m_flTimeSilencerSwitchComplete": {
-            "offset": 4028,
+            "offset": 4032,
             "type": "GameTime_t"
           },
           "m_flTurningInaccuracy": {
@@ -69508,11 +69516,11 @@
             "type": "float32"
           },
           "m_flWatTickOffset": {
-            "offset": 4272,
+            "offset": 4288,
             "type": "float32"
           },
           "m_flWeaponActionPlaybackRate": {
-            "offset": 4044,
+            "offset": 4048,
             "type": "float32"
           },
           "m_flWeaponGameplayAnimStateTimestamp": {
@@ -69520,19 +69528,19 @@
             "type": "GameTime_t"
           },
           "m_hPrevOwner": {
-            "offset": 4100,
+            "offset": 4108,
             "type": "CHandle<CCSPlayerPawn>"
           },
           "m_iIronSightMode": {
-            "offset": 4264,
+            "offset": 4280,
             "type": "int32"
           },
           "m_iMostRecentTeamNumber": {
-            "offset": 4052,
+            "offset": 4056,
             "type": "int32"
           },
           "m_iOriginalTeamNumber": {
-            "offset": 4048,
+            "offset": 4052,
             "type": "int32"
           },
           "m_iRecoilIndex": {
@@ -69548,7 +69556,7 @@
             "type": "GameTick_t"
           },
           "m_nDropTick": {
-            "offset": 4104,
+            "offset": 4112,
             "type": "GameTick_t"
           },
           "m_nLastEmptySoundCmdNum": {
@@ -69560,19 +69568,19 @@
             "type": "GameTick_t"
           },
           "m_nextOwnerTouchTime": {
-            "offset": 4084,
+            "offset": 4092,
             "type": "GameTime_t"
           },
           "m_nextPrevOwnerTouchTime": {
-            "offset": 4088,
-            "type": "GameTime_t"
-          },
-          "m_nextPrevOwnerUseTime": {
             "offset": 4096,
             "type": "GameTime_t"
           },
+          "m_nextPrevOwnerUseTime": {
+            "offset": 4104,
+            "type": "GameTime_t"
+          },
           "m_numRemoveUnownedWeaponThink": {
-            "offset": 4152,
+            "offset": 4160,
             "type": "int32"
           },
           "m_vecTurningInaccuracyEyeDirLast": {
@@ -69590,43 +69598,43 @@
       "CCSWeaponBaseGun": {
         "fields": {
           "m_bNeedsBoltAction": {
-            "offset": 4741,
+            "offset": 4757,
             "type": "bool"
           },
           "m_bSkillBoltInterruptAvailable": {
-            "offset": 4750,
+            "offset": 4766,
             "type": "bool"
           },
           "m_bSkillBoltLiftedFireKey": {
-            "offset": 4751,
+            "offset": 4767,
             "type": "bool"
           },
           "m_bSkillReloadAvailable": {
-            "offset": 4748,
+            "offset": 4764,
             "type": "bool"
           },
           "m_bSkillReloadLiftedReloadKey": {
-            "offset": 4749,
+            "offset": 4765,
             "type": "bool"
           },
           "m_iBurstShotsRemaining": {
-            "offset": 4724,
+            "offset": 4740,
             "type": "int32"
           },
           "m_inPrecache": {
-            "offset": 4740,
+            "offset": 4756,
             "type": "bool"
           },
           "m_nRevolverCylinderIdx": {
-            "offset": 4744,
+            "offset": 4760,
             "type": "int32"
           },
           "m_silencedModelIndex": {
-            "offset": 4736,
+            "offset": 4752,
             "type": "int32"
           },
           "m_zoomLevel": {
-            "offset": 4720,
+            "offset": 4736,
             "type": "int32"
           }
         },
@@ -77112,7 +77120,7 @@
       "CKnife": {
         "fields": {
           "m_bFirstAttack": {
-            "offset": 4720,
+            "offset": 4736,
             "type": "bool"
           }
         },
@@ -89971,11 +89979,11 @@
       "CWeaponBaseItem": {
         "fields": {
           "m_bRedraw": {
-            "offset": 4721,
+            "offset": 4737,
             "type": "bool"
           },
           "m_bSequenceInProgress": {
-            "offset": 4720,
+            "offset": 4736,
             "type": "bool"
           }
         },
@@ -89990,7 +89998,7 @@
       "CWeaponCZ75a": {
         "fields": {
           "m_bMagazineRemoved": {
-            "offset": 4752,
+            "offset": 4768,
             "type": "bool"
           }
         },
@@ -90120,11 +90128,11 @@
       "CWeaponTaser": {
         "fields": {
           "m_fFireTime": {
-            "offset": 4752,
+            "offset": 4768,
             "type": "GameTime_t"
           },
           "m_nLastAttackTick": {
-            "offset": 4756,
+            "offset": 4772,
             "type": "int32"
           }
         },
@@ -93770,11 +93778,7 @@
           "k_EMsgGCCStrike15_v2_FantasyRequestClientData": 9175,
           "k_EMsgGCCStrike15_v2_FantasyUpdateClientData": 9176,
           "k_EMsgGCCStrike15_v2_GC2ClientGlobalStats": 9173,
-          "k_EMsgGCCStrike15_v2_GC2ClientInitSystem": 9212,
-          "k_EMsgGCCStrike15_v2_GC2ClientInitSystem_Response": 9213,
           "k_EMsgGCCStrike15_v2_GC2ClientNotifyXPShop": 9221,
-          "k_EMsgGCCStrike15_v2_GC2ClientRefuseSecureMode": 9206,
-          "k_EMsgGCCStrike15_v2_GC2ClientRequestValidation": 9207,
           "k_EMsgGCCStrike15_v2_GC2ClientTextMsg": 9134,
           "k_EMsgGCCStrike15_v2_GC2ClientTournamentInfo": 9167,
           "k_EMsgGCCStrike15_v2_GC2ServerReservationUpdate": 9142,
@@ -94410,21 +94414,6 @@
           "IN_BUTTON_UP_DOWN": 3,
           "IN_BUTTON_UP_DOWN_UP": 4,
           "IN_BUTTON_UP_DOWN_UP_DOWN": 7
-        },
-        "type": "uint32"
-      },
-      "EInitSystemResult": {
-        "alignment": 4,
-        "members": {
-          "k_EInitSystemResult_Existing": 4,
-          "k_EInitSystemResult_FailedInit": 7,
-          "k_EInitSystemResult_FailedOpen": 5,
-          "k_EInitSystemResult_Invalid": 0,
-          "k_EInitSystemResult_Max": 8,
-          "k_EInitSystemResult_Mismatch": 6,
-          "k_EInitSystemResult_None": 2,
-          "k_EInitSystemResult_NotFound": 3,
-          "k_EInitSystemResult_Success": 1
         },
         "type": "uint32"
       },
