@@ -29377,11 +29377,11 @@
       "C_CSGO_PreviewPlayer": {
         "fields": {
           "m_animgraphCharacterModeString": {
-            "offset": 14096,
+            "offset": 14112,
             "type": "CGlobalSymbol"
           },
           "m_flInitialModelScale": {
-            "offset": 14104,
+            "offset": 14120,
             "type": "float32"
           }
         },
@@ -29952,11 +29952,11 @@
             "type": "loadout_slot_t"
           },
           "m_angEyeAngles": {
-            "offset": 13808,
+            "offset": 13824,
             "type": "QAngle"
           },
           "m_angEyeAnglesVelocity": {
-            "offset": 14016,
+            "offset": 14032,
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
@@ -29964,11 +29964,11 @@
             "type": "QAngle"
           },
           "m_arrOldEyeAngles": {
-            "offset": 13968,
+            "offset": 13984,
             "type": "QAngle[4]"
           },
           "m_arrOldEyeAnglesTimes": {
-            "offset": 13952,
+            "offset": 13968,
             "type": "GameTime_t[4]"
           },
           "m_bGrenadeParametersStashed": {
@@ -30088,7 +30088,7 @@
             "type": "bool"
           },
           "m_delayTargetIDTimer": {
-            "offset": 14032,
+            "offset": 14048,
             "type": "CountdownTimer"
           },
           "m_entitySpottedState": {
@@ -30104,7 +30104,7 @@
             "type": "GameTime_t"
           },
           "m_fMolotovDamageTime": {
-            "offset": 13584,
+            "offset": 13588,
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
@@ -30142,6 +30142,10 @@
           "m_flLastFiredWeaponTime": {
             "offset": 5548,
             "type": "GameTime_t"
+          },
+          "m_flModifier0": {
+            "offset": 13584,
+            "type": "float32"
           },
           "m_flNextSprayDecalTime": {
             "offset": 5616,
@@ -30188,7 +30192,7 @@
             "type": "CHandle<C_CS2HudModelArms>"
           },
           "m_holdTargetIDTimer": {
-            "offset": 14064,
+            "offset": 14080,
             "type": "CountdownTimer"
           },
           "m_iBlockingUseActionInProgress": {
@@ -30196,11 +30200,11 @@
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iIDEntIndex": {
-            "offset": 14028,
+            "offset": 14044,
             "type": "CEntityIndex"
           },
           "m_iOldIDEntIndex": {
-            "offset": 14060,
+            "offset": 14076,
             "type": "CEntityIndex"
           },
           "m_iRetakesMVPBoostItem": {
@@ -30220,7 +30224,7 @@
             "type": "int32"
           },
           "m_iTargetItemEntIdx": {
-            "offset": 14056,
+            "offset": 14072,
             "type": "CEntityIndex"
           },
           "m_ignoreLadderJumpTime": {
@@ -30240,7 +30244,7 @@
             "type": "CEntityIndex"
           },
           "m_nPlayerInfernoBodyFx": {
-            "offset": 13692,
+            "offset": 13696,
             "type": "ParticleIndex_t"
           },
           "m_nPrevArmorVal": {
@@ -68254,431 +68258,435 @@
       "CCSPlayerPawn": {
         "fields": {
           "m_ArmorValue": {
-            "offset": 5412,
+            "offset": 5420,
             "type": "int32"
           },
           "m_EconGloves": {
-            "offset": 4184,
+            "offset": 4192,
             "type": "CEconItemView"
           },
           "m_GunGameImmunityColor": {
-            "offset": 5484,
+            "offset": 5492,
             "type": "Color"
           },
           "m_LastHitBox": {
-            "offset": 5388,
+            "offset": 5396,
             "type": "int32"
           },
           "m_RetakesMVPBoostExtraUtility": {
-            "offset": 3988,
+            "offset": 3996,
             "type": "loadout_slot_t"
           },
           "m_TouchingBuyZones": {
-            "offset": 3944,
+            "offset": 3952,
             "type": "CUtlVector<CHandle<CBaseEntity>>"
           },
           "m_allowAutoFollowTime": {
-            "offset": 5280,
+            "offset": 5288,
             "type": "GameTime_t"
           },
           "m_angEyeAngles": {
-            "offset": 5568,
+            "offset": 5580,
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
-            "offset": 5496,
+            "offset": 5504,
             "type": "QAngle"
           },
           "m_bBotAllowActive": {
-            "offset": 5400,
+            "offset": 5408,
             "type": "bool"
           },
           "m_bCommittingSuicideOnTeamChange": {
-            "offset": 5552,
-            "type": "bool"
-          },
-          "m_bGrenadeParametersStashed": {
-            "offset": 5492,
-            "type": "bool"
-          },
-          "m_bGunGameImmunity": {
             "offset": 5560,
             "type": "bool"
           },
+          "m_bGrenadeParametersStashed": {
+            "offset": 5500,
+            "type": "bool"
+          },
+          "m_bGunGameImmunity": {
+            "offset": 5568,
+            "type": "bool"
+          },
           "m_bHasDeathInfo": {
-            "offset": 5444,
+            "offset": 5452,
             "type": "bool"
           },
           "m_bHasFemaleVoice": {
-            "offset": 3682,
+            "offset": 3690,
             "type": "bool"
           },
           "m_bInBombZone": {
-            "offset": 3970,
+            "offset": 3978,
             "type": "bool"
           },
           "m_bInBombZoneTrigger": {
-            "offset": 5348,
+            "offset": 5356,
             "type": "bool"
           },
           "m_bInBuyZone": {
-            "offset": 3937,
+            "offset": 3945,
             "type": "bool"
           },
           "m_bInHostageRescueZone": {
-            "offset": 3969,
+            "offset": 3977,
             "type": "bool"
           },
           "m_bInHostageResetZone": {
-            "offset": 3936,
+            "offset": 3944,
             "type": "bool"
           },
           "m_bInNoDefuseArea": {
-            "offset": 5336,
+            "offset": 5344,
             "type": "bool"
           },
           "m_bIsBuyMenuOpen": {
-            "offset": 4000,
+            "offset": 4008,
             "type": "bool"
           },
           "m_bIsDefusing": {
-            "offset": 5326,
+            "offset": 5334,
             "type": "bool"
           },
           "m_bIsGrabbingHostage": {
-            "offset": 5327,
+            "offset": 5335,
             "type": "bool"
           },
           "m_bIsScoped": {
-            "offset": 5324,
+            "offset": 5332,
             "type": "bool"
           },
           "m_bIsSpawning": {
-            "offset": 5428,
+            "offset": 5436,
             "type": "bool"
           },
           "m_bIsWalking": {
-            "offset": 5256,
+            "offset": 5264,
             "type": "bool"
           },
           "m_bKilledByHeadshot": {
-            "offset": 5384,
+            "offset": 5392,
             "type": "bool"
           },
           "m_bLeftHanded": {
-            "offset": 5232,
+            "offset": 5240,
             "type": "bool"
           },
           "m_bNextSprayDecalTimeExpedited": {
-            "offset": 4080,
+            "offset": 4088,
             "type": "bool"
           },
           "m_bOnGroundLastTick": {
-            "offset": 4060,
+            "offset": 4068,
             "type": "bool"
           },
           "m_bRagdollDamageHeadshot": {
-            "offset": 4164,
+            "offset": 4172,
             "type": "bool"
           },
           "m_bResetArmorNextSpawn": {
-            "offset": 5284,
+            "offset": 5292,
             "type": "bool"
           },
           "m_bResumeZoom": {
-            "offset": 5325,
+            "offset": 5333,
             "type": "bool"
           },
           "m_bRetakesHasDefuseKit": {
-            "offset": 3980,
+            "offset": 3988,
             "type": "bool"
           },
           "m_bRetakesMVPLastRound": {
-            "offset": 3981,
+            "offset": 3989,
             "type": "bool"
           },
           "m_bWaitForNoAttack": {
-            "offset": 5376,
+            "offset": 5384,
             "type": "bool"
           },
           "m_bWasInBombZoneTrigger": {
-            "offset": 5349,
+            "offset": 5357,
             "type": "bool"
           },
           "m_bWasInBuyZone": {
-            "offset": 3968,
+            "offset": 3976,
             "type": "bool"
           },
           "m_bWasInHostageRescueZone": {
-            "offset": 3971,
+            "offset": 3979,
             "type": "bool"
           },
           "m_entitySpottedState": {
-            "offset": 5296,
+            "offset": 5304,
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
-            "offset": 5556,
+            "offset": 5564,
             "type": "GameTime_t"
           },
           "m_fLastGivenBombTime": {
-            "offset": 5264,
+            "offset": 5272,
             "type": "float32"
           },
           "m_fLastGivenDefuserTime": {
-            "offset": 5260,
-            "type": "float32"
-          },
-          "m_fMolotovDamageTime": {
-            "offset": 5564,
-            "type": "float32"
-          },
-          "m_fSwitchedHandednessTime": {
-            "offset": 5236,
-            "type": "GameTime_t"
-          },
-          "m_flDealtDamageToEnemyMostRecentTimestamp": {
             "offset": 5268,
             "type": "float32"
           },
-          "m_flDeathInfoTime": {
-            "offset": 5448,
+          "m_fMolotovDamageTime": {
+            "offset": 5576,
             "type": "float32"
           },
-          "m_flEmitSoundTime": {
-            "offset": 5332,
+          "m_fSwitchedHandednessTime": {
+            "offset": 5244,
             "type": "GameTime_t"
           },
-          "m_flFlinchStack": {
-            "offset": 5356,
-            "type": "float32"
-          },
-          "m_flHealthShotBoostExpirationTime": {
-            "offset": 3992,
-            "type": "GameTime_t"
-          },
-          "m_flLandingTimeSeconds": {
-            "offset": 3996,
-            "type": "float32"
-          },
-          "m_flLastAttackedTeammate": {
+          "m_flDealtDamageToEnemyMostRecentTimestamp": {
             "offset": 5276,
             "type": "float32"
           },
+          "m_flDeathInfoTime": {
+            "offset": 5456,
+            "type": "float32"
+          },
+          "m_flEmitSoundTime": {
+            "offset": 5340,
+            "type": "GameTime_t"
+          },
+          "m_flFlinchStack": {
+            "offset": 5364,
+            "type": "float32"
+          },
+          "m_flHealthShotBoostExpirationTime": {
+            "offset": 4000,
+            "type": "GameTime_t"
+          },
+          "m_flLandingTimeSeconds": {
+            "offset": 4004,
+            "type": "float32"
+          },
+          "m_flLastAttackedTeammate": {
+            "offset": 5284,
+            "type": "float32"
+          },
           "m_flLastPickupPriorityTime": {
-            "offset": 5408,
+            "offset": 5416,
+            "type": "float32"
+          },
+          "m_flModifier0": {
+            "offset": 5572,
             "type": "float32"
           },
           "m_flNextSprayDecalTime": {
-            "offset": 4076,
+            "offset": 4084,
             "type": "GameTime_t"
           },
           "m_flTimeOfLastInjury": {
-            "offset": 4072,
+            "offset": 4080,
             "type": "GameTime_t"
           },
           "m_flVelocityModifier": {
-            "offset": 5360,
+            "offset": 5368,
             "type": "float32"
           },
           "m_flViewmodelFOV": {
-            "offset": 5252,
+            "offset": 5260,
             "type": "float32"
           },
           "m_flViewmodelOffsetX": {
-            "offset": 5240,
-            "type": "float32"
-          },
-          "m_flViewmodelOffsetY": {
-            "offset": 5244,
-            "type": "float32"
-          },
-          "m_flViewmodelOffsetZ": {
             "offset": 5248,
             "type": "float32"
           },
+          "m_flViewmodelOffsetY": {
+            "offset": 5252,
+            "type": "float32"
+          },
+          "m_flViewmodelOffsetZ": {
+            "offset": 5256,
+            "type": "float32"
+          },
           "m_grenadeParameterStashTime": {
-            "offset": 5488,
+            "offset": 5496,
             "type": "GameTime_t"
           },
           "m_hActiveMinimapVolume": {
-            "offset": 5216,
+            "offset": 5224,
             "type": "CHandle<CCSMinimapVolume>"
           },
           "m_iBlockingUseActionInProgress": {
-            "offset": 5328,
+            "offset": 5336,
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iBombSiteIndex": {
-            "offset": 5340,
+            "offset": 5348,
             "type": "CEntityIndex"
           },
           "m_iDeathFlags": {
-            "offset": 5440,
+            "offset": 5448,
             "type": "int32"
           },
           "m_iDisplayHistoryBits": {
-            "offset": 5272,
+            "offset": 5280,
             "type": "uint32"
           },
           "m_iLastWeaponFireUsercmd": {
-            "offset": 5424,
+            "offset": 5432,
             "type": "int32"
           },
           "m_iPlayerLocked": {
-            "offset": 4064,
+            "offset": 4072,
             "type": "int32"
           },
           "m_iRetakesMVPBoostItem": {
-            "offset": 3984,
+            "offset": 3992,
             "type": "int32"
           },
           "m_iRetakesOffering": {
-            "offset": 3972,
+            "offset": 3980,
             "type": "int32"
           },
           "m_iRetakesOfferingCard": {
-            "offset": 3976,
+            "offset": 3984,
             "type": "int32"
           },
           "m_iShotsFired": {
-            "offset": 5352,
+            "offset": 5360,
             "type": "int32"
           },
           "m_ignoreLadderJumpTime": {
-            "offset": 5380,
+            "offset": 5388,
             "type": "float32"
           },
           "m_lastLandTime": {
-            "offset": 4056,
+            "offset": 4064,
             "type": "GameTime_t"
           },
           "m_nCharacterDefIndex": {
-            "offset": 3680,
+            "offset": 3688,
             "type": "uint16"
           },
           "m_nEconGlovesChanged": {
-            "offset": 5184,
+            "offset": 5192,
             "type": "uint8"
           },
           "m_nLastKillerIndex": {
-            "offset": 5288,
+            "offset": 5296,
             "type": "CEntityIndex"
           },
           "m_nLastPickupPriority": {
-            "offset": 5404,
+            "offset": 5412,
             "type": "int32"
           },
           "m_nRagdollDamageBone": {
-            "offset": 4084,
+            "offset": 4092,
             "type": "int32"
           },
           "m_nSpotRules": {
-            "offset": 5320,
+            "offset": 5328,
             "type": "int32"
           },
           "m_nWhichBombZone": {
-            "offset": 5344,
+            "offset": 5352,
             "type": "int32"
           },
           "m_pActionTrackingServices": {
-            "offset": 3648,
+            "offset": 3656,
             "type": "CCSPlayer_ActionTrackingServices*"
           },
           "m_pAimPunchServices": {
-            "offset": 3656,
+            "offset": 3664,
             "type": "CCSPlayer_AimPunchServices*"
           },
           "m_pBot": {
-            "offset": 5392,
+            "offset": 5400,
             "type": "CCSBot*"
           },
           "m_pBulletServices": {
-            "offset": 3624,
+            "offset": 3632,
             "type": "CCSPlayer_BulletServices*"
           },
           "m_pBuyServices": {
-            "offset": 3640,
+            "offset": 3648,
             "type": "CCSPlayer_BuyServices*"
           },
           "m_pDamageReactServices": {
-            "offset": 3672,
+            "offset": 3680,
             "type": "CCSPlayer_DamageReactServices*"
           },
           "m_pHostageServices": {
-            "offset": 3632,
+            "offset": 3640,
             "type": "CCSPlayer_HostageServices*"
           },
           "m_pRadioServices": {
-            "offset": 3664,
+            "offset": 3672,
             "type": "CCSPlayer_RadioServices*"
           },
           "m_qDeathEyeAngles": {
-            "offset": 5220,
+            "offset": 5228,
             "type": "QAngle"
           },
           "m_strVOPrefix": {
-            "offset": 3688,
+            "offset": 3696,
             "type": "CUtlString"
           },
           "m_szLastPlaceName": {
-            "offset": 3696,
+            "offset": 3704,
             "type": "char[18]"
           },
           "m_szRagdollDamageWeaponName": {
-            "offset": 4100,
+            "offset": 4108,
             "type": "char[64]"
           },
           "m_unCurrentEquipmentValue": {
-            "offset": 5416,
+            "offset": 5424,
             "type": "uint16"
           },
           "m_unFreezetimeEndEquipmentValue": {
-            "offset": 5420,
+            "offset": 5428,
             "type": "uint16"
           },
           "m_unRoundStartEquipmentValue": {
-            "offset": 5418,
+            "offset": 5426,
             "type": "uint16"
           },
           "m_vRagdollDamageForce": {
-            "offset": 4088,
+            "offset": 4096,
             "type": "Vector"
           },
           "m_vRagdollServerOrigin": {
-            "offset": 4168,
+            "offset": 4176,
             "type": "VectorWS"
           },
           "m_vecCurrentMinimapVolumes": {
-            "offset": 5192,
+            "offset": 5200,
             "type": "CUtlVector<CHandle<CCSMinimapVolume>>"
           },
           "m_vecDeathInfoOrigin": {
-            "offset": 5452,
+            "offset": 5460,
             "type": "VectorWS"
           },
           "m_vecPlayerPatchEconIndices": {
-            "offset": 5464,
+            "offset": 5472,
             "type": "uint32[5]"
           },
           "m_vecStashedGrenadeThrowPawnCenter": {
-            "offset": 5520,
+            "offset": 5528,
             "type": "VectorWS"
           },
           "m_vecStashedGrenadeThrowPosition": {
-            "offset": 5508,
+            "offset": 5516,
             "type": "VectorWS"
           },
           "m_vecStashedVelocity": {
-            "offset": 5532,
+            "offset": 5540,
             "type": "Vector"
           },
           "m_vecTotalBulletForce": {
-            "offset": 5364,
+            "offset": 5372,
             "type": "Vector"
           },
           "m_wasNotKilledNaturally": {
-            "offset": 5553,
+            "offset": 5561,
             "type": "bool"
           }
         },
@@ -94097,11 +94105,11 @@
           "k_EMsgGCAddSocketToItem_DEPRECATED": 1017,
           "k_EMsgGCAdjustEquipSlotsManual": 2531,
           "k_EMsgGCAdjustEquipSlotsShuffle": 2532,
-          "k_EMsgGCApplyConsumableEffects": 1069,
-          "k_EMsgGCApplyEggEssence": 1078,
-          "k_EMsgGCApplyPennantUpgrade": 1076,
+          "k_EMsgGCApplyConsumableEffects_DEPRECATED": 1069,
+          "k_EMsgGCApplyEggEssence_DEPRECATED": 1078,
+          "k_EMsgGCApplyPennantUpgrade_DEPRECATED": 1076,
           "k_EMsgGCApplySticker": 1086,
-          "k_EMsgGCApplyStrangePart": 1073,
+          "k_EMsgGCApplyStrangePart_DEPRECATED": 1073,
           "k_EMsgGCBackpackSortFinished": 1058,
           "k_EMsgGCBannedWordListRequest": 2512,
           "k_EMsgGCBannedWordListResponse": 2513,
@@ -94109,77 +94117,77 @@
           "k_EMsgGCCasketItemAdd": 1092,
           "k_EMsgGCCasketItemExtract": 1093,
           "k_EMsgGCCasketItemLoadContents": 1094,
-          "k_EMsgGCClientDisplayNotification": 1072,
+          "k_EMsgGCClientDisplayNotification_DEPRECATED": 1072,
           "k_EMsgGCClientVersionUpdated": 2528,
-          "k_EMsgGCCollectItem": 1061,
+          "k_EMsgGCCollectItem_DEPRECATED": 1061,
           "k_EMsgGCConsumableExhausted": 1070,
           "k_EMsgGCCraft": 1002,
           "k_EMsgGCCraftResponse": 1003,
-          "k_EMsgGCCustomizeItemTexture": 1023,
-          "k_EMsgGCCustomizeItemTextureResponse": 1024,
+          "k_EMsgGCCustomizeItemTextureResponse_DEPRECATED": 1024,
+          "k_EMsgGCCustomizeItemTexture_DEPRECATED": 1023,
           "k_EMsgGCDelete": 1004,
-          "k_EMsgGCDeliverGift": 1034,
-          "k_EMsgGCDeliverGiftResponseGiver": 1035,
-          "k_EMsgGCDeliverGiftResponseReceiver": 1036,
+          "k_EMsgGCDeliverGiftResponseGiver_DEPRECATED": 1035,
+          "k_EMsgGCDeliverGiftResponseReceiver_DEPRECATED": 1036,
+          "k_EMsgGCDeliverGift_DEPRECATED": 1034,
           "k_EMsgGCDev_NewItemRequest": 2001,
           "k_EMsgGCDev_NewItemRequestResponse": 2002,
-          "k_EMsgGCDev_PaintKitDropItem": 2003,
+          "k_EMsgGCDev_PaintKitDropItem_DEPRECATED": 2003,
           "k_EMsgGCDev_SchemaReservationRequest": 2004,
-          "k_EMsgGCGiftWrapItem": 1032,
-          "k_EMsgGCGiftWrapItemResponse": 1033,
+          "k_EMsgGCGiftWrapItemResponse_DEPRECATED": 1033,
+          "k_EMsgGCGiftWrapItem_DEPRECATED": 1032,
           "k_EMsgGCGiftedItems": 1083,
           "k_EMsgGCGiftedItems_DEPRECATED": 1027,
-          "k_EMsgGCGoldenWrenchBroadcast": 1011,
+          "k_EMsgGCGoldenWrenchBroadcast_DEPRECATED": 1011,
           "k_EMsgGCItemAcknowledged": 1087,
           "k_EMsgGCItemAcknowledged__DEPRECATED": 1062,
           "k_EMsgGCItemCustomizationNotification": 1090,
-          "k_EMsgGCItemPreviewCheckStatus": 1701,
-          "k_EMsgGCItemPreviewExpire": 1705,
-          "k_EMsgGCItemPreviewExpireNotification": 1706,
-          "k_EMsgGCItemPreviewItemBoughtNotification": 1707,
-          "k_EMsgGCItemPreviewRequest": 1703,
-          "k_EMsgGCItemPreviewRequestResponse": 1704,
-          "k_EMsgGCItemPreviewStatusResponse": 1702,
-          "k_EMsgGCLookupAccount": 1043,
-          "k_EMsgGCLookupAccountName": 1045,
-          "k_EMsgGCLookupAccountNameResponse": 1046,
-          "k_EMsgGCLookupAccountResponse": 1044,
-          "k_EMsgGCMOTDRequest": 1012,
-          "k_EMsgGCMOTDRequestResponse": 1013,
+          "k_EMsgGCItemPreviewCheckStatus_DEPRECATED": 1701,
+          "k_EMsgGCItemPreviewExpireNotification_DEPRECATED": 1706,
+          "k_EMsgGCItemPreviewExpire_DEPRECATED": 1705,
+          "k_EMsgGCItemPreviewItemBoughtNotification_DEPRECATED": 1707,
+          "k_EMsgGCItemPreviewRequestResponse_DEPRECATED": 1704,
+          "k_EMsgGCItemPreviewRequest_DEPRECATED": 1703,
+          "k_EMsgGCItemPreviewStatusResponse_DEPRECATED": 1702,
+          "k_EMsgGCLookupAccountNameResponse_DEPRECATED": 1046,
+          "k_EMsgGCLookupAccountName_DEPRECATED": 1045,
+          "k_EMsgGCLookupAccountResponse_DEPRECATED": 1044,
+          "k_EMsgGCLookupAccount_DEPRECATED": 1043,
+          "k_EMsgGCMOTDRequestResponse_DEPRECATED": 1013,
+          "k_EMsgGCMOTDRequest_DEPRECATED": 1012,
           "k_EMsgGCModifyItemAttribute": 1091,
           "k_EMsgGCNameBaseItem": 1019,
           "k_EMsgGCNameBaseItemResponse": 1020,
-          "k_EMsgGCNameEggEssenceResponse": 1079,
+          "k_EMsgGCNameEggEssenceResponse_DEPRECATED": 1079,
           "k_EMsgGCNameItem": 1006,
           "k_EMsgGCNameItemNotification": 1068,
           "k_EMsgGCOpenCrate": 2534,
-          "k_EMsgGCPaintItem": 1009,
-          "k_EMsgGCPaintItemResponse": 1010,
-          "k_EMsgGCPaintKitBaseItem": 1081,
-          "k_EMsgGCPaintKitItem": 1080,
-          "k_EMsgGCPaintKitItemResponse": 1082,
+          "k_EMsgGCPaintItemResponse_DEPRECATED": 1010,
+          "k_EMsgGCPaintItem_DEPRECATED": 1009,
+          "k_EMsgGCPaintKitBaseItem_DEPRECATED": 1081,
+          "k_EMsgGCPaintKitItemResponse_DEPRECATED": 1082,
+          "k_EMsgGCPaintKitItem_DEPRECATED": 1080,
           "k_EMsgGCRecurringSubscriptionStatus": 2530,
-          "k_EMsgGCRemoveCustomTexture": 1051,
-          "k_EMsgGCRemoveCustomTextureResponse": 1052,
+          "k_EMsgGCRemoveCustomTextureResponse_DEPRECATED": 1052,
+          "k_EMsgGCRemoveCustomTexture_DEPRECATED": 1051,
           "k_EMsgGCRemoveItemName": 1030,
-          "k_EMsgGCRemoveItemPaint": 1031,
-          "k_EMsgGCRemoveMakersMark": 1053,
-          "k_EMsgGCRemoveMakersMarkResponse": 1054,
+          "k_EMsgGCRemoveItemPaint_DEPRECATED": 1031,
+          "k_EMsgGCRemoveMakersMarkResponse_DEPRECATED": 1054,
+          "k_EMsgGCRemoveMakersMark_DEPRECATED": 1053,
           "k_EMsgGCRemoveSocketItemResponse_DEPRECATED": 1022,
           "k_EMsgGCRemoveSocketItem_DEPRECATED": 1021,
-          "k_EMsgGCRemoveUniqueCraftIndex": 1055,
-          "k_EMsgGCRemoveUniqueCraftIndexResponse": 1056,
+          "k_EMsgGCRemoveUniqueCraftIndexResponse_DEPRECATED": 1056,
+          "k_EMsgGCRemoveUniqueCraftIndex_DEPRECATED": 1055,
           "k_EMsgGCRequestAnnouncements": 2525,
           "k_EMsgGCRequestAnnouncementsResponse": 2526,
           "k_EMsgGCRequestPassportItemGrant": 2527,
           "k_EMsgGCSaxxyBroadcast": 1057,
-          "k_EMsgGCServerBrowser_BlacklistServer": 1602,
-          "k_EMsgGCServerBrowser_FavoriteServer": 1601,
-          "k_EMsgGCServerRentalsBase": 1700,
+          "k_EMsgGCServerBrowser_BlacklistServer_DEPRECATED": 1602,
+          "k_EMsgGCServerBrowser_FavoriteServer_DEPRECATED": 1601,
+          "k_EMsgGCServerRentalsBase_DEPRECATED": 1700,
           "k_EMsgGCServerVersionUpdated": 2522,
           "k_EMsgGCSetItemPosition": 1001,
           "k_EMsgGCSetItemPositions": 1077,
-          "k_EMsgGCSetItemStyle": 1039,
+          "k_EMsgGCSetItemStyle_DEPRECATED": 1039,
           "k_EMsgGCShowItemsPickedUp": 1071,
           "k_EMsgGCSortItems": 1041,
           "k_EMsgGCStatTrakSwap": 1088,
@@ -94193,8 +94201,8 @@
           "k_EMsgGCStorePurchaseInitResponse": 2511,
           "k_EMsgGCStorePurchaseInitResponse_DEPRECATED": 2503,
           "k_EMsgGCStorePurchaseInit_DEPRECATED": 2502,
-          "k_EMsgGCStorePurchaseQueryTxn": 2508,
-          "k_EMsgGCStorePurchaseQueryTxnResponse": 2509,
+          "k_EMsgGCStorePurchaseQueryTxnResponse_DEPRECATED": 2509,
+          "k_EMsgGCStorePurchaseQueryTxn_DEPRECATED": 2508,
           "k_EMsgGCToGCBannedWordListBroadcast": 2514,
           "k_EMsgGCToGCBannedWordListUpdated": 2515,
           "k_EMsgGCToGCBroadcastConsoleCommand": 2521,
@@ -94206,16 +94214,16 @@
           "k_EMsgGCToGCWebAPIAccountChanged": 2524,
           "k_EMsgGCUnlockCrateResponse": 1008,
           "k_EMsgGCUnlockCrate_DEPRECATED": 1007,
-          "k_EMsgGCUnlockItemStyle": 1084,
-          "k_EMsgGCUnlockItemStyleResponse": 1085,
-          "k_EMsgGCUnwrapGiftRequest": 1037,
-          "k_EMsgGCUnwrapGiftResponse": 1038,
+          "k_EMsgGCUnlockItemStyleResponse_DEPRECATED": 1085,
+          "k_EMsgGCUnlockItemStyle_DEPRECATED": 1084,
+          "k_EMsgGCUnwrapGiftRequest_DEPRECATED": 1037,
+          "k_EMsgGCUnwrapGiftResponse_DEPRECATED": 1038,
           "k_EMsgGCUpdateItemSchema": 1049,
           "k_EMsgGCUseItemRequest": 1025,
           "k_EMsgGCUseItemResponse": 1026,
-          "k_EMsgGCUsedClaimCodeItem": 1040,
+          "k_EMsgGCUsedClaimCodeItem_DEPRECATED": 1040,
           "k_EMsgGCUserTrackTimePlayedConsecutively": 1089,
-          "k_EMsgGCVerifyCacheSubscription": 1005,
+          "k_EMsgGCVerifyCacheSubscription_DEPRECATED": 1005,
           "k_EMsgGCVolatileItemLoadContents": 2536,
           "k_EMsgGC_IncrementKillCountAttribute": 1074,
           "k_EMsgGC_IncrementKillCountResponse": 1075,
@@ -94320,7 +94328,7 @@
           "k_EGCMsgMultiplexMsg": 97,
           "k_EGCMsgMultiplexMsgResponse": 98,
           "k_EGCMsgPostAlert": 75,
-          "k_EGCMsgPreTestSetup": 69,
+          "k_EGCMsgPreTestSetup_DEPRECATED": 69,
           "k_EGCMsgReceiveInterAppMessage": 73,
           "k_EGCMsgRecordSupportAction": 70,
           "k_EGCMsgRecurringSubscriptionStatusChange": 530,
@@ -94678,18 +94686,6 @@
           "ET_Spectator": 1,
           "ET_Terrorist": 2,
           "ET_Unknown": 0
-        },
-        "type": "uint32"
-      },
-      "EUnlockStyle": {
-        "alignment": 4,
-        "members": {
-          "k_UnlockStyle_Failed_CantAfford": 2,
-          "k_UnlockStyle_Failed_CantAffordAttrib": 5,
-          "k_UnlockStyle_Failed_CantCommit": 3,
-          "k_UnlockStyle_Failed_CantLockCache": 4,
-          "k_UnlockStyle_Failed_PreReq": 1,
-          "k_UnlockStyle_Succeeded": 0
         },
         "type": "uint32"
       },

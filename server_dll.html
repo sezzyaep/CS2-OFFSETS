@@ -1595,7 +1595,7 @@
             <tr><td>k_EGCMsgLookupAccountFromInput</td><td class="value">66</td></tr>
             <tr><td>k_EGCMsgSendHTTPRequest</td><td class="value">67</td></tr>
             <tr><td>k_EGCMsgSendHTTPRequestResponse</td><td class="value">68</td></tr>
-            <tr><td>k_EGCMsgPreTestSetup</td><td class="value">69</td></tr>
+            <tr><td>k_EGCMsgPreTestSetup_DEPRECATED</td><td class="value">69</td></tr>
             <tr><td>k_EGCMsgRecordSupportAction</td><td class="value">70</td></tr>
             <tr><td>k_EGCMsgGetAccountDetails_DEPRECATED</td><td class="value">71</td></tr>
             <tr><td>k_EGCMsgReceiveInterAppMessage</td><td class="value">73</td></tr>
@@ -1960,20 +1960,6 @@
             <tr><td>HULL_SMALL</td><td class="value">9</td></tr>
             <tr><td>NUM_HULLS</td><td class="value">10</td></tr>
             <tr><td>HULL_NONE</td><td class="value">11</td></tr>
-        </tbody>
-    </table>
-    <h3>Enum: EUnlockStyle</h3>
-    <table>
-        <thead>
-            <tr><th>Name</th><th>Value</th></tr>
-        </thead>
-        <tbody>
-            <tr><td>k_UnlockStyle_Succeeded</td><td class="value">0</td></tr>
-            <tr><td>k_UnlockStyle_Failed_PreReq</td><td class="value">1</td></tr>
-            <tr><td>k_UnlockStyle_Failed_CantAfford</td><td class="value">2</td></tr>
-            <tr><td>k_UnlockStyle_Failed_CantCommit</td><td class="value">3</td></tr>
-            <tr><td>k_UnlockStyle_Failed_CantLockCache</td><td class="value">4</td></tr>
-            <tr><td>k_UnlockStyle_Failed_CantAffordAttrib</td><td class="value">5</td></tr>
         </tbody>
     </table>
     <h3>Enum: ExternalAnimGraphInactiveBehavior_t</h3>
@@ -3779,15 +3765,15 @@
             <tr><td>k_EMsgGCCraft</td><td class="value">1002</td></tr>
             <tr><td>k_EMsgGCCraftResponse</td><td class="value">1003</td></tr>
             <tr><td>k_EMsgGCDelete</td><td class="value">1004</td></tr>
-            <tr><td>k_EMsgGCVerifyCacheSubscription</td><td class="value">1005</td></tr>
+            <tr><td>k_EMsgGCVerifyCacheSubscription_DEPRECATED</td><td class="value">1005</td></tr>
             <tr><td>k_EMsgGCNameItem</td><td class="value">1006</td></tr>
             <tr><td>k_EMsgGCUnlockCrate_DEPRECATED</td><td class="value">1007</td></tr>
             <tr><td>k_EMsgGCUnlockCrateResponse</td><td class="value">1008</td></tr>
-            <tr><td>k_EMsgGCPaintItem</td><td class="value">1009</td></tr>
-            <tr><td>k_EMsgGCPaintItemResponse</td><td class="value">1010</td></tr>
-            <tr><td>k_EMsgGCGoldenWrenchBroadcast</td><td class="value">1011</td></tr>
-            <tr><td>k_EMsgGCMOTDRequest</td><td class="value">1012</td></tr>
-            <tr><td>k_EMsgGCMOTDRequestResponse</td><td class="value">1013</td></tr>
+            <tr><td>k_EMsgGCPaintItem_DEPRECATED</td><td class="value">1009</td></tr>
+            <tr><td>k_EMsgGCPaintItemResponse_DEPRECATED</td><td class="value">1010</td></tr>
+            <tr><td>k_EMsgGCGoldenWrenchBroadcast_DEPRECATED</td><td class="value">1011</td></tr>
+            <tr><td>k_EMsgGCMOTDRequest_DEPRECATED</td><td class="value">1012</td></tr>
+            <tr><td>k_EMsgGCMOTDRequestResponse_DEPRECATED</td><td class="value">1013</td></tr>
             <tr><td>k_EMsgGCAddItemToSocket_DEPRECATED</td><td class="value">1014</td></tr>
             <tr><td>k_EMsgGCAddItemToSocketResponse_DEPRECATED</td><td class="value">1015</td></tr>
             <tr><td>k_EMsgGCAddSocketToBaseItem_DEPRECATED</td><td class="value">1016</td></tr>
@@ -3797,59 +3783,59 @@
             <tr><td>k_EMsgGCNameBaseItemResponse</td><td class="value">1020</td></tr>
             <tr><td>k_EMsgGCRemoveSocketItem_DEPRECATED</td><td class="value">1021</td></tr>
             <tr><td>k_EMsgGCRemoveSocketItemResponse_DEPRECATED</td><td class="value">1022</td></tr>
-            <tr><td>k_EMsgGCCustomizeItemTexture</td><td class="value">1023</td></tr>
-            <tr><td>k_EMsgGCCustomizeItemTextureResponse</td><td class="value">1024</td></tr>
+            <tr><td>k_EMsgGCCustomizeItemTexture_DEPRECATED</td><td class="value">1023</td></tr>
+            <tr><td>k_EMsgGCCustomizeItemTextureResponse_DEPRECATED</td><td class="value">1024</td></tr>
             <tr><td>k_EMsgGCUseItemRequest</td><td class="value">1025</td></tr>
             <tr><td>k_EMsgGCUseItemResponse</td><td class="value">1026</td></tr>
             <tr><td>k_EMsgGCGiftedItems_DEPRECATED</td><td class="value">1027</td></tr>
             <tr><td>k_EMsgGCRemoveItemName</td><td class="value">1030</td></tr>
-            <tr><td>k_EMsgGCRemoveItemPaint</td><td class="value">1031</td></tr>
-            <tr><td>k_EMsgGCGiftWrapItem</td><td class="value">1032</td></tr>
-            <tr><td>k_EMsgGCGiftWrapItemResponse</td><td class="value">1033</td></tr>
-            <tr><td>k_EMsgGCDeliverGift</td><td class="value">1034</td></tr>
-            <tr><td>k_EMsgGCDeliverGiftResponseGiver</td><td class="value">1035</td></tr>
-            <tr><td>k_EMsgGCDeliverGiftResponseReceiver</td><td class="value">1036</td></tr>
-            <tr><td>k_EMsgGCUnwrapGiftRequest</td><td class="value">1037</td></tr>
-            <tr><td>k_EMsgGCUnwrapGiftResponse</td><td class="value">1038</td></tr>
-            <tr><td>k_EMsgGCSetItemStyle</td><td class="value">1039</td></tr>
-            <tr><td>k_EMsgGCUsedClaimCodeItem</td><td class="value">1040</td></tr>
+            <tr><td>k_EMsgGCRemoveItemPaint_DEPRECATED</td><td class="value">1031</td></tr>
+            <tr><td>k_EMsgGCGiftWrapItem_DEPRECATED</td><td class="value">1032</td></tr>
+            <tr><td>k_EMsgGCGiftWrapItemResponse_DEPRECATED</td><td class="value">1033</td></tr>
+            <tr><td>k_EMsgGCDeliverGift_DEPRECATED</td><td class="value">1034</td></tr>
+            <tr><td>k_EMsgGCDeliverGiftResponseGiver_DEPRECATED</td><td class="value">1035</td></tr>
+            <tr><td>k_EMsgGCDeliverGiftResponseReceiver_DEPRECATED</td><td class="value">1036</td></tr>
+            <tr><td>k_EMsgGCUnwrapGiftRequest_DEPRECATED</td><td class="value">1037</td></tr>
+            <tr><td>k_EMsgGCUnwrapGiftResponse_DEPRECATED</td><td class="value">1038</td></tr>
+            <tr><td>k_EMsgGCSetItemStyle_DEPRECATED</td><td class="value">1039</td></tr>
+            <tr><td>k_EMsgGCUsedClaimCodeItem_DEPRECATED</td><td class="value">1040</td></tr>
             <tr><td>k_EMsgGCSortItems</td><td class="value">1041</td></tr>
             <tr><td>k_EMsgGC_RevolvingLootList_DEPRECATED</td><td class="value">1042</td></tr>
-            <tr><td>k_EMsgGCLookupAccount</td><td class="value">1043</td></tr>
-            <tr><td>k_EMsgGCLookupAccountResponse</td><td class="value">1044</td></tr>
-            <tr><td>k_EMsgGCLookupAccountName</td><td class="value">1045</td></tr>
-            <tr><td>k_EMsgGCLookupAccountNameResponse</td><td class="value">1046</td></tr>
+            <tr><td>k_EMsgGCLookupAccount_DEPRECATED</td><td class="value">1043</td></tr>
+            <tr><td>k_EMsgGCLookupAccountResponse_DEPRECATED</td><td class="value">1044</td></tr>
+            <tr><td>k_EMsgGCLookupAccountName_DEPRECATED</td><td class="value">1045</td></tr>
+            <tr><td>k_EMsgGCLookupAccountNameResponse_DEPRECATED</td><td class="value">1046</td></tr>
             <tr><td>k_EMsgGCUpdateItemSchema</td><td class="value">1049</td></tr>
-            <tr><td>k_EMsgGCRemoveCustomTexture</td><td class="value">1051</td></tr>
-            <tr><td>k_EMsgGCRemoveCustomTextureResponse</td><td class="value">1052</td></tr>
-            <tr><td>k_EMsgGCRemoveMakersMark</td><td class="value">1053</td></tr>
-            <tr><td>k_EMsgGCRemoveMakersMarkResponse</td><td class="value">1054</td></tr>
-            <tr><td>k_EMsgGCRemoveUniqueCraftIndex</td><td class="value">1055</td></tr>
-            <tr><td>k_EMsgGCRemoveUniqueCraftIndexResponse</td><td class="value">1056</td></tr>
+            <tr><td>k_EMsgGCRemoveCustomTexture_DEPRECATED</td><td class="value">1051</td></tr>
+            <tr><td>k_EMsgGCRemoveCustomTextureResponse_DEPRECATED</td><td class="value">1052</td></tr>
+            <tr><td>k_EMsgGCRemoveMakersMark_DEPRECATED</td><td class="value">1053</td></tr>
+            <tr><td>k_EMsgGCRemoveMakersMarkResponse_DEPRECATED</td><td class="value">1054</td></tr>
+            <tr><td>k_EMsgGCRemoveUniqueCraftIndex_DEPRECATED</td><td class="value">1055</td></tr>
+            <tr><td>k_EMsgGCRemoveUniqueCraftIndexResponse_DEPRECATED</td><td class="value">1056</td></tr>
             <tr><td>k_EMsgGCSaxxyBroadcast</td><td class="value">1057</td></tr>
             <tr><td>k_EMsgGCBackpackSortFinished</td><td class="value">1058</td></tr>
-            <tr><td>k_EMsgGCCollectItem</td><td class="value">1061</td></tr>
+            <tr><td>k_EMsgGCCollectItem_DEPRECATED</td><td class="value">1061</td></tr>
             <tr><td>k_EMsgGCItemAcknowledged__DEPRECATED</td><td class="value">1062</td></tr>
             <tr><td>k_EMsgGC_ReportAbuse</td><td class="value">1065</td></tr>
             <tr><td>k_EMsgGC_ReportAbuseResponse</td><td class="value">1066</td></tr>
             <tr><td>k_EMsgGCNameItemNotification</td><td class="value">1068</td></tr>
-            <tr><td>k_EMsgGCApplyConsumableEffects</td><td class="value">1069</td></tr>
+            <tr><td>k_EMsgGCApplyConsumableEffects_DEPRECATED</td><td class="value">1069</td></tr>
             <tr><td>k_EMsgGCConsumableExhausted</td><td class="value">1070</td></tr>
             <tr><td>k_EMsgGCShowItemsPickedUp</td><td class="value">1071</td></tr>
-            <tr><td>k_EMsgGCClientDisplayNotification</td><td class="value">1072</td></tr>
-            <tr><td>k_EMsgGCApplyStrangePart</td><td class="value">1073</td></tr>
+            <tr><td>k_EMsgGCClientDisplayNotification_DEPRECATED</td><td class="value">1072</td></tr>
+            <tr><td>k_EMsgGCApplyStrangePart_DEPRECATED</td><td class="value">1073</td></tr>
             <tr><td>k_EMsgGC_IncrementKillCountAttribute</td><td class="value">1074</td></tr>
             <tr><td>k_EMsgGC_IncrementKillCountResponse</td><td class="value">1075</td></tr>
-            <tr><td>k_EMsgGCApplyPennantUpgrade</td><td class="value">1076</td></tr>
+            <tr><td>k_EMsgGCApplyPennantUpgrade_DEPRECATED</td><td class="value">1076</td></tr>
             <tr><td>k_EMsgGCSetItemPositions</td><td class="value">1077</td></tr>
-            <tr><td>k_EMsgGCApplyEggEssence</td><td class="value">1078</td></tr>
-            <tr><td>k_EMsgGCNameEggEssenceResponse</td><td class="value">1079</td></tr>
-            <tr><td>k_EMsgGCPaintKitItem</td><td class="value">1080</td></tr>
-            <tr><td>k_EMsgGCPaintKitBaseItem</td><td class="value">1081</td></tr>
-            <tr><td>k_EMsgGCPaintKitItemResponse</td><td class="value">1082</td></tr>
+            <tr><td>k_EMsgGCApplyEggEssence_DEPRECATED</td><td class="value">1078</td></tr>
+            <tr><td>k_EMsgGCNameEggEssenceResponse_DEPRECATED</td><td class="value">1079</td></tr>
+            <tr><td>k_EMsgGCPaintKitItem_DEPRECATED</td><td class="value">1080</td></tr>
+            <tr><td>k_EMsgGCPaintKitBaseItem_DEPRECATED</td><td class="value">1081</td></tr>
+            <tr><td>k_EMsgGCPaintKitItemResponse_DEPRECATED</td><td class="value">1082</td></tr>
             <tr><td>k_EMsgGCGiftedItems</td><td class="value">1083</td></tr>
-            <tr><td>k_EMsgGCUnlockItemStyle</td><td class="value">1084</td></tr>
-            <tr><td>k_EMsgGCUnlockItemStyleResponse</td><td class="value">1085</td></tr>
+            <tr><td>k_EMsgGCUnlockItemStyle_DEPRECATED</td><td class="value">1084</td></tr>
+            <tr><td>k_EMsgGCUnlockItemStyleResponse_DEPRECATED</td><td class="value">1085</td></tr>
             <tr><td>k_EMsgGCApplySticker</td><td class="value">1086</td></tr>
             <tr><td>k_EMsgGCItemAcknowledged</td><td class="value">1087</td></tr>
             <tr><td>k_EMsgGCStatTrakSwap</td><td class="value">1088</td></tr>
@@ -3859,19 +3845,19 @@
             <tr><td>k_EMsgGCCasketItemAdd</td><td class="value">1092</td></tr>
             <tr><td>k_EMsgGCCasketItemExtract</td><td class="value">1093</td></tr>
             <tr><td>k_EMsgGCCasketItemLoadContents</td><td class="value">1094</td></tr>
-            <tr><td>k_EMsgGCServerBrowser_FavoriteServer</td><td class="value">1601</td></tr>
-            <tr><td>k_EMsgGCServerBrowser_BlacklistServer</td><td class="value">1602</td></tr>
-            <tr><td>k_EMsgGCServerRentalsBase</td><td class="value">1700</td></tr>
-            <tr><td>k_EMsgGCItemPreviewCheckStatus</td><td class="value">1701</td></tr>
-            <tr><td>k_EMsgGCItemPreviewStatusResponse</td><td class="value">1702</td></tr>
-            <tr><td>k_EMsgGCItemPreviewRequest</td><td class="value">1703</td></tr>
-            <tr><td>k_EMsgGCItemPreviewRequestResponse</td><td class="value">1704</td></tr>
-            <tr><td>k_EMsgGCItemPreviewExpire</td><td class="value">1705</td></tr>
-            <tr><td>k_EMsgGCItemPreviewExpireNotification</td><td class="value">1706</td></tr>
-            <tr><td>k_EMsgGCItemPreviewItemBoughtNotification</td><td class="value">1707</td></tr>
+            <tr><td>k_EMsgGCServerBrowser_FavoriteServer_DEPRECATED</td><td class="value">1601</td></tr>
+            <tr><td>k_EMsgGCServerBrowser_BlacklistServer_DEPRECATED</td><td class="value">1602</td></tr>
+            <tr><td>k_EMsgGCServerRentalsBase_DEPRECATED</td><td class="value">1700</td></tr>
+            <tr><td>k_EMsgGCItemPreviewCheckStatus_DEPRECATED</td><td class="value">1701</td></tr>
+            <tr><td>k_EMsgGCItemPreviewStatusResponse_DEPRECATED</td><td class="value">1702</td></tr>
+            <tr><td>k_EMsgGCItemPreviewRequest_DEPRECATED</td><td class="value">1703</td></tr>
+            <tr><td>k_EMsgGCItemPreviewRequestResponse_DEPRECATED</td><td class="value">1704</td></tr>
+            <tr><td>k_EMsgGCItemPreviewExpire_DEPRECATED</td><td class="value">1705</td></tr>
+            <tr><td>k_EMsgGCItemPreviewExpireNotification_DEPRECATED</td><td class="value">1706</td></tr>
+            <tr><td>k_EMsgGCItemPreviewItemBoughtNotification_DEPRECATED</td><td class="value">1707</td></tr>
             <tr><td>k_EMsgGCDev_NewItemRequest</td><td class="value">2001</td></tr>
             <tr><td>k_EMsgGCDev_NewItemRequestResponse</td><td class="value">2002</td></tr>
-            <tr><td>k_EMsgGCDev_PaintKitDropItem</td><td class="value">2003</td></tr>
+            <tr><td>k_EMsgGCDev_PaintKitDropItem_DEPRECATED</td><td class="value">2003</td></tr>
             <tr><td>k_EMsgGCDev_SchemaReservationRequest</td><td class="value">2004</td></tr>
             <tr><td>k_EMsgGCStoreGetUserData</td><td class="value">2500</td></tr>
             <tr><td>k_EMsgGCStoreGetUserDataResponse</td><td class="value">2501</td></tr>
@@ -3881,8 +3867,8 @@
             <tr><td>k_EMsgGCStorePurchaseFinalizeResponse</td><td class="value">2505</td></tr>
             <tr><td>k_EMsgGCStorePurchaseCancel</td><td class="value">2506</td></tr>
             <tr><td>k_EMsgGCStorePurchaseCancelResponse</td><td class="value">2507</td></tr>
-            <tr><td>k_EMsgGCStorePurchaseQueryTxn</td><td class="value">2508</td></tr>
-            <tr><td>k_EMsgGCStorePurchaseQueryTxnResponse</td><td class="value">2509</td></tr>
+            <tr><td>k_EMsgGCStorePurchaseQueryTxn_DEPRECATED</td><td class="value">2508</td></tr>
+            <tr><td>k_EMsgGCStorePurchaseQueryTxnResponse_DEPRECATED</td><td class="value">2509</td></tr>
             <tr><td>k_EMsgGCStorePurchaseInit</td><td class="value">2510</td></tr>
             <tr><td>k_EMsgGCStorePurchaseInitResponse</td><td class="value">2511</td></tr>
             <tr><td>k_EMsgGCBannedWordListRequest</td><td class="value">2512</td></tr>
@@ -7458,113 +7444,114 @@
             <tr><th>Name</th><th>Type</th><th>Offset</th></tr>
         </thead>
         <tbody>
-            <tr><td>m_pBulletServices</td><td class="type">CCSPlayer_BulletServices*</td><td class="value">0xE28</td></tr>
-            <tr><td>m_pHostageServices</td><td class="type">CCSPlayer_HostageServices*</td><td class="value">0xE30</td></tr>
-            <tr><td>m_pBuyServices</td><td class="type">CCSPlayer_BuyServices*</td><td class="value">0xE38</td></tr>
-            <tr><td>m_pActionTrackingServices</td><td class="type">CCSPlayer_ActionTrackingServices*</td><td class="value">0xE40</td></tr>
-            <tr><td>m_pAimPunchServices</td><td class="type">CCSPlayer_AimPunchServices*</td><td class="value">0xE48</td></tr>
-            <tr><td>m_pRadioServices</td><td class="type">CCSPlayer_RadioServices*</td><td class="value">0xE50</td></tr>
-            <tr><td>m_pDamageReactServices</td><td class="type">CCSPlayer_DamageReactServices*</td><td class="value">0xE58</td></tr>
-            <tr><td>m_nCharacterDefIndex</td><td class="type">uint16</td><td class="value">0xE60</td></tr>
-            <tr><td>m_bHasFemaleVoice</td><td class="type">bool</td><td class="value">0xE62</td></tr>
-            <tr><td>m_strVOPrefix</td><td class="type">CUtlString</td><td class="value">0xE68</td></tr>
-            <tr><td>m_szLastPlaceName</td><td class="type">char[18]</td><td class="value">0xE70</td></tr>
-            <tr><td>m_bInHostageResetZone</td><td class="type">bool</td><td class="value">0xF60</td></tr>
-            <tr><td>m_bInBuyZone</td><td class="type">bool</td><td class="value">0xF61</td></tr>
-            <tr><td>m_TouchingBuyZones</td><td class="type">CUtlVector<CHandle<CBaseEntity>></td><td class="value">0xF68</td></tr>
-            <tr><td>m_bWasInBuyZone</td><td class="type">bool</td><td class="value">0xF80</td></tr>
-            <tr><td>m_bInHostageRescueZone</td><td class="type">bool</td><td class="value">0xF81</td></tr>
-            <tr><td>m_bInBombZone</td><td class="type">bool</td><td class="value">0xF82</td></tr>
-            <tr><td>m_bWasInHostageRescueZone</td><td class="type">bool</td><td class="value">0xF83</td></tr>
-            <tr><td>m_iRetakesOffering</td><td class="type">int32</td><td class="value">0xF84</td></tr>
-            <tr><td>m_iRetakesOfferingCard</td><td class="type">int32</td><td class="value">0xF88</td></tr>
-            <tr><td>m_bRetakesHasDefuseKit</td><td class="type">bool</td><td class="value">0xF8C</td></tr>
-            <tr><td>m_bRetakesMVPLastRound</td><td class="type">bool</td><td class="value">0xF8D</td></tr>
-            <tr><td>m_iRetakesMVPBoostItem</td><td class="type">int32</td><td class="value">0xF90</td></tr>
-            <tr><td>m_RetakesMVPBoostExtraUtility</td><td class="type">loadout_slot_t</td><td class="value">0xF94</td></tr>
-            <tr><td>m_flHealthShotBoostExpirationTime</td><td class="type">GameTime_t</td><td class="value">0xF98</td></tr>
-            <tr><td>m_flLandingTimeSeconds</td><td class="type">float32</td><td class="value">0xF9C</td></tr>
-            <tr><td>m_bIsBuyMenuOpen</td><td class="type">bool</td><td class="value">0xFA0</td></tr>
-            <tr><td>m_lastLandTime</td><td class="type">GameTime_t</td><td class="value">0xFD8</td></tr>
-            <tr><td>m_bOnGroundLastTick</td><td class="type">bool</td><td class="value">0xFDC</td></tr>
-            <tr><td>m_iPlayerLocked</td><td class="type">int32</td><td class="value">0xFE0</td></tr>
-            <tr><td>m_flTimeOfLastInjury</td><td class="type">GameTime_t</td><td class="value">0xFE8</td></tr>
-            <tr><td>m_flNextSprayDecalTime</td><td class="type">GameTime_t</td><td class="value">0xFEC</td></tr>
-            <tr><td>m_bNextSprayDecalTimeExpedited</td><td class="type">bool</td><td class="value">0xFF0</td></tr>
-            <tr><td>m_nRagdollDamageBone</td><td class="type">int32</td><td class="value">0xFF4</td></tr>
-            <tr><td>m_vRagdollDamageForce</td><td class="type">Vector</td><td class="value">0xFF8</td></tr>
-            <tr><td>m_szRagdollDamageWeaponName</td><td class="type">char[64]</td><td class="value">0x1004</td></tr>
-            <tr><td>m_bRagdollDamageHeadshot</td><td class="type">bool</td><td class="value">0x1044</td></tr>
-            <tr><td>m_vRagdollServerOrigin</td><td class="type">VectorWS</td><td class="value">0x1048</td></tr>
-            <tr><td>m_EconGloves</td><td class="type">CEconItemView</td><td class="value">0x1058</td></tr>
-            <tr><td>m_nEconGlovesChanged</td><td class="type">uint8</td><td class="value">0x1440</td></tr>
-            <tr><td>m_vecCurrentMinimapVolumes</td><td class="type">CUtlVector<CHandle<CCSMinimapVolume>></td><td class="value">0x1448</td></tr>
-            <tr><td>m_hActiveMinimapVolume</td><td class="type">CHandle<CCSMinimapVolume></td><td class="value">0x1460</td></tr>
-            <tr><td>m_qDeathEyeAngles</td><td class="type">QAngle</td><td class="value">0x1464</td></tr>
-            <tr><td>m_bLeftHanded</td><td class="type">bool</td><td class="value">0x1470</td></tr>
-            <tr><td>m_fSwitchedHandednessTime</td><td class="type">GameTime_t</td><td class="value">0x1474</td></tr>
-            <tr><td>m_flViewmodelOffsetX</td><td class="type">float32</td><td class="value">0x1478</td></tr>
-            <tr><td>m_flViewmodelOffsetY</td><td class="type">float32</td><td class="value">0x147C</td></tr>
-            <tr><td>m_flViewmodelOffsetZ</td><td class="type">float32</td><td class="value">0x1480</td></tr>
-            <tr><td>m_flViewmodelFOV</td><td class="type">float32</td><td class="value">0x1484</td></tr>
-            <tr><td>m_bIsWalking</td><td class="type">bool</td><td class="value">0x1488</td></tr>
-            <tr><td>m_fLastGivenDefuserTime</td><td class="type">float32</td><td class="value">0x148C</td></tr>
-            <tr><td>m_fLastGivenBombTime</td><td class="type">float32</td><td class="value">0x1490</td></tr>
-            <tr><td>m_flDealtDamageToEnemyMostRecentTimestamp</td><td class="type">float32</td><td class="value">0x1494</td></tr>
-            <tr><td>m_iDisplayHistoryBits</td><td class="type">uint32</td><td class="value">0x1498</td></tr>
-            <tr><td>m_flLastAttackedTeammate</td><td class="type">float32</td><td class="value">0x149C</td></tr>
-            <tr><td>m_allowAutoFollowTime</td><td class="type">GameTime_t</td><td class="value">0x14A0</td></tr>
-            <tr><td>m_bResetArmorNextSpawn</td><td class="type">bool</td><td class="value">0x14A4</td></tr>
-            <tr><td>m_nLastKillerIndex</td><td class="type">CEntityIndex</td><td class="value">0x14A8</td></tr>
-            <tr><td>m_entitySpottedState</td><td class="type">EntitySpottedState_t</td><td class="value">0x14B0</td></tr>
-            <tr><td>m_nSpotRules</td><td class="type">int32</td><td class="value">0x14C8</td></tr>
-            <tr><td>m_bIsScoped</td><td class="type">bool</td><td class="value">0x14CC</td></tr>
-            <tr><td>m_bResumeZoom</td><td class="type">bool</td><td class="value">0x14CD</td></tr>
-            <tr><td>m_bIsDefusing</td><td class="type">bool</td><td class="value">0x14CE</td></tr>
-            <tr><td>m_bIsGrabbingHostage</td><td class="type">bool</td><td class="value">0x14CF</td></tr>
-            <tr><td>m_iBlockingUseActionInProgress</td><td class="type">CSPlayerBlockingUseAction_t</td><td class="value">0x14D0</td></tr>
-            <tr><td>m_flEmitSoundTime</td><td class="type">GameTime_t</td><td class="value">0x14D4</td></tr>
-            <tr><td>m_bInNoDefuseArea</td><td class="type">bool</td><td class="value">0x14D8</td></tr>
-            <tr><td>m_iBombSiteIndex</td><td class="type">CEntityIndex</td><td class="value">0x14DC</td></tr>
-            <tr><td>m_nWhichBombZone</td><td class="type">int32</td><td class="value">0x14E0</td></tr>
-            <tr><td>m_bInBombZoneTrigger</td><td class="type">bool</td><td class="value">0x14E4</td></tr>
-            <tr><td>m_bWasInBombZoneTrigger</td><td class="type">bool</td><td class="value">0x14E5</td></tr>
-            <tr><td>m_iShotsFired</td><td class="type">int32</td><td class="value">0x14E8</td></tr>
-            <tr><td>m_flFlinchStack</td><td class="type">float32</td><td class="value">0x14EC</td></tr>
-            <tr><td>m_flVelocityModifier</td><td class="type">float32</td><td class="value">0x14F0</td></tr>
-            <tr><td>m_vecTotalBulletForce</td><td class="type">Vector</td><td class="value">0x14F4</td></tr>
-            <tr><td>m_bWaitForNoAttack</td><td class="type">bool</td><td class="value">0x1500</td></tr>
-            <tr><td>m_ignoreLadderJumpTime</td><td class="type">float32</td><td class="value">0x1504</td></tr>
-            <tr><td>m_bKilledByHeadshot</td><td class="type">bool</td><td class="value">0x1508</td></tr>
-            <tr><td>m_LastHitBox</td><td class="type">int32</td><td class="value">0x150C</td></tr>
-            <tr><td>m_pBot</td><td class="type">CCSBot*</td><td class="value">0x1510</td></tr>
-            <tr><td>m_bBotAllowActive</td><td class="type">bool</td><td class="value">0x1518</td></tr>
-            <tr><td>m_nLastPickupPriority</td><td class="type">int32</td><td class="value">0x151C</td></tr>
-            <tr><td>m_flLastPickupPriorityTime</td><td class="type">float32</td><td class="value">0x1520</td></tr>
-            <tr><td>m_ArmorValue</td><td class="type">int32</td><td class="value">0x1524</td></tr>
-            <tr><td>m_unCurrentEquipmentValue</td><td class="type">uint16</td><td class="value">0x1528</td></tr>
-            <tr><td>m_unRoundStartEquipmentValue</td><td class="type">uint16</td><td class="value">0x152A</td></tr>
-            <tr><td>m_unFreezetimeEndEquipmentValue</td><td class="type">uint16</td><td class="value">0x152C</td></tr>
-            <tr><td>m_iLastWeaponFireUsercmd</td><td class="type">int32</td><td class="value">0x1530</td></tr>
-            <tr><td>m_bIsSpawning</td><td class="type">bool</td><td class="value">0x1534</td></tr>
-            <tr><td>m_iDeathFlags</td><td class="type">int32</td><td class="value">0x1540</td></tr>
-            <tr><td>m_bHasDeathInfo</td><td class="type">bool</td><td class="value">0x1544</td></tr>
-            <tr><td>m_flDeathInfoTime</td><td class="type">float32</td><td class="value">0x1548</td></tr>
-            <tr><td>m_vecDeathInfoOrigin</td><td class="type">VectorWS</td><td class="value">0x154C</td></tr>
-            <tr><td>m_vecPlayerPatchEconIndices</td><td class="type">uint32[5]</td><td class="value">0x1558</td></tr>
-            <tr><td>m_GunGameImmunityColor</td><td class="type">Color</td><td class="value">0x156C</td></tr>
-            <tr><td>m_grenadeParameterStashTime</td><td class="type">GameTime_t</td><td class="value">0x1570</td></tr>
-            <tr><td>m_bGrenadeParametersStashed</td><td class="type">bool</td><td class="value">0x1574</td></tr>
-            <tr><td>m_angStashedShootAngles</td><td class="type">QAngle</td><td class="value">0x1578</td></tr>
-            <tr><td>m_vecStashedGrenadeThrowPosition</td><td class="type">VectorWS</td><td class="value">0x1584</td></tr>
-            <tr><td>m_vecStashedGrenadeThrowPawnCenter</td><td class="type">VectorWS</td><td class="value">0x1590</td></tr>
-            <tr><td>m_vecStashedVelocity</td><td class="type">Vector</td><td class="value">0x159C</td></tr>
-            <tr><td>m_bCommittingSuicideOnTeamChange</td><td class="type">bool</td><td class="value">0x15B0</td></tr>
-            <tr><td>m_wasNotKilledNaturally</td><td class="type">bool</td><td class="value">0x15B1</td></tr>
-            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x15B4</td></tr>
-            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x15B8</td></tr>
-            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x15BC</td></tr>
-            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x15C0</td></tr>
+            <tr><td>m_pBulletServices</td><td class="type">CCSPlayer_BulletServices*</td><td class="value">0xE30</td></tr>
+            <tr><td>m_pHostageServices</td><td class="type">CCSPlayer_HostageServices*</td><td class="value">0xE38</td></tr>
+            <tr><td>m_pBuyServices</td><td class="type">CCSPlayer_BuyServices*</td><td class="value">0xE40</td></tr>
+            <tr><td>m_pActionTrackingServices</td><td class="type">CCSPlayer_ActionTrackingServices*</td><td class="value">0xE48</td></tr>
+            <tr><td>m_pAimPunchServices</td><td class="type">CCSPlayer_AimPunchServices*</td><td class="value">0xE50</td></tr>
+            <tr><td>m_pRadioServices</td><td class="type">CCSPlayer_RadioServices*</td><td class="value">0xE58</td></tr>
+            <tr><td>m_pDamageReactServices</td><td class="type">CCSPlayer_DamageReactServices*</td><td class="value">0xE60</td></tr>
+            <tr><td>m_nCharacterDefIndex</td><td class="type">uint16</td><td class="value">0xE68</td></tr>
+            <tr><td>m_bHasFemaleVoice</td><td class="type">bool</td><td class="value">0xE6A</td></tr>
+            <tr><td>m_strVOPrefix</td><td class="type">CUtlString</td><td class="value">0xE70</td></tr>
+            <tr><td>m_szLastPlaceName</td><td class="type">char[18]</td><td class="value">0xE78</td></tr>
+            <tr><td>m_bInHostageResetZone</td><td class="type">bool</td><td class="value">0xF68</td></tr>
+            <tr><td>m_bInBuyZone</td><td class="type">bool</td><td class="value">0xF69</td></tr>
+            <tr><td>m_TouchingBuyZones</td><td class="type">CUtlVector<CHandle<CBaseEntity>></td><td class="value">0xF70</td></tr>
+            <tr><td>m_bWasInBuyZone</td><td class="type">bool</td><td class="value">0xF88</td></tr>
+            <tr><td>m_bInHostageRescueZone</td><td class="type">bool</td><td class="value">0xF89</td></tr>
+            <tr><td>m_bInBombZone</td><td class="type">bool</td><td class="value">0xF8A</td></tr>
+            <tr><td>m_bWasInHostageRescueZone</td><td class="type">bool</td><td class="value">0xF8B</td></tr>
+            <tr><td>m_iRetakesOffering</td><td class="type">int32</td><td class="value">0xF8C</td></tr>
+            <tr><td>m_iRetakesOfferingCard</td><td class="type">int32</td><td class="value">0xF90</td></tr>
+            <tr><td>m_bRetakesHasDefuseKit</td><td class="type">bool</td><td class="value">0xF94</td></tr>
+            <tr><td>m_bRetakesMVPLastRound</td><td class="type">bool</td><td class="value">0xF95</td></tr>
+            <tr><td>m_iRetakesMVPBoostItem</td><td class="type">int32</td><td class="value">0xF98</td></tr>
+            <tr><td>m_RetakesMVPBoostExtraUtility</td><td class="type">loadout_slot_t</td><td class="value">0xF9C</td></tr>
+            <tr><td>m_flHealthShotBoostExpirationTime</td><td class="type">GameTime_t</td><td class="value">0xFA0</td></tr>
+            <tr><td>m_flLandingTimeSeconds</td><td class="type">float32</td><td class="value">0xFA4</td></tr>
+            <tr><td>m_bIsBuyMenuOpen</td><td class="type">bool</td><td class="value">0xFA8</td></tr>
+            <tr><td>m_lastLandTime</td><td class="type">GameTime_t</td><td class="value">0xFE0</td></tr>
+            <tr><td>m_bOnGroundLastTick</td><td class="type">bool</td><td class="value">0xFE4</td></tr>
+            <tr><td>m_iPlayerLocked</td><td class="type">int32</td><td class="value">0xFE8</td></tr>
+            <tr><td>m_flTimeOfLastInjury</td><td class="type">GameTime_t</td><td class="value">0xFF0</td></tr>
+            <tr><td>m_flNextSprayDecalTime</td><td class="type">GameTime_t</td><td class="value">0xFF4</td></tr>
+            <tr><td>m_bNextSprayDecalTimeExpedited</td><td class="type">bool</td><td class="value">0xFF8</td></tr>
+            <tr><td>m_nRagdollDamageBone</td><td class="type">int32</td><td class="value">0xFFC</td></tr>
+            <tr><td>m_vRagdollDamageForce</td><td class="type">Vector</td><td class="value">0x1000</td></tr>
+            <tr><td>m_szRagdollDamageWeaponName</td><td class="type">char[64]</td><td class="value">0x100C</td></tr>
+            <tr><td>m_bRagdollDamageHeadshot</td><td class="type">bool</td><td class="value">0x104C</td></tr>
+            <tr><td>m_vRagdollServerOrigin</td><td class="type">VectorWS</td><td class="value">0x1050</td></tr>
+            <tr><td>m_EconGloves</td><td class="type">CEconItemView</td><td class="value">0x1060</td></tr>
+            <tr><td>m_nEconGlovesChanged</td><td class="type">uint8</td><td class="value">0x1448</td></tr>
+            <tr><td>m_vecCurrentMinimapVolumes</td><td class="type">CUtlVector<CHandle<CCSMinimapVolume>></td><td class="value">0x1450</td></tr>
+            <tr><td>m_hActiveMinimapVolume</td><td class="type">CHandle<CCSMinimapVolume></td><td class="value">0x1468</td></tr>
+            <tr><td>m_qDeathEyeAngles</td><td class="type">QAngle</td><td class="value">0x146C</td></tr>
+            <tr><td>m_bLeftHanded</td><td class="type">bool</td><td class="value">0x1478</td></tr>
+            <tr><td>m_fSwitchedHandednessTime</td><td class="type">GameTime_t</td><td class="value">0x147C</td></tr>
+            <tr><td>m_flViewmodelOffsetX</td><td class="type">float32</td><td class="value">0x1480</td></tr>
+            <tr><td>m_flViewmodelOffsetY</td><td class="type">float32</td><td class="value">0x1484</td></tr>
+            <tr><td>m_flViewmodelOffsetZ</td><td class="type">float32</td><td class="value">0x1488</td></tr>
+            <tr><td>m_flViewmodelFOV</td><td class="type">float32</td><td class="value">0x148C</td></tr>
+            <tr><td>m_bIsWalking</td><td class="type">bool</td><td class="value">0x1490</td></tr>
+            <tr><td>m_fLastGivenDefuserTime</td><td class="type">float32</td><td class="value">0x1494</td></tr>
+            <tr><td>m_fLastGivenBombTime</td><td class="type">float32</td><td class="value">0x1498</td></tr>
+            <tr><td>m_flDealtDamageToEnemyMostRecentTimestamp</td><td class="type">float32</td><td class="value">0x149C</td></tr>
+            <tr><td>m_iDisplayHistoryBits</td><td class="type">uint32</td><td class="value">0x14A0</td></tr>
+            <tr><td>m_flLastAttackedTeammate</td><td class="type">float32</td><td class="value">0x14A4</td></tr>
+            <tr><td>m_allowAutoFollowTime</td><td class="type">GameTime_t</td><td class="value">0x14A8</td></tr>
+            <tr><td>m_bResetArmorNextSpawn</td><td class="type">bool</td><td class="value">0x14AC</td></tr>
+            <tr><td>m_nLastKillerIndex</td><td class="type">CEntityIndex</td><td class="value">0x14B0</td></tr>
+            <tr><td>m_entitySpottedState</td><td class="type">EntitySpottedState_t</td><td class="value">0x14B8</td></tr>
+            <tr><td>m_nSpotRules</td><td class="type">int32</td><td class="value">0x14D0</td></tr>
+            <tr><td>m_bIsScoped</td><td class="type">bool</td><td class="value">0x14D4</td></tr>
+            <tr><td>m_bResumeZoom</td><td class="type">bool</td><td class="value">0x14D5</td></tr>
+            <tr><td>m_bIsDefusing</td><td class="type">bool</td><td class="value">0x14D6</td></tr>
+            <tr><td>m_bIsGrabbingHostage</td><td class="type">bool</td><td class="value">0x14D7</td></tr>
+            <tr><td>m_iBlockingUseActionInProgress</td><td class="type">CSPlayerBlockingUseAction_t</td><td class="value">0x14D8</td></tr>
+            <tr><td>m_flEmitSoundTime</td><td class="type">GameTime_t</td><td class="value">0x14DC</td></tr>
+            <tr><td>m_bInNoDefuseArea</td><td class="type">bool</td><td class="value">0x14E0</td></tr>
+            <tr><td>m_iBombSiteIndex</td><td class="type">CEntityIndex</td><td class="value">0x14E4</td></tr>
+            <tr><td>m_nWhichBombZone</td><td class="type">int32</td><td class="value">0x14E8</td></tr>
+            <tr><td>m_bInBombZoneTrigger</td><td class="type">bool</td><td class="value">0x14EC</td></tr>
+            <tr><td>m_bWasInBombZoneTrigger</td><td class="type">bool</td><td class="value">0x14ED</td></tr>
+            <tr><td>m_iShotsFired</td><td class="type">int32</td><td class="value">0x14F0</td></tr>
+            <tr><td>m_flFlinchStack</td><td class="type">float32</td><td class="value">0x14F4</td></tr>
+            <tr><td>m_flVelocityModifier</td><td class="type">float32</td><td class="value">0x14F8</td></tr>
+            <tr><td>m_vecTotalBulletForce</td><td class="type">Vector</td><td class="value">0x14FC</td></tr>
+            <tr><td>m_bWaitForNoAttack</td><td class="type">bool</td><td class="value">0x1508</td></tr>
+            <tr><td>m_ignoreLadderJumpTime</td><td class="type">float32</td><td class="value">0x150C</td></tr>
+            <tr><td>m_bKilledByHeadshot</td><td class="type">bool</td><td class="value">0x1510</td></tr>
+            <tr><td>m_LastHitBox</td><td class="type">int32</td><td class="value">0x1514</td></tr>
+            <tr><td>m_pBot</td><td class="type">CCSBot*</td><td class="value">0x1518</td></tr>
+            <tr><td>m_bBotAllowActive</td><td class="type">bool</td><td class="value">0x1520</td></tr>
+            <tr><td>m_nLastPickupPriority</td><td class="type">int32</td><td class="value">0x1524</td></tr>
+            <tr><td>m_flLastPickupPriorityTime</td><td class="type">float32</td><td class="value">0x1528</td></tr>
+            <tr><td>m_ArmorValue</td><td class="type">int32</td><td class="value">0x152C</td></tr>
+            <tr><td>m_unCurrentEquipmentValue</td><td class="type">uint16</td><td class="value">0x1530</td></tr>
+            <tr><td>m_unRoundStartEquipmentValue</td><td class="type">uint16</td><td class="value">0x1532</td></tr>
+            <tr><td>m_unFreezetimeEndEquipmentValue</td><td class="type">uint16</td><td class="value">0x1534</td></tr>
+            <tr><td>m_iLastWeaponFireUsercmd</td><td class="type">int32</td><td class="value">0x1538</td></tr>
+            <tr><td>m_bIsSpawning</td><td class="type">bool</td><td class="value">0x153C</td></tr>
+            <tr><td>m_iDeathFlags</td><td class="type">int32</td><td class="value">0x1548</td></tr>
+            <tr><td>m_bHasDeathInfo</td><td class="type">bool</td><td class="value">0x154C</td></tr>
+            <tr><td>m_flDeathInfoTime</td><td class="type">float32</td><td class="value">0x1550</td></tr>
+            <tr><td>m_vecDeathInfoOrigin</td><td class="type">VectorWS</td><td class="value">0x1554</td></tr>
+            <tr><td>m_vecPlayerPatchEconIndices</td><td class="type">uint32[5]</td><td class="value">0x1560</td></tr>
+            <tr><td>m_GunGameImmunityColor</td><td class="type">Color</td><td class="value">0x1574</td></tr>
+            <tr><td>m_grenadeParameterStashTime</td><td class="type">GameTime_t</td><td class="value">0x1578</td></tr>
+            <tr><td>m_bGrenadeParametersStashed</td><td class="type">bool</td><td class="value">0x157C</td></tr>
+            <tr><td>m_angStashedShootAngles</td><td class="type">QAngle</td><td class="value">0x1580</td></tr>
+            <tr><td>m_vecStashedGrenadeThrowPosition</td><td class="type">VectorWS</td><td class="value">0x158C</td></tr>
+            <tr><td>m_vecStashedGrenadeThrowPawnCenter</td><td class="type">VectorWS</td><td class="value">0x1598</td></tr>
+            <tr><td>m_vecStashedVelocity</td><td class="type">Vector</td><td class="value">0x15A4</td></tr>
+            <tr><td>m_bCommittingSuicideOnTeamChange</td><td class="type">bool</td><td class="value">0x15B8</td></tr>
+            <tr><td>m_wasNotKilledNaturally</td><td class="type">bool</td><td class="value">0x15B9</td></tr>
+            <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x15BC</td></tr>
+            <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x15C0</td></tr>
+            <tr><td>m_flModifier0</td><td class="type">float32</td><td class="value">0x15C4</td></tr>
+            <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x15C8</td></tr>
+            <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x15CC</td></tr>
         </tbody>
     </table>
     <h3>Class: CEnvLightProbeVolume</h3>

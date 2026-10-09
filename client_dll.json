@@ -8769,11 +8769,11 @@
       "C_CSGO_PreviewPlayer": {
         "fields": {
           "m_animgraphCharacterModeString": {
-            "offset": 14096,
+            "offset": 14112,
             "type": "CGlobalSymbol"
           },
           "m_flInitialModelScale": {
-            "offset": 14104,
+            "offset": 14120,
             "type": "float32"
           }
         },
@@ -9344,11 +9344,11 @@
             "type": "loadout_slot_t"
           },
           "m_angEyeAngles": {
-            "offset": 13808,
+            "offset": 13824,
             "type": "QAngle"
           },
           "m_angEyeAnglesVelocity": {
-            "offset": 14016,
+            "offset": 14032,
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
@@ -9356,11 +9356,11 @@
             "type": "QAngle"
           },
           "m_arrOldEyeAngles": {
-            "offset": 13968,
+            "offset": 13984,
             "type": "QAngle[4]"
           },
           "m_arrOldEyeAnglesTimes": {
-            "offset": 13952,
+            "offset": 13968,
             "type": "GameTime_t[4]"
           },
           "m_bGrenadeParametersStashed": {
@@ -9480,7 +9480,7 @@
             "type": "bool"
           },
           "m_delayTargetIDTimer": {
-            "offset": 14032,
+            "offset": 14048,
             "type": "CountdownTimer"
           },
           "m_entitySpottedState": {
@@ -9496,7 +9496,7 @@
             "type": "GameTime_t"
           },
           "m_fMolotovDamageTime": {
-            "offset": 13584,
+            "offset": 13588,
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
@@ -9534,6 +9534,10 @@
           "m_flLastFiredWeaponTime": {
             "offset": 5548,
             "type": "GameTime_t"
+          },
+          "m_flModifier0": {
+            "offset": 13584,
+            "type": "float32"
           },
           "m_flNextSprayDecalTime": {
             "offset": 5616,
@@ -9580,7 +9584,7 @@
             "type": "CHandle<C_CS2HudModelArms>"
           },
           "m_holdTargetIDTimer": {
-            "offset": 14064,
+            "offset": 14080,
             "type": "CountdownTimer"
           },
           "m_iBlockingUseActionInProgress": {
@@ -9588,11 +9592,11 @@
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iIDEntIndex": {
-            "offset": 14028,
+            "offset": 14044,
             "type": "CEntityIndex"
           },
           "m_iOldIDEntIndex": {
-            "offset": 14060,
+            "offset": 14076,
             "type": "CEntityIndex"
           },
           "m_iRetakesMVPBoostItem": {
@@ -9612,7 +9616,7 @@
             "type": "int32"
           },
           "m_iTargetItemEntIdx": {
-            "offset": 14056,
+            "offset": 14072,
             "type": "CEntityIndex"
           },
           "m_ignoreLadderJumpTime": {
@@ -9632,7 +9636,7 @@
             "type": "CEntityIndex"
           },
           "m_nPlayerInfernoBodyFx": {
-            "offset": 13692,
+            "offset": 13696,
             "type": "ParticleIndex_t"
           },
           "m_nPrevArmorVal": {

@@ -1,5 +1,5 @@
 {
-  "build_number": 14189,
+  "build_number": 14190,
   "generator": "exitscam-dumper",
   "stats": {
     "buttons": {
@@ -15,9 +15,9 @@
     },
     "schemas": {
       "classes": 3301,
-      "enums": 569,
+      "enums": 568,
       "modules": 18
     }
   },
-  "timestamp": "2026-10-06T10:20:00.827776600+00:00"
+  "timestamp": "2026-10-08T23:59:47.471202400+00:00"
 }
