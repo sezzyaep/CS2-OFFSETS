@@ -29936,7 +29936,7 @@
       "C_CSPlayerPawn": {
         "fields": {
           "m_ArmorValue": {
-            "offset": 7880,
+            "offset": 7888,
             "type": "int32"
           },
           "m_EconGloves": {
@@ -29944,7 +29944,7 @@
             "type": "C_EconItemView"
           },
           "m_GunGameImmunityColor": {
-            "offset": 7696,
+            "offset": 7704,
             "type": "Color"
           },
           "m_RetakesMVPBoostExtraUtility": {
@@ -29960,7 +29960,7 @@
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
-            "offset": 7968,
+            "offset": 7976,
             "type": "QAngle"
           },
           "m_arrOldEyeAngles": {
@@ -29972,7 +29972,7 @@
             "type": "GameTime_t[4]"
           },
           "m_bGrenadeParametersStashed": {
-            "offset": 7964,
+            "offset": 7972,
             "type": "bool"
           },
           "m_bGunGameImmunity": {
@@ -29980,7 +29980,7 @@
             "type": "bool"
           },
           "m_bHasDeathInfo": {
-            "offset": 7897,
+            "offset": 7905,
             "type": "bool"
           },
           "m_bHasFemaleVoice": {
@@ -30004,7 +30004,7 @@
             "type": "bool"
           },
           "m_bInNoDefuseArea": {
-            "offset": 7848,
+            "offset": 7856,
             "type": "bool"
           },
           "m_bIsBuyMenuOpen": {
@@ -30012,27 +30012,27 @@
             "type": "bool"
           },
           "m_bIsDefusing": {
-            "offset": 7834,
+            "offset": 7842,
             "type": "bool"
           },
           "m_bIsGrabbingHostage": {
-            "offset": 7835,
+            "offset": 7843,
             "type": "bool"
           },
           "m_bIsScoped": {
-            "offset": 7832,
+            "offset": 7840,
             "type": "bool"
           },
           "m_bIsWalking": {
-            "offset": 7800,
+            "offset": 7808,
             "type": "bool"
           },
           "m_bKilledByHeadshot": {
-            "offset": 7877,
+            "offset": 7885,
             "type": "bool"
           },
           "m_bLeftHanded": {
-            "offset": 7604,
+            "offset": 7608,
             "type": "bool"
           },
           "m_bMustSyncRagdollState": {
@@ -30044,7 +30044,7 @@
             "type": "bool"
           },
           "m_bOldIsScoped": {
-            "offset": 7896,
+            "offset": 7904,
             "type": "bool"
           },
           "m_bOnGroundLastTick": {
@@ -30068,7 +30068,7 @@
             "type": "bool"
           },
           "m_bResumeZoom": {
-            "offset": 7833,
+            "offset": 7841,
             "type": "bool"
           },
           "m_bRetakesHasDefuseKit": {
@@ -30084,7 +30084,7 @@
             "type": "bool"
           },
           "m_bWaitForNoAttack": {
-            "offset": 7868,
+            "offset": 7876,
             "type": "bool"
           },
           "m_delayTargetIDTimer": {
@@ -30092,7 +30092,7 @@
             "type": "CountdownTimer"
           },
           "m_entitySpottedState": {
-            "offset": 7808,
+            "offset": 7816,
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
@@ -30108,23 +30108,23 @@
             "type": "float32"
           },
           "m_fSwitchedHandednessTime": {
-            "offset": 7608,
+            "offset": 7612,
             "type": "GameTime_t"
           },
           "m_flDeathInfoTime": {
-            "offset": 7900,
+            "offset": 7908,
             "type": "float32"
           },
           "m_flEmitSoundTime": {
-            "offset": 7840,
+            "offset": 7848,
             "type": "GameTime_t"
           },
           "m_flEmitSoundTime_Client": {
-            "offset": 7844,
+            "offset": 7852,
             "type": "GameTime_t"
           },
           "m_flFlinchStack": {
-            "offset": 7860,
+            "offset": 7868,
             "type": "float32"
           },
           "m_flHealthShotBoostExpirationTime": {
@@ -30132,7 +30132,7 @@
             "type": "GameTime_t"
           },
           "m_flInterpolatedInaccuracy": {
-            "offset": 8016,
+            "offset": 8024,
             "type": "float32"
           },
           "m_flLandingStartTime": {
@@ -30164,31 +30164,31 @@
             "type": "GameTime_t"
           },
           "m_flVelocityModifier": {
-            "offset": 7864,
+            "offset": 7872,
             "type": "float32"
           },
           "m_flViewmodelFOV": {
-            "offset": 7624,
+            "offset": 7628,
             "type": "float32"
           },
           "m_flViewmodelOffsetX": {
-            "offset": 7612,
-            "type": "float32"
-          },
-          "m_flViewmodelOffsetY": {
             "offset": 7616,
             "type": "float32"
           },
-          "m_flViewmodelOffsetZ": {
+          "m_flViewmodelOffsetY": {
             "offset": 7620,
             "type": "float32"
           },
+          "m_flViewmodelOffsetZ": {
+            "offset": 7624,
+            "type": "float32"
+          },
           "m_grenadeParameterStashTime": {
-            "offset": 7960,
+            "offset": 7968,
             "type": "GameTime_t"
           },
           "m_hHudModelArms": {
-            "offset": 7588,
+            "offset": 7592,
             "type": "CHandle<C_CS2HudModelArms>"
           },
           "m_holdTargetIDTimer": {
@@ -30196,7 +30196,7 @@
             "type": "CountdownTimer"
           },
           "m_iBlockingUseActionInProgress": {
-            "offset": 7836,
+            "offset": 7844,
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iIDEntIndex": {
@@ -30220,7 +30220,7 @@
             "type": "int32"
           },
           "m_iShotsFired": {
-            "offset": 7856,
+            "offset": 7864,
             "type": "int32"
           },
           "m_iTargetItemEntIdx": {
@@ -30228,7 +30228,7 @@
             "type": "CEntityIndex"
           },
           "m_ignoreLadderJumpTime": {
-            "offset": 7872,
+            "offset": 7880,
             "type": "float32"
           },
           "m_lastLandTime": {
@@ -30240,11 +30240,11 @@
             "type": "uint8"
           },
           "m_nLastKillerIndex": {
-            "offset": 7892,
+            "offset": 7900,
             "type": "CEntityIndex"
           },
           "m_nPlayerInfernoBodyFx": {
-            "offset": 13696,
+            "offset": 13704,
             "type": "ParticleIndex_t"
           },
           "m_nPrevArmorVal": {
@@ -30260,7 +30260,7 @@
             "type": "int32"
           },
           "m_nWhichBombZone": {
-            "offset": 7852,
+            "offset": 7860,
             "type": "int32"
           },
           "m_pActionTrackingServices": {
@@ -30292,7 +30292,7 @@
             "type": "CCSPlayer_HostageServices*"
           },
           "m_qDeathEyeAngles": {
-            "offset": 7592,
+            "offset": 7596,
             "type": "QAngle"
           },
           "m_szLastPlaceName": {
@@ -30304,11 +30304,11 @@
             "type": "char[64]"
           },
           "m_unCurrentEquipmentValue": {
-            "offset": 7884,
+            "offset": 7892,
             "type": "uint16"
           },
           "m_unFreezetimeEndEquipmentValue": {
-            "offset": 7888,
+            "offset": 7896,
             "type": "uint16"
           },
           "m_unPreviousWeaponHash": {
@@ -30316,7 +30316,7 @@
             "type": "uint32"
           },
           "m_unRoundStartEquipmentValue": {
-            "offset": 7886,
+            "offset": 7894,
             "type": "uint16"
           },
           "m_unWeaponHash": {
@@ -30332,27 +30332,27 @@
             "type": "VectorWS"
           },
           "m_vecBulletHitModels": {
-            "offset": 7776,
+            "offset": 7784,
             "type": "CUtlVector<C_BulletHitModel*>"
           },
           "m_vecDeathInfoOrigin": {
-            "offset": 7904,
+            "offset": 7912,
             "type": "VectorWS"
           },
           "m_vecPlayerPatchEconIndices": {
-            "offset": 7628,
+            "offset": 7632,
             "type": "uint32[5]"
           },
           "m_vecStashedGrenadeThrowPawnCenter": {
-            "offset": 7992,
+            "offset": 8000,
             "type": "VectorWS"
           },
           "m_vecStashedGrenadeThrowPosition": {
-            "offset": 7980,
+            "offset": 7988,
             "type": "VectorWS"
           },
           "m_vecStashedVelocity": {
-            "offset": 8004,
+            "offset": 8012,
             "type": "Vector"
           }
         },
@@ -60426,16 +60426,6 @@
         ],
         "parent": null
       },
-      "InfoForResourceTypeCVMixListResource": {
-        "fields": {},
-        "metadata": [
-          {
-            "name": "MResourceTypeForInfoType",
-            "type": "Unknown"
-          }
-        ],
-        "parent": null
-      },
       "InfoForResourceTypeCVPhysXSurfacePropertiesList": {
         "fields": {},
         "metadata": [
@@ -68258,59 +68248,59 @@
       "CCSPlayerPawn": {
         "fields": {
           "m_ArmorValue": {
-            "offset": 5388,
+            "offset": 5396,
             "type": "int32"
           },
           "m_EconGloves": {
-            "offset": 4192,
+            "offset": 4200,
             "type": "CEconItemView"
           },
           "m_GunGameImmunityColor": {
-            "offset": 5460,
+            "offset": 5468,
             "type": "Color"
           },
           "m_LastHitBox": {
-            "offset": 5364,
+            "offset": 5372,
             "type": "int32"
           },
           "m_RetakesMVPBoostExtraUtility": {
-            "offset": 3996,
+            "offset": 4004,
             "type": "loadout_slot_t"
           },
           "m_TouchingBuyZones": {
-            "offset": 3952,
+            "offset": 3960,
             "type": "CUtlVector<CHandle<CBaseEntity>>"
           },
           "m_allowAutoFollowTime": {
-            "offset": 5256,
+            "offset": 5264,
             "type": "GameTime_t"
           },
           "m_angEyeAngles": {
-            "offset": 5548,
+            "offset": 5556,
             "type": "QAngle"
           },
           "m_angStashedShootAngles": {
-            "offset": 5472,
+            "offset": 5480,
             "type": "QAngle"
           },
           "m_bBotAllowActive": {
-            "offset": 5376,
+            "offset": 5384,
             "type": "bool"
           },
           "m_bCommittingSuicideOnTeamChange": {
-            "offset": 5528,
-            "type": "bool"
-          },
-          "m_bGrenadeParametersStashed": {
-            "offset": 5468,
-            "type": "bool"
-          },
-          "m_bGunGameImmunity": {
             "offset": 5536,
             "type": "bool"
           },
+          "m_bGrenadeParametersStashed": {
+            "offset": 5476,
+            "type": "bool"
+          },
+          "m_bGunGameImmunity": {
+            "offset": 5544,
+            "type": "bool"
+          },
           "m_bHasDeathInfo": {
-            "offset": 5420,
+            "offset": 5428,
             "type": "bool"
           },
           "m_bHasFemaleVoice": {
@@ -68318,243 +68308,243 @@
             "type": "bool"
           },
           "m_bInBombZone": {
-            "offset": 3978,
+            "offset": 3986,
             "type": "bool"
           },
           "m_bInBombZoneTrigger": {
-            "offset": 5324,
+            "offset": 5332,
             "type": "bool"
           },
           "m_bInBuyZone": {
-            "offset": 3945,
+            "offset": 3953,
             "type": "bool"
           },
           "m_bInHostageRescueZone": {
-            "offset": 3977,
+            "offset": 3985,
             "type": "bool"
           },
           "m_bInHostageResetZone": {
-            "offset": 3944,
+            "offset": 3952,
             "type": "bool"
           },
           "m_bInNoDefuseArea": {
-            "offset": 5312,
+            "offset": 5320,
             "type": "bool"
           },
           "m_bIsBuyMenuOpen": {
-            "offset": 4008,
+            "offset": 4016,
             "type": "bool"
           },
           "m_bIsDefusing": {
-            "offset": 5302,
+            "offset": 5310,
             "type": "bool"
           },
           "m_bIsGrabbingHostage": {
-            "offset": 5303,
+            "offset": 5311,
             "type": "bool"
           },
           "m_bIsScoped": {
-            "offset": 5300,
+            "offset": 5308,
             "type": "bool"
           },
           "m_bIsSpawning": {
-            "offset": 5404,
+            "offset": 5412,
             "type": "bool"
           },
           "m_bIsWalking": {
-            "offset": 5232,
+            "offset": 5240,
             "type": "bool"
           },
           "m_bKilledByHeadshot": {
-            "offset": 5360,
+            "offset": 5368,
             "type": "bool"
           },
           "m_bLeftHanded": {
-            "offset": 5208,
+            "offset": 5216,
             "type": "bool"
           },
           "m_bNextSprayDecalTimeExpedited": {
-            "offset": 4088,
+            "offset": 4096,
             "type": "bool"
           },
           "m_bOnGroundLastTick": {
-            "offset": 4068,
+            "offset": 4076,
             "type": "bool"
           },
           "m_bRagdollDamageHeadshot": {
-            "offset": 4172,
+            "offset": 4180,
             "type": "bool"
           },
           "m_bResetArmorNextSpawn": {
-            "offset": 5260,
+            "offset": 5268,
             "type": "bool"
           },
           "m_bResumeZoom": {
-            "offset": 5301,
+            "offset": 5309,
             "type": "bool"
           },
           "m_bRetakesHasDefuseKit": {
-            "offset": 3988,
+            "offset": 3996,
             "type": "bool"
           },
           "m_bRetakesMVPLastRound": {
-            "offset": 3989,
+            "offset": 3997,
             "type": "bool"
           },
           "m_bWaitForNoAttack": {
-            "offset": 5352,
+            "offset": 5360,
             "type": "bool"
           },
           "m_bWasInBombZoneTrigger": {
-            "offset": 5325,
+            "offset": 5333,
             "type": "bool"
           },
           "m_bWasInBuyZone": {
-            "offset": 3976,
+            "offset": 3984,
             "type": "bool"
           },
           "m_bWasInHostageRescueZone": {
-            "offset": 3979,
+            "offset": 3987,
             "type": "bool"
           },
           "m_entitySpottedState": {
-            "offset": 5272,
+            "offset": 5280,
             "type": "EntitySpottedState_t"
           },
           "m_fImmuneToGunGameDamageTime": {
-            "offset": 5532,
+            "offset": 5540,
             "type": "GameTime_t"
           },
           "m_fLastGivenBombTime": {
-            "offset": 5240,
+            "offset": 5248,
             "type": "float32"
           },
           "m_fLastGivenDefuserTime": {
-            "offset": 5236,
-            "type": "float32"
-          },
-          "m_fMolotovDamageTime": {
-            "offset": 5544,
-            "type": "float32"
-          },
-          "m_fSwitchedHandednessTime": {
-            "offset": 5212,
-            "type": "GameTime_t"
-          },
-          "m_flDealtDamageToEnemyMostRecentTimestamp": {
             "offset": 5244,
             "type": "float32"
           },
-          "m_flDeathInfoTime": {
-            "offset": 5424,
+          "m_fMolotovDamageTime": {
+            "offset": 5552,
             "type": "float32"
           },
-          "m_flEmitSoundTime": {
-            "offset": 5308,
+          "m_fSwitchedHandednessTime": {
+            "offset": 5220,
             "type": "GameTime_t"
           },
-          "m_flFlinchStack": {
-            "offset": 5332,
-            "type": "float32"
-          },
-          "m_flHealthShotBoostExpirationTime": {
-            "offset": 4000,
-            "type": "GameTime_t"
-          },
-          "m_flLandingTimeSeconds": {
-            "offset": 4004,
-            "type": "float32"
-          },
-          "m_flLastAttackedTeammate": {
+          "m_flDealtDamageToEnemyMostRecentTimestamp": {
             "offset": 5252,
             "type": "float32"
           },
+          "m_flDeathInfoTime": {
+            "offset": 5432,
+            "type": "float32"
+          },
+          "m_flEmitSoundTime": {
+            "offset": 5316,
+            "type": "GameTime_t"
+          },
+          "m_flFlinchStack": {
+            "offset": 5340,
+            "type": "float32"
+          },
+          "m_flHealthShotBoostExpirationTime": {
+            "offset": 4008,
+            "type": "GameTime_t"
+          },
+          "m_flLandingTimeSeconds": {
+            "offset": 4012,
+            "type": "float32"
+          },
+          "m_flLastAttackedTeammate": {
+            "offset": 5260,
+            "type": "float32"
+          },
           "m_flLastPickupPriorityTime": {
-            "offset": 5384,
+            "offset": 5392,
             "type": "float32"
           },
           "m_flModifier0": {
-            "offset": 5540,
+            "offset": 5548,
             "type": "float32"
           },
           "m_flNextSprayDecalTime": {
-            "offset": 4084,
+            "offset": 4092,
             "type": "GameTime_t"
           },
           "m_flTimeOfLastInjury": {
-            "offset": 4080,
+            "offset": 4088,
             "type": "GameTime_t"
           },
           "m_flVelocityModifier": {
-            "offset": 5336,
+            "offset": 5344,
             "type": "float32"
           },
           "m_flViewmodelFOV": {
-            "offset": 5228,
+            "offset": 5236,
             "type": "float32"
           },
           "m_flViewmodelOffsetX": {
-            "offset": 5216,
-            "type": "float32"
-          },
-          "m_flViewmodelOffsetY": {
-            "offset": 5220,
-            "type": "float32"
-          },
-          "m_flViewmodelOffsetZ": {
             "offset": 5224,
             "type": "float32"
           },
+          "m_flViewmodelOffsetY": {
+            "offset": 5228,
+            "type": "float32"
+          },
+          "m_flViewmodelOffsetZ": {
+            "offset": 5232,
+            "type": "float32"
+          },
           "m_grenadeParameterStashTime": {
-            "offset": 5464,
+            "offset": 5472,
             "type": "GameTime_t"
           },
           "m_iBlockingUseActionInProgress": {
-            "offset": 5304,
+            "offset": 5312,
             "type": "CSPlayerBlockingUseAction_t"
           },
           "m_iBombSiteIndex": {
-            "offset": 5316,
+            "offset": 5324,
             "type": "CEntityIndex"
           },
           "m_iDeathFlags": {
-            "offset": 5416,
+            "offset": 5424,
             "type": "int32"
           },
           "m_iDisplayHistoryBits": {
-            "offset": 5248,
+            "offset": 5256,
             "type": "uint32"
           },
           "m_iLastWeaponFireUsercmd": {
-            "offset": 5400,
+            "offset": 5408,
             "type": "int32"
           },
           "m_iPlayerLocked": {
-            "offset": 4072,
+            "offset": 4080,
             "type": "int32"
           },
           "m_iRetakesMVPBoostItem": {
-            "offset": 3992,
+            "offset": 4000,
             "type": "int32"
           },
           "m_iRetakesOffering": {
-            "offset": 3980,
+            "offset": 3988,
             "type": "int32"
           },
           "m_iRetakesOfferingCard": {
-            "offset": 3984,
+            "offset": 3992,
             "type": "int32"
           },
           "m_iShotsFired": {
-            "offset": 5328,
+            "offset": 5336,
             "type": "int32"
           },
           "m_ignoreLadderJumpTime": {
-            "offset": 5356,
+            "offset": 5364,
             "type": "float32"
           },
           "m_lastLandTime": {
-            "offset": 4064,
+            "offset": 4072,
             "type": "GameTime_t"
           },
           "m_nCharacterDefIndex": {
@@ -68562,27 +68552,27 @@
             "type": "uint16"
           },
           "m_nEconGlovesChanged": {
-            "offset": 5192,
+            "offset": 5200,
             "type": "uint8"
           },
           "m_nLastKillerIndex": {
-            "offset": 5264,
+            "offset": 5272,
             "type": "CEntityIndex"
           },
           "m_nLastPickupPriority": {
-            "offset": 5380,
+            "offset": 5388,
             "type": "int32"
           },
           "m_nRagdollDamageBone": {
-            "offset": 4092,
+            "offset": 4100,
             "type": "int32"
           },
           "m_nSpotRules": {
-            "offset": 5296,
+            "offset": 5304,
             "type": "int32"
           },
           "m_nWhichBombZone": {
-            "offset": 5320,
+            "offset": 5328,
             "type": "int32"
           },
           "m_pActionTrackingServices": {
@@ -68594,7 +68584,7 @@
             "type": "CCSPlayer_AimPunchServices*"
           },
           "m_pBot": {
-            "offset": 5368,
+            "offset": 5376,
             "type": "CCSBot*"
           },
           "m_pBulletServices": {
@@ -68618,7 +68608,7 @@
             "type": "CCSPlayer_RadioServices*"
           },
           "m_qDeathEyeAngles": {
-            "offset": 5196,
+            "offset": 5204,
             "type": "QAngle"
           },
           "m_strVOPrefix": {
@@ -68630,55 +68620,55 @@
             "type": "char[18]"
           },
           "m_szRagdollDamageWeaponName": {
-            "offset": 4108,
+            "offset": 4116,
             "type": "char[64]"
           },
           "m_unCurrentEquipmentValue": {
-            "offset": 5392,
+            "offset": 5400,
             "type": "uint16"
           },
           "m_unFreezetimeEndEquipmentValue": {
-            "offset": 5396,
+            "offset": 5404,
             "type": "uint16"
           },
           "m_unRoundStartEquipmentValue": {
-            "offset": 5394,
+            "offset": 5402,
             "type": "uint16"
           },
           "m_vRagdollDamageForce": {
-            "offset": 4096,
+            "offset": 4104,
             "type": "Vector"
           },
           "m_vRagdollServerOrigin": {
-            "offset": 4176,
+            "offset": 4184,
             "type": "VectorWS"
           },
           "m_vecDeathInfoOrigin": {
-            "offset": 5428,
+            "offset": 5436,
             "type": "VectorWS"
           },
           "m_vecPlayerPatchEconIndices": {
-            "offset": 5440,
+            "offset": 5448,
             "type": "uint32[5]"
           },
           "m_vecStashedGrenadeThrowPawnCenter": {
-            "offset": 5496,
+            "offset": 5504,
             "type": "VectorWS"
           },
           "m_vecStashedGrenadeThrowPosition": {
-            "offset": 5484,
+            "offset": 5492,
             "type": "VectorWS"
           },
           "m_vecStashedVelocity": {
-            "offset": 5508,
+            "offset": 5516,
             "type": "Vector"
           },
           "m_vecTotalBulletForce": {
-            "offset": 5340,
+            "offset": 5348,
             "type": "Vector"
           },
           "m_wasNotKilledNaturally": {
-            "offset": 5529,
+            "offset": 5537,
             "type": "bool"
           }
         },
@@ -76114,15 +76104,19 @@
             "type": "GameTime_t"
           },
           "m_flDropStartTime": {
-            "offset": 11592,
+            "offset": 11596,
+            "type": "GameTime_t"
+          },
+          "m_flGrabStartTime": {
+            "offset": 11560,
             "type": "GameTime_t"
           },
           "m_flGrabSuccessTime": {
-            "offset": 11588,
+            "offset": 11592,
             "type": "GameTime_t"
           },
           "m_flRescueStartTime": {
-            "offset": 11584,
+            "offset": 11588,
             "type": "GameTime_t"
           },
           "m_hHostageGrabber": {
@@ -76178,7 +76172,7 @@
             "type": "CHandle<CBaseEntity>"
           },
           "m_nApproachRewardPayouts": {
-            "offset": 11596,
+            "offset": 11600,
             "type": "int32"
           },
           "m_nHostageSpawnRandomFactor": {
@@ -76190,7 +76184,7 @@
             "type": "int32"
           },
           "m_nPickupEventCount": {
-            "offset": 11600,
+            "offset": 11604,
             "type": "int32"
           },
           "m_nSpotRules": {
@@ -76210,19 +76204,19 @@
             "type": "uint32"
           },
           "m_vecGrabbedPos": {
-            "offset": 11572,
+            "offset": 11576,
             "type": "VectorWS"
           },
           "m_vecHostageResetPosition": {
-            "offset": 11660,
+            "offset": 11664,
             "type": "VectorWS"
           },
           "m_vecPositionWhenStartedDroppingToGround": {
-            "offset": 11560,
+            "offset": 11564,
             "type": "VectorWS"
           },
           "m_vecSpawnGroundPos": {
-            "offset": 11604,
+            "offset": 11608,
             "type": "VectorWS"
           },
           "m_vel": {
@@ -98794,6 +98788,10 @@
             "offset": 44,
             "type": "uint32"
           },
+          "m_nUpMixRule": {
+            "offset": 55,
+            "type": "VMixUpMixRule_t"
+          },
           "m_name": {
             "offset": 0,
             "type": "CUtlString"
@@ -98906,7 +98904,7 @@
       "CVoiceContainerAmpedDecayingSineWave": {
         "fields": {
           "m_flGainAmount": {
-            "offset": 120,
+            "offset": 128,
             "type": "float32"
           }
         },
@@ -98965,12 +98963,20 @@
       },
       "CVoiceContainerBase": {
         "fields": {
+          "m_bRegisteredVMix": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_nResourceName": {
+            "offset": 20,
+            "type": "CUtlStringToken"
+          },
           "m_pEnvelopeAnalyzer": {
-            "offset": 104,
+            "offset": 112,
             "type": "CVoiceContainerAnalysisBase*"
           },
           "m_vSound": {
-            "offset": 40,
+            "offset": 48,
             "type": "CVSound"
           }
         },
@@ -99001,15 +99007,15 @@
       "CVoiceContainerBlender": {
         "fields": {
           "m_firstSound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           },
           "m_flBlendFactor": {
-            "offset": 176,
+            "offset": 184,
             "type": "float32"
           },
           "m_secondSound": {
-            "offset": 144,
+            "offset": 152,
             "type": "CSoundContainerReference"
           }
         },
@@ -99032,11 +99038,11 @@
       "CVoiceContainerDecayingSineWave": {
         "fields": {
           "m_flDecayTime": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flFrequency": {
-            "offset": 112,
+            "offset": 120,
             "type": "float32"
           }
         },
@@ -99077,15 +99083,15 @@
       "CVoiceContainerEnum": {
         "fields": {
           "m_flCrossfadeTime": {
-            "offset": 172,
+            "offset": 180,
             "type": "float32"
           },
           "m_iSelection": {
-            "offset": 168,
+            "offset": 176,
             "type": "int32"
           },
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -99149,35 +99155,35 @@
       "CVoiceContainerGranulator": {
         "fields": {
           "m_bDoubleBufferSourceAudio": {
-            "offset": 160,
+            "offset": 168,
             "type": "bool"
           },
           "m_bShouldWraparound": {
-            "offset": 144,
+            "offset": 152,
             "type": "bool"
           },
           "m_flGrainCrossfadeAmount": {
-            "offset": 132,
-            "type": "float32"
-          },
-          "m_flGrainLength": {
-            "offset": 128,
-            "type": "float32"
-          },
-          "m_flMaxSourceLength": {
-            "offset": 164,
-            "type": "float32"
-          },
-          "m_flPlaybackJitter": {
             "offset": 140,
             "type": "float32"
           },
-          "m_flStartJitter": {
+          "m_flGrainLength": {
             "offset": 136,
             "type": "float32"
           },
+          "m_flMaxSourceLength": {
+            "offset": 172,
+            "type": "float32"
+          },
+          "m_flPlaybackJitter": {
+            "offset": 148,
+            "type": "float32"
+          },
+          "m_flStartJitter": {
+            "offset": 144,
+            "type": "float32"
+          },
           "m_sourceAudio": {
-            "offset": 152,
+            "offset": 160,
             "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
           }
         },
@@ -99196,23 +99202,23 @@
       "CVoiceContainerLoopTrigger": {
         "fields": {
           "m_bCrossFade": {
-            "offset": 124,
+            "offset": 132,
             "type": "bool"
           },
           "m_flFadeTime": {
-            "offset": 120,
+            "offset": 128,
             "type": "float32"
           },
           "m_flRetriggerTimeMax": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flRetriggerTimeMin": {
-            "offset": 112,
+            "offset": 120,
             "type": "float32"
           },
           "m_sound": {
-            "offset": 128,
+            "offset": 136,
             "type": "CSoundContainerReference"
           }
         },
@@ -99235,7 +99241,7 @@
       "CVoiceContainerLoopTriggerWithRandomPanner": {
         "fields": {
           "m_randomPannerControls": {
-            "offset": 160,
+            "offset": 168,
             "type": "CRandomPannerControls"
           }
         },
@@ -99258,35 +99264,35 @@
       "CVoiceContainerLoopXFade": {
         "fields": {
           "m_bEqualPow": {
-            "offset": 162,
+            "offset": 170,
             "type": "bool"
           },
           "m_bPlayHead": {
-            "offset": 160,
+            "offset": 168,
             "type": "bool"
           },
           "m_bPlayTail": {
-            "offset": 161,
+            "offset": 169,
             "type": "bool"
           },
           "m_flFadeIn": {
-            "offset": 156,
+            "offset": 164,
             "type": "float32"
           },
           "m_flFadeOut": {
-            "offset": 152,
+            "offset": 160,
             "type": "float32"
           },
           "m_flLoopEnd": {
-            "offset": 144,
+            "offset": 152,
             "type": "float32"
           },
           "m_flLoopStart": {
-            "offset": 148,
+            "offset": 156,
             "type": "float32"
           },
           "m_sound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           }
         },
@@ -99309,15 +99315,15 @@
       "CVoiceContainerMultiBlender": {
         "fields": {
           "m_flBlendFactor": {
-            "offset": 168,
+            "offset": 176,
             "type": "float32"
           },
           "m_flCrossover": {
-            "offset": 172,
+            "offset": 180,
             "type": "float32"
           },
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -99358,35 +99364,35 @@
       "CVoiceContainerParameterBlender": {
         "fields": {
           "m_bEnableDistanceBlend": {
-            "offset": 312,
+            "offset": 320,
             "type": "bool"
           },
           "m_bEnableOcclusionBlend": {
-            "offset": 176,
+            "offset": 184,
             "type": "bool"
           },
           "m_curve1": {
-            "offset": 184,
+            "offset": 192,
             "type": "CPiecewiseCurve"
           },
           "m_curve2": {
-            "offset": 248,
+            "offset": 256,
             "type": "CPiecewiseCurve"
           },
           "m_curve3": {
-            "offset": 320,
+            "offset": 328,
             "type": "CPiecewiseCurve"
           },
           "m_curve4": {
-            "offset": 384,
+            "offset": 392,
             "type": "CPiecewiseCurve"
           },
           "m_firstSound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           },
           "m_secondSound": {
-            "offset": 144,
+            "offset": 152,
             "type": "CSoundContainerReference"
           }
         },
@@ -99409,27 +99415,27 @@
       "CVoiceContainerRandomSampler": {
         "fields": {
           "m_flAmplitude": {
-            "offset": 128,
-            "type": "float32"
-          },
-          "m_flAmplitudeJitter": {
-            "offset": 132,
-            "type": "float32"
-          },
-          "m_flMaxLength": {
-            "offset": 140,
-            "type": "float32"
-          },
-          "m_flTimeJitter": {
             "offset": 136,
             "type": "float32"
           },
+          "m_flAmplitudeJitter": {
+            "offset": 140,
+            "type": "float32"
+          },
+          "m_flMaxLength": {
+            "offset": 148,
+            "type": "float32"
+          },
+          "m_flTimeJitter": {
+            "offset": 144,
+            "type": "float32"
+          },
           "m_grainResources": {
-            "offset": 152,
+            "offset": 160,
             "type": "CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>"
           },
           "m_nNumDelayVariations": {
-            "offset": 144,
+            "offset": 152,
             "type": "int32"
           }
         },
@@ -99452,15 +99458,15 @@
       "CVoiceContainerRealtimeFMSineWave": {
         "fields": {
           "m_flCarrierFrequency": {
-            "offset": 112,
-            "type": "float32"
-          },
-          "m_flModulatorAmount": {
             "offset": 120,
             "type": "float32"
           },
+          "m_flModulatorAmount": {
+            "offset": 128,
+            "type": "float32"
+          },
           "m_flModulatorFrequency": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           }
         },
@@ -99483,15 +99489,15 @@
       "CVoiceContainerSelector": {
         "fields": {
           "m_fProbabilityWeights": {
-            "offset": 176,
+            "offset": 184,
             "type": "CUtlVector<float32>"
           },
           "m_mode": {
-            "offset": 112,
+            "offset": 120,
             "type": "PlayBackMode_t"
           },
           "m_soundsToPlay": {
-            "offset": 120,
+            "offset": 128,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -99514,7 +99520,7 @@
       "CVoiceContainerSet": {
         "fields": {
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlVector<CVoiceContainerSetElement>"
           }
         },
@@ -99556,39 +99562,39 @@
       "CVoiceContainerShapedNoise": {
         "fields": {
           "m_bUseCurveForAmplitude": {
-            "offset": 256,
+            "offset": 264,
             "type": "bool"
           },
           "m_bUseCurveForFrequency": {
-            "offset": 112,
+            "offset": 120,
             "type": "bool"
           },
           "m_bUseCurveForResonance": {
-            "offset": 184,
+            "offset": 192,
             "type": "bool"
           },
           "m_flFrequency": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flGainInDecibels": {
-            "offset": 260,
+            "offset": 268,
             "type": "float32"
           },
           "m_flResonance": {
-            "offset": 188,
+            "offset": 196,
             "type": "float32"
           },
           "m_frequencySweep": {
-            "offset": 120,
+            "offset": 128,
             "type": "CPiecewiseCurve"
           },
           "m_gainSweep": {
-            "offset": 264,
+            "offset": 272,
             "type": "CPiecewiseCurve"
           },
           "m_resonanceSweep": {
-            "offset": 192,
+            "offset": 200,
             "type": "CPiecewiseCurve"
           }
         },
@@ -99611,7 +99617,7 @@
       "CVoiceContainerStaticAdditiveSynth": {
         "fields": {
           "m_tones": {
-            "offset": 128,
+            "offset": 136,
             "type": "CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>"
           }
         },
@@ -99723,7 +99729,7 @@
       "CVoiceContainerSwitch": {
         "fields": {
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlVector<CSoundContainerReference>"
           }
         },
@@ -99746,19 +99752,19 @@
       "CVoiceContainerTapePlayer": {
         "fields": {
           "m_bShouldWraparound": {
-            "offset": 128,
+            "offset": 136,
             "type": "bool"
           },
           "m_flTapeSpeedAttackTime": {
-            "offset": 144,
+            "offset": 152,
             "type": "float32"
           },
           "m_flTapeSpeedReleaseTime": {
-            "offset": 148,
+            "offset": 156,
             "type": "float32"
           },
           "m_sourceAudio": {
-            "offset": 136,
+            "offset": 144,
             "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
           }
         },
@@ -99775,7 +99781,12 @@
         "parent": null
       },
       "CVoiceContainerVMixSnd": {
-        "fields": {},
+        "fields": {
+          "m_resourceName": {
+            "offset": 392,
+            "type": "CUtlString"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -99795,71 +99806,71 @@
       "CVoiceContainerVsndRadioButton": {
         "fields": {
           "m_namespace": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlString"
           },
           "m_slot1": {
-            "offset": 120,
+            "offset": 128,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot10": {
-            "offset": 1344,
+            "offset": 1352,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot11": {
-            "offset": 1480,
+            "offset": 1488,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot12": {
-            "offset": 1616,
+            "offset": 1624,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot13": {
-            "offset": 1752,
+            "offset": 1760,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot14": {
-            "offset": 1888,
+            "offset": 1896,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot15": {
-            "offset": 2024,
+            "offset": 2032,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot16": {
-            "offset": 2160,
+            "offset": 2168,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot2": {
-            "offset": 256,
+            "offset": 264,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot3": {
-            "offset": 392,
+            "offset": 400,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot4": {
-            "offset": 528,
+            "offset": 536,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot5": {
-            "offset": 664,
+            "offset": 672,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot6": {
-            "offset": 800,
+            "offset": 808,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot7": {
-            "offset": 936,
+            "offset": 944,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot8": {
-            "offset": 1072,
+            "offset": 1080,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot9": {
-            "offset": 1208,
+            "offset": 1216,
             "type": "CVsndRadioButtonSlot"
           }
         },
@@ -99882,71 +99893,71 @@
       "CVoiceContainerVsndTrigger": {
         "fields": {
           "m_namespace": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlString"
           },
           "m_slot1": {
-            "offset": 120,
+            "offset": 128,
             "type": "CVsndTriggerSlot"
           },
           "m_slot10": {
-            "offset": 1344,
+            "offset": 1352,
             "type": "CVsndTriggerSlot"
           },
           "m_slot11": {
-            "offset": 1480,
+            "offset": 1488,
             "type": "CVsndTriggerSlot"
           },
           "m_slot12": {
-            "offset": 1616,
+            "offset": 1624,
             "type": "CVsndTriggerSlot"
           },
           "m_slot13": {
-            "offset": 1752,
+            "offset": 1760,
             "type": "CVsndTriggerSlot"
           },
           "m_slot14": {
-            "offset": 1888,
+            "offset": 1896,
             "type": "CVsndTriggerSlot"
           },
           "m_slot15": {
-            "offset": 2024,
+            "offset": 2032,
             "type": "CVsndTriggerSlot"
           },
           "m_slot16": {
-            "offset": 2160,
+            "offset": 2168,
             "type": "CVsndTriggerSlot"
           },
           "m_slot2": {
-            "offset": 256,
+            "offset": 264,
             "type": "CVsndTriggerSlot"
           },
           "m_slot3": {
-            "offset": 392,
+            "offset": 400,
             "type": "CVsndTriggerSlot"
           },
           "m_slot4": {
-            "offset": 528,
+            "offset": 536,
             "type": "CVsndTriggerSlot"
           },
           "m_slot5": {
-            "offset": 664,
+            "offset": 672,
             "type": "CVsndTriggerSlot"
           },
           "m_slot6": {
-            "offset": 800,
+            "offset": 808,
             "type": "CVsndTriggerSlot"
           },
           "m_slot7": {
-            "offset": 936,
+            "offset": 944,
             "type": "CVsndTriggerSlot"
           },
           "m_slot8": {
-            "offset": 1072,
+            "offset": 1080,
             "type": "CVsndTriggerSlot"
           },
           "m_slot9": {
-            "offset": 1208,
+            "offset": 1216,
             "type": "CVsndTriggerSlot"
           }
         },
@@ -101660,6 +101671,14 @@
           "SUBGRAPH_INTERPOLATION_TEMPORAL_FADE_OUT": 1
         },
         "type": "uint32"
+      },
+      "VMixUpMixRule_t": {
+        "alignment": 1,
+        "members": {
+          "BROADCAST": 1,
+          "DIVIDE": 0
+        },
+        "type": "uint8"
       },
       "soundlevel_t": {
         "alignment": 4,

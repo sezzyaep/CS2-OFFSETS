@@ -2195,6 +2195,10 @@
             "offset": 44,
             "type": "uint32"
           },
+          "m_nUpMixRule": {
+            "offset": 55,
+            "type": "VMixUpMixRule_t"
+          },
           "m_name": {
             "offset": 0,
             "type": "CUtlString"
@@ -2307,7 +2311,7 @@
       "CVoiceContainerAmpedDecayingSineWave": {
         "fields": {
           "m_flGainAmount": {
-            "offset": 120,
+            "offset": 128,
             "type": "float32"
           }
         },
@@ -2366,12 +2370,20 @@
       },
       "CVoiceContainerBase": {
         "fields": {
+          "m_bRegisteredVMix": {
+            "offset": 16,
+            "type": "bool"
+          },
+          "m_nResourceName": {
+            "offset": 20,
+            "type": "CUtlStringToken"
+          },
           "m_pEnvelopeAnalyzer": {
-            "offset": 104,
+            "offset": 112,
             "type": "CVoiceContainerAnalysisBase*"
           },
           "m_vSound": {
-            "offset": 40,
+            "offset": 48,
             "type": "CVSound"
           }
         },
@@ -2402,15 +2414,15 @@
       "CVoiceContainerBlender": {
         "fields": {
           "m_firstSound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           },
           "m_flBlendFactor": {
-            "offset": 176,
+            "offset": 184,
             "type": "float32"
           },
           "m_secondSound": {
-            "offset": 144,
+            "offset": 152,
             "type": "CSoundContainerReference"
           }
         },
@@ -2433,11 +2445,11 @@
       "CVoiceContainerDecayingSineWave": {
         "fields": {
           "m_flDecayTime": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flFrequency": {
-            "offset": 112,
+            "offset": 120,
             "type": "float32"
           }
         },
@@ -2478,15 +2490,15 @@
       "CVoiceContainerEnum": {
         "fields": {
           "m_flCrossfadeTime": {
-            "offset": 172,
+            "offset": 180,
             "type": "float32"
           },
           "m_iSelection": {
-            "offset": 168,
+            "offset": 176,
             "type": "int32"
           },
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -2550,35 +2562,35 @@
       "CVoiceContainerGranulator": {
         "fields": {
           "m_bDoubleBufferSourceAudio": {
-            "offset": 160,
+            "offset": 168,
             "type": "bool"
           },
           "m_bShouldWraparound": {
-            "offset": 144,
+            "offset": 152,
             "type": "bool"
           },
           "m_flGrainCrossfadeAmount": {
-            "offset": 132,
-            "type": "float32"
-          },
-          "m_flGrainLength": {
-            "offset": 128,
-            "type": "float32"
-          },
-          "m_flMaxSourceLength": {
-            "offset": 164,
-            "type": "float32"
-          },
-          "m_flPlaybackJitter": {
             "offset": 140,
             "type": "float32"
           },
-          "m_flStartJitter": {
+          "m_flGrainLength": {
             "offset": 136,
             "type": "float32"
           },
+          "m_flMaxSourceLength": {
+            "offset": 172,
+            "type": "float32"
+          },
+          "m_flPlaybackJitter": {
+            "offset": 148,
+            "type": "float32"
+          },
+          "m_flStartJitter": {
+            "offset": 144,
+            "type": "float32"
+          },
           "m_sourceAudio": {
-            "offset": 152,
+            "offset": 160,
             "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
           }
         },
@@ -2597,23 +2609,23 @@
       "CVoiceContainerLoopTrigger": {
         "fields": {
           "m_bCrossFade": {
-            "offset": 124,
+            "offset": 132,
             "type": "bool"
           },
           "m_flFadeTime": {
-            "offset": 120,
+            "offset": 128,
             "type": "float32"
           },
           "m_flRetriggerTimeMax": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flRetriggerTimeMin": {
-            "offset": 112,
+            "offset": 120,
             "type": "float32"
           },
           "m_sound": {
-            "offset": 128,
+            "offset": 136,
             "type": "CSoundContainerReference"
           }
         },
@@ -2636,7 +2648,7 @@
       "CVoiceContainerLoopTriggerWithRandomPanner": {
         "fields": {
           "m_randomPannerControls": {
-            "offset": 160,
+            "offset": 168,
             "type": "CRandomPannerControls"
           }
         },
@@ -2659,35 +2671,35 @@
       "CVoiceContainerLoopXFade": {
         "fields": {
           "m_bEqualPow": {
-            "offset": 162,
+            "offset": 170,
             "type": "bool"
           },
           "m_bPlayHead": {
-            "offset": 160,
+            "offset": 168,
             "type": "bool"
           },
           "m_bPlayTail": {
-            "offset": 161,
+            "offset": 169,
             "type": "bool"
           },
           "m_flFadeIn": {
-            "offset": 156,
+            "offset": 164,
             "type": "float32"
           },
           "m_flFadeOut": {
-            "offset": 152,
+            "offset": 160,
             "type": "float32"
           },
           "m_flLoopEnd": {
-            "offset": 144,
+            "offset": 152,
             "type": "float32"
           },
           "m_flLoopStart": {
-            "offset": 148,
+            "offset": 156,
             "type": "float32"
           },
           "m_sound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           }
         },
@@ -2710,15 +2722,15 @@
       "CVoiceContainerMultiBlender": {
         "fields": {
           "m_flBlendFactor": {
-            "offset": 168,
+            "offset": 176,
             "type": "float32"
           },
           "m_flCrossover": {
-            "offset": 172,
+            "offset": 180,
             "type": "float32"
           },
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -2759,35 +2771,35 @@
       "CVoiceContainerParameterBlender": {
         "fields": {
           "m_bEnableDistanceBlend": {
-            "offset": 312,
+            "offset": 320,
             "type": "bool"
           },
           "m_bEnableOcclusionBlend": {
-            "offset": 176,
+            "offset": 184,
             "type": "bool"
           },
           "m_curve1": {
-            "offset": 184,
+            "offset": 192,
             "type": "CPiecewiseCurve"
           },
           "m_curve2": {
-            "offset": 248,
+            "offset": 256,
             "type": "CPiecewiseCurve"
           },
           "m_curve3": {
-            "offset": 320,
+            "offset": 328,
             "type": "CPiecewiseCurve"
           },
           "m_curve4": {
-            "offset": 384,
+            "offset": 392,
             "type": "CPiecewiseCurve"
           },
           "m_firstSound": {
-            "offset": 112,
+            "offset": 120,
             "type": "CSoundContainerReference"
           },
           "m_secondSound": {
-            "offset": 144,
+            "offset": 152,
             "type": "CSoundContainerReference"
           }
         },
@@ -2810,27 +2822,27 @@
       "CVoiceContainerRandomSampler": {
         "fields": {
           "m_flAmplitude": {
-            "offset": 128,
-            "type": "float32"
-          },
-          "m_flAmplitudeJitter": {
-            "offset": 132,
-            "type": "float32"
-          },
-          "m_flMaxLength": {
-            "offset": 140,
-            "type": "float32"
-          },
-          "m_flTimeJitter": {
             "offset": 136,
             "type": "float32"
           },
+          "m_flAmplitudeJitter": {
+            "offset": 140,
+            "type": "float32"
+          },
+          "m_flMaxLength": {
+            "offset": 148,
+            "type": "float32"
+          },
+          "m_flTimeJitter": {
+            "offset": 144,
+            "type": "float32"
+          },
           "m_grainResources": {
-            "offset": 152,
+            "offset": 160,
             "type": "CUtlVector<CStrongHandle<InfoForResourceTypeCVoiceContainerBase>>"
           },
           "m_nNumDelayVariations": {
-            "offset": 144,
+            "offset": 152,
             "type": "int32"
           }
         },
@@ -2853,15 +2865,15 @@
       "CVoiceContainerRealtimeFMSineWave": {
         "fields": {
           "m_flCarrierFrequency": {
-            "offset": 112,
-            "type": "float32"
-          },
-          "m_flModulatorAmount": {
             "offset": 120,
             "type": "float32"
           },
+          "m_flModulatorAmount": {
+            "offset": 128,
+            "type": "float32"
+          },
           "m_flModulatorFrequency": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           }
         },
@@ -2884,15 +2896,15 @@
       "CVoiceContainerSelector": {
         "fields": {
           "m_fProbabilityWeights": {
-            "offset": 176,
+            "offset": 184,
             "type": "CUtlVector<float32>"
           },
           "m_mode": {
-            "offset": 112,
+            "offset": 120,
             "type": "PlayBackMode_t"
           },
           "m_soundsToPlay": {
-            "offset": 120,
+            "offset": 128,
             "type": "CSoundContainerReferenceArray"
           }
         },
@@ -2915,7 +2927,7 @@
       "CVoiceContainerSet": {
         "fields": {
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlVector<CVoiceContainerSetElement>"
           }
         },
@@ -2957,39 +2969,39 @@
       "CVoiceContainerShapedNoise": {
         "fields": {
           "m_bUseCurveForAmplitude": {
-            "offset": 256,
+            "offset": 264,
             "type": "bool"
           },
           "m_bUseCurveForFrequency": {
-            "offset": 112,
+            "offset": 120,
             "type": "bool"
           },
           "m_bUseCurveForResonance": {
-            "offset": 184,
+            "offset": 192,
             "type": "bool"
           },
           "m_flFrequency": {
-            "offset": 116,
+            "offset": 124,
             "type": "float32"
           },
           "m_flGainInDecibels": {
-            "offset": 260,
+            "offset": 268,
             "type": "float32"
           },
           "m_flResonance": {
-            "offset": 188,
+            "offset": 196,
             "type": "float32"
           },
           "m_frequencySweep": {
-            "offset": 120,
+            "offset": 128,
             "type": "CPiecewiseCurve"
           },
           "m_gainSweep": {
-            "offset": 264,
+            "offset": 272,
             "type": "CPiecewiseCurve"
           },
           "m_resonanceSweep": {
-            "offset": 192,
+            "offset": 200,
             "type": "CPiecewiseCurve"
           }
         },
@@ -3012,7 +3024,7 @@
       "CVoiceContainerStaticAdditiveSynth": {
         "fields": {
           "m_tones": {
-            "offset": 128,
+            "offset": 136,
             "type": "CUtlVector<CVoiceContainerStaticAdditiveSynth::CTone>"
           }
         },
@@ -3124,7 +3136,7 @@
       "CVoiceContainerSwitch": {
         "fields": {
           "m_soundsToPlay": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlVector<CSoundContainerReference>"
           }
         },
@@ -3147,19 +3159,19 @@
       "CVoiceContainerTapePlayer": {
         "fields": {
           "m_bShouldWraparound": {
-            "offset": 128,
+            "offset": 136,
             "type": "bool"
           },
           "m_flTapeSpeedAttackTime": {
-            "offset": 144,
+            "offset": 152,
             "type": "float32"
           },
           "m_flTapeSpeedReleaseTime": {
-            "offset": 148,
+            "offset": 156,
             "type": "float32"
           },
           "m_sourceAudio": {
-            "offset": 136,
+            "offset": 144,
             "type": "CStrongHandle<InfoForResourceTypeCVoiceContainerBase>"
           }
         },
@@ -3176,7 +3188,12 @@
         "parent": null
       },
       "CVoiceContainerVMixSnd": {
-        "fields": {},
+        "fields": {
+          "m_resourceName": {
+            "offset": 392,
+            "type": "CUtlString"
+          }
+        },
         "metadata": [
           {
             "name": "MGetKV3ClassDefaults",
@@ -3196,71 +3213,71 @@
       "CVoiceContainerVsndRadioButton": {
         "fields": {
           "m_namespace": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlString"
           },
           "m_slot1": {
-            "offset": 120,
+            "offset": 128,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot10": {
-            "offset": 1344,
+            "offset": 1352,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot11": {
-            "offset": 1480,
+            "offset": 1488,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot12": {
-            "offset": 1616,
+            "offset": 1624,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot13": {
-            "offset": 1752,
+            "offset": 1760,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot14": {
-            "offset": 1888,
+            "offset": 1896,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot15": {
-            "offset": 2024,
+            "offset": 2032,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot16": {
-            "offset": 2160,
+            "offset": 2168,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot2": {
-            "offset": 256,
+            "offset": 264,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot3": {
-            "offset": 392,
+            "offset": 400,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot4": {
-            "offset": 528,
+            "offset": 536,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot5": {
-            "offset": 664,
+            "offset": 672,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot6": {
-            "offset": 800,
+            "offset": 808,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot7": {
-            "offset": 936,
+            "offset": 944,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot8": {
-            "offset": 1072,
+            "offset": 1080,
             "type": "CVsndRadioButtonSlot"
           },
           "m_slot9": {
-            "offset": 1208,
+            "offset": 1216,
             "type": "CVsndRadioButtonSlot"
           }
         },
@@ -3283,71 +3300,71 @@
       "CVoiceContainerVsndTrigger": {
         "fields": {
           "m_namespace": {
-            "offset": 112,
+            "offset": 120,
             "type": "CUtlString"
           },
           "m_slot1": {
-            "offset": 120,
+            "offset": 128,
             "type": "CVsndTriggerSlot"
           },
           "m_slot10": {
-            "offset": 1344,
+            "offset": 1352,
             "type": "CVsndTriggerSlot"
           },
           "m_slot11": {
-            "offset": 1480,
+            "offset": 1488,
             "type": "CVsndTriggerSlot"
           },
           "m_slot12": {
-            "offset": 1616,
+            "offset": 1624,
             "type": "CVsndTriggerSlot"
           },
           "m_slot13": {
-            "offset": 1752,
+            "offset": 1760,
             "type": "CVsndTriggerSlot"
           },
           "m_slot14": {
-            "offset": 1888,
+            "offset": 1896,
             "type": "CVsndTriggerSlot"
           },
           "m_slot15": {
-            "offset": 2024,
+            "offset": 2032,
             "type": "CVsndTriggerSlot"
           },
           "m_slot16": {
-            "offset": 2160,
+            "offset": 2168,
             "type": "CVsndTriggerSlot"
           },
           "m_slot2": {
-            "offset": 256,
+            "offset": 264,
             "type": "CVsndTriggerSlot"
           },
           "m_slot3": {
-            "offset": 392,
+            "offset": 400,
             "type": "CVsndTriggerSlot"
           },
           "m_slot4": {
-            "offset": 528,
+            "offset": 536,
             "type": "CVsndTriggerSlot"
           },
           "m_slot5": {
-            "offset": 664,
+            "offset": 672,
             "type": "CVsndTriggerSlot"
           },
           "m_slot6": {
-            "offset": 800,
+            "offset": 808,
             "type": "CVsndTriggerSlot"
           },
           "m_slot7": {
-            "offset": 936,
+            "offset": 944,
             "type": "CVsndTriggerSlot"
           },
           "m_slot8": {
-            "offset": 1072,
+            "offset": 1080,
             "type": "CVsndTriggerSlot"
           },
           "m_slot9": {
-            "offset": 1208,
+            "offset": 1216,
             "type": "CVsndTriggerSlot"
           }
         },
@@ -5061,6 +5078,14 @@
           "SUBGRAPH_INTERPOLATION_TEMPORAL_FADE_OUT": 1
         },
         "type": "uint32"
+      },
+      "VMixUpMixRule_t": {
+        "alignment": 1,
+        "members": {
+          "BROADCAST": 1,
+          "DIVIDE": 0
+        },
+        "type": "uint8"
       },
       "soundlevel_t": {
         "alignment": 4,
