@@ -8904,11 +8904,11 @@
             "type": "int32"
           },
           "m_MinimapVerticalSectionHeights": {
-            "offset": 3128,
+            "offset": 3132,
             "type": "float32[8]"
           },
           "m_RetakeRules": {
-            "offset": 3488,
+            "offset": 3496,
             "type": "C_RetakeGameRules"
           },
           "m_TeamRespawnWaveTimes": {
@@ -8956,7 +8956,7 @@
             "type": "bool"
           },
           "m_bHasTriggeredRoundStartMusic": {
-            "offset": 3452,
+            "offset": 3460,
             "type": "bool"
           },
           "m_bIsDroppingItems": {
@@ -9004,15 +9004,15 @@
             "type": "bool"
           },
           "m_bRoundEndNoMusic": {
-            "offset": 3900,
+            "offset": 3908,
             "type": "bool"
           },
           "m_bRoundEndShowTimerDefend": {
-            "offset": 3856,
+            "offset": 3864,
             "type": "bool"
           },
           "m_bSwitchingTeamsAtRoundReset": {
-            "offset": 3453,
+            "offset": 3461,
             "type": "bool"
           },
           "m_bTCantBuy": {
@@ -9020,7 +9020,7 @@
             "type": "bool"
           },
           "m_bTeamIntroPeriod": {
-            "offset": 3844,
+            "offset": 3852,
             "type": "bool"
           },
           "m_bTechnicalTimeOut": {
@@ -9036,7 +9036,7 @@
             "type": "bool"
           },
           "m_eRoundEndReason": {
-            "offset": 3852,
+            "offset": 3860,
             "type": "int32"
           },
           "m_eRoundWinReason": {
@@ -9076,11 +9076,11 @@
             "type": "float32"
           },
           "m_flLastPerfSampleTime": {
-            "offset": 20312,
+            "offset": 20320,
             "type": "float64"
           },
           "m_flNextRespawnWave": {
-            "offset": 2976,
+            "offset": 2980,
             "type": "GameTime_t[32]"
           },
           "m_flRestartRoundTime": {
@@ -9116,47 +9116,47 @@
             "type": "int32[30]"
           },
           "m_iNumConsecutiveCTLoses": {
-            "offset": 3252,
+            "offset": 3260,
             "type": "int32"
           },
           "m_iNumConsecutiveTerroristLoses": {
-            "offset": 3256,
+            "offset": 3264,
             "type": "int32"
           },
           "m_iRoundEndFunFactData1": {
-            "offset": 3876,
-            "type": "int32"
-          },
-          "m_iRoundEndFunFactData2": {
-            "offset": 3880,
-            "type": "int32"
-          },
-          "m_iRoundEndFunFactData3": {
             "offset": 3884,
             "type": "int32"
           },
+          "m_iRoundEndFunFactData2": {
+            "offset": 3888,
+            "type": "int32"
+          },
+          "m_iRoundEndFunFactData3": {
+            "offset": 3892,
+            "type": "int32"
+          },
           "m_iRoundEndFunFactPlayerSlot": {
-            "offset": 3872,
+            "offset": 3880,
             "type": "CPlayerSlot"
           },
           "m_iRoundEndLegacy": {
-            "offset": 3904,
+            "offset": 3912,
             "type": "int32"
           },
           "m_iRoundEndPlayerCount": {
-            "offset": 3896,
+            "offset": 3904,
             "type": "int32"
           },
           "m_iRoundEndTimerTime": {
-            "offset": 3860,
+            "offset": 3868,
             "type": "int32"
           },
           "m_iRoundEndWinnerTeam": {
-            "offset": 3848,
+            "offset": 3856,
             "type": "int32"
           },
           "m_iRoundStartRoundNumber": {
-            "offset": 3912,
+            "offset": 3920,
             "type": "int32"
           },
           "m_iRoundTime": {
@@ -9171,8 +9171,12 @@
             "offset": 168,
             "type": "int32"
           },
+          "m_nActiveMutators": {
+            "offset": 2976,
+            "type": "int32"
+          },
           "m_nCTTeamIntroVariant": {
-            "offset": 3840,
+            "offset": 3848,
             "type": "int32"
           },
           "m_nCTTimeOuts": {
@@ -9180,15 +9184,15 @@
             "type": "int32"
           },
           "m_nEndMatchMapGroupVoteOptions": {
-            "offset": 3208,
+            "offset": 3216,
             "type": "int32[10]"
           },
           "m_nEndMatchMapGroupVoteTypes": {
-            "offset": 3168,
+            "offset": 3176,
             "type": "int32[10]"
           },
           "m_nEndMatchMapVoteWinner": {
-            "offset": 3248,
+            "offset": 3256,
             "type": "int32"
           },
           "m_nHalloweenMaskListSeed": {
@@ -9196,11 +9200,11 @@
             "type": "int32"
           },
           "m_nMatchAbortedEarlyReason": {
-            "offset": 3448,
+            "offset": 3456,
             "type": "int32"
           },
           "m_nMatchEndCount": {
-            "offset": 3832,
+            "offset": 3840,
             "type": "uint8"
           },
           "m_nNextMapInMapgroup": {
@@ -9216,11 +9220,11 @@
             "type": "int32"
           },
           "m_nRoundEndCount": {
-            "offset": 3908,
+            "offset": 3916,
             "type": "uint8"
           },
           "m_nRoundStartCount": {
-            "offset": 3916,
+            "offset": 3924,
             "type": "uint8"
           },
           "m_nRoundsPlayedThisPhase": {
@@ -9228,7 +9232,7 @@
             "type": "int32"
           },
           "m_nTTeamIntroVariant": {
-            "offset": 3836,
+            "offset": 3844,
             "type": "int32"
           },
           "m_nTerroristTimeOuts": {
@@ -9244,15 +9248,15 @@
             "type": "int32"
           },
           "m_pGameModeRules": {
-            "offset": 3480,
+            "offset": 3488,
             "type": "CCSGameModeRules*"
           },
           "m_sRoundEndFunFactToken": {
-            "offset": 3864,
+            "offset": 3872,
             "type": "CUtlString"
           },
           "m_sRoundEndMessage": {
-            "offset": 3888,
+            "offset": 3896,
             "type": "CUtlString"
           },
           "m_szMatchStatTxt": {
@@ -9280,15 +9284,15 @@
             "type": "int32"
           },
           "m_ullLocalMatchID": {
-            "offset": 3160,
+            "offset": 3168,
             "type": "uint64"
           },
           "m_vMinimapMaxs": {
-            "offset": 3116,
+            "offset": 3120,
             "type": "VectorWS"
           },
           "m_vMinimapMins": {
-            "offset": 3104,
+            "offset": 3108,
             "type": "VectorWS"
           }
         },
@@ -9503,6 +9507,10 @@
             "offset": 7612,
             "type": "GameTime_t"
           },
+          "m_flBigHeadScale": {
+            "offset": 13584,
+            "type": "float32"
+          },
           "m_flDeathInfoTime": {
             "offset": 7908,
             "type": "float32"
@@ -9538,10 +9546,6 @@
           "m_flLastFiredWeaponTime": {
             "offset": 5548,
             "type": "GameTime_t"
-          },
-          "m_flModifier0": {
-            "offset": 13584,
-            "type": "float32"
           },
           "m_flNextSprayDecalTime": {
             "offset": 5616,
@@ -10003,16 +10007,16 @@
             "offset": 6736,
             "type": "bool"
           },
+          "m_bIsInStealthReload": {
+            "offset": 6744,
+            "type": "bool"
+          },
           "m_bReloadHeldSinceStart": {
             "offset": 6752,
             "type": "bool"
           },
           "m_bSilencerOn": {
             "offset": 6737,
-            "type": "bool"
-          },
-          "m_bStealthy": {
-            "offset": 6744,
             "type": "bool"
           },
           "m_bUIWeapon": {
@@ -10099,7 +10103,7 @@
             "offset": 6696,
             "type": "float32"
           },
-          "m_flStealthHoldStartTime": {
+          "m_flStealthReloadHoldStartTime": {
             "offset": 6748,
             "type": "GameTime_t"
           },

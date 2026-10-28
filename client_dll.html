@@ -1922,9 +1922,9 @@
             <tr><td>m_bIsHauledBack</td><td class="type">bool</td><td class="value">0x1A50</td></tr>
             <tr><td>m_bSilencerOn</td><td class="type">bool</td><td class="value">0x1A51</td></tr>
             <tr><td>m_flTimeSilencerSwitchComplete</td><td class="type">GameTime_t</td><td class="value">0x1A54</td></tr>
-            <tr><td>m_bStealthy</td><td class="type">bool</td><td class="value">0x1A58</td></tr>
+            <tr><td>m_bIsInStealthReload</td><td class="type">bool</td><td class="value">0x1A58</td></tr>
             <tr><td>m_bInSilentReloadSection</td><td class="type">bool</td><td class="value">0x1A59</td></tr>
-            <tr><td>m_flStealthHoldStartTime</td><td class="type">GameTime_t</td><td class="value">0x1A5C</td></tr>
+            <tr><td>m_flStealthReloadHoldStartTime</td><td class="type">GameTime_t</td><td class="value">0x1A5C</td></tr>
             <tr><td>m_bReloadHeldSinceStart</td><td class="type">bool</td><td class="value">0x1A60</td></tr>
             <tr><td>m_flWeaponActionPlaybackRate</td><td class="type">float32</td><td class="value">0x1A64</td></tr>
             <tr><td>m_iOriginalTeamNumber</td><td class="type">int32</td><td class="value">0x1A68</td></tr>
@@ -2418,7 +2418,7 @@
             <tr><td>m_fImmuneToGunGameDamageTime</td><td class="type">GameTime_t</td><td class="value">0x3504</td></tr>
             <tr><td>m_bGunGameImmunity</td><td class="type">bool</td><td class="value">0x3508</td></tr>
             <tr><td>m_fImmuneToGunGameDamageTimeLast</td><td class="type">GameTime_t</td><td class="value">0x350C</td></tr>
-            <tr><td>m_flModifier0</td><td class="type">float32</td><td class="value">0x3510</td></tr>
+            <tr><td>m_flBigHeadScale</td><td class="type">float32</td><td class="value">0x3510</td></tr>
             <tr><td>m_fMolotovDamageTime</td><td class="type">float32</td><td class="value">0x3514</td></tr>
             <tr><td>m_nPlayerInfernoBodyFx</td><td class="type">ParticleIndex_t</td><td class="value">0x3588</td></tr>
             <tr><td>m_angEyeAngles</td><td class="type">QAngle</td><td class="value">0x3600</td></tr>
@@ -5867,42 +5867,43 @@
             <tr><td>m_iMatchStats_PlayersAlive_CT</td><td class="type">int32[30]</td><td class="value">0xA30</td></tr>
             <tr><td>m_iMatchStats_PlayersAlive_T</td><td class="type">int32[30]</td><td class="value">0xAA8</td></tr>
             <tr><td>m_TeamRespawnWaveTimes</td><td class="type">float32[32]</td><td class="value">0xB20</td></tr>
-            <tr><td>m_flNextRespawnWave</td><td class="type">GameTime_t[32]</td><td class="value">0xBA0</td></tr>
-            <tr><td>m_vMinimapMins</td><td class="type">VectorWS</td><td class="value">0xC20</td></tr>
-            <tr><td>m_vMinimapMaxs</td><td class="type">VectorWS</td><td class="value">0xC2C</td></tr>
-            <tr><td>m_MinimapVerticalSectionHeights</td><td class="type">float32[8]</td><td class="value">0xC38</td></tr>
-            <tr><td>m_ullLocalMatchID</td><td class="type">uint64</td><td class="value">0xC58</td></tr>
-            <tr><td>m_nEndMatchMapGroupVoteTypes</td><td class="type">int32[10]</td><td class="value">0xC60</td></tr>
-            <tr><td>m_nEndMatchMapGroupVoteOptions</td><td class="type">int32[10]</td><td class="value">0xC88</td></tr>
-            <tr><td>m_nEndMatchMapVoteWinner</td><td class="type">int32</td><td class="value">0xCB0</td></tr>
-            <tr><td>m_iNumConsecutiveCTLoses</td><td class="type">int32</td><td class="value">0xCB4</td></tr>
-            <tr><td>m_iNumConsecutiveTerroristLoses</td><td class="type">int32</td><td class="value">0xCB8</td></tr>
-            <tr><td>m_nMatchAbortedEarlyReason</td><td class="type">int32</td><td class="value">0xD78</td></tr>
-            <tr><td>m_bHasTriggeredRoundStartMusic</td><td class="type">bool</td><td class="value">0xD7C</td></tr>
-            <tr><td>m_bSwitchingTeamsAtRoundReset</td><td class="type">bool</td><td class="value">0xD7D</td></tr>
-            <tr><td>m_pGameModeRules</td><td class="type">CCSGameModeRules*</td><td class="value">0xD98</td></tr>
-            <tr><td>m_RetakeRules</td><td class="type">C_RetakeGameRules</td><td class="value">0xDA0</td></tr>
-            <tr><td>m_nMatchEndCount</td><td class="type">uint8</td><td class="value">0xEF8</td></tr>
-            <tr><td>m_nTTeamIntroVariant</td><td class="type">int32</td><td class="value">0xEFC</td></tr>
-            <tr><td>m_nCTTeamIntroVariant</td><td class="type">int32</td><td class="value">0xF00</td></tr>
-            <tr><td>m_bTeamIntroPeriod</td><td class="type">bool</td><td class="value">0xF04</td></tr>
-            <tr><td>m_iRoundEndWinnerTeam</td><td class="type">int32</td><td class="value">0xF08</td></tr>
-            <tr><td>m_eRoundEndReason</td><td class="type">int32</td><td class="value">0xF0C</td></tr>
-            <tr><td>m_bRoundEndShowTimerDefend</td><td class="type">bool</td><td class="value">0xF10</td></tr>
-            <tr><td>m_iRoundEndTimerTime</td><td class="type">int32</td><td class="value">0xF14</td></tr>
-            <tr><td>m_sRoundEndFunFactToken</td><td class="type">CUtlString</td><td class="value">0xF18</td></tr>
-            <tr><td>m_iRoundEndFunFactPlayerSlot</td><td class="type">CPlayerSlot</td><td class="value">0xF20</td></tr>
-            <tr><td>m_iRoundEndFunFactData1</td><td class="type">int32</td><td class="value">0xF24</td></tr>
-            <tr><td>m_iRoundEndFunFactData2</td><td class="type">int32</td><td class="value">0xF28</td></tr>
-            <tr><td>m_iRoundEndFunFactData3</td><td class="type">int32</td><td class="value">0xF2C</td></tr>
-            <tr><td>m_sRoundEndMessage</td><td class="type">CUtlString</td><td class="value">0xF30</td></tr>
-            <tr><td>m_iRoundEndPlayerCount</td><td class="type">int32</td><td class="value">0xF38</td></tr>
-            <tr><td>m_bRoundEndNoMusic</td><td class="type">bool</td><td class="value">0xF3C</td></tr>
-            <tr><td>m_iRoundEndLegacy</td><td class="type">int32</td><td class="value">0xF40</td></tr>
-            <tr><td>m_nRoundEndCount</td><td class="type">uint8</td><td class="value">0xF44</td></tr>
-            <tr><td>m_iRoundStartRoundNumber</td><td class="type">int32</td><td class="value">0xF48</td></tr>
-            <tr><td>m_nRoundStartCount</td><td class="type">uint8</td><td class="value">0xF4C</td></tr>
-            <tr><td>m_flLastPerfSampleTime</td><td class="type">float64</td><td class="value">0x4F58</td></tr>
+            <tr><td>m_nActiveMutators</td><td class="type">int32</td><td class="value">0xBA0</td></tr>
+            <tr><td>m_flNextRespawnWave</td><td class="type">GameTime_t[32]</td><td class="value">0xBA4</td></tr>
+            <tr><td>m_vMinimapMins</td><td class="type">VectorWS</td><td class="value">0xC24</td></tr>
+            <tr><td>m_vMinimapMaxs</td><td class="type">VectorWS</td><td class="value">0xC30</td></tr>
+            <tr><td>m_MinimapVerticalSectionHeights</td><td class="type">float32[8]</td><td class="value">0xC3C</td></tr>
+            <tr><td>m_ullLocalMatchID</td><td class="type">uint64</td><td class="value">0xC60</td></tr>
+            <tr><td>m_nEndMatchMapGroupVoteTypes</td><td class="type">int32[10]</td><td class="value">0xC68</td></tr>
+            <tr><td>m_nEndMatchMapGroupVoteOptions</td><td class="type">int32[10]</td><td class="value">0xC90</td></tr>
+            <tr><td>m_nEndMatchMapVoteWinner</td><td class="type">int32</td><td class="value">0xCB8</td></tr>
+            <tr><td>m_iNumConsecutiveCTLoses</td><td class="type">int32</td><td class="value">0xCBC</td></tr>
+            <tr><td>m_iNumConsecutiveTerroristLoses</td><td class="type">int32</td><td class="value">0xCC0</td></tr>
+            <tr><td>m_nMatchAbortedEarlyReason</td><td class="type">int32</td><td class="value">0xD80</td></tr>
+            <tr><td>m_bHasTriggeredRoundStartMusic</td><td class="type">bool</td><td class="value">0xD84</td></tr>
+            <tr><td>m_bSwitchingTeamsAtRoundReset</td><td class="type">bool</td><td class="value">0xD85</td></tr>
+            <tr><td>m_pGameModeRules</td><td class="type">CCSGameModeRules*</td><td class="value">0xDA0</td></tr>
+            <tr><td>m_RetakeRules</td><td class="type">C_RetakeGameRules</td><td class="value">0xDA8</td></tr>
+            <tr><td>m_nMatchEndCount</td><td class="type">uint8</td><td class="value">0xF00</td></tr>
+            <tr><td>m_nTTeamIntroVariant</td><td class="type">int32</td><td class="value">0xF04</td></tr>
+            <tr><td>m_nCTTeamIntroVariant</td><td class="type">int32</td><td class="value">0xF08</td></tr>
+            <tr><td>m_bTeamIntroPeriod</td><td class="type">bool</td><td class="value">0xF0C</td></tr>
+            <tr><td>m_iRoundEndWinnerTeam</td><td class="type">int32</td><td class="value">0xF10</td></tr>
+            <tr><td>m_eRoundEndReason</td><td class="type">int32</td><td class="value">0xF14</td></tr>
+            <tr><td>m_bRoundEndShowTimerDefend</td><td class="type">bool</td><td class="value">0xF18</td></tr>
+            <tr><td>m_iRoundEndTimerTime</td><td class="type">int32</td><td class="value">0xF1C</td></tr>
+            <tr><td>m_sRoundEndFunFactToken</td><td class="type">CUtlString</td><td class="value">0xF20</td></tr>
+            <tr><td>m_iRoundEndFunFactPlayerSlot</td><td class="type">CPlayerSlot</td><td class="value">0xF28</td></tr>
+            <tr><td>m_iRoundEndFunFactData1</td><td class="type">int32</td><td class="value">0xF2C</td></tr>
+            <tr><td>m_iRoundEndFunFactData2</td><td class="type">int32</td><td class="value">0xF30</td></tr>
+            <tr><td>m_iRoundEndFunFactData3</td><td class="type">int32</td><td class="value">0xF34</td></tr>
+            <tr><td>m_sRoundEndMessage</td><td class="type">CUtlString</td><td class="value">0xF38</td></tr>
+            <tr><td>m_iRoundEndPlayerCount</td><td class="type">int32</td><td class="value">0xF40</td></tr>
+            <tr><td>m_bRoundEndNoMusic</td><td class="type">bool</td><td class="value">0xF44</td></tr>
+            <tr><td>m_iRoundEndLegacy</td><td class="type">int32</td><td class="value">0xF48</td></tr>
+            <tr><td>m_nRoundEndCount</td><td class="type">uint8</td><td class="value">0xF4C</td></tr>
+            <tr><td>m_iRoundStartRoundNumber</td><td class="type">int32</td><td class="value">0xF50</td></tr>
+            <tr><td>m_nRoundStartCount</td><td class="type">uint8</td><td class="value">0xF54</td></tr>
+            <tr><td>m_flLastPerfSampleTime</td><td class="type">float64</td><td class="value">0x4F60</td></tr>
         </tbody>
     </table>
     <h3>Class: CGrenadeTracer</h3>
