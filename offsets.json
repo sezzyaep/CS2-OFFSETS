@@ -1,8 +1,8 @@
 {
   "client.dll": {
     "dwCSGOInput": 39319936,
-    "dwEntityList": 41020168,
-    "dwGameEntitySystem": 41020168,
+    "dwEntityList": 41020200,
+    "dwGameEntitySystem": 41020200,
     "dwGameEntitySystem_highestEntityIndex": 8480,
     "dwGameRules": 29064480,
     "dwGlobalVars": 35864840,
