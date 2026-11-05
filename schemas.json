@@ -70054,7 +70054,7 @@
             "type": "CountdownTimer"
           },
           "m_bSpawnDyingParticles": {
-            "offset": 13026,
+            "offset": 13027,
             "type": "bool"
           },
           "m_collisionStuckTimer": {
