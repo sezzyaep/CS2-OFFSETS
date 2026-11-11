@@ -8679,7 +8679,7 @@
             "type": "CountdownTimer"
           },
           "m_bSpawnDyingParticles": {
-            "offset": 13027,
+            "offset": 13026,
             "type": "bool"
           },
           "m_collisionStuckTimer": {
@@ -16875,6 +16875,10 @@
             "offset": 1216,
             "type": "bool"
           },
+          "m_bFrostEnabled": {
+            "offset": 1240,
+            "type": "bool"
+          },
           "m_bGPUCullSkybox": {
             "offset": 1218,
             "type": "bool"
@@ -18154,6 +18158,10 @@
           },
           "m_flPlantingBlendTimeSeconds": {
             "offset": 48,
+            "type": "float32"
+          },
+          "m_flTransitionBlendTimeSeconds": {
+            "offset": 52,
             "type": "float32"
           },
           "m_nCrouchWeightNodeIdx": {

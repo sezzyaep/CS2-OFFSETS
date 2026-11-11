@@ -400,6 +400,10 @@
           "m_nTickCount": {
             "offset": 0,
             "type": "int32"
+          },
+          "m_nTotalTicks": {
+            "offset": 4,
+            "type": "int32"
           }
         },
         "metadata": [],
